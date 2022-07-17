@@ -1,0 +1,32 @@
+- title: "About"
+  href: "/"
+
+
+- title: "Software Evolution Lab"
+  href: "/evol/"
+  subcategories:
+    - subtitle: "Projects"
+      subhref: "/evol/projects/"
+    - subtitle: "Publications"
+      subhref: "/evol/publications/"
+    - subtitle: "Talks"
+      subhref: "/evol/talks/"
+      
+- title: "Teaching"
+  href: "/teaching/"
+  
+- title: "Students"
+  href: "/students/"
+  
+- title: "Service"
+  href: "/service/"
+
+- title: "Misc"
+  href: "/misc/"
+  subcategories:
+#    - subtitle: "PhD & Beyond"
+#      subhref: "/miscellany/phd-beyond/"
+#    - subtitle: "Research Supplements"
+#      subhref: "/miscellany/research-supplements"
+#    - subtitle: "Other"
+#      subhref: "/miscellany/other/"

@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+---
+layout: default
+---
 
-You can use the [editor on GitHub](https://github.com/johnxu21/johnxu21.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+# John Businge
+Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank"><img src="images/john.jpeg" alt="John Businge" style="width:170px;height:190px;" align="right"></a> <br>
+University of Nevada, Las Vegas <br>
+Office:  <br>
+<br>
+<em>Curriculum Vitae: </em><a href="/files/John_Businge_CV.pdf" target="_blank">PDF</a>  <small>(July, 2022)</small> <br>
+<em>Email: </em><a href="mailto:john.businge@unlv.edu">john.businge@unlv.edu</a> <br>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!--<hr width="600px"> -->
 
-### Markdown
+## About me
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Hi there! I’m an Assistant Professor at the [University of Nevada, Las Vegas](https://www.unlv.edu/) in the Department of [Computer Science](https://www.unlv.edu/cs). I lead th [Software Evolution (EVOL) Lab](https://johnxu21.github.io/businge/evol/).
+Before this position, I was a Research Fellow at the [University of Antwerp](https://www.uantwerpen.be/en/), Belgium, working in the Lab of Reengineering with [Prof. Serge Demeyer](https://www.uantwerpen.be/en/staff/serge-demeyer/). I received a Ph.D. in Computer Science from the [Eindhoven University of Technology](https://www.tue.nl/en/) (the Netherlands), under the supervision of [Prof. Mark van den Brand](https://www.tue.nl/en/research/researchers/mark-van-den-brand/) and [Prof. Alexander Serebrenik](https://www.win.tue.nl/~aserebre/). 
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Research Works
+<p align="justify" style="max-width:600px">
+My research focuses on mining software repositories, software analytics, software maintenance, and evolution, clone detection, program analysis, variability management, and empirical software engineering.
+More about my research can be found on the research page <a href="/images/logo.png" target="_blank"><img src="images/logo.png" alt="Logo" style="width:170px;height:190px;" align="right"></a> <br>
 
-- Bulleted
-- List
+## News
+<!--<table style="white-space: nowrap;"> -->
+<table>
 
-1. Numbered
-2. List
+<tr>
+	<td width="75"><b>June, 2022</b></td>
+	<td> Our paper on PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family has accepted in FSE'22</td> 
+	</tr>
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/johnxu21/johnxu21.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</table>
