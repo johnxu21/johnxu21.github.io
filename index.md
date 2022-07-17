@@ -3,7 +3,7 @@ layout: default
 ---
 
 # John Businge
-Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank"><img src="images/john.jpeg" alt="John Businge" style="width:190px;height:190px;" align="right"></a> <br>
+Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank"><img src="/images/john.jpeg" alt="John Businge" style="width:190px;height:190px;" align="right"></a> <br>
 University of Nevada, Las Vegas <br>
 Office:  <br>
 <br>
@@ -20,9 +20,12 @@ Before this position, I was a Research Fellow at the [University of Antwerp](htt
 
 
 ## Research Works
+
 <p align="justify" style="max-width:600px">
 My research focuses on mining software repositories, software analytics, software maintenance, and evolution, clone detection, program analysis, variability management, and empirical software engineering.
-More about my research can be found on the research page <a href="/images/logo.jpeg" target="_blank"><img src="images/logo.jpeg" alt="Logo" style="width:170px;height:190px;" align="right"></a> <br>
+More about my research can be found on the research page <a href="/images/logo.jpeg" target="_blank"><img src="/images/logo.jpeg" alt="Logo" style="width:200px;height:77px;" align="right"></a> <br>
+
+
 
 
 ## News
