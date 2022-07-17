@@ -23,7 +23,7 @@ Before this position, I was a Research Fellow at the [University of Antwerp](htt
 
 <p align="justify" style="max-width:600px">
 My research focuses on mining software repositories, software analytics, software maintenance, and evolution, clone detection, program analysis, variability management, and empirical software engineering.
-More about my research can be found on the research page <a href="/images/logo.jpeg" target="_blank"><img src="/images/logo.jpeg" alt="Logo" style="width:200px;height:77px;" align="right"></a> <br>
+More about my research can be found on the research page <a href="/evol/projects/" target="_blank"><img src="/images/logo.jpeg" alt="Logo" style="width:200px;height:77px;" align="right"></a> <br><br>
 
 
 

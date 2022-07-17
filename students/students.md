@@ -7,17 +7,17 @@ permalink: /students/
 Graduate Students
 --
 
-**Eva Note, Masters Student, June.2022--**<br>
-**University of Antwerp, Belgium**
+**Eva Note, Masters Student, June.2022**<br>
+**University of Antwerp, Belgium--**
 <a href="https://www.linkedin.com/in/eva-note/?trk=people-guest_people_search-card&originalSubdomain=be" target="_blank">[profile]</a>
 <br/>
 
-**Martin Mukama, Masters Student, Jan.2021--</br>**
+**Martin Mukama, Masters Student, Jan.2021**</br>
 **Mbarara University of Science and Technology, Uganda--**
 <a href="https://www.linkedin.com/in/mukama-martin-04461584/?originalSubdomain=ug" target="_blank">[profile]</a>
 <br/>
 
-**Davis Byamugisha, Masters Student, Jan.2021--</br>**
+**Davis Byamugisha, Masters Student, Jan.2021**</br>
 **Mbarara University of Science and Technology, Uganda--**
 <a href="https://www.linkedin.com/in/davis-byamugisha/" target="_blank">[profile]</a>
 <br/>
