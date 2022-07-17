@@ -4,7 +4,7 @@ title: Projects
 permalink: /evol/projects/
 ---
 
-<a href="/images/logo.jpeg" target="_blank"><img src="images/logo.jpeg" alt="Evol Logo" style="width:170px;height:190px;" align="right"></a> <br>
+<a href="/images/logo.jpeg" target="_blank"><img src="/images/logo.jpeg" alt="Evol Logo" style="width:170px;height:190px;" align="center"></a> <br>
 # EVOL Research Projects
 
 
