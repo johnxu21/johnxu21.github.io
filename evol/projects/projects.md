@@ -7,10 +7,13 @@ permalink: /evol/projects/
 <a href="/evol/projects/" target="_blank"><img src="/images/logo.jpeg" alt="Evol Logo" style="width:400px;height:155px;" align="right"></a> <br>
 
 
+####
+
+####
 
 # Current Projects
 
-## PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family
+#### PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family
 
 <table>
 <tr>
