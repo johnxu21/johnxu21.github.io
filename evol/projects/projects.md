@@ -11,7 +11,7 @@ Below are some of our current and past projects
 
 # Current Projects
 
-#### PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family
+### PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family
 
 <table>
 <tr>
