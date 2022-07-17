@@ -3,7 +3,7 @@ layout: default
 ---
 
 # John Businge
-Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank"><img src="images/john.jpeg" alt="John Businge" style="width:170px;height:190px;" align="right"></a> <br>
+Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank"><img src="images/john.jpeg" alt="John Businge" style="width:190px;height:190px;" align="right"></a> <br>
 University of Nevada, Las Vegas <br>
 Office:  <br>
 <br>
@@ -13,6 +13,7 @@ Office:  <br>
 <!--<hr width="600px"> -->
 
 ## About me
+<a href="https://unlv.edu/" target="_blank"><img src="images/UNLV.jpeg" alt="UNLV" style="width:170px;" align="right"></a>
 
 Hi there! I’m an Assistant Professor at the [University of Nevada, Las Vegas](https://www.unlv.edu/) in the Department of [Computer Science](https://www.unlv.edu/cs). I lead th [Software Evolution (EVOL) Lab](https://johnxu21.github.io/businge/evol/).
 Before this position, I was a Research Fellow at the [University of Antwerp](https://www.uantwerpen.be/en/), Belgium, working in the Lab of Reengineering with [Prof. Serge Demeyer](https://www.uantwerpen.be/en/staff/serge-demeyer/). I received a Ph.D. in Computer Science from the [Eindhoven University of Technology](https://www.tue.nl/en/) (the Netherlands), under the supervision of [Prof. Mark van den Brand](https://www.tue.nl/en/research/researchers/mark-van-den-brand/) and [Prof. Alexander Serebrenik](https://www.win.tue.nl/~aserebre/). 
@@ -21,7 +22,7 @@ Before this position, I was a Research Fellow at the [University of Antwerp](htt
 ## Research Works
 <p align="justify" style="max-width:600px">
 My research focuses on mining software repositories, software analytics, software maintenance, and evolution, clone detection, program analysis, variability management, and empirical software engineering.
-More about my research can be found on the research page <a href="/images/logo.png" target="_blank"><img src="images/logo.png" alt="Logo" style="width:170px;height:190px;" align="right"></a> <br>
+More about my research can be found on the research page <a href="/images/logo.jpeg" target="_blank"><img src="images/logo.png" alt="Logo" style="width:170px;height:190px;" align="right"></a> <br>
 
 ## News
 <!--<table style="white-space: nowrap;"> -->
