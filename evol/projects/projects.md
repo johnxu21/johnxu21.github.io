@@ -4,10 +4,11 @@ title: Projects
 permalink: /evol/projects/
 ---
 # EVOL Research Projects
-<a href="/evol/projects/" target="_blank"><img src="/images/logo.jpeg" alt="Evol Logo" style="width:300px;height:117px;" align="center"></a> <br>
+<a href="/evol/projects/" target="_blank"><img src="/images/logo.jpeg" alt="Evol Logo" style="width:400px;height:155px;" align="right"></a> <br>
 
 
 
+# Current Projects
 
 ## PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family
 
