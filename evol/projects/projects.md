@@ -27,7 +27,7 @@ Re-using whole repositories as a starting point for new projects is often done b
       Furthermore, we investigated the time interval between patches and found out that, on average, missed patches in the target variants have been introduced in the source variants 52 weeks earlier.
       Consequently, PaReco can be used to manage variability in ``time'' by automatically identifying interesting patches in later project releases to be backported to supported earlier releases.</p>
 </td>
-	<td ><img src="images/fse_image.jpeg" alt="FSE 2022" style="width:170px;height:190px;" align="right"></td>
+	<td ><img src="images/fse_image.jpeg" alt="FSE 2022" style="width:300px;height:165px;" align="right"></td>
 
 </tr>
 
