@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Join Evol
-permalink: /research/join/
+permalink: /evol/join/
 ---
 
 ### Thank you for considering the EVOL research group.
