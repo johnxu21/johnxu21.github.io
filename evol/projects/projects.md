@@ -3,9 +3,10 @@ layout: page
 title: Projects
 permalink: /evol/projects/
 ---
+
 # EVOL Research Projects
 Below are some of our current and past projects
-<!--a href="/evol/projects/" target="_blank"><img src="/images/logo.jpeg" alt="Evol Logo" style="width:300px;height:117px;" align="right"></a--> <br>
+<a href="/evol/projects/" target="_blank"><img src="/images/logo.jpeg" alt="Evol Logo" style="width:300px;height:117px;" align="right"></a> <br>
 
 
 

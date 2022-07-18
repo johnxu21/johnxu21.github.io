@@ -23,8 +23,8 @@ Before this position, I was a Research Fellow at the [University of Antwerp](htt
 
 <p align="justify" style="max-width:600px">
 My research focuses on mining software repositories, software analytics, software maintenance, and evolution, clone detection, program analysis, variability management, and empirical software engineering.
-<a href="/evol/projects/" target="_blank"><img src="/images/logo.jpeg" alt="Logo" style="width:200px;height:77px;" align="right"></a> <br><br>
-More about my research can be found on the <a href="https://johnxu21.github.io/evol/projects/" target="_blank">Projects page</a>
+[comment]: <> (<a href="/evol/projects/" target="_blank"><img src="/images/logo.jpeg" alt="Logo" style="width:200px;height:77px;" align="right"></a> <br><br>)
+More about my research can be found on the (<a href="https://johnxu21.github.io/evol/projects/" target="_blank">Projects page</a>)
 
 
 
