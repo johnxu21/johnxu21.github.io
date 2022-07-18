@@ -9,14 +9,18 @@
       subhref: "/evol/projects/"
     - subtitle: "Publications"
       subhref: "/evol/publications/"
+    - subtitle: "The Team"
+      subhref: "/evol/students/"
     - subtitle: "Talks"
       subhref: "/evol/talks/"
+    - subtitle: "Join EVOL"
+      subhref: "/evol/join/"
       
 - title: "Teaching"
   href: "/teaching/"
   
-- title: "Students"
-  href: "/students/"
+#- title: "Students"
+#  href: "/students/"
   
 - title: "Service"
   href: "/service/"
