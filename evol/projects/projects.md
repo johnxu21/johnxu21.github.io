@@ -28,6 +28,8 @@ Below are some of our current and past projects
 
 </td>
 <td> </td>
+</tr>
+
 <tr>
 <td>  
 	
