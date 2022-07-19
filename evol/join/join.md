@@ -4,7 +4,7 @@ title: Join Evol
 permalink: /evol/join/
 ---
 
-### Thank you for considering the EVOL research group.
+## Thank you for considering the EVOL research group.
 
 * If you are interested in our research and have already been admitted to a Master's/PhD. program at Polytechnique Montreal, please feel free to contact me, and consider taking my graduade course (CS 473 - Software Product Design and Development II). <a href="/evol/projects/" target="_self"><img src="/images/logo.jpeg" alt="Evol Logo" style="width:450px;height:174px;" align="right"></a>
 * My current research interests are in the areas of code recommenders. This includes searching for code snippets (bug/vulnerability fix, refactoring, test cases, optimizations, e.t.c) and recommending them. As a next step after the snippet search, I want to help the developer with the integration of the snippet. However, I can also be a little flexible. If you have a related software engineering topic that sounds interesting to me, feel free to email me with specifics.
@@ -20,6 +20,6 @@ permalink: /evol/join/
     * (iii) What is your favourite programming language or project and why? 
     * (iv) What was your best learning and/or teaching experience?
     * (v) You already looked at the groups projects or read some of our papers
-* Please do NOT just mention keywords off of the group's website along with generic descriptions like “my research interests overlap with yours”. I typically ignore emails with such generic descriptions. I also highly encourage you to watch this talk before contacting me (or any other potential supervisors)
+* **Please do NOT just mention keywords off of the group's website along with generic descriptions like “my research interests overlap with yours”**. I typically ignore emails with such generic descriptions. I also highly encourage you to watch this talk before contacting me (or any other potential supervisors)
 
 
