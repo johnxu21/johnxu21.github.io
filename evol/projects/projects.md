@@ -78,7 +78,7 @@ maintaining the co-existing projects.
 <tr>
 <td>  
 	
-<p align="justify">
+<p align="justify" style="max-width:800px">
 
 With the rise of social coding platforms that rely on distributed version control systems, software reuse 
 is also on the rise. Many software developers leverage this reuse by creating variants through forking, 
