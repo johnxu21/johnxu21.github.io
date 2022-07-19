@@ -16,7 +16,7 @@ Below are some of our current and past projects<br> <br>
 
 # Current Projects
 
-### PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family
+### PaReco
 
 <table>
 
@@ -40,3 +40,72 @@ Re-using whole repositories as a starting point for new projects is often done b
 </tr>
 
 </table>
+
+
+### Variant Forks - Motivations and Impediments
+
+<table>
+
+<tr>
+<td>  
+	
+<p align="justify" style="max-width:800px">
+
+Social coding platforms centered around git provide explicit facilities to share code between projects: 
+forks, pull requests, cherry-picking, to name but a few. Variant forks are an interesting phenomenon in that respect, 
+as they permit different projects to co-exist peacefully yet explicitly acknowledge the common ancestry. 
+Several researchers analyzed forking practices on open source platforms and observed that variant forks get 
+created frequently. 
+However, little is known about the motivations for launching such a variant fork. Is it mainly technical 
+(e.g., diverging features), governance (e.g., diverging interests), legal (e.g., diverging licenses), 
+or do other factors come into play? We report the results of an exploratory qualitative analysis on the 
+motivations behind creating and maintaining variant forks. We surveyed 105 maintainers of different active 
+open-source variant projects hosted on GitHub. Our study extends previous findings, identifying several 
+fine-grained common motivations for launching a variant fork and listing concrete impediments for 
+maintaining the co-existing projects.
+</p>
+</td>
+	<td > <a href="/images/sankey.jpeg" target="_blank"><img src="/images/sankey.jpeg" alt="SANER2022" style="width:300px;height:104px;" align="right"></a></td>
+
+</tr>
+
+</table>
+
+### Reuse and Maintenance Practices among Divergent Forks
+
+<table>
+
+<tr>
+<td>  
+	
+<p align="justify">
+
+With the rise of social coding platforms that rely on distributed version control systems, software reuse 
+is also on the rise. Many software developers leverage this reuse by creating variants through forking, 
+to account for different customer needs, markets, or environments. Forked variants then form a so-called 
+software family; they share a common code base and are maintained in parallel by same or different 
+developers. As such, software families can easily arise within software ecosystems, which are large 
+collections of interdependent software components maintained by communities of collaborating contributors. 
+However, little is known about the existence and characteristics of such families within ecosystems, 
+especially about their maintenance practices. Improving our empirical understanding of such families 
+will help build better tools for maintaining and evolving such families. We empirically explore 
+maintenance practices in such fork-based software families within ecosystems of open-source software. 
+Our focus is on three of the largest software ecosystems existence today: Android, .NET, and JavaScript. 
+We identify and analyze software families that are maintained together and that exist both on the official 
+distribution platform (Google play, nuget, and npm) as well as on GitHub , allowing us to analyze reuse 
+practices in depth. We mine and identify 38 software families, 526 software families, and 8,837 software 
+families from the ecosystems of Android, .NET, and JavaScript, to study their characteristics and 
+code-propagation practices. We provide scripts for analyzing code integration within our families. 
+Interestingly, our results show that there is little code integration across the studied software 
+families from the three ecosystems. Our studied families also show that techniques of direct integration 
+using git outside of GitHub is more commonly used than GitHub pull requests. Overall, we hope to raise 
+awareness about the existence of software families within larger ecosystems of software, calling for 
+further research and better tools support to effectively maintain and evolve them.
+</p>
+</td>
+	<td > <a href="/images/emse2020.jpeg" target="_blank"><img src="/images/emse2020.jpeg" alt="EMSE 2022" style="width:300px;height:127px;" align="right"></a></td>
+
+</tr>
+
+</table>
+
