@@ -11,12 +11,12 @@ The ACM Joint European Software Engineering Conference and Symposium on the Foun
 <a href="/../../files/FSE2022.pdf" target="_blank">[preprint]</a><br>
 
 **Reuse and maintenance practices among divergent forks in three software ecosystems**<br/>
-John Businge, Moses Openja, Sarah Nadi, Thorsten Berger
+John Businge, Moses Openja, Sarah Nadi, Thorsten Berger <br/>
 The Journal of Empirical Software Engineering (EMSE), 2022
 <a href="/../../files/EMSE2022.pdf" target="_blank">[preprint]</a><br>
 
 **Variant Forks - Motivations and Impediments**<br/>
-John Businge, Ahmed Zerouali, Alexandre Decan, Tom Mens, Serge Demeyer, Coen De Roover
+John Businge, Ahmed Zerouali, Alexandre Decan, Tom Mens, Serge Demeyer, Coen De Roover <br/>
 Proceedings of the 29th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 2022)
 <a href="/../../files/SANER2022.pdf" target="_blank">[preprint]</a><br>
 
