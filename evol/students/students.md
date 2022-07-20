@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Students
-permalink: /students/
+permalink: /evol/students/
 ---
 
 Graduate Students
