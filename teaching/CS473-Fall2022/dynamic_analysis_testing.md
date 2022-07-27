@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dynamic Analysis: Testing
-permalink: /teaching/CS473-Fall2022
+permalink: /teaching/CS473-Fall2022/
 ---
 
 <a><button name="button" style = "color: blue" onclick="_self">Introduction</button></a>
