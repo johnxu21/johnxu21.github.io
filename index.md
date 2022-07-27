@@ -4,7 +4,7 @@ layout: default
 
 # John Businge
 Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank"><img src="/images/john.jpeg" alt="John Businge" style="width:190px;height:190px;" align="right"></a> <br>
-University of Nevada, Las Vegas <br>
+University of Nevada, Las Vegas <br>[]()
 Office:  <br>
 <br>
 <em>Curriculum Vitae: </em><a href="/files/John_Businge_CV.pdf" target="_blank">PDF</a>  <small>(July, 2022)</small> <br>
@@ -33,8 +33,6 @@ More about my research can be found on the (<a href="https://johnxu21.github.io/
 <table>
 
 <tr>
-	<td width="75"><b>June, 2022</b></td>
-	<td> Our paper on PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family has accepted in FSE'22</td> 
-	</tr>
-
-</table>
+	<td width="75"><b>December, 2021</b></td>
+	<td> Our paper on Variant Forks - Motivations and Impediments has been accepted in SANER 2022 </td> 
+</tr></table>
