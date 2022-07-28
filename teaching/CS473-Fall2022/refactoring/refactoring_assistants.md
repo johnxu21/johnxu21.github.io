@@ -1,5 +1,5 @@
 ---
 layout: page
 title: Refactoring Assistants
-permalink: /teaching/CS473-Fall2022
+permalink: /teaching/CS473-Fall2022/refactoring/
 ---

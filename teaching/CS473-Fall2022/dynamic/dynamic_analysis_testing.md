@@ -1,5 +1,5 @@
 ---
 layout: page
 title: Dynamic Analysis: Testing
-permalink: /teaching/CS473-Fall2022/
+permalink: /teaching/CS473-Fall2022/dynamic/
 ---
