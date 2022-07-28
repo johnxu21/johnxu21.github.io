@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Refactoring Assistants
-permalink: /teaching/CS473-Fall2022/refactoring
+permalink: /teaching/CS473-Fall2022/refactoring/
 ---
 <form action="/teaching/CS473-Fall2022/">
     <input type="submit" style="background-color:black;color:white;width:170px;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software Integration
-permalink: /teaching/CS473-Fall2022/integration
+permalink: /teaching/CS473-Fall2022/integration/
 ---
 
 <form action="/teaching/CS473-Fall2022/">
