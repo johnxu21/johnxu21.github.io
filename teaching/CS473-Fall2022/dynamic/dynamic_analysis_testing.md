@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dynamic Analysis: Testing
-permalink: /teaching/CS473-Fall2022/dynamic/
+permalink: /teaching/CS473-Fall2022/dynamic
 ---
 <form action="/teaching/CS473-Fall2022/">
     <input type="submit" style="background-color:black;color:white;width:170px;
