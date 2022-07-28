@@ -255,3 +255,11 @@ ul.listing li.listing-item a {
 	font-family: 'Titillium Web', sans-serif;
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
