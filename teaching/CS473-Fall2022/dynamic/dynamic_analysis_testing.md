@@ -22,7 +22,7 @@ height:40px;" value="Software Integration" />
 </form>
 <form action="/teaching/CS473-Fall2022/dynamic/">
     <input type="submit" style="background-color:black;color:white;width:170px;
-height:40px;" value="Dynamic Analysis- Testing" />
+height:40px;" value="Dynamic Analysis: Testing" />
 </form>
 <form action="/teaching/CS473-Fall2022/msr/">
     <input type="submit" style="background-color:black;color:white;width:170px;
