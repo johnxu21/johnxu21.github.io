@@ -114,10 +114,10 @@ If everything was ok, then you should see step 2. Select "Gradle" on the build t
 
 **id "org.sonarqube" version "3.1.1"**
 
-Now you can use the terminal inside IntelliJ for the command given by SonarQube, place all in the same line (adapt the command accordingly for Windows):
+Now you can use the terminal inside IntelliJ for the command given by SonarQube, place all in the 
+same line (adapt the command accordingly for Windows):
 
-**./gradlew sonarqube -Dsonar.projectKey=jpacman  
-   -Dsonar.host.url=http://localhost:9000 -Dsonar.login=<generated token code>**
+**./gradlew sonarqube -Dsonar.projectKey=jpacman -Dsonar.host.url=http://localhost:9000 -Dsonar.login=[generated token code]**
 
 If you are having problems with the above command, try this one instead:
 
