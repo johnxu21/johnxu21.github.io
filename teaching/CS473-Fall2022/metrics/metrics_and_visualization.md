@@ -53,6 +53,7 @@ Materials & Tools Used for this Session
 * [JsCity](https://github.com/ASERG-UFMG/JSCity/wiki/JSCITY) is an implementation of CodeCity to analyze JavaScript code.
 <br/>
 
+
 Auxiliary Tools
 ============
 Auxiliary tools are not required for the lab session itself, but they may be useful to get additional information (or alternatives) on a project. Use them at your own discretion. 
