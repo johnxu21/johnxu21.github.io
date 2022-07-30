@@ -1,4 +1,4 @@
-`---
+---
 layout: page
 title: Refactoring Assistants
 permalink: /teaching/CS473-Fall2022/refactoring/
@@ -12,7 +12,7 @@ height:40px;" value="Course Overview" />
 height:40px;" value="Metrics and Visualization" />
 </form>
 <form action="/teaching/CS473-Fall2022/refactoring/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Refactoring Assistants" />
 </form>
 <form action="/teaching/CS473-Fall2022/integration/">
@@ -99,7 +99,7 @@ Inside the bin folder of SonarQube, you will find specific folders for each majo
 
 Now you can start the SonarQube using the command:
 
-**[ Linux / Mac ] ./sonar.sh console** <br>
+**[Linux/Mac] ./sonar.sh console** <br>
 **[ Windows ] StartSonar.bat**
 
 If you are having problems, please check the [SonarQube Documentation](https://docs.sonarqube.org/latest/) (here is the Getting [Started guide](https://docs.sonarqube.org/latest/setup/get-started-2-minutes/)). If everything went ok, then you should see in your terminal a message like "<date> INFO yyy [ xxxx ] SonarQube is up" (it may take some time). Now open your browser and type the following address on it:
