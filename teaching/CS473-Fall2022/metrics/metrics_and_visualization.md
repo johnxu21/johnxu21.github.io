@@ -36,7 +36,6 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
-<p align="justify">
 The purpose of these exercises is to stimulate discussion about the properties of a well-structured 
 object-oriented design. This session is to provide you the first contact with tools in the lab. 
 The tasks and assignments are designed to stimulate your comprehension of the topic and the tools. 
@@ -64,35 +63,27 @@ Auxiliary tools are not required for the lab session itself, but they may be use
 
 Setup / Preparation
 =============
-<p align="justify">
 
 First, make sure to fork the JPacman from the [Prof's repository](https://github.com/johnxu21/jpacman) into your GitHub account. It is necessary to fork the project because the free version of CodeScene can only see projects from your own account.
 
-<p align="justify">
 
 Second, go into CodeScene, and click on the "Login" menu (top-right corner). You can choose the option "Login with Github" at the bottom of that page. Once logged in, you can choose to create a new project, where CodeScene will show all the GitHub projects in your account. Select JPacman and go do the next part until it finishes (it might take a while, depending on the project). 
 
-<p align="justify">
 
 Download/Clone the JPacman project and open it on IntelliJ; build it. JPacman uses Gradle as a built/dependency manager. Make sure you can build and run it before doing any source code modification. Since this lecturer is all about visualization, we will not make any changes to the code. But you may need that on future lessons.
 
-<p align="justify">
 
 Also if have not already, download the book for this course "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)" (Note: OORP, p.xx refers to a page in the pdf version of this book)
 <br/>
 
 Task 1: Introduction (React)
 ============
-<p align="justify">
 This first task has two goals: (i) to help familiarize yourself with the CodeScene interface; and (ii) to observe that not every visualization is useful for refactoring.
 
-<p align="justify">
 Visit the CodeScene website and click at the Showcases. These are examples (from a full version of CodeScene and not only the free version we are using) of projects analyzed by CodeScene. Select the React project.
 
-<p align="justify">
 Visit the JsCity website and look at the examples. You may want to select a simple example first to get acquainted. But after that, also select the "React" project to visualize (and be patient because it may take a while). 
 
-<p align="justify">
 What did you think of these visualization tools? Can you extract important information about the visualized project from them? Which visualization would be more useful to plan refactoring activities?
 <br/>
 
