@@ -17,7 +17,7 @@ height:40px;" value="Metrics and Visualization" />
 height:40px;" value="Refactoring Assistants" />
 </form>
 <form action="/teaching/CS473-Fall2022/integration/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Software Integration" />
 </form>
 <form action="/teaching/CS473-Fall2022/dynamic/">

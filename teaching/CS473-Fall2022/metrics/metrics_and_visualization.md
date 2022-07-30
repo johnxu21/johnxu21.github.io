@@ -9,7 +9,7 @@ permalink: /teaching/CS473-Fall2022/metrics/
 height:40px;" value="Course Overview" />
 </form>
 <form action="/teaching/CS473-Fall2022/metrics/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Metrics and Visualization" />
 </form>
 <form action="/teaching/CS473-Fall2022/refactoring/">

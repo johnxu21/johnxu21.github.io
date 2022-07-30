@@ -29,7 +29,7 @@ height:40px;" value="Dynamic Analysis: Testing" />
 height:40px;" value="Mining Software Repositories" />
 </form>
 <form action="/teaching/CS473-Fall2022/project/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Reengineering Project" />
 </form>
 
