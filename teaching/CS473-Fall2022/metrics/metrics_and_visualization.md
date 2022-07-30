@@ -36,6 +36,7 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
+<align="justify">
 The purpose of these exercises is to stimulate discussion about the properties of a well-structured 
 object-oriented design. This session is to provide you the first contact with tools in the lab. 
 The tasks and assignments are designed to stimulate your comprehension of the topic and the tools. 
