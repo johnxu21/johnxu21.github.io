@@ -90,13 +90,10 @@ What did you think of these visualization tools? Can you extract important infor
 Task 2: JPacman -- Hands-on
 ===============
 
-<p align="justify">
 For the second task, the goal is to start getting acquainted with the JPacman source code. Download/clone the repository and run the application. Now look at the source code and try to understand its internal structure. In the "docs/uml" folder there are two simplified UML diagrams.
 
-<p align="justify">
 As stated in the book (OORP, p.36), this is your "First Contact" with the software that needs reengineering activities. As often we ask ourselves "Where do I start?" (OORP, p.37).
 
-<p align="justify">
 
 Well, JPacman is a java implementation that is supposed to replicate the original [Pacman Game](https://en.wikipedia.org/wiki/Pac-Man). What features are missing in Jpacman (compared to the original)?
 
@@ -105,17 +102,13 @@ Is it possible to implement those features right now; or should we reengineer th
 
 Task 3: JPacman -- Visualization tool
 ===================
-<p align="justify">
 The third task is to use our visualization tool of choice (CodeScene) to identify possible reengineering targets. Since we already had the "First Contact", now we should move to the "Initial Understanding" (OORP, p.83) of the system. One important reengineering pattern is to Study the Exception Entities (OORP, p.107).
 
-<p align="justify">
 Using CodeScene, can you identify artifacts that appear to be out of place? Could they benefit from refactoring activities? How is the complexity measurements for such artifacts compared to others?
 <br/>
 
 Discussions and Conclusion 
 ============
-<p align="justify">
 We have used metrics and visualization for the Initial Understanding, thereby demonstrating their potential support to the reengineering process.
  
-<p align="justify">
 Did the metrics and visualization tools used in this lab session provide you with the information you needed to fulfill the goals of the different Reengineering Patterns? Set up an argument about the issues concerning the use of such tools: when would you use them, when wouldn’t you? Can you envision other usages of these tools in other phases in the Reengineering Lifecycle?
