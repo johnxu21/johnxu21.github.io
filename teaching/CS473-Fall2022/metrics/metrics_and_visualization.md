@@ -36,7 +36,8 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
-<align="justify">
+<p align="justify"/>
+
 The purpose of these exercises is to stimulate discussion about the properties of a well-structured 
 object-oriented design. This session is to provide you the first contact with tools in the lab. 
 The tasks and assignments are designed to stimulate your comprehension of the topic and the tools. 
@@ -50,7 +51,7 @@ Materials & Tools Used for this Session
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [CodeScene](https://codescene.com/) - **no** installation necessary, but it requires a GitHub account. This tool integration with GitHub allows it to visualize your repositories.
 * [JsCity](https://github.com/ASERG-UFMG/JSCity/wiki/JSCITY) is an implementation of CodeCity to analyze JavaScript code.
-<br/
+<br/>
 
 Auxiliary Tools
 ============
