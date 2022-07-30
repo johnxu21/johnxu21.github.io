@@ -89,16 +89,15 @@ What did you think of these visualization tools? Can you extract important infor
 
 Task 2: JPacman -- Hands-on
 ===============
-
 For the second task, the goal is to start getting acquainted with the JPacman source code. Download/clone the repository and run the application. Now look at the source code and try to understand its internal structure. In the "docs/uml" folder there are two simplified UML diagrams.
 
 As stated in the book (OORP, p.36), this is your "First Contact" with the software that needs reengineering activities. As often we ask ourselves "Where do I start?" (OORP, p.37).
-
 
 Well, JPacman is a java implementation that is supposed to replicate the original [Pacman Game](https://en.wikipedia.org/wiki/Pac-Man). What features are missing in Jpacman (compared to the original)?
 
 Is it possible to implement those features right now; or should we reengineer the project to make it easier to add the new features? The last question is rhetorical for this task, but you should think about it when doing a reengineering project. 
 <br/>
+
 
 Task 3: JPacman -- Visualization tool
 ===================
@@ -106,6 +105,7 @@ The third task is to use our visualization tool of choice (CodeScene) to identif
 
 Using CodeScene, can you identify artifacts that appear to be out of place? Could they benefit from refactoring activities? How is the complexity measurements for such artifacts compared to others?
 <br/>
+
 
 Discussions and Conclusion 
 ============
