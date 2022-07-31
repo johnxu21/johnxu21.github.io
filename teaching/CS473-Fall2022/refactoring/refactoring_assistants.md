@@ -177,11 +177,11 @@ For this optional task, you should apply the planned refactorings from the last 
 Setup / Preparation - (Refactoring aware)
 =============
 
-Clone & own the [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the sources directly into Intellij.
+Clone&own [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the sources directly into Intellij.
 
 In order to build the project, run ./gradlew jar (or gradlew jar, in Windows) in the project's root directory. Alternatively, you can generate a complete distribution zip including all runtime dependencies running ./gradlew distZip.
 
-Create a file named "Main.java" or any name of your choice under the subdirectory scr/org/refactoringminer/Main.java and copy&paste the following code snippet into the file.
+Create a file named "Main.java" or any name of your choice under the subdirectory scr/org/refactoringminer/Main.java and copy&paste the following code snippet into the file.  Run the Main.java file.
 
 ```java
 public class Main {
@@ -209,8 +209,8 @@ public class Main {
                     System.out.println("Refactorings at " + commitId);
                     for (Refactoring ref : refactorings) {
                         System.out.println(ref.toString());
-                        System.out.println(ref.rightSide().toString());
                         System.out.println(ref.leftSide().toString());
+                        System.out.println(ref.rightSide().toString());
                     }
                 }
         });
@@ -218,5 +218,5 @@ public class Main {
 }
 ```
 
-
-
+In the above task we want to examine the refactorings that have been applied to the repository [apache/kafka](https://github.com/apache/kafka)
+at pull request [8417](https://github.com/apache/kafka/pull/8417).
