@@ -64,8 +64,8 @@ Materials & Tools Used for this Session
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [CodeScene](https://codescene.com/) - **no** installation necessary, but it requires a GitHub account. This tool integration with GitHub allows it to visualize your repositories. The Technical Debt part show refactoring targets. The Code Biomarkers show a more detailed analysis of smells but it is only available to paid subscribers.
-* [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) is a Refactoring-aware API/tool that detects the history of refactorings applied to a project.
 * [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition. 
+* [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) is a Refactoring-aware API/tool that detects the history of refactorings applied to a project.
 
 <br/>
 
@@ -174,6 +174,50 @@ Optional Task  1 -- JPacman Strategic Refactoring (part 2)
 For this optional task, you should apply the planned refactorings from the last task on the source code. Remember to assure that your refactorings are not breaking the application.
 
 
-Setup / Preparation - (Artifacts have been refactored)
+Setup / Preparation - (Refactoring aware)
 =============
+
+Clone & own the [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the sources directly into Intellij.
+
+In order to build the project, run ./gradlew jar (or gradlew jar, in Windows) in the project's root directory. Alternatively, you can generate a complete distribution zip including all runtime dependencies running ./gradlew distZip.
+
+Create a file named "Main.java" or any name of your choice under the subdirectory scr/org/refactoringminer/Main.java and copy&paste the following code snippet into the file.
+
+```java
+public class Main {
+    public static void main(String[] args) throws Exception {
+        GitService gitService = new GitServiceImpl();
+        GitHistoryRefactoringMiner miner = new GitHistoryRefactoringMinerImpl();
+        ExtractOperationRefactoring extract = null;
+
+        List<CodeRange> sourceCodeRanges = null;
+        List<CodeRange> destCodeRanges = null;
+
+        // pull request 8417
+        // repo - apache/kafka
+        Repository repo = gitService.cloneIfNotExists(
+                "tmp/kafka-8417",
+                "https://github.com/apache/kafka.git");
+
+        // start commit: fc05bdae617332f2f6792f7a394459ad26a40941
+        // end commit: dc52740ff70d790bdc2927a6000ef45b682e119f
+        miner.detectBetweenCommits(repo,
+                "406635bcc9f2a4c439d198ea0549170de331323c", "c75dc5e2e09cee4ba47a9b6c484cb225acdb086e",
+            new RefactoringHandler() {
+                @Override
+                public void handle(String commitId, List<Refactoring> refactorings) {
+                    System.out.println("Refactorings at " + commitId);
+                    for (Refactoring ref : refactorings) {
+                        System.out.println(ref.toString());
+                        System.out.println(ref.getName());
+                        System.out.println(ref.rightSide().toString());
+                        System.out.println(ref.leftSide().toString());
+                    }
+                }
+        });
+    }
+}
+```
+
+
 
