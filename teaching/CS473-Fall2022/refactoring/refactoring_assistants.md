@@ -209,7 +209,6 @@ public class Main {
                     System.out.println("Refactorings at " + commitId);
                     for (Refactoring ref : refactorings) {
                         System.out.println(ref.toString());
-                        System.out.println(ref.getName());
                         System.out.println(ref.rightSide().toString());
                         System.out.println(ref.leftSide().toString());
                     }
