@@ -35,3 +35,18 @@ height:40px;" value="Reengineering Project" />
 
 <br/>
 <br/>
+
+Version control systems (VCSs), which keep track of the software development history, have become an essential 
+component of modern software development. With the increase of distributed software development, additional 
+coordination tools and processes to facilitate collaboration between team members who may be working on different 
+tasks have been introduced. For example, large software systems commonly make use of branching in distributed 
+version control systems. Developers typically follow a branch-based development approach, where new features or bug 
+fixes are developed in separate branches before being integrated into the master branch, or another stable branch
+
+While branching (or forking where the developer may make a tracked copy of the work in a separate repository 
+has several advantages such as allowing better separation of concerns and enabling parallel development
+, it still comes at the cost of integration challenges. Once a developer has completed the intended work in a 
+given branch, they need to merge their changes with the rest of the team’s work. At this point, merge conflicts 
+may arise, because of inconsistent changes to the code. Previous studies have shown that up to 16% of merge 
+scenarios lead to conflicts. Developers have to resolve such conflicts before proceeding, which wastes their 
+time and distracts them from their main tasks.

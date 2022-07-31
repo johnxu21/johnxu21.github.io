@@ -35,9 +35,26 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
-In this session, we will learn about some different tools available for refactoring assistance. By using tools, we can plan ahead the refactorings activities that could improve our design. We will search for bad smells (symptoms of design problems) that give us hints on where and how to refactor. When planning refactoring activities, keep in mind the pattern "Keep it Simple" (OORP, p.37), as it a common mistake for people to over-complicate the design of a refactored artifact. Another important pattern to remember when refactorings is “Most Valuable First” (OORP, p.29), as in you should prioritize the refactorings that bring more benefits first.
+In this session, we will learn about some different tools available for refactoring assistance. 
+By using tools, we can plan ahead the refactorings activities that could improve our design. 
+We will search for bad smells (symptoms of design problems) that give us hints on where and how 
+to refactor. When planning refactoring activities, keep in mind the pattern "Keep it Simple" 
+(OORP, p.37), as it a common mistake for people to over-complicate the design of a refactored 
+artifact. Another important pattern to remember when refactorings is “Most Valuable First” 
+(OORP, p.29), as in you should prioritize the refactorings that bring more benefits first.
 
-During this session, we will perform simple refactoring tasks. However, it is important to remember that for the Course we focus on Strategic Refactoring, i.e., we should refactor with a clear reason or goal in mind. 
+Despite the benefits, in some contexts, refactoring is perceived as change noise, which makes more 
+difficult the completion of various software evolution related tasks. For instance, refactoring 
+operations can cause merge conflicts when merging development branches (we shall look this in detail in 
+Lab of [software integration](/teaching/CS473-Fall2022/integration/)).
+distract developers when reviewing behavior-altering changes, make bug-inducing analysis algorithms
+to erroneously flag behavior-preserving changes (i.e., refactorings) as bug-introducing, 
+cause breaking changes to clients of libraries and frameworks, cause unnecessary test executions 
+for behavior-preserving changes.
+
+During this session, we will perform simple refactoring tasks. However, it is important to remember 
+that for the Course we focus on Strategic Refactoring, i.e., we should refactor with a clear 
+reason or goal in mind. 
 <br/>
 
 
@@ -47,7 +64,7 @@ Materials & Tools Used for this Session
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [CodeScene](https://codescene.com/) - **no** installation necessary, but it requires a GitHub account. This tool integration with GitHub allows it to visualize your repositories. The Technical Debt part show refactoring targets. The Code Biomarkers show a more detailed analysis of smells but it is only available to paid subscribers.
-* [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) is an API/tool that detects the history of refactorings applied to a project.
+* [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) is a Refactoring-aware API/tool that detects the history of refactorings applied to a project.
 * [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition. 
 
 <br/>
@@ -62,7 +79,7 @@ Auxiliary tools are not required for the lab session itself, but they may be use
 
 <br/>
 
-Setup / Preparation
+Setup / Preparation - (Artifacts that need refactoring)
 =============
 Be sure to follow the setup from the first session ([Metrics and Visualization Lab Session](/teaching/CS473-Fall2022/metrics/)) if you had not done so (summarizing it would be: 
 (i) install IntelliJ, (ii) fork JPacman repository, (iii) build & run JPacman). 
@@ -155,4 +172,8 @@ Optional Task  1 -- JPacman Strategic Refactoring (part 2)
 ===========
 
 For this optional task, you should apply the planned refactorings from the last task on the source code. Remember to assure that your refactorings are not breaking the application.
+
+
+Setup / Preparation - (Artifacts have been refactored)
+=============
 
