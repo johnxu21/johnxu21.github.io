@@ -255,3 +255,14 @@ In the above task we want to look at the code ranges of the refactoring operatio
 
 Try out the different API usage guidelines mentioned on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) page.
 
+Additional Reading Material
+=============
+
+In case you want to dive deeper into refactoring, here are some extra materials about it.
+
+* M. Fowler, K. Beck, J. Brant, W. Opdyke, and D. Roberts. Refactoring: Improving the Design of Existing Code. Object Technology Series. Addison-Wesley, 1 edition, June 1999.
+* M. Lanza and R. Marinescu. Object-Oriented Metrics in Practice - Using Software Metrics to Characterize, Evaluate, and Improve the Design of Object-Oriented Systems. Springer, 2006.
+* M. Fowler and J. Kerievsky. Smells to refactorings quick reference guide. reference sheet, 2005.: http://www.industriallogic.com/blog/smells-to-refactorings-cheatsheet/
+* F. Khomh, M. D. Penta, Y.-G. Guéhéneuc, and G. Antoniol. An exploratory study of the impact of antipatterns on class change- and fault-proneness. Empirical Softw. Engg., 17(3):243–275, June 2012. http://link.springer.com/article/10.1007%2Fs10664-011-9171-y
+* Nikolaos Tsantalis, IEEE, Ameya Ketkar, and Danny Dig, [Refactoring 2.0](https://users.encs.concordia.ca/~nikolaos/publications/TSE_2020.pdf). 2020
+

@@ -50,3 +50,11 @@ given branch, they need to merge their changes with the rest of the team’s wor
 may arise, because of inconsistent changes to the code. Previous studies have shown that up to 16% of merge 
 scenarios lead to conflicts. Developers have to resolve such conflicts before proceeding, which wastes their 
 time and distracts them from their main tasks.
+
+Materials & Tools Used for this Session
+========
+* Lecture sides [here]()
+* [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
+* [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
+* [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation)
+
