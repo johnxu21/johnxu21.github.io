@@ -89,7 +89,7 @@ Scan through the code and understand how these different refactoring aware opera
 3. Detecting refactorings
 4. Detecting refactorings in the conflicting region
 
-The above steps are explained in detail in **Section 3: Methodology** of the paper [REFMERGE: REFACTORING-AWARE OPERATIONBASED MERGING](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8668012&tag=1)
+The above steps are explained in detail in **Section 3: Methodology** of the paper [Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8668012&tag=1)
 
 You could also export the sql structure from the database and reverse engineer the ER diagram. Understand how the different tables are interconnected 
 
