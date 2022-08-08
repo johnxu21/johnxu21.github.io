@@ -1,0 +1,3 @@
+https://github.com/objectify/objectify
+https://github.com/SpongePowered/Granite
+https://github.com/PaNaVTEC/Clean-Contacts

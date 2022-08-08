@@ -176,6 +176,12 @@ For this optional task, you should apply the planned refactorings from the last 
 
 Setup / Preparation - (Refactoring aware)
 =============
+RefactoringMiner is a library/API written in Java that can detect refactorings applied in the history of a Java project.
+
+Currently, it supports the detection of the more than 80 refactorings
+
+Task 1
+===========
 
 Clone&own [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the sources directly into Intellij.
 
@@ -250,10 +256,13 @@ public class Main {
 ```
 
 
-
 In the above task we want to look at the code ranges of the refactoring operations. In the project we shall mainly analyze refactoring operations between commits. You can try out the different refactorings
 
 Try out the different API usage guidelines mentioned on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) page.
+
+Task 2
+==========
+Scan through the code and understand how the different refactorings are detected.
 
 Additional Reading Material
 =============

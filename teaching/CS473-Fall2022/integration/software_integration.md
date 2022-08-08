@@ -58,3 +58,57 @@ Materials & Tools Used for this Session
 * [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
 * [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation)
 
+
+Setup / Preparation
+===============
+In this lab you will play with two very related tools: [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation)
+
+Task 1 - Refactorings in Merge Commits
+============
+In this task you will try to understand [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)  analyzes merge commits in git repositries and determines whether refactoring changes are to blame for the conflicts.
+Prepare the tool environment according to the system requirements of the tool located on the [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md) file. 
+
+* Linux or macOS
+* git
+* Java 11. If you have more than one Java version on your machine, you can run this command on the terminal inside Intellij **export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home**
+* MySQL 5.7
+* I would recommend installing phpMyAdmin to help with running SQL queries. You can install it using **brew install --cask xampp**
+
+
+**Running the JAR file** <br/>
+
+java -jar refactoring-analysis.jar -r list.txt -c downloadedRepos -d mydb.properties -p 8 <br/>
+
+Download the like [list.txt](../../../files/list.txt) and use it instead of the default reposList.txt
+
+Task 1.2
+===========
+Scan through the code and understand how these different refactoring aware operations are implemented:
+1. Detecting conflicting regions
+2. Detecting evolutionary changes
+3. Detecting refactorings
+4. Detecting refactorings in the conflicting region
+
+The above steps are explained in detail in **Section 3: Methodology** of the paper [REFMERGE: REFACTORING-AWARE OPERATIONBASED MERGING](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8668012&tag=1)
+
+You could also export the sql structure from the database and reverse engineer the ER diagram. Understand how the different tables are interconnected 
+
+Task 2
+======
+[Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) is a robust project comprising of two tools RefMerge and an Evaluation tool. 
+ We are only interested [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) that is performs refactoring-aware merging operations.
+[Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) will be used in the final project, take time to understand how it is implemented. 
+
+
+Task 2.1
+==========
+Scan through the code and understand how the following refactoring-aware operations are implemented
+1. Detect and Simplify Refactorings
+2. Invert refactorings
+3. Merge (In the [Project](/teaching/CS473-Fall2022/project/) the command **git merge** will be replaced with **git cherry-pick**)
+4. Detect Refactoring Conflicts
+5. Replay Refactorings
+
+The above steps are described in detail in the paper: **Section 3 - REFMERGE: REFACTORING-AWARE OPERATION BASED MERGING** of the paper [A Systematic Comparison of Two Refactoring-aware Merging Techniques](https://arxiv.org/pdf/2112.10370.pdf)
+
+
