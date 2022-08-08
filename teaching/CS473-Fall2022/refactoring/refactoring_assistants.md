@@ -179,7 +179,7 @@ Setup / Preparation - (Refactoring aware)
 
 Clone&own [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the sources directly into Intellij.
 
-In order to build the project, run ./gradlew jar (or gradlew jar, in Windows) in the project's root directory. Alternatively, you can generate a complete distribution zip including all runtime dependencies running ./gradlew distZip.
+You can follow the instructions on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) of the project.
 
 Create a file named "Main.java" or any name of your choice under the subdirectory scr/org/refactoringminer/Main.java and copy&paste the following code snippet into the file.  Run the Main.java file.
 
@@ -188,29 +188,60 @@ public class Main {
     public static void main(String[] args) throws Exception {
         GitService gitService = new GitServiceImpl();
         GitHistoryRefactoringMiner miner = new GitHistoryRefactoringMinerImpl();
-        ExtractOperationRefactoring extract = null;
 
-        List<CodeRange> sourceCodeRanges = null;
-        List<CodeRange> destCodeRanges = null;
+        final List<CodeRange>[] sourceCodeRanges = new List[]{new ArrayList<CodeRange>()};
+        final List<CodeRange>[] destCodeRanges = new List[]{new ArrayList<CodeRange>()};
 
-        // pull request 8417
-        // repo - apache/kafka
+        
+        // change the temporary folder in case you are examining a different repository
         Repository repo = gitService.cloneIfNotExists(
-                "tmp/kafka-8417",
-                "https://github.com/apache/kafka.git");
+                "tmp/refactoring-toy-example",
+                "https://github.com/danilofes/refactoring-toy-example.git");
 
-        // start commit: fc05bdae617332f2f6792f7a394459ad26a40941
-        // end commit: dc52740ff70d790bdc2927a6000ef45b682e119f
+        // start commit: 819b202bfb09d4142dece04d4039f1708735019b
+        // end commit: d4bce13a443cf12da40a77c16c1e591f4f985b47
         miner.detectBetweenCommits(repo,
-                "406635bcc9f2a4c439d198ea0549170de331323c", "c75dc5e2e09cee4ba47a9b6c484cb225acdb086e",
+                "819b202bfb09d4142dece04d4039f1708735019b", "d4bce13a443cf12da40a77c16c1e591f4f985b47",
             new RefactoringHandler() {
                 @Override
                 public void handle(String commitId, List<Refactoring> refactorings) {
                     System.out.println("Refactorings at " + commitId);
                     for (Refactoring ref : refactorings) {
                         System.out.println(ref.toString());
-                        System.out.println(ref.leftSide().toString());
-                        System.out.println(ref.rightSide().toString());
+                        System.out.println(ref.getName());
+                        sourceCodeRanges[0] = ref.leftSide();
+                        destCodeRanges[0] = ref.rightSide();
+//                        System.out.println(sourceCodeRanges[0].toString());
+//                        System.out.println(destCodeRanges[0].toString());
+                        System.out.println();
+
+                        System.out.println("SourceCodeRanges");
+                        for(CodeRange srcCodeRange: sourceCodeRanges[0]){
+                            System.out.println("FilePath: " + srcCodeRange.getFilePath());
+                            System.out.println("StartLine : " + srcCodeRange.getStartLine());
+                            System.out.println("EndLine : " + srcCodeRange.getEndLine());
+                            System.out.println("StartColumn : " + srcCodeRange.getStartColumn());
+                            System.out.println("EndColumn : " + srcCodeRange.getEndColumn());
+                            System.out.println("codeElementType : " + srcCodeRange.getCodeElementType());
+                            System.out.println("Description : " + srcCodeRange.getDescription());
+                            System.out.println("codeElement : " + srcCodeRange.getCodeElement());
+
+                        }
+
+                        System.out.println();
+                        System.out.println("DestinationCodeRanges");
+                        for(CodeRange destCodeRange: destCodeRanges[0]){
+                            System.out.println("FilePath: " + destCodeRange.getFilePath());
+                            System.out.println("StartLine : " + destCodeRange.getStartLine());
+                            System.out.println("EndLine : " + destCodeRange.getEndLine());
+                            System.out.println("StartColumn : " + destCodeRange.getStartColumn());
+                            System.out.println("EndColumn : " + destCodeRange.getEndColumn());
+                            System.out.println("codeElementType : " + destCodeRange.getCodeElementType());
+                            System.out.println("Description : " + destCodeRange.getDescription());
+                            System.out.println("codeElement : " + destCodeRange.getCodeElement());
+
+                        }
+
                     }
                 }
         });
@@ -218,5 +249,9 @@ public class Main {
 }
 ```
 
-In the above task we want to examine the refactorings that have been applied to the repository [apache/kafka](https://github.com/apache/kafka)
-at pull request [8417](https://github.com/apache/kafka/pull/8417).
+
+
+In the above task we want to look at the code ranges of the refactoring operations. In the project we shall mainly analyze refactoring operations between commits. You can try out the different refactorings
+
+Try out the different API usage guidelines mentioned on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) page.
+
