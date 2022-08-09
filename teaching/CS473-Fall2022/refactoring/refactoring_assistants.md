@@ -281,7 +281,8 @@ Task 2
 ==========
 Scan through the code and understand how the different refactorings are detected (First Contact - Readall the Code in One Hour OORP, p.53).
 Note down the entities which seem important (i.e., classes, packages, ···). This step will help you during the [Project](/teaching/CS473-Fall2022/project/).
-**Intent Assess** the state of a software system by means of a brief, but intensive code review.
+
+"**Intent:** Assess the state of a software system by means of a brief, but intensive code review."
 
 Additional Reading Material
 =============
