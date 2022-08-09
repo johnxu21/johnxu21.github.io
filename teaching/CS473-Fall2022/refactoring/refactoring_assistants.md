@@ -185,7 +185,7 @@ Task 1
 
 Clone&own [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the sources directly into Intellij.
 
-You can follow the instructions on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) of the project.
+You can follow the instructions on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) of the project (First contact: Skim the Documentation OORP p. 61).
 
 Create a file named "Main.java" or any name of your choice under the subdirectory scr/org/refactoringminer/Main.java and copy&paste the following code snippet into the file.  Run the Main.java file.
 
@@ -256,22 +256,41 @@ public class Main {
 ```
 
 
-In the above task we want to look at the code ranges of the refactoring operations. In the project we shall mainly analyze refactoring operations between commits. You can try out the different refactorings
+In the above task we want to look at the code ranges of the refactoring operations. In the project we shall mainly analyze refactoring operations in commits of a pull request. 
+You can try to identify the refactorings operations applied in the project [kafka](https://github.com/apache/kafka) at pull request numbers 8905
+8716, 8720, 8571, 8417. <br/>
+
+```java
+GitHistoryRefactoringMiner miner = new GitHistoryRefactoringMinerImpl();
+miner.detectAtPullRequest("https://github.com/apache/drill.git", 1807, new RefactoringHandler() {
+  @Override
+  public void handle(String commitId, List<Refactoring> refactorings) {
+    System.out.println("Refactorings at " + commitId);
+    for (Refactoring ref : refactorings) {
+      System.out.println(ref.toString());
+    }
+  }
+}, 10);
+```
+
+**QN: What are the most common refactorings operations present in these pull requests?**
 
 Try out the different API usage guidelines mentioned on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) page.
 
 Task 2
 ==========
-Scan through the code and understand how the different refactorings are detected.
+Scan through the code and understand how the different refactorings are detected (First Contact - Readall the Code in One Hour OORP, p.53).
+Note down the entities which seem important (i.e., classes, packages, ···). This step will help you during the [Project](/teaching/CS473-Fall2022/project/).
+**Intent Assess** the state of a software system by means of a brief, but intensive code review.
 
 Additional Reading Material
 =============
 
 In case you want to dive deeper into refactoring, here are some extra materials about it.
 
-* M. Fowler, K. Beck, J. Brant, W. Opdyke, and D. Roberts. Refactoring: Improving the Design of Existing Code. Object Technology Series. Addison-Wesley, 1 edition, June 1999.
-* M. Lanza and R. Marinescu. Object-Oriented Metrics in Practice - Using Software Metrics to Characterize, Evaluate, and Improve the Design of Object-Oriented Systems. Springer, 2006.
-* M. Fowler and J. Kerievsky. Smells to refactorings quick reference guide. reference sheet, 2005.: http://www.industriallogic.com/blog/smells-to-refactorings-cheatsheet/
-* F. Khomh, M. D. Penta, Y.-G. Guéhéneuc, and G. Antoniol. An exploratory study of the impact of antipatterns on class change- and fault-proneness. Empirical Softw. Engg., 17(3):243–275, June 2012. http://link.springer.com/article/10.1007%2Fs10664-011-9171-y
-* Nikolaos Tsantalis, IEEE, Ameya Ketkar, and Danny Dig, [Refactoring 2.0](https://users.encs.concordia.ca/~nikolaos/publications/TSE_2020.pdf). 2020
+1. M. Fowler, K. Beck, J. Brant, W. Opdyke, and D. Roberts. Refactoring: Improving the Design of Existing Code. Object Technology Series. Addison-Wesley, 1 edition, June 1999.
+2. M. Lanza and R. Marinescu. Object-Oriented Metrics in Practice - Using Software Metrics to Characterize, Evaluate, and Improve the Design of Object-Oriented Systems. Springer, 2006.
+3. M. Fowler and J. Kerievsky. Smells to refactorings quick reference guide. reference sheet, 2005.: http://www.industriallogic.com/blog/smells-to-refactorings-cheatsheet/
+4. F. Khomh, M. D. Penta, Y.-G. Guéhéneuc, and G. Antoniol. An exploratory study of the impact of antipatterns on class change- and fault-proneness. Empirical Softw. Engg., 17(3):243–275, June 2012. http://link.springer.com/article/10.1007%2Fs10664-011-9171-y
+5. Nikolaos Tsantalis, IEEE, Ameya Ketkar, and Danny Dig, [Refactoring 2.0](https://users.encs.concordia.ca/~nikolaos/publications/TSE_2020.pdf). 2020
 

@@ -93,6 +93,13 @@ The above steps are explained in detail in **Section 3: Methodology** of the pap
 
 You could also export the sql structure from the database and reverse engineer the ER diagram. Understand how the different tables are interconnected 
 
+Task 1.2 - Optional
+=================
+Looking at the tool [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) we can see that only a subset of the refactoring operations mentioned in the Readme.md of tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)
+have been implemented. Extend [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) with a set of more refactoring operations. Write and run tests to ensure that they have been well implemented.
+
+**Note:** [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) implements refactoring operations of  [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) version 2.1.0. Some on the new refactorings are only present in later versions of the tool.
+
 Task 2
 ======
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) is a robust project comprising of two tools RefMerge and an Evaluation tool. 
@@ -100,9 +107,11 @@ Task 2
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) will be used in the final project, take time to understand how it is implemented. 
 
 
+
+
 Task 2.1
 ==========
-Scan through the code and understand how the following refactoring-aware operations are implemented
+Scan through the code and understand how the following refactoring-aware operations are implemented (First Contact - Readall the Code in One Hour OORP, p.53).
 1. Detect and Simplify Refactorings
 2. Invert refactorings
 3. Merge (In the [Project](/teaching/CS473-Fall2022/project/) the command **git merge** will be replaced with **git cherry-pick**)
