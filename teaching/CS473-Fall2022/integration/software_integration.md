@@ -106,10 +106,15 @@ Task 2
  We are only interested [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) that is performs refactoring-aware merging operations.
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) will be used in the final project, take time to understand how it is implemented. 
 
+Task 2.1 - Optional
+=================
+Looking at the tool [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) we can see that only a subset of the refactoring operations mentioned in the Readme.md of tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)
+have been implemented. Extend [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) with a set of more refactoring operations. Write and run tests to ensure that they have been well implemented.
+
+**Note**: Although Task 2.1 is **optional** here, in the final report it is a **Required task**.
 
 
-
-Task 2.1
+Task 2.
 ==========
 Scan through the code and understand how the following refactoring-aware operations are implemented (First Contact - Readall the Code in One Hour OORP, p.53).
 1. Detect and Simplify Refactorings
