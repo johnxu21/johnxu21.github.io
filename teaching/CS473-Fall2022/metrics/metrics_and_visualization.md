@@ -83,9 +83,9 @@ Task 1: Introduction (React)
 ============
 This first task has two goals: (i) to help familiarize yourself with the CodeScene interface; and (ii) to observe that not every visualization is useful for refactoring.
 
-Visit the CodeScene website and click at the Showcases. These are examples (from a full version of CodeScene and not only the free version we are using) of projects analyzed by CodeScene. Select the React project.
+Visit the [CodeScene](https://codescene.com/) website and click at the Showcases. These are examples (from a full version of CodeScene and not only the free version we are using) of projects analyzed by CodeScene. Select the React project and look at the visuals presented.
 
-Visit the JsCity website and look at the examples. You may want to select a simple example first to get acquainted. But after that, also select the "React" project to visualize (and be patient because it may take a while). 
+Visit the [JsCity](https://github.com/ASERG-UFMG/JSCity/wiki/JSCITY) website and look at the examples. You may want to select a simple example first to get acquainted. But after that, also select the "React" project to visualize (and be patient because it may take a while). 
 
 What did you think of these visualization tools? Can you extract important information about the visualized project from them? Which visualization would be more useful to plan refactoring activities?
 <br/>

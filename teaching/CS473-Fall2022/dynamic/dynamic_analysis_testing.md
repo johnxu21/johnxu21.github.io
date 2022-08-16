@@ -49,7 +49,7 @@ Materials & Tools Used for this Session
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition. 
-* [LittleDarwin]() is a tool to perform Mutation testing on Java applications. Mutation testing is a relatively new topic, therefore it is difficult to find working tools for it. 
+* [LittleDarwin](https://github.com/aliparsai/LittleDarwin) is a tool to perform Mutation testing on Java applications. Mutation testing is a relatively new topic, therefore it is difficult to find working tools for it. 
 * [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
 * [Pitest](http://pitest.org/) and [Pitest Repo](https://github.com/hcoles/pitest) is a state of the art mutation testing system, providing gold standard test coverage for Java and the jvm. It's fast, scalable and integrates with modern test and build tooling.
 
@@ -95,7 +95,7 @@ Let's create a simple unit test on a method. We will test the "isAlive()" method
  
 Create the package "level" in the "test" folder. Then, create the class "PlayerTest" inside this package "level". Now you can write the test case for testing the method "isAlive()" from Player. 
  
-Here is an example of such a test class, but I strongly advise you to try for yourself (it is a simple test and the hardest part is just to instantiate the objects).
+[Here is an example](/teaching/CS473-Fall2022/dynamic/PlayerTest.java_.txt) of such a test class, but I strongly advise you to try for yourself (it is a simple test and the hardest part is just to instantiate the objects).
  
 After adding the new test, build "jpacman.test" again and run it with coverage. If your test does not have any errors, you should see the IntelliJ window showing the code coverage. Leave this window with the coverage information on as you may need it to answer the questions from the next task (or take a screenshot of it).
  
@@ -118,7 +118,7 @@ The gradle build file provided in JPacman, already has JaCoCo configured. Look a
 Task 4 -- SonarQube Coverage Information on JPacman
 ======================
  
-SonarQube is a static analysis tool. But it can show the results from test coverage in its interface. First, let's run SonarQube as is (note that you need to have Java JDK 11 to run the current version of SonarQube). Make sure your SonarQube service is running. Open your browser in localhost:9000 and if you can see the SonarQube page, it is running. If not you should check the SonarQube documentation on how to start the service or the lab session on Refactoring Assistants. 
+SonarQube is a static analysis tool. But it can show the results from test coverage in its interface. First, let's run SonarQube as is (note that you need to have Java JDK 11 to run the current version of SonarQube). Make sure your SonarQube service is running. Open your browser in localhost:9000 and if you can see the SonarQube page, it is running. If not you should check the [SonarQube documentation](https://docs.sonarqube.org/latest/setup/get-started-2-minutes/) on how to start the service or the lab session on [Refactoring Assistants](/teaching/CS473-Fall2022/refactoring/). 
  
 You should see your JPacman project on SonarQube. Click on the tab "Measures" and on the left menu select "Coverage" > "Overview". You can see that SonarQube has no coverage information. Click on "Unit tests" on the left submenu and you will not see your new PlayerTest is in here. That is because we added this test after SonarQube performed its last analysis.
  
