@@ -1,3 +1,4 @@
+```java
 package nl.tudelft.jpacman.level;
 
 import nl.tudelft.jpacman.sprite.PacManSprites;
@@ -24,3 +25,4 @@ public class PlayerTest {
         assertThat(ThePlayer.isAlive()).isEqualTo(true);
     }
 }
+```
