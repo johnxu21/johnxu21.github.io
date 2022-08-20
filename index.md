@@ -16,7 +16,9 @@ Office:  <br>
 <a href="https://unlv.edu/" target="_blank"><img src="images/UNLV.jpeg" alt="UNLV" style="width:170px;" align="right"></a>
 
 Hi there! I’m an Assistant Professor at the [University of Nevada, Las Vegas](https://www.unlv.edu/) in the Department of [Computer Science](https://www.unlv.edu/cs). I lead th [Software Evolution (EVOL) Lab](https://johnxu21.github.io/businge/evol/).
-Before this position, I was a Research Fellow at the [University of Antwerp](https://www.uantwerpen.be/en/), Belgium, working in the Lab of Reengineering with [Prof. Serge Demeyer](https://www.uantwerpen.be/en/staff/serge-demeyer/). I received a Ph.D. in Computer Science from the [Eindhoven University of Technology](https://www.tue.nl/en/) (the Netherlands), under the supervision of [Prof. Mark van den Brand](https://www.tue.nl/en/research/researchers/mark-van-den-brand/) and [Prof. Alexander Serebrenik](https://www.win.tue.nl/~aserebre/). 
+Before this position, I was a Research Fellow at the [University of Antwerp](https://www.uantwerpen.be/en/), Belgium, working in the Lab of Reengineering with [Prof. Serge Demeyer](https://www.uantwerpen.be/en/staff/serge-demeyer/). 
+I was also a Fulbright Research Scholar at the [University of Calfornia, Davis](https://cs.ucdavis.edu/), U.S.A, wotking with in the DECAL Lab with [Prof. Vladimir Filkov](https://www.cs.ucdavis.edu/~filkov/).
+I received a Ph.D. in Computer Science from the [Eindhoven University of Technology](https://www.tue.nl/en/) (the Netherlands), under the supervision of [Prof. Mark van den Brand](https://www.tue.nl/en/research/researchers/mark-van-den-brand/) and [Prof. Alexander Serebrenik](https://www.win.tue.nl/~aserebre/). 
 
 
 ## Research Works
