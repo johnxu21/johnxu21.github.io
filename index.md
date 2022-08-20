@@ -33,17 +33,17 @@ More about my research can be found on the (<a href="https://johnxu21.github.io/
 <table>
 
 <tr>
-	<td width="75"><b>June, 2022</b></td>
+	<td width="150"><b>June, 2022</b></td>
 	<td> Our paper on PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family has been accepted in ESEC/FSE 2022 </td> 
 </tr>
 
 <tr>
-	<td width="75"><b>June, 2022</b></td>
+	<td width="150"><b>March, 2022</b></td>
 	<td> Our paper on Reuse and Maintenance Practices among Divergent Forks in three Software Ecosystems has been accepted in EMSE 2022 </td> 
 </tr>
 
 <tr>
-	<td width="75"><b>December, 2021</b></td>
+	<td width="150"><b>December, 2021</b></td>
 	<td> Our paper on Variant Forks - Motivations and Impediments has been accepted in SANER 2022 </td> 
 </tr>
 </table>
