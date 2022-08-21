@@ -8,7 +8,7 @@ permalink: /evol/publications/
 **PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family**<br/>
 Poedjadevie Ramkisoen, John Businge, Brent Van Bradel, Alexandre Decan, Serge Demeyer, Coen De Roover, Foutse Khomh<br/>
 Preceedings of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) , Technical Paper, pp. To appear, 2022
-<a href="/../../files/FSE2022.pdf" target="_blank">[preprint coming soon]</a><br>
+<a href="/../../files/FSE2022.pdf" target="_blank">[preprint]</a><br>
 
 **Reuse and maintenance practices among divergent forks in three software ecosystems**<br/>
 John Businge, Moses Openja, Sarah Nadi, Thorsten Berger <br/>
