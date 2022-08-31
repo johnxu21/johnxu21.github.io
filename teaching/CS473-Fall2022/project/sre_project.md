@@ -45,4 +45,13 @@ Kafka was born at LinkedIn. The run thousands of brokers to deliver trillions of
 Assignment
 ==========
 
-1. Contextualization for Strategic Refactoring
+### 1. Contextualization of the Project
+
+LinkedIn is a clone-and-own variant of Apache Kafka that was created by copying and adapting the existing 
+code of Apache Kafka that was forked on 2011-08-15T18:06:16Z. The two software systems kept on synchronizing 
+their new updates until 2022-02-22T13:32:39Z. Since 2022-02-22T13:32:39Z (divergence date), the two 
+projects do not share common commits yet actively evolve in parallel. Currently (2022-02-28T15:01:39Z), 
+LinkedIn has 500 individual commits, and Apache Kafka has 3,103 individual commits. Development becomes 
+redundant with the continued divergence, and maintenance efforts rapidly grow. For example, if a bug is 
+discovered in a shared file and fixed in one variant, it is not easy to tell if it has been fixed in the 
+other variant.
