@@ -174,14 +174,12 @@ Optional Task  1 -- JPacman Strategic Refactoring (part 2)
 For this optional task, you should apply the planned refactorings from the last task on the source code. Remember to assure that your refactorings are not breaking the application.
 
 
-Setup / Preparation - (Refactoring aware)
+Task 4 - Setup / Preparation - (Refactoring aware)
 =============
 RefactoringMiner is a library/API written in Java that can detect refactorings applied in the history of a Java project.
 
 Currently, it supports the detection of the more than 80 refactorings
 
-Task 1
-===========
 
 Clone&own [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the sources directly into Intellij.
 
@@ -277,7 +275,7 @@ miner.detectAtPullRequest("https://github.com/apache/drill.git", 1807, new Refac
 
 Try out the different API usage guidelines mentioned on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) page.
 
-Task 2
+Task 5
 ==========
 Scan through the code and understand how the different refactorings are detected (First Contact - Readall the Code in One Hour OORP, p.53).
 Note down the entities which seem important (i.e., classes, packages, ···). This step will help you during the [Project](/teaching/CS473-Fall2022/project/).
