@@ -5,7 +5,7 @@ layout: default
 # John Businge
 Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank"><img src="/images/john.jpeg" alt="John Businge" style="width:190px;height:190px;" align="right"></a> <br>
 University of Nevada, Las Vegas <br>[]()
-Office:  <br>
+Office: 4245 Science and Engineering Building (SEB) <br>
 <br>
 <em>Curriculum Vitae: </em><a href="/files/John_Businge_CV.pdf" target="_blank">PDF</a>  <small>(July, 2022)</small> <br>
 <em>Email: </em><a href="mailto:john.businge@unlv.edu">john.businge@unlv.edu</a> <br>
