@@ -7,7 +7,7 @@ Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank
 University of Nevada, Las Vegas <br>[]()
 Office: 4245 Science and Engineering Building (SEB) <br>
 <br>
-<em>Curriculum Vitae: </em><a href="/files/John_Businge_CV.pdf" target="_blank">PDF</a>  <small>(July, 2022)</small> <br>
+<em>Curriculum Vitae: </em><a href="/files/John_Businge_CV.pdf" target="_self">PDF</a>  <small>(July, 2022)</small> <br>
 <em>Email: </em><a href="mailto:john.businge@unlv.edu">john.businge@unlv.edu</a> <br>
 
 <!--<hr width="600px"> -->
@@ -25,7 +25,7 @@ I received a Ph.D. in Computer Science from the [Eindhoven University of Technol
 
 <!--p align="justify" style="max-width:800px"-->
 My research focuses on mining software repositories, software analytics, software maintenance, and evolution, clone detection, program analysis, variability management, and empirical software engineering.
-More about my research can be found on the (<a href="https://johnxu21.github.io/evol/projects/" target="_blank">Projects page</a>)
+More about my research can be found on the (<a href="https://johnxu21.github.io/evol/projects/" target="_self">Projects page</a>)
 
 
 
