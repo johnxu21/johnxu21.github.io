@@ -53,7 +53,7 @@ time and distracts them from their main tasks.
 
 Materials & Tools Used for this Session
 ========
-* Lecture sides [here]()
+* Lecture sides [here](../../../files/Integration.pdf)
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
 * [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation)
