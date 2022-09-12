@@ -46,7 +46,7 @@ required to build up an argument for a system report or action plan. <br/>
 
 Materials & Tools Used for this Session
 ========
-* Lecture Sides [here]()
+* Lecture Sides [here](../../../files/metrics_and_visualization.pdf)
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [CodeScene](https://codescene.com/) - **no** installation necessary, but it requires a GitHub account. This tool integration with GitHub allows it to visualize your repositories.

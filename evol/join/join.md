@@ -11,7 +11,7 @@ permalink: /evol/join/
 * Prospective Ph.D. Students should have already 
 * obtained a Master’s degree in software engineering or a related field and **published at least one peer-reviewed paper in a software engineering venue**. I will usually have a video call with promising candidates. I typically ask Ph.D. candidates to give a 10 - 15 min presentation of their research (e.g., their Master’s work). I also usually provide a programming task and a paper review task.
 * **Prospective Master’s students can contact me AFTER applying to the UNLV Master’s program. If you email me, please provide your application number**. Please note that I review all Master’s applicants who mention my name as a potential supervisor and reach out to those I shortlist for an interview. This typically happens in Jan-Feb. I usually interview shortlisted candidates and then give a paper review task and a programming task to promising candidates. Note that at the UNLV, Master’s students can be admitted unattached to a supervisor (i.e., you can go ahead and apply to our admissions system even if you do not have a committed supervisor yet).
-* As a PhD or Master's student in our group, you will be expected to perform high quality research and algorithm development, present and report your work at conferences and in journal papers, assist with some courses, and help managing the lab.
+* As a PhD or **Master**'s student in our group, you will be expected to perform high quality research and algorithm development, present and report your work at conferences and in journal papers, assist with some courses, and help managing the lab.
 * Regardless of the position you are applying for, please make sure to include the following in your email: 
   * Resume
   * Transcripts
