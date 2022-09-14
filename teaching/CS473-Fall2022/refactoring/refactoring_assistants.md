@@ -46,8 +46,8 @@ artifact. Another important pattern to remember when refactorings is “Most Val
 Despite the benefits, in some contexts, refactoring is perceived as change noise, which makes more 
 difficult the completion of various software evolution related tasks. For instance, refactoring 
 operations can cause merge conflicts when merging development branches (we shall look this in detail in 
-Lab of [software integration](/teaching/CS473-Fall2022/integration/)).
-distract developers when reviewing behavior-altering changes, make bug-inducing analysis algorithms
+Lab of [software integration](/teaching/CS473-Fall2022/integration/)). 
+They may distract developers when reviewing behavior-altering changes, make bug-inducing analysis algorithms
 to erroneously flag behavior-preserving changes (i.e., refactorings) as bug-introducing, 
 cause breaking changes to clients of libraries and frameworks, cause unnecessary test executions 
 for behavior-preserving changes.
