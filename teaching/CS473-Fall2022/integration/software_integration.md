@@ -66,7 +66,10 @@ In this lab you will play with two very related tools: [Refactorings in Merge Co
 Task 1 - Refactorings in Merge Commits
 ============
 In this task you will try to understand [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)  analyzes merge commits in git repositries and determines whether refactoring changes are to blame for the conflicts.
-Prepare the tool environment according to the system requirements of the tool located on the [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md) file. 
+Prepare the tool environment according to the system requirements of the tool located on the [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md) file. <br/>
+
+Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and then open the project in  IntelliJ IDE.
+
 
 **System Requirements** <br/>
 * Linux or macOS
@@ -113,7 +116,7 @@ Task 2.1 - Optional
 Looking at the tool [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) we can see that only a subset of the refactoring operations mentioned in the Readme.md of tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)
 have been implemented. Extend [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) with a set of more refactoring operations. Write and run tests to ensure that they have been well implemented.
 
-**Note**: Although Task 2.1 is **optional** here, in the final report it is a **Required task**.
+**Note**: Although Task 2.1 is **optional** here, in the final report it is a **Required task**. Better to already do it and get acquainted.
 
 
 Task 2.
