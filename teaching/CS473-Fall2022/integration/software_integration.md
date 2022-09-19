@@ -68,18 +68,20 @@ Task 1 - Refactorings in Merge Commits
 In this task you will try to understand [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)  analyzes merge commits in git repositries and determines whether refactoring changes are to blame for the conflicts.
 Prepare the tool environment according to the system requirements of the tool located on the [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md) file. 
 
+**System Requirements** <br/>
 * Linux or macOS
 * git
 * Java 11. If you have more than one Java version on your machine, you can run this command on the terminal inside Intellij **export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home**
-* MySQL 5.7
-* I would recommend installing phpMyAdmin to help with running SQL queries. You can install it using **brew install --cask xampp**
+* MySQL 5.7 (**Install this version of mysql**)
+* I would recommend installing phpMyAdmin to help with running SQL queries. You can install it using **brew install --cask xampp** (if you have a Mac OS)
 
 
 **Running the JAR file** <br/>
 
-java -jar refactoring-analysis.jar -r list.txt -c downloadedRepos -d mydb.properties -p 8 <br/>
+java -jar refactoring-analysis.jar <br/> <br/>
+(You may have to run the command **ln -sf /usr/share/zoneinfo/UTC /etc/localtime** to change the timezone to the local time)
 
-Download the like [list.txt](../../../files/list.txt) and use it instead of the default reposList.txt
+Download the like [list.txt](../../../files/repList.txt) and replace it with of the default reposList.txt in the project
 
 Task 1.2
 ===========
