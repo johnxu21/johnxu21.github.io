@@ -84,7 +84,7 @@ Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/Refac
 java -jar refactoring-analysis.jar <br/> <br/>
 (You may have to run the commands **ln -sf /usr/share/zoneinfo/UTC /etc/localtime** to change the timezone to the local time)
 
-Download the like [list.txt](../../../files/repList.txt) and replace it with of the default **reposList.txt** in the cloned project [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
+Download the like [repList.txt](../../../files/repList.txt) and replace it with of the default **reposList.txt** in the cloned project [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 
 Task 1.2
 ===========
@@ -112,7 +112,6 @@ Task 2
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) will be used in the final project, take time to understand how it is implemented. <br/>
 
 ## How to run
-Clone-and-own [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) and then open the project in  IntelliJ IDE. <br/>
 Follow the instruction on the [Readme.md file](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) of the project to build and run the project.
 
 
