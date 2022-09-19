@@ -79,9 +79,9 @@ Prepare the tool environment according to the system requirements of the tool lo
 **Running the JAR file** <br/>
 
 java -jar refactoring-analysis.jar <br/> <br/>
-(You may have to run the command **ln -sf /usr/share/zoneinfo/UTC /etc/localtime** to change the timezone to the local time)
+(You may have to run the commands **ln -sf /usr/share/zoneinfo/UTC /etc/localtime** to change the timezone to the local time)
 
-Download the like [list.txt](../../../files/repList.txt) and replace it with of the default reposList.txt in the project
+Download the like [list.txt](../../../files/repList.txt) and replace it with of the default **reposList.txt** in the cloned project [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 
 Task 1.2
 ===========
