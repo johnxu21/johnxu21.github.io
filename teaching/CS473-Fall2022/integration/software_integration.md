@@ -107,17 +107,21 @@ have been implemented. Extend [Refactorings in Merge Commits](https://github.com
 
 Task 2
 ======
-Clone-and-own [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) and then open the project in  IntelliJ IDE. <br/>
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) is a robust project comprising of two tools RefMerge and an Evaluation tool. 
  We are only interested [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) that performs refactoring-aware merging operations.
-[Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) will be used in the final project, take time to understand how it is implemented. 
+[Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) will be used in the final project, take time to understand how it is implemented. <br/>
+
+## How to run
+Clone-and-own [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) and then open the project in  IntelliJ IDE. <br/>
+Follow the instruction on the [Readme.md file](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) of the project to build and run the project.
+
 
 Task 2.1 - Optional
 =================
 Looking at the tool [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) we can see that only a subset of the refactoring operations mentioned in the Readme.md of tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)
 have been implemented. Extend [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) with a set of more refactoring operations. Write and run tests to ensure that they have been well implemented.
 
-**Note**: Although Task 2.1 is **optional** here, in the final report it is a **Required task**. Better to already do it and get acquainted.
+**Note**: Although Task 2.1 is **optional** here. However, in the final report it is a **Required task**. Better to already do it and get acquainted.
 
 
 Task 2.
