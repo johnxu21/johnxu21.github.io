@@ -117,8 +117,9 @@ Follow the instruction on the [Readme.md file](https://github.com/ualberta-smr/R
 1. **Clone and build RefactoringMiner** <br/>
 Use **git clone https://github.com/tsantalis/RefactoringMiner.git** to clone RefactoringMiner. Then build 
 RefactoringMiner with **./gradlew distzip**. It will be under build/distributions. <br/>
-2. In order to use RefactoringMiner as a maven dependency in your project, you will need to **add RefactoringMiner to your local maven repository**
-Add the following snippet to your project's build configuration file: <br/>
+2. In order to use RefactoringMiner as a maven dependency in your project, you will need to **add RefactoringMiner to your local maven repository** <br/>
+
+3. Add the following snippet to your project's build configuration file: <br/>
 
 ~~~ xml
 <dependency>
@@ -128,7 +129,7 @@ Add the following snippet to your project's build configuration file: <br/>
 </dependency>
 ~~~
 
- mvn install:install-file -Dfile=build/libs/RefactoringMiner-2.2.0.jar -DgroupId=com.github.tsantalis -DartifactId=refactoring-miner -Dversion=2.2.0 -Dpackaging=jar -DgeneratePom=false
+ **mvn install:install-file -Dfile=build/libs/RefactoringMiner-2.2.0.jar -DgroupId=com.github.tsantalis -DartifactId=refactoring-miner -Dversion=2.2.0 -Dpackaging=jar -DgeneratePom=false**
 
 3. Build the project
 Click on build tab in the IntelliJ IDE and select Build Project to build RefMerge. <br/>
