@@ -119,7 +119,7 @@ Use **git clone https://github.com/tsantalis/RefactoringMiner.git** to clone Ref
 RefactoringMiner with **./gradlew distzip**. It will be under build/distributions. <br/>
 2. In order to use RefactoringMiner as a maven dependency in your project, you will need to **add RefactoringMiner to your local maven repository**
 Add the following snippet to your project's build configuration file: <br/>
-3. 
+
 ~~~ xml
 <dependency>
   <groupId>com.github.tsantalis</groupId>
@@ -127,6 +127,7 @@ Add the following snippet to your project's build configuration file: <br/>
   <version>2.1.0</version> 
 </dependency>
 ~~~
+
  mvn install:install-file -Dfile=build/libs/RefactoringMiner-2.2.0.jar -DgroupId=com.github.tsantalis -DartifactId=refactoring-miner -Dversion=2.2.0 -Dpackaging=jar -DgeneratePom=false
 
 3. Build the project
