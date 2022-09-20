@@ -114,6 +114,19 @@ Task 2
 ## How to run
 Follow the instruction on the [Readme.md file](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) of the project to build and run the project.
 
+1. **Clone and build RefactoringMiner** <br/>
+Use **git clone https://github.com/tsantalis/RefactoringMiner.git** to clone RefactoringMiner. Then build 
+RefactoringMiner with **./gradlew distzip**. It will be under build/distributions. <br/>
+2. **Add RefactoringMiner to your local maven repository**
+3. 
+```xml
+<dependency>
+  <groupId>com.github.tsantalis</groupId>
+  <artifactId>refactoring-miner</artifactId>
+  <version>2.2.0</version> 
+</dependency>
+```
+ mvn install:install-file -Dfile=build/libs/RefactoringMiner-2.2.0.jar -DgroupId=com.github.tsantalis -DartifactId=refactoring-miner -Dversion=2.2.0 -Dpackaging=jar -DgeneratePom=false
 
 Task 2.1 - Optional
 =================
