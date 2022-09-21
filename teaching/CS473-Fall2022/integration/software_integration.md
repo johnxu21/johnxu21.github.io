@@ -96,17 +96,34 @@ Scan through the code and understand how these different refactoring aware opera
 
 The above steps are explained in detail in **Section 3: Methodology** of the paper [Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8668012&tag=1). Of course reading the whole paper would be ideal, but reading only Section 3 should be sufficient.
 
-You could also export the sql structure from the database and reverse engineer the ER diagram. Understand how the different tables are interconnected 
+You could also export the sql structure from the database and reverse engineer the ER diagram using **MySql Workbench** to Understand how the different tables are interconnected 
 
 Task 1.2 - Optional
 =================
 Looking at the tool [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) we can see that only a subset of the refactoring operations mentioned in the Readme.md of tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)
 have been implemented. Extend [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) with a set of more refactoring operations. Write and run tests to ensure that they have been well implemented.
 
-**Note:** [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) implements refactoring operations of  [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) version 2.1.0. Some on the new refactorings are only present in later versions of the tool.
+**Note:** [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) implements refactoring operations of  [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) version 2.1.0. Some on the new refactorings are only present in later versions of the tool.
 
-Task 2
-======
+You may find the following links interesting that will help you in the project:
+* [git log](https://git-scm.com/docs/git-log)
+* [git cherry-pick](https://github.com/git/git/blob/90b7153806af46ca62b85a92a2810015be2453d4/Documentation/git-cherry-pick.txt) or in general the [git documentation](https://github.com/git/git/tree/90b7153806af46ca62b85a92a2810015be2453d4/Documentation)
+
+[RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) implements **git merge**, but in the [Project](/teaching/CS473-Fall2022/project/) the command **git merge** will be replaced with [**git cherry-pick**](https://github.com/git/git/blob/90b7153806af46ca62b85a92a2810015be2453d4/Documentation/git-cherry-pick.txt)
+
+Task 2 (Optional)
+==========
+Scan through the code and understand how the following refactoring-aware operations are implemented (First Contact - Readall the Code in One Hour OORP, p.53).
+1. Detect and Simplify Refactorings
+2. Invert refactorings
+3. Merge
+4. Detect Refactoring Conflicts
+5. Replay Refactorings
+
+The above steps are described in detail in the paper: **Section 3 - REFMERGE: REFACTORING-AWARE OPERATION BASED MERGING** of the paper [A Systematic Comparison of Two Refactoring-aware Merging Techniques](https://arxiv.org/pdf/2112.10370.pdf)
+
+Task 2 - Optional
+========
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) is a robust project comprising of two tools RefMerge and an Evaluation tool. 
  We are only interested [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) that performs refactoring-aware merging operations.
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) will be used in the final project, take time to understand how it is implemented. <br/>
@@ -114,6 +131,7 @@ Task 2
 ## How to run
 Follow the instruction on the [Readme.md file](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) of the project to build and run the project.
 
+**You may also use the following steps that were adapted from the [Readme.md file of RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) and [Readme.md file of RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)**
 1. **Clone and build RefactoringMiner** <br/>
 Use **git clone https://github.com/tsantalis/RefactoringMiner.git** to clone RefactoringMiner. Then build 
 RefactoringMiner with **./gradlew distzip**. It will be under build/distributions. <br/>
@@ -142,15 +160,6 @@ have been implemented. Extend [RefMerge](https://github.com/ualberta-smr/Refacto
 **Note**: Although Task 2.1 is **optional** here. However, in the final report it is a **Required task**. Better to already do it and get acquainted.
 
 
-Task 2.
-==========
-Scan through the code and understand how the following refactoring-aware operations are implemented (First Contact - Readall the Code in One Hour OORP, p.53).
-1. Detect and Simplify Refactorings
-2. Invert refactorings
-3. Merge (In the [Project](/teaching/CS473-Fall2022/project/) the command **git merge** will be replaced with **git cherry-pick**)
-4. Detect Refactoring Conflicts
-5. Replay Refactorings
 
-The above steps are described in detail in the paper: **Section 3 - REFMERGE: REFACTORING-AWARE OPERATION BASED MERGING** of the paper [A Systematic Comparison of Two Refactoring-aware Merging Techniques](https://arxiv.org/pdf/2112.10370.pdf)
 
 
