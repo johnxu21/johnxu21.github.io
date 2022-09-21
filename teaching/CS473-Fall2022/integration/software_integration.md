@@ -129,9 +129,9 @@ Task 2 - Optional
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) will be used in the final project, take time to understand how it is implemented. <br/>
 
 ## How to run
-Follow the instruction on the [Readme.md file](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) of the project to build and run the project.
+Follow the instruction on the [Readme.md file](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) of the project to build and run the project. <br/>
 
-**You may also use the following steps that were adapted from the [Readme.md file of RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) and [Readme.md file of RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)**
+**You may also use the following steps that were adapted from the [Readme.md file of RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) and [Readme.md file of RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)** <br/>
 1. **Clone and build RefactoringMiner** <br/>
 Use **git clone https://github.com/tsantalis/RefactoringMiner.git** to clone RefactoringMiner. Then build 
 RefactoringMiner with **./gradlew distzip**. It will be under build/distributions. <br/>
