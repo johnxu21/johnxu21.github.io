@@ -122,7 +122,7 @@ Scan through the code and understand how the following refactoring-aware operati
 
 The above steps are described in detail in the paper: **Section 3 - REFMERGE: REFACTORING-AWARE OPERATION BASED MERGING** of the paper [A Systematic Comparison of Two Refactoring-aware Merging Techniques](https://arxiv.org/pdf/2112.10370.pdf)
 
-Task 2 - Optional
+Task 2.1 - Optional
 ========
 [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) is a robust project comprising of two tools RefMerge and an Evaluation tool. 
  We are only interested [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) that performs refactoring-aware merging operations.
@@ -150,14 +150,13 @@ RefactoringMiner with **./gradlew distzip**. It will be under build/distribution
  **mvn install:install-file -Dfile=build/libs/RefactoringMiner-2.2.0.jar -DgroupId=com.github.tsantalis -DartifactId=refactoring-miner -Dversion=2.2.0 -Dpackaging=jar -DgeneratePom=false**
 
 3. Build the project
-Click on build tab in the IntelliJ IDE and select Build Project to build RefMerge. <br/>
+Click on build tab in the IntelliJ IDE and select Build Project to build RefMerge.
 
-Task 2.1 - Optional
+Task 2.2 - Optional
 =================
 Looking at the tool [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) we can see that only a subset of the refactoring operations mentioned in the Readme.md of tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)
 have been implemented. Extend [RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation/tree/master/src/main/java/ca/ualberta/cs/smr/refmerge) with a set of more refactoring operations. Write and run tests to ensure that they have been well implemented.
 
-**Note**: Although Task 2.1 is **optional** here. However, in the final report it is a **Required task**. Better to already do it and get acquainted.
 
 
 
