@@ -65,23 +65,40 @@ In this lab you will play with two very related tools: [Refactorings in Merge Co
 
 Task 1 - Refactorings in Merge Commits
 ============
-In this task you will try to understand [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)  analyzes merge commits in git repositries and determines whether refactoring changes are to blame for the conflicts.
+In this task you will try to understand how [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)  analyzes merge commits in git repositries and determines whether refactoring changes are to blame for the conflicts.
 Prepare the tool environment according to the system requirements of the tool located on the [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md) file. <br/>
 
+**You may also follow the instructions below that are adapted from [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md). <br/> **
 Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and then open the project in  IntelliJ IDE.
-
 
 **System Requirements** <br/>
 * Linux or macOS
 * git
 * Java 11. If you have more than one Java version on your machine, you can run this command on the terminal inside Intellij **export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home**
-* MySQL 5.7 (**Install this version of mysql**)
+* MySQL 5.7 (**Install this version of mysql**). Create a ```username``` and ```password```, they are needed in the next step.
 * I would recommend installing phpMyAdmin to help with running SQL queries. You can install it using **brew install --cask xampp** (if you have a Mac OS)
+
 
 
 **Running the JAR file** <br/>
 
-java -jar refactoring-analysis.jar <br/> <br/>
+* You need to start MySql server. You can do this by starting ```xammp``` (if you are using a Mac OS, just go to the xampp application (folder) and double-click the file ```manager-osx```)
+* Open the project in IntelliJ IDE
+* Edit the database configuration file ```database.properties``` and replace the ```USERNAME``` and ```PASSWORD``` with the ones of ```mysql``` 
+
+```angular2html
+development.driver=com.mysql.jdbc.Driver
+development.username=USERNAME
+development.password=PASSWORD
+development.url=jdbc:mysql://localhost/refactoring_analysis
+```
+
+
+* Open the terminal in IntelliJ IDE run the commands below
+
+
+**java -jar refactoring-analysis.jar** <br/> <br/>
+
 (You may have to run the commands **ln -sf /usr/share/zoneinfo/UTC /etc/localtime** to change the timezone to the local time)
 
 Download the like [repList.txt](../../../files/repoList.txt) and replace it with of the default **reposList.txt** in the cloned project [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
