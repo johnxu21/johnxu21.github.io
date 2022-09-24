@@ -125,8 +125,8 @@ have been implemented. Extend [Refactorings in Merge Commits](https://github.com
 **Note:** [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) implements refactoring operations of  [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) version 2.1.0. Some on the new refactorings are only present in later versions of the tool.
 
 You may find the following links interesting that will help you in the project:
-* [git log](https://git-scm.com/docs/git-log). In the [Project](/teaching/CS473-Fall2022/project/) we shall be mining data for analysis the git logs, it is very important to understand how they are implemented in these project two projects: [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation). **Please read the code and follow**
-* [git cherry-pick](https://github.com/git/git/blob/90b7153806af46ca62b85a92a2810015be2453d4/Documentation/git-cherry-pick.txt) or in general the [git documentation](https://github.com/git/git/tree/90b7153806af46ca62b85a92a2810015be2453d4/Documentation)
+* [```git log```](https://git-scm.com/docs/git-log). In the [Project](/teaching/CS473-Fall2022/project/) we shall be mining data for analysis from the ```git log```. Therefore, it is very important to understand how they are implemented ```git log``` these two projects: [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation). **Please read the code in depth**
+* [```git cherry-pick```](https://github.com/git/git/blob/90b7153806af46ca62b85a92a2810015be2453d4/Documentation/git-cherry-pick.txt) or in general the [git documentation](https://github.com/git/git/tree/90b7153806af46ca62b85a92a2810015be2453d4/Documentation)
 
 [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) implements **git merge**, but in the [Project](/teaching/CS473-Fall2022/project/) the command **git merge** will be replaced with [**git cherry-pick**](https://github.com/git/git/blob/90b7153806af46ca62b85a92a2810015be2453d4/Documentation/git-cherry-pick.txt)
 
@@ -151,9 +151,9 @@ Task 2.1 - Optional
 Follow the instruction on the [Readme.md file](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) of the project to build and run the project. <br/>
 
 **You may also use the following steps that were adapted from the [Readme.md file of RefMerge](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation) and [Readme.md file of RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)** <br/>
-1. **Clone and build RefactoringMiner** <br/>
+1. **Clone and build ```RefactoringMiner```** <br/>
 Use **git clone https://github.com/tsantalis/RefactoringMiner.git** to clone RefactoringMiner. Then build 
-RefactoringMiner with **./gradlew distzip**. It will be under build/distributions. <br/>
+RefactoringMiner with ```./gradlew distzip```. It will be under build/distributions. <br/>
 2. In order to use RefactoringMiner as a maven dependency in your project, you will need to **add RefactoringMiner to your local maven repository** <br/>
 
 3. Add the following snippet to your project's build configuration file: <br/>
