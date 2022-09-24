@@ -94,7 +94,7 @@ development.url=jdbc:mysql://localhost/refactoring_analysis
 ```
 * If you wish, you can choose a different name for the database (```refactoring_analysis``` in the template)
 
-* Open the terminal in ```IntelliJ IDE``` run the commands below
+* Open the terminal in ```IntelliJ IDE``` run the commands below:
 
 ```angular2html
 ./mvnw clean activejdbc-instrumentation:instrument compile assembly:single clean
@@ -110,7 +110,7 @@ Task 1.2
 Scan through the code and understand how these different refactoring aware operations are implemented:
 1. Detecting conflicting regions
 2. Detecting evolutionary changes
-3. Detecting refactorings
+3. Detecting refactorings (notice that only a few refactoring operations have been implemented this tool. In the [Project](/teaching/CS473-Fall2022/project/), you will be required to extend this tool with more refactoring operations)
 4. Detecting refactorings in the conflicting region
 
 The above steps are explained in detail in **Section 3: Methodology** of the paper [Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8668012&tag=1). Of course reading the whole paper would be ideal, but reading only Section 3 should be sufficient.
