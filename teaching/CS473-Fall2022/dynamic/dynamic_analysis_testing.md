@@ -99,9 +99,9 @@ First, make sure that you can test your JPacman, by using the following command 
 ```
 
 Now, right-click on the ```test``` folder (inside the ```src``` folder) and select the option "Run 'Tests' 
-in '```jpacman.test```' with Coverage". If that option is not available, select "Build Module 
-'```jpacman.test```' " and after the build right-click again and the option  "Run 'Tests' in 
-'```jpacman.test```' with Coverage" should be available.
+in ```jpacman.test``` with Coverage". If that option is not available, select "Build Module 
+```jpacman.test``` " and after the build right-click again and the option  "Run 'Tests' in 
+```jpacman.test``` with Coverage" should be available.
 
 Alternatively, you can also right-click on the Gradle task ```test``` (inside the "verification" task group) 
 shown in the Gradle plugin (default position is a collapsed tab on the right part of your IntelliJ). 
@@ -175,10 +175,9 @@ service or the lab session on [Refactoring Assistants](/teaching/CS473-Fall2022/
  
 You should see your ```JPacman``` project on ```SonarQube```. Click on the tab ```Measures``` and on the left 
 menu select ```Coverage``` > ```Overview```. You can see that SonarQube has no coverage information. 
-Click on ```Unit tests``` on the left submenu and you will not see your new ```PlayerTest``` is in here. 
+Click on ```Unit tests``` on the left submenu, and you will not see your new ```PlayerTest``` is in here. 
 That is because we added this test after ```SonarQube``` performed its last analysis.
- 
-Lets update it by running the following command on ```IntelliJ terminal``` (**all in the same line**):
+Let's update it by running the following command on ```IntelliJ terminal``` (**all in the same line**):
 ```
 ./gradlew sonarqube -Dsonar.projectKey=jpacman -Dsonar.login=admin -Dsonar.password=reengineering
 ```
@@ -230,16 +229,18 @@ full test adequacy whenever it can kill all of the mutants. Such test suites are
  
 For the lab, we recommend using the tool [LittleDarwin](https://github.com/aliparsai/LittleDarwin) to perform 
 mutation testing on Java. This tool was developed, at the [University of Antwerp](https://www.uantwerpen.be/en/). 
-[LittleDarwin](https://github.com/aliparsai/LittleDarwin) is a mutation testing tool written in python that can analyze a wide range of Java applications. It is built with the purpose of easy deployment in an industrial environment, and it can handle complicated build system structures often found in such cases.  
+[LittleDarwin](https://github.com/aliparsai/LittleDarwin) is a mutation testing tool written in python that can 
+analyze a wide range of Java applications. It is built with the purpose of easy deployment in an industrial 
+environment, and it can handle complicated build system structures often found in such cases.  
  
 To install LittleDarwin follow the instructions on its GitHub page. On Mac/Linux already with python you 
 just need to use the following command to install it:
-```angular2html
+```
 pip3 install littledarwin
 ```
 
 In this task, you will try mutation testing on JPacman. Install LittleDarwin and run it on JPacman source code. 
-Mutation testing is a slow procedure, the process may take between 10 to 25 minutes on JPacman. Therefore, 
+Mutation testing is a slow procedure, the process may take between 10 and 25 minutes on JPacman. Therefore, 
 don't "kill" the process if you think it is taking too long (let the tool do its job). Also, make sure to run 
 LittleDarwin in a separate terminal/command window (otherwise you may freeze your IntelliJ). 
 Use the following command inside the jpacman folder:
