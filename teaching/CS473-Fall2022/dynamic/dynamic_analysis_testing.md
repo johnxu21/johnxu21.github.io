@@ -197,7 +197,7 @@ To be sure, check the folder ```build/reports/jacoco/test```, there should be a 
 and finally another run with coverage. 
  
 To reiterate, your ```SonarQube``` should automatically fetch the ```JaCoCo XML``` report and show you 
-`coverage information after performing another analysis with the above command. If you have that, you can 
+coverage information after performing another analysis with the above command. If you have that, you can 
 jump to the next paragraph. In case your SonarQube is still not showing coverage even after the ```JaCoCo XML```
 report, you may need to inform SonarQube by the command line where the report is located. 
 This is the command for that (run on IntelliJ terminal -- **all in the same line**):
