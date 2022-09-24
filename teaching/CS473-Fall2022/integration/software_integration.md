@@ -68,8 +68,7 @@ Task 1 - Refactorings in Merge Commits
 In this task you will try to understand how [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)  analyzes merge commits in git repositries and determines whether refactoring changes are to blame for the conflicts.
 Prepare the tool environment according to the system requirements of the tool located on the [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md) file. <br/>
 
-**You may also follow the instructions below that are adapted from [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md). <br/> **
-Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and then open the project in  IntelliJ IDE.
+**You may also follow the instructions below that are adapted from [README.md](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/README.md).** <br/>
 
 **System Requirements** <br/>
 * Linux or macOS
@@ -83,20 +82,21 @@ Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/Refac
 **Running the JAR file** <br/>
 
 * You need to start MySql server. You can do this by starting ```xammp``` (if you are using a Mac OS, just go to the xampp application (folder) and double-click the file ```manager-osx```)
-* Open the project in IntelliJ IDE
-* Edit the ```database.properties``` file and replace the ```USERNAME``` and ```PASSWORD``` with the ones of ```mysql``` 
+* When mysql server is up and runnin
+* Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and then open the project in  IntelliJ IDE.
+* Edit the ```database.properties``` file and replace the ```USERNAME``` and ```PASSWORD``` with the ones you created for ```mysql``` earlier.
 
 ```angular2html
 development.driver=com.mysql.jdbc.Driver
-development.username=USERNAME
-development.password=PASSWORD
+development.username=USERNAME -> replace
+development.password=PASSWORD -> replace
 development.url=jdbc:mysql://localhost/refactoring_analysis
 ```
-* If you wish, you can choose a different name for the database (refactoring_analysis in the template)
+* If you wish, you can choose a different name for the database (```refactoring_analysis``` in the template)
 
-* Open the terminal in IntelliJ IDE run the commands below
+* Open the terminal in ```IntelliJ IDE``` run the commands below
 
-```
+```angular2html
 ./mvnw clean activejdbc-instrumentation:instrument compile assembly:single clean
 java -jar refactoring-analysis.jar
 ```
