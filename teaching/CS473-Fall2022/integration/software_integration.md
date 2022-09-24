@@ -75,7 +75,7 @@ Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/Refac
 * Linux or macOS
 * git
 * Java 11. If you have more than one Java version on your machine, you can run this command on the terminal inside Intellij **export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home**
-* MySQL 5.7 (**Install this version of mysql**). Create a ```username``` and ```password```, they are needed in the next step.
+* MySQL 5.7 (**Install this version of mysql**). Create a ```USERNAME``` and ```PASSWORD```, they are needed in the next step.
 * I would recommend installing phpMyAdmin to help with running SQL queries. You can install it using **brew install --cask xampp** (if you have a Mac OS)
 
 
@@ -84,7 +84,7 @@ Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/Refac
 
 * You need to start MySql server. You can do this by starting ```xammp``` (if you are using a Mac OS, just go to the xampp application (folder) and double-click the file ```manager-osx```)
 * Open the project in IntelliJ IDE
-* Edit the database configuration file ```database.properties``` and replace the ```USERNAME``` and ```PASSWORD``` with the ones of ```mysql``` 
+* Edit the ```database.properties``` file and replace the ```USERNAME``` and ```PASSWORD``` with the ones of ```mysql``` 
 
 ```angular2html
 development.driver=com.mysql.jdbc.Driver
@@ -92,14 +92,16 @@ development.username=USERNAME
 development.password=PASSWORD
 development.url=jdbc:mysql://localhost/refactoring_analysis
 ```
-
+* If you wish, you can choose a different name for the database (refactoring_analysis in the template)
 
 * Open the terminal in IntelliJ IDE run the commands below
 
+```
+./mvnw clean activejdbc-instrumentation:instrument compile assembly:single clean
+java -jar refactoring-analysis.jar
+```
 
-**java -jar refactoring-analysis.jar** <br/> <br/>
-
-(You may have to run the commands **ln -sf /usr/share/zoneinfo/UTC /etc/localtime** to change the timezone to the local time)
+(You may have to run the commands ```sudo unlink /etc/localtime``` and ```ln -sf /usr/share/zoneinfo/UTC /etc/localtime``` to change the timezone to the local time. More info about timezone [here](https://unix.stackexchange.com/questions/110522/timezone-setting-in-linux)))
 
 Download the like [repList.txt](../../../files/repoList.txt) and replace it with of the default **reposList.txt** in the cloned project [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 
