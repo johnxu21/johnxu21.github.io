@@ -101,13 +101,13 @@ Remember to set the project to point to the version of JDK on which it was built
 Project folder in IntelliJ IDE to see the JDK version.
 
 Now, right-click on the ```test``` folder (inside the ```src``` folder) and select the option "Run 'Tests' 
-in ```jpacman.test``` with Coverage". If that option is not available, select "Build Module 
-```jpacman.test``` " and after the build right-click again and the option  "Run 'Tests' in 
+in ```jpacman.test``` with Coverage". If that option is not available, select "Build Module" 
+```jpacman.test``` and after the build right-click again and the option  "Run 'Tests' in 
 ```jpacman.test``` with Coverage" should be available.
 
 Alternatively, you can also right-click on the Gradle task ```test``` (inside the "verification" task group) 
 shown in the Gradle plugin (default position is a collapsed tab on the right part of your IntelliJ). 
-Select "Run 'jpacman [test]' with Coverage'. This Gradle task should produce the same coverage. 
+Select ```Run 'jpacman [test]' with Coverage```. This Gradle task should produce the same coverage. 
 Therefore, use whichever you prefer. 
  
 If everything executed without errors, you should see a new window showing the code coverage. 

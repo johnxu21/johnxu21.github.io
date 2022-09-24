@@ -35,6 +35,7 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
+<div style="text-align: justify"> 
 In this session, we will learn about some different tools available for refactoring assistance. 
 By using tools, we can plan ahead the refactorings activities that could improve our design. 
 We will search for bad smells (symptoms of design problems) that give us hints on where and how 
@@ -55,6 +56,7 @@ for behavior-preserving changes.
 During this session, we will perform simple refactoring tasks. However, it is important to remember 
 that for the Course we focus on Strategic Refactoring, i.e., we should refactor with a clear 
 reason or goal in mind. 
+</div>
 <br/>
 
 
