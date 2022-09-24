@@ -125,10 +125,10 @@ we just need to write more tests. In this task, we are going to write one new te
 As you have seen from **Task 1** that the coverage for several packages is zero percent.
  
 Let's create a simple ```unit test``` on a method. We will test the ```isAlive()``` method in class ```Player``` 
-(package level). You should look at the ```DirectionTest``` class (folder ```test```, package ```board```) as a template 
+(package ```level```). You should look at the ```DirectionTest``` class (folder ```test```, package ```board```) as a template 
 for your test case. The hardest part is instantiating a ```Player``` object as it requires other objects. 
 The ```PlayerFactory``` class is responsible for creating instances of ```Player```. And, ```PlayerFactory``` 
-constructor requires a ```PacManSprites``` (package sprites) object. Therefore, you need to instantiate a 
+constructor requires a ```PacManSprites``` (package ```sprites```) object. Therefore, you need to instantiate a 
 ```PacManSprites``` object, to pass it on to the constructor of ```PlayerFactory```, and only then you can 
 call the factory method to create a ```Player```.
  
