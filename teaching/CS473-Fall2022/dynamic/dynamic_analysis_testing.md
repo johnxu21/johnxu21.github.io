@@ -97,35 +97,35 @@ First, make sure that you can test your JPacman, by using the following command 
 ```
 ./gradlew test
 ```
-Remember to set the project to point to the version of JDK on which it was built. Look at ```External Libraries``` under the 
-Project folder in IntelliJ IDE to see the JDK version.
+**Note:** Remember to set the project to point to the JDK version on which it was built. Look at ```External Libraries``` under the 
+Project's folder in IntelliJ IDE to see the JDK version.
 
 Now, right-click on the ```test``` folder (inside the ```src``` folder) and select the option "Run 'Tests' 
-in ```jpacman.test``` with Coverage". If that option is not available, select "Build Module" 
-```jpacman.test``` and after the build right-click again and the option  "Run 'Tests' in 
+in ```jpacman.test``` with Coverage". If that option is not available, select "Build Module 
+```jpacman.test```" and after the build right-click again and the option  "Run 'Tests' in 
 ```jpacman.test``` with Coverage" should be available.
 
-Alternatively, you can also right-click on the Gradle task ```test``` (inside the "verification" task group) 
-shown in the Gradle plugin (default position is a collapsed tab on the right part of your IntelliJ). 
+Alternatively, you can also right-click on the Gradle task ```test```, inside the module ```Task->verification```
+shown in the ```Gradle plugin``` (default position is a collapsed tab on the right part of your IntelliJ). 
 Select ```Run 'jpacman [test]' with Coverage```. This Gradle task should produce the same coverage. 
 Therefore, use whichever you prefer. 
  
 If everything executed without errors, you should see a new window showing the code coverage. 
 Please try to remember this coverage (or take a screenshot to not depend on your memory).
  
-Questions
+**Questions:**
 * Is the coverage good enough?
-* If you make any changes in JPacman sources, can you rely on the current tests to catch faults?
+* If you make any changes in ```JPacman``` sources, can you rely on the current tests to catch faults?
 
 Task 2 -- Increasing Coverage on JPacman
 ===================
   
 For the second task, we will increase the coverage on JPacman. Doing that is very simple, 
 we just need to write more tests. In this task, we are going to write one new test case. 
-As you saw in the last task, the coverage for several packages is zero percent.
+As you have seen from **Task 1** that the coverage for several packages is zero percent.
  
-Let's create a simple unit test on a method. We will test the ```isAlive()``` method in class ```Player``` 
-(package level). You should look at the "DirectionTest" class (folder test, package board) as a template 
+Let's create a simple ```unit test``` on a method. We will test the ```isAlive()``` method in class ```Player``` 
+(package level). You should look at the ```DirectionTest``` class (folder ```test```, package ```board```) as a template 
 for your test case. The hardest part is instantiating a ```Player``` object as it requires other objects. 
 The ```PlayerFactory``` class is responsible for creating instances of ```Player```. And, ```PlayerFactory``` 
 constructor requires a ```PacManSprites``` (package sprites) object. Therefore, you need to instantiate a 
