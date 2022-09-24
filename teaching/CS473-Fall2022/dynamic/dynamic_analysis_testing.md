@@ -149,8 +149,10 @@ For the lab, we recommend using the tool [LittleDarwin](https://github.com/alipa
 To install LittleDarwin follow the instructions on its GitHub page. On Mac/Linux already with python you just need to use the following command to install it:
 pip3 install littledarwin
  In this task, you will try mutation testing on JPacman. Install LittleDarwin and run it on JPacman source code. Mutation testing is a slow procedure, the process may take between 10 to 25 minutes on JPacman. Therefore, don't "kill" the process if you think it is taking too long (let the tool do its job). Also, make sure to run LittleDarwin in a separate terminal/command window (otherwise you may freeze your IntelliJ). Use the following command inside the jpacman folder:
+```
 littledarwin  -m -b  -p ./src/main/ -t ./ -c ./gradlew,test --timeout=180
-After it is finished, you can find the report in a structure similar to "/LittleDarwinResults/report.html" (there is a zip in the repository with such reports for JPacman so that you can see the results without waiting). This is like a JaCoCo report but instead of showing coverage percentage, it shows Mutation Coverage (i.e., the percentage of mutants killed). A high mutation score indicates that your test suite is a good quality one. Take the JaCoCo report or SonarQube results on coverage and compare it with the mutation coverage.
+```
+After it is finished, you can find the report in a structure similar to ```/LittleDarwinResults/report.html``` (there is a zip in the repository with such reports for JPacman so that you can see the results without waiting). This is like a JaCoCo report but instead of showing coverage percentage, it shows Mutation Coverage (i.e., the percentage of mutants killed). A high mutation score indicates that your test suite is a good quality one. Take the JaCoCo report or SonarQube results on coverage and compare it with the mutation coverage.
  
 **Questions:**
 * Find classes that have low mutation coverage and high statement coverage. What does this indicate?
