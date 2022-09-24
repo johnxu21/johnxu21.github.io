@@ -73,7 +73,10 @@ Prepare the tool environment according to the system requirements of the tool lo
 **System Requirements** <br/>
 * Linux or macOS
 * git
-* Java 11. If you have more than one Java version on your machine, you can run this command on the terminal inside Intellij **export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home**
+* Java 11. If you have more than one Java version on your machine, you can run this command on the terminal inside Intellij 
+```
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home
+```
 * MySQL 5.7 (**Install this version of mysql**). Create a ```USERNAME``` and ```PASSWORD```, they are needed in the next step.
 * I would recommend installing phpMyAdmin to help with running SQL queries. You can install it using **brew install --cask xampp** (if you have a Mac OS)
 

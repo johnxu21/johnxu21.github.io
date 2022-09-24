@@ -96,7 +96,7 @@ For our first task, we are going to use CodeScene to suggest which artifacts are
  
 Click in the "Code" menu on the left side, and then the "Hotspots" submenu. In this visualization, the hotspots are artifacts with a lot of commit activities (i.e., they change a lot during the software evolution and maintenance). On that visualization, you can check the tab on Refactoring Targets. Look at the recommended refactorings targets. If you select a specific file in this visualization (or the hotspots visualization) on the right it will display more details, scrolling down on the details you have the "Actions" buttons. There are four actions: View Code, X-ray, Trends, and Code Review. Check those four options and see for yourself what information CodeScene can provide.
 
-Questions:
+**Questions:**
 * Did CodeScene visualization help you identify possible targets for refactoring?
 * Did CodeScene give you hints or clues on how to refactor the proposed targets?
 <br/>
@@ -108,62 +108,94 @@ Task 2 -- JPacman on SonarQube
 ============
 For the second task, we are going to use a more complex and dedicated tool to find refactoring targets. Download SonarQube (if you haven't already), and unpacked it on your computer. We will need to use command lines to start the SonarQube tool (note that you need to have Java JDK 11 to run the current version of SonarQube).  Open a Terminal (Command Prompt on Windows) and make sure you are currently on the SonarQube folder. Then, you should go into the bin folder like for example:
 
-**cd bin**
+```
+cd bin
+```
 
 Inside the bin folder of SonarQube, you will find specific folders for each major operating system. Go into the appropriate folder for your machine operating system. For example, on a machine running Mac OsX the command will be:
 
-**cd macosx-universal-64**
+```
+cd macosx-universal-64
+```
 
 Now you can start the SonarQube using the command:
 
-**[Linux/Mac] ./sonar.sh console** <br>
-**[ Windows ] StartSonar.bat**
+**[Linux/Mac]** ```./sonar.sh console``` <br>
+**[Windows]** ```StartSonar.bat```
 
-If you are having problems, please check the [SonarQube Documentation](https://docs.sonarqube.org/latest/) (here is the Getting [Started guide](https://docs.sonarqube.org/latest/setup/get-started-2-minutes/)). If everything went ok, then you should see in your terminal a message like "<date> INFO yyy [ xxxx ] SonarQube is up" (it may take some time). Now open your browser and type the following address on it:
+If you are having problems, please check the [SonarQube Documentation](https://docs.sonarqube.org/latest/) (
+here is the Getting [Started guide](https://docs.sonarqube.org/latest/setup/get-started-2-minutes/)). 
+If everything went ok, then you should see in your terminal a message like ```<date> INFO yyy [ xxxx ] SonarQube is up``` 
+(it may take some time). Now open your browser and type the following address on it:
 
-**http://localhost:9000**
+```
+http://localhost:9000
+```
 
-Click on "Log In" (top-right corner). The login is "admin" and the password is also "admin". After the login, you will be required to change the password for the admin account. In the lab assignments, my password is "reengineering" (adapt to your chosen password accordingly).
+Click on "Log In" (top-right corner). The login is "admin" and the password is also "admin". 
+After the login, you will be required to change the password for the admin account. In the lab assignments, 
+my password is ```reengineering``` (adapt to your chosen password accordingly).
 
-Now you will see the page for "Analyze your Project". In the first step, for the token name type "jpacmantoken". Click on "generate" and then "continue" (remember or save this generated code for step 2).
+Now you will see the page for "Analyze your Project". In the first step, for the token name type 
+```jpacmantoken```. Click on ```generate``` and then ```continue``` (remember or save this generated code for step 2).
 
-If everything was ok, then you should see step 2. Select "Gradle" on the build technology options. You can follow the instructions given but for this lab session, you can just keep following here. So the first thing to do is update your build Gradle file (if you fetched the last version of the repository, this is not necessary). Open your IntelliJ with the JPacman sources, and in the project root folder you will find the "build.gradle" file. Open the file and add this line after line 7 (inside the "plugins" element):
+If everything was ok, then you should see step 2. Select ```Gradle``` on the build technology options. 
+You can follow the instructions given but for this lab session, you can just keep following here. 
+So the first thing to do is update your build Gradle file (if you fetched the last version of the repository, 
+this is not necessary). Open your IntelliJ with the JPacman sources, and in the project root folder you will 
+find the ``build.gradle`` file. Open the file and add this line after line 7 (inside the ``plugins`` element):
 
-**id "org.sonarqube" version "3.1.1"**
+```
+id 'org.sonarqube' version '3.1.1'
+```
 
-Now you can use the terminal inside IntelliJ for the command given by SonarQube, place all in the 
+Now you can use the terminal inside ```IntelliJ``` for the command given by ```SonarQube```, place all in the 
 same line (adapt the command accordingly for Windows):
 
-**./gradlew sonarqube -Dsonar.projectKey=jpacman -Dsonar.host.url=http://localhost:9000 -Dsonar.login=[generated token code]**
+```
+./gradlew sonarqube -Dsonar.projectKey=jpacman -Dsonar.host.url=http://localhost:9000 -Dsonar.login=[generated token code]
+```
 
 If you are having problems with the above command, try this one instead:
 
-**./gradlew sonarqube -Dsonar.projectKey=JPacman  
-    -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=reengineering**
+```
+./gradlew sonarqube -Dsonar.projectKey=JPacman -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=reengineering
+```
 
-If everything was ok, then the page on SonarQube should update in a while with JPacman source code information. Here is a screenshot of SonarQube once it finishes its analysis on JPacman.
+If everything was ok, then the page on SonarQube should update in a while with ```JPacman``` source code information. 
+Here is a screenshot of SonarQube once it finishes its analysis on ```JPacman```.
  
-Click on the "Code Smells" and analyze the detected smells. You can also see that SonarQube also gives some explanation of the smells ("Why is this an issue?"). 
+Click on the ```Code Smells``` and analyze the detected smells. You can also see that SonarQube also gives some 
+explanation of the smells ("Why is this an issue?"). 
 
-Questions:
-* Which one is more useful to find refactoring targets: CodeScene or SonarQube?
-* Which one provides better reasoning/explanation on the possible refactoring targets: CodeScene or SonarQube?
-* Are there many common artifacts found in the Code Smells in SonarQube and Refactoring targets in CodeScene?
+**Questions:**
+* Which one is more useful to find refactoring targets: ```CodeScene``` or ```SonarQube```?
+* Which one provides better reasoning/explanation on the possible refactoring targets: ```CodeScene``` or ```SonarQube```?
+* Are there many common artifacts found in the Code Smells in ```SonarQube``` and Refactoring targets in ```CodeScene```?
 <br/>
 
 
 Task 3 -- JPacman Strategic Refactoring
 ===============
-For the Reengineering Course, we value the concept of Strategic Refactoring, which is refactoring with a goal. Tools can help identify artifacts with smells that could lead to potential issues. However, only a developer can really identify the necessary artifacts for a specific goal. Let's do that for JPacman. 
+For the Reengineering Course, we value the concept of **Strategic Refactoring**, which is refactoring with a goal. 
+Tools can help identify artifacts with smells that could lead to potential issues. However, only a developer can 
+really identify the necessary artifacts for a specific goal. Let's do that for JPacman. 
  
-As you probably noticed, JPacman is missing many features that were present in the original Pacman game. Now, the idea is to start refactoring the code to support one of those missing features: Extra Lives. In the original Pacman, the player started with 3 lives. In JPacman, there is only 1 life, and if lose it: game over. If you look at the code (Player.java) there is no attribute to store how many lives the player has left. 
+As you probably noticed, ```JPacman``` is missing many features that were present in the original Pacman game. 
+Now, the idea is to start refactoring the code to support one of those missing features: Extra Lives. 
+In the original Pacman, the player started with 3 lives. In JPacman, there is only 1 life, and if lose it: game over. 
+If you look at the code (Player.java) there is no attribute to store how many lives the player has left. 
  
-Look at JPacman's artifacts and plan the necessary refactoring(s) to support multiple lives. You can start on the simplest refactorings as to not "break" the code or go big according to the pattern "Most Valuable First". There is no wrong path here, do whichever you think is easier or most logical for you. Please note, you need only to "plan" the refactorings for this lab session there is no need to actually apply the refactorings on the code (of course, if you want to do it, go ahead --- just remember that planning is the important part here).
+Look at JPacman's artifacts and plan the necessary refactoring(s) to support multiple lives. You can start on the 
+simplest refactorings as to not "break" the code or go big according to the pattern "Most Valuable First". 
+There is no wrong path here, do whichever you think is easier or most logical for you. Please note, you need only to 
+"plan" the refactorings for this lab session there is no need to actually apply the refactorings on the code 
+(of course, if you want to do it, go ahead --- just remember that planning is the important part here).
  
 Questions:
 * Which were your strategies and reengineering patterns for planning this refactoring? 
 * Why did you consider these refactorings important for your goal?
-* Did the previous tools (CodeScene or SonarQube) identify the refactoring targets you deemed necessary for this goal?
+* Did the previous tools (```CodeScene``` or ```SonarQube```) identify the refactoring targets you deemed necessary for this goal?
 * Do you prefer to refactor just to improve code quality or to refactor with a goal?
 <br/>
 
@@ -171,21 +203,27 @@ Questions:
 Optional Task  1 -- JPacman Strategic Refactoring (part 2)
 ===========
 
-For this optional task, you should apply the planned refactorings from the last task on the source code. Remember to assure that your refactorings are not breaking the application.
+For this optional task, you should apply the planned refactorings from the last task on the source code. 
+Remember to assure that your refactorings are not breaking the application.
 
 
 Task 4 - Setup / Preparation - (Refactoring aware)
 =============
-RefactoringMiner is a library/API written in Java that can detect refactorings applied in the history of a Java project.
+[RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) is a library/API written in 
+Java that can detect refactoring operations applied in the history of a Java project.
 
-Currently, it supports the detection of the more than 80 refactorings
+Currently, it supports the detection of the more than 80 refactorings.
 
 
-Clone&own [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the sources directly into Intellij.
+Clone&own [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) or install from the 
+sources directly into Intellij.
 
-You can follow the instructions on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) of the project (First contact: Skim the Documentation OORP p. 61).
+You can follow the instructions on the [Readme.md](https://github.com/tsantalis/RefactoringMiner/blob/intellij-psi/README.md) 
+of the project (First contact: Skim the Documentation OORP p. 61).
 
-Create a file named "Main.java" or any name of your choice under the subdirectory scr/org/refactoringminer/Main.java and copy&paste the following code snippet into the file.  Run the Main.java file.
+Create a file named ```Main.java``` or any name of your choice under the subdirectory 
+```scr/org/refactoringminer/Main.java``` and copy&paste the following code snippet into the file.  
+Run the ```Main.java``` file.
 
 ```java
 public class Main {

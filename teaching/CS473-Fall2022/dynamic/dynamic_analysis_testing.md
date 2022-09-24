@@ -78,7 +78,7 @@ Test-amplification generates new test cases using the original tests as seeds. I
 Setup / Preparation
 ==============
 Be sure to follow the setup and the tasks from the lab [Refactoring Assistants](/teaching/CS473-Fall2022/refactoring/). 
-Especially, the task on executing SonarQube. You will also need [IntelliJ IDE](https://www.jetbrains.com/idea/) and JPacman. 
+Especially, the task on executing ```SonarQube```. You will also need [IntelliJ IDE](https://www.jetbrains.com/idea/) and ```JPacman```. 
 Moreover, if you have not already, download the book for this course "Object-Oriented Reengineering Patterns
 
 Get/Install the tools & plugins detailed in the Materials above (not the auxiliary tools, they are optional 
@@ -89,14 +89,16 @@ Task 1 -- JPacman Test Coverage
 ===========
  
 We will begin by using the [IntelliJ IDE](https://www.jetbrains.com/idea/) test coverage plugin. 
-The testing and coverage plugins should be enabled by default. If you are not sure, check if your 
-plugins called "Coverage", "JUnit", and "TestNG" are enabled (inside the Preferences you can see the plugins).
+The testing and coverage plugins should be enabled by default. If you are not sure, check under ```IntelliJ IDEA > Preferences > Plugins > installed``` if your 
+plugins called ```Code Coverage for Java```, ```JUnit```, and ```TestNG``` are enabled.
  
 First, make sure that you can test your JPacman, by using the following command line in the 
 [IntelliJ IDE](https://www.jetbrains.com/idea/) terminal:
 ```
 ./gradlew test
 ```
+Remember to set the project to point to the version of JDK on which it was built. Look at ```External Libraries``` under the 
+Project folder in IntelliJ IDE to see the JDK version.
 
 Now, right-click on the ```test``` folder (inside the ```src``` folder) and select the option "Run 'Tests' 
 in ```jpacman.test``` with Coverage". If that option is not available, select "Build Module 
