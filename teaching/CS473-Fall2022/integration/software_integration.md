@@ -85,7 +85,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home
 **Running the JAR file** <br/>
 
 * You need to start MySql server. You can do this by starting ```xammp``` (if you are using a Mac OS, just go to the xampp application (folder) and double-click the file ```manager-osx```)
-* When mysql server is up and runnin
+* When mysql server is up and running, type this in the browser to confirm that everything is working fine  ```http://localhost/phpmyadmin/index.php```
 * Clone-and-own [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and then open the project in  IntelliJ IDE.
 * Edit the ```database.properties``` file and replace the ```USERNAME``` and ```PASSWORD``` with the ones you created for ```mysql``` earlier.
 
