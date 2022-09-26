@@ -107,6 +107,13 @@ java -jar refactoring-analysis.jar
 (You may have to run the commands ```sudo unlink /etc/localtime``` and ```ln -sf /usr/share/zoneinfo/UTC /etc/localtime``` to change the timezone to the local time. More info about timezone [here](https://unix.stackexchange.com/questions/110522/timezone-setting-in-linux)))
 
 Download the like [repList.txt](../../../files/repoList.txt) and replace it with of the default **reposList.txt** in the cloned project [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
+<br/>
+
+**Generate stat summaries**
+After the program has finished running, you can use the Python scripts in the [stats](https://github.com/ualberta-smr/RefactoringsInMergeCommits/tree/master/stats) folder to look at the results.
+
+* [data_resolver.py](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/stats/data_resolver.py): This script will print a summary of stats, including total number of merge scenarios, merge scenarios with involved refacotirngs, conflicting regions with involved refactorings, etc.
+* [plotter.py](https://github.com/ualberta-smr/RefactoringsInMergeCommits/blob/master/stats/plotter.py): This script can draw a number of different plots.
 
 Task 1.2
 ===========
