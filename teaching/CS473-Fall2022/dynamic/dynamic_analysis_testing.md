@@ -57,7 +57,7 @@ necessary, way to assess the quality and usefulness of a test suite in the conte
 Materials & Tools Used for this Session
 ===============
 
-* Session slides [here]().
+* Session slides [here](../../../files/Testing.pdf).
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition. 
