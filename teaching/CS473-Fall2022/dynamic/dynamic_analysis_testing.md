@@ -63,7 +63,8 @@ Materials & Tools Used for this Session
 * [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition. 
 * [LittleDarwin](https://github.com/aliparsai/LittleDarwin) is a tool to perform Mutation testing on Java applications. Mutation testing is a relatively new topic, therefore it is difficult to find working tools for it. 
 * [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
-* [Pitest](http://pitest.org/) and [Pitest Repo](https://github.com/hcoles/pitest) is a state of the art mutation testing system, providing gold standard test coverage for Java and the jvm. It's fast, scalable and integrates with modern test and build tooling.
+* [Pitest](http://pitest.org/) and [Pitest Repo](https://github.com/hcoles/pitest) is a state of the art mutation testing system, providing gold standard test coverage for Java and the jvm. It's fast, scalable and integrates with modern test and build tooling. [Gradle plugin for PIT Mutation Testing
+](https://gradle-pitest-plugin.solidsoft.info/).The plugin provides an ability to perform a mutation testing and calculate a mutation coverage of a Gradle-based projects with PIT.
 
 Auxiliary Tools
 ============
