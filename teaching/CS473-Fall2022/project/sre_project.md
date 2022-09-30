@@ -55,3 +55,21 @@ LinkedIn has 500 individual commits, and Apache Kafka has 3,103 individual commi
 redundant with the continued divergence, and maintenance efforts rapidly grow. For example, if a bug is 
 discovered in a shared file and fixed in one variant, it is not easy to tell if it has been fixed in the 
 other variant.
+
+### 2. Getting Started Instructions
+Please pay attention to the following instructions. You need to send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with:
+* Subject "Reengineering - Linkedin". 
+* Message Body:
+  * The full name of the members in your group (including yours). Remember, a maximum of 3 
+  people, but you are allowed to work with less than 3 if you want to.
+  * Attach the **pre-conditions report** (PDF format) in your message.
+
+* Your Pre-conditions Report should contain the following:
+  * Project Name
+  * Full names of all the members in your group
+  * Link to your GitHub repositories (which shows you already forked [LinkedIn])
+  * The members are set as collaborators to the GitHub project.
+  * Invite me as collaborator (my [GitHub Id - ```johnxu21```](https://github.com/johnxu21)).
+  * 
+
+
