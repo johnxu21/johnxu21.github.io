@@ -107,8 +107,12 @@ touched many times and by whom. This can help, for example, when identifying ref
 opportunities, which developer should be allocated the task since they have touched a file 
 many times or have recently worked on the file. You can name the script for drawing the 
 histogram ```<'your_firstname'_scatterplot.py>```. 
-You get a hint on how draw the scatter plot on this link on [Stackoverflow](https://stackoverflow.com/questions/8202605/matplotlib-scatterplot-color-as-a-function-of-a-third-variable)
+You get a hint on how draw the scatter plot on this link on [Stackoverflow](https://stackoverflow.com/questions/8202605/matplotlib-scatterplot-color-as-a-function-of-a-third-variable).
 
 **Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer)) <br/>
+The repository scottyab/rootbeer has a total of 17 unique source files ('.java'). It has a total 
+of 33 authors who have touched the 17 unique files (the data points in the graph) who have been 
+updating the files and commiting their changes. The scatter plot  below  shows the authors 
+activities over time for the repository scottyab/rootbeer. <br/>
 <img src="/images/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:500px;" align="center">
 
