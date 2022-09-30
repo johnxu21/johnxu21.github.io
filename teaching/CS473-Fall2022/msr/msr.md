@@ -110,5 +110,5 @@ histogram ```<'your_firstname'_scatterplot.py>```.
 You get a hint on how draw the scatter plot on this link on [Stackoverflow](https://stackoverflow.com/questions/8202605/matplotlib-scatterplot-color-as-a-function-of-a-third-variable)
 
 **Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer))
-<img src="/images/john.jpeg" alt="John Businge" style="width:900px;height:900px;" align="right">
+<img src="/images/rootbeer.jpeg" alt="rootbeer" style="width:900px;height:900px;" align="right">
 
