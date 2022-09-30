@@ -109,6 +109,6 @@ many times or have recently worked on the file. You can name the script for draw
 histogram ```<'your_firstname'_scatterplot.py>```. 
 You get a hint on how draw the scatter plot on this link on [Stackoverflow](https://stackoverflow.com/questions/8202605/matplotlib-scatterplot-color-as-a-function-of-a-third-variable)
 
-**Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer))
+**Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer)) <br/>
 <img src="/images/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:500px;" align="center">
 
