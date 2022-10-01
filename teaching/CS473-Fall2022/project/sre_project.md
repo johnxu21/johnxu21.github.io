@@ -155,18 +155,20 @@ Then, more specifically, we ask you to perform the following activities, and rep
 ----------
   [I. Design recovery]
 
-<p class="aligncenter">
+
+<center>
 <img src="/images/473/design_recovery.jpeg" alt="Design Recover" style="width:500px;height:427px;" align="center">
-</p>
+</center>
+
 
 I. Describe the current design implementation of the selected feature in the current Software. Clearly indicate how this design is located in the architecture of the project.
 
 ----------
   [II. Redesign]
 
-<p class="aligncenter">
+<div style="text-align: center;">
 <img src="/images/473/Redesign.jpeg" alt="Redesign" style="width:450px;height:153px;" align="center">
-</p>
+</div>
 
 II. Compose a generic design that describes how the new functionality / feature should be integrated 
 and how the design handles the interaction with the rest of the system. It should be clear 
@@ -178,18 +180,18 @@ code quality.
 ----------
   [III. Management]
 
-<p class="aligncenter">
+<div style="text-align: center;">
 <img src="/images/473/project-management.jpeg" alt="Project Management" style="width:550px;height:275px;" align="center">
-</p>
+</div>
 
 III. Estimate the effort required for (i) refactoring towards the new requirements; and (ii) changing/extending the tests.
 
 --------
   [IV. Refactoring/ Code Change]
 
-<p class="aligncenter">
+<div style="text-align: center;">
 <img src="/images/473/refactor1.jpeg" alt="Project Management" style="width:400px;height:206px;" align="center">
-</p>
+</div>
 
 IV. Refactor the current implementation of the Software such that it can handle the new feature.
 
