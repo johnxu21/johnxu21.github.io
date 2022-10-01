@@ -142,7 +142,7 @@ III. Estimate the effort required for (i) refactoring towards the new requiremen
 --------
   [IV. Refactoring/ Code Change]
 
-<img src="/images/473/refactor.jpeg" alt="Project Management" style="width:400px;height:206px;" align="center">
+<img src="/images/473/refactor1.jpeg" alt="Project Management" style="width:400px;height:206px;" align="center">
 
 IV. Refactor the current implementation of the Software such that it can handle the new feature.
 
