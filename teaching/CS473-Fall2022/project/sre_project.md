@@ -47,15 +47,25 @@ Assignment
 
 ### 1. Contextualization of the Project
 
-LinkedIn is a clone-and-own variant of Apache Kafka that was created by copying and adapting the existing 
+[```LinkedIn```](https://github.com/linkedin/kafka) is a clone-and-own variant of 
+[```Apache Kafka```]((https://github.com/apache/kafka)) that was created by copying and adapting the existing 
 code of Apache Kafka that was forked on 2011-08-15T18:06:16Z. The two software systems kept on synchronizing 
-their new updates until 2022-02-22T13:32:39Z. Since 2022-02-22T13:32:39Z (divergence date), the two 
-projects do not share common commits yet actively evolve in parallel. Currently (2022-02-28T15:01:39Z), 
-LinkedIn has 500 individual commits, and Apache Kafka has 3,103 individual commits. Development becomes 
+their new updates until ```2021-08-10T19:25:59Z```. Since ```2021-08-10T19:25:59Z``` (divergence date), the two 
+projects do not share common commits yet actively evolve in parallel. Currently, (```2022-10-01T15:01:39Z```), 
+LinkedIn has 367 individual commits, and Apache Kafka has 1,216 individual commits. Development becomes 
 redundant with the continued divergence, and maintenance efforts rapidly grow. For example, if a bug is 
 discovered in a shared file and fixed in one variant, it is not easy to tell if it has been fixed in the 
 other variant.
 
+**General problem illustration**
+
+The figure below illustrates clone-and-own, where variant2 (forked repository) was 
+cloned-and-owned from ```variant1``` (original repository). When ```variant2``` forked by the 
+developer  (```fork_date```), it inherited all commits from variant1. Then, between the 
+```fork_date``` and ```divergence_date```, both variants synchronized commits, keeping both 
+variants even. After the ```divergence_date```, the variants stopped synchronizing commits.
+
+<img src="/images/473/patch.jpeg" alt="Patch" style="width:1000px;height:406px;" align="center">
 ### 2. Getting Started Instructions
 Please pay attention to the following instructions. You need to send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with:
 * Subject "Reengineering - Linkedin". 
@@ -67,12 +77,11 @@ Please pay attention to the following instructions. You need to send an email to
 * Your Pre-conditions Report should contain the following:
   * Project Name
   * Full names of all the members in your group
-  * A link to your GitHub repositories (which shows you already forked [LinkedIn])
-  * A link to
+  * A link to your GitHub repositories (which shows you already forked [LinkedIn] and [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits))
   * The members are set as collaborators to the GitHub project.
-  * Invite me as collaborator (my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
+  * Invite me as collaborator on your forked repositories. (my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
 * Demonstrate the ability to build the projects. For this, we want a statement from the group 
-attesting they managed to successfully build the project. You can also attach a screenshot of 
+attesting they managed to successfully build the projects. You can also attach a screenshot of 
 your IDE with the project source and a message like "build successful".
 * Simple Class Diagram of the class being patched (or buggy class). A simple class diagram has 
 only the name of the class and its interactions with the other classes (there are two examples in 
