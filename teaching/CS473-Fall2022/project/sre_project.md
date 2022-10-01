@@ -47,8 +47,8 @@ Assignment
 
 ### 1. Contextualization of the Project
 
-[```LinkedIn```](https://github.com/linkedin/kafka) is a clone-and-own variant of 
-[```Apache Kafka```]((https://github.com/apache/kafka)) that was created by copying and adapting the existing 
+[LinkedIn](https://github.com/linkedin/kafka) is a clone-and-own variant of 
+[Apache Kafka]((https://github.com/apache/kafka)) that was created by copying and adapting the existing 
 code of Apache Kafka that was forked on 2011-08-15T18:06:16Z. The two software systems kept on synchronizing 
 their new updates until ```2021-08-10T19:25:59Z```. Since ```2021-08-10T19:25:59Z``` (divergence date), the two 
 projects do not share common commits yet actively evolve in parallel. Currently, (```2022-10-01T15:01:39Z```), 
@@ -66,6 +66,36 @@ developer  (```fork_date```), it inherited all commits from variant1. Then, betw
 variants even. After the ```divergence_date```, the variants stopped synchronizing commits.
 
 <img src="/images/473/patch.jpeg" alt="Patch" style="width:1000px;height:406px;" align="center">
+
+Let us assume that the developer of ```variant1``` identified a bug after the 
+```divergence_date``` that is spread across files' foo, bar, and lot. The developer 
+then decided to create a ```social fork``` or a ```branch``` of the source 
+repository, ```patched``` the ```buggy``` files, and finally integrated the ```patch```
+back into the ```main branch``` of the ```variant1``` using a ```pull request```. 
+There are four possible scenarios on the ```git_head``` of ```variant2```:
+
+1. The developer of ```variant2``` could have patched the ```buggy``` file in one 
+of the previous commits before the commit at the ```git_head```. This is a case of 
+**effort duplication (ED)**.
+2. The file at the ```git_head``` of the target still contains the ```buggy``` lines.
+This is a case of **missed opportunity (MO)**. We can even calculate how long the 
+target branch has missed the patch by considering the distance between the ```patch``` 
+integration date and date at the ```git_head```.
+3. The file at the ```git_head``` of the target contains both the ```buggy``` and the ```patched``` 
+lines. In this case both effort duplication and missed opportunity are present. 
+This is a ***split case (SP)***.
+4. The file at the ```git_head``` of the target does not contain any of the ```buggy``` 
+or the ```patched``` lines. So this case would not be **interesting (NI)**.
+
+We developed a clone detection tool, [PaReco](https://github.com/patchesandmissedmatches/patchesandmissedmatches),
+that can extracts patches from any source variant ( e.g., [Apache Kafka]((https://github.com/apache/kafka))) 
+in a family and classifies the patches as a MO, ED, SP, or NI in the target variant (e.g., [LinkedIn](https://github.com/linkedin/kafka)). 
+The file patches.xls contains patches (MO and SP) that have been identified in the 
+source variant Apache Kafka that are missing in the divergent target variant 
+[LinkedIn](https://github.com/linkedin/kafka).
+
+
+
 ### 2. Getting Started Instructions
 Please pay attention to the following instructions. You need to send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with:
 * Subject "Reengineering - Linkedin". 
@@ -125,14 +155,18 @@ Then, more specifically, we ask you to perform the following activities, and rep
 ----------
   [I. Design recovery]
 
+<p class="aligncenter">
 <img src="/images/473/design_recovery.jpeg" alt="Design Recover" style="width:500px;height:427px;" align="center">
+</p>
 
 I. Describe the current design implementation of the selected feature in the current Software. Clearly indicate how this design is located in the architecture of the project.
 
 ----------
   [II. Redesign]
 
+<p class="aligncenter">
 <img src="/images/473/Redesign.jpeg" alt="Redesign" style="width:450px;height:153px;" align="center">
+</p>
 
 II. Compose a generic design that describes how the new functionality / feature should be integrated 
 and how the design handles the interaction with the rest of the system. It should be clear 
@@ -144,14 +178,18 @@ code quality.
 ----------
   [III. Management]
 
+<p class="aligncenter">
 <img src="/images/473/project-management.jpeg" alt="Project Management" style="width:550px;height:275px;" align="center">
+</p>
 
 III. Estimate the effort required for (i) refactoring towards the new requirements; and (ii) changing/extending the tests.
 
 --------
   [IV. Refactoring/ Code Change]
 
+<p class="aligncenter">
 <img src="/images/473/refactor1.jpeg" alt="Project Management" style="width:400px;height:206px;" align="center">
+</p>
 
 IV. Refactor the current implementation of the Software such that it can handle the new feature.
 
