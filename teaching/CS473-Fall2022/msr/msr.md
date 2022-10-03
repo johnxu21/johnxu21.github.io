@@ -117,3 +117,13 @@ activities over time for the repository scottyab/rootbeer.
 
 <img src="/images/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
+Task 3
+======
+Write a script to extract data from the folllowing merged pull requests [11791, 11686, 11591, 12159, 12073, 11981, 11867, 11991, 12207, 11926, 11847]
+in the repository [apache/kafka](https://github.com/apache/kafka). 
+Read about how to extract ```pull request``` from the following site [GitHub Pull Request API](https://docs.github.com/en/rest/pulls/pulls#about-the-pulls-api)
+For example, given a ```pull request number = 1347``` for the repo ```octocat/Hello-World```,  the follwoing API would return a ```json``` file the ```pull request``` details:
+```https://api.github.com/repos/octocat/Hello-World/pulls/1347```
+
+The file [Pull request details](https://docs.google.com/spreadsheets/d/13f89Ib7jTp1nKz_3KcaFjq_w8iUZSVWSXsIrBlDylJc/edit#gid=0) 
+is an example output for the pull request number 11577 and 11686 for the repo [apache/kafka](https://github.com/apache/kafka).
