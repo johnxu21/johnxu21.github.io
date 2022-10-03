@@ -60,7 +60,7 @@ software artifacts archived in the repositories.
 
 Material and Tools
 ==========
-* Session slides [here]().
+* Session slides [here](../../../files/MSR_slides.pdf).
 * The following GitHub repos you can use to run the lab experiments
   * [scottyab/rootbeer](https://github.com/scottyab/rootbeer)
   * [Skyscanner/backpack](https://github.com/Skyscanner/backpack) (Try it from home since it has very many commits)
