@@ -126,4 +126,4 @@ For example, given a ```pull request number = 1347``` for the repo ```octocat/He
 ```https://api.github.com/repos/octocat/Hello-World/pulls/1347```
 
 The file [Pull request details](https://docs.google.com/spreadsheets/d/13f89Ib7jTp1nKz_3KcaFjq_w8iUZSVWSXsIrBlDylJc/edit#gid=0) 
-is an example output for the pull request number 11577 and 11686 for the repo [apache/kafka](https://github.com/apache/kafka).
+is an example output for the pull request number ```11577``` and ```11686``` for the repo [apache/kafka](https://github.com/apache/kafka).
