@@ -103,7 +103,8 @@ Since the fork has diverged, it may have changed the shared file(s) present in t
 upstream variant. Therefore, while performing the integration, you might experience some merge conflicts. 
 Some of these conflicts might be a result of refactoring operations applied during the evolution of the 
 file in both branches of [Apache Kafka]((https://github.com/apache/kafka)) and 
-[LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/CS473-Fall2022/integration/) we experienced the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
+[LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/CS473-Fall2022/integration/) 
+we experienced the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
 (that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi))
 that can identify conflicting regions related to refactoring operations and non-refactoring operations.
 
