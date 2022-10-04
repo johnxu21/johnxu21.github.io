@@ -50,8 +50,8 @@ Assignment
 [LinkedIn](https://github.com/linkedin/kafka) is a clone-and-own variant of 
 [Apache Kafka]((https://github.com/apache/kafka)) that was created by copying and adapting the existing 
 code of Apache Kafka that was forked on 2011-08-15T18:06:16Z. The two software systems kept on synchronizing 
-their new updates until ```2021-08-10T19:25:59Z```. Since ```2021-08-10T19:25:59Z``` (divergence date), the two 
-projects do not share common commits yet actively evolve in parallel. Currently, (```2022-10-01T15:01:39Z```), 
+their new updates until ```2021-07-06T17:39:59Z```. Since ```2021-07-06T17:39:59Z``` (divergence date), the two 
+projects do not share common commits yet actively evolve in parallel. Currently, ( as of ```2022-10-01T15:01:39Z```), 
 LinkedIn has 367 individual commits, and Apache Kafka has 1,216 individual commits. Development becomes 
 redundant with the continued divergence, and maintenance efforts rapidly grow. For example, if a bug is 
 discovered in a shared file and fixed in one variant, it is not easy to tell if it has been fixed in the 
@@ -88,11 +88,25 @@ This is a ***split case (SP)***.
 or the ```patched``` lines. So this case would not be **interesting (NI)**.
 
 We developed a clone detection tool, [PaReco](https://github.com/patchesandmissedmatches/patchesandmissedmatches),
-that can extracts patches from any source variant ( e.g., [Apache Kafka]((https://github.com/apache/kafka))) 
+that can extracts patches from any source variant ( e.g., [Apache Kafka]((https://github.com/apache/kafka)) 
 in a family and classifies the patches as a MO, ED, SP, or NI in the target variant (e.g., [LinkedIn](https://github.com/linkedin/kafka)). 
 The file patches.xls contains patches (MO and SP) that have been identified in the 
 source variant Apache Kafka that are missing in the divergent target variant 
 [LinkedIn](https://github.com/linkedin/kafka).
+
+Your assignment is to identify numerous patches from [patches](https://docs.google.com/spreadsheets/d/1zUSgYGCOMewzpQHE2eBd0yfDv_3lBp8_6rols1yp5xo/edit#gid=0) 
+that are of different sizes and integrate them in the source 
+variant LinkedIn. The size can be measured in terms of number of commits, files_changed, 
+added_lines, deleted_lines.
+
+Since the fork has diverged, it may have changed the shared file(s) present in the patch applied to the 
+upstream variant. Therefore, while performing the integration, you might experience some merge conflicts. 
+Some of these conflicts might be a result of refactoring operations applied during the evolution of the 
+file in both branches of [Apache Kafka]((https://github.com/apache/kafka)) and 
+[LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/CS473-Fall2022/integration/) we experienced the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
+(that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi))
+that can identify conflicting regions related to refactoring operations and non-refactoring operations.
+
 
 
 

@@ -37,8 +37,6 @@ height:40px;" value="Reengineering Project" />
 <br/>
 
 
-
-
 Mining software repositories is related to both data mining and reverse engineering. 
 Source control repositories, bug repositories, archived
 communications, deployment logs, and code repositories
@@ -127,3 +125,4 @@ For example, given a ```pull request number = 1347``` for the repo ```octocat/He
 
 The file [Pull request details](https://docs.google.com/spreadsheets/d/13f89Ib7jTp1nKz_3KcaFjq_w8iUZSVWSXsIrBlDylJc/edit#gid=0) 
 is an example output for the pull request number ```11577``` and ```11686``` for the repo [apache/kafka](https://github.com/apache/kafka).
+Store the output in ```.csv``` file.
