@@ -118,7 +118,7 @@ older version of the library of [RefactoringMiner](https://github.com/tsantalis/
 implements a few refactoring operations. You will need to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 with a few refactoring operations that you find frequently occurring in the patches (pull requests), you are going to integrate into the fork variant [LinkedIn](https://github.com/linkedin/kafka).
 You will identify the frequently occuring refactorings the method we used in *Task 4* in the [Refactoring Assistants
-](/teaching/CS473-Fall2022/refactoring/) lab. 
+](/teaching/CS473-Fall2022/refactoring/) lab. Remember to write tests for the newly added refactorings.
 
 
 Next, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses ```git merge``` and 
