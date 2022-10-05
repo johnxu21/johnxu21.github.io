@@ -139,6 +139,9 @@ The ```merge_commit``` is the pull request merge commit you are trying to integr
 The next steps are the same as they are applied in [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 
 
+After identifying the *overlapping refactorings* and the *nonoverlapping refactorings* in 
+the *conflicting region*, use the knowledge of refactoring to integrate the patch into the 
+variant. 
 
    
 
