@@ -107,11 +107,11 @@ file(s) in both branches of [Apache Kafka]((https://github.com/apache/kafka)) an
 we used the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
 (that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)),
 which can identify the **conflicting regions** using the following steps:
-1. **Step 1: Detecting Conflicting Regions**: the tool uses the commands ```git merge``` and 
+1. *Step 1: Detecting Conflicting Regions*: the tool uses the commands ```git merge``` and 
 ```git diff``` to determine the **conflicting regions** of a given ```merge_commit```. 
-2. **Step 2: Detecting Evolutionary Changes:** the tool mines the ```git log``` to track the historical evolution (**evolutionary commits**) of a given **conflicting region** using the command ```git log -L <start><end>:file``` (```start```--start of the conflicting region, ```end```--end of the conflicting region, ```file```--file to track). 
-3. **Step 3: Detecting Refactorings:**, the tool detects if there are any refactoring operations in the **evolutionary commits** by implementing the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi). 
-4. **Step 4: Detecting Involved Refactorings:** the tool identifies refactoring operations affected by the evolution of conflicting region. These refactorings are called **involved refactorings** or overlapping refactorings since they are involved in the changes related to the conflicting region.
+2. *Step 2: Detecting Evolutionary Changes:* the tool mines the ```git log``` to track the historical evolution (**evolutionary commits**) of a given **conflicting region** using the command ```git log -L <start><end>:file``` (```start```--start of the conflicting region, ```end```--end of the conflicting region, ```file```--file to track). 
+3. *Step 3: Detecting Refactorings:*, the tool detects if there are any refactoring operations in the **evolutionary commits** by implementing the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi). 
+4. *Step 4: Detecting Involved Refactorings:* the tool identifies refactoring operations affected by the evolution of conflicting region. These refactorings are called **involved refactorings** or overlapping refactorings since they are involved in the changes related to the conflicting region.
 
 However, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) has a dependency on an 
 older version of the library of [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) that 
