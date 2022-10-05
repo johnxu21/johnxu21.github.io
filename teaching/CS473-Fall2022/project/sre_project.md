@@ -65,7 +65,7 @@ developer  (```fork_date```), it inherited all commits from variant1. Then, betw
 ```fork_date``` and ```divergence_date```, both variants synchronized commits, keeping both 
 variants even. After the ```divergence_date```, the variants stopped synchronizing commits.
 
-<img src="/images/473/patch1.jpeg" alt="Patch" style="width:1000px;height:406px;" align="center">
+<img src="/images/473/zoomed_patch.jpeg" alt="Patch" style="width:1000px;height:406px;" align="center">
 
 Let us assume that the developer of ```variant1``` identified a bug after the 
 ```divergence_date``` that is spread across files' foo, bar, and lot. The developer 
@@ -99,14 +99,22 @@ that are of different sizes and integrate them in the source
 variant LinkedIn. The size can be measured in terms of number of commits, files_changed, 
 added_lines, deleted_lines.
 
-Since the fork has diverged, it may have changed the shared file(s) present in the patch applied to the 
-upstream variant. Therefore, while performing the integration, you might experience some merge conflicts. 
-Some of these conflicts might be a result of refactoring operations applied during the evolution of the 
+Since the fork has diverged, it may have made changes in the shared file(s) present in the patch (pull request) that is applied to the 
+upstream variant. Therefore, while performing the integration, you might experience merge conflicts. 
+Some conflicts might be a result of refactoring operations applied during the evolution of the 
 file in both branches of [Apache Kafka]((https://github.com/apache/kafka)) and 
 [LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/CS473-Fall2022/integration/) 
-we experienced the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
-(that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi))
-that can identify conflicting regions related to refactoring operations and non-refactoring operations.
+we used the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
+(that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi),
+which can identify conflicting regions related to "refactoring operations" and "non-refactoring operations".
+However, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses version 2.1.0 library
+of [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi), that implements a few refactoring 
+operations. You are supposed to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
+with refactoring operations that you find frequently occuring the the patches (pull requests) you yopu are going to
+integrate in the fork variant [LinkedIn](https://github.com/linkedin/kafka)
+
+
+
 
 
 
