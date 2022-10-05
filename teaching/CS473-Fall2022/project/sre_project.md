@@ -102,11 +102,14 @@ added_lines, deleted_lines.
 Since the fork has diverged, it may have made changes in the shared file(s) present in the patch (pull request) that is applied to the 
 upstream variant. Therefore, while performing the integration, you might experience merge conflicts. 
 Some conflicts might be a result of refactoring operations applied during the evolution of the 
-file in both branches of [Apache Kafka]((https://github.com/apache/kafka)) and 
+file(s) in both branches of [Apache Kafka]((https://github.com/apache/kafka)) and 
 [LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/CS473-Fall2022/integration/) 
 we used the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
-(that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi),
-which can identify conflicting regions related to "refactoring operations" and "non-refactoring operations".
+(that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)),
+which can identify **conflicting regions** related to "refactoring operations" and "non-refactoring operations".
+
+The tool is also able to locate **involved refactorings** (overlapping refactoring operations)
+
 However, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses version 2.1.0 library
 of [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi), that implements a few refactoring 
 operations. You are supposed to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
