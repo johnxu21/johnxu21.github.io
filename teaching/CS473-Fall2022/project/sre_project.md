@@ -122,11 +122,9 @@ Next, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsI
 tries to synchronize the branches. To integrate patches (pull requests), we shall have some changes in 
 *Step 1: Detecting Conflicting Regions* as follows:
 
-
-<ol type="A">
-  <li>Fork [LinkedIn](https://github.com/linkedin/kafka)</li>
-  <li>Clone the fork you have created</li>
-  <li>Add the remote repository that we are going to cherry-pick the patch using these two commands.</li>
+  1. Fork [LinkedIn](https://github.com/linkedin/kafka)
+  2. Clone the fork you have created</li>
+  3. Add the remote repository that we are going to cherry-pick the patch using these two commands.
 
 ``` 
 git remote add other https://github.com/apache/kafka.git
@@ -134,8 +132,8 @@ git fetch apache
 git cherry-pick merge_commit
 ``` 
 The ```merge_commit``` is the pull request merge commit you are trying to integrate into the fork.
-<li>Step 2 - 4 are the same as they are applied in [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)</li>
-</ol>
+  4. Step 2 - 4 are the same as they are applied in [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
+
 
 
    
