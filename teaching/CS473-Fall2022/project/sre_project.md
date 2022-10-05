@@ -115,7 +115,7 @@ which can identify the **conflicting regions** using the following steps:
 
 However, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) has a dependency on an 
 older version of the library of [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) that 
-implements a few refactoring operations. You will to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
+implements a few refactoring operations. You will need to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 with refactoring operations that you find frequently occurring in the patches (pull requests), you are going to integrate into the fork variant [LinkedIn](https://github.com/linkedin/kafka).
 
 Next, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses ```git merge``` and 
