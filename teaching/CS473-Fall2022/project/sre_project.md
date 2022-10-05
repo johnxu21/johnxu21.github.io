@@ -132,7 +132,8 @@ git fetch apache
 git cherry-pick merge_commit
 ``` 
 The ```merge_commit``` is the pull request merge commit you are trying to integrate into the fork.
-  4. Step 2 - 4 are the same as they are applied in [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
+
+The next steps are the same as they are applied in [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 
 
 
