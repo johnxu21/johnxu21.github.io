@@ -118,13 +118,15 @@ older version of the library of [RefactoringMiner](https://github.com/tsantalis/
 implements a few refactoring operations. You will to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 with refactoring operations that you find frequently occurring in the patches (pull requests), you are going to integrate into the fork variant [LinkedIn](https://github.com/linkedin/kafka).
 
-Next, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses ```git merge``` and tries to synchronize the branches. To integrate patches (pull requests), we shall have some changes in **Step 1: Detecting Conflicting Regions** as follows:
+Next, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses ```git merge``` and 
+tries to synchronize the branches. To integrate patches (pull requests), we shall have some changes in 
+*Step 1: Detecting Conflicting Regions* as follows:
 
 1. Fork [LinkedIn](https://github.com/linkedin/kafka)
 2. Clone the fork you have created 
 3. Add the remote repository that we are going to cherry-pick the patch using these two commands.
    ```
-    git remote add other https://www.github.com/apache/kafka.git
+    git remote add other https://github.com/apache/kafka.git
     git fetch apache
     git cherry-pick merge_commit
    ``` 
