@@ -99,16 +99,18 @@ that are of different sizes and integrate them in the source
 variant LinkedIn. The size can be measured in terms of number of commits, files_changed, 
 added_lines, deleted_lines.
 
-Since the fork has diverged, it may have made changes in the shared file(s) present in the patch (pull request) that is applied to the 
+Since the fork has diverged, it may have changed the shared file(s) present in the patch (pull request) that is applied to the 
 upstream variant. Therefore, while performing the integration, you might experience merge conflicts. 
 Some conflicts might be a result of refactoring operations applied during the evolution of the 
 file(s) in both branches of [Apache Kafka]((https://github.com/apache/kafka)) and 
 [LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/CS473-Fall2022/integration/) 
 we used the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
 (that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)),
-which can identify **conflicting regions** related to "refactoring operations" and "non-refactoring operations".
-
-The tool is also able to locate **involved refactorings** (overlapping refactoring operations)
+which can identify the **conflicting regions**. As a first step, the tool uses the commands ```git merge``` and 
+```git diff``` to determine the **conflicting regions** of a given ```merge commit```. 
+In the second step, the tool mines the ```git log``` to track the historical evolution (**evolutionary commits**) of a given **conflicting region** using the command ```git log -L <start><end>:file``` (```start```--start of the conflicting region, ```end```--end of the conflicting region, ```file```--file to track). 
+In the third step, the tool detects if there are any refactoring operations in the **evolutionary commits** by implementing the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi). 
+Lastly, the evolution of the conflicting region has affected the tool refactoring operations. These refactorings are called **involved refactorings** or overlapping refactorings since they are involved in the changes related to the conflicting region.
 
 However, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses version 2.1.0 library
 of [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi), that implements a few refactoring 
