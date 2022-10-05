@@ -112,11 +112,10 @@ In the second step, the tool mines the ```git log``` to track the historical evo
 In the third step, the tool detects if there are any refactoring operations in the **evolutionary commits** by implementing the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi). 
 Lastly, the evolution of the conflicting region has affected the tool refactoring operations. These refactorings are called **involved refactorings** or overlapping refactorings since they are involved in the changes related to the conflicting region.
 
-However, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses version 2.1.0 library
-of [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi), that implements a few refactoring 
-operations. You are supposed to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
-with refactoring operations that you find frequently occuring the the patches (pull requests) you yopu are going to
-integrate in the fork variant [LinkedIn](https://github.com/linkedin/kafka)
+However, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) has a dependency on an 
+older version of the library of [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) that 
+implements a few refactoring operations. You will to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
+with refactoring operations that you find frequently occurring in the patches (pull requests), you are going to integrate into the fork variant [LinkedIn](https://github.com/linkedin/kafka)
 
 
 
