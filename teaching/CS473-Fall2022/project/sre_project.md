@@ -120,7 +120,6 @@ with a few refactoring operations that you find frequently occurring in the patc
 You will identify the frequently occuring refactorings the method we used in *Task 4* in the [Refactoring Assistants
 ](/teaching/CS473-Fall2022/refactoring/) lab. Remember to write tests for the newly added refactorings.
 
-
 Next, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses ```git merge``` and 
 tries to synchronize the branches. To integrate patches (pull requests), we shall have some changes in 
 *Step 1: Detecting Conflicting Regions* as follows:
