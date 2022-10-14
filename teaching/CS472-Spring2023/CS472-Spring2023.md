@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CS 472/673 - Software Product Design and Development I
-permalink: /teaching/CS472-Fall2023/
+title: CS 472/672 - Software Product Design and Development I
+permalink: /teaching/CS472-Spring2023/
 ---
 
 Current techniques in software design presented with emphasis on architecture first development. Introduction to the processes involved in development. Practice architectural design through a series of homework problems. Students work in teams to prepare the architecture for a software product.
