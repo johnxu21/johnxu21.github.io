@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Study Material
-permalink: /teaching/CS472-Fall2023/
+permalink: /teaching/CS472-Spring2023/
 ---
 
 All study material to support theory as well as practicals is collected here.
