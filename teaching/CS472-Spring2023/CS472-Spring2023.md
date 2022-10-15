@@ -4,6 +4,32 @@ title: CS 472/672 - Software Product Design and Development I
 permalink: /teaching/CS472-Spring2023/
 ---
 
+<form action="/teaching/CS472-Spring2023/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Course Overview" />
+</form>
+<form action="/teaching/CS472-Spring2023/study_material/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Study Material" />
+</form>
+<form action="/teaching/CS472-Spring2023/Timetable/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Timetable" />
+</form>
+<form action="/teaching/CS472-Spring2023/Exam/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Exam" />
+</form>
+<form action="/teaching/CS472-Spring2023/Project/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Project" />
+</form>
+
+
+<br/>
+<br/>
+
+
 Current techniques in software design presented with emphasis on architecture first development. Introduction to the processes involved in development. Practice architectural design through a series of homework problems. Students work in teams to prepare the architecture for a software product.
 
 **Prerequisites**: CS 326 and CS 370
