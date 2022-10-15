@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Study Material
+title: Timetable
 permalink: /teaching/CS472-Spring2023/Timetable/
 ---
 <form action="/teaching/CS472-Spring2023/">

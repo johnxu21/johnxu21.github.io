@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Study Material
+title: Project
 permalink: /teaching/CS472-Spring2023/project/
 ---
 <form action="/teaching/CS472-Spring2023/">
