@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project
-permalink: /teaching/CS472-Spring2023/project/
+permalink: /teaching/CS472-Spring2023/project/project.md
 ---
 <form action="/teaching/CS472-Spring2023/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
