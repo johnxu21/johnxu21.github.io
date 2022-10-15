@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - Loading TicTacToe in CLion
-permalink: /teaching/CS472-Spring2023/
+permalink: /teaching/CS472-Spring2023/study_material/material/
 ---
 
 This text will show you in a few steps how to load the TicTacToe program (to be used in the Project Software Engineering) in CLion. The example starts from the first version TicTacToe10, but subsequent versions should load similarly.
