@@ -13,7 +13,7 @@ The ultimate goal of this exercise is to set up the TicTacToe project in such a 
 
 Step 1: Compile GTest
 ========
-* The google test framework must be compiled on the platform you are working on (MacOSX, Linux, Windows, ...). You do this by first downloading gtest [gtest-1.7.zip](). Decompress the zip file.
+* The google test framework must be compiled on the platform you are working on (MacOSX, Linux, Windows, ...). You do this by first downloading gtest [gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing). Decompress the zip file.
 * Open a terminal and navigate to the gtest folder that you have unzipped
 * *Then run these commands to compile the framework:
 ```commandline
@@ -48,4 +48,12 @@ libgtest.a
 libgtest_main.a
 ```
 
+* Make sure you have an unzipped version of a ```TicTacToe``` ```zip``` or ```tar``` file already. In the example, we have extracted version 10, much like the one below, but in later versions, there will be more files extracted.
+```commandline
+./src:
+TicTacToe.cpp
+TicTacToe.h
+TicTacToeMain.cpp
+TicTacToeTests.cpp
+```
 
