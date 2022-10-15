@@ -32,8 +32,8 @@ Project 2022-2023
 =========
 You will be able to find everything about the project specification 2022-2023 below.
 * Functional Requirements:
-  * Specification 1.0 [pdf]()
-  * Specification 2.0 [pdf]()
+  * Specification 1.0 [[pdf]()]
+  * Specification 2.0 [[pdf]()]
 * Non Functional Requirements
   * [C++ Code Conventions]()
 
