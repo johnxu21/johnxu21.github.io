@@ -4,6 +4,31 @@ title: CS472 - Loading TicTacToe in CLion
 permalink: /teaching/CS472-Spring2023/study_material/material/
 ---
 
+<form action="/teaching/CS472-Spring2023/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Course Overview" />
+</form>
+<form action="/teaching/CS472-Spring2023/study_material/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Study Material" />
+</form>
+<form action="/teaching/CS472-Spring2023/Timetable/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Timetable" />
+</form>
+<form action="/teaching/CS472-Spring2023/Exam/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Exam" />
+</form>
+<form action="/teaching/CS472-Spring2023/project/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Project" />
+</form>
+
+
+<br/>
+<br/>
+
 This text will show you in a few steps how to load the TicTacToe program (to be used in the Project Software Engineering) in CLion. The example starts from the first version TicTacToe10, but subsequent versions should load similarly.
 
 **Goal:** 
