@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project
-permalink: /teaching/CS472-Spring2023/project/project.md
+permalink: /teaching/CS472-Spring2023/project/
 ---
 <form action="/teaching/CS472-Spring2023/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
@@ -19,7 +19,7 @@ height:40px;" value="Timetable" />
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/project.md">
+<form action="/teaching/CS472-Spring2023/project/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
@@ -34,8 +34,8 @@ You will be able to find everything about the project specification 2022-2023 be
 * Functional Requirements:
   * Specification 1.0 [[pdf]()]
   * Specification 2.0 [[pdf]()]
-* Non Functional Requirements
-  * [C++ Code Conventions]()
+* [Non Functional Requirements](/teaching/CS472-Spring2023/project/nfr/)
+  * [C++ Code Conventions](/teaching/CS472-Spring2023/study_material/material/CMakeLists.txt)
 
 To see how things work in concrete terms, you will find the form below with the assessment criteria.
 

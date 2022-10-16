@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Non-functional requirements
-permalink: /teaching/CS472-Spring2023/project/nfr.md
+permalink: /teaching/CS472-Spring2023/project/nfr/
 ---
 
 In addition to the functional requirements specified by the customer, the customer also had several non-functional requirements that the project must meet. Each of these requirements was provided with a reason.
