@@ -37,7 +37,7 @@ Required
 compile with compiler flags ```-std=c++98``` and ```-Wall -Werror```. Use this CMakeLists.txt as an example.
 * **Testing**: The customer expects a high-quality system, so there must be automatic tests. (Use the gtest library)
 * **Contracts**: The customer expects a high-quality system, so there must be contracts in the system. 
-(Use [```DesignByContract.h```](material/DesignByContract.h) for this)
+(Use [DesignByContract.h](material/DesignByContract.h) for this)
 * **Functionality**: The customer wants guarantees about the available functionality, so they must also be able to provide their input files.
 * **Code Conventions**: Follow the C++ code conventions as specified in the Program code box.
 
