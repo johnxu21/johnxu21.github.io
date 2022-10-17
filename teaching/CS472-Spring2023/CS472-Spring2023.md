@@ -63,6 +63,15 @@ Content
 =======
 In addition to a theoretical introduction, the content of this course mainly consists of self-motivation. Starting from a requirements specification (which will be expanded and adapted in the project), the student will analyze the problem and design, implement and test a solution. Implementation and testing is done using the C++ programming language.
 
-Assessment
+Evaluation
 =======
+Two interim evaluations during the semester plus one final evaluation at the end of the semester.
+
+Literature
+=========
+The following book is recommended as general background information to the course. 
+They are available in the library.
+1. Design Patterns: Elements of Reusable Object-Oriented Software
+2. Design Patterns in Modern C++: Reusable Approaches for Object-Oriented Software Design
+3. Using UML : Software Engineering with Objects and Components
 
