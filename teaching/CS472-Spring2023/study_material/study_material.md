@@ -97,7 +97,7 @@ The lab during the 2nd week deals with unit tests, debugging and contracts. All 
 * [Tasks]()
 * The google test framework [[gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing)]
 * Newer versions of google test can be found on  [[Github-googletest](https://github.com/google/googletest/releases)]
-* The test framework must also be compiled. Use the instructions to load TicTacToe in CLion as an example [[load-tictactoe-clion](material/loading_ttt/)]
+* The test framework must also be compiled. Use the instructions to load TicTacToe in CLion as an example [[load-tictactoe-clion](material/loading_ttt/loading_ttt.md)]
 
 
 
