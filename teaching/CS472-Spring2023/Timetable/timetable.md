@@ -30,13 +30,17 @@ height:40px;" value="Project" />
 
 Theory
 ========
-The theory consists of three lectures: 
-(1. Reliability, 2. Object-oriented design, and 3. Planning) where we explain the techniques to be used.
+The theory consists of four lessons where we explain the techniques to be used.: 
+1. Introduction to Git and GitHub 
+2. Reliability, 
+3. Object-oriented design, and 
+4. Planning
 
-Practicals
+Labs
 ========
-The first exercise sessions are aimed at practicing essential topics (XML parsing, testing, debugging, contracts, ...). 
-After a few weeks, the exercise sessions switch to independent work, i.e. the exercises are organized as sessions 
+The first exercise lab sessions is meant to practice working with Git and GitHub.
+The next lab sessions are aimed at practicing essential topics (XML parsing, testing, debugging, contracts, ...). 
+After a few weeks, the lab sessions switch to independent work, i.e. the labs are organized as sessions 
 in the computer rooms where you can work on your project freely, and where an assistant is 
 present to answer any questions. During those hours, the computer rooms are reserved for you, 
 so that you can certainly work.
