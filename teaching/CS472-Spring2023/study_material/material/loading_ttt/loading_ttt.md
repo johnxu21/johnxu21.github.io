@@ -57,7 +57,7 @@ Step 2: Add the GTest files to the project
 * Copy the ```include``` folder to the ```gtest``` folder.
 * In the end we should get this folder structure:
 
-```commandline
+```
 ./gtest:
 include
 lib
