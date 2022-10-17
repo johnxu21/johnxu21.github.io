@@ -2,6 +2,7 @@
 layout: page
 title: CS472 - Loading TicTacToe in CLion
 permalink: /teaching/CS472-Spring2023/study_material/loading_ttt/
+---
 
 <form action="/teaching/CS472-Spring2023">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
