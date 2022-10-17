@@ -86,13 +86,13 @@ All sample code (both for theory and practicals) can be found below.
 Practicals
 ========
 
-######## Week 1: 
+###### Week 1: 
 The practical during the 1st week deals with the xml parser, a mandatory component of the project. All materials can be found below.
 * [Tasks]()
 * [eenCD.xml](material/eenCD.xml), [cdCatalog.xml](material/cdCatalog.xml), [eenCDError.xml](material/eenCDError.xml), [cdCatalogError.xml](material/cdCatalogError.xml)
 * [Possible solution](https://drive.google.com/file/d/1XLZDTpHjaxZ4RmlUlU0ic58ngIAz3d3m/view?usp=sharing)
 
-######## Week 2: 
+###### Week 2: 
 The lab during the 2nd week deals with unit tests, debugging and contracts. All supplies can be found below.
 * [Tasks]()
 * The google test framework [[gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing)]
