@@ -86,7 +86,13 @@ All sample code (both for theory and practicals) can be found below.
 Practicals
 ========
 
-* Week 1: The practical during the 1st week deals with the xml parser, a mandatory component of the project. All materials can be found below.
+######## Week 1: 
+The practical during the 1st week deals with the xml parser, a mandatory component of the project. All materials can be found below.
+* [eenCD.xml](material/eenCD.xml), [cdCatalog.xml](material/cdCatalog.xml), [eenCDError.xml](material/eenCDError.xml), [cdCatalogError.xml](material/cdCatalogError.xml)
+
+######## Week 2: 
+
+[Possible solution](https://drive.google.com/file/d/1XLZDTpHjaxZ4RmlUlU0ic58ngIAz3d3m/view?usp=sharing)
 
 
 
