@@ -66,9 +66,10 @@ lib
 gtest
 
 ./gtest/include/gtest:
-...
+
+.
 gtest.h
-...
+.
 
 ./gtest/lib:
 libgtest.a
