@@ -65,7 +65,7 @@ References to some resources.
 * Original can be found on [GitHub googletest](https://github.com/google/googletest)
 * The test framework must also be compiled. This is done through cmake. Instructions can be found at [GoogleTest Readme.md](https://github.com/google/googletest/blob/main/googletest/README.md)
 * Design by contract [DesignByContract.h](material/DesignByContract.h) (A minimalist version with REQUIRE and ENSURE macros that -- if the condition is not met -- immediately stop the program with a simple message). 
-* Loading [TicTacToe in CLion](material/loading_ttt/loading_TicTacToe_in_CLion.md)
+* Loading [TicTacToe in CLion](material/loading_ttt/loading_ttt.md)
 * A documentation generator [DoxyGen](https://doxygen.nl/) 
 
 All sample code (both for theory and practicals) can be found below.

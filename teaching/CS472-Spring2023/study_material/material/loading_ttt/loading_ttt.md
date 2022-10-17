@@ -51,7 +51,7 @@ Step 2: Add the GTest files to the project
 ===========
 * In your project, create a new folder called ```gtest```. Create another folder in it called ```lib```.
 * Copy the libraries ```libgtest.a``` and ```libgtest_main.a``` to the directory ```gtest/lib```.
-* Copy the include folder to the ```gtest``` folder.
+* Copy the ```include``` folder to the ```gtest``` folder.
 * In the end we should get this folder structure:
 
 ```commandline
