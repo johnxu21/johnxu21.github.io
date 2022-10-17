@@ -85,7 +85,7 @@ TicTacToeTests.cpp
 Step 3 - Customize the CMakeLists
 ========
 * Once all the files are in the right place, all we need to do is edit the CMakeLists.txt. You can download it here:
-* [CMakeLists.txt](CMakeLists.txt)
+* [CMakeLists.txt](../CMakeLists.txt)
 * Using this ```CMakeLists.txt```, ```CLion``` will automatically create two run configurations: a ```'ttt'``` which builds and executes the Release version, and a ```'ttt_debug'``` which builds and executes the Debug version.
 
 Step 4 - Test and Demonstration run
