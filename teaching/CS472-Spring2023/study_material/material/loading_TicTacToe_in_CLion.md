@@ -1,26 +1,26 @@
 ---
 layout: page
 title: CS472 - Loading TicTacToe in CLion
-permalink: /teaching/CS472-Spring2023/study_material/material/
+permalink: /teaching/CS472-Spring2023/study_material/material/loading_TicTacToe_in_CLion.md
 ---
 
-<form action="/teaching/CS472-Spring2023/">
+<form action="/teaching/CS472-Spring2023">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS472-Spring2023/study_material/">
+<form action="/teaching/CS472-Spring2023/study_material">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Study Material" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/">
+<form action="/teaching/CS472-Spring2023/Timetable">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Timetable" />
 </form>
-<form action="/teaching/CS472-Spring2023/Exam/">
+<form action="/teaching/CS472-Spring2023/Exam">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/">
+<form action="/teaching/CS472-Spring2023/project">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
@@ -85,7 +85,7 @@ TicTacToeTests.cpp
 Step 3 - Customize the CMakeLists
 ========
 * Once all the files are in the right place, all we need to do is edit the CMakeLists.txt. You can download it here:
-* [CMakeLists.txt](material/CMakeLists.txt)
+* [CMakeLists.txt](CMakeLists.txt)
 * Using this ```CMakeLists.txt```, ```CLion``` will automatically create two run configurations: a ```'ttt'``` which builds and executes the Release version, and a ```'ttt_debug'``` which builds and executes the Debug version.
 
 Step 4 - Test and Demonstration run
