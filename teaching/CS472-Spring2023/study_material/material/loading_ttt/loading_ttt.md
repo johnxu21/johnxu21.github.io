@@ -29,19 +29,20 @@ height:40px;" value="Project" />
 <br/>
 <br/>
 
-This text will show you in a few steps how to load the TicTacToe program (to be used in the Project Software Engineering) in CLion. The example starts from the first version TicTacToe10, but subsequent versions should load similarly.
+This text will show you in a few steps how to load the TicTacToe program (to be used in the Software Design and Development I) in CLion. 
+The example starts from the first version TicTacToe10, but subsequent versions should load similarly.
 
 **Goal:** 
 The ultimate goal of this exercise is to set up the TicTacToe project in such a way that there are two configurations ("Build Configurations"): 
-1.  a "Release" version in which only the most necessary for a demonstration to the acknowledgment of the end user ; 
+1.  a "Release" version in which it is only necessary for demonstration to the end user for acknowledgment; 
 2.  We use a "Debug" version with extras during the development process (tests, debug, ...).
 
 Step 1: Compile GTest
 ========
-* The google test framework must be compiled on the platform you are working on (MacOSX, Linux, Windows, ...). 
+* The Google test framework must be compiled on the platform you are working on (MacOSX, Linux, Windows, ...). 
 You do this by first downloading gtest [gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing). Decompress the zip file.
 * Open a terminal and navigate to the gtest folder that you have unzipped
-* *Then run these commands to compile the framework:
+* Then run these commands to compile the framework:
 
 ```commandline
 ./configure

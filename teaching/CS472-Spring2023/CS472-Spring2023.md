@@ -50,7 +50,9 @@ Where ? When ?
 
 Rationale
 ======
-The purpose of this course is to give students an introduction to developing software in a more realistic setting. In the first semester of the course (CS 472), students gather requirements; creating mockups and prototypes, while in the second (CS 473), they predominately implement and deploy their software. During both courses, students are required to choose and follow standard software engineering processes.
+The purpose of this course is to give students an introduction to developing software in a more 
+realistic setting. In the first semester of the course (CS 472), students gather requirements; 
+creating mockups and prototypes, while in the second (CS 473), they predominately implement and deploy their software. During both courses, students are required to choose and follow standard software engineering processes.
 
 At the end of this course you will be able to...
  * develop a software project using professional tools.
