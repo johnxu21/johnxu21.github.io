@@ -2,7 +2,7 @@
 // Name        : DesignByContract.h
 // Author      : Serge Demeyer
 // Version     :
-// Copyright   : Project Software Engineering - BA1 Informatica - Serge Demeyer - University of Antwerp
+// Copyright   : Serge Demeyer - University of Antwerp
 // Description : Declarations for design by contract in C++
 //============================================================================
 
