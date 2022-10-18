@@ -26,7 +26,7 @@ height:40px;" value="Project" />
 </form>
 </div>
 
-<div class="main-component">
+<!--div class="main-component">
     <input type="text" name="main-property1" style="background-color:cornflowerblue;color:white;width:145px;
 height:30px;" form="main-form" />
     <input type="text" name="main-property2" style="background-color:cornflowerblue;color:white;width:145px;
@@ -44,7 +44,7 @@ height:30px;" form="main-form" />
     </div>
 
     <input type="submit" name="Project" value="Project" form="main-form" />
-</div>
+</div-->
 
 <br/>
 <br/>
