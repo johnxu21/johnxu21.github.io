@@ -26,6 +26,16 @@ height:40px;" value="Project" />
 </form>
 </div>
 
+<form method="POST">
+<input type="submit" formaction="/teaching/CS472-Spring2023/project/project.md" style="visibility: hidden; display: none;">
+<!-- all your inputs -->
+<input><input><input>
+<!-- all your inputs -->
+<button formaction="/teaching/CS472-Spring2023/project/FAQ/">FAQ</button>
+<button formaction="/teaching/CS472-Spring2023/project/Group/">GROUP</button>
+<input type="submit" value="Default Action">
+</form>
+
 <!--div class="main-component">
     <input type="text" name="main-property1" style="background-color:cornflowerblue;color:white;width:145px;
 height:30px;" form="main-form" />
