@@ -25,36 +25,18 @@ height:40px;" value="Exam" />
 height:40px;" value="Project" />
 </form>
 </div>
+<br/>
 
-<form method="POST">
-<input type="submit" formaction="/teaching/CS472-Spring2023/project/project.md" style="visibility: hidden; display: none;">
-<!-- all your inputs -->
-<input><input><input>
-<!-- all your inputs -->
-<button formaction="/teaching/CS472-Spring2023/project/FAQ/">FAQ</button>
-<button formaction="/teaching/CS472-Spring2023/project/Group/">GROUP</button>
-<input type="submit" value="Default Action">
+<div class="main-component">
+<form action="/teaching/CS472-Spring2023/project/Group/">
+    <input type="submit" style="background-color:#008CBA;float:left; color:white;width:185px;
+height:40px;" value="Groups" />
 </form>
-
-<!--div class="main-component">
-    <input type="text" name="main-property1" style="background-color:cornflowerblue;color:white;width:145px;
-height:30px;" form="main-form" />
-    <input type="text" name="main-property2" style="background-color:cornflowerblue;color:white;width:145px;
-height:30px;" form="main-form" />
-
-    <div class="sub-component">
-        <input type="text" name="sub-property1" form="sub-form" />
-        <input type="text" name="sub-property2" form="sub-form" />
-        <input type="submit" name="sub-save" value="FAQ" form="sub-form" />
-    </div>
-    <div class="sub-component">
-        <input type="text" name="sub-property1" form="sub-form" />
-        <input type="text" name="sub-property2" form="sub-form" />
-        <input type="submit" name="Group" value="Group" form="sub-form" />
-    </div>
-
-    <input type="submit" name="Project" value="Project" form="main-form" />
-</div-->
+<form action="/teaching/CS472-Spring2023/project/FAQ/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:185px;
+height:40px;" value="FAQ" />
+</form>
+</div>
 
 <br/>
 <br/>
