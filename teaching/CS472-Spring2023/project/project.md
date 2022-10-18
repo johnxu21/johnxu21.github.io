@@ -3,6 +3,7 @@ layout: page
 title: Project
 permalink: /teaching/CS472-Spring2023/project/
 ---
+<div class="main-component">
 <form action="/teaching/CS472-Spring2023/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
@@ -23,7 +24,27 @@ height:40px;" value="Exam" />
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
+</div>
 
+<div class="main-component">
+    <input type="text" name="main-property1" style="background-color:cornflowerblue;color:white;width:145px;
+height:30px;" form="main-form" />
+    <input type="text" name="main-property2" style="background-color:cornflowerblue;color:white;width:145px;
+height:30px;" form="main-form" />
+
+    <div class="sub-component">
+        <input type="text" name="sub-property1" form="sub-form" />
+        <input type="text" name="sub-property2" form="sub-form" />
+        <input type="submit" name="sub-save" value="FAQ" form="sub-form" />
+    </div>
+    <div class="sub-component">
+        <input type="text" name="sub-property1" form="sub-form" />
+        <input type="text" name="sub-property2" form="sub-form" />
+        <input type="submit" name="Group" value="Group" form="sub-form" />
+    </div>
+
+    <input type="submit" name="Project" value="Project" form="main-form" />
+</div>
 
 <br/>
 <br/>

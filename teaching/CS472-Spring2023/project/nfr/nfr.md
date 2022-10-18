@@ -25,6 +25,10 @@ height:40px;" value="Exam" />
 height:40px;" value="Project" />
 </form>
 
+<form id="main-form" action="/teaching/CS472-Spring2023/project/" method="post"></form>
+<form id="sub-form1"  action="/teaching/CS472-Spring2023/project/FAQ"  method="post"></form>
+
+
 
 <br/>
 <br/>
