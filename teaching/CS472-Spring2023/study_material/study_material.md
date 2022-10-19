@@ -81,7 +81,7 @@ All sample code (both for theory and practicals) can be found below.
 * TicTacToe version 1.9 [[zip](https://drive.google.com/file/d/1J9xAF2yD-xTqAjS0IR_PgU4CkecaZhY4/view?usp=sharing)] (Version with early architecture: file manipulations are split off in TicTacToeUtils and the tests are split into DomainTests (for the domain layer) and OutputTests (for the output))
 * TicTacToe version 2.0 [[zip](https://drive.google.com/file/d/1JqbsYLD58psG3BxGuFF15anr5VLQhk8N/view?usp=sharing)] (Version with an XML Importer that uses TinyXML to read XML files and populate a TicTacToeGame. Therefore, separate InputTests that process a series of XML files; some of them have errors and then the error messages are verified.)
 * TicTacToe version 2.1 [[zip](https://drive.google.com/file/d/1JkV_GbIpwbv6YrtHnWNFda24OLE5t6dw/view?usp=sharing)] (Version with an exporter that exports a TicTacToeGame in various formats (ASCII, HTML). Therefore, separate OutputTests .)
-* TicTacToe version 2.1 [[zip](https://github.com/johnxu21/TicTacToe_Git)] (Same version 2.1, but now published on GitHub. You can fork this project and work on it like that]
+* TicTacToe version 2.1 [[GitHub](https://github.com/johnxu21/TicTacToe_Git)] (Same version 2.1, but now published on GitHub. You can fork this project and work on it like that]
 
 Practicals
 ========
