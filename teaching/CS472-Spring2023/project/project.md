@@ -52,5 +52,5 @@ You will be able to find everything about the project specification 2022-2023 be
 
 To see how things work in concrete terms, you will find the form below with the assessment criteria.
 
-Evaluation criteria 472 [[pdf]()]
+Evaluation criteria 472 [[pdf](../../../files/472Files/Evaluation.pdf)]
 
