@@ -58,7 +58,7 @@ Copies of the slides and other materials used can be found here.
 * Lesson 3 - Planning 
   * Planning [PDF]()
 
-Source code
+Program code
 =====
 References to some resources.
 * The google test framework [gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing)
