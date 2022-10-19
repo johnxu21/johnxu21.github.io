@@ -29,12 +29,12 @@ height:40px;" value="Project" />
 
 <div class="main-component">
 <form action="/teaching/CS472-Spring2023/project/Group/">
-    <input type="submit" style="background-color:#008CBA;float:left; color:white;width:185px;
-height:40px;" value="Groups" />
+    <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
+height:30px;" value="Groups" />
 </form>
 <form action="/teaching/CS472-Spring2023/project/FAQ/">
-    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:185px;
-height:40px;" value="FAQ" />
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="FAQ" />
 </form>
 </div>
 
