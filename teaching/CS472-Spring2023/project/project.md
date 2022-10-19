@@ -45,8 +45,8 @@ Project 2022-2023
 =========
 You will be able to find everything about the project specification 2022-2023 below.
 * Functional Requirements:
-  * Specification 1.0 [[pdf]()]
-  * Specification 2.0 [[pdf]()]
+  * Specification 1.0 [[pdf](specification1.0.pdf)]
+  * Specification 2.0 [[pdf](specification2.0.pdf)]
 * [Non Functional Requirements](/teaching/CS472-Spring2023/project/nfr/)
   * [C++ Code Conventions](/teaching/CS472-Spring2023/study_material/material/CMakeLists.txt)
 
