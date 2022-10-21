@@ -64,7 +64,7 @@ References to some resources.
 * The google test framework [gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing)
 * Original can be found on [GitHub googletest](https://github.com/google/googletest)
 * The test framework must also be compiled. This is done through ```cmake```. Instructions can be found at [GoogleTest Readme.md](https://github.com/google/googletest/blob/main/googletest/README.md)
-* Design by contract [DesignByContract.h](material/DesignByContract.h) (A minimalist version with REQUIRE and ENSURE macros that -- if the condition is not met -- immediately stop the program with a simple message). 
+* Design by contract [DesignByContract.h](material/DesignByContract.h) (A minimalist version with ```REQUIRE``` and ```ENSURE``` macros that -- if the condition is not met -- immediately stop the program with a simple message). 
 * Loading [TicTacToe in CLion](material/loading_ttt/loading_ttt.md)
 * A documentation generator [DoxyGen](https://doxygen.nl/) 
 
@@ -88,13 +88,13 @@ Practicals
 
 ## Week 1: 
 The practical during the 1st week deals with the xml parser, a mandatory component of the project. All materials can be found below.
-* [Tasks]()
+* [Tasks](../../../files/472Files/Week1-Tasks.pdf)
 * [eenCD.xml](material/eenCD.xml), [cdCatalog.xml](material/cdCatalog.xml), [eenCDError.xml](material/eenCDError.xml), [cdCatalogError.xml](material/cdCatalogError.xml)
 * [Possible solution](https://drive.google.com/file/d/1XLZDTpHjaxZ4RmlUlU0ic58ngIAz3d3m/view?usp=sharing)
 
 ## Week 2: 
 The lab during the 2nd week deals with unit tests, debugging and contracts. All supplies can be found below.
-* [Tasks]()
+* [Tasks](../../../files/472Files/Week1-Tasks.pdf)
 * [CMakeLists.txt](material/CMakeLists.txt)
 * [Fighterplane.cpp](material/Fighterplane.cpp), [Exceptions.h](material/Exceptions.h), [Largest.cpp](material/Largest.cpp)
 * The google test framework [[gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing)]
