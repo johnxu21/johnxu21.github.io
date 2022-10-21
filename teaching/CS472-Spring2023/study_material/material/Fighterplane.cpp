@@ -26,7 +26,7 @@ public:
     }
 
     //constructor to set a plane on a certain location.
-    //ammo and healt are automaticalle initialized to 10 and 20 respectively
+    //ammo and health are automatically initialized to 10 and 20 respectively
     Fighterplane(std::string callsign, int x, int y, int z) : ammo(10), health(20){
         this->callsign = callsign;
         this->x = x;
