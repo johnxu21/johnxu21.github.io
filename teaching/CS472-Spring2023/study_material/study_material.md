@@ -51,8 +51,8 @@ Copies of the slides and other materials used can be found here.
 * Lesson 1 — Introduction + Reliability
   * Practical [PDF]()
   * Reliability [PDF]()
-  * Wikipedia about "Mars Climate Orbiter"
-  * Web-site for "5 Most Embarrassing Software Bugs in History"
+  * Wikipedia about "[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)"
+  * Web-site for "[5 Most Embarrassing Software Bugs in History](https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/)"
 * Lesson 2 - Adaptability
   * Adaptability [PDF]()
 * Lesson 3 - Planning 
