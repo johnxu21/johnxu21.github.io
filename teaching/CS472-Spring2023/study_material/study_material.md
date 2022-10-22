@@ -93,7 +93,7 @@ The practical during the 1st week deals with the xml parser, a mandatory compone
 * [Possible solution](https://drive.google.com/file/d/1XLZDTpHjaxZ4RmlUlU0ic58ngIAz3d3m/view?usp=sharing)
 
 ## Week 2: 
-The lab during the 2nd week deals with unit tests, debugging and contracts. All supplies can be found below.
+The lab during the 2nd week deals with unit tests, debugging and contracts. All materials can be found below.
 * [Tasks](../../../files/472Files/Week1-Tasks.pdf)
 * [CMakeLists.txt](material/CMakeLists.txt)
 * [Fighterplane.cpp](material/Fighterplane.cpp), [Exceptions.h](material/Exceptions.h), [Largest.cpp](material/Largest.cpp)
