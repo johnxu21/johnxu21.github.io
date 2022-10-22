@@ -94,7 +94,7 @@ The practical during the 1st week deals with the xml parser, a mandatory compone
 
 ## Week 2: 
 The lab during the 2nd week deals with unit tests, debugging and contracts. All materials can be found below.
-* [Tasks](../../../files/472Files/Week1-Tasks.pdf)
+* [Tasks](../../../files/472Files/Week2-Tasks.pdf)
 * [CMakeLists.txt](material/CMakeLists.txt)
 * [Fighterplane.cpp](material/Fighterplane.cpp), [Exceptions.h](material/Exceptions.h), [Largest.cpp](material/Largest.cpp)
 * The google test framework [[gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing)]
