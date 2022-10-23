@@ -1,21 +1,25 @@
 cmake_minimum_required(VERSION 3.6)
 project(untitled)
 
-set(CMAKE_CXX_STANDARD 98)
-set(CMAKE_CXX_FLAGS "-Wall -Werror")
-set(CMAKE_EXE_LINKER_FLAGS -pthread)
+# Incorporating Into An Existing CMake Project
+# CMake to download GoogleTest as part of the build's configure step.
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        # Specify the commit you depend on and update it regularly. (latest googletest commit - October 19, 2022)
+        URL https://github.com/google/googletest/archive/e07617d6c692a96e126f11f85c3e38e46b10b4d0.zip
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
 
-# Set include dir
-include_directories(gtest/include)
-
-# Set Library dir
-link_directories(gtest/lib)
+# Linking against gtest
 
 # Set source files for RELEASE target
-set(RELEASE_SOURCE_FILES src/TicTacToe.cpp src/TicTacToeMain.cpp)
+set(RELEASE_SOURCE_FILES TicTacToe.cpp TicTacToeMain.cpp)
 
 # Set source files for DEBUG target
-set(DEBUG_SOURCE_FILES src/TicTacToe.cpp src/TicTacToeTests.cpp)
+set(DEBUG_SOURCE_FILES TicTacToe.cpp TicTacToeTests.cpp)
 
 # Create RELEASE target
 add_executable(ttt ${RELEASE_SOURCE_FILES})
