@@ -68,7 +68,7 @@ References to some resources.
 * Loading [TicTacToe in CLion](material/loading_ttt/loading_ttt.md)
 * A documentation generator [DoxyGen](https://doxygen.nl/) 
 
-All sample code (both for theory and practicals) can be found below.
+All sample code (both for theory and labs) can be found below.
 * TicTacToe version 1.0 [[zip](https://drive.google.com/file/d/1JjUfUbTjYL1WiENvwYu9XiOD1UvVGU6v/view?usp=sharing)] ("simplest that could possibly work" with unit tests and a counter that counts to 9)
 * TicTacToe version 1.1 [[zip](https://drive.google.com/file/d/1JrPmkA79M_ciYxJA7qjx3D4HuAYv2d0J/view?usp=sharing)] (Basic version with game board filled alternately with X and O).
 * TicTacToe version 1.2 [[zip](https://drive.google.com/file/d/1Jpt5lXoXR42aHVSYvQYRrs21MLx8V-ny/view?usp=sharing)] (Version with contracts and a first demonstration)

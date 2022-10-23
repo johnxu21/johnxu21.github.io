@@ -128,7 +128,7 @@ Here is the timetable,
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Planning</td>
+<td style="border: 1px solid black;">Free Project Work</td>
 <td style="border: 1px solid black;"></td>
 <td style="border: 1px solid black;"></td>
 <td style="border: 1px solid black;"> </td>
@@ -146,7 +146,7 @@ Here is the timetable,
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Planning</td>
+<td style="border: 1px solid black;">Free Project Work</td>
 <td style="border: 1px solid black;"></td>
 <td style="border: 1px solid black;"></td>
 <td style="border: 1px solid black;"> </td>
