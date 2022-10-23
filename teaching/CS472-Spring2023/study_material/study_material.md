@@ -28,7 +28,7 @@ height:40px;" value="Project" />
 <br/>
 <br/>
 
-All study material to support theory as well as practicals is collected here.
+All the study material to support theory as well as the labs is collected here.
 
 Project progress
 ============
