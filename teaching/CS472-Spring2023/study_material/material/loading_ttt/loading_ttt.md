@@ -29,13 +29,13 @@ height:40px;" value="Project" />
 <br/>
 <br/>
 
-This text will show you in a few steps how to load the TicTacToe program (to be used in the Software Design and Development I) in CLion. 
+This text will show you in a few steps how to load the TicTacToe program (to be used in the Software Design and Development I) in ```CLion```. 
 The example starts from the first version TicTacToe10, but subsequent versions should load similarly.
 
 **Goal:** 
 The ultimate goal of this exercise is to set up the TicTacToe project in such a way that there are two configurations ("Build Configurations"): 
 1.  a ```release``` version in which it is only necessary for demonstration to the end user for acknowledgment; 
-2.  We use a ```debug``` version with extras during the development process (tests, debug, ...).
+2.  We use a ```debug``` version with extras during the development process (```tests```, ```debug```, ...).
 
 Step 1: Building GoogleTest with CMake
 ========
@@ -54,7 +54,7 @@ Unzip the project and import it in ``CLion``. When you look at the ```CMakeLists
 we copied from the googletest [README.md](https://github.com/google/googletest/tree/main/googletest) file.
 
 
-```python
+```cmake
 # Incorporating Into An Existing CMake Project
 # CMake to download GoogleTest as part of the build's configure step.
 include(FetchContent)
