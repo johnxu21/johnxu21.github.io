@@ -105,22 +105,28 @@ Step 4 - Test and Demonstration run
 **** Build of configuration Debug for project TicTacToe ****
 
 make all 
-Building file: ../src/TicTacToe.cpp
-Invoking: GCC C++ Compiler
-g++ -I../../../workspace/gtest/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TicTacToe.d" -MT"src/TicTacToe.d" -o "src/TicTacToe.o" "../src/TicTacToe.cpp"
-Finished building: ../src/TicTacToe.cpp
- 
-Building file: ../src/TicTacToeTests.cpp
-Invoking: GCC C++ Compiler
-g++ -I../../../workspace/gtest/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TicTacToeTests.d" -MT"src/TicTacToeTests.d" -o "src/TicTacToeTests.o" "../src/TicTacToeTests.cpp"
-Finished building: ../src/TicTacToeTests.cpp
- 
-Building target: TicTacToe
-Invoking: MacOS X C++ Linker
-g++ -L../../../workspace/gtest/lib -o "TicTacToe"  ./src/TicTacToe.o ./src/TicTacToeTests.o   -lgtest -lgtest_main
-Finished building target: TicTacToe
- 
 
+[  7%] Building CXX object CMakeFiles/ttt.dir/TicTacToe.cpp.o
+[ 14%] Building CXX object CMakeFiles/ttt.dir/TicTacToeMain.cpp.o
+[ 21%] Linking CXX executable ttt
+[ 21%] Built target ttt
+[ 28%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 35%] Linking CXX static library ../../../lib/libgtest.a
+[ 35%] Built target gtest
+[ 42%] Building CXX object CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o
+[ 50%] Building CXX object CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o
+[ 57%] Linking CXX executable ttt_debug
+[ 57%] Built target ttt_debug
+[ 64%] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 71%] Linking CXX static library ../../../lib/libgmock.a
+[ 71%] Built target gmock
+[ 78%] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[ 85%] Linking CXX static library ../../../lib/libgmock_main.a
+[ 85%] Built target gmock_main
+[ 92%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[100%] Linking CXX static library ../../../lib/libgtest_main.a
+[100%] Built target gtest_main
+ 
 **** Build Finished ****
 ```
 
