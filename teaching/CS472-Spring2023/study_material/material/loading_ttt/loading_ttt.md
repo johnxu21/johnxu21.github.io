@@ -34,60 +34,38 @@ The example starts from the first version TicTacToe10, but subsequent versions s
 
 **Goal:** 
 The ultimate goal of this exercise is to set up the TicTacToe project in such a way that there are two configurations ("Build Configurations"): 
-1.  a "Release" version in which it is only necessary for demonstration to the end user for acknowledgment; 
-2.  We use a "Debug" version with extras during the development process (tests, debug, ...).
+1.  a ```release``` version in which it is only necessary for demonstration to the end user for acknowledgment; 
+2.  We use a ```debug``` version with extras during the development process (tests, debug, ...).
 
-Step 1: Compile GTest
+Step 1: Building GoogleTest with CMake
 ========
-* The Google test framework must be compiled on the platform you are working on (MacOSX, Linux, Windows, ...). 
-You do this by first downloading gtest [gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing). Decompress the zip file.
-* Open a terminal and navigate to the gtest folder that you have unzipped
-* Then run these commands to compile the framework:
+To build GoogleTest and your tests that use it, you need to tell your build system where to find its headers and source files.
+The instructions for building googletest with ```cmake``` can be found on the googletest [README.md](https://github.com/google/googletest/tree/main/googletest) file.
+Here we shall summarise a few points from the page. However, we encourage you to read the entire [README.md](https://github.com/google/googletest/tree/main/googletest) file.
+You can either build ```googletest``` as a **standalone project** or it can be **incorporated into an existing CMake build for another project**.
+Here we shall demonstrate the latter.
 
-```commandline
-./configure
-cmake .
-make 
-```
+### Incorporating Into An Existing CMake Project
+The trick is in editing the ```CMakeLists.txt``` and incorporate ```googletest``` into an existing project with ```cmake```.
+Instruction on how to edit a ```CMakeLists.txt``` for a project can be found [here](https://www.jetbrains.com/help/clion/cmakelists-txt-file.html#cmakelist-template).
 
-* This causes the libraries ```libgtest.a``` and ```libgtest_main.a``` to be created. These are the files we need for our project and the ```include``` folder.
+We shall use an example of a ```TicTacToe``` project version ```10```.
+Unzip the project and import it in ``CLion``. When you look at the ```CMakeLists.txt``` file, you see that we have added the code snippet
+we copied from the googletest [README.md](https://github.com/google/googletest/tree/main/googletest) file.
 
-Step 2: Add the GTest files to the project
-===========
-* In your project, create a new folder called ```gtest```. Create another folder in it called ```lib```.
-* Copy the libraries ```libgtest.a``` and ```libgtest_main.a``` to the directory ```gtest/lib```.
-* Copy the ```include``` folder to the ```gtest``` folder.
-* In the end we should get this folder structure:
 
-```
-./gtest:
-include
-lib
-
-./gtest/include:
-gtest
-
-./gtest/include/gtest:
-
-.
-gtest.h
-.
-
-./gtest/lib:
-libgtest.a
-libgtest_main.a
-```
-
-* Make sure you have an unzipped version of a TicTacToe ```zip``` or ```tar``` file already. 
-In the example, we have extracted version 10, much like the one below, but in later versions, 
-there will be more files extracted.
-
-```commandline
-./src:
-TicTacToe.cpp
-TicTacToe.h
-TicTacToeMain.cpp
-TicTacToeTests.cpp
+```python
+# Incorporating Into An Existing CMake Project
+# CMake to download GoogleTest as part of the build's configure step.
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        # Specify the commit you depend on and update it regularly. (latest googletest commit - October 19, 2022)
+        URL https://github.com/google/googletest/archive/e07617d6c692a96e126f11f85c3e38e46b10b4d0.zip
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
 ```
 
 Step 3 - Customize the CMakeLists
