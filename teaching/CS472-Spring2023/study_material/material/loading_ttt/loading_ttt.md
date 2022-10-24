@@ -68,21 +68,21 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 ```
 
-Step 3 - Customize the CMakeLists
-========
 
-* Using this ```CMakeLists.txt```, ```CLion``` will automatically create two run configurations: a ```'ttt'``` which builds and executes the Release version, and a ```'ttt_debug'``` which builds and executes the Debug version.
+Using this ```CMakeLists.txt```, ```CLion``` will automatically create two run configurations: a ```'ttt'``` which builds and executes the Release version, and a ```'ttt_debug'``` which builds and executes the Debug version.
 
-Step 4 - Test and Demonstration run
+Step 2 - Test and Demonstration run
 ========
-* First we build the Debug configuration. 
+* First we build the Debug configuration by executing the command below
+
+```commandline
+cmake .
+make all
+```
+
 * The build process should be seamless and the console should show something like the following.
 
 ```commandline
-**** Build of configuration Debug for project TicTacToe ****
-
-make all 
-
 [  7%] Building CXX object CMakeFiles/ttt.dir/TicTacToe.cpp.o
 [ 14%] Building CXX object CMakeFiles/ttt.dir/TicTacToeMain.cpp.o
 [ 21%] Linking CXX executable ttt
