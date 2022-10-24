@@ -103,7 +103,5 @@ make all
 [ 92%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 [100%] Linking CXX static library ../../../lib/libgtest_main.a
 [100%] Built target gtest_main
- 
-**** Build Finished ****
-```
+ ```
 
