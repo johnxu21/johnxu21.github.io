@@ -107,7 +107,7 @@ make all
 Task (Optional)
 =======
 After the above step, when you open the executable file ```ttt_debug``` in each of the ```TicTacToe``` versions, you should see the test output.
-In each test output of the projects, you can see that there are some **PASSING** and **FILLING** tests. Examine the **FILLING** tests and adjust the code to achieve all tests **PASSING**.
+In each test output of the projects, you can see that there are some **PASSING** and **FAILING** tests. Examine the **FAILING** tests and adjust the code to achieve all tests **PASSING**.
 
 
 
