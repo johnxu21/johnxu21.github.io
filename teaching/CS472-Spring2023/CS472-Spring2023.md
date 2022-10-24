@@ -59,7 +59,7 @@ At the end of this course you will be able to...
  * guarantee the reliability of a software solution by means of fully automatic tests and contracts.
  * deliver maintainable software based on a good object-oriented design.
  * drawing up and adjusting a plan based on realistic estimates.
- * learn the skills required to develop in a team.
+ * learn the skills required to develop software in a team.
 
 Content
 =======
