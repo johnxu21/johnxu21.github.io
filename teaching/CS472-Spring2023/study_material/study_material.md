@@ -61,8 +61,7 @@ Copies of the slides and other materials used can be found here.
 Program code
 =====
 References to some resources.
-* The google test framework [gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing)
-* Original can be found on [GitHub googletest](https://github.com/google/googletest)
+* The Google test framework on the [GitHub repository of googletest](https://github.com/google/googletest)
 * The test framework must also be compiled. This is done through ```cmake```. Instructions can be found at [GoogleTest Readme.md](https://github.com/google/googletest/blob/main/googletest/README.md)
 * Design by contract [DesignByContract.h](material/DesignByContract.h) (A minimalist version with ```REQUIRE``` and ```ENSURE``` macros that -- if the condition is not met -- immediately stop the program with a simple message). 
 * Loading [TicTacToe in CLion](material/loading_ttt/loading_ttt.md)
@@ -97,8 +96,7 @@ The lab during the 2nd week deals with unit tests, debugging and contracts. All 
 * [Tasks](../../../files/472Files/Week2-Tasks.pdf)
 * [CMakeLists.txt](material/CMakeLists.txt)
 * [Fighterplane.cpp](material/Fighterplane.cpp), [Exceptions.h](material/Exceptions.h), [Largest.cpp](material/Largest.cpp)
-* The google test framework [[gtest-1.7.zip](https://drive.google.com/file/d/1TzuyNjnm92Zhkq89pHA7eP9SP9sbFa4C/view?usp=sharing)]
-* Newer versions of google test can be found on  [[Github-googletest](https://github.com/google/googletest/releases)]
+* The Google test framework can be found on  [[GitHub-googletest](https://github.com/google/googletest/releases)]
 * The test framework must also be compiled. Use the instructions to load TicTacToe in CLion as an example [[load-tictactoe-clion](material/loading_ttt/loading_ttt.md)]
 
 
