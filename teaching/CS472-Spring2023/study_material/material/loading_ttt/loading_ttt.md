@@ -68,15 +68,14 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 ```
 
-
 Using this ```CMakeLists.txt```, ```CLion``` will automatically create two run configurations: a ```'ttt'``` which builds and executes the Release version, and a ```'ttt_debug'``` which builds and executes the Debug version.
 
 Step 2 - Test and Demonstration run
 ========
-* First we build the Debug configuration by executing the command below
+* First we build the Debug configuration by executing the commands below
 
 ```commandline
-cmake .
+cmake . -Wno-dev
 make all
 ```
 
@@ -104,4 +103,10 @@ make all
 [100%] Linking CXX static library ../../../lib/libgtest_main.a
 [100%] Built target gtest_main
  ```
+
+
+**When you open the executable file ```ttt_debug```, you should see the test output.**
+You each of the project, there are a few failing and passing tests.
+
+
 
