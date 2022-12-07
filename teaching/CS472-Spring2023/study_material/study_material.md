@@ -48,15 +48,16 @@ Theory
 Copies of the slides and other materials used can be found here. 
 * All in 1 bundle [PDF]()
 * Sleeve [PDF]()
-* Lesson 1 - Git and GitHub
-  * Git and GitHub [PDF]()
-* Lesson 2 — Introduction + Reliability
-  * Practical [PDF]()
-  * Reliability [PDF]()
+* Lesson 1 - Course Overview
+* Lesson 2 - Git and GitHub
+  * Slides [PDF]()
+  * Git Commit Messages: Best Practices & Guidelines: [link](https://initialcommit.com/blog/git-commit-messages-best-practices)
+* Lesson 3 — Object Oriented Design
+  * Slides [PDF]()
   * Wikipedia about "[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)"
   * Web-site for "[5 Most Embarrassing Software Bugs in History](https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/)"
-* Lesson 3 - Adaptability
-  * Adaptability [PDF]()
+* Lesson 4 - Testing
+  * Slides [PDF]()
 * Lesson 4 - Planning 
   * Planning [PDF]()
 

@@ -3,6 +3,7 @@ layout: page
 title: Project
 permalink: /teaching/CS472-Spring2023/project/
 ---
+
 <div class="main-component">
 <form action="/teaching/CS472-Spring2023/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
