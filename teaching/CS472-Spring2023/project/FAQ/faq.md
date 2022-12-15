@@ -82,7 +82,7 @@ Frequently Asked Questions
   * No, you will have to create XML files yourself to test your project.
 * How should we simulate the traffic simulator automatically? Will this run indefinitely?
   * If you do not generate any trams, the simulation may stop when all vehicles have left the track. Otherwise, you are allowed to implement a maximum simulation time / maximum number of iterations.
-* Is it true that trams never come to a complete stop? Is it true that trams that times behind another tram always slow down a little bit?
+* Is it true that trams never come to a complete stop? Is it true that trams that are behind another tram always slow down a little bit?
   * This is right! If this causes problems during testing, or with your contracts, you may round the acceleration, speed, and position to 3 decimal places. 
 
 ### About the Specification 2.0

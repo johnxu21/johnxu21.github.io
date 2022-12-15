@@ -20,7 +20,7 @@ height:40px;" value="Timetable" />
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/Project/">
+<form action="/teaching/CS472-Spring2023/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Project" />
 
@@ -43,7 +43,7 @@ Current techniques in software design presented with emphasis on architecture fi
 
 Where ? When ?
 * Theory & Exercises all during the same time slot
-* Time: 
+* Time: TuTh 4:00PM - 5:15PM
 * Location: 
 * Labs
   * The labs are organized as sessions in the computer rooms where you can work on your project freely and where an assistant is present to answer any questions. Moreover, the computer rooms are reserved for you during those hours, so you can certainly work.
