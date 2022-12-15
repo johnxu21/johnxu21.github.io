@@ -44,6 +44,9 @@ height:30px;" value="FAQ" />
 
 Project 2022-2023
 =========
+Below are two projects you can pick fromprojects the groups can pick from
+
+
 You will be able to find everything about the project specification 2022-2023 below.
 * Functional Requirements:
   * Specification 1.0 [[pdf](../../../files/472Files/specification1.0.pdf)]
