@@ -75,7 +75,7 @@ Frequently Asked Questions
   * What if a group partner gives up?
   * Contact us as soon as possible. (By the way, this applies to all problems you might have with your partners) Then we look for an individual solution (adjusted planning, ...).
 
-### About the Specification 1.0
+### About the Specification 1.0 (Traffic Simulation)
 * What unit is the traffic light "cycle" and the vehicle generator "frequency"?
   * These are expressed in seconds. Note that each simulated second consists of several simulation steps. The simulation time (time in seconds that elapses during 1 simulation step) is equal to 0.0166. You can also find these in the table on the last page of the assignment.
 * Will we still get XML files to test our project?
