@@ -51,7 +51,7 @@ then you will need to explain/motivate why this project would allow you to demon
 engineering skills. You will also prepare a specification document with in the first three weeks of the class.
 You can borrow a leaf on how the specification documents for the two projects below. The quality of the group's
 specification document does not have to be like the ones presented, but should be reasonable.
-I will have to look at your documents and I approve your custom project.
+I will to look at your Specification documents to I approve your custom project.
 
 Subway Simulation
 =======
@@ -66,7 +66,7 @@ Traffic Simulation
   * Specification 2.0 [[pdf](../../../files/472Files/Traffic_simulationSpec2.0.pdf)]
 
 
-### Other Requirements
+Other Requirements
 [Non Functional Requirements](/teaching/CS472-Spring2023/project/nfr/)
   * [C++ Code Conventions](/teaching/CS472-Spring2023/study_material/material/CMakeLists.txt)
 
