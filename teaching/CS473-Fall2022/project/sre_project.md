@@ -129,7 +129,7 @@ tries to synchronize the branches. To integrate patches (pull requests), we shal
   3. Add the remote repository that we are going to cherry-pick the patch using these two commands.
 
 ``` 
-git remote add other https://github.com/apache/kafka.git
+git remote add apache https://github.com/apache/kafka.git
 git fetch apache
 git cherry-pick merge_commit
 ``` 

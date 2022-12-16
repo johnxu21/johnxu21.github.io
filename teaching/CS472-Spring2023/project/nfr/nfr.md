@@ -43,5 +43,5 @@ compile with compiler flags ```-std=c++98``` and ```-Wall -Werror```. Use this C
 * **Contracts**: The customer expects a high-quality system, so there must be contracts in the system. 
 (Use [DesignByContract.h](../../study_material/material/DesignByContract.h) for this)
 * **Functionality**: The customer wants guarantees about the available functionality, so they must also be able to provide their input files.
-* **Code Conventions**: Follow the C++ code conventions as specified in the Program code box.
+* **Code Conventions**: Follow the C++ code conventions as specified in the [Program code box - student material](/teaching/CS472-Spring2023/study_material/).
 
