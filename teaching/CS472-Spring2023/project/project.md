@@ -74,3 +74,6 @@ To see how things work in concrete terms, you will find the form below with the 
 
 Evaluation criteria 472 [[pdf](../../../files/472Files/Evaluation.pdf)]
 
+Use this code below to extract graphs for the contributions of each group member
+* [Contributions](https://github.com/johnxu21/msrLab/blob/main/src/Workload.ipynb)
+
