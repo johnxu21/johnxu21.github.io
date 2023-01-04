@@ -53,7 +53,7 @@ Theory
 Copies of the slides and other materials used can be found here. 
 * All in 1 bundle [PDF]()
 * Sleeve [PDF]()
-* Lesson 1 - Course Overview. Slides [PFD]()
+* Lesson 1 - Course Overview. Slides [PDF]()
 * Lesson 2 - Git and GitHub
   * Slides [PDF]()
   * Git Commit Messages: Best Practices & Guidelines: [link](https://initialcommit.com/blog/git-commit-messages-best-practices)
