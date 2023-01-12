@@ -63,8 +63,6 @@ Copies of the slides and other materials used can be found here.
   * Web-site for "[5 Most Embarrassing Software Bugs in History](https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/)"
 * Lesson 4 - Testing
   * Slides [PDF]()
-* Lesson 4 - Planning 
-  * Planning [PDF]()
 
 
 Program code
