@@ -71,9 +71,49 @@ In addition to a theoretical introduction, the content of this course mainly con
 requirements' specification (which will be expanded and adapted in the project), the student will 
 analyze the problem and design, implement and test a solution using any programming language of their choice. 
 
-Evaluation
+Assessment (472)
 =======
-Two interim evaluations during the semester plus one final evaluation at the end of the semester.
+While there are a number of assignments listed for this course, you will be graded by five primary 
+criteria: 1) the resume, 2) the individual GIT assignment, 3) your team senior project 
+portfolio, 4) your team final presentation, and 5) your individual exam grades. This document 
+and the final presentation will be created and iteratively refined over the course of the semester. 
+Besides these rules, I reserve the right to lower an individual's students grade, all the way to an 
+F, if I determine a student contributed little or nothing to their team project. Similarly, 
+students that show exceptional performance in the student project may have their total course 
+grade increased by up to one letter grade. 
+
+Assignments:
+* Resume - 50 points 	
+* Git Assignment - 50 points
+* Senior 	Design Portfolio I - 50 points 	
+* Senior 	Design Portfolio II - 75 points 	
+* Senior 	Design Portfolio III - 100 points 		
+* Project Presentations - 50 points 	
+* Midterm Exam - 50 points 	
+* Final Exam - 100 points  
+
+Assessment (CS 672):
+=============
+Students in CS 672 do the same course as those in 472, with two exceptions. First, in each project, they must 
+write an additional software management report about their team's project. These reports will include analysis of 
+the repository and other details. Second, the final exam will include additional questions about a research paper 
+that will be provided separately about 2/3 of the way through the course. Students will read this paper, which 
+will be a modern research paper in the field, study its methodology carefully, and be able to answer questions not 
+just about what was done, but about the techniques and procedures inside it. This extra component of the exam will 
+be worth an additional 50 points.
+	
+Assignments:
+Resume - 50 points 	
+* Git Assignment - 50 points
+* Senior 	Design Portfolio I - 50 points 	
+* Senior 	Design Portfolio II - 75 points 	
+* Senior 	Design Portfolio III - 100 points 		
+* Project Presentations - 50 points 	
+* Midterm Exam - 50 points 	
+* Final Exam - 100 points 
+
+**No late exams or assignments will be accepted without prior approval or extraordinary circumstances.**
+
 
 Literature
 =========
