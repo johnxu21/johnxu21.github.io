@@ -117,6 +117,16 @@ Resume - 50 points
 **No late exams or assignments will be accepted without prior approval or extraordinary circumstances.**
 
 
+--------
+  [Table I: Grade Distribution:]
+
+<div style="text-align: center;">
+<img src="/images/473/grade.jpeg" alt="Project Management" style="width:400px;height:206px;" align="center">
+</div>
+
+
+----------
+
 Literature
 =========
 The following book is recommended as general background information to the course. 
