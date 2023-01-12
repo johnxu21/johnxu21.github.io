@@ -62,7 +62,7 @@ At the end of this course you will be able to...
  * develop a software project using professional tools.
  * guarantee the reliability of a software solution by means of fully automatic tests and contracts.
  * deliver maintainable software based on a good object-oriented design.
- * drawing up and adjusting a plan based on realistic estimates.
+ * Use the GitHub which is a very powerful agile platform.
  * learn the skills required to develop software in a team.
 
 Content
