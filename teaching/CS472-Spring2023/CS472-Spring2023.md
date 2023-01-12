@@ -121,7 +121,7 @@ Resume - 50 points
   [Table I: Grade Distribution:]
 
 <div style="text-align: center;">
-<img src="/images/473/grade.jpeg" alt="Project Management" style="width:400px;height:206px;" align="center">
+<img src="/images/473/grade.jpeg" alt="Project Management" style="width:577px;height:414px;" align="center">
 </div>
 
 
