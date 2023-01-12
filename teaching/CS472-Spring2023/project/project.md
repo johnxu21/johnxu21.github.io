@@ -44,14 +44,14 @@ height:30px;" value="FAQ" />
 
 Project 2022-2023
 =========
-Two project with their specification documents have been prepared for you. You are free to choose any of them. 
+Two projects with their specification documents have been prepared for you. You are free to choose any of them. 
 The projects are of equal strength, so it would be nice if they are distributed equally between the groups. 
 Groups are also free come up with their own custom projects. However, If you choose to work on a custom project, 
 then you will need to explain/motivate why this project would allow you to demonstrate your software 
 engineering skills. You will also prepare a specification document with in the first three weeks of the class.
 You can borrow a leaf on how the specification documents for the two projects below. The quality of the group's
 specification document does not have to be like the ones presented, but should be reasonable.
-I will to look at your Specification documents to I approve your custom project.
+I will to look at your Specification documents to I approve the groups custom project.
 
 Subway Simulation
 =======
@@ -74,6 +74,14 @@ To see how things work in concrete terms, you will find the form below with the 
 
 Evaluation criteria 472 [[pdf](../../../files/472Files/Evaluation.pdf)]
 
-Use this code below to extract graphs for the contributions of each group member
-* [Contributions](https://github.com/johnxu21/msrLab/blob/main/src/Workload.ipynb)
+[comment]: <> (Use this code below to extract graphs for the contributions of each group member)
 
+[comment]: <> (* [Contributions]&#40;https://github.com/johnxu21/msrLab/blob/main/src/Workload.ipynb&#41;)
+
+Deliverables
+========
+The following documents will guide you produce the deliverables of the project:
+* Design Portfolio I ([Doc](https://docs.google.com/document/d/1y9Fl1yHl8S3Uh3TzEdQYhd7bQUkYVwZTEcB4H43SlvE/edit#))
+* Design Portfolio I ([Doc](https://docs.google.com/document/d/1mUBX7hakgAdiBDJv9HPzD9436Ezvr2nPeZkdk9psGa8/edit#))
+* Design Portfolio III ([Doc](https://docs.google.com/document/d/13xShWs_zi9bBmfkToTYu4v68KwVXHZOjAdw7-obOIgg/edit))
+* Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit))
