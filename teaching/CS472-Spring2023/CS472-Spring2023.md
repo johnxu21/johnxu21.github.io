@@ -46,7 +46,7 @@ Current techniques in software design presented with emphasis on architecture fi
 Where ? When ?
 * Theory & Exercises all during the same time slot
 * Time: TuTh 4:00PM - 5:15PM
-* Location: 
+* Location: HOS 210
 * Labs
   * The labs are organized as sessions in the computer rooms where you can work on your project freely and where an assistant is present to answer any questions. Moreover, the computer rooms are reserved for you during those hours, so you can certainly work.
   * In the first weeks practical "hands-on" lab sessions are organized about the use of certain tools (XML parsing, unit tests, ...)
