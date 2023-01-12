@@ -48,7 +48,9 @@ Where ? When ?
 * Time: TuTh 4:00PM - 5:15PM
 * Location: HOS 210
 * Labs
-  * The labs are organized as sessions in the computer rooms where you can work on your project freely and where an assistant is present to answer any questions. Moreover, the computer rooms are reserved for you during those hours, so you can certainly work.
+  * The labs are organized as sessions in the computer rooms where you can work on your project freely and 
+  where an assistant is present to answer any questions. Moreover, the computer rooms are reserved for you 
+  during those hours, so you can certainly work.
   * In the first weeks practical "hands-on" lab sessions are organized about the use of certain tools (XML parsing, unit tests, ...)
     * To manage the class, we shall divide the sessions into two groups.
 
@@ -122,6 +124,8 @@ They are available in the library.
 1. Design Patterns: Elements of Reusable Object-Oriented Software
 2. Design Patterns in Modern C++: Reusable Approaches for Object-Oriented Software Design
 3. Using UML : Software Engineering with Objects and Components
+4. Cooperative Software Development, Amy Ko, available for free: [Book Site](https://faculty.washington.edu/ajko/books/cooperative-software-development/)
+
 
 
 Attendance:	

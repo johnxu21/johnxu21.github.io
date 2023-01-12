@@ -206,7 +206,8 @@ to remove a God Class, your commit should be:
   deadline. The final commit will be considered for evaluation as part of your assignment submission.
 
 ### 4. Development Activities 
-Then, more specifically, we ask you to perform the following activities, and report about these in your project report:
+Then, more specifically, we ask you to perform the following activities, and report about these in your project 
+report:
 
 ----------
   [I. Design recovery]

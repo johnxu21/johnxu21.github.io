@@ -85,3 +85,41 @@ The following documents will guide you produce the deliverables of the project:
 * Design Portfolio I ([Doc](https://docs.google.com/document/d/1mUBX7hakgAdiBDJv9HPzD9436Ezvr2nPeZkdk9psGa8/edit#))
 * Design Portfolio III ([Doc](https://docs.google.com/document/d/13xShWs_zi9bBmfkToTYu4v68KwVXHZOjAdw7-obOIgg/edit))
 * Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit))
+
+Getting Started Instructions
+=======
+Please pay attention to the following instructions. The group leader should send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with:
+* Subject "SDPD - Project". 
+* Message Body:
+  * The full name of the members in your group.
+  * Attach the **pre-conditions report** (PDF format) in your message.
+
+* Your Pre-conditions Report should contain the following:
+  * Project Name
+  * Full names of all the members in your group
+  * A link to the groups GitHub repository
+  * The members are set as collaborators to the GitHub project.
+  * Invite me as collaborator on your repository. (my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
+
+Instructions to the UML Diagrams
+=========
+You will use simple Class Diagram or Sequence Diagrams or any other UML diagrams you find suitable.
+A simple class diagram has only the name of the class and its interactions with the other classes 
+(there are two examples in [JPacman](https://github.com/johnxu21/jpacman/tree/master/doc/uml) repository in the "docs" folder). 
+This is to reinforce your initial understanding of the 
+system. You only need to focus on the classes associated with the feature/use case and the classes that are 
+called in those classes. There is no need to go deeper into the class structure (i.e., if feature 
+class calls Class X, and Class X calls Class Y, then you do not need to show Class Y since it is 
+not being called directly by the feature class you are implementing). I am are not going to evaluate your strictness to the 
+proper UML notations, therefore focus on modeling and understanding classes interactions. 
+
+### 3. General Coding Instructions
+The following coding/repository instructions apply:
+* Fork the group repository and clone that fork onto your local repository.
+* Create a branch on your fork for every "qualified contribution" you would like to make on the group/main repository. 
+For example, if you have been assigned to develop **UC-2.1**, create a branch on your fork called  **UC-2.1**. 
+If you are fixing a bug on the main repository, name the branch with an appropriate name. If you are introducing missing 
+tests, also name the branch name appropriately.
+* All the contributions to the main repository have to be submitted through pull requests that at least two other group members should review.
+* The group should explicitly set **contribution guidelines** that the team members should follow. The 
+reviewers should resolve pull request only if the guidelines have been followed.

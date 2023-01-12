@@ -51,7 +51,7 @@ understand the inner workings of a system ("Write tests to Understand", OORP, p.
 
 The presence of automated tests does however not offer any guarantee about its quality. 
 Do the tests cover the whole system or are some parts left untested? 
-Which parts are covered to which extend? Hence, measuring test coverage is a useful, even 
+Which parts are covered to which extent? Hence, measuring test coverage is a useful, even 
 necessary, way to assess the quality and usefulness of a test suite in the context of reengineering.
 
 Materials & Tools Used for this Session
