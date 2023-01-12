@@ -62,12 +62,14 @@ At the end of this course you will be able to...
  * develop a software project using professional tools.
  * guarantee the reliability of a software solution by means of fully automatic tests and contracts.
  * deliver maintainable software based on a good object-oriented design.
- * Use the GitHub which is a very powerful agile platform.
- * learn the skills required to develop software in a team.
+ * use the GitHub which is a very powerful agile platform.
+ * learn the skills required to develop software collaboratively.
 
 Content
 =======
-In addition to a theoretical introduction, the content of this course mainly consists of self-motivation. Starting from a requirements specification (which will be expanded and adapted in the project), the student will analyze the problem and design, implement and test a solution. Implementation and testing is done using the C++ programming language.
+In addition to a theoretical introduction, the content of this course mainly consists of self-motivation. Starting from a 
+requirements' specification (which will be expanded and adapted in the project), the student will 
+analyze the problem and design, implement and test a solution using any programming language of their choice. 
 
 Evaluation
 =======
@@ -84,7 +86,10 @@ They are available in the library.
 
 Attendance:	
 ========
-While I will not directly track your attendance, your class, even online, is designed to be interactive with your classmates. The purpose of this is to encourage active learning, where you engage with the material during the class sessions. As such, a video would not do the course justice and you are highly recommended to attend the online sessions.
+While I will not directly track your attendance, your class, even online, is designed to be 
+interactive with your classmates. The purpose of this is to encourage active learning, where you 
+engage with the material during the class sessions. As such, a video would not do the course justice, 
+and you are highly recommended to attend the online sessions.
 
 Academic Misconduct
 =============
