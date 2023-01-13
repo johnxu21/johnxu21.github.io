@@ -33,7 +33,9 @@ height:40px;" value="Project" />
 
 Current techniques in software design presented with emphasis on architecture first development. Introduction to the processes involved in development. Practice architectural design through a series of homework problems. Students work in teams to prepare the architecture for a software product.
 
-**Prerequisites**: CS 326 and CS 370
+**Prerequisites**: 
+* CS 326 - Programming Languages, Concepts and Implementation  
+* CS 370 - Operating Systems
 
 
 * **Level**: Senior 
@@ -54,11 +56,14 @@ Where ? When ?
   * In the first weeks practical "hands-on" lab sessions are organized about the use of certain tools (XML parsing, unit tests, ...)
     * To manage the class, we shall divide the sessions into two groups.
 
+
 Rationale
 ======
 The purpose of this course is to give students an introduction to developing software in a more 
 realistic setting. In the first semester of the course (CS 472), students gather requirements; 
-creating mockups and prototypes, while in the second (CS 473), they predominately implement and deploy their software. During both courses, students are required to choose and follow standard software engineering processes.
+creating mockups and prototypes, while in the second (CS 473), they predominately implement and deploy their 
+software. During both courses, students are required to choose and follow standard software engineering processes.
+
 
 At the end of this course you will be able to...
  * develop a software project using professional tools.
@@ -67,11 +72,13 @@ At the end of this course you will be able to...
  * use the GitHub which is a very powerful agile platform.
  * learn the skills required to develop software collaboratively.
 
+
 Content
 =======
 In addition to a theoretical introduction, the content of this course mainly consists of self-motivation. Starting from a 
 requirements' specification (which will be expanded and adapted in the project), the student will 
 analyze the problem and design, implement and test a solution using any programming language of their choice. 
+
 
 Assessment (472)
 =======
@@ -83,6 +90,7 @@ Besides these rules, I reserve the right to lower an individual's students grade
 F, if I determine a student contributed little or nothing to their team project. Similarly, 
 students that show exceptional performance in the student project may have their total course 
 grade increased by up to one letter grade. 
+
 
 Assignments:
 * Resume - 50 points 	
@@ -124,7 +132,6 @@ Resume - 50 points
 <img src="/files/grade.jpeg" alt="Grade Distribution" style="width:577px;height:414px;" align="center">
 </div>
 
-
 ----------
 
 Literature
@@ -135,8 +142,6 @@ They are available in the library.
 2. Design Patterns in Modern C++: Reusable Approaches for Object-Oriented Software Design
 3. Using UML : Software Engineering with Objects and Components
 4. Cooperative Software Development, Amy Ko, available for free: [Book Site](https://faculty.washington.edu/ajko/books/cooperative-software-development/)
-
-
 
 Attendance:	
 ========

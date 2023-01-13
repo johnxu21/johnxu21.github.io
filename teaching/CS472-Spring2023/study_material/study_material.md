@@ -94,6 +94,9 @@ All sample code (both for theory and labs) can be found below.
 Practicals
 ========
 
+### Dynamic Analysis (Testing)
+The lab for dynamic analysis can be found [here]()
+
 ## Week 1: 
 The practical during the 1st week deals with the xml parser, a mandatory component of the project. All materials can be found below.
 * [Tasks](../../../files/472Files/Week1-Tasks.pdf)
