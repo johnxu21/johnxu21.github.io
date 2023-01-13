@@ -72,7 +72,7 @@ Other Requirements
 
 To see how things work in concrete terms, you will find the form below with the assessment criteria.
 
-Evaluation criteria 472 [[pdf](../../../files/472Files/Evaluation.pdf)]
+Evaluation criteria 472 [[Google Doc](https://docs.google.com/document/d/1AhUVxWgfDtQVmgEJD0acVPnD72SRoKTHJ2Qh5X6IPqY/edit#)]
 
 [comment]: <> (Use this code below to extract graphs for the contributions of each group member)
 
