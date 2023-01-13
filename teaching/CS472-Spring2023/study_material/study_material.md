@@ -95,7 +95,7 @@ Practicals
 ========
 
 ### Dynamic Analysis (Testing)
-The lab for dynamic analysis can be found [here]()
+The lab for dynamic analysis can be found [here](/teaching/CS472-Spring2023/study_material/dynamic_analysis/)
 
 ## Week 1: 
 The practical during the 1st week deals with the xml parser, a mandatory component of the project. All materials can be found below.
