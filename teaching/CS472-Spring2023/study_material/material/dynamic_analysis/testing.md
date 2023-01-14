@@ -14,7 +14,7 @@ one very important aspect of dynamic analysis: Testing.
 
 "Tests: Your Life Insurance!" 
 Tests are essential for software engineering activities. They can help you: 
-1. to reveal unwanted side effects of refactoring 
+1. to reveal unwanted side effects of changing the code 
 2. to understand the inner workings of a system.
 
 

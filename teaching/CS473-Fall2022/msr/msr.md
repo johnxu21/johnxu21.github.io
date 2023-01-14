@@ -110,14 +110,14 @@ You get a hint on how draw the scatter plot on this link on [Stackoverflow](http
 **Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer)) <br/>
 The repository scottyab/rootbeer has a total of 17 unique source files ('.java'). It has a total 
 of 33 authors who have touched the 17 unique files (the data points in the graph) who have been 
-updating the files and commiting their changes. The scatter plot  below  shows the authors 
+updating the files and committing their changes. The scatter plot  below  shows the authors 
 activities over time for the repository scottyab/rootbeer. 
 
 <img src="/images/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
 Task 3
 ======
-Write a script to extract data from the folllowing merged pull requests [11791, 11686, 11591, 12159, 12073, 11981, 11867, 11991, 12207, 11926, 11847]
+Write a script to extract data from the following merged pull requests [11791, 11686, 11591, 12159, 12073, 11981, 11867, 11991, 12207, 11926, 11847]
 in the repository [apache/kafka](https://github.com/apache/kafka). 
 Read about how to extract ```pull request``` from the following site [GitHub Pull Request API](https://docs.github.com/en/rest/pulls/pulls#about-the-pulls-api)
 For example, given a ```pull request number = 1347``` for the repo ```octocat/Hello-World```,  the follwoing API would return a ```json``` file the ```pull request``` details:

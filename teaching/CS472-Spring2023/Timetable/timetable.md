@@ -40,7 +40,7 @@ Labs
 The first exercise lab sessions is meant to practice working with Git and GitHub.
 The next lab sessions are aimed at practicing essential topics (XML parsing, testing, debugging, contracts, ...). 
 After a few weeks, the lab sessions switch to independent work, i.e. the labs are organized as sessions 
-in the computer rooms where you can work on your project freely, and where an assistant is 
+in the computer rooms where you can work on your project fre ely, and where an assistant is 
 present to answer any questions. During those hours, the computer rooms are reserved for you, 
 so that you can certainly work.
 
@@ -52,11 +52,6 @@ computer room is available for you during the scheduled hours of the class.
 However, it is also perfectly possible to work on the project from home. If you have any questions 
 or problems, you can contact me or the assistant by e-mail
 
-Project Defense
-======
-In the meantime, you must give us a status report of your progress during a project defense. 
-During the project defense you give short demonstrations of your interim results that could 
-possibly lead to an adjustment of the planning.
 
 Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on January, 12th, 2023.] 
 
