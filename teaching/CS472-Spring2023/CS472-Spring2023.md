@@ -95,8 +95,8 @@ grade increased by up to one letter grade.
 
 
 Assignments:
-* Resume - 50 points 	
 * Git Assignment - 50 points
+* Software Testing Assignment - 50 points
 * Senior 	Design Portfolio I - 50 points 	
 * Senior 	Design Portfolio II - 75 points 	
 * Senior 	Design Portfolio III - 100 points 		
@@ -115,8 +115,8 @@ just about what was done, but about the techniques and procedures inside it. Thi
 be worth an additional 50 points.
 	
 Assignments:
-Resume - 50 points 	
 * Git Assignment - 50 points
+* Software Testing Assignment - 50 points
 * Senior 	Design Portfolio I - 50 points 	
 * Senior 	Design Portfolio II - 75 points 	
 * Senior 	Design Portfolio III - 100 points 		

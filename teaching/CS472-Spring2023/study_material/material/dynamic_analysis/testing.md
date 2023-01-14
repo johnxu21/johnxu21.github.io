@@ -17,7 +17,6 @@ Tests are essential for software engineering activities. They can help you:
 1. to reveal unwanted side effects of changing the code 
 2. to understand the inner workings of a system.
 
-
 The presence of automated tests does however not offer any guarantee about its quality. 
 Do the tests cover the whole system or are some parts left untested? 
 Which parts are covered to which extent? Hence, measuring test coverage is a useful, even 
