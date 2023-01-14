@@ -31,7 +31,7 @@ height:40px;" value="Project" />
 <div class="main-component">
 <form action="/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/">
     <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
-height:30px;" value="Git & GitHUb" />
+height:30px;" value="Git & GitHub" />
 </form>
 <form action="/teaching/CS472-Spring2023/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
