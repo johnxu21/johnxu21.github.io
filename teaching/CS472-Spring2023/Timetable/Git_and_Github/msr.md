@@ -1,8 +1,49 @@
 ---
 layout: page
 title: CS472 - Git and GitHub
-permalink: /teaching/CS472-Spring2023/Timetable/Git+and_GitHub/
+permalink: /teaching/CS472-Spring2023/Timetable/Git_and_GitHub/
 ---
+
+<div class="main-component">
+<form action="/teaching/CS472-Spring2023/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Course Overview" />
+</form>
+<form action="/teaching/CS472-Spring2023/study_material/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Study Material" />
+</form>
+<form action="/teaching/CS472-Spring2023/Timetable/">
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
+height:40px;" value="Timetable" />
+</form>
+<form action="/teaching/CS472-Spring2023/Exam/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Exam" />
+</form>
+<form action="/teaching/CS472-Spring2023/project/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Project" />
+</form>
+</div>
+<br/>
+
+<div class="main-component">
+<form action="/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/">
+    <input type="submit" style="background-color:firebrick;float:left; color:white;width:130px;
+height:30px;" value="Git & GitHUb" />
+</form>
+<form action="/teaching/CS472-Spring2023/Timetable/dynamic_analysis/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="Testing" />
+</form>
+</div>
+
+<br/>
+<br/>
+
+
+### This assignment is due January 24th, 2023
 
 For this assignment, you will be learning how to explore an open 
 source repository from GitHub.  You will also learn how to extract useful 

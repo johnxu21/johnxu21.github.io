@@ -45,7 +45,6 @@ Current techniques in software design presented with emphasis on architecture fi
 * **Office Hours Zoom Link**: Sent privately and on request
 * **Slack workspace**: https://spdd472672202-ceu1331.slack.com (by invitation)
 
-[//]: # (* https://spdd472672202-ceu1331.slack.com) 
 
 Where ? When ?
 * Theory & Exercises all during the same time slot

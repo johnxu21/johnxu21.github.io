@@ -29,8 +29,8 @@ height:40px;" value="Project" />
 <br/>
 
 There will be two exams:
-* Midterm Exam
-* Final Exam
+* Midterm Exam  - Date (**to be updated**)
+* Final Exam - Date (**to be updated**)
 
-The Exams are to test your understanding on developing collaboratively 
+The Exams are to test your understanding on collaboratively developing  
 quality software that is flexible, reusable, and maintainable.

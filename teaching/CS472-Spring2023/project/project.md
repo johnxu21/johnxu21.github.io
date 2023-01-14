@@ -120,6 +120,6 @@ The following coding/repository instructions apply:
 For example, if you have been assigned to develop **UC-2.1**, create a branch on your fork called  **UC-2.1**. 
 If you are fixing a bug on the main repository, name the branch with an appropriate name. If you are introducing missing 
 tests, also name the branch name appropriately.
-* All the contributions to the main repository have to be submitted through pull requests that at least two other group members should review.
+* All the contributions to the main repository have to be submitted through pull requests that at least two other group members should have review.
 * The group should explicitly set **contribution guidelines** that the team members should follow. The 
 reviewers should resolve pull request only if the guidelines have been followed.

@@ -4,6 +4,48 @@ title: CS472 - Dynamic Analysis
 permalink: /teaching/CS472-Spring2023/study_material/dynamic_analysis/
 ---
 
+<div class="main-component">
+<form action="/teaching/CS472-Spring2023/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Course Overview" />
+</form>
+<form action="/teaching/CS472-Spring2023/study_material/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Study Material" />
+</form>
+<form action="/teaching/CS472-Spring2023/Timetable/">
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
+height:40px;" value="Timetable" />
+</form>
+<form action="/teaching/CS472-Spring2023/Exam/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Exam" />
+</form>
+<form action="/teaching/CS472-Spring2023/project/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Project" />
+</form>
+</div>
+<br/>
+
+<div class="main-component">
+<form action="/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/">
+    <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
+height:30px;" value="Git & GitHUb" />
+</form>
+<form action="/teaching/CS472-Spring2023/Timetable/dynamic_analysis/">
+    <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
+height:30px;" value="Testing" />
+</form>
+</div>
+
+<br/>
+<br/>
+
+
+### This assignment is due February January 31st, 2023
+
+
 Dynamic analysis is “the analysis of the properties of a running software system” 
 [[Ball1999](https://ansymore.uantwerpen.be/system/files/Ball1999.pdf)]. 
 It is complementary to static analysis techniques. Some properties that cannot be 
@@ -71,7 +113,7 @@ Please try to remember this coverage (or take a screenshot to not depend on your
 * Is the coverage good enough?
 * If you make any changes in ```JPacman``` sources, can you rely on the current tests to catch faults?
 
-Task 2 -- Increasing Coverage on JPacman
+Task 2 -- Increasing Coverage on JPacman - 20 points
 ===================
   
 For the second task, we will increase the coverage on JPacman. Doing that is very simple, 
@@ -115,6 +157,6 @@ and after that on any method. You will see the source code with color informatio
 covered (or partially covered).
  
 **Questions:**
-* Are the coverage results from JaCoCo similar to the ones you got from IntelliJ in the last task? Why so or why not?
+* Are the coverage results from ```JaCoCo``` similar to the ones you got from ```IntelliJ``` in the last task? Why so or why not?
 * Did you find helpful the source code visualization from ```JaCoCo``` on uncovered branches?
-* Which visualization did you prefer, IntelliJ coverage window or ```JaCoCo``` report?
+* Which visualization did you prefer and why? ```IntelliJ```'s coverage window or ```JaCoCo```'s report?
