@@ -28,4 +28,9 @@ height:40px;" value="Project" />
 <br/>
 <br/>
 
-The exam grade is given on the basis of the interim evaluations and the final defense of the project.
+There will be two exams:
+* Midterm Exam
+* Final Exam
+
+The Exams are to test your understanding on developing collaboratively 
+quality software that is flexible, reusable, and maintainable.
