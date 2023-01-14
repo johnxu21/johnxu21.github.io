@@ -40,8 +40,10 @@ Current techniques in software design presented with emphasis on architecture fi
 
 * **Level**: Senior 
 * **Period**: Spring Semester 2022-2023
+
+### Communication
 * **Office Hours Zoom Link**: Sent privately and on request
-* **Slack workspace**: Sent privately by email 
+* **Slack workspace**: https://spdd472672202-ceu1331.slack.com (by invitation)
 
 [//]: # (* https://spdd472672202-ceu1331.slack.com) 
 

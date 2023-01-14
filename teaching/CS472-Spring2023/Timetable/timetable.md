@@ -32,9 +32,8 @@ Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Introduction to Git and GitHub 
-2. Reliability, 
 3. Object-oriented design, and 
-4. Planning
+4. Software Testing
 
 Labs
 ========
@@ -59,107 +58,49 @@ In the meantime, you must give us a status report of your progress during a proj
 During the project defense you give short demonstrations of your interim results that could 
 possibly lead to an adjustment of the planning.
 
-Here is the timetable, 
+Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on January, 12th, 2023.] 
 
 <table style="border-collapse:collapse;">
 <tr >
 <th style="border: 1px solid black;">Week</th>
 <th style="border: 1px solid black;">Date</th>
-<th style="border: 1px solid black;">Theory</th>
-<th style="border: 1px solid black;">Lab</th>
-<th style="border: 1px solid black;">Assignment</th>
-<th style="border: 1px solid black;">Milestone</th>
+<th style="border: 1px solid black;">Class Topic</th>
+<th style="border: 1px solid black;">Date</th>
+<th style="border: 1px solid black;">Class Topic</th>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">01</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Intro / Reliability</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"> </td>
-</tr>
-
-<tr>
-<td style="border: 1px solid black;">01</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">XML Parser</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"> </td>
+<td style="border: 1px solid black;">Tue 01/17</td>
+<td style="border: 1px solid black;">[T] Class overview</td>
+<td style="border: 1px solid black;">Thu 01/19</td>
+<td style="border: 1px solid black;">[T] Intro to Git & GitHub </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">02</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Object Oriented Design</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"> </td>
-</tr>
-
-<tr>
-<td style="border: 1px solid black;">02</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Unit Testing + Contracts</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"> </td>
+<td style="border: 1px solid black;">Tue 01/24</td>
+<td style="border: 1px solid black;">More Git & GitHub </td>
+<td style="border: 1px solid black;">Thu 01/26 </td>
+<td style="border: 1px solid black;">[L] Software Testing</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Planning</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"> </td>
-</tr>
-
-<tr>
-<td style="border: 1px solid black;">03</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Free Project Work</td>
-<td style="border: 1px solid black;">Specification 1.0</td>
-<td style="border: 1px solid black;">Plan 1.0 </td>
+<td style="border: 1px solid black;">Tue 01/31 </td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">Thu 02/03 </td>
+<td style="border: 1px solid black;">[L] More OO Design & Architecture</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Free Project Work</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"> </td>
+<td style="border: 1px solid black;">Tue 02/07</td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">Thu 02/09 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
-<tr>
-<td style="border: 1px solid black;">04</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Free Project Work</td>
-<td style="border: 1px solid black;">Free Project Work</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-</tr>
-
-<tr>
-<td style="border: 1px solid black;">05</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Free Project Work</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"> </td>
-</tr>
-
-<tr>
-<td style="border: 1px solid black;">05</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">Free Project Work</td>
-<td style="border: 1px solid black;">Free Project Work</td>
-<td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;"></td>
-</tr>
 
 
 </table>
