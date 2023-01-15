@@ -39,6 +39,10 @@ height:30px;" value="Git & GitHub" />
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="Testing" />
 </form>
+<form action="/teaching/CS472-Spring2023/Timetable/optional_lab/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="Optional Lab" />
+</form>
 </div>
 
 <br/>

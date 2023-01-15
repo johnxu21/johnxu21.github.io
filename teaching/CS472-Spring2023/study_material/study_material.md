@@ -91,25 +91,7 @@ All sample code (both for theory and labs) can be found below.
 * TicTacToe version 2.1 [[zip](https://drive.google.com/file/d/1JkV_GbIpwbv6YrtHnWNFda24OLE5t6dw/view?usp=sharing)] (Version with an exporter that exports a TicTacToe Game in various formats (```ASCII```, ```HTML```). Therefore, separate OutputTests .)
 * TicTacToe version 2.1 [[GitHub](https://github.com/johnxu21/TicTacToe_Git)] (Same version 2.1, but now published on GitHub. You can fork this project and work on it like that]
 
-Practicals
-========
 
-### Dynamic Analysis (Testing)
-The lab for dynamic analysis can be found [here](/teaching/CS472-Spring2023/study_material/dynamic_analysis/)
-
-## Week 1: 
-The practical during the 1st week deals with the xml parser, a mandatory component of the project. All materials can be found below.
-* [Tasks](../../../files/472Files/Week1-Tasks.pdf)
-* [eenCD.xml](material/eenCD.xml), [cdCatalog.xml](material/cdCatalog.xml), [eenCDError.xml](material/eenCDError.xml), [cdCatalogError.xml](material/cdCatalogError.xml)
-* [Possible solution](https://drive.google.com/file/d/1XLZDTpHjaxZ4RmlUlU0ic58ngIAz3d3m/view?usp=sharing)
-
-## Week 2: 
-The lab during the 2nd week deals with unit tests, debugging and contracts. All materials can be found below.
-* [Tasks](../../../files/472Files/Week2-Tasks.pdf)
-* [CMakeLists.txt](material/CMakeLists.txt)
-* [Fighterplane.cpp](material/Fighterplane.cpp), [Exceptions.h](material/Exceptions.h), [Largest.cpp](material/Largest.cpp)
-* The Google test framework can be found on  [[GitHub-googletest](https://github.com/google/googletest/releases)]
-* The test framework must also be compiled. Use the instructions to load TicTacToe in CLion as an example [[load-tictactoe-clion](material/loading_ttt/loading_ttt.md)]
 
 
 
