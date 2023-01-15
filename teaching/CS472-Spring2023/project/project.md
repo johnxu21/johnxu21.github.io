@@ -49,7 +49,7 @@ The projects are of equal strength, so it would be nice if they are distributed 
 Groups are also free come up with their own custom projects. However, If you choose to work on a custom project, 
 then you will need to explain/motivate why this project would allow you to demonstrate your software 
 engineering skills. You will also prepare a specification document with in the first three weeks of the class.
-You can borrow a leaf on how the specification documents for the two projects below. The quality of the group's
+You can borrow a leaf from the specification documents for the two projects below. The quality of the group's
 specification document does not have to be like the ones presented, but should be reasonable.
 I will to look at your Specification documents to I approve the groups custom project.
 
