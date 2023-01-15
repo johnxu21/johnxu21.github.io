@@ -73,7 +73,7 @@ necessary, way to assess the quality and usefulness of a test suite in the conte
 Materials & Tools Used for this Session
 ===============
 
-* Session slides [here](../../../../files/Testing.pdf).
+* Session slides [here](../Testing.pdf).
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
