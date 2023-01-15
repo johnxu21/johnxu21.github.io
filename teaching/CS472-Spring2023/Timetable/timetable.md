@@ -69,7 +69,7 @@ However, it is also perfectly possible to work on the project from home. If you 
 or problems, you can contact me or the assistant on the [Slack workspace](https://spdd472672202-ceu1331.slack.com)
 
 
-Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail or on the [Slack workspace](https://spdd472672202-ceu1331.slack.com). [Last modified on January, 12th, 2023.] 
+Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail or on the [Slack workspace](https://spdd472672202-ceu1331.slack.com). [Last modified on January, 15th, 2023.] 
 
 <table style="border-collapse:collapse;">
 <tr >

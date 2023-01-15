@@ -56,13 +56,13 @@ you get started with working with the ```tinyXML``` library. It will also help y
 with working with the ```googletest``` framework for writing unit tests in C++.
 
 ## Task 1
-The practical during the 1st week deals with the xml parser, a mandatory component of the project. All materials can be found below.
+The task deals with the xml parser, a mandatory component of the project. All materials can be found below.
 * [Tasks](../../../files/472Files/Week1-Tasks.pdf)
 * [eenCD.xml](material/eenCD.xml), [cdCatalog.xml](material/cdCatalog.xml), [eenCDError.xml](material/eenCDError.xml), [cdCatalogError.xml](material/cdCatalogError.xml)
 * [Possible solution](https://drive.google.com/file/d/1XLZDTpHjaxZ4RmlUlU0ic58ngIAz3d3m/view?usp=sharing)
 
 ## Task 2 
-The lab during the 2nd week deals with unit tests, debugging and contracts. All materials can be found below.
+The task deals with unit tests, debugging and contracts. All materials can be found below.
 * [Tasks](../../../files/472Files/Week2-Tasks.pdf)
 * [CMakeLists.txt](material/CMakeLists.txt)
 * [Fighterplane.cpp](material/Fighterplane.cpp), [Exceptions.h](material/Exceptions.h), [Largest.cpp](material/Largest.cpp)
