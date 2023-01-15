@@ -119,7 +119,7 @@ activities over time for the repository scottyab/rootbeer.
 
 ### Part 3. Executive Summary (10 pts)
 
-Pretend you are a project manager writing a status report on the Homebrew project 
+Pretend you are a project manager writing a status report on the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) project 
 to your boss as if it was a company-owned project.  The report should take the 
 form of an Executive Summary. Your boss is very busy and overworked, and he won't 
 bother reading more than a page, so write clearly and succinctly. Charts and 
