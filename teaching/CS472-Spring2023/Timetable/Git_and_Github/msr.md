@@ -131,5 +131,16 @@ yourself) and it should focus on things like how much work is being done, who
 is doing it? who is doing the most work overall and in recent weeks? which 
 developer could have left the project? 
 what types of things they are doing? etc.  There is no preset 
-answer here, just try to use the git log to find information about the 
+answer here, just try to use the git commits to find information about the 
 project and focus on any area you think your boss would be interested in.
+
+**Name the report ```<your-names>_executive_summary.pdf>```**
+
+Submitting the report
+=======
+* create a branch on your local fork repository called ```mining_report``` using the following command ```git branch mining_report```.
+* run the command ```git checkout mining_report```
+* copy your report--```<your-names>_executive_summary.pdf>``` and paste it in the folder ```repo_mining```
+* push the changes onto your remote fork repository
+* open a pull request and write an appropriate title and body.
+* one of the repository maintainers should integrate your contribution into the main branch.

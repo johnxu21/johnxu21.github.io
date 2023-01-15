@@ -43,7 +43,7 @@ height:30px;" value="Testing" />
 <br/>
 
 
-### This assignment is due February January 31st, 2023
+### **This assignment is due February January 31st, 2023**
 
 
 Dynamic analysis is “the analysis of the properties of a running software system” 
@@ -52,7 +52,7 @@ It is complementary to static analysis techniques. Some properties that cannot b
 studied through static analysis can be examined with dynamic analysis and vice versa. 
 The applications of dynamic analysis techniques are very broad: program comprehension, 
 system verification, resource profiling, test analysis, etc. In this session, we focus on 
-one very important aspect of dynamic analysis: Testing.
+one very important aspect of dynamic analysis: **Testing**.
 
 "Tests: Your Life Insurance!" 
 Tests are essential for software engineering activities. They can help you: 
@@ -111,16 +111,15 @@ Please try to remember this coverage (or take a screenshot to not depend on your
  
 **Questions:**
 * Is the coverage good enough?
-* If you make any changes in ```JPacman``` sources, can you rely on the current tests to catch faults?
 
-Task 2 -- Increasing Coverage on JPacman - 20 points
+Task 2 -- Increasing Coverage on JPacman 
 ===================
   
 For the second task, we will increase the coverage on JPacman. Doing that is very simple, 
 we just need to write more tests. In this task, we are going to write one new test case. 
 As you have seen from **Task 1** that the coverage for several packages is zero percent.
  
-    Let's create a simple ```unit test``` on a method. We will test the ```isAlive()``` method in class ```Player``` 
+Let's create a simple ```unit test``` on a method. We will test the ```isAlive()``` method in class ```Player``` 
 (package ```level```). You should look at the ```DirectionTest``` class (folder ```test```, package ```board```) as a template 
 for your test case. **The hardest part is instantiating a ```Player``` object as it requires other objects.** 
 The ```PlayerFactory``` class is responsible for creating instances of ```Player```. And, ```PlayerFactory``` 
@@ -139,14 +138,14 @@ After adding the new test, build ```jpacman.test``` again and run it with covera
 have any errors, you should see the IntelliJ window showing the code coverage. Leave this window with the 
 coverage information on as you may need it to answer the questions from the next task 
 (or take a screenshot of it).
+
+Task 2.1 - 30 points (10 points each)
+=========
+Identify any three methods in any java classes and write simple ```unit tests``` of those methods. 
+Remember to take screenshots of the test coverage before  and after creating the unit tests. 
+**Since there are many methods in the project, I should not find almost all the group members of a given group attempting the same methods.**
  
-**Questions:**
-* How did the new test affect the coverage?
-* Do you think 100% coverage is feasible?
-* What would you propose as a good level of code coverage?
- 
- 
-Task 3 -- JaCoCo Report on JPacman
+Task 3 -- JaCoCo Report on JPacman (20 points)
 ===============
 
 The gradle build file provided in ```JPacman```, already has ```JaCoCo``` configured. Look at the folder 
@@ -160,3 +159,15 @@ covered (or partially covered).
 * Are the coverage results from ```JaCoCo``` similar to the ones you got from ```IntelliJ``` in the last task? Why so or why not?
 * Did you find helpful the source code visualization from ```JaCoCo``` on uncovered branches?
 * Which visualization did you prefer and why? ```IntelliJ```'s coverage window or ```JaCoCo```'s report?
+
+**Write a report for Tasks 2.1 and Task 3. Name the report ```<your-names>_unitTesting.pdf>```**
+
+Submitting the Assignment
+=======
+* create a folder on your local fork repository called ```jpacman```
+* create a branch on your local fork repository called ```jpacman_tests``` using the following command ```git branch jpacman_tests```.
+* run the command ```git checkout jpacman_tests```
+* copy your report--```<your-names>_unitTesting.pdf>``` and paste it in the folder ```jpacman```
+* push the changes onto your remote fork repository
+* open a pull request and write an appropriate title and body.
+* one of the repository maintainers should integrate your contribution into the main branch.

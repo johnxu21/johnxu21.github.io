@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * New Test Case example
- * @author Henrique
+ * @author John Businge
  */
 public class PlayerTest {
     /**
