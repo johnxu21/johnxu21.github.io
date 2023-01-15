@@ -142,13 +142,13 @@ coverage information on as you may need it to answer the questions from the next
 (or take a screenshot of it).
 
 Task 2.1 - 30 points (10 points each)
-=========
+====
 Identify any three methods in any java classes and write simple ```unit tests``` of those methods. 
 Remember to take screenshots of the test coverage before  and after creating the unit tests. 
 **Since there are many methods in the project, I should not find almost all the group members of a given group attempting the same methods.**
  
 Task 3 -- JaCoCo Report on JPacman (20 points)
-===============
+=====
 
 The gradle build file provided in ```JPacman```, already has ```JaCoCo``` configured. Look at the folder 
 ```build/reports/jacoco/test/html```, right-click on the file ```index.html``` and select 
