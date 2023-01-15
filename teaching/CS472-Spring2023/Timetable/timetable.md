@@ -35,6 +35,10 @@ height:30px;" value="Git & GitHub" />
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Testing" />
 </form>
+<form action="/teaching/CS472-Spring2023/Timetable/optional_lab/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="Optional Lab" />
+</form>
 </div>
 
 <br/>
@@ -50,22 +54,22 @@ The theory consists of four lessons where we explain the techniques to be used.:
 Labs
 ========
 The first exercise lab sessions is meant to practice working with Git and GitHub.
-The next lab sessions are aimed at practicing essential topics (XML parsing, testing, debugging, contracts, ...). 
+The next lab session is meant to practice writing unit tests to increase test coverage.
+The next lab optional lab session aimed at practicing essential topics (XML parsing, testing, debugging, contracts, ...). 
 After a few weeks, the lab sessions switch to independent work, i.e. the labs are organized as sessions 
-in the computer rooms where you can work on your project fre ely, and where an assistant is 
-present to answer any questions. During those hours, the computer rooms are reserved for you, 
+in the computer rooms where you can work on your project freely, and where an assistant is 
+present to answer any questions. During those hours, the computer room are reserved for you, 
 so that you can certainly work.
 
 
-* The first three exercise sessions are organized as practical "hands-on" lab sessions on the use of certain tools (XML parsing, unit tests, ...). These are set up as physical meetings in the computer class.
 
 * The rest of the semester you work freely on your project. You can come to campus for this, the 
 computer room is available for you during the scheduled hours of the class. 
 However, it is also perfectly possible to work on the project from home. If you have any questions 
-or problems, you can contact me or the assistant by e-mail
+or problems, you can contact me or the assistant on the [Slack workspace](https://spdd472672202-ceu1331.slack.com)
 
 
-Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on January, 12th, 2023.] 
+Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail or on the [Slack workspace](https://spdd472672202-ceu1331.slack.com). [Last modified on January, 12th, 2023.] 
 
 <table style="border-collapse:collapse;">
 <tr >
