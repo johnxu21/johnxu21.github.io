@@ -42,6 +42,6 @@ height:30px;" value="FAQ" />
 <br/>
 <br/>
 
-Group Instruction
+Groups
 =======
 All the group members are supposed to 
