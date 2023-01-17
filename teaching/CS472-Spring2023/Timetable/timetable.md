@@ -128,6 +128,86 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
+<tr>
+<td style="border: 1px solid black;">07</td>
+<td style="border: 1px solid black;">Tue 02/28</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 03/02 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">08</td>
+<td style="border: 1px solid black;">Tue 03/07</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 03/09 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">09</td>
+<td style="border: 1px solid black;">Tue 03/14</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 03/16 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">10</td>
+<td style="border: 1px solid black;">Tue 03/21</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 03/23 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">11</td>
+<td style="border: 1px solid black;">Tue 03/28</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 03/30 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">12</td>
+<td style="border: 1px solid black;">Tue 04/04</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 04/06 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">13</td>
+<td style="border: 1px solid black;">Tue 04/11</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 04/13 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">14</td>
+<td style="border: 1px solid black;">Tue 04/18</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 04/20 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">15</td>
+<td style="border: 1px solid black;">Tue 04/25</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 04/27 </td>
+<td style="border: 1px solid black;">Project Presentation</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">16</td>
+<td style="border: 1px solid black;">Tue 05/02</td>
+<td style="border: 1px solid black;">Project Presentation</td>
+<td style="border: 1px solid black;">Thu 05/4 </td>
+<td style="border: 1px solid black;">Project Presentation</td>
+</tr>
+
 
 
 </table>
