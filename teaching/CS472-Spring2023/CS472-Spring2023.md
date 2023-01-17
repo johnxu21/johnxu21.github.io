@@ -52,7 +52,7 @@ Where ? When ?
 * Location: HOS 210
 * Labs
   * The labs are organized as sessions in the computer rooms where you can work on your project freely and 
-  where an assistant is present to answer any questions. 
+  where an assistant is present to answer any questions. <<**Anyone without a laptop that would require access to the computer lab?**>>
   Moreover, the computer rooms are reserved for you during those hours, so you can certainly work.
   * In the first weeks practical "hands-on" lab sessions are organized about the use of certain tools (Git and GitHub, unit tests, XML parsing, ...)
 
