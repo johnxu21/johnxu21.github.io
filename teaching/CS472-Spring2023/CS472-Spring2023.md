@@ -43,7 +43,7 @@ Current techniques in software design presented with emphasis on architecture fi
 
 ### **Communication**
 * **Office Hours Zoom Link**: Sent privately and on request
-* **Discord workspace**: [Discord](https://discord.gg/gQeXwRQr) (by invitation)
+* **Discord workspace**: [Discord](https://discord.gg/CQUCUFTcDY) 
 
 
 Where ? When ?
