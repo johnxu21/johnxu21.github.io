@@ -41,9 +41,9 @@ Current techniques in software design presented with emphasis on architecture fi
 * **Level**: Senior 
 * **Period**: Spring Semester 2022-2023
 
-### Communication
+### **Communication**
 * **Office Hours Zoom Link**: Sent privately and on request
-* **Slack workspace**: https://spdd472672202-ceu1331.slack.com (by invitation)
+* **Slack workspace**: [Slack](https://spdd472672202-ceu1331.slack.com) (by invitation)
 
 
 Where ? When ?
@@ -140,10 +140,12 @@ Literature
 =========
 The following book is recommended as general background information to the course. 
 They are available in the library.
-1. Design Patterns: Elements of Reusable Object-Oriented Software
+1. Design Patterns: Elements of Reusable Object-Oriented Software, Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
 2. Design Patterns in Modern C++: Reusable Approaches for Object-Oriented Software Design
 3. Using UML : Software Engineering with Objects and Components
-4. Cooperative Software Development, Amy Ko, available for free: [Book Site](https://faculty.washington.edu/ajko/books/cooperative-software-development/)
+4. Pro Git, available for free at: https://git-scm.com/book/en/v2
+
+5. Cooperative Software Development, Amy Ko, available for free: [Book Site](https://faculty.washington.edu/ajko/books/cooperative-software-development/)
 
 Attendance:	
 ========
