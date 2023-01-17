@@ -43,7 +43,7 @@ Current techniques in software design presented with emphasis on architecture fi
 
 ### **Communication**
 * **Office Hours Zoom Link**: Sent privately and on request
-* **Slack workspace**: [Slack](https://spdd472672202-ceu1331.slack.com) (by invitation)
+* **Discord workspace**: [Discord](https://discord.gg/gQeXwRQr) (by invitation)
 
 
 Where ? When ?
