@@ -46,3 +46,5 @@ Groups
 =======
 There are 70 students who enrolled for this class. We will have seven groups comprising 
 10 students each. You can voluntarily choose your group mates. During the first lab on
+[Git and GitHub](/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/), we will collect all the names of individuals 
+who have not yet found a group and then allocate you one of the already existing group.
