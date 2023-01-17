@@ -53,7 +53,7 @@ Frequently Asked Questions
   * If you have not found a partner by Thursday, January 26th, please contact <em></em><a href="mailto:john.businge@unlv.edu">Prof. John Businge</a> and the GA <em></em><a href="mailto:wangs12@unlv.nevada.edu">Shizhao Wang</a> by email. We will collect all the names of individuals who have not yet found anyone and then put you in touch with each other.
 
 * Can we voluntarily choose a project? Do we all have the same project? 
-  * No: it is an imposed project that changes every year. Within the project there are mandatory and optional parts so that you still have some freedom.
+  * Yes: A group is free to choose a custom project. However, you have to prepare your own specification document and discuss it with the professor.
 * Why can only the public attributes be used in the contracts?
   * A contract is part of the (public) interface of a class. Someone calling a method on a class must be able to verify that the pre and post conditions are met. This is only possible if a contract is limited to the public attributes. 
 * I don't really understand the difference between ```Make``` and ```CMake```.
@@ -72,8 +72,8 @@ Frequently Asked Questions
   * Yes, the computer lab is available for you to work on the project together.
 * Do we still get theory lessons?
   * No. The theory lessons are only during the first three weeks.
-  * What if a group partner gives up?
-  * Contact us as soon as possible. (By the way, this applies to all problems you might have with your partners) Then we look for an individual solution (adjusted planning, ...).
+  * What if a group mate gives up?
+  * Contact us as soon as possible. (By the way, this applies to all problems you might have with your grop mates) Then we look for an individual solution (adjusted planning, ...).
 
 ### About the Specification 1.0 (Traffic Simulation)
 * What unit is the traffic light "cycle" and the vehicle generator "frequency"?
