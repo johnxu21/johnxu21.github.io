@@ -48,8 +48,8 @@ Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Introduction to Git and GitHub 
-3. Object-oriented design, and 
-4. Software Testing
+2. Object-oriented design, and 
+3. Software Testing
 
 Labs
 ========
