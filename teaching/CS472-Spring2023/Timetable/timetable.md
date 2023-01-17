@@ -66,10 +66,10 @@ so that you can certainly work.
 * The rest of the semester you work freely on your project. You can come to campus for this, the 
 computer room is available for you during the scheduled hours of the class. 
 However, it is also perfectly possible to work on the project from home. If you have any questions 
-or problems, you can contact me or the assistant on the [Slack workspace](https://spdd472672202-ceu1331.slack.com)
+or problems, you can contact me or the assistant on the [Discord workspace](https://discord.gg/CQUCUFTcDY)
 
 
-Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail or on the [Slack workspace](https://spdd472672202-ceu1331.slack.com). [Last modified on January, 15th, 2023.] 
+Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY). [Last modified on January, 17th, 2023.] 
 
 <table style="border-collapse:collapse;">
 <tr >
@@ -91,9 +91,9 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <tr>
 <td style="border: 1px solid black;">02</td>
 <td style="border: 1px solid black;">Tue 01/24</td>
-<td style="border: 1px solid black;">More Git & GitHub </td>
+<td style="border: 1px solid black;">[T] More Git & GitHub </td>
 <td style="border: 1px solid black;">Thu 01/26 </td>
-<td style="border: 1px solid black;">[L] Software Testing</td>
+<td style="border: 1px solid black;">[L] Git and GitHub</td>
 </tr>
 
 <tr>
@@ -107,8 +107,24 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Tue 02/07</td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[L] Software Testing </td>
 <td style="border: 1px solid black;">Thu 02/09 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">05</td>
+<td style="border: 1px solid black;">Tue 02/14</td>
+<td style="border: 1px solid black;">[T] Software Testing </td>
+<td style="border: 1px solid black;">Thu 02/16 </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">06</td>
+<td style="border: 1px solid black;">Tue 02/21</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">Thu 02/23 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 

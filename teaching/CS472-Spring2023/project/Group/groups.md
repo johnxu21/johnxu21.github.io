@@ -44,4 +44,5 @@ height:30px;" value="FAQ" />
 
 Groups
 =======
-All the group members are supposed to 
+There are 70 students who enrolled for this class. We will have seven groups comprising 
+10 students each. You can voluntarily choose your group mates. During the first lab on
