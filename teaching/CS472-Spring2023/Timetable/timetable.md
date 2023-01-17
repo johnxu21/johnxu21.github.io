@@ -47,7 +47,8 @@ height:30px;" value="Optional Lab" />
 Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
-1. Introduction to Git and GitHub 
+1. Class overview [PDF](ClassOverview.pdf)
+2. Introduction to Git and GitHub 
 2. Object-oriented design, and 
 3. Software Testing
 
