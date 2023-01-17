@@ -52,10 +52,11 @@ Where ? When ?
 * Location: HOS 210
 * Labs
   * The labs are organized as sessions in the computer rooms where you can work on your project freely and 
-  where an assistant is present to answer any questions. Moreover, the computer rooms are reserved for you 
-  during those hours, so you can certainly work.
-  * In the first weeks practical "hands-on" lab sessions are organized about the use of certain tools (XML parsing, unit tests, ...)
-    * To manage the class, we shall divide the sessions into two groups.
+  where an assistant is present to answer any questions. 
+  Moreover, the computer rooms are reserved for you during those hours, so you can certainly work.
+  * In the first weeks practical "hands-on" lab sessions are organized about the use of certain tools (Git and GitHub, unit tests, XML parsing, ...)
+
+[//]: # (    * To manage the class, we shall divide the sessions into two groups.)
 
 
 Rationale
@@ -70,7 +71,7 @@ At the end of this course you will be able to...
  * develop a software project using professional tools.
  * guarantee the reliability of a software solution by means of fully automatic tests and contracts.
  * deliver maintainable software based on a good object-oriented design.
- * use the GitHub which is a very powerful agile platform.
+ * use GitHub which is a very powerful agile platform.
  * learn the skills required to develop software collaboratively.
 
 
@@ -84,7 +85,7 @@ analyze the problem and design, implement and test a solution using any programm
 Assessment (472)
 =======
 While there are a number of assignments listed for this course, you will be graded by five primary 
-criteria: 1) the resume, 2) the individual GIT assignment, 3) your team senior project 
+criteria: 1) the individual GitHub assignment, 2) Software Testing, 3) your team senior project 
 portfolio, 4) your team final presentation, and 5) your individual exam grades. This document 
 and the final presentation will be created and iteratively refined over the course of the semester. 
 Besides these rules, I reserve the right to lower an individual's students grade, all the way to an 
