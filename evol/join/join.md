@@ -14,7 +14,7 @@ permalink: /evol/join/
 * Regardless of the position you are applying for, please make sure to include the following in your email: 
   * Resume
   * Transcripts
-  * A one page essay presenting yourself and your research interests. The essay should be written in English and should answer the following questions: 
+  * A one-page essay presenting yourself and your research interests. The essay should be written in English and should answer the following questions: 
     * (i) Why would you like to do research? 
     * (ii) What are your research interests and why? 
     * (iii) What is your favourite programming language or project and why? 
@@ -22,5 +22,6 @@ permalink: /evol/join/
     * (v) You already looked at the groups projects or read some of our papers
 * **Please do NOT just mention keywords off of the group's website along with generic descriptions like “my research interests overlap with yours”**. I wIll ignore emails with such generic descriptions. 
 * **To show me you have actually taken the time to read this page, include the word “SEVOL” at the beginning of your email**. Please note that I will not reply to emails that do not follow these instructions.
+* I also encourage you to watch the video by Prof. Sarah Nadi--[Preparing a Graduate School Application & Contacting Potential Supervisors](https://www.youtube.com/watch?v=B3oANa67Iq4).
 
 
