@@ -110,7 +110,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">Tue 02/07</td>
 <td style="border: 1px solid black;">[L] Software Testing </td>
 <td style="border: 1px solid black;">Thu 02/09 </td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[L] Free Project Work >> <b>Recruiters from Hill Air Force</b> </td>
 </tr>
 
 <tr>
