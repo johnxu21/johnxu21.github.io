@@ -119,7 +119,7 @@ of 33 authors who have touched the 17 unique files (the data points in the graph
 updating the files and committing their changes. The scatter plot  below  shows the authors 
 activities over time for the repository scottyab/rootbeer. 
 
-<img src="rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
 ### Part 3. Executive Summary (10 pts)
 
