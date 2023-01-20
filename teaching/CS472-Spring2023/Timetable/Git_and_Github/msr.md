@@ -74,7 +74,7 @@ git add contributors.txt
 git commit -m "your commit message here"
 git push
 ```
-<img src="contributors.jpeg" alt="contributors" style="width:600px;height:376px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/Git_and_Github/contributors.jpeg" alt="contributors" style="width:600px;height:376px;" align="center">
  
 * in your fork on GitHub, you should be able to see a screen like the image above.
 * open a pull request and write an appropriate title and body.
