@@ -170,6 +170,7 @@ covered (or partially covered).
 
 Submitting the Assignment
 =======
+* Put a **link to your fork repository in the report**.
 * create a folder on your local fork repository called ```jpacman```
 * create a branch on your local fork repository called ```jpacman_tests``` using the following command ```git branch jpacman_tests```.
 * run the command ```git checkout jpacman_tests```
@@ -177,3 +178,4 @@ Submitting the Assignment
 * push the changes onto your remote fork repository
 * open a pull request and write an appropriate title and body.
 * one of the repository maintainers should integrate your contribution into the main branch.
+* You should also submit your report on **Canvas**

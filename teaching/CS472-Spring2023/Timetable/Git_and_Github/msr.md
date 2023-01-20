@@ -149,9 +149,12 @@ In your report, write some few sentences on the git commands you found particula
 
 Submitting the report
 =======
+* Put a **link to your fork repository in the report**.
 * create a branch on your local fork repository called ```mining_report``` using the following command ```git branch mining_report```.
 * run the command ```git checkout mining_report```
 * copy your report--```<your-names>_executive_summary.pdf>``` and paste it in the folder ```repo_mining```
 * push the changes onto your remote fork repository
 * open a pull request and write an appropriate title and body.
 * one of the repository maintainers should integrate your contribution into the main branch.
+* You should also submit your report on **Canvas**
+
