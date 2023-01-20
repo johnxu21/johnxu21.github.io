@@ -64,6 +64,10 @@ By now, everyone should have a GitHub account and been given added to the
 team's repository as ```collaborators```. In the team repository there should be a file ```contributors.txt```
 that contains the contributor list of the team.
 
+**Invite me and the TA as collaborators on your repository.**  
+* my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
+* TA: GitHub ID: ```Godlander```
+
 Fork the teams repository and clone the fork onto your laptop.
 * create a branch on your local repository called ```contributors``` using the following command ```git branch contributors```.
 * run the command ```git checkout contributors```
@@ -139,6 +143,7 @@ developer could have left the project?
 what types of things they are doing? etc.  There is no preset 
 answer here, just try to use the git commits to find information about the 
 project and focus on any area you think your boss would be interested in.
+In your report, write some few sentences on the git commands you found particularly useful in doing this lab.
 
 **Name the report ```<your-names>_executive_summary.pdf>```**
 
