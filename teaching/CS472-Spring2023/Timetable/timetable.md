@@ -48,7 +48,7 @@ Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Class overview [PDF](ClassOverview.pdf)
-2. Introduction to Git and GitHub [pptx](Git-and-GitHub.pptx)
+2. Introduction to Git and GitHub [Google_Slides](https://docs.google.com/presentation/d/1YG1uXfERIPtHF9STDQQMoxvluU3X8QRO/edit#slide=id.p2)
 2. Object-oriented design, and 
 3. Software Testing
 
