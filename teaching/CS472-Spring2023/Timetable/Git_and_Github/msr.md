@@ -98,6 +98,9 @@ git push
 The code collects all the files in a repo and also the number of counts the file is touched 
 throughout its lifetime.
 
+**Caution:** When pushing your changes to GitHub, **replace your token with fake digits or delete it completely**. 
+If you push your code without removing the token, it will be reverted, and you will have to regenerate it again.
+
 A repository contains both source files and other files like configuration files. Developers 
 spend most of the time changing source files for many reasons, for example, fixing bugs, 
 extending them with new features, or refactoring. The script CollectFiles.py collects all 
