@@ -121,8 +121,8 @@ You get a hint on how draw the scatter plot on this link on [Stackoverflow](http
 
 
 **Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer)) <br/>
-The repository scottyab/rootbeer has a total of 17 unique source files ('.java'). It has a total 
-of 33 authors who have touched the 17 unique files (the data points in the graph) who have been 
+The repository scottyab/rootbeer has a total of 17+ unique source files. It has a total 
+of 33+ authors who have touched the 17+ unique files (the data points in the graph) who have been 
 updating the files and committing their changes. The scatter plot  below  shows the authors 
 activities over time for the repository scottyab/rootbeer. 
 
