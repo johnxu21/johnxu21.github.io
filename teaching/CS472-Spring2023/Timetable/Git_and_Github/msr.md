@@ -49,7 +49,7 @@ height:30px;" value="Optional Lab" />
 <br/>
 
 
-### **This assignment is due January 26th, 2023**
+### **This individual assignment is due January 26th, 2023**
 
 For this assignment, you will be learning how to explore an open 
 source repository from GitHub.  You will also learn how to extract useful 
