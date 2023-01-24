@@ -52,7 +52,7 @@ height:30px;" value="Optional Lab" />
 ### **This individual assignment is due January 26th, 2023**
 
 For this assignment, you will be learning how to explore an open 
-source repository from GitHub.  You will also learn how to extract useful 
+source repository from GitHub. You will also learn how to extract useful 
 information from the repository and practice your project management skills by 
 writing a short executive summary on your findings. 
 (This assignment assumes you have installed git on your computer.  

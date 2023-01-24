@@ -102,7 +102,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">Tue 01/31 </td>
 <td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Thu 02/03 </td>
-<td style="border: 1px solid black;">[L] More OO Design & Architecture</td>
+<td style="border: 1px solid black;">[T] More OO Design & Architecture</td>
 </tr>
 
 <tr>
