@@ -73,7 +73,7 @@ References to some resources.
 * Design by contract [DesignByContract.h](material/DesignByContract.h) (A minimalist version with ```REQUIRE``` and ```ENSURE``` macros that -- if the condition is not met -- immediately stop the program with a simple message). 
 * Loading [TicTacToe in CLion](material/loading_ttt/loading_ttt.md)
 * A documentation generator [DoxyGen](https://doxygen.nl/) 
-* Using 3D engines with Qt C++ ([Qt](https://doc.qt.io/qt-5/gettingstarted.html))
+* Using 3D engines with Qt C++ ([Qt](https://doc.qt.io/qt-6.2/gettingstarted.html))
 
 
 All sample code (both for theory and labs) can be found below.
