@@ -53,6 +53,11 @@ You can borrow a leaf from the specification documents for the two projects belo
 specification document does not have to be like the ones presented, but should be reasonable.
 I will to look at your Specification documents to approve the groups' custom project.
 
+Senior Design Ideas submitted to CoE
+=====
+Please take a look at some of the Senior Design ideas submitted to the College of Engineering.
+[SD Ideas](https://mail.google.com/mail/u/3/#inbox/FMfcgzGrcPGBvpMsrnHFgQTljvFVzgjq?projector=1&messagePartId=0.1)
+
 Subway Simulation
 =======
 * Functional Requirements:
