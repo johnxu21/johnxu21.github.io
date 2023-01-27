@@ -49,7 +49,7 @@ height:30px;" value="Optional Lab" />
 <br/>
 
 
-### **This individual assignment is due January 31st, 2023**
+### **This individual assignment is due February 2nd, 2023**
 
 
 Dynamic analysis is “the analysis of the properties of a running software system” 
