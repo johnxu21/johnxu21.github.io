@@ -51,7 +51,12 @@ height:30px;" value="Optional Lab" />
 
 ### **This individual assignment is due February 2nd, 2023**
 
+In this Lab your will practice writing unit tests and analysing test coverage for a software project.
+In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
+for this Lab in the **Team's repository** you created and used in the 
+[Git and GitHub](/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/) Lab.
 
+<br/>
 Dynamic analysis is “the analysis of the properties of a running software system” 
 [[Ball1999](https://ansymore.uantwerpen.be/system/files/Ball1999.pdf)]. 
 It is complementary to static analysis techniques. Some properties that cannot be 
@@ -73,7 +78,7 @@ necessary, way to assess the quality and usefulness of a test suite in the conte
 Materials & Tools Used for this Session
 ===============
 
-* Session slides [here](../Testing.pdf).
+[//]: # (* Session slides [here]&#40;../Testing.pdf&#41;.)
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
@@ -82,9 +87,11 @@ Materials & Tools Used for this Session
 Setup / Preparation
 =============
 
-First, make sure to fork the JPacman from the [Prof's repository](https://github.com/johnxu21/jpacman) into your GitHub account. It is necessary to fork the project because the free version of CodeScene can only see projects from your own account.
+[//]: # (First, make sure to fork the JPacman from the [Prof's repository]&#40;https://github.com/johnxu21/jpacman&#41; into your GitHub account. It is necessary to fork the project because the free version of CodeScene can only see projects from your own account.)
 
-To start getting acquainted with the JPacman source code. Download/Clone the JPacman project and open it on IntelliJ; build it. JPacman uses Gradle as a built/dependency manager. Make sure you can build and run it before doing any source code modification.
+To start getting acquainted with the JPacman source code. Download/Clone the JPacman project from the 
+[Prof's repository](https://github.com/johnxu21/jpacman) and open it on IntelliJ; build it. JPacman uses Gradle as a built/dependency manager. 
+Make sure you can build and run it before doing any source code modification.
 Now look at the source code and try to understand its internal structure. In the "docs/uml" folder there are two simplified UML diagrams.
 
 Task 1 -- JPacman Test Coverage
@@ -115,7 +122,7 @@ Therefore, use whichever you prefer.
 If everything executed without errors, you should see a new window showing the code coverage. 
 Please try to remember this coverage (or take a screenshot to not depend on your memory).
  
-**Questions:**
+**Question:**
 * Is the coverage good enough?
 
 Task 2 -- Increasing Coverage on JPacman 
@@ -147,9 +154,27 @@ coverage information on as you may need it to answer the questions from the next
 
 Task 2.1 - 30 points (10 points each)
 ====
-Identify any three methods in any java classes and write simple ```unit tests``` of those methods. 
-Remember to take screenshots of the test coverage before  and after creating the unit tests. 
-**Since there are many methods in the project, I should not find almost all the group members of a given group attempting the same methods.**
+Identify **three or more methods** in any java classes and write ```unit tests``` of those methods. 
+Remember to take screenshots of the test coverage before and after creating the unit tests. 
+**Since there are many methods in the project, I should not find almost all the group members of a given group attempting the same methods.** 
+Discuss between the group mates what methods you will be writing unit tests for. 
+A simple Google sheet having two columns would help get the group organised
+
+<table>
+  <tr>
+    <th>Names</th>
+    <th>Fully Qualified Method Name</th>
+  </tr>
+  <tr>
+    <td>John Businge </td>
+    <td>src/main/java/nl/tudelft/jpacman/game/Game.java</td>
+  </tr>
+  <tr>
+    <td>John Businge </td>
+    <td>src/main/java/nl/tudelft/jpacman/board/BoardFactory.java</td>
+  </tr>
+
+</table> 
  
 Task 3 -- JaCoCo Report on JPacman (20 points)
 =====
@@ -161,7 +186,7 @@ line coverage but also branch coverage. Click on the ```level``` package, then o
 and after that on any method. You will see the source code with color information on which branches are 
 covered (or partially covered).
  
-**Questions:**
+**Questions:** 
 * Are the coverage results from ```JaCoCo``` similar to the ones you got from ```IntelliJ``` in the last task? Why so or why not?
 * Did you find helpful the source code visualization from ```JaCoCo``` on uncovered branches?
 * Which visualization did you prefer and why? ```IntelliJ```'s coverage window or ```JaCoCo```'s report?
@@ -175,7 +200,7 @@ Submitting the Assignment
 * create a branch on your local fork repository called ```jpacman_tests``` using the following command ```git branch jpacman_tests```.
 * run the command ```git checkout jpacman_tests```
 * copy your report--```<your-names>_unitTesting.pdf>``` and paste it in the folder ```jpacman```
-* push the changes onto your remote fork repository
+* push the changes onto your remote fork repository.
 * open a pull request and write an appropriate title and body.
 * one of the repository maintainers should integrate your contribution into the main branch.
 * You should also submit your report on **Canvas**
