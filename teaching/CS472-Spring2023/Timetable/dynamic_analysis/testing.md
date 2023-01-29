@@ -195,15 +195,16 @@ covered (or partially covered).
 * Which visualization did you prefer and why? ```IntelliJ```'s coverage window or ```JaCoCo```'s report?
 
 **Write a report for Tasks 2.1 and Task 3. Name the report ```<your-names>_unitTesting.pdf>```**
+Remember to include the code snippets for Tasks 2.1 in your report.
 
 Submitting the Assignment
 =======
 * Put a **link to your fork repository in the report**.
-* create a folder on your local fork repository called ```jpacman```
+* create a folder on your local fork repository called ```jpacman```.
 * create a branch on your local fork repository called ```jpacman_tests``` using the following command ```git branch jpacman_tests```.
 * run the command ```git checkout jpacman_tests```
 * copy your report--```<your-names>_unitTesting.pdf>``` and paste it in the folder ```jpacman```
 * push the changes onto your remote fork repository.
-* open a pull request and write an appropriate title and body.
+* open a pull request on the ```main branch``` of the Team repository and write an appropriate title and body.
 * one of the repository maintainers should integrate your contribution into the main branch.
 * You should also submit your report on **Canvas**
