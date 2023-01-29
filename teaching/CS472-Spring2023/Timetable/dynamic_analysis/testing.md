@@ -56,7 +56,10 @@ In the Lab you will also continue working with Git and GitHub facilities. You wi
 for this Lab in the **Team's repository** you created and used in the 
 [Git and GitHub](/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/) Lab.
 
-<br/>
+
+Dynamic Analysis
+=========
+
 Dynamic analysis is “the analysis of the properties of a running software system” 
 [[Ball1999](https://ansymore.uantwerpen.be/system/files/Ball1999.pdf)]. 
 It is complementary to static analysis techniques. Some properties that cannot be 
