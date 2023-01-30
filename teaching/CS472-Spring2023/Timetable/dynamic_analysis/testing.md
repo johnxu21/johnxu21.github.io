@@ -197,7 +197,8 @@ covered (or partially covered).
 * Which visualization did you prefer and why? ```IntelliJ```'s coverage window or ```JaCoCo```'s report?
 
 **Write a report for Tasks 2.1 and Task 3. Name the report ```<your-names>_unitTesting.pdf>```**
-Remember to include the code snippets for Tasks 2.1 in your report.
+Remember to include the **code snippets of your unit tests** for Tasks 2.1 in your report.
+Make sure that your report is descriptive enough for me to follow without looking at your project code.
 
 Submitting the Assignment
 =======
