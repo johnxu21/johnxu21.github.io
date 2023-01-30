@@ -158,7 +158,7 @@ coverage information on as you may need it to answer the questions from the next
 Task 2.1 - 30 points (10 points each)
 ====
 Identify **three or more methods** in any java classes and write ```unit tests``` of those methods. 
-Remember to take screenshots of the test coverage before and after creating the unit tests. 
+**Remember to take screenshots of the test coverage before and after creating the unit tests.** 
 **Since there are many methods in the project, I should not find almost all the group members of a given group attempting the same methods.** 
 Discuss between the group mates what methods you will be writing unit tests for. 
 A simple Google sheet having two columns would help get the group organised.
