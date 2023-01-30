@@ -165,16 +165,16 @@ A simple Google sheet having two columns would help get the group organised
 
 <table>
   <tr>
-    <th>Names</th>
-    <th>Fully Qualified Method Name</th>
+    <th style="border: 1px solid black;">Names</th>
+    <th style="border: 1px solid black;">Fully Qualified Method Name</th>
   </tr>
   <tr>
-    <td>John Businge </td>
-    <td>src/main/java/nl/tudelft/jpacman/game/Game.java</td>
+    <td style="border: 1px solid black;">John Businge </td>
+    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/game/Game.java</td>
   </tr>
   <tr>
-    <td>John Businge </td>
-    <td>src/main/java/nl/tudelft/jpacman/board/BoardFactory.java</td>
+    <td style="border: 1px solid black;">John Businge </td>
+    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/board/BoardFactory.java</td>
   </tr>
 
 </table> 
