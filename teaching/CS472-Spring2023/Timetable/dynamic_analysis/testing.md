@@ -170,11 +170,11 @@ A simple Google sheet having two columns would help get the group organised.
   </tr>
   <tr>
     <td style="border: 1px solid black;">John Businge </td>
-    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/game/Game.java</td>
+    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/game/GameFactory.createSinglePlayerGame</td>
   </tr>
   <tr>
     <td style="border: 1px solid black;">John Businge </td>
-    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/board/BoardFactory.java</td>
+    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/board/BoardFactory.createBoard</td>
   </tr>
 
 </table> 
