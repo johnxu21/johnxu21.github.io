@@ -111,7 +111,8 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">Tue 02/07</td>
 <td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Thu 02/09 </td>
-<td style="border: 1px solid black;">[T] More OO Design & Architecture >> <b>Recruiters from Hill Air Force</b> </td>
+<td style="border: 1px solid black;">[T] More OO Design & Architecture >> <b>Recruiters from Hill Air Force</b> <br/>
+>> <b>Visit by Kane Toomer (Talk about campus resources, important dates, and the advanced standing process)</b></td>
 </tr>
 
 <tr>
