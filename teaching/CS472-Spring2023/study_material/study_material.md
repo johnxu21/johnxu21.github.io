@@ -48,22 +48,6 @@ will be published here during the *first* week.
 
 [comment]: <> (* Plan 2.1 [PDF]&#40;../../../files/472Files/PlanTmpl21.pdf&#41;]  [[Excel]&#40;../../../files/472Files/PlanTmpl21.xlsx&#41;] You only have to submit Plan 2.1 if you want to change something compared to Plan 2.0. Then it must be handed in the week after the second interim evaluation. You must also argue there &#40;using time sheets&#41; why you want to adjust that planning.)
 
-Theory
-=======
-Copies of the slides and other materials used can be found here. 
-* All in 1 bundle [PDF]()
-* Sleeve [PDF]()
-* Lesson 1 - Course Overview. Slides [PDF]()
-* Lesson 2 - Git and GitHub
-  * Slides [PDF]()
-  * Git Commit Messages: Best Practices & Guidelines: [link](https://initialcommit.com/blog/git-commit-messages-best-practices)
-* Lesson 3 — Object Oriented Design
-  * Slides [PDF]()
-  * Wikipedia about "[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)"
-  * Web-site for "[5 Most Embarrassing Software Bugs in History](https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/)"
-* Lesson 4 - Testing
-  * Slides [PDF]()
-
 
 Program code
 =====
