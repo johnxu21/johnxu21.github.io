@@ -94,7 +94,7 @@ The following documents will guide you produce the deliverables of the project:
 Getting Started Instructions
 =======
 Please pay attention to the following instructions. The group leader should send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with:
-* Subject "SDD - Project". 
+* Subject "SDD - Project - <Group Identifier>". 
 * Message Body:
   * The full name of the members in your group.
   * Attach the **pre-conditions report** (PDF format) in your message.
@@ -104,7 +104,8 @@ Please pay attention to the following instructions. The group leader should send
   * Full names of all the members in your group
   * A link to the groups GitHub repository
   * The members are set as collaborators to the GitHub project.
-  * Invite me as collaborator on your repository. (my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
+
+[//]: # (  * Invite me as collaborator on your repository. &#40;my [GitHub ID - ```johnxu21```]&#40;https://github.com/johnxu21&#41;&#41;.)
 
 Instructions to the UML Diagrams
 =========
