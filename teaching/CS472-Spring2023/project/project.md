@@ -103,7 +103,8 @@ Please pay attention to the following instructions. The group leader should send
   * Project Name
   * Full names of all the members in your group
   * A link to the groups GitHub repository
-  * The members are set as collaborators to the GitHub project.
+
+[//]: # (  * The members are set as collaborators to the GitHub project.)
 
 [//]: # (  * Invite me as collaborator on your repository. &#40;my [GitHub ID - ```johnxu21```]&#40;https://github.com/johnxu21&#41;&#41;.)
 
