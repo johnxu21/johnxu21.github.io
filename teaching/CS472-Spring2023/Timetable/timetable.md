@@ -51,7 +51,7 @@ The theory consists of four lessons where we explain the techniques to be used.:
 2. Introduction to Git and GitHub [Google_Slides](https://docs.google.com/presentation/d/1YG1uXfERIPtHF9STDQQMoxvluU3X8QRO/edit#slide=id.p3)
 3. Software Testing [PDF](Software_Testing.pdf)
 4. Object-oriented design 
-  * Slides [PDF]()
+  * Slides [PDF](https://docs.google.com/presentation/d/1Y7iCcWYzmWuFgHiwzSxhOdB-tczCAW59/edit#slide=id.p1)
   * Wikipedia about "[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)"
   * Web-site for "[5 Most Embarrassing Software Bugs in History](https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/)"
 
