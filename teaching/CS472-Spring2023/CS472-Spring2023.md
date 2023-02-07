@@ -144,8 +144,8 @@ They are available in the library.
 2. Design Patterns in Modern C++: Reusable Approaches for Object-Oriented Software Design
 3. Using UML : Software Engineering with Objects and Components
 4. Pro Git, available for free at: https://git-scm.com/book/en/v2
-
-5. Cooperative Software Development, Amy Ko, available for free: [Book Site](https://faculty.washington.edu/ajko/books/cooperative-software-development/)
+5. Dathan, B., Ramnath, S. (2015). Introduction. In: Object-Oriented Analysis, Design and Implementation. Undergraduate Topics in Computer Science. Springer, Cham. https://doi.org/10.1007/978-3-319-24280-4_1
+6. Cooperative Software Development, Amy Ko, available for free: [Book Site](https://faculty.washington.edu/ajko/books/cooperative-software-development/)
 
 Attendance:	
 ========
