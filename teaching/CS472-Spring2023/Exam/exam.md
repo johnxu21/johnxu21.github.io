@@ -28,7 +28,7 @@ height:40px;" value="Project" />
 <br/>
 <br/>
 
-The good news is that there will be no written exam ```:relieved:```. 
+The good news is that there will be no written exam :relieved: 
 You will instead review one of the following papers that will account as your examination:
 1. First Come First Served- The Impact of File Position on Code Review. [Link](https://dl.acm.org/doi/abs/10.1145/3540250.3549177)
 2. Leveraging Test Plan Quality to Improve Code Review Efficacy. [Link](https://dl.acm.org/doi/10.1145/3540250.3558952)
