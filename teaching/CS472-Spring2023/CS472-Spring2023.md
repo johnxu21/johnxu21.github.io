@@ -121,8 +121,7 @@ Assignments:
 * Senior 	Design Portfolio II - 75 points 	
 * Senior 	Design Portfolio III - 100 points 		
 * Project Presentations - 50 points 	
-* Midterm Exam - 50 points 	
-* Final Exam - 100 points 
+* Exam - Research Paper Review - 150 points
 
 **No late exams or assignments will be accepted without prior approval or extraordinary circumstances.**
 
