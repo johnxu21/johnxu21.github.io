@@ -104,10 +104,6 @@ Please pay attention to the following instructions. The group leader should send
   * Full names of all the members in your group
   * A link to the groups GitHub repository
 
-[//]: # (  * The members are set as collaborators to the GitHub project.)
-
-[//]: # (  * Invite me as collaborator on your repository. &#40;my [GitHub ID - ```johnxu21```]&#40;https://github.com/johnxu21&#41;&#41;.)
-
 Instructions to the UML Diagrams
 =========
 You will use simple **class diagram** or **sequence diagrams** or any other UML diagrams you find suitable.
@@ -130,3 +126,6 @@ tests, also name the branch name appropriately.
 * All the contributions to the main repository have to be submitted through pull requests that at least two other group members should have review.
 * The group should explicitly set **contribution guidelines** that the team members should follow. The 
 reviewers should resolve pull request only if the guidelines have been followed.
+
+### 4. Weekly Group Meetings
+A template for the minutes can be found [here](https://docs.google.com/document/d/1bq32N9LfLpy4ogQ7UOonJxeK8di6-GyuSPCGBUecLoE/edit) 

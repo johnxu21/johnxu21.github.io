@@ -38,16 +38,6 @@ will be published here during the *first* week.
 
 
 
-[comment]: <> (During the semester you have to keep us informed of the state of affairs. A number of forms are provided for this. In all forms you must adjust all boxes with a &#40;*&#41; and all columns with a &#40;+&#41;.)
-
-[comment]: <> (* Plan 1.0 [[PDF]&#40;../../../files/472Files/PlanTmpl.pdf&#41;]  [[Excel]&#40;../../../files/472Files/PlanTmpl.xlsx&#41;] The project is done in groups of [X]; by the second week of class, you must have found a partner and let us know. A simple piece of paper with two names is sufficient, but here you will find an especially predestined form. Plan 1.0 must be issued during the second week.)
-
-[comment]: <> (* Timesheet 1.0 [PDF]&#40;../../../files/472Files/TimeSheet.pdf&#41;]  [[Excel]&#40;../../../files/472Files/TimeSheet.xlsx&#41;] The time sheets for phase x must be submitted together with the planning for phase x + 1.)
-
-[comment]: <> (* Plan 2.0 [PDF]&#40;../../../files/472Files/PlanTmpl20.pdf&#41;]  [[Excel]&#40;../../../files/472Files/PlanTmpl20.xlsx&#41;] In the second project planning you have to make a real choice from what you will or will not deliver in the end. You indicate that choice by means of Plan 2.0. Plan 2.0 must be issued the week after the first interim evaluation.)
-
-[comment]: <> (* Plan 2.1 [PDF]&#40;../../../files/472Files/PlanTmpl21.pdf&#41;]  [[Excel]&#40;../../../files/472Files/PlanTmpl21.xlsx&#41;] You only have to submit Plan 2.1 if you want to change something compared to Plan 2.0. Then it must be handed in the week after the second interim evaluation. You must also argue there &#40;using time sheets&#41; why you want to adjust that planning.)
-
 
 Program code
 =====
