@@ -124,7 +124,7 @@ tries to synchronize the branches. To integrate patches (pull requests), we shal
 *Step 1: Detecting Conflicting Regions* as follows:
 
   1. Fork [LinkedIn](https://github.com/linkedin/kafka)
-  2. Clone the fork you have created</li>
+  2. Clone the fork you have created
   3. Add the remote repository that we are going to cherry-pick the patch using these two commands.
 
 ``` 
