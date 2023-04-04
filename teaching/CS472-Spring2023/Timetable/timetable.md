@@ -215,7 +215,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 </tr>
 
 <tr>
-<td style="border: 1px solid black;">16</td>
+<td style="border: 1px solid black;">17</td>
 <td style="border: 1px solid black;">Tue 05/09</td>
 <td style="border: 1px solid black;"> </td>
 <td style="border: 1px solid black;">Thu 05/11 </td>
