@@ -101,7 +101,7 @@ Assignments:
 * Senior 	Design Portfolio II - 75 points 	
 * Senior 	Design Portfolio III - 100 points 		
 * Project Presentations - 50 points 	
-* Exam - Research Paper Review - 150 points
+* Exam - Research Paper Review - 100 points
 
 Assessment (CS 672):
 =============
