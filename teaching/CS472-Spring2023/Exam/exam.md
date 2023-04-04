@@ -28,16 +28,23 @@ height:40px;" value="Project" />
 <br/>
 <br/>
 
-The good news is that there will be no written exam. 
-You will instead review one of the following papers that will account for both mid-term and final exams:
-1. First Come First Served- The Impact of File Position on Code Review. [Link](https://dl.acm.org/doi/abs/10.1145/3540250.3549177)
-2. Leveraging Test Plan Quality to Improve Code Review Efficacy. [Link](https://dl.acm.org/doi/10.1145/3540250.3558952)
-3. Understanding Automated Code Review Process and Developer Experience in Industry. [Link](https://dl.acm.org/doi/abs/10.1145/3540250.3558950)
-4. Understanding Skills for OSS Communities on GitHub. [Link](https://dl.acm.org/doi/abs/10.1145/3540250.3549082)
 
-Guidelines to "Review Report"
-==========
+[//]: # (The good news is that there will be no written exam. )
 
-To be updated!
+[//]: # (You will instead review one of the following papers that will account for both mid-term and final exams:)
 
+[//]: # (1. First Come First Served- The Impact of File Position on Code Review. [Link]&#40;https://dl.acm.org/doi/abs/10.1145/3540250.3549177&#41;)
+
+[//]: # (2. Leveraging Test Plan Quality to Improve Code Review Efficacy. [Link]&#40;https://dl.acm.org/doi/10.1145/3540250.3558952&#41;)
+
+[//]: # (3. Understanding Automated Code Review Process and Developer Experience in Industry. [Link]&#40;https://dl.acm.org/doi/abs/10.1145/3540250.3558950&#41;)
+
+[//]: # (4. Understanding Skills for OSS Communities on GitHub. [Link]&#40;https://dl.acm.org/doi/abs/10.1145/3540250.3549082&#41;)
+
+[//]: # ()
+[//]: # (Guidelines to "Review Report")
+
+[//]: # (==========)
+
+Written Exam on the last day of Class.
 
