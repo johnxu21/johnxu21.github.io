@@ -193,25 +193,25 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <tr>
 <td style="border: 1px solid black;">14</td>
 <td style="border: 1px solid black;">Tue 04/18</td>
-<td style="border: 1px solid black;">Trial Presentation</td>
+<td style="border: 1px solid black;"><b>Trial Presentation</b></td>
 <td style="border: 1px solid black;">Thu 04/20 </td>
-<td style="border: 1px solid black;">Trial Presentation</td>
+<td style="border: 1px solid black;"><b>Trial Presentation</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">15</td>
 <td style="border: 1px solid black;">Tue 04/25</td>
-<td style="border: 1px solid black;">Trial Presentation</td>
+<td style="border: 1px solid black;"><b>Trial Presentation</b></td>
 <td style="border: 1px solid black;">Thu 04/27 </td>
-<td style="border: 1px solid black;">Project Presentation</td>
+<td style="border: 1px solid black;"><b>Project Presentation</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">16</td>
 <td style="border: 1px solid black;">Tue 05/02</td>
-<td style="border: 1px solid black;">Project Presentation</td>
+<td style="border: 1px solid black;"><b>Project Presentation</b></td>
 <td style="border: 1px solid black;">Thu 05/4 </td>
-<td style="border: 1px solid black;">Project Presentation</td>
+<td style="border: 1px solid black;"><b>Project Presentation</b></td>
 </tr>
 
 <tr>
