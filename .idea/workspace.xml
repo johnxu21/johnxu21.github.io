@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/Presentations/presentations.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/FAQ/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/FAQ/faq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/Group/groups.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/Group/groups.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/project.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/project.md" afterDir="false" />
-    </list>
+    <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +45,7 @@
       <updated>1680626445128</updated>
       <workItem from="1680626446397" duration="4231000" />
       <workItem from="1681224687470" duration="2566000" />
-      <workItem from="1681844488907" duration="2148000" />
+      <workItem from="1681844488907" duration="2513000" />
     </task>
     <servers />
   </component>
