@@ -25,6 +25,7 @@ height:40px;" value="Exam" />
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
+
 </div>
 <br/>
 
@@ -36,6 +37,10 @@ height:30px;" value="Groups" />
 <form action="/teaching/CS472-Spring2023/project/FAQ/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="FAQ" />
+</form>
+<form action="/teaching/CS472-Spring2023/project/Presentations/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="Presentations" />
 </form>
 </div>
 

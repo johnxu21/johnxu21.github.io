@@ -37,6 +37,10 @@ height:30px;" value="Groups" />
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="FAQ" />
 </form>
+<form action="/teaching/CS472-Spring2023/project/Presentations/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="Presentations" />
+</form>
 </div>
 
 <br/>
