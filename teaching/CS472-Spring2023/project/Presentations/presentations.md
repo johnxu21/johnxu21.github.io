@@ -48,7 +48,7 @@ height:30px;" value="Presentations" />
 
 Trial Presentations (Ungraded)
 =======
-
+We will have <b>strictly <=15 minutes</b> for the presentation and <b>atmost 10 minutes</b> of feedback session.
 <table>
   <tr>
     <th style="border: 1px solid black;">Group</th>
@@ -100,6 +100,7 @@ Trial Presentations (Ungraded)
 Final Presentations
 =======
 
+We will have <b>strictly <=15 minutes</b> for the presentation and <b>at most 5 minutes</b> of questions/feedback.
 <table>
   <tr>
     <th style="border: 1px solid black;">Group</th>
