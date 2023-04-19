@@ -58,39 +58,39 @@ Trial Presentations (Ungraded)
   <tr>
     <td style="border: 1px solid black;">Group 7</td>
     <td style="border: 1px solid black;">04/20</td>
-    <td style="border: 1px solid black;">4:00 pm - 4:20 pm</td>
+    <td style="border: 1px solid black;">4:00 pm - 4:25 pm</td>
   </tr>
   <tr>
     <td style="border: 1px solid black;">Group 3</td>
     <td style="border: 1px solid black;">04/20</td>
-    <td style="border: 1px solid black;">4:25 pm - 4:45 pm</td>
+    <td style="border: 1px solid black;">4:30 pm - 4:55 pm</td>
   </tr>
 
   <tr>
     <td style="border: 1px solid black;">Group 5</td>
     <td style="border: 1px solid black;">04/25</td>
-    <td style="border: 1px solid black;">4:00 pm - 4:20 pm</td>
+    <td style="border: 1px solid black;">4:00 pm - 4:25 pm</td>
   </tr>
   <tr>
     <td style="border: 1px solid black;">Group 4</td>
     <td style="border: 1px solid black;">04/25</td>
-    <td style="border: 1px solid black;">4:25 pm - 4:45 pm</td>
+    <td style="border: 1px solid black;">4:30 pm - 4:55 pm</td>
   </tr>
 
   <tr>
     <td style="border: 1px solid black;">Group 6</td>
     <td style="border: 1px solid black;">04/27</td>
-    <td style="border: 1px solid black;">4:00 pm - 4:20 pm</td>
+    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
   </tr>
   <tr>
     <td style="border: 1px solid black;">Group 1</td>
     <td style="border: 1px solid black;">04/27</td>
-    <td style="border: 1px solid black;">4:25 pm - 4:45 pm</td>
+    <td style="border: 1px solid black;">4:20 pm - 4:45 pm</td>
   </tr>
   <tr>
     <td style="border: 1px solid black;">Group 2</td>
     <td style="border: 1px solid black;">04/27</td>
-    <td style="border: 1px solid black;">4:50 pm - 5:10 pm</td>
+    <td style="border: 1px solid black;">4:50 pm - 5:15 pm</td>
   </tr>
 </table>
 
