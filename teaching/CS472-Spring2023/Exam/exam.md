@@ -41,10 +41,7 @@ height:40px;" value="Project" />
 
 [//]: # (4. Understanding Skills for OSS Communities on GitHub. [Link]&#40;https://dl.acm.org/doi/abs/10.1145/3540250.3549082&#41;)
 
-[//]: # ()
-[//]: # (Guidelines to "Review Report")
 
-[//]: # (==========)
 
 Written Exam on the last day of Class.
 
