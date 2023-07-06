@@ -41,7 +41,7 @@ height:30px;" value="Testing" />
 </form>
 <form action="/teaching/CS472-Spring2023/Timetable/optional_lab/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="Optional Lab" />
+height:30px;" value="CI" />
 </form>
 </div>
 
