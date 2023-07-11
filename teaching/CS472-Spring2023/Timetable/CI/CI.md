@@ -97,6 +97,10 @@ running your workflow in a container inside the GitHub action.
     tell GitHub Actions to use ```python:3.9-slim``` as the image.
 7. Save and commit your changes to your forked repository.
 
+When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
+
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task1.jpeg" alt="WorkflowWithNoSteps" style="width:600px;height:480px;" align="center">
+
 Task 2
 -----
 In this task, you will continue building the Continuous Integration pipeline by setting up the 
@@ -166,6 +170,10 @@ The flake8 commands take a few parameters. Now, take a look at the command and t
     ```
     Since you are running a single command, you do not have to use the pipe ```|``` operator with ```run```.
 6. **Push Code to GitHub**.
+
+When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
+
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:600px;height:480px;" align="center">
 
 
 

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CI/CI.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/dynamic_analysis/testing2023-Fall.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Git_and_Github/msr.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Git_and_Github/msr.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/dynamic_analysis/testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/dynamic_analysis/testing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CI/CI.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CI/CI.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,7 @@
       <workItem from="1685984098370" duration="1134000" />
       <workItem from="1687304615195" duration="598000" />
       <workItem from="1687541044326" duration="732000" />
-      <workItem from="1688579296672" duration="10330000" />
+      <workItem from="1688579296672" duration="12471000" />
     </task>
     <servers />
   </component>
