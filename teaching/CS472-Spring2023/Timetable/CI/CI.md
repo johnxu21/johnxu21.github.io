@@ -99,7 +99,7 @@ running your workflow in a container inside the GitHub action.
 
 When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task1.jpeg" alt="WorkflowWithNoSteps" style="width:612px;height:122px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task1.jpeg" alt="WorkflowWithNoSteps" style="width:612px;height:114px;" align="center">
 
 Task 2
 -----
@@ -173,9 +173,9 @@ The flake8 commands take a few parameters. Now, take a look at the command and t
 
 When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:172px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:150px;" align="center">
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:300px;" align="center">
 
 
 
