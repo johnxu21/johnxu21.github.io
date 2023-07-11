@@ -175,6 +175,8 @@ When you click on ```Actions``` tab in your repository, you should be able to se
 
 <img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:600px;height:480px;" align="center">
 
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:600px;height:480px;" align="center">
+
 
 
 
