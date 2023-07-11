@@ -173,9 +173,9 @@ The flake8 commands take a few parameters. Now, take a look at the command and t
 
 When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:600px;height:480px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:172px;" align="center">
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:600px;height:480px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center">
 
 
 
