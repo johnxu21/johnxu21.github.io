@@ -48,7 +48,7 @@ height:30px;" value="CI" />
 <br/>
 <br/>
 
-### **This individual assignment is due **
+### **This individual assignment is due**
 
 In this lab, you will build a GitHub Action Continuous Integration pipeline.
 This pipeline will run automatically when you commit your code to the GitHub 
