@@ -5,12 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CD/cd.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/johnxu21.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/johnxu21.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Testing.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Testing.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/dynamic_analysis/testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/dynamic_analysis/testing.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,6 +57,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -54,7 +78,10 @@
       <workItem from="1685984098370" duration="1134000" />
       <workItem from="1687304615195" duration="598000" />
       <workItem from="1687541044326" duration="732000" />
-      <workItem from="1688579296672" duration="15258000" />
+      <workItem from="1688579296672" duration="15886000" />
+      <workItem from="1689275421170" duration="11774000" />
+      <workItem from="1690299737208" duration="2471000" />
+      <workItem from="1692118472835" duration="22452000" />
     </task>
     <servers />
   </component>

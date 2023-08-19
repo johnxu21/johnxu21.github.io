@@ -85,6 +85,8 @@ Materials & Tools Used for this Session
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
+* [nosetests](https://nose.readthedocs.io/en/latest/) extends python unittest to make testing easier.
+* [flask](https://flask.palletsprojects.com/en/2.3.x/) a web framework, it's a Python module that lets you develop web applications easily.
 
 
 Setup / Preparation
@@ -200,6 +202,208 @@ covered (or partially covered).
 Remember to include the **code snippets of your unit tests** for Tasks 2.1 in your report.
 Make sure that your report is descriptive enough for me to follow without looking at your project code.
 
+Task 4 -- Working with Python Test Coverage
+=====
+In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and 
+interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
+
+1. Clone the git project [](). Make sure you are in the source folder and run the command ```pip install -r requirements.txt```
+2. Open the IDE, navigate to the directory ```test_coverage```. You will do all your editing work in the file ```tests/test_account.py```.
+3. Before writing any code, you should always check that the test cases are passing. 
+   Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
+  * run the ```nosetests``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
+
+```nosetests
+  Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+models/__init__.py       6      0   100%
+models/account.py       40     13    68%   26, 30, 34-35, 45-48, 52-54, 74-75
+--------------------------------------------------
+TOTAL                   46     13    72%
+----------------------------------------------------------------------
+Ran 2 tests in 0.349s
+```
+
+4. Starting with 72% test coverage. The goal is to reach 100%! Looking at the first missed line, 
+line 26 in ```account.py``` to see if we can write a test case for it. To increase the test coverage, 
+we first investigate line 26 in ```models/account.py```. This file is in the ```model``` 
+package from the root of the repo. Look at the following code on lines ```25``` and ```26```.
+
+```python
+def __repr__(self):
+    return '<Account %r>' % self.name
+```
+Notice that this method is one of the magic methods that is called to represent the class when 
+printing it out. We will add a new test case in ```test_account.py``` that calls the ```__repr__()``` 
+method on an Account.
+
+```python
+def test_repr(self):
+    """Test the representation of an account"""
+    account = Account()
+    account.name = "Foo"
+    self.assertEqual(str(account), "<Account 'Foo'>")
+```
+
+5. Run ```nosetests``` again to ensure line ```26``` is now covered through testing and to determine 
+the next line of code for which you should write a new test case:
+
+```angular2html
+Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+models/__init__.py       6      0   100%
+models/account.py       40     12    70%   30, 34-35, 45-48, 52-54, 74-75
+--------------------------------------------------
+TOTAL                   46     12    74%
+----------------------------------------------------------------------
+Ran 3 tests in 0.387s
+```
+Note that the overall test coverage has increased from 72% to 74% and the new report does not 
+list line ``26`` in the Missing column. 
+6. Next, let us look at the next line of code listed in the lines of code missing tests cases, line 
+is ```30```. Examine this line in ```models/account.py``` to find out what that code is doing.
+
+We will look at code of the entire function on lines ```28``` through ```30``` to see what it is 
+doing.
+```python
+def to_dict(self) -> dict:
+    """Serializes the class as a dictionary"""
+    return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+```
+Notice that this code is the ```to_dict()``` method. Now, let us add a new test case in ```test_account.py``` 
+that executes the ```to_dict()``` method on an Account, and thereafter run ```nosetests``` again.
+
+```python
+def test_to_dict(self):
+    """ Test account to dict """
+    data = ACCOUNT_DATA[self.rand] # get a random account
+    account = Account(**data)
+    result = account.to_dict()
+    self.assertEqual(account.name, result["name"])
+    self.assertEqual(account.email, result["email"])
+    self.assertEqual(account.phone_number, result["phone_number"])
+    self.assertEqual(account.disabled, result["disabled"])
+    self.assertEqual(account.date_joined, result["date_joined"])
+```
+
+```angular2html
+Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+models/__init__.py       6      0   100%
+models/account.py       40     11    72%   34-35, 45-48, 52-54, 74-75
+--------------------------------------------------
+TOTAL                   46     11    76%
+----------------------------------------------------------------------
+Ran 4 tests in 0.368s
+```
+Note that the overall test coverage increased from 74% to 76%. 
+
+Your Task
+====
+In this task to try to get the test coverage to close to 100% as possible. You will 
+examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` 
+to find out what that code is doing.
+
+Task 5 - TDD
+=======
+Test driven development (TDD) is an approach to software development in which you first write the 
+test cases for the code you wish you had and then write the code to make the test cases pass.
+In this Task, you will write test cases based on the requirements given to you, and then you 
+will write the code to make the test cases pass.
+
+1. Clone the git project [](). Make sure you are in the source folder and run the command ```pip install -r requirements.txt```
+2. Open the IDE, navigate to the directory ```tdd```.
+ * ```requirements.txt``` - install these requirements
+ * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
+ * ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on
+a specific file you are testing so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
+ * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
+#### Creating a counter
+You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
+a PUT request and returns code 200_OK if successful. Create a counter and then update it.
+1. Write the following code in the file ```test_counter.py```. Run ```nosetests```. You should see an error ```ModuleNotFoundError```
+```python
+from unittest import TestCase
+# we need to import the unit under test - counter
+from counter import app
+
+class CounterTest(TestCase):
+    """Counter tests"""
+```
+2. Create a new file in the root directory called ```counter.py``` and run ```nosetests``` again. You should see an ```ImportError```, cannot find ```app```
+3. Write the code below and run ```nosetests``` again. The tests should run with no error.
+```python
+from flask import Flask
+
+app = Flask(__name__)
+```
+4. Let us write our first test case and run ```nosetests``` again. 
+```python
+    def test_create_a_counter(self):
+        """It should create a counter"""
+        client = app.test_client()
+        result = client.post('/counters/foo')
+        self.assertEqual(result.status_code, status.HTTP_201_CREATED)
+```
+This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. 
+I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of 
+code we need to go write.
+5. Let's go to ```counters.py``` and create that endpoint. 
+```python
+COUNTERS = {}
+
+# We will use the app decorator and create a route called slash counters.
+# specify the variable in route <name>
+# let Flask know that the only methods that is allowed to called
+# on this function is "POST".
+@app.route('/counters/<name>', methods=['POST'])
+def create_counter(name):
+    """Create a counter"""
+    app.logger.info(f"Request to create counter: {name}")
+    global COUNTERS
+    COUNTERS[name] = 0
+    return {name: COUNTERS[name]}, status.HTTP_201_CREATED
+```
+Now we've implemented this first endpoint that should make the test pass. 
+When we run ```nosetests``` again, we will have <span style="color:green">**GREEN**</span>.
+
+#### Duplicate names must return a conflict error code.
+The second requirement is if the name being created already exists, return a 409 conflict.
+1. Since a lot of the code is a repeat we will <span style="color:blue">**REFACTOR**</span> 
+the repetitive code into ```setUp``` function. Place the function below the ```test_create_a_counter```
+Test Case.
+
+```python
+def setUp(self):
+  self.client = app.test_client()
+```
+2. Wtite the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
+The second time we expect to get a ```HTTP_409_CONFLICT```. 
+
+```python
+def test_duplicate_a_counter(self):
+  """It should return an error for duplicates"""
+  result = self.client.post('/counters/bar')
+  self.assertEqual(result.status_code, status.HTTP_201_CREATED)
+  result = self.client.post('/counters/bar')
+  self.assertEqual(result.status_code, status.HTTP_409_CONFLICT)
+```
+When we run our test cases we obtain
+<span style="color:red">**RED**</span> phase - ```AssertionError: 201 != 409```.
+It happily created that counter a second time, which is very dangerous because it set it to zero. 
+If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
+it's going to reset it to zero.
+3. Let us go to ```counter.py``` and fix the problem. Before you create another counter, we have to check if it already exists
+```python
+if name in COUNTERS:
+  return {"Message":f"Counter {name} already exists"}, status.HTTP_409_CONFLICT
+```
+When we run ```nosetests``` again we should get the <span style="color:green">**GREEN**</span> phase.
+
+#### Your task
+You will implement the updating the counter by name
+
+ 
 Submitting the Assignment
 =======
 * Put a **link to your fork repository in the report**.
