@@ -51,7 +51,7 @@ height:30px;" value="CI" />
 
 ### **This individual assignment is due February 2nd, 2023**
 
-In this Lab your will practice writing unit tests and analysing test coverage for a software project.
+In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
 In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
 for this Lab in the **Team's repository** you created and used in the 
 [Git and GitHub](/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/) Lab.
@@ -207,7 +207,7 @@ Task 4 -- Working with Python Test Coverage
 In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and 
 interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
-1. Clone the git project [](). Make sure you are in the source folder and run the command ```pip install -r requirements.txt```
+1. Clone the git project [Python Testing lab](https://github.com/johnxu21/testing). Make sure you are in the source folder and run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```test_coverage```. You will do all your editing work in the file ```tests/test_account.py```.
 3. Before writing any code, you should always check that the test cases are passing. 
    Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
@@ -298,8 +298,7 @@ Ran 4 tests in 0.368s
 ```
 Note that the overall test coverage increased from 74% to 76%. 
 
-Your Task
-====
+#### Your task - Getting coverage to 100%
 In this task to try to get the test coverage to close to 100% as possible. You will 
 examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` 
 to find out what that code is doing.
@@ -311,9 +310,8 @@ test cases for the code you wish you had and then write the code to make the tes
 In this Task, you will write test cases based on the requirements given to you, and then you 
 will write the code to make the test cases pass.
 
-1. Clone the git project [](). Make sure you are in the source folder and run the command ```pip install -r requirements.txt```
+1. Inside the repo you cloned in Task 4, navigate to the ```tdd``` folder. Make sure you are in the source folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
- * ```requirements.txt``` - install these requirements
  * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
  * ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on
 a specific file you are testing so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
@@ -415,7 +413,9 @@ You will implement the following requirements:
 5. Ensure that it returned a successful return code.
 6. Check that the counter value is one more than the baseline you measured in step 3.
 
-Write a report detailing the 
+Write a report detailing steps (red/green/refactor phases) you followed 
+to implement the requirements. Provide the code snippets you wrote including 
+the exceptions you encountered while running ```nosetests```.
  
 Submitting the Assignment
 =======
