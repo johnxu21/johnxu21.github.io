@@ -303,6 +303,8 @@ In this task to try to get the test coverage to close to 100% as possible. You w
 examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` 
 to find out what that code is doing.
 
+**Add to your report of the previous tasks and include the code snippets for your test cases.**
+
 Task 5 - TDD
 =======
 Test driven development (TDD) is an approach to software development in which you first write the 
@@ -310,7 +312,7 @@ test cases for the code you wish you had and then write the code to make the tes
 In this Task, you will write test cases based on the requirements given to you, and then you 
 will write the code to make the test cases pass.
 
-1. Inside the repo you cloned in Task 4, navigate to the ```tdd``` folder. Make sure you are in the source folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
+1. You will use the same repo you cloned in Task 4 ([Python Testing lab](https://github.com/johnxu21/testing)). Navigate to the ```tdd``` folder. Make sure you are in the source folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
  * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
  * ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on
@@ -413,8 +415,8 @@ You will implement the following requirements:
 5. Ensure that it returned a successful return code.
 6. Check that the counter value is one more than the baseline you measured in step 3.
 
-Write a report detailing steps (red/green/refactor phases) you followed 
-to implement the requirements. Provide the code snippets you wrote including 
+Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
+to implement the requirements. Include in your report the code snippets you wrote as well as 
 the exceptions you encountered while running ```nosetests```.
  
 Submitting the Assignment
@@ -427,4 +429,5 @@ Submitting the Assignment
 * push the changes onto your remote fork repository.
 * open a pull request on the ```main branch``` of the Team repository and write an appropriate title and body.
 * one of the repository maintainers should integrate your contribution into the main branch.
+* for Tasks 4 & 5, you do not need to  
 * You should also submit your report on **Canvas**
