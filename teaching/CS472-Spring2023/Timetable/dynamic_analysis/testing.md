@@ -393,7 +393,7 @@ When we run our test cases we obtain
 It happily created that counter a second time, which is very dangerous because it set it to zero. 
 If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
 it's going to reset it to zero.
-3. Let us go to ```counter.py``` and fix the problem. Before you create another counter, we have to check if it already exists
+3. Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before you create another counter, we have to check if it already exists
 ```python
 if name in COUNTERS:
   return {"Message":f"Counter {name} already exists"}, status.HTTP_409_CONFLICT
@@ -401,8 +401,21 @@ if name in COUNTERS:
 When we run ```nosetests``` again we should get the <span style="color:green">**GREEN**</span> phase.
 
 #### Your task
-You will implement the updating the counter by name
+You will implement the updating the counter by name following the TDD workflow (write test cases and 
+write the code to make the test cases pass).
+The test cases you will add to are in ```test_counter.py```, and the code you will add is in ```counter.py```. These are the only two files you will work with.
+Following REST API guidelines, an update uses a ```PUT``` request and returns code ```200_OK``` if successful. 
+Create a counter and then update it. 
+You will implement the following requirements:
 
+1. Make a call to Create a counter.
+2. Ensure that it returned a successful return code.
+3. Check the counter value as a baseline.
+4. Make a call to Update the counter that you just created.
+5. Ensure that it returned a successful return code.
+6. Check that the counter value is one more than the baseline you measured in step 3.
+
+Write a report detailing the 
  
 Submitting the Assignment
 =======
