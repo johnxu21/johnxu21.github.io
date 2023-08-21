@@ -393,14 +393,15 @@ When we run our test cases we obtain
 It happily created that counter a second time, which is very dangerous because it set it to zero. 
 If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
 it's going to reset it to zero.
-3. Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before you create another counter, we have to check if it already exists
+3. Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
+Copy and paste the coe snippet below and place it right after the code line ```global COUNTERS```
 ```python
 if name in COUNTERS:
   return {"Message":f"Counter {name} already exists"}, status.HTTP_409_CONFLICT
 ```
 When we run ```nosetests``` again we should get the <span style="color:green">**GREEN**</span> phase.
 
-#### Your task
+## Your task
 You will implement the updating the counter by name following the TDD workflow (write test cases and 
 write the code to make the test cases pass).
 The test cases you will add to are in ```test_counter.py```, and the code you will add is in ```counter.py```. These are the only two files you will work with.
