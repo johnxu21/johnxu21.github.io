@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - CI - Building a Tekton Pipeline
-permalink: /teaching/CS472-Spring2023/Timetable/CI/
+permalink: /teaching/CS472-Spring2023/Timetable/CD/
 ---
 In this lab, you will build Tekton pipeline.
 

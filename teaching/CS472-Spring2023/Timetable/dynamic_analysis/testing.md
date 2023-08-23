@@ -395,6 +395,7 @@ If we update the counter 1, 2, 3, 4, 5, and then we create the same counter agai
 it's going to reset it to zero.
 3. Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
 Copy and paste the coe snippet below and place it right after the code line ```global COUNTERS```
+
 ```python
 if name in COUNTERS:
   return {"Message":f"Counter {name} already exists"}, status.HTTP_409_CONFLICT
