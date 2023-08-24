@@ -183,7 +183,7 @@ You should be able to see screen like the one below.
 
 <img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:150px;" align="center">
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:300px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center">
 
 If the CI build did not succeed, you can click and see where a problem could have occurred, then fix it locally and push again.
 
