@@ -189,7 +189,7 @@ If the CI build did not succeed, you can click and see where a problem could hav
 
 Clicking on ```Run unit tests with nose```, you should be able to see the screen below. 
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:1601px;height:300px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
 7. 
 
 
