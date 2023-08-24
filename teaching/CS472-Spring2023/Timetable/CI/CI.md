@@ -50,28 +50,33 @@ height:30px;" value="CI" />
 
 ### **This individual assignment is due**
 
-In this lab, you will build a GitHub Action Continuous Integration pipeline.
-This pipeline will run automatically when you commit your code to the GitHub 
+In this lab, you will kick off from where you stopped in the [Testing lab](../dynamic_analysis/)
+and build a GitHub Action Continuous Integration pipeline.
+This pipeline will run automatically when you push/commit your code to the GitHub 
 repository based on the events described in the workflow.
+
+You will clone a repo in this lab using the gh CLI tool and then upload it back on GitHub. 
+You will also push changes to your cloned repo at the end of this lab. This requires you 
+to authenticate with GitHub using a ```personal access token``` (ref. [Git & GitHub lab](../Git_and_GitHub/)).
 
 Task 1:
 -------
-1. Clone my repository [CI repository](https://github.com/johnxu21/CI-lab). 
-Once you have cloned the repository, change to the directory named ```CI-lab```.
+1. In this lab, we will only focus on the ```tdd``` folder. Create a repository on GitHub and name it ```tdd_with_ci``` (you can name it anything you want). 
+2. Once you have cloned the repository, change to the directory named ```CI-lab```.
 You can list the contents of the repository using the command ```ls -l```.
-2. Create the directory structure ```.github/workflows``` and create a file called ```workflow.yml```.
+3. Create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```.
 ```
 mkdir -p .github/workflows
 touch .github/workflows/workflow.yml
 ```
-3. **Create a Workflow**: Every workflow starts with a name. The name will be displayed on the Actions page 
+4. **Create a Workflow**: Every workflow starts with a name. The name will be displayed on the Actions page 
 and on any badges. Give your workflow the name ```CI workflow``` by adding a ```name:``` 
 tag as the first line in the file.
-4. **Add Event Triggers**: Event triggers define which events can cause the workflow to 
+5. **Add Event Triggers**: Event triggers define which events can cause the workflow to 
 run. You will use the ```on:``` tag to add the following events: 1) Run the workflow on 
 every push to the main branch and 2) Run the workflow whenever a pull request is created to the main branch.
   * Add the ```on:``` keyword to the workflow at the same level of indentation as the ```name:```
-  * dd ```push:``` event as the first event that can trigger the workflow. 
+  * Add a ```push:``` event as the first event that can trigger the workflow. 
     This is added as the child element of ```on:``` so it must be indented under it.
   * Add the ```"main"``` branch to the push event. You want the workflow to start every 
     time somebody pushes to the main branch. This also includes merge events. You do 
@@ -79,7 +84,7 @@ every push to the main branch and 2) Run the workflow whenever a pull request is
     ```[]``` or ```-```
   * Add a ```pull_request:``` event similar to the push event you just finished. It should be 
     triggered whenever the user makes a pull request on the main branch.
-5. **Add a Job**: You will now add a job called build to the workflow file. This job will 
+6. **Add a Job**: You will now add a job called build to the workflow file. This job will 
 run on the ```ubuntu-latest``` runner. Remember, a job is a collection of steps that are run on 
 the events you added in the previous step.
   * Add the ```jobs:``` section to the workflow at the same level of indentation as the 
@@ -88,14 +93,14 @@ the events you added in the previous step.
     ```jobs:``` section.
   * Finally, you need a runner. Tell GitHub Actions to use the ```ubuntu-latest``` runner for 
     this job. You can do this by using the ```runs-on:``` keyword.
-6. **Target Python 3.9**: It is important to consistently use the same version of 
+7. **Target Python 3.9**: It is important to consistently use the same version of 
 dependencies and operating system for all phases of development including the CI 
 pipeline. This project was developed on Python 3.9, so you need to ensure that the 
 CI pipeline also runs on the same version of Python. You will accomplish this by 
 running your workflow in a container inside the GitHub action.
   * Add a ```container:``` section under the runs-on: section of the build job, and 
     tell GitHub Actions to use ```python:3.9-slim``` as the image.
-7. Save and commit your changes to your forked repository.
+8. Save and commit your changes to your repository.
 
 When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
 
@@ -156,6 +161,8 @@ The flake8 commands take a few parameters. Now, take a look at the command and t
     flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
     ```
     You can run inline commands using the ```run:``` keyword with the pipe ```|``` operator.
+  * **In the file ```requirements.txt``` the dependency for ```flake8``` is missing. Include ```flake8```, otherwise CI build will not succeed.**
+
 5. **Test Code Coverage with nosetests**: You will use nose in this step to unit test the source code. 
    Nose is configured via the included setup.cfg file to automatically include the flags –with-spec 
    and –spec-color so that red-green-refactor is meaningful. If you are in a command shell that 
@@ -171,12 +178,19 @@ The flake8 commands take a few parameters. Now, take a look at the command and t
     Since you are running a single command, you do not have to use the pipe ```|``` operator with ```run```.
 6. **Push Code to GitHub**.
 
-When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
+When you click on ```Actions``` tab in your repository, and then click on the latest workflow run (in green). 
+You should be able to see screen like the one below.
 
 <img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:150px;" align="center">
 
 <img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:300px;" align="center">
 
+If the CI build did not succeed, you can click and see where a problem could have occurred, then fix it locally and push again.
+
+Clicking on ```Run unit tests with nose```, you should be able to see the screen below. 
+
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:1601px;height:300px;" align="center">
+7. 
 
 
 

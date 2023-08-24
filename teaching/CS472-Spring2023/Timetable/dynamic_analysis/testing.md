@@ -312,11 +312,11 @@ test cases for the code you wish you had and then write the code to make the tes
 In this Task, you will write test cases based on the requirements given to you, and then you 
 will write the code to make the test cases pass.
 
-1. You will use the same repo you cloned in Task 4 ([Python Testing lab](https://github.com/johnxu21/testing)). Navigate to the ```tdd``` folder. Make sure you are in the source folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
+1. You will use the same repo you cloned in Task 4 ([Python Testing lab](https://github.com/johnxu21/testing)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
  * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
  * ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on
-a specific file you are testing so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
+a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
  * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
 #### Creating a counter
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
