@@ -50,7 +50,7 @@ height:30px;" value="CI" />
 
 ### **This individual assignment is due**
 
-In this lab, you will kick off from where you stopped in the [Testing lab](../dynamic_analysis/)
+In this lab, you will kick off from where you stopped in the [Testing lab](../dynamic_analysis)
 and build a GitHub Action Continuous Integration pipeline.
 This pipeline will run automatically when you push/commit your code to the GitHub 
 repository based on the events described in the workflow.
@@ -181,7 +181,7 @@ The flake8 commands take a few parameters. Now, take a look at the command and t
 When you click on ```Actions``` tab in your repository, and then click on the latest workflow run (in green). 
 You should be able to see screen like the one below.
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:150px;" align="center">
+<img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:172px;" align="center">
 
 <img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center">
 
@@ -190,10 +190,19 @@ If the CI build did not succeed, you can click and see where a problem could hav
 Clicking on ```Run unit tests with nose```, you should be able to see the screen below. 
 
 <img src="/teaching/CS472-Spring2023/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
-7. 
+
+7. From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the 
+```Test Cases``` you were required to write in the [Testing lab](../dynamic_analysis). In this lab, 
+you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that
+the fourth ```Test Cases``` turns <span style="color:green">**GREEN**</span> in your CI builds.
 
 
-
+Submitting the Assignment
+=======
+* Write a report for 
+* push the changes onto your remote fork repository.
+* for Tasks 4 & 5, you do not need to  
+* You should also submit your report on **Canvas**
 
 
    

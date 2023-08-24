@@ -410,12 +410,24 @@ Following REST API guidelines, an update uses a ```PUT``` request and returns co
 Create a counter and then update it. 
 You will implement the following requirements:
 
+In ```test_counter.py```, create a test called ```test_update_a_counter(self)```. It should implement the following steps:
 1. Make a call to Create a counter.
 2. Ensure that it returned a successful return code.
 3. Check the counter value as a baseline.
 4. Make a call to Update the counter that you just created.
 5. Ensure that it returned a successful return code.
 6. Check that the counter value is one more than the baseline you measured in step 3.
+
+When you run ```nosetests```, you should be in the <span style="color:red">**TED**</span> phase.
+
+Next, in ```counter.py```, create a function called ```update_counter(name)```. 
+It should implement the following steps:
+
+1. Create a route for method ```PUT``` on endpoint ```/counters/<name>```.
+2. Create a function to implement that route.
+3. Increment the counter by 1.
+3. Return the new counter and a ```200_OK``` return code.
+
 
 Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
 to implement the requirements. Include in your report the code snippets you wrote as well as 
@@ -433,3 +445,5 @@ Submitting the Assignment
 * one of the repository maintainers should integrate your contribution into the main branch.
 * for Tasks 4 & 5, you do not need to  
 * You should also submit your report on **Canvas**
+
+
