@@ -61,10 +61,8 @@ to authenticate with GitHub using a ```personal access token``` (ref. [Git & Git
 
 Task 1:
 -------
-1. In this lab, we will only focus on the ```tdd``` folder. Create a repository on GitHub and name it ```tdd_with_ci``` (you can name it anything you want). 
-2. Once you have cloned the repository, change to the directory named ```CI-lab```.
-You can list the contents of the repository using the command ```ls -l```.
-3. Create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```.
+1. In this lab, we will only focus on the TDD. You will use the code you cloned and updated ([Python Testing lab](https://github.com/johnxu21/tdd))
+3. On the root directory of the repo, create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```.
 ```
 mkdir -p .github/workflows
 touch .github/workflows/workflow.yml
@@ -195,6 +193,14 @@ Clicking on ```Run unit tests with nose```, you should be able to see the screen
 ```Test Cases``` you were required to write in the [Testing lab](../dynamic_analysis). In this lab, 
 you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that
 the fourth ```Test Cases``` turns <span style="color:green">**GREEN**</span> in your CI builds.
+
+**You will write a test case to delete a counter.**
+
+Per REST API guidelines, a read uses a ```DELETE``` request and returns a 
+```204_NO_CONTENT``` code if successful. Create a function that deletes the 
+counter that matches the specified name.
+
+
 
 
 Submitting the Assignment
