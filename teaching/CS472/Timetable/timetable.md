@@ -8,13 +8,6 @@ permalink: /teaching/CS472/Timetable/
 height:40px;" value="Course Overview" />
 </form>
 
-[//]: # (<form action="/teaching/CS472/study_material/">)
-
-[//]: # (    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;)
-
-[//]: # (height:40px;" value="Study Material" />)
-
-[//]: # (</form>)
 <form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Timetable" />
@@ -221,19 +214,6 @@ e-mail or on the [Discord workspace]().
 </tr>
 
 
-[//]: # (<tr>)
-
-[//]: # (<td style="border: 1px solid black;">17</td>)
-
-[//]: # (<td style="border: 1px solid black;">Mon 12/18</td>)
-
-[//]: # (<td style="border: 1px solid black;"><b>Final Exam</b></td>)
-
-[//]: # (<td style="border: 1px solid black;">Wed 12/20 </td>)
-
-[//]: # (<td style="border: 1px solid black;"></td>)
-
-[//]: # (</tr>)
 
 
 
