@@ -220,19 +220,20 @@ e-mail or on the [Discord workspace]().
 <td style="border: 1px solid black;"><b>Final Exam</b></td>
 </tr>
 
-<tr!-->
 
-<td style="border: 1px solid black;">17</td>
+[//]: # (<tr>)
 
-<td style="border: 1px solid black;">Mon 12/18</td>
+[//]: # (<td style="border: 1px solid black;">17</td>)
 
-<td style="border: 1px solid black;"><b>Final Exam</b></td>
+[//]: # (<td style="border: 1px solid black;">Mon 12/18</td>)
 
-<td style="border: 1px solid black;">Wed 12/20 </td>
+[//]: # (<td style="border: 1px solid black;"><b>Final Exam</b></td>)
 
-<td style="border: 1px solid black;"></td>
+[//]: # (<td style="border: 1px solid black;">Wed 12/20 </td>)
 
-</tr-->
+[//]: # (<td style="border: 1px solid black;"></td>)
+
+[//]: # (</tr>)
 
 
 
