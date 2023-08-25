@@ -216,5 +216,3 @@ e-mail or on the [Discord workspace]().
 
 
 
-
-</table>

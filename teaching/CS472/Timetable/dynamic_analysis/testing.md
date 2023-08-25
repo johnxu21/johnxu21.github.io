@@ -45,7 +45,7 @@ height:30px;" value="CI" />
 <br/>
 
 
-### **This individual assignment is due February 2nd, 2023**
+<!-- ### **This individual assignment is due February 2nd, 2023** -->
 
 In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
 In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
@@ -418,7 +418,7 @@ In ```test_counter.py```, create a test called ```test_update_a_counter(self)```
 5. Ensure that it returned a successful return code.
 6. Check that the counter value is one more than the baseline you measured in step 3.
 
-When you run ```nosetests```, you should be in the <span style="color:red">**TED**</span> phase.
+When you run ```nosetests```, you should be in the <span style="color:red">**RED**</span> phase.
 
 Next, in ```counter.py```, create a function called ```update_counter(name)```. 
 It should implement the following steps:
