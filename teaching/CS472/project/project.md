@@ -9,7 +9,6 @@ permalink: /teaching/CS472/project/
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-
 [//]: # (<form action="/teaching/CS472/study_material/">)
 
 [//]: # (    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;)
@@ -17,6 +16,7 @@ height:40px;" value="Course Overview" />
 [//]: # (height:40px;" value="Study Material" />)
 
 [//]: # (</form>)
+
 <form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Timetable" />
