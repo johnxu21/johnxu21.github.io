@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Non-functional requirements
-permalink: /teaching/CS472-Spring2023/project/nfr/
+permalink: /teaching/CS472/project/nfr/
 ---
 
 <form action="/teaching/CS472/">

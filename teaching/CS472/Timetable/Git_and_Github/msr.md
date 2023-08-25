@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - Git and GitHub
-permalink: /teaching/CS472-Spring2023/Timetable/Git_and_GitHub/
+permalink: /teaching/CS472/Timetable/Git_and_GitHub/
 ---
 
 <div class="main-component">

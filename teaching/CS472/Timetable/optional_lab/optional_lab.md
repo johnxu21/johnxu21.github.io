@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - Optional Lab
-permalink: /teaching/CS472-Spring2023/Timetable/optional_lab/
+permalink: /teaching/CS472/Timetable/optional_lab/
 ---
 
 <div class="main-component">

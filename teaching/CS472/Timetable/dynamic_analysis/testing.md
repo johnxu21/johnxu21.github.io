@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - Dynamic Analysis
-permalink: /teaching/CS472-Spring2023/Timetable/dynamic_analysis/
+permalink: /teaching/CS472/Timetable/dynamic_analysis/
 ---
 
 <div class="main-component">

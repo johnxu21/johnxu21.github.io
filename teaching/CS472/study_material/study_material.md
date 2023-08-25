@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Study Material
-permalink: /teaching/CS472-Spring2023/study_material/
+permalink: /teaching/CS472/study_material/
 ---
 <form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;

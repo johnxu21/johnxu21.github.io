@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Timetable
-permalink: /teaching/CS472-Spring2023/Timetable/
+permalink: /teaching/CS472/Timetable/
 ---
 <form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;

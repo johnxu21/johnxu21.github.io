@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - Loading TicTacToe in CLion
-permalink: /teaching/CS472-Spring2023/study_material/loading_ttt/
+permalink: /teaching/CS472/study_material/loading_ttt/
 ---
 
 <form action="/teaching/CS472">

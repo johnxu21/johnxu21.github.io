@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exam
-permalink: /teaching/CS472-Spring2023/Exam/
+permalink: /teaching/CS472/Exam/
 ---
 <form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;

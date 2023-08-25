@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project
-permalink: /teaching/CS472-Spring2023/project/
+permalink: /teaching/CS472/project/
 ---
 
 <div class="main-component">

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - CI - Using GitHub Actions - Setting up workflow
-permalink: /teaching/CS472-Spring2023/Timetable/CI/
+permalink: /teaching/CS472/Timetable/CI/
 ---
 
 <div class="main-component">

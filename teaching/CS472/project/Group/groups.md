@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Groups
-permalink: /teaching/CS472-Spring2023/project/Group/
+permalink: /teaching/CS472/project/Group/
 ---
 
 <div class="main-component">
