@@ -71,10 +71,11 @@ so that you can certainly work.
 * The rest of the semester you work freely on your project. You can come to campus for this, the 
 computer room is available for you during the scheduled hours of the class. 
 However, it is also perfectly possible to work on the project from home. If you have any questions 
-or problems, you can contact me or the assistant on the [Discord workspace](https://discord.gg/CQUCUFTcDY)
+or problems, you can contact me or the assistant on the [Discord workspace]()
 
 
-Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY). [Last modified on January, 17th, 2023.] 
+Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail or on the [Discord workspace](). 
+<!-- [Last modified on January, 17th, 2023.]  -->
 
 <table style="border-collapse:collapse;">
 <tr >
