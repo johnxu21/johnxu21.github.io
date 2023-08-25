@@ -186,6 +186,7 @@ Clicking on ```Run unit tests with nose```, you should be able to see the screen
 
 <img src="/teaching/CS472/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
 
+
 7. From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the 
 ```Test Cases``` you were required to write in the [Testing lab](../dynamic_analysis). In this lab, 
 you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that
