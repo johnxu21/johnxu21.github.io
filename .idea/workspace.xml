@@ -6,50 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/CS472-Spring2023.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/CS472.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Exam/exam.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Exam/exam.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CD/cd.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CD/cd.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CI/CI.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/CI.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CI/task1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/task1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/task2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/task2_2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/CI/task2_3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/task2_3.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/ClassOverview.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/ClassOverview.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Git-and-GitHub.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Git-and-GitHub.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Git_and_Github/contributors.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Git_and_Github/contributors.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Git_and_Github/msr.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Git_and_Github/msr.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Git_and_Github/rootbeer.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/OOD.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/OOD.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Software_Testing.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Software_Testing.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Software_Testing.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Software_Testing.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Testing.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Testing.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/Testing.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Testing.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/dynamic_analysis/testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/dynamic_analysis/testing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/dynamic_analysis/testing2023-Fall.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/dynamic_analysis/testing2023-Fall.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/optional_lab/Week1-Tasks.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/optional_lab/Week1-Tasks.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/optional_lab/Week2-Tasks.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/optional_lab/Week2-Tasks.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/optional_lab/optional_lab.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/optional_lab/optional_lab.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/Timetable/timetable.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/FAQ/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/FAQ/faq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/FAQ/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/FAQ/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/FAQ/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/FAQ/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/Group/groups.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Group/groups.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/Presentations/presentations.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Presentations/presentations.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/Project_defense_planning/Project _defense_planning.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Project_defense_planning/Project _defense_planning.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/nfr/nfr.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/nfr/nfr.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/project/project.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/project.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/DesignByContract.h" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/DesignByContract.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/Exceptions.h" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/Exceptions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/Fighterplane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/Fighterplane.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/Largest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/Largest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/cdCatalog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/cdCatalog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/cdCatalogError.xml" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/cdCatalogError.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/eenCD.xml" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/eenCD.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/eenCDError.xml" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/eenCDError.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/material/loading_ttt/loading_ttt.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/material/loading_ttt/loading_ttt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472-Spring2023/study_material/study_material.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/study_material/study_material.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/teaching.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/teaching.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +85,7 @@
       <workItem from="1690299737208" duration="2471000" />
       <workItem from="1692118472835" duration="32692000" />
       <workItem from="1692813222697" duration="14443000" />
-      <workItem from="1692906036826" duration="9268000" />
+      <workItem from="1692906036826" duration="10216000" />
     </task>
     <servers />
   </component>
