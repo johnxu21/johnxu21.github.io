@@ -418,7 +418,7 @@ In ```test_counter.py```, create a test called ```test_update_a_counter(self)```
 5. Ensure that it returned a successful return code.
 6. Check that the counter value is one more than the baseline you measured in step 3.
 
-When you run ```nosetests```, you should be in the <span style="color:red">**TED**</span> phase.
+When you run ```nosetests```, you should be in the <span style="color:red">**RED**</span> phase.
 
 Next, in ```counter.py```, create a function called ```update_counter(name)```. 
 It should implement the following steps:
