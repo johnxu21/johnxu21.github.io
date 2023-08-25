@@ -49,7 +49,7 @@ height:30px;" value="CI" />
 <br/>
 
 
-### **This individual assignment is due February 2nd, 2023**
+<!-- ### **This individual assignment is due February 2nd, 2023** -->
 
 In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
 In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
