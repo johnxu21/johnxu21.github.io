@@ -8,13 +8,13 @@ permalink: /teaching/CS472/Exam/
 height:40px;" value="Course Overview" />
 </form>
 
-[//]: # (<form action="/teaching/CS472/study_material/">)
+<form action="/teaching/CS472/study_material/">
 
-[//]: # (    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;)
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 
-[//]: # (height:40px;" value="Study Material" />)
+height:40px;" value="Study Material" />
 
-[//]: # (</form>)
+</form>
 <form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Timetable" />
