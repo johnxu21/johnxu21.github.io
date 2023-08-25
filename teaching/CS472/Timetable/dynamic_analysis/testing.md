@@ -5,23 +5,23 @@ permalink: /teaching/CS472-Spring2023/Timetable/dynamic_analysis/
 ---
 
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/">
+<form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS472-Spring2023/study_material/">
+<form action="/teaching/CS472/study_material/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Study Material" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/">
+<form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Timetable" />
 </form>
-<form action="/teaching/CS472-Spring2023/Exam/">
+<form action="/teaching/CS472/Exam/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/">
+<form action="/teaching/CS472/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
@@ -31,15 +31,15 @@ height:40px;" value="Project" />
 Labs
 =======
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/">
+<form action="/teaching/CS472/Timetable/Git_and_GitHub/">
     <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
 height:30px;" value="Git & GitHub" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/dynamic_analysis/">
+<form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="Testing" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/CI/">
+<form action="/teaching/CS472/Timetable/CI/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="CI" />
 </form>
@@ -54,7 +54,7 @@ height:30px;" value="CI" />
 In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
 In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
 for this Lab in the **Team's repository** you created and used in the 
-[Git and GitHub](/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/) Lab.
+[Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab.
 
 
 Dynamic Analysis
