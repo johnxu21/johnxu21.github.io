@@ -1,27 +1,24 @@
 ---
 layout: page
 title: Frequently Asked Questions
-permalink: /teaching/CS472-Spring2023/project/FAQ/
+permalink: /teaching/CS472/project/FAQ/
 ---
 
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/">
+<form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS472-Spring2023/study_material/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
-height:40px;" value="Study Material" />
-</form>
-<form action="/teaching/CS472-Spring2023/Timetable/">
+
+<form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Timetable" />
 </form>
-<form action="/teaching/CS472-Spring2023/Exam/">
+<form action="/teaching/CS472/Exam/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/">
+<form action="/teaching/CS472/project/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
@@ -29,15 +26,15 @@ height:40px;" value="Project" />
 <br/>
 
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/project/Group/">
+<form action="/teaching/CS472/project/Group/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Groups" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/FAQ/">
+<form action="/teaching/CS472/project/FAQ/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="FAQ" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/Presentations/">
+<form action="/teaching/CS472/project/Presentations/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Presentations" />
 </form>
@@ -65,7 +62,7 @@ Frequently Asked Questions
   * See these links for more information: [CMake vs Make](https://prateekvjoshi.com/2014/02/01/cmake-vs-make/) and [CMake vs. Make](https://www.incredibuild.com/blog/cmake-vs-make).
 * Can we also do the first practicals at home? Is it mandatory to come to the physical practicals? 
   * It is not mandatory to come to the physical practicals.
-  * The first two practicals are for learning to work with (1) an XML parser and (2) tests and contracts. These exercises are not on point; they are just there to get you started with the software libraries you will need during the project. All the material is listed at the bottom of the [study material](/teaching/CS472-Spring2023/study_material/) tab. The assignments also contain a tutorial that you can follow step-by-step. So you can perfectly do the exercises from home in preparation for the project.
+  * The first two practicals are for learning to work with (1) an XML parser and (2) tests and contracts. These exercises are not on point; they are just there to get you started with the software libraries you will need during the project. All the material is listed at the bottom of the [study material](/teaching/CS472/study_material/) tab. The assignments also contain a tutorial that you can follow step-by-step. So you can perfectly do the exercises from home in preparation for the project.
   * From the third practical it is free project work every week.
   * We like to physically organize the first three practicals because we can easily help with technical problems during the installation and use of the software libraries. Once the setup of your project is done, you can independently start the real programming.
 * Should we study the three chapters? How does the theory exam work?

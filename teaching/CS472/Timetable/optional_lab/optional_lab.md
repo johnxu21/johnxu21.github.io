@@ -1,27 +1,27 @@
 ---
 layout: page
 title: CS472 - Optional Lab
-permalink: /teaching/CS472-Spring2023/Timetable/optional_lab/
+permalink: /teaching/CS472/Timetable/optional_lab/
 ---
 
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/">
+<form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS472-Spring2023/study_material/">
+<form action="/teaching/CS472/study_material/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Study Material" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/">
+<form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Timetable" />
 </form>
-<form action="/teaching/CS472-Spring2023/Exam/">
+<form action="/teaching/CS472/Exam/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/">
+<form action="/teaching/CS472/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
@@ -31,15 +31,15 @@ height:40px;" value="Project" />
 Labs
 =======
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/">
+<form action="/teaching/CS472/Timetable/Git_and_GitHub/">
     <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
 height:30px;" value="Git & GitHub" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/dynamic_analysis/">
+<form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Testing" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/optional_lab/">
+<form action="/teaching/CS472/Timetable/optional_lab/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="Optional Lab" />
 </form>

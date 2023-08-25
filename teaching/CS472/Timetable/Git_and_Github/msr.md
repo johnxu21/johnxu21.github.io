@@ -1,27 +1,24 @@
 ---
 layout: page
 title: CS472 - Git and GitHub
-permalink: /teaching/CS472-Spring2023/Timetable/Git_and_GitHub/
+permalink: /teaching/CS472/Timetable/Git_and_GitHub/
 ---
 
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/">
+<form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS472-Spring2023/study_material/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
-height:40px;" value="Study Material" />
-</form>
-<form action="/teaching/CS472-Spring2023/Timetable/">
+
+<form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Timetable" />
 </form>
-<form action="/teaching/CS472-Spring2023/Exam/">
+<form action="/teaching/CS472/Exam/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/">
+<form action="/teaching/CS472/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
@@ -31,15 +28,15 @@ height:40px;" value="Project" />
 Labs
 =======
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/">
+<form action="/teaching/CS472/Timetable/Git_and_GitHub/">
     <input type="submit" style="background-color:firebrick;float:left; color:white;width:130px;
 height:30px;" value="Git & GitHub" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/dynamic_analysis/">
+<form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Testing" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/CI/">
+<form action="/teaching/CS472/Timetable/CI/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="CI" />
 </form>
@@ -78,7 +75,7 @@ git add contributors.txt
 git commit -m "your commit message here"
 git push
 ```
-<img src="/teaching/CS472-Spring2023/Timetable/Git_and_Github/contributors.jpeg" alt="contributors" style="width:600px;height:376px;" align="center">
+<img src="/teaching/CS472/Timetable/Git_and_Github/contributors.jpeg" alt="contributors" style="width:600px;height:376px;" align="center">
  
 * in your fork on GitHub, you should be able to see a screen like the image above.
 * open a pull request and write an appropriate title and body.
@@ -126,7 +123,7 @@ of 33+ authors who have touched the 17+ unique files (the data points in the gra
 updating the files and committing their changes. The scatter plot  below  shows the authors 
 activities over time for the repository scottyab/rootbeer. 
 
-<img src="/teaching/CS472-Spring2023/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
+<img src="/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
 ### Part 3. Executive Summary (10 pts)
 

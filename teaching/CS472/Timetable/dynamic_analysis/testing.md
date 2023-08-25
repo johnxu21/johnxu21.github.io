@@ -1,27 +1,23 @@
 ---
 layout: page
 title: CS472 - Dynamic Analysis
-permalink: /teaching/CS472-Spring2023/Timetable/dynamic_analysis/
+permalink: /teaching/CS472/Timetable/dynamic_analysis/
 ---
 
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/">
+<form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS472-Spring2023/study_material/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
-height:40px;" value="Study Material" />
-</form>
-<form action="/teaching/CS472-Spring2023/Timetable/">
+<form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Timetable" />
 </form>
-<form action="/teaching/CS472-Spring2023/Exam/">
+<form action="/teaching/CS472/Exam/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/">
+<form action="/teaching/CS472/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
@@ -31,15 +27,15 @@ height:40px;" value="Project" />
 Labs
 =======
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/">
+<form action="/teaching/CS472/Timetable/Git_and_GitHub/">
     <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
 height:30px;" value="Git & GitHub" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/dynamic_analysis/">
+<form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="Testing" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/CI/">
+<form action="/teaching/CS472/Timetable/CI/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="CI" />
 </form>
@@ -54,7 +50,7 @@ height:30px;" value="CI" />
 In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
 In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
 for this Lab in the **Team's repository** you created and used in the 
-[Git and GitHub](/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/) Lab.
+[Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab.
 
 
 Dynamic Analysis
@@ -207,8 +203,8 @@ Task 4 -- Working with Python Test Coverage
 In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and 
 interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
-1. Clone the git project [Python Testing lab](https://github.com/johnxu21/testing). Make sure you are in the source folder and run the command ```pip install -r requirements.txt```
-2. Open the IDE, navigate to the directory ```test_coverage```. You will do all your editing work in the file ```tests/test_account.py```.
+1. Clone the git project [Python Testing lab](https://github.com/johnxu21/test_coverage). Open the IDE, navigate to the directory ```test_coverage``` and run the command ```pip install -r requirements.txt```
+2. You will do all your editing work in the file ```tests/test_account.py```.
 3. Before writing any code, you should always check that the test cases are passing. 
    Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
   * run the ```nosetests``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
@@ -312,7 +308,7 @@ test cases for the code you wish you had and then write the code to make the tes
 In this Task, you will write test cases based on the requirements given to you, and then you 
 will write the code to make the test cases pass.
 
-1. You will use the same repo you cloned in Task 4 ([Python Testing lab](https://github.com/johnxu21/testing)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
+1. You will clone and use the repo ([Python Testing lab](https://github.com/johnxu21/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
  * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
  * ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on
@@ -324,13 +320,17 @@ a PUT request and returns code 200_OK if successful. Create a counter and then u
 1. Write the following code in the file ```test_counter.py```. Run ```nosetests```. You should see an error ```ModuleNotFoundError```
 ```python
 from unittest import TestCase
+
 # we need to import the unit under test - counter
-from counter import app
+from src.counter import app 
+
+# we need to import the file that contains the status codes
+from src import status 
 
 class CounterTest(TestCase):
     """Counter tests"""
 ```
-2. Create a new file in the root directory called ```counter.py``` and run ```nosetests``` again. You should see an ```ImportError```, cannot find ```app```
+2. Create a new file in the ```src``` directory called ```counter.py``` and run ```nosetests``` again. You should see an ```ImportError```, cannot find ```app```
 3. Write the code below and run ```nosetests``` again. The tests should run with no error.
 ```python
 from flask import Flask
@@ -428,9 +428,12 @@ It should implement the following steps:
 3. Increment the counter by 1.
 3. Return the new counter and a ```200_OK``` return code.
 
+Next, you will write another test case to read a counter. Following REST API guidelines, a read uses a 
+```GET``` request and returns a ```200_OK``` code if successful. Create a counter and then read it. 
+Here you should figure out the requirements for the test case as well as code you will put in the unit under test.
 
 Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
-to implement the requirements. Include in your report the code snippets you wrote as well as 
+to implement the requirements. Include in your report the code snippets you wrote at every step as well as 
 the exceptions you encountered while running ```nosetests```.
  
 Submitting the Assignment

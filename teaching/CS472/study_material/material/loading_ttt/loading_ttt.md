@@ -1,26 +1,26 @@
 ---
 layout: page
 title: CS472 - Loading TicTacToe in CLion
-permalink: /teaching/CS472-Spring2023/study_material/loading_ttt/
+permalink: /teaching/CS472/study_material/loading_ttt/
 ---
 
-<form action="/teaching/CS472-Spring2023">
+<form action="/teaching/CS472">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS472-Spring2023/study_material">
+<form action="/teaching/CS472/study_material">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Study Material" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable">
+<form action="/teaching/CS472/Timetable">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Timetable" />
 </form>
-<form action="/teaching/CS472-Spring2023/Exam">
+<form action="/teaching/CS472/Exam">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project">
+<form action="/teaching/CS472/project">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Project" />
 </form>

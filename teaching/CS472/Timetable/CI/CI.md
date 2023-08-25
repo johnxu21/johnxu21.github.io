@@ -1,27 +1,24 @@
 ---
 layout: page
 title: CS472 - CI - Using GitHub Actions - Setting up workflow
-permalink: /teaching/CS472-Spring2023/Timetable/CI/
+permalink: /teaching/CS472/Timetable/CI/
 ---
 
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/">
+<form action="/teaching/CS472/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS472-Spring2023/study_material/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
-height:40px;" value="Study Material" />
-</form>
-<form action="/teaching/CS472-Spring2023/Timetable/">
+
+<form action="/teaching/CS472/Timetable/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Timetable" />
 </form>
-<form action="/teaching/CS472-Spring2023/Exam/">
+<form action="/teaching/CS472/Exam/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Exam" />
 </form>
-<form action="/teaching/CS472-Spring2023/project/">
+<form action="/teaching/CS472/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Project" />
 </form>
@@ -31,15 +28,15 @@ height:40px;" value="Project" />
 Labs
 =======
 <div class="main-component">
-<form action="/teaching/CS472-Spring2023/Timetable/Git_and_GitHub/">
+<form action="/teaching/CS472/Timetable/Git_and_GitHub/">
     <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
 height:30px;" value="Git & GitHub" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/dynamic_analysis/">
+<form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Testing" />
 </form>
-<form action="/teaching/CS472-Spring2023/Timetable/CI/">
+<form action="/teaching/CS472/Timetable/CI/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="CI" />
 </form>
@@ -61,10 +58,8 @@ to authenticate with GitHub using a ```personal access token``` (ref. [Git & Git
 
 Task 1:
 -------
-1. In this lab, we will only focus on the ```tdd``` folder. Create a repository on GitHub and name it ```tdd_with_ci``` (you can name it anything you want). 
-2. Once you have cloned the repository, change to the directory named ```CI-lab```.
-You can list the contents of the repository using the command ```ls -l```.
-3. Create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```.
+1. In this lab, we will only focus on the TDD. You will use the code you cloned and updated ([Python Testing lab](https://github.com/johnxu21/tdd))
+3. On the root directory of the repo, create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```.
 ```
 mkdir -p .github/workflows
 touch .github/workflows/workflow.yml
@@ -104,7 +99,7 @@ running your workflow in a container inside the GitHub action.
 
 When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task1.jpeg" alt="WorkflowWithNoSteps" style="width:612px;height:114px;" align="center">
+<img src="/teaching/CS472/Timetable/CI/task1.jpeg" alt="WorkflowWithNoSteps" style="width:612px;height:114px;" align="center">
 
 Task 2
 -----
@@ -181,20 +176,28 @@ The flake8 commands take a few parameters. Now, take a look at the command and t
 When you click on ```Actions``` tab in your repository, and then click on the latest workflow run (in green). 
 You should be able to see screen like the one below.
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:172px;" align="center">
+<img src="/teaching/CS472/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:172px;" align="center">
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center">
+<img src="/teaching/CS472/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center">
 
 If the CI build did not succeed, you can click and see where a problem could have occurred, then fix it locally and push again.
 
 Clicking on ```Run unit tests with nose```, you should be able to see the screen below. 
 
-<img src="/teaching/CS472-Spring2023/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
+<img src="/teaching/CS472/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
 
 7. From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the 
 ```Test Cases``` you were required to write in the [Testing lab](../dynamic_analysis). In this lab, 
 you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that
 the fourth ```Test Cases``` turns <span style="color:green">**GREEN**</span> in your CI builds.
+
+**You will write a test case to delete a counter.**
+
+Per REST API guidelines, a read uses a ```DELETE``` request and returns a 
+```204_NO_CONTENT``` code if successful. Create a function that deletes the 
+counter that matches the specified name.
+
+
 
 
 Submitting the Assignment
