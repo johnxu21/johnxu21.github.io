@@ -56,7 +56,7 @@ You will clone a repo in this lab using the gh CLI tool and then upload it back 
 You will also push changes to your cloned repo at the end of this lab. This requires you 
 to authenticate with GitHub using a ```personal access token``` (ref. [Git & GitHub lab](../Git_and_GitHub/)).
 
-Task 1:
+Task 1: (5 points)
 -------
 1. In this lab, we will only focus on the TDD. You will use the code you cloned and updated ([Python Testing lab](https://github.com/johnxu21/tdd))
 3. On the root directory of the repo, create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```.
@@ -101,7 +101,7 @@ When you click on ```Actions``` tab in your repository, you should be able to se
 
 <img src="/teaching/CS472/Timetable/CI/task1.jpeg" alt="WorkflowWithNoSteps" style="width:612px;height:114px;" align="center">
 
-Task 2
+Task 2 (5 points)
 -----
 In this task, you will continue building the Continuous Integration pipeline by setting up the 
 steps under job in your workflow. As a result, your application shall be automatically built 
