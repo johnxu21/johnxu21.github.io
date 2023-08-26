@@ -184,8 +184,8 @@ If the CI build did not succeed, you can click and see where a problem could hav
 
 Clicking on ```Run unit tests with nose```, you should be able to see the screen below. 
 
+Fig 4: CI builds
 <img src="/teaching/CS472/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
-
 
 7. From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the 
 ```Test Cases``` you were required to write in the [Testing lab](../dynamic_analysis). In this lab, 

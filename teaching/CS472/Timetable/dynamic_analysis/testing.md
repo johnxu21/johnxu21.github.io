@@ -153,7 +153,7 @@ have any errors, you should see the IntelliJ window showing the code coverage. L
 coverage information on as you may need it to answer the questions from the next task 
 (or take a screenshot of it).
 
-Task 2.1 - 30 points (10 points each)
+Task 2.1 - 15 points (5 points each)
 ====
 Identify **three or more methods** in any java classes and write ```unit tests``` of those methods. 
 **Remember to take screenshots of the test coverage before and after creating the unit tests.** 
@@ -179,7 +179,7 @@ A simple Google sheet having two columns would help get the group organised.
  
 <br/>
 
-Task 3 -- JaCoCo Report on JPacman (20 points)
+Task 3 -- JaCoCo Report on JPacman (10 points)
 =====
 
 The gradle build file provided in ```JPacman```, already has ```JaCoCo``` configured. Look at the folder 
@@ -294,7 +294,7 @@ Ran 4 tests in 0.368s
 ```
 Note that the overall test coverage increased from 74% to 76%. 
 
-#### Your task - Getting coverage to 100%
+#### Your task - Getting coverage to 100% (15)
 In this task to try to get the test coverage to close to 100% as possible. You will 
 examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` 
 to find out what that code is doing.
@@ -402,7 +402,7 @@ if name in COUNTERS:
 ```
 When we run ```nosetests``` again we should get the <span style="color:green">**GREEN**</span> phase.
 
-## Your task
+## Your task (10 points)
 You will implement the updating the counter by name following the TDD workflow (write test cases and 
 write the code to make the test cases pass).
 The test cases you will add to are in ```test_counter.py```, and the code you will add is in ```counter.py```. These are the only two files you will work with.

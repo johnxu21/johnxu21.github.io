@@ -55,7 +55,7 @@ writing a short executive summary on your findings.
 (This assignment assumes you have installed git on your computer.  
 If you haven't done this yet look at the Pro Git book or online for help.)
 
-### Part 1. Clone your team's repository and add files (10 pts)
+### Part 1. Clone your team's repository and add files (5 pts)
 
 By now, everyone should have a GitHub account and been given added to the 
 team's repository as ```collaborators```. In the team repository there should be a file ```contributors.txt```
@@ -82,7 +82,7 @@ git push
 * one of the repository maintainers should integrate your contribution.
 
 
-### Part 2. Add a new file to the repository (30 pts)
+### Part 2. Add a new file to the repository (20 pts)
 
 * create a folder on your local fork repository called ```repo_mining```
 * create and checkout a new branch on your local fork repository using the following command ```git checkout -b mine_repository```
@@ -125,7 +125,7 @@ activities over time for the repository scottyab/rootbeer.
 
 <img src="/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
-### Part 3. Executive Summary (10 pts)
+### Part 3. Executive Summary (5 pts)
 
 Pretend you are a project manager writing a status report on the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) project 
 to your boss as if it was a company-owned project.  The report should take the 
