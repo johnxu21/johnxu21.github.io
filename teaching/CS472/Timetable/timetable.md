@@ -98,7 +98,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mon 09/04</td>
 <td style="border: 1px solid black;"> Public Holiday - No Class </td>
 <td style="border: 1px solid black;">Wed 09/06 </td>
-<td style="border: 1px solid black;">[T] More Git & GitHub [L] Git and GitHub</td>
+<td style="border: 1px solid black;">Senior Design Competition talk by Molly Marks >> [T] More Git & GitHub [L] Git and GitHub</td>
 </tr>
 
 <tr>
