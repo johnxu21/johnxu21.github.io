@@ -213,6 +213,8 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;"><b>Final Exam</b></td>
 </tr>
 
+</table>
+
 
 
 
