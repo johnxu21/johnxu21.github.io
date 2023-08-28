@@ -45,11 +45,8 @@ height:30px;" value="Presentations" />
 
 Project 2022-2023
 =========
-Groups will come up with their own custom projects 
-The groups will also a specification document with in the first three weeks of the class.
-You can borrow a leaf from the specification documents for the two projects below. 
-The quality of the group's specification document does not have to be like the ones presented, but should be reasonable.
-I will to look at your Specification documents to approve the groups' custom project.
+Groups will develop their custom projects. The groups will also deliver a specification document along with Design Portfolio I. You can borrow a leaf from the specification documents for the two projects below. The quality of the group’s specification document does not have to be like the ones presented but should be reasonable. I will review your Specification documents to approve the group’s custom project.
+
 
 Senior Design Ideas submitted to CoE
 =====
