@@ -98,31 +98,31 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mon 09/04</td>
 <td style="border: 1px solid black;"> Public Holiday - No Class </td>
 <td style="border: 1px solid black;">Wed 09/06 </td>
-<td style="border: 1px solid black;">Senior Design Competition talk by Molly Marks >> [T] More Git & GitHub [L] Git and GitHub</td>
+<td style="border: 1px solid black;">Senior Design Competition talk by Molly Marks >> [T] More Git & GitHub</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
 <td style="border: 1px solid black;">Mon 09/11 </td>
-<td style="border: 1px solid black;">[T] Software Testing </td>
+<td style="border: 1px solid black;"> [L] Git and GitHub</td>
 <td style="border: 1px solid black;">Wed 09/13 </td>
-<td style="border: 1px solid black;">[L] Software Testing </td>
+<td style="border: 1px solid black;">[T] Software Testing </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Mon 09/18</td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[L] Software Testing </td>
 <td style="border: 1px solid black;">Wed 09/20 </td>
-<td style="border: 1px solid black;">[T] More OO Design & Architecture </td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Mon 09/25</td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[T] More OO Design & Architecture </td>
 <td style="border: 1px solid black;">Wed 09/27 </td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[T] Survey results presentation </td>
 </tr>
 
 <tr>

@@ -68,6 +68,7 @@ Frequently Asked Questions
   * What if a group mate gives up?
   * Contact us as soon as possible. (By the way, this applies to all problems you might have with your group mates) Then we look for an individual solution.
 
+
 [//]: # (### About the Specification 1.0 &#40;Traffic Simulation&#41;)
 
 [//]: # (* What unit is the traffic light "cycle" and the vehicle generator "frequency"?)
