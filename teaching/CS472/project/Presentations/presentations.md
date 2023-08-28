@@ -43,7 +43,7 @@ height:30px;" value="Presentations" />
 <br/>
 <br/>
 
-Trial Presentations (Ungraded)
+Trial Presentations (Ungraded) (Last edited 04/2023)
 =======
 We will have <b>strictly <=15 minutes</b> for the presentation and <b>atmost 10 minutes</b> of feedback session.
 <table>

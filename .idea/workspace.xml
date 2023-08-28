@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="" />
+    <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/CS472.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/CS472.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Group/groups.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Group/groups.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +88,7 @@
       <workItem from="1690299737208" duration="2471000" />
       <workItem from="1692118472835" duration="32692000" />
       <workItem from="1692813222697" duration="14443000" />
-      <workItem from="1692906036826" duration="19081000" />
+      <workItem from="1692906036826" duration="22375000" />
     </task>
     <servers />
   </component>

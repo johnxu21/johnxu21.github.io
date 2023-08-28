@@ -40,5 +40,5 @@ height:40px;" value="Project" />
 
 
 
-Written Exam on the last day of Class.
+Mode of examination to be communicated!
 
