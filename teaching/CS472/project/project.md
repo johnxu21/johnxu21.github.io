@@ -51,7 +51,7 @@ Groups will develop their custom projects. The groups will also deliver a specif
 Senior Design Ideas submitted to CoE
 =====
 Please take a look at some Senior Design ideas submitted to the College of Engineering.
-[SD Ideas](https://mail.google.com/mail/u/3/#inbox/FMfcgzGrcPGBvpMsrnHFgQTljvFVzgjq?projector=1&messagePartId=0.1)
+[SD Ideas to be updated]()
 
 Subway Simulation
 =======
