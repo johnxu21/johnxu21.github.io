@@ -351,7 +351,7 @@ app = Flask(__name__)
 This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. 
 I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of 
 code we need to go write.
-1. Let's go to ```counters.py``` and create that endpoint. 
+4. Let's go to ```counters.py``` and create that endpoint. 
 
 ```python
 COUNTERS = {}
