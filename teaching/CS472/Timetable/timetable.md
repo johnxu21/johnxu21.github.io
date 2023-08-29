@@ -45,13 +45,14 @@ Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Class overview [PDF](ClassOverview.pdf)
-2. Introduction to Git and GitHub [Google_Slides](https://docs.google.com/presentation/d/1YG1uXfERIPtHF9STDQQMoxvluU3X8QRO/edit#slide=id.p3)
-3. Software Testing [PDF](Software_Testing.pdf)
-4. Object-oriented design 
+2. Introduction to Git and GitHub [Google_Slides](https://docs.google.com/presentation/d/1YG1uXfERIPtHF9STDQQMoxvluU3X8QRO/edit#slide=id.p3) [last updated 02/2023]
+3. Software Testing [PDF](Software_Testing.pdf) [last updated 02/2023]
+4. Continuous Integration [PDF coming soon]() 
+5. Object-oriented design 
   * Slides [PDF](https://docs.google.com/presentation/d/1Y7iCcWYzmWuFgHiwzSxhOdB-tczCAW59/edit#slide=id.p1)
   * Wikipedia about "[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)"
   * Web-site for "[5 Most Embarrassing Software Bugs in History](https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/)"
-
+6. Survey Results [PDF Coming soon]()
 
 Labs
 ========
@@ -69,11 +70,11 @@ visit the lab. The previous class did not visit the computer lab.
 * The rest of the semester you work freely on your project. You can come to campus for this, the 
 computer room is available for you during the scheduled hours of the class. 
 However, it is also perfectly possible to work on the project from home. If you have any questions 
-or problems, you can contact me or the assistant on the [Discord workspace]()
+or problems, you can contact me or the assistant on the [Discord workspace](https://discord.gg/CQUCUFTcDY)
 
 
 Below is the detailed time-schedule, which is subject to change. Changes will be notified over 
-e-mail or on the [Discord workspace](). 
+e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY). 
 
 <table style="border-collapse:collapse;">
 <tr >
@@ -95,34 +96,33 @@ e-mail or on the [Discord workspace]().
 <tr>
 <td style="border: 1px solid black;">02</td>
 <td style="border: 1px solid black;">Mon 09/04</td>
-<td style="border: 1px solid black;">[T] More Git & GitHub </td>
+<td style="border: 1px solid black;"> Public Holiday - No Class </td>
 <td style="border: 1px solid black;">Wed 09/06 </td>
-<td style="border: 1px solid black;">[L] Git and GitHub</td>
+<td style="border: 1px solid black;">Senior Design Competition talk by Molly Marks >> [T] More Git & GitHub</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
 <td style="border: 1px solid black;">Mon 09/11 </td>
-<td style="border: 1px solid black;">[T] Software Testing </td>
+<td style="border: 1px solid black;"> [L] Git and GitHub</td>
 <td style="border: 1px solid black;">Wed 09/13 </td>
-<td style="border: 1px solid black;">[L] Software Testing </td>
+<td style="border: 1px solid black;">[T] Software Testing </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Mon 09/18</td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[L] Software Testing </td>
 <td style="border: 1px solid black;">Wed 09/20 </td>
-<td style="border: 1px solid black;">[T] More OO Design & Architecture >> <b>Recruiters from Hill Air Force</b> <br/>
->> <b>Visit by Kane Toomer (Talk about campus resources, important dates, and the advanced standing process)</b></td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Mon 09/25</td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[T] More OO Design & Architecture </td>
 <td style="border: 1px solid black;">Wed 09/27 </td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[T] Survey results presentation </td>
 </tr>
 
 <tr>
@@ -213,6 +213,7 @@ e-mail or on the [Discord workspace]().
 <td style="border: 1px solid black;"><b>Final Exam</b></td>
 </tr>
 
+</table>
 
 
 

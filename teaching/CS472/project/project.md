@@ -45,19 +45,13 @@ height:30px;" value="Presentations" />
 
 Project 2022-2023
 =========
-Two projects with their specification documents have been prepared for you. You are free to choose any of them. 
-The projects are of equal strength, so it would be nice if they are distributed equally between the groups. 
-Groups are also free come up with their own custom projects. However, If you choose to work on a custom project, 
-then you will need to explain/motivate why this project would allow you to demonstrate your software 
-engineering skills. You will also prepare a specification document with in the first three weeks of the class.
-You can borrow a leaf from the specification documents for the two projects below. The quality of the group's
-specification document does not have to be like the ones presented, but should be reasonable.
-I will to look at your Specification documents to approve the groups' custom project.
+Groups will develop their custom projects. The groups will also deliver a specification document along with Design Portfolio I. You can borrow a leaf from the specification documents for the two projects below. The quality of the group’s specification document does not have to be like the ones presented but should be reasonable. I will review your Specification documents to approve the group’s custom project.
+
 
 Senior Design Ideas submitted to CoE
 =====
-Please take a look at some of the Senior Design ideas submitted to the College of Engineering.
-[SD Ideas](https://mail.google.com/mail/u/3/#inbox/FMfcgzGrcPGBvpMsrnHFgQTljvFVzgjq?projector=1&messagePartId=0.1)
+Please take a look at some Senior Design ideas submitted to the College of Engineering.
+[SD Ideas to be updated]()
 
 Subway Simulation
 =======
@@ -79,10 +73,6 @@ Other Requirements
 To see how things work in concrete terms, you will find the form below with the assessment criteria.
 
 Evaluation criteria 472 [[Google Doc](https://docs.google.com/document/d/1AhUVxWgfDtQVmgEJD0acVPnD72SRoKTHJ2Qh5X6IPqY/edit#)]
-
-[comment]: <> (Use this code below to extract graphs for the contributions of each group member)
-
-[comment]: <> (* [Contributions]&#40;https://github.com/johnxu21/msrLab/blob/main/src/Workload.ipynb&#41;)
 
 Deliverables
 ========

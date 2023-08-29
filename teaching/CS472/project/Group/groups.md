@@ -46,7 +46,9 @@ height:30px;" value="Presentations" />
 
 Groups
 =======
-There are 70 students who enrolled for this class. We will have seven groups comprising 
-10 students each. You can voluntarily choose your group mates. During the first lab on
+There are 24 students who enrolled for this class. We will have 4 groups comprising 
+6 students each (One group - 6 + 1). 
+You can voluntarily choose your group mates. During the first lab on
 [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/), we will collect all the names of individuals 
-who have not yet found a group and then allocate you one of the already existing group.
+who have not yet found a group and then allocate you one of the already existing group. 
+Also feel free to use the Discord communication channel to request joining a group.
