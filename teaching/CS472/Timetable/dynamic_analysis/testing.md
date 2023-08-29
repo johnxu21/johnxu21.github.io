@@ -454,7 +454,7 @@ Submitting the Assignment
 * push the changes onto your remote fork repository.
 * open a pull request on the ```main branch``` of the Team repository and write an appropriate title and body.
 * one of the repository maintainers should integrate your contribution into the main branch.
-* for Tasks 4 & 5, you do not need to  
+* **for Tasks 4 & 5, only the report is required.**
 * You should also submit your report on **Canvas**
 
 
