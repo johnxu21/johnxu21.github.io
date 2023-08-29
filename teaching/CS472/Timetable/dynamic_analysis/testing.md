@@ -318,6 +318,7 @@ a specific directory or file you are testing, so that ```nosetests``` only retur
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
 a PUT request and returns code 200_OK if successful. Create a counter and then update it.
 1. Write the following code in the file ```test_counter.py```. Run ```nosetests```. You should see an error ```ModuleNotFoundError```
+
 ```python
 from unittest import TestCase
 
@@ -332,12 +333,14 @@ class CounterTest(TestCase):
 ```
 2. Create a new file in the ```src``` directory called ```counter.py``` and run ```nosetests``` again. You should see an ```ImportError```, cannot find ```app```
 3. Write the code below and run ```nosetests``` again. The tests should run with no error.
+  
 ```python
 from flask import Flask
 
 app = Flask(__name__)
 ```
-4. Let us write our first test case and run ```nosetests``` again. 
+
+1. Let us write our first test case and run ```nosetests``` again. 
 ```python
     def test_create_a_counter(self):
         """It should create a counter"""
@@ -348,7 +351,8 @@ app = Flask(__name__)
 This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. 
 I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of 
 code we need to go write.
-5. Let's go to ```counters.py``` and create that endpoint. 
+1. Let's go to ```counters.py``` and create that endpoint. 
+
 ```python
 COUNTERS = {}
 
@@ -364,6 +368,7 @@ def create_counter(name):
     COUNTERS[name] = 0
     return {name: COUNTERS[name]}, status.HTTP_201_CREATED
 ```
+
 Now we've implemented this first endpoint that should make the test pass. 
 When we run ```nosetests``` again, we will have <span style="color:green">**GREEN**</span>.
 
