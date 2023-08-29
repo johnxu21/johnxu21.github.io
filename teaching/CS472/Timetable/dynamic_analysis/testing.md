@@ -256,6 +256,7 @@ Ran 3 tests in 0.387s
 ```
 Note that the overall test coverage has increased from 72% to 74% and the new report does not 
 list line ``26`` in the Missing column. 
+
 6. Next, let us look at the next line of code listed in the lines of code missing tests cases, line 
 is ```30```. Examine this line in ```models/account.py``` to find out what that code is doing.
 
@@ -310,13 +311,12 @@ will write the code to make the test cases pass.
 
 1. You will clone and use the repo ([Python Testing lab](https://github.com/johnxu21/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
- * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
- * ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on
-a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
- * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
+      * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
+      *  ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
+      * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
 #### Creating a counter
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
-a PUT request and returns code 200_OK if successful. Create a counter and then update it.
+a PUT request and returns code ```200_OK``` if successful. Create a counter and then update it.
 1. Write the following code in the file ```test_counter.py```. Run ```nosetests```. You should see an error ```ModuleNotFoundError```
 
 ```python
@@ -340,7 +340,7 @@ from flask import Flask
 app = Flask(__name__)
 ```
 
-1. Let us write our first test case and run ```nosetests``` again. 
+4. Let us write our first test case and run ```nosetests``` again. 
 ```python
     def test_create_a_counter(self):
         """It should create a counter"""
@@ -351,7 +351,8 @@ app = Flask(__name__)
 This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. 
 I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of 
 code we need to go write.
-4. Let's go to ```counters.py``` and create that endpoint. 
+
+5. Let's go to ```counters.py``` and create that endpoint. 
 
 ```python
 COUNTERS = {}
@@ -398,6 +399,7 @@ When we run our test cases we obtain
 It happily created that counter a second time, which is very dangerous because it set it to zero. 
 If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
 it's going to reset it to zero.
+
 3. Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
 Copy and paste the coe snippet below and place it right after the code line ```global COUNTERS```
 
