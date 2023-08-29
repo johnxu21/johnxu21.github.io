@@ -59,7 +59,7 @@ to authenticate with GitHub using a ```personal access token``` (ref. [Git & Git
 Task 1: (5 points)
 -------
 1. In this lab, we will only focus on the TDD. You will use the code you cloned and updated ([Python Testing lab](https://github.com/johnxu21/tdd))
-3. On the root directory of the repo, create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```.
+3. On the root directory of the repo, create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```. You can use the two commands below.
 ```
 mkdir -p .github/workflows
 touch .github/workflows/workflow.yml
