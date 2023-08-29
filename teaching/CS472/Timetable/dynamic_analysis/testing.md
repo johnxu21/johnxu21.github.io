@@ -373,9 +373,9 @@ def create_counter(name):
 Now we've implemented this first endpoint that should make the test pass. 
 When we run ```nosetests``` again, we will have <span style="color:green">**GREEN**</span>.
 
-#### Duplicate names must return a conflict error code.
+## Duplicate names must return a conflict error code.
 The second requirement is if the name being created already exists, return a 409 conflict.
-1. Since a lot of the code is a repeat we will <span style="color:blue">**REFACTOR**</span> 
+* Since a lot of the code is a repeat we will <span style="color:blue">**REFACTOR**</span> 
 the repetitive code into ```setUp``` function. Place the function below the ```test_create_a_counter```
 Test Case.
 
@@ -383,7 +383,8 @@ Test Case.
 def setUp(self):
   self.client = app.test_client()
 ```
-2. Wtite the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
+
+* Write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
 The second time we expect to get a ```HTTP_409_CONFLICT```. 
 
 ```python
@@ -400,7 +401,7 @@ It happily created that counter a second time, which is very dangerous because i
 If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
 it's going to reset it to zero.
 
-3. Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
+* Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
 Copy and paste the coe snippet below and place it right after the code line ```global COUNTERS```
 
 ```python
