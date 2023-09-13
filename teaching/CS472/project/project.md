@@ -66,10 +66,6 @@ Traffic Simulation
   * Specification 2.0 [[pdf](../../../files/472Files/Traffic_simulationSpec2.0.pdf)]
 
 
-Other Requirements
-[Non Functional Requirements](/teaching/CS472/project/nfr/)
-  * [C++ Code Conventions](/teaching/CS472/study_material/material/CMakeLists.txt)
-
 To see how things work in concrete terms, you will find the form below with the assessment criteria.
 
 Evaluation criteria 472 [[Google Doc](https://docs.google.com/document/d/1AhUVxWgfDtQVmgEJD0acVPnD72SRoKTHJ2Qh5X6IPqY/edit#)]
