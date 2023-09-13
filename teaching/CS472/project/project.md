@@ -90,7 +90,7 @@ Please pay attention to the following instructions. The group leader should send
   * The full name of the members in your group.
   * Attach the **pre-conditions report** (PDF format) in your message.
 
-* Your Pre-conditions Report should contain the following: **Due 09/22/2023**
+* Your Pre-conditions Report should contain the following: **Due date: 09/22/2023**
   * Project Name
   * Full names of all the members in your group
   * A link to the groups GitHub repository
