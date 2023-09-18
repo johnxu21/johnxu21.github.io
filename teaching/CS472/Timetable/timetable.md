@@ -46,8 +46,8 @@ Theory
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Class overview [PDF](ClassOverview.pdf)
 2. Introduction to Git and GitHub [Google_Slides](https://docs.google.com/presentation/d/1YG1uXfERIPtHF9STDQQMoxvluU3X8QRO/edit#slide=id.p3) [last updated 02/2023]
-3. Software Testing [PDF](Software_Testing.pdf) [last updated 02/2023]
-4. Continuous Integration [PDF coming soon]() 
+3. Software Testing [PPTX](Testing-2033-fall.pptx) [last updated 09/15/2023]
+4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/15/2023]
 5. Object-oriented design 
   * Slides [PDF](https://docs.google.com/presentation/d/1Y7iCcWYzmWuFgHiwzSxhOdB-tczCAW59/edit#slide=id.p1)
   * Wikipedia about "[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)"
