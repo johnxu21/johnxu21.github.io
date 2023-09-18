@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CI-CD.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Testing-2033-fall.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/~$CI-CD.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/~$Testing-2033-fall.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/Software_Testing.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Software_Testing.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/dynamic_analysis/testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/dynamic_analysis/testing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$Software_Testing.pptx" beforeDir="false" />
-    </list>
+    <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +86,7 @@
       <workItem from="1692906036826" duration="31580000" />
       <workItem from="1694120400146" duration="5854000" />
       <workItem from="1694710944181" duration="2363000" />
-      <workItem from="1695054593738" duration="1128000" />
+      <workItem from="1695054593738" duration="1928000" />
     </task>
     <servers />
   </component>
