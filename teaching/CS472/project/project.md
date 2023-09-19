@@ -89,6 +89,7 @@ Please pay attention to the following instructions. The group leader should send
 * Your Pre-conditions Report should contain the following: **Due date: 09/22/2023**
   * Project Name
   * Full names of all the members in your group
+  * A **detailed project description**
   * A link to the groups GitHub repository
   * Whether the team will participate in the **Senior Design Competition**
     * If your team is not planning to participate, kindly a few sentences giving the reason.
