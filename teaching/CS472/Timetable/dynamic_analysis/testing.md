@@ -376,8 +376,9 @@ When we run ```nosetests``` again, we will have <span style="color:green">**GREE
 ## Duplicate names must return a conflict error code.
 The second requirement is if the name being created already exists, return a 409 conflict.
 * Since a lot of the code is a repeat we will <span style="color:blue">**REFACTOR**</span> 
-the repetitive code into ```setUp``` function. Place the function below the ```test_create_a_counter```
-Test Case.
+the repetitive code into ```setUp``` function. Since ```self.client = app.test_client()``` that is
+inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span>
+it into the ```setUp``` function.
 
 ```python
 def setUp(self):
