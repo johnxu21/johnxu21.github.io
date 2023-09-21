@@ -385,7 +385,7 @@ def setUp(self):
   self.client = app.test_client()
 ```
 
-* Write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
+* Let us now write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
 The second time we expect to get a ```HTTP_409_CONFLICT```. 
 
 ```python
@@ -403,7 +403,7 @@ If we update the counter 1, 2, 3, 4, 5, and then we create the same counter agai
 it's going to reset it to zero.
 
 * Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
-Copy and paste the coe snippet below and place it right after the code line ```global COUNTERS```
+Copy and paste the code snippet below and place it right after the code line ```global COUNTERS```.
 
 ```python
 if name in COUNTERS:
@@ -443,7 +443,8 @@ Here you should figure out the requirements for the test case as well as code yo
 
 Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
 to implement the requirements. Include in your report the code snippets you wrote at every step as well as 
-the exceptions you encountered while running ```nosetests```.
+the exceptions you encountered while running ```nosetests```. 
+**Make your report self-contained so that it is easy to follow without running your code**
  
 Submitting the Assignment
 =======
