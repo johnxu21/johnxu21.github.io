@@ -186,7 +186,7 @@ Clicking on ```Run unit tests with nose```, you should be able to see the screen
 Fig 4: CI builds
 <img src="/teaching/CS472/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
 
-7. ** From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the 
+* From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the 
 ```Test Cases``` you were required to write in the [Testing lab](../dynamic_analysis). In this lab, 
 you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that
 the fourth ```Test Cases``` turns <span style="color:green">**GREEN**</span> in your CI builds.
@@ -201,6 +201,10 @@ Like in the [Testing Lab](../dynamic_analysis), detail the phases (red/green/ref
 requirements. Include in your report the code snippets you wrote at every step as well as the 
 exceptions you encountered while running nosetests. **Make your report self-contained so that it is 
 easy to follow without running your code**.
+
+**Remember to commit your code**.
+
+
 
 
 

@@ -7,9 +7,6 @@
     <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/CI.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/CI.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/OOD.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/OOD.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$OOD.pptx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,7 @@
       <workItem from="1694710944181" duration="2363000" />
       <workItem from="1695054593738" duration="2534000" />
       <workItem from="1695143097286" duration="1145000" />
-      <workItem from="1695666875910" duration="5695000" />
+      <workItem from="1695666875910" duration="6830000" />
     </task>
     <servers />
   </component>
