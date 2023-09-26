@@ -52,14 +52,13 @@ and build a GitHub Action Continuous Integration pipeline.
 This pipeline will run automatically when you push/commit your code to the GitHub 
 repository based on the events described in the workflow.
 
-You will clone a repo in this lab using the gh CLI tool and then upload it back on GitHub. 
-You will also push changes to your cloned repo at the end of this lab. This requires you 
+You will push changes to your cloned repo at the end of this lab. This requires you 
 to authenticate with GitHub using a ```personal access token``` (ref. [Git & GitHub lab](../Git_and_GitHub/)).
 
 Task 1: (5 points)
 -------
 1. In this lab, we will only focus on the TDD. You will use the code you cloned and updated ([Python Testing lab](https://github.com/johnxu21/tdd))
-3. On the root directory of the repo, create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```. You can use the two commands below.
+3. On the root directory of your repo, create the directory structure ```.github/workflows/``` and create a file called ```workflow.yml```. You can use the two commands below.
 ```
 mkdir -p .github/workflows
 touch .github/workflows/workflow.yml
@@ -159,9 +158,9 @@ The flake8 commands take a few parameters. Now, take a look at the command and t
   * **In the file ```requirements.txt``` the dependency for ```flake8``` is missing. Include ```flake8```, otherwise CI build will not succeed.**
 
 5. **Test Code Coverage with nosetests**: You will use nose in this step to unit test the source code. 
-   Nose is configured via the included setup.cfg file to automatically include the flags –with-spec 
-   and –spec-color so that red-green-refactor is meaningful. If you are in a command shell that 
-   supports colors, passing tests will be green and failing tests will be red.
+   Nose is configured via the included setup.cfg file to automatically include the flags ```-–with-spec``` 
+   and ```–-spec-color``` so that red-green-refactor is meaningful. If you are in a command shell that 
+   supports colors, passing tests will be <span style="color:green">**green**</span> and failing tests will be <span style="color:red">**red**</span>.
    <br/><br/>
    Nose is also configured to automatically run the coverage tool, and you should see a percentage 
    of coverage report at the end of your tests.
@@ -187,7 +186,7 @@ Clicking on ```Run unit tests with nose```, you should be able to see the screen
 Fig 4: CI builds
 <img src="/teaching/CS472/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
 
-7. From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the 
+7. ** From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the 
 ```Test Cases``` you were required to write in the [Testing lab](../dynamic_analysis). In this lab, 
 you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that
 the fourth ```Test Cases``` turns <span style="color:green">**GREEN**</span> in your CI builds.
@@ -198,15 +197,21 @@ Per REST API guidelines, a read uses a ```DELETE``` request and returns a
 ```204_NO_CONTENT``` code if successful. Create a function that deletes the 
 counter that matches the specified name.
 
+Like in the [Testing Lab](../dynamic_analysis), detail the phases (red/green/refactor) you followed to implement the 
+requirements. Include in your report the code snippets you wrote at every step as well as the 
+exceptions you encountered while running nosetests. **Make your report self-contained so that it is 
+easy to follow without running your code**.
+
 
 
 
 Submitting the Assignment
 =======
-* Write a report for 
-* push the changes onto your remote fork repository.
-* for Tasks 4 & 5, you do not need to  
-* You should also submit your report on **Canvas**
+* Write a report for all the tasks. Include a link to your GitHub repository at the start of the report.
+* Make sure that your repository is public so that we are able to access repository.
+* To show that you were able to complete the tasks. Include screenshots for each task in your report. 
+The screenshots should include the address bar of the browser so that we are able to see repo name.
+* Submit your report on **Canvas**
 
 
    

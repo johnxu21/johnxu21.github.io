@@ -56,6 +56,9 @@ The theory consists of four lessons where we explain the techniques to be used.:
 
 Labs
 ========
+All the labs have been tested on macOS environment (Unix flavour). If you are using a Windows machine, I encourage you to use
+[Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about). 
+
 The first exercise lab sessions is meant to practice working with Git and GitHub.
 The next lab session is meant to practice writing unit tests and test driven development to increase test coverage.
 The last lab session aimed at introducing you to CI/CD. 
