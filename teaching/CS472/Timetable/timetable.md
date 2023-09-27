@@ -52,7 +52,7 @@ The theory consists of four lessons where we explain the techniques to be used.:
   * Slides [PDF](https://docs.google.com/presentation/d/1Y7iCcWYzmWuFgHiwzSxhOdB-tczCAW59/edit#slide=id.p1)
   * Wikipedia about "[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)"
   * Web-site for "[5 Most Embarrassing Software Bugs in History](https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/)"
-6. Survey Results [PDF Coming soon]()
+6. Survey Results [PDF](Survey_Presentation.pdf)
 
 Labs
 ========
