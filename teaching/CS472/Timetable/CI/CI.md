@@ -45,7 +45,7 @@ height:30px;" value="CI" />
 <br/>
 <br/>
 
-### **This individual assignment is due**
+### **This individual assignment is due 10/03/2023**
 
 In this lab, you will kick off from where you stopped in the [Testing lab](../dynamic_analysis)
 and build a GitHub Action Continuous Integration pipeline.
@@ -204,11 +204,6 @@ easy to follow without running your code**.
 
 **Remember to commit your code**.
 
-
-
-
-
-
 Submitting the Assignment
 =======
 * Write a report for all the tasks. Include a link to your GitHub repository at the start of the report.
@@ -216,10 +211,6 @@ Submitting the Assignment
 * To show that you were able to complete the tasks. Include screenshots for each task in your report. 
 The screenshots should include the address bar of the browser so that we are able to see repo name.
 * Submit your report on **Canvas**
-
-
-   
-
 
 
 
