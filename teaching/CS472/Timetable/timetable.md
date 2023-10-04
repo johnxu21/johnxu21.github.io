@@ -50,7 +50,7 @@ The theory consists of four lessons where we explain the techniques to be used.:
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/15/2023]
 5. Survey Results [PDF](Survey_Presentation.pdf)
 6. Object-oriented design 
-  * Slides [PDF](https://docs.google.com/presentation/d/1Y7iCcWYzmWuFgHiwzSxhOdB-tczCAW59/edit#slide=id.p1)
+  * Slides [PDF](OOD-V2.pptx)
   * Analysing a System [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_6)"
   * Design and Implementation [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_7)
 
