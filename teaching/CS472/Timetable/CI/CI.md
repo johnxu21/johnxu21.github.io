@@ -191,7 +191,7 @@ Fig 4: CI builds
 you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that
 the fourth ```Test Cases``` turns <span style="color:green">**GREEN**</span> in your CI builds.
 
-**You will write a test case to delete a counter.**
+**You will write a test case to delete a counter. (10 points)**
 
 Per REST API guidelines, a read uses a ```DELETE``` request and returns a 
 ```204_NO_CONTENT``` code if successful. Create a function that deletes the 
