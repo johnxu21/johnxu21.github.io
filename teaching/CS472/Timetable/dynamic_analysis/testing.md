@@ -295,7 +295,7 @@ Ran 4 tests in 0.368s
 ```
 Note that the overall test coverage increased from 74% to 76%. 
 
-#### Your task - Getting coverage to 100% (15)
+#### Your task - Getting coverage to 100% (20)
 In this task to try to get the test coverage to close to 100% as possible. You will 
 examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` 
 to find out what that code is doing.
@@ -411,7 +411,7 @@ if name in COUNTERS:
 ```
 When we run ```nosetests``` again we should get the <span style="color:green">**GREEN**</span> phase.
 
-## Your task (10 points)
+## Your task (15 points)
 You will implement the updating the counter by name following the TDD workflow (write test cases and 
 write the code to make the test cases pass).
 The test cases you will add to are in ```test_counter.py```, and the code you will add is in ```counter.py```. These are the only two files you will work with.
