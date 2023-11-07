@@ -314,7 +314,7 @@ will write the code to make the test cases pass.
       * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
       *  ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
       * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
-3. You can read about HTTP methods and REST guidelines from this [link](https://restfulapi.net/http-methods/)
+3. You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
 #### Creating a counter
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
 a PUT request and returns code ```200_OK``` if successful. Create a counter and then update it.
