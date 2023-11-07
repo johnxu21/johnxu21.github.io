@@ -36,7 +36,7 @@ More about my research can be found on the (<a href="https://johnxu21.github.io/
 <table>
 
 <tr>
-	<td width="150"><b>June, 2022</b></td>
+	<td width="150"><b>September, 2023</b></td>
 	<td> Our book chapter on Analyzing Variant Forks of Software Repositories from Social Coding Platforms has been published on SpringerLink </td> 
 </tr>
 
