@@ -197,13 +197,13 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mon 11/27</td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 <td style="border: 1px solid black;">Wed 11/29 </td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">Trial Presentation</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">15</td>
 <td style="border: 1px solid black;">Mon 12/04</td>
-<td style="border: 1px solid black;"><b>Trial Presentation</b></td>
+<td style="border: 1px solid black;">Free Project Work</td>
 <td style="border: 1px solid black;">Wed 12/06 </td>
 <td style="border: 1px solid black;"><b>Project Presentation</b></td>
 </tr>
