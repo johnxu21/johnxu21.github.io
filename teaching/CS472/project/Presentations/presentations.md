@@ -47,91 +47,114 @@ Trial Presentations (Ungraded) (Last edited 04/2023)
 =======
 We will have <b>strictly <=15 minutes</b> for the presentation and <b>atmost 10 minutes</b> of feedback session.
 
-[//]: # (<table>)
+Members from other teams are encouraged to attend and give feedback towards improving a team's 
+presentation. In the final presentation, I expect <b> at least four group members </b> to present a 
+section of the team project. Try this out during the trial to practice. All teams have 
+exciting projects; please listen, learn and give feedback. Those presenting earlier, please give back the 
+favor and provide feedback to the ones presenting later you.
 
-[//]: # (  <tr>)
+<table>
 
-[//]: # (    <th style="border: 1px solid black;">Group</th>)
+  <tr>
 
-[//]: # (    <th style="border: 1px solid black;">Date</th>)
+    <th style="border: 1px solid black;">Group</th>
 
-[//]: # (    <th style="border: 1px solid black;">Time</th>)
+    <th style="border: 1px solid black;">Date</th>
 
-[//]: # (  </tr>)
+    <th style="border: 1px solid black;">Time</th>
 
-[//]: # (  <tr>)
+  </tr>
 
-[//]: # (    <td style="border: 1px solid black;">Group 7</td>)
+  <tr>
 
-[//]: # (    <td style="border: 1px solid black;">04/20</td>)
+    <td style="border: 1px solid black;">Pocket Therapist -- Gp-3</td>
 
-[//]: # (    <td style="border: 1px solid black;">4:00 pm - 4:25 pm</td>)
+    <td style="border: 1px solid black;">11/29</td>
 
-[//]: # (  </tr>)
+    <td style="border: 1px solid black;">12:30 pm - 12:55 pm</td>
 
-[//]: # (  <tr>)
+  </tr>
 
-[//]: # (    <td style="border: 1px solid black;">Group 3</td>)
+  <tr>
 
-[//]: # (    <td style="border: 1px solid black;">04/20</td>)
+    <td style="border: 1px solid black;">AstroPonics -- Gp-1</td>
 
-[//]: # (    <td style="border: 1px solid black;">4:30 pm - 4:55 pm</td>)
+    <td style="border: 1px solid black;">11/29</td>
 
-[//]: # (  </tr>)
+    <td style="border: 1px solid black;">1:00 pm - 1:25 pm</td>
 
+  </tr>
+
+
+  <tr>
+
+    <td style="border: 1px solid black;">Bayview -- Gp-4</td>
+
+    <td style="border: 1px solid black;">11/29</td>
+
+    <td style="border: 1px solid black;">1:25 pm - 1:50 pm</td>
+
+  </tr>
+
+  <tr>
+
+
+    <td style="border: 1px solid black;">MyCourseEvaluation -- Gp-2</td>
+
+    <td style="border: 1px solid black;">11/29</td>
+
+    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
+
+
+  </tr>
+
+[//]: # ()
 [//]: # ()
 [//]: # (  <tr>)
 
-[//]: # (    <td style="border: 1px solid black;">Group 5</td>)
-
-[//]: # (    <td style="border: 1px solid black;">04/25</td>)
-
-[//]: # (    <td style="border: 1px solid black;">4:00 pm - 4:25 pm</td>)
-
-[//]: # (  </tr>)
-
-[//]: # (  <tr>)
-
-[//]: # (    <td style="border: 1px solid black;">Group 4</td>)
-
-[//]: # (    <td style="border: 1px solid black;">04/25</td>)
-
-[//]: # (    <td style="border: 1px solid black;">4:30 pm - 4:55 pm</td>)
-
-[//]: # (  </tr>)
-
 [//]: # ()
-[//]: # (  <tr>)
-
 [//]: # (    <td style="border: 1px solid black;">Group 6</td>)
 
+[//]: # ()
 [//]: # (    <td style="border: 1px solid black;">04/27</td>)
 
+[//]: # ()
 [//]: # (    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>)
 
+[//]: # ()
 [//]: # (  </tr>)
 
+[//]: # ()
 [//]: # (  <tr>)
 
+[//]: # ()
 [//]: # (    <td style="border: 1px solid black;">Group 1</td>)
 
+[//]: # ()
 [//]: # (    <td style="border: 1px solid black;">04/27</td>)
 
+[//]: # ()
 [//]: # (    <td style="border: 1px solid black;">4:20 pm - 4:45 pm</td>)
 
+[//]: # ()
 [//]: # (  </tr>)
 
+[//]: # ()
 [//]: # (  <tr>)
 
+[//]: # ()
 [//]: # (    <td style="border: 1px solid black;">Group 2</td>)
 
+[//]: # ()
 [//]: # (    <td style="border: 1px solid black;">04/27</td>)
 
+[//]: # ()
 [//]: # (    <td style="border: 1px solid black;">4:50 pm - 5:15 pm</td>)
 
+[//]: # ()
 [//]: # (  </tr>)
 
-[//]: # (</table>)
+</table>
 
 <br/>
 <br/>
