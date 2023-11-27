@@ -118,7 +118,7 @@ Final Presentations
 
 We will have <b>strictly <=15 minutes</b> for the presentation and <b>at most 5 minutes</b> of questions/feedback.
 
-<br>
+
 Only the presenting team will be allowed in the room for the final presentation. Other teams presenting later 
 are supposed to wait for their time slots.
 
