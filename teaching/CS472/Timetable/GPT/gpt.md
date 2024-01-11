@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - CHAT GPT - Tutorial
-permalink: /teaching/CS472-Spring2023/Timetable/GPT/
+permalink: /teaching/CS472/TimetableGPT/
 ---
 <div class="main-component">
 <form action="/teaching/CS472/">
