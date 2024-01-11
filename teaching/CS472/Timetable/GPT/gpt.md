@@ -35,6 +35,16 @@ ChatGPT Link: https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398
 
 <img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="ShareChatGPTConversations" style="width:612px;height:114px;" align="center">
 
+##### Documentation and Technical Writing
+This example demonstrates how developers are using ChatGPT to speed up software documentation tasks.
+Our use case is `Swarmion`: A set of tools to build and deploy type-safe microservices. 
+
+PR: https://github.com/swarmion/swarmion/pull/678
+ChatGPT Link: https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0
+
+<img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="width:612px;height:114px;" align="center">
+
+As you can observe, the `CONTRIBUTION.md` file was updated by simply copying the documentation written by ChatChat
 
 Task 1 - Example of Code Generation and Optimization using ChatGPT
 =======
