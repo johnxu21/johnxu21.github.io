@@ -98,11 +98,18 @@ In this task I will show you how to share you ChatGPT conversations with fellow 
 - Ethical Considerations
 - Innovation and Exploration:
 
-1. Once you are reduce to share your converstions, following the screenshots below to generate and copy a URL/Link. NB: Don't worry, your details will NOT be visible after the conversation link is generated, it will be automatically changed to "Anonymous".
+1. Once you are ready to share your converstions, following the screenshots below to generate and copy a URL/Link. NB: Don't worry, your details will NOT be visible after the conversation link is generated, it will be automatically changed to "Anonymous".
 
    <img src="/teaching/CS472/Timetable/GPT/share1.jpeg" alt="ShareChatGPTConversations" style="width:612px;height:114px;" align="center">
 
    <img src="/teaching/CS472/Timetable/GPT/share2.jpeg" alt="ShareChatGPTConversations" style="width:612px;height:114px;" align="center">
 
 2. After copying the link, there are many places on GitHub where you can share you conversation depending on the activity you are doing. For example, if you used ChatGPT to help you solve a bug, it would be better to add the link in the `PR` description. See the below:
+   - Adding your conversation link in PR description
+    
+    <img src="/teaching/CS472/Timetable/GPT/share-review-1.jpeg" alt="ShareChatGPTConversations" style="width:612px;height:114px;" align="center">
+
+   - Adding your conversation link during PR review activity
+    
+    <img src="/teaching/CS472/Timetable/GPT/share-review-1.jpeg" alt="ShareChatGPTConversations" style="width:612px;height:114px;" align="center">
 
