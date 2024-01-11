@@ -90,129 +90,137 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 
 <tr>
 <td style="border: 1px solid black;">01</td>
-<td style="border: 1px solid black;">Mon 08/28</td>
+<td style="border: 1px solid black;">Tu 01/16</td>
 <td style="border: 1px solid black;">[T] Class overview</td>
-<td style="border: 1px solid black;">Wed 08/30</td>
+<td style="border: 1px solid black;">Th 01/18</td>
 <td style="border: 1px solid black;">[T] Intro to Git & GitHub </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">02</td>
-<td style="border: 1px solid black;">Mon 09/04</td>
+<td style="border: 1px solid black;">Tu 01/23</td>
 <td style="border: 1px solid black;"> Public Holiday - No Class </td>
-<td style="border: 1px solid black;">Wed 09/06 </td>
+<td style="border: 1px solid black;">Th 01/25 </td>
 <td style="border: 1px solid black;">Senior Design Competition talk by Molly Marks >> [T] More Git & GitHub</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
-<td style="border: 1px solid black;">Mon 09/11 </td>
+<td style="border: 1px solid black;">Tu 01/30 </td>
 <td style="border: 1px solid black;"> [L] Git and GitHub</td>
-<td style="border: 1px solid black;">Wed 09/13 </td>
+<td style="border: 1px solid black;">Th 02/01 </td>
 <td style="border: 1px solid black;">[T] Software Testing </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
-<td style="border: 1px solid black;">Mon 09/18</td>
+<td style="border: 1px solid black;">Tu 02/06</td>
 <td style="border: 1px solid black;">[L] Software Testing </td>
-<td style="border: 1px solid black;">Wed 09/20 </td>
+<td style="border: 1px solid black;">Th 02/08 </td>
 <td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
-<td style="border: 1px solid black;">Mon 09/25</td>
+<td style="border: 1px solid black;">Tu 02/13</td>
 <td style="border: 1px solid black;">[T] More OO Design & Architecture </td>
-<td style="border: 1px solid black;">Wed 09/27 </td>
+<td style="border: 1px solid black;">Th 02/15 </td>
 <td style="border: 1px solid black;">[T] Survey results presentation </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
-<td style="border: 1px solid black;">Mon 10/02</td>
+<td style="border: 1px solid black;">Tu 02/20</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">Wed 10/04 </td>
+<td style="border: 1px solid black;">Th 02/22 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">07</td>
-<td style="border: 1px solid black;">Mon 10/09</td>
+<td style="border: 1px solid black;">Tu 02/27</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">Wed 10/11 </td>
+<td style="border: 1px solid black;">Th 02/29 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">08</td>
-<td style="border: 1px solid black;">Mon 10/16</td>
+<td style="border: 1px solid black;">Tu 03/05</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">Wed 10/18 </td>
+<td style="border: 1px solid black;">Th 03/07 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">09</td>
-<td style="border: 1px solid black;">Mon 10/23</td>
-<td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">Wed 10/25 </td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">Tu 03/12</td>
+<td style="border: 1px solid black;">Spring Break</td>
+<td style="border: 1px solid black;">Th 03/14 </td>
+<td style="border: 1px solid black;">Spring Break</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">10</td>
-<td style="border: 1px solid black;">Mon 10/30</td>
+<td style="border: 1px solid black;">Tu 03/19</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">Wed 11/01 </td>
+<td style="border: 1px solid black;">Th 03/21 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">11</td>
-<td style="border: 1px solid black;">Mon 11/06</td>
+<td style="border: 1px solid black;">Tu 03/26</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">Wed 11/08 </td>
+<td style="border: 1px solid black;">Th 03/28 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">12</td>
-<td style="border: 1px solid black;">Mon 11/13</td>
+<td style="border: 1px solid black;">Tu 04/02</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">Wed 11/15 </td>
+<td style="border: 1px solid black;">Th 04/04 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">13</td>
-<td style="border: 1px solid black;">Mon 11/20</td>
+<td style="border: 1px solid black;">Tu 04/09</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">Wed 11/22 </td>
+<td style="border: 1px solid black;">Th 04/11 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">14</td>
-<td style="border: 1px solid black;">Mon 11/27</td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
-<td style="border: 1px solid black;">Wed 11/29 </td>
+<td style="border: 1px solid black;">Tu 04/16</td>
+<td style="border: 1px solid black;">Trial Presentation</td>
+<td style="border: 1px solid black;">Th 04/18 </td>
 <td style="border: 1px solid black;">Trial Presentation</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">15</td>
-<td style="border: 1px solid black;">Mon 12/04</td>
-<td style="border: 1px solid black;">Free Project Work</td>
-<td style="border: 1px solid black;">Wed 12/06 </td>
+<td style="border: 1px solid black;">Tu 04/23</td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;">Th 04/25 </td>
 <td style="border: 1px solid black;"><b>Project Presentation</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">16</td>
-<td style="border: 1px solid black;">Mon 12/11</td>
+<td style="border: 1px solid black;">Tu 04/30</td>
+<td style="border: 1px solid black;"><b></b></td>
+<td style="border: 1px solid black;">Th 05/02 </td>
+<td style="border: 1px solid black;"></td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">17</td>
+<td style="border: 1px solid black;">Tu 05/07</td>
 <td style="border: 1px solid black;"><b>Final Exam</b></td>
-<td style="border: 1px solid black;">Wed 12/13 </td>
+<td style="border: 1px solid black;">Th 05/09 </td>
 <td style="border: 1px solid black;"></td>
 </tr>
 
