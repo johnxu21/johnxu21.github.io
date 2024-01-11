@@ -111,5 +111,5 @@ In this task I will show you how to share you ChatGPT conversations with fellow 
 
    - Adding your conversation link during PR review activity
     
-    <img src="/teaching/CS472/Timetable/GPT/share-review-1.jpeg" alt="ShareChatGPTConversations" style="width:612px;height:114px;" align="center">
+    <img src="/teaching/CS472/Timetable/GPT/share-review-2.jpeg" alt="ShareChatGPTConversations" style="width:612px;height:114px;" align="center">
 
