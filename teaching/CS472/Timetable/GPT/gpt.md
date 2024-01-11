@@ -3,6 +3,51 @@ layout: page
 title: CS472 - CHAT GPT - Tutorial
 permalink: /teaching/CS472-Spring2023/Timetable/GPT/
 ---
+<div class="main-component">
+<form action="/teaching/CS472/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Course Overview" />
+</form>
+
+<form action="/teaching/CS472/Timetable/">
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
+height:40px;" value="Timetable" />
+</form>
+<form action="/teaching/CS472/Exam/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Exam" />
+</form>
+<form action="/teaching/CS472/project/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Project" />
+</form>
+</div>
+<br/>
+
+Labs
+=======
+<div class="main-component">
+<form action="/teaching/CS472/Timetable/Git_and_GitHub/">
+    <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
+height:30px;" value="Git & GitHub" />
+</form>
+<form action="/teaching/CS472/Timetable/dynamic_analysis/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="Testing" />
+</form>
+<form action="/teaching/CS472/Timetable/CI/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="CI" />
+</form>
+<form action="/teaching/CS472/Timetable/GPT/">
+    <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
+height:30px;" value="CHAT GPT" />
+</form>
+</div>
+
+<br/>
+<br/>
+
 In this lab, you will learn how to leverage ChatGPT for software development tasks. You will also learn various ways of sharing you conversation to support collaborative software engineering.
 
 Overview
