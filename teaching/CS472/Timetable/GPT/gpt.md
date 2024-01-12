@@ -167,7 +167,7 @@ To effectivity use ChatGPT you should provide it a good "prompt". The concept of
         # states that there is exactly one solution.
 
     ```
-  You can continue refining the prompt in order to get a more precise and optimized solution. See the full conversation here: https://chat.openai.com/share/5ed4faed-52c3-45dd-9c6a-1363b3f0dd91
+  You can continue refining the prompt in order to get a more precise and optimized solution. See the full conversation here: (https://chat.openai.com/share/5ed4faed-52c3-45dd-9c6a-1363b3f0dd91)[https://chat.openai.com/share/5ed4faed-52c3-45dd-9c6a-1363b3f0dd91]
 
 1. In this second part of task 1, try to use ChatGPT any task of your choice. Observe how designing and refining prompts can help you achieve your goal.
    - Are you able to get your solution?
