@@ -75,7 +75,7 @@ engineering:
 8. Task Automation
 9. Bug Reporting and Issue Tracking:
 
-In the next three sections, we provide concrete examples on how developers are using ChatGPT.
+In the next three sections, we provide **concrete examples on how developers are using ChatGPT**.
 
 ## Example 1: Code Generation and Programming Assistance Task
 In this example, a developer is using ChatGPT to improve code readability and observe the `DRY` 
