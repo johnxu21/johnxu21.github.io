@@ -75,7 +75,7 @@ engineering:
 8. Task Automation
 9. Bug Reporting and Issue Tracking:
 
-#### Concrete Example on How Developers are Using ChatGPT
+#### Concrete Examples on How Developers are Using ChatGPT
 ##### Code Generation and Programming Assistance Task
 In this example, a developer is using ChatGPT to improve code readability and observe the `DRY` 
 software engineering principle. Here is the link to both the PR and ChatGPT conversation.
@@ -179,25 +179,30 @@ To effectively use ChatGPT, you should provide it a good "prompt". The concept o
 
 Task 2: Sharing Your ChatGPT Conversations on GitHub
 ====
-In this task I will show you how to share you ChatGPT conversations with fellow developers. Sharing ChatGPT conversations with other developers can be beneficial for several reasons:
+In this task shows you how to share you ChatGPT conversations with fellow developers. 
+Sharing ChatGPT conversations with other developers can be beneficial for several reasons:
 
-- Collaborative Problem Solving:
-- Learning and Knowledge Sharing:
-- Code Review and Improvement:
-- Getting Diverse Perspectives:
-- Best Practices and Tips:
-- Avoiding Pitfalls:
-- Building a Supportive Community:
+- Collaborative Problem Solving
+- Learning and Knowledge Sharing
+- Code Review and Improvement
+- Getting Diverse Perspectives
+- Best Practices and Tips
+- Avoiding Pitfalls
+- Building a Supportive Community
 - Ethical Considerations
-- Innovation and Exploration:
+- Innovation and Exploration
 
-1. Once you are ready to share your converstions, following the screenshots below to generate and copy a URL/Link. NB: Don't worry, your details will NOT be visible after the conversation link is generated, it will be automatically changed to "Anonymous".
+1. Once you are ready to share your converstions, following the screenshots below to generate and copy a 
+URL/Link. **Note: Don't worry, your details will NOT be visible after the conversation link is generated, 
+it will be automatically changed to ```Anonymous```**.
 
    <img src="/teaching/CS472/Timetable/GPT/share1.png" alt="ShareChatGPTConversations" style="width:612px;height:314px;" align="center">
 
    <img src="/teaching/CS472/Timetable/GPT/share2.png" alt="ShareChatGPTConversations" style="width:612px;height:314px;" align="center">
 
-2. After copying the link, there are many places on GitHub where you can share you conversation depending on the activity you are doing. For example, if you used ChatGPT to help you solve a bug, it would be better to add the link in the `PR` description. See the below:
+2. After copying the link, there are many places on GitHub where you can share your conversation (e.g., inside a PR, Issue, or Commit message).
+For example, if you used ChatGPT to help you solve a bug, it would be better to add 
+the link in the `PR` description of `PR` review comment. See the below:
    - Adding your conversation link in PR description
     
     <img src="/teaching/CS472/Timetable/GPT/share-review-1.png" alt="ShareChatGPTConversations" style="width:612px;height:314px;" align="center">
