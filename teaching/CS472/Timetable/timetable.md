@@ -38,7 +38,7 @@ height:30px;" value="CI" />
 </form>
 <form action="/teaching/CS472/Timetable/GPT/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="CHAT GPT" />
+height:30px;" value="ChatGPT" />
 </form>
 </div>
 
