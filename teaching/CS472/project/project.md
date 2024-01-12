@@ -66,10 +66,6 @@ Traffic Simulation
   * Specification 2.0 [[pdf](../../../files/472Files/Traffic_simulationSpec2.0.pdf)]
 
 
-Other Requirements
-[Non Functional Requirements](/teaching/CS472/project/nfr/)
-  * [C++ Code Conventions](/teaching/CS472/study_material/material/CMakeLists.txt)
-
 To see how things work in concrete terms, you will find the form below with the assessment criteria.
 
 Evaluation criteria 472 [[Google Doc](https://docs.google.com/document/d/1AhUVxWgfDtQVmgEJD0acVPnD72SRoKTHJ2Qh5X6IPqY/edit#)]
@@ -84,20 +80,23 @@ The following documents will guide you produce the deliverables of the project:
 
 Getting Started Instructions
 =======
-Please pay attention to the following instructions. The group leader should send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with:
+Please pay attention to the following instructions. The group leader **should send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with**:
 * Subject "SDD - Project - ```<Group Identifier>```". 
 * Message Body:
   * The full name of the members in your group.
   * Attach the **pre-conditions report** (PDF format) in your message.
 
-* Your Pre-conditions Report should contain the following:
+* Your Pre-conditions Report should contain the following: **Due date: 09/22/2023**
   * Project Name
   * Full names of all the members in your group
+  * A **detailed project description**
   * A link to the groups GitHub repository
+  * Whether the team will participate in the **Senior Design Competition**
+    * If your team is not planning to participate, kindly a few sentences giving the reason.
 
 Instructions to the UML Diagrams
 =========
-You will use simple **class diagram** or **sequence diagrams** or any other UML diagrams you find suitable.
+You will use simple **use case diagrams**, **class diagram** and **sequence diagrams** or any other UML diagrams you find suitable.
 A simple class diagram has only the name of the class and its interactions with the other classes 
 (there are two examples in [JPacman](https://github.com/johnxu21/jpacman/tree/master/doc/uml) repository in the "docs" folder). 
 This is to reinforce your initial understanding of the 

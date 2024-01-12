@@ -39,13 +39,17 @@ height:30px;" value="Testing" />
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="CI" />
 </form>
+<form action="/teaching/CS472/Timetable/GPT/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="CHAT GPT" />
+</form>
 </div>
 
 <br/>
 <br/>
 
 
-<!-- ### **This individual assignment is due February 2nd, 2023** -->
+### **This individual assignment is due September 26th, 2023**
 
 In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
 In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
@@ -256,6 +260,7 @@ Ran 3 tests in 0.387s
 ```
 Note that the overall test coverage has increased from 72% to 74% and the new report does not 
 list line ``26`` in the Missing column. 
+
 6. Next, let us look at the next line of code listed in the lines of code missing tests cases, line 
 is ```30```. Examine this line in ```models/account.py``` to find out what that code is doing.
 
@@ -294,7 +299,7 @@ Ran 4 tests in 0.368s
 ```
 Note that the overall test coverage increased from 74% to 76%. 
 
-#### Your task - Getting coverage to 100% (15)
+#### Your task - Getting coverage to 100% (20)
 In this task to try to get the test coverage to close to 100% as possible. You will 
 examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` 
 to find out what that code is doing.
@@ -310,14 +315,15 @@ will write the code to make the test cases pass.
 
 1. You will clone and use the repo ([Python Testing lab](https://github.com/johnxu21/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
- * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
- * ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on
-a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
- * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
+      * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
+      *  ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
+      * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
+3. You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
 #### Creating a counter
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
-a PUT request and returns code 200_OK if successful. Create a counter and then update it.
+a PUT request and returns code ```200_OK``` if successful. Create a counter and then update it.
 1. Write the following code in the file ```test_counter.py```. Run ```nosetests```. You should see an error ```ModuleNotFoundError```
+
 ```python
 from unittest import TestCase
 
@@ -332,11 +338,13 @@ class CounterTest(TestCase):
 ```
 2. Create a new file in the ```src``` directory called ```counter.py``` and run ```nosetests``` again. You should see an ```ImportError```, cannot find ```app```
 3. Write the code below and run ```nosetests``` again. The tests should run with no error.
+  
 ```python
 from flask import Flask
 
 app = Flask(__name__)
 ```
+
 4. Let us write our first test case and run ```nosetests``` again. 
 ```python
     def test_create_a_counter(self):
@@ -348,7 +356,9 @@ app = Flask(__name__)
 This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. 
 I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of 
 code we need to go write.
+
 5. Let's go to ```counters.py``` and create that endpoint. 
+
 ```python
 COUNTERS = {}
 
@@ -364,20 +374,23 @@ def create_counter(name):
     COUNTERS[name] = 0
     return {name: COUNTERS[name]}, status.HTTP_201_CREATED
 ```
+
 Now we've implemented this first endpoint that should make the test pass. 
 When we run ```nosetests``` again, we will have <span style="color:green">**GREEN**</span>.
 
-#### Duplicate names must return a conflict error code.
+## Duplicate names must return a conflict error code.
 The second requirement is if the name being created already exists, return a 409 conflict.
-1. Since a lot of the code is a repeat we will <span style="color:blue">**REFACTOR**</span> 
-the repetitive code into ```setUp``` function. Place the function below the ```test_create_a_counter```
-Test Case.
+* Since a lot of the code is a repeat we will <span style="color:blue">**REFACTOR**</span> 
+the repetitive code into ```setUp``` function. Since ```self.client = app.test_client()``` that is
+inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span>
+it into the ```setUp``` function.
 
 ```python
 def setUp(self):
   self.client = app.test_client()
 ```
-2. Wtite the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
+
+* Let us now write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
 The second time we expect to get a ```HTTP_409_CONFLICT```. 
 
 ```python
@@ -393,8 +406,9 @@ When we run our test cases we obtain
 It happily created that counter a second time, which is very dangerous because it set it to zero. 
 If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
 it's going to reset it to zero.
-3. Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
-Copy and paste the coe snippet below and place it right after the code line ```global COUNTERS```
+
+* Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
+Copy and paste the code snippet below and place it right after the code line ```global COUNTERS```.
 
 ```python
 if name in COUNTERS:
@@ -402,7 +416,7 @@ if name in COUNTERS:
 ```
 When we run ```nosetests``` again we should get the <span style="color:green">**GREEN**</span> phase.
 
-## Your task (10 points)
+## Your task (15 points)
 You will implement the updating the counter by name following the TDD workflow (write test cases and 
 write the code to make the test cases pass).
 The test cases you will add to are in ```test_counter.py```, and the code you will add is in ```counter.py```. These are the only two files you will work with.
@@ -434,7 +448,8 @@ Here you should figure out the requirements for the test case as well as code yo
 
 Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
 to implement the requirements. Include in your report the code snippets you wrote at every step as well as 
-the exceptions you encountered while running ```nosetests```.
+the exceptions you encountered while running ```nosetests```. 
+**Make your report self-contained so that it is easy to follow without running your code**
  
 Submitting the Assignment
 =======
@@ -446,7 +461,7 @@ Submitting the Assignment
 * push the changes onto your remote fork repository.
 * open a pull request on the ```main branch``` of the Team repository and write an appropriate title and body.
 * one of the repository maintainers should integrate your contribution into the main branch.
-* for Tasks 4 & 5, you do not need to  
+* **for Tasks 4 & 5, only the report is required.**
 * You should also submit your report on **Canvas**
 
 

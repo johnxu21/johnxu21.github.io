@@ -2,6 +2,15 @@
 layout: page
 title: Publications
 permalink: /evol/publications/
+
+---
+2023
+--
+**Analyzing Variant Forks of Software Repositories from Social Coding Platforms**<br/>
+John Businge, Mehrdad Abdi, Serge Demeyer<br/>
+Software Ecosystems pp 131–152, Springer Link, 2023
+<a href="https://link.springer.com/book/10.1007/978-3-031-36060-2">[preprint]</a><br>
+
 ---
 2022
 --

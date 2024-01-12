@@ -40,13 +40,17 @@ height:30px;" value="Testing" />
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="CI" />
 </form>
+<form action="/teaching/CS472/Timetable/GPT/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="CHAT GPT" />
+</form>
 </div>
 
 <br/>
 <br/>
 
 
-### **This individual assignment is due January 26th, 2023**
+### **This individual assignment is due September 13th, 2023**
 
 For this lab, you will be learning how to explore an open 
 source repository from GitHub. You will also learn how to extract useful 
