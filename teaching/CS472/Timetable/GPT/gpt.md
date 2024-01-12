@@ -105,8 +105,8 @@ ChatGPT Link: [https://chat.openai.com/share/30ab0b7e-d72c-444f-a228-620b132e950
 This example demonstrates how developers are using ChatGPT to speed up software documentation tasks.
 Our use case is `Swarmion`: A set of tools to build and deploy type-safe microservices. 
 
-PR: https://github.com/swarmion/swarmion/pull/678
-ChatGPT Link: https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0
+PR: [https://github.com/swarmion/swarmion/pull/678](https://github.com/swarmion/swarmion/pull/678)
+ChatGPT Link: [https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0)
 
 <img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="width:612px;height:314px;" align="center">
 
@@ -115,10 +115,10 @@ written by ChatGPT.
 
 Task 1 - Example of Code Generation and Optimization using ChatGPT
 =======
-To begin using ChatGPT (if you haven't already), simply go to https://chat.openai.com/ and create a free account. For this class, the free ChatGPT 3.5 is sufficient.
+To begin using ChatGPT (if you haven't already), simply go to [https://chat.openai.com/](https://chat.openai.com/) and create a free account. For this class, the free ChatGPT 3.5 is sufficient.
 
 To effectivity use ChatGPT you should provide it a good "prompt". The concept of ``Prompt Engineering`` is detailed in this research paper: [A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT](https://arxiv.org/abs/2302.11382).
-1. Let us use ChatGPT to generate the code for this LeetCode problem  ```Two Sum```: https://leetcode.com/problems/two-sum/description/
+1. Let us use ChatGPT to generate the code for this LeetCode problem  ```Two Sum```: [https://leetcode.com/problems/two-sum/description/](https://leetcode.com/problems/two-sum/description/)
    * **Simple prompt:** Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`
   
    ```python
