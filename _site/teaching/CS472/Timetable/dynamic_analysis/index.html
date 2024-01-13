@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CS472 - Dynamic Analysis</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/teaching/CS472/Timetable/dynamic_analysis/">
+  <link rel="alternate" type="application/rss+xml" title="John Businge" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <!-- <a class="site-title" href="/">John Businge</a> -->
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <ul class="menu">
+
+    
+     <li><a href="/" class="page-link">About</a>
+    
+    </li>
+    
+    
+    <li><a href="/evol/" class="page-link">Software Evolution Lab</a>
+    <ul class="sub-menu">
+    
+    <li><a href="/evol/projects/">Projects</a></li>
+    
+    <li><a href="/evol/publications/">Publications</a></li>
+    
+    <li><a href="/evol/students/">The Team</a></li>
+    
+    <li><a href="/evol/talks/">Talks</a></li>
+    
+    <li><a href="/evol/join/">Join EVOL</a></li>
+    
+    </ul>
+    
+    </li>
+    
+    
+     <li><a href="/teaching/" class="page-link">Teaching</a>
+    
+    </li>
+    
+    
+     <li><a href="/service/" class="page-link">Service</a>
+    
+    </li>
+    
+    
+     <li><a href="/misc/" class="page-link">Misc</a>
+    
+    </li>
+    
+    </ul>
+        <!-- 
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/CI/">CS472 - CI - Using GitHub Actions - Setting up workflow</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/">CS 472/672 - Software Product Design and Development I</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/">CS 473/673 - Software Product Design and Development II</a>
+          
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472-Spring2023/Timetable/CD/">CS472 - CI - Building a Tekton Pipeline</a>
+          
+        
+          
+          <a class="page-link" href="/cv/">CV and Resume</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/dynamic/">Dynamic Analysis- Testing</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Exam/">Exam</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/FAQ/">Frequently Asked Questions</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/GPT/">CS472 - CHAT GPT - Tutorial</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/Group/">Groups</a>
+          
+        
+          
+          <a class="page-link" href="/">John Businge</a>
+          
+        
+          
+          <a class="page-link" href="/resources/item-1/">Item 1</a>
+          
+        
+          
+          <a class="page-link" href="/resources/item-2/">Item 2</a>
+          
+        
+          
+          <a class="page-link" href="/evol/join/">You would like to join EVOL?</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/study_material/loading_ttt/">CS472 - Loading TicTacToe in CLion</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/metrics/">Metrics and Visualization</a>
+          
+        
+          
+          <a class="page-link" href="/miscellany/">Miscellany</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/Git_and_GitHub/">CS472 - Git and GitHub</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/msr/">Mining Software Repositories</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/nfr/">Non-functional requirements</a>
+          
+        
+          
+          <a class="page-link" href="/notebook/">Research Notebook</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/optional_lab/">CS472 - Optional Lab</a>
+          
+        
+          
+          <a class="page-link" href="/miscellany/phd-beyond/">Miscellany - PhD & Beyond</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/Presentations/">Presentations</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/">Project</a>
+          
+        
+          
+          <a class="page-link" href="/evol/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/evol/publications/">Publications</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/refactoring/">Refactoring Assistants</a>
+          
+        
+          
+          <a class="page-link" href="/evol/">Research</a>
+          
+        
+          
+          <a class="page-link" href="/resources/">Useful Resources</a>
+          
+        
+          
+          <a class="page-link" href="/service/">Service</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/integration/">Software Integration</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/project/">Reengineering Project - linkedin/kafka</a>
+          
+        
+          
+          <a class="page-link" href="/students/">Students</a>
+          
+        
+          
+          <a class="page-link" href="/evol/students/">Students</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/study_material/">Study Material</a>
+          
+        
+          
+          <a class="page-link" href="/evol/talks/">Talks</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/dynamic_analysis/">CS472 - Dynamic Analysis</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/">Timetable</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/old_readme">Steve’s No-Good-Very-Bad Jekyll Theme</a>
+          
+        
+          
+        
+          
+         -->
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">CS472 - Dynamic Analysis</h1>
+  </header>
+
+  <article class="post-content">
+    <div class="main-component">
+<form action="/teaching/CS472/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Course Overview" />
+</form>
+<form action="/teaching/CS472/Timetable/">
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
+height:40px;" value="Timetable" />
+</form>
+<form action="/teaching/CS472/Exam/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Exam" />
+</form>
+<form action="/teaching/CS472/project/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Project" />
+</form>
+</div>
+<p><br /></p>
+
+<h1 id="labs">Labs</h1>
+<div class="main-component">
+<form action="/teaching/CS472/Timetable/Git_and_GitHub/">
+    <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
+height:30px;" value="Git &amp; GitHub" />
+</form>
+<form action="/teaching/CS472/Timetable/dynamic_analysis/">
+    <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
+height:30px;" value="Testing" />
+</form>
+<form action="/teaching/CS472/Timetable/CI/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="CI" />
+</form>
+<form action="/teaching/CS472/Timetable/GPT/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="CHAT GPT" />
+</form>
+</div>
+
+<p><br />
+<br /></p>
+
+<h3 id="this-individual-assignment-is-due-september-26th-2023"><strong>This individual assignment is due September 26th, 2023</strong></h3>
+
+<p>In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
+In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
+for this Lab in the <strong>Team’s repository</strong> you created and used in the 
+<a href="/teaching/CS472/Timetable/Git_and_GitHub/">Git and GitHub</a> Lab.</p>
+
+<h1 id="dynamic-analysis">Dynamic Analysis</h1>
+
+<p>Dynamic analysis is “the analysis of the properties of a running software system” 
+[<a href="https://ansymore.uantwerpen.be/system/files/Ball1999.pdf">Ball1999</a>]. 
+It is complementary to static analysis techniques. Some properties that cannot be 
+studied through static analysis can be examined with dynamic analysis and vice versa. 
+The applications of dynamic analysis techniques are very broad: program comprehension, 
+system verification, resource profiling, test analysis, etc. In this session, we focus on 
+one very important aspect of dynamic analysis: <strong>Testing</strong>.</p>
+
+<p>“Tests: Your Life Insurance!” 
+Tests are essential for software engineering activities. They can help you:</p>
+<ol>
+  <li>to reveal unwanted side effects of changing the code</li>
+  <li>to understand the inner workings of a system.</li>
+</ol>
+
+<p>The presence of automated tests does however not offer any guarantee about its quality. 
+Do the tests cover the whole system or are some parts left untested? 
+Which parts are covered to which extent? Hence, measuring test coverage is a useful, even 
+necessary, way to assess the quality and usefulness of a test suite in the context of software engineering.</p>
+
+<h1 id="materials--tools-used-for-this-session">Materials &amp; Tools Used for this Session</h1>
+
+<ul>
+  <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDE</a> (you can use <a href="https://www.eclipse.org/">Eclipse</a> at your discretion, but it may require some adaptations for the project we are using during the lab sessions)</li>
+  <li><a href="https://github.com/johnxu21/jpacman">JPacman</a> repository.</li>
+  <li><a href="https://www.jacoco.org/jacoco/index.html">JaCoCo</a> is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.</li>
+  <li><a href="https://nose.readthedocs.io/en/latest/">nosetests</a> extends python unittest to make testing easier.</li>
+  <li><a href="https://flask.palletsprojects.com/en/2.3.x/">flask</a> a web framework, it’s a Python module that lets you develop web applications easily.</li>
+</ul>
+
+<h1 id="setup--preparation">Setup / Preparation</h1>
+
+<p>To start getting acquainted with the JPacman source code. Download/Clone the JPacman project from the 
+<a href="https://github.com/johnxu21/jpacman">Prof’s repository</a> and open it on IntelliJ; build it. JPacman uses Gradle as a built/dependency manager. 
+Make sure you can build and run it before doing any source code modification.
+Now look at the source code and try to understand its internal structure. In the “docs/uml” folder there are two simplified UML diagrams.</p>
+
+<h1 id="task-1--jpacman-test-coverage">Task 1 – JPacman Test Coverage</h1>
+
+<p>We will begin by using the <a href="https://www.jetbrains.com/idea/">IntelliJ IDE</a> test coverage plugin. 
+The testing and coverage plugins should be enabled by default. If you are not sure, check under <code class="language-plaintext highlighter-rouge">IntelliJ IDEA &gt; Preferences &gt; Plugins &gt; installed</code> if your 
+plugins called <code class="language-plaintext highlighter-rouge">Code Coverage for Java</code>, <code class="language-plaintext highlighter-rouge">JUnit</code>, and <code class="language-plaintext highlighter-rouge">TestNG</code> are enabled.</p>
+
+<p>First, make sure that you can test your JPacman, by using the following command line in the 
+<a href="https://www.jetbrains.com/idea/">IntelliJ IDE</a> terminal:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./gradlew test
+</code></pre></div></div>
+<p><strong>Note:</strong> Remember to set the project to point to the JDK version on which it was built. Look at <code class="language-plaintext highlighter-rouge">External Libraries</code> under the 
+Project’s folder in IntelliJ IDE to see the JDK version.</p>
+
+<p>Now, right-click on the <code class="language-plaintext highlighter-rouge">test</code> folder (inside the <code class="language-plaintext highlighter-rouge">src</code> folder) and select the option “Run ‘Tests’ 
+in <code class="language-plaintext highlighter-rouge">jpacman.test</code> with Coverage”. If that option is not available, select “Build Module
+<code class="language-plaintext highlighter-rouge">jpacman.test</code>” and after the build right-click again and the option  “Run ‘Tests’ in
+<code class="language-plaintext highlighter-rouge">jpacman.test</code> with Coverage” should be available.</p>
+
+<p>Alternatively, you can also right-click on the Gradle task <code class="language-plaintext highlighter-rouge">test</code>, inside the module <code class="language-plaintext highlighter-rouge">Task-&gt;verification</code>
+shown in the <code class="language-plaintext highlighter-rouge">Gradle plugin</code> (default position is a collapsed tab on the right part of your IntelliJ). 
+Select <code class="language-plaintext highlighter-rouge">Run 'jpacman [test]' with Coverage</code>. This Gradle task should produce the same coverage. 
+Therefore, use whichever you prefer.</p>
+
+<p>If everything executed without errors, you should see a new window showing the code coverage. 
+Please try to remember this coverage (or take a screenshot to not depend on your memory).</p>
+
+<p><strong>Question:</strong></p>
+<ul>
+  <li>Is the coverage good enough?</li>
+</ul>
+
+<h1 id="task-2--increasing-coverage-on-jpacman">Task 2 – Increasing Coverage on JPacman</h1>
+
+<p>For the second task, we will increase the coverage on JPacman. Doing that is very simple, 
+we just need to write more tests. In this task, we are going to write one new test case. 
+As you have seen from <strong>Task 1</strong> that the coverage for several packages is zero percent.</p>
+
+<p>Let’s create a simple <code class="language-plaintext highlighter-rouge">unit test</code> on a method. We will test the <code class="language-plaintext highlighter-rouge">isAlive()</code> method in class <code class="language-plaintext highlighter-rouge">Player</code> 
+(package <code class="language-plaintext highlighter-rouge">level</code>). You should look at the <code class="language-plaintext highlighter-rouge">DirectionTest</code> class (folder <code class="language-plaintext highlighter-rouge">test</code>, package <code class="language-plaintext highlighter-rouge">board</code>) as a template 
+for your test case. <strong>The hardest part is instantiating a <code class="language-plaintext highlighter-rouge">Player</code> object as it requires other objects.</strong> 
+The <code class="language-plaintext highlighter-rouge">PlayerFactory</code> class is responsible for creating instances of <code class="language-plaintext highlighter-rouge">Player</code>. And, <code class="language-plaintext highlighter-rouge">PlayerFactory</code> 
+constructor requires a <code class="language-plaintext highlighter-rouge">PacManSprites</code> (package <code class="language-plaintext highlighter-rouge">sprites</code>) object. Therefore, you need to instantiate a
+<code class="language-plaintext highlighter-rouge">PacManSprites</code> object, to pass it on to the constructor of <code class="language-plaintext highlighter-rouge">PlayerFactory</code>, and only then you can 
+call the factory method to create a <code class="language-plaintext highlighter-rouge">Player</code>.</p>
+
+<p>Create the package <code class="language-plaintext highlighter-rouge">level</code> in the <code class="language-plaintext highlighter-rouge">test</code> folder. Then, create the class <code class="language-plaintext highlighter-rouge">PlayerTest</code> inside this 
+package <code class="language-plaintext highlighter-rouge">level</code>. Now you can write the test case for testing the method <code class="language-plaintext highlighter-rouge">isAlive()</code> from <code class="language-plaintext highlighter-rouge">Player</code>.</p>
+
+<p><a href="/teaching/CS473-Fall2022/dynamic/PlayerTest.java_.txt">Here is an example</a> of such a test class, but I 
+strongly advise you to try for yourself (it is a simple test and the hardest part is just to instantiate 
+the objects).</p>
+
+<p>After adding the new test, build <code class="language-plaintext highlighter-rouge">jpacman.test</code> again and run it with coverage. If your test does not 
+have any errors, you should see the IntelliJ window showing the code coverage. Leave this window with the 
+coverage information on as you may need it to answer the questions from the next task 
+(or take a screenshot of it).</p>
+
+<h1 id="task-21---15-points-5-points-each">Task 2.1 - 15 points (5 points each)</h1>
+<p>Identify <strong>three or more methods</strong> in any java classes and write <code class="language-plaintext highlighter-rouge">unit tests</code> of those methods. 
+<strong>Remember to take screenshots of the test coverage before and after creating the unit tests.</strong> 
+<strong>Since there are many methods in the project, I should not find almost all the group members of a given group attempting the same methods.</strong> 
+Discuss between the group mates what methods you will be writing unit tests for. 
+A simple Google sheet having two columns would help get the group organised.</p>
+
+<table>
+  <tr>
+    <th style="border: 1px solid black;">Names</th>
+    <th style="border: 1px solid black;">Fully Qualified Method Name</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">John Businge </td>
+    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/game/GameFactory.createSinglePlayerGame</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">John Businge </td>
+    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/board/BoardFactory.createBoard</td>
+  </tr>
+
+</table>
+
+<p><br /></p>
+
+<h1 id="task-3--jacoco-report-on-jpacman-10-points">Task 3 – JaCoCo Report on JPacman (10 points)</h1>
+
+<p>The gradle build file provided in <code class="language-plaintext highlighter-rouge">JPacman</code>, already has <code class="language-plaintext highlighter-rouge">JaCoCo</code> configured. Look at the folder
+<code class="language-plaintext highlighter-rouge">build/reports/jacoco/test/html</code>, right-click on the file <code class="language-plaintext highlighter-rouge">index.html</code> and select 
+“Open in Browser”. This is the coverage report from the <code class="language-plaintext highlighter-rouge">JaCoCo</code> tool. As you can see, <code class="language-plaintext highlighter-rouge">JaCoCo</code> shows not only 
+line coverage but also branch coverage. Click on the <code class="language-plaintext highlighter-rouge">level</code> package, then on the <code class="language-plaintext highlighter-rouge">Player</code> class, 
+and after that on any method. You will see the source code with color information on which branches are 
+covered (or partially covered).</p>
+
+<p><strong>Questions:</strong></p>
+<ul>
+  <li>Are the coverage results from <code class="language-plaintext highlighter-rouge">JaCoCo</code> similar to the ones you got from <code class="language-plaintext highlighter-rouge">IntelliJ</code> in the last task? Why so or why not?</li>
+  <li>Did you find helpful the source code visualization from <code class="language-plaintext highlighter-rouge">JaCoCo</code> on uncovered branches?</li>
+  <li>Which visualization did you prefer and why? <code class="language-plaintext highlighter-rouge">IntelliJ</code>’s coverage window or <code class="language-plaintext highlighter-rouge">JaCoCo</code>’s report?</li>
+</ul>
+
+<p><strong>Write a report for Tasks 2.1 and Task 3. Name the report <code class="language-plaintext highlighter-rouge">&lt;your-names&gt;_unitTesting.pdf&gt;</code></strong>
+Remember to include the <strong>code snippets of your unit tests</strong> for Tasks 2.1 in your report.
+Make sure that your report is descriptive enough for me to follow without looking at your project code.</p>
+
+<h1 id="task-4--working-with-python-test-coverage">Task 4 – Working with Python Test Coverage</h1>
+<p>In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and 
+interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.</p>
+
+<ol>
+  <li>Clone the git project <a href="https://github.com/johnxu21/test_coverage">Python Testing lab</a>. Open the IDE, navigate to the directory <code class="language-plaintext highlighter-rouge">test_coverage</code> and run the command <code class="language-plaintext highlighter-rouge">pip install -r requirements.txt</code></li>
+  <li>You will do all your editing work in the file <code class="language-plaintext highlighter-rouge">tests/test_account.py</code>.</li>
+  <li>Before writing any code, you should always check that the test cases are passing. 
+Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
+    <ul>
+      <li>run the <code class="language-plaintext highlighter-rouge">nosetests</code> and produce a <code class="language-plaintext highlighter-rouge">coverage</code> report to identify the lines that are missing code coverage:</li>
+    </ul>
+  </li>
+</ol>
+
+<pre><code class="language-nosetests">  Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+models/__init__.py       6      0   100%
+models/account.py       40     13    68%   26, 30, 34-35, 45-48, 52-54, 74-75
+--------------------------------------------------
+TOTAL                   46     13    72%
+----------------------------------------------------------------------
+Ran 2 tests in 0.349s
+</code></pre>
+
+<ol>
+  <li>Starting with 72% test coverage. The goal is to reach 100%! Looking at the first missed line, 
+line 26 in <code class="language-plaintext highlighter-rouge">account.py</code> to see if we can write a test case for it. To increase the test coverage, 
+we first investigate line 26 in <code class="language-plaintext highlighter-rouge">models/account.py</code>. This file is in the <code class="language-plaintext highlighter-rouge">model</code> 
+package from the root of the repo. Look at the following code on lines <code class="language-plaintext highlighter-rouge">25</code> and <code class="language-plaintext highlighter-rouge">26</code>.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s">'&lt;Account %r&gt;'</span> <span class="o">%</span> <span class="bp">self</span><span class="p">.</span><span class="n">name</span>
+</code></pre></div></div>
+<p>Notice that this method is one of the magic methods that is called to represent the class when 
+printing it out. We will add a new test case in <code class="language-plaintext highlighter-rouge">test_account.py</code> that calls the <code class="language-plaintext highlighter-rouge">__repr__()</code> 
+method on an Account.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_repr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="s">"""Test the representation of an account"""</span>
+    <span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">()</span>
+    <span class="n">account</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Foo"</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">account</span><span class="p">),</span> <span class="s">"&lt;Account 'Foo'&gt;"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Run <code class="language-plaintext highlighter-rouge">nosetests</code> again to ensure line <code class="language-plaintext highlighter-rouge">26</code> is now covered through testing and to determine 
+the next line of code for which you should write a new test case:</li>
+</ol>
+
+<pre><code class="language-angular2html">Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+models/__init__.py       6      0   100%
+models/account.py       40     12    70%   30, 34-35, 45-48, 52-54, 74-75
+--------------------------------------------------
+TOTAL                   46     12    74%
+----------------------------------------------------------------------
+Ran 3 tests in 0.387s
+</code></pre>
+<p>Note that the overall test coverage has increased from 72% to 74% and the new report does not 
+list line <code class="language-plaintext highlighter-rouge">26</code> in the Missing column.</p>
+
+<ol>
+  <li>Next, let us look at the next line of code listed in the lines of code missing tests cases, line 
+is <code class="language-plaintext highlighter-rouge">30</code>. Examine this line in <code class="language-plaintext highlighter-rouge">models/account.py</code> to find out what that code is doing.</li>
+</ol>
+
+<p>We will look at code of the entire function on lines <code class="language-plaintext highlighter-rouge">28</code> through <code class="language-plaintext highlighter-rouge">30</code> to see what it is 
+doing.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+    <span class="s">"""Serializes the class as a dictionary"""</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">c</span><span class="p">.</span><span class="n">name</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">.</span><span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">__table__</span><span class="p">.</span><span class="n">columns</span><span class="p">}</span>
+</code></pre></div></div>
+<p>Notice that this code is the <code class="language-plaintext highlighter-rouge">to_dict()</code> method. Now, let us add a new test case in <code class="language-plaintext highlighter-rouge">test_account.py</code> 
+that executes the <code class="language-plaintext highlighter-rouge">to_dict()</code> method on an Account, and thereafter run <code class="language-plaintext highlighter-rouge">nosetests</code> again.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="s">""" Test account to dict """</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">ACCOUNT_DATA</span><span class="p">[</span><span class="bp">self</span><span class="p">.</span><span class="n">rand</span><span class="p">]</span> <span class="c1"># get a random account
+</span>    <span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">account</span><span class="p">.</span><span class="n">to_dict</span><span class="p">()</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">account</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="s">"name"</span><span class="p">])</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">account</span><span class="p">.</span><span class="n">email</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="s">"email"</span><span class="p">])</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">account</span><span class="p">.</span><span class="n">phone_number</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="s">"phone_number"</span><span class="p">])</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">account</span><span class="p">.</span><span class="n">disabled</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="s">"disabled"</span><span class="p">])</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">account</span><span class="p">.</span><span class="n">date_joined</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="s">"date_joined"</span><span class="p">])</span>
+</code></pre></div></div>
+
+<pre><code class="language-angular2html">Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+models/__init__.py       6      0   100%
+models/account.py       40     11    72%   34-35, 45-48, 52-54, 74-75
+--------------------------------------------------
+TOTAL                   46     11    76%
+----------------------------------------------------------------------
+Ran 4 tests in 0.368s
+</code></pre>
+<p>Note that the overall test coverage increased from 74% to 76%.</p>
+
+<h4 id="your-task---getting-coverage-to-100-20">Your task - Getting coverage to 100% (20)</h4>
+<p>In this task to try to get the test coverage to close to 100% as possible. You will 
+examine <code class="language-plaintext highlighter-rouge">models/account.py</code> on lines <code class="language-plaintext highlighter-rouge">34-35</code>, <code class="language-plaintext highlighter-rouge">45-48</code>, <code class="language-plaintext highlighter-rouge">52-54</code>, <code class="language-plaintext highlighter-rouge">74-75</code> 
+to find out what that code is doing.</p>
+
+<p><strong>Add to your report of the previous tasks and include the code snippets for your test cases.</strong></p>
+
+<h1 id="task-5---tdd">Task 5 - TDD</h1>
+<p>Test driven development (TDD) is an approach to software development in which you first write the 
+test cases for the code you wish you had and then write the code to make the test cases pass.
+In this Task, you will write test cases based on the requirements given to you, and then you 
+will write the code to make the test cases pass.</p>
+
+<ol>
+  <li>You will clone and use the repo (<a href="https://github.com/johnxu21/tdd">Python Testing lab</a>). Navigate to the <code class="language-plaintext highlighter-rouge">tdd</code> folder. If you did not already install the requirements, run the command <code class="language-plaintext highlighter-rouge">pip install -r requirements.txt</code></li>
+  <li>Open the IDE, navigate to the directory <code class="language-plaintext highlighter-rouge">tdd</code>.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">status.py</code> -  has some HTTP error codes that we will use when we’re checking our error codes</li>
+      <li><code class="language-plaintext highlighter-rouge">setup.cfg</code> - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that <code class="language-plaintext highlighter-rouge">nosetests</code> only returns testing results for that file, e.g., <code class="language-plaintext highlighter-rouge">cover-package=counter</code></li>
+      <li>You will add test cases in <code class="language-plaintext highlighter-rouge">test_counter.py</code>. Currently, the file contains only a doc string listing the requirements and no code.</li>
+    </ul>
+  </li>
+  <li>You will be working with <strong>HTTP methods</strong> and <strong>REST guidelines</strong> you can take a read <a href="https://restfulapi.net/http-methods/">here</a>
+    <h4 id="creating-a-counter">Creating a counter</h4>
+    <p>You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
+a PUT request and returns code <code class="language-plaintext highlighter-rouge">200_OK</code> if successful. Create a counter and then update it.</p>
+  </li>
+  <li>Write the following code in the file <code class="language-plaintext highlighter-rouge">test_counter.py</code>. Run <code class="language-plaintext highlighter-rouge">nosetests</code>. You should see an error <code class="language-plaintext highlighter-rouge">ModuleNotFoundError</code></li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">unittest</span> <span class="kn">import</span> <span class="n">TestCase</span>
+
+<span class="c1"># we need to import the unit under test - counter
+</span><span class="kn">from</span> <span class="nn">src.counter</span> <span class="kn">import</span> <span class="n">app</span> 
+
+<span class="c1"># we need to import the file that contains the status codes
+</span><span class="kn">from</span> <span class="nn">src</span> <span class="kn">import</span> <span class="n">status</span> 
+
+<span class="k">class</span> <span class="nc">CounterTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="s">"""Counter tests"""</span>
+</code></pre></div></div>
+<ol>
+  <li>Create a new file in the <code class="language-plaintext highlighter-rouge">src</code> directory called <code class="language-plaintext highlighter-rouge">counter.py</code> and run <code class="language-plaintext highlighter-rouge">nosetests</code> again. You should see an <code class="language-plaintext highlighter-rouge">ImportError</code>, cannot find <code class="language-plaintext highlighter-rouge">app</code></li>
+  <li>Write the code below and run <code class="language-plaintext highlighter-rouge">nosetests</code> again. The tests should run with no error.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Let us write our first test case and run <code class="language-plaintext highlighter-rouge">nosetests</code> again.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">test_create_a_counter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+     <span class="s">"""It should create a counter"""</span>
+     <span class="n">client</span> <span class="o">=</span> <span class="n">app</span><span class="p">.</span><span class="n">test_client</span><span class="p">()</span>
+     <span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'/counters/foo'</span><span class="p">)</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">status</span><span class="p">.</span><span class="n">HTTP_201_CREATED</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <p>This time we get <span style="color:red"><strong>RED</strong></span> - <code class="language-plaintext highlighter-rouge">AssertionError: 404 !=201</code>. 
+I didn’t find an endpoint called <code class="language-plaintext highlighter-rouge">/counters</code>, so I can’t possibly post to it.” That’s the next piece of 
+code we need to go write.</p>
+  </li>
+  <li>Let’s go to <code class="language-plaintext highlighter-rouge">counters.py</code> and create that endpoint.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">COUNTERS</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># We will use the app decorator and create a route called slash counters.
+# specify the variable in route &lt;name&gt;
+# let Flask know that the only methods that is allowed to called
+# on this function is "POST".
+</span><span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/counters/&lt;name&gt;'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">create_counter</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="s">"""Create a counter"""</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">logger</span><span class="p">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s">"Request to create counter: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">global</span> <span class="n">COUNTERS</span>
+    <span class="n">COUNTERS</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">name</span><span class="p">:</span> <span class="n">COUNTERS</span><span class="p">[</span><span class="n">name</span><span class="p">]},</span> <span class="n">status</span><span class="p">.</span><span class="n">HTTP_201_CREATED</span>
+</code></pre></div></div>
+
+<p>Now we’ve implemented this first endpoint that should make the test pass. 
+When we run <code class="language-plaintext highlighter-rouge">nosetests</code> again, we will have <span style="color:green"><strong>GREEN</strong></span>.</p>
+
+<h2 id="duplicate-names-must-return-a-conflict-error-code">Duplicate names must return a conflict error code.</h2>
+<p>The second requirement is if the name being created already exists, return a 409 conflict.</p>
+<ul>
+  <li>Since a lot of the code is a repeat we will <span style="color:blue"><strong>REFACTOR</strong></span> 
+the repetitive code into <code class="language-plaintext highlighter-rouge">setUp</code> function. Since <code class="language-plaintext highlighter-rouge">self.client = app.test_client()</code> that is
+inside <code class="language-plaintext highlighter-rouge">test_create_a_counter</code> test case will be used by more than one test case, let us <span style="color:blue"><strong>REFACTOR</strong></span>
+it into the <code class="language-plaintext highlighter-rouge">setUp</code> function.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+  <span class="bp">self</span><span class="p">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">app</span><span class="p">.</span><span class="n">test_client</span><span class="p">()</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Let us now write the <code class="language-plaintext highlighter-rouge">test_duplicate_a_counter</code> as below. We create a counter called <code class="language-plaintext highlighter-rouge">bar</code> two times.
+The second time we expect to get a <code class="language-plaintext highlighter-rouge">HTTP_409_CONFLICT</code>.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_duplicate_a_counter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+  <span class="s">"""It should return an error for duplicates"""</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'/counters/bar'</span><span class="p">)</span>
+  <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">status</span><span class="p">.</span><span class="n">HTTP_201_CREATED</span><span class="p">)</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'/counters/bar'</span><span class="p">)</span>
+  <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">status</span><span class="p">.</span><span class="n">HTTP_409_CONFLICT</span><span class="p">)</span>
+</code></pre></div></div>
+<p>When we run our test cases we obtain
+<span style="color:red"><strong>RED</strong></span> phase - <code class="language-plaintext highlighter-rouge">AssertionError: 201 != 409</code>.
+It happily created that counter a second time, which is very dangerous because it set it to zero. 
+If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
+it’s going to reset it to zero.</p>
+
+<ul>
+  <li>Let us go <span style="color:blue"><strong>REFACTOR</strong></span> <code class="language-plaintext highlighter-rouge">counter.py</code> and fix the problem. Before we create any counter, we have to check if it already exists.
+Copy and paste the code snippet below and place it right after the code line <code class="language-plaintext highlighter-rouge">global COUNTERS</code>.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">COUNTERS</span><span class="p">:</span>
+  <span class="k">return</span> <span class="p">{</span><span class="s">"Message"</span><span class="p">:</span><span class="sa">f</span><span class="s">"Counter </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s"> already exists"</span><span class="p">},</span> <span class="n">status</span><span class="p">.</span><span class="n">HTTP_409_CONFLICT</span>
+</code></pre></div></div>
+<p>When we run <code class="language-plaintext highlighter-rouge">nosetests</code> again we should get the <span style="color:green"><strong>GREEN</strong></span> phase.</p>
+
+<h2 id="your-task-15-points">Your task (15 points)</h2>
+<p>You will implement the updating the counter by name following the TDD workflow (write test cases and 
+write the code to make the test cases pass).
+The test cases you will add to are in <code class="language-plaintext highlighter-rouge">test_counter.py</code>, and the code you will add is in <code class="language-plaintext highlighter-rouge">counter.py</code>. These are the only two files you will work with.
+Following REST API guidelines, an update uses a <code class="language-plaintext highlighter-rouge">PUT</code> request and returns code <code class="language-plaintext highlighter-rouge">200_OK</code> if successful. 
+Create a counter and then update it. 
+You will implement the following requirements:</p>
+
+<p>In <code class="language-plaintext highlighter-rouge">test_counter.py</code>, create a test called <code class="language-plaintext highlighter-rouge">test_update_a_counter(self)</code>. It should implement the following steps:</p>
+<ol>
+  <li>Make a call to Create a counter.</li>
+  <li>Ensure that it returned a successful return code.</li>
+  <li>Check the counter value as a baseline.</li>
+  <li>Make a call to Update the counter that you just created.</li>
+  <li>Ensure that it returned a successful return code.</li>
+  <li>Check that the counter value is one more than the baseline you measured in step 3.</li>
+</ol>
+
+<p>When you run <code class="language-plaintext highlighter-rouge">nosetests</code>, you should be in the <span style="color:red"><strong>RED</strong></span> phase.</p>
+
+<p>Next, in <code class="language-plaintext highlighter-rouge">counter.py</code>, create a function called <code class="language-plaintext highlighter-rouge">update_counter(name)</code>. 
+It should implement the following steps:</p>
+
+<ol>
+  <li>Create a route for method <code class="language-plaintext highlighter-rouge">PUT</code> on endpoint <code class="language-plaintext highlighter-rouge">/counters/&lt;name&gt;</code>.</li>
+  <li>Create a function to implement that route.</li>
+  <li>Increment the counter by 1.</li>
+  <li>Return the new counter and a <code class="language-plaintext highlighter-rouge">200_OK</code> return code.</li>
+</ol>
+
+<p>Next, you will write another test case to read a counter. Following REST API guidelines, a read uses a
+<code class="language-plaintext highlighter-rouge">GET</code> request and returns a <code class="language-plaintext highlighter-rouge">200_OK</code> code if successful. Create a counter and then read it. 
+Here you should figure out the requirements for the test case as well as code you will put in the unit under test.</p>
+
+<p>Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
+to implement the requirements. Include in your report the code snippets you wrote at every step as well as 
+the exceptions you encountered while running <code class="language-plaintext highlighter-rouge">nosetests</code>. 
+<strong>Make your report self-contained so that it is easy to follow without running your code</strong></p>
+
+<h1 id="submitting-the-assignment">Submitting the Assignment</h1>
+<ul>
+  <li>Put a <strong>link to your fork repository in the report</strong>.</li>
+  <li>create a folder on your local fork repository called <code class="language-plaintext highlighter-rouge">jpacman</code>.</li>
+  <li>create a branch on your local fork repository called <code class="language-plaintext highlighter-rouge">jpacman_tests</code> using the following command <code class="language-plaintext highlighter-rouge">git branch jpacman_tests</code>.</li>
+  <li>run the command <code class="language-plaintext highlighter-rouge">git checkout jpacman_tests</code></li>
+  <li>copy your report–<code class="language-plaintext highlighter-rouge">&lt;your-names&gt;_unitTesting.pdf&gt;</code> and paste it in the folder <code class="language-plaintext highlighter-rouge">jpacman</code></li>
+  <li>push the changes onto your remote fork repository.</li>
+  <li>open a pull request on the <code class="language-plaintext highlighter-rouge">main branch</code> of the Team repository and write an appropriate title and body.</li>
+  <li>one of the repository maintainers should integrate your contribution into the main branch.</li>
+  <li><strong>for Tasks 4 &amp; 5, only the report is required.</strong></li>
+  <li>You should also submit your report on <strong>Canvas</strong></li>
+</ul>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">John Businge</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+            <a target="_blank" href="https://github.com/johnxu21"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a>
+ |
+            <a target="_blank" href="https://www.linkedin.com/in/johnxu211"><span class="icon icon--linkedin"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></span></a> 
+			<!--|<a target="_blank" href="https://facebook.com/"><span class="icon icon--envelope"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1579 128q35 0 60 25t25 60v1366q0 35-25 60t-60 25h-391v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-735q-35 0-60-25t-25-60v-1366q0-35 25-60t60-25h1366z"/></svg></span></a>
+ |
+            <a target="_blank" href="https://twitter.com/"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span></a>
+-->
+          <!-- <li>John Businge</li> -->
+          <!-- <li><b><em>Template by: </em></b><a href="http://svmiller.com/" target="_blank">Steven V. Miller</a></li> -->
+          <!-- <li><b><em>Last modified: </em></b></li> -->
+          <!-- <li><a href="mailto:john.businge@unlv.edu">john.businge@unlv.edu</a></li> -->
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+ <!--            <a target="_blank" href="https://github.com/johnxu21"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a>
+ |
+            <a target="_blank" href="https://www.linkedin.com/in/johnxu211"><span class="icon icon--linkedin"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></span></a> |
+            <a target="_blank" href="https://facebook.com/"><span class="icon icon--envelope"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1579 128q35 0 60 25t25 60v1366q0 35-25 60t-60 25h-391v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-735q-35 0-60-25t-25-60v-1366q0-35 25-60t60-25h1366z"/></svg></span></a>
+ |
+            <a target="_blank" href="https://twitter.com/"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span></a>
+ -->
+
+<!--           
+          <li>
+            <a target="_blank" href="https://github.com/johnxu21"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/johnxu211"><span class="icon icon--linkedin"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></span></a>
+          </li>
+          
+
+          
+
+           -->
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+      <small>
+        <b>Last Updated:</b> Jan 12, 2024
+      </small>
+        <!-- <p><b><em>Address: </em></b>Room E32, Engineering 2 <br /></p>
+        <a href="http://www.ucsc.edu/" target="_blank"><img src="/images/ucsc.png" alt="University of California, Santa Cruz" style="width:204px;height:64px;"></a> -->
+
+        <!-- Department of Computer Science </br> -->
+        <!-- University of California, Santa Cruz</br> -->
+        <!--  -->
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>
