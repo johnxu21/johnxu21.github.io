@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CS472 - CI - Using GitHub Actions - Setting up workflow</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/teaching/CS472/Timetable/CI/">
+  <link rel="alternate" type="application/rss+xml" title="John Businge" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <!-- <a class="site-title" href="/">John Businge</a> -->
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <ul class="menu">
+
+    
+     <li><a href="/" class="page-link">About</a>
+    
+    </li>
+    
+    
+    <li><a href="/evol/" class="page-link">Software Evolution Lab</a>
+    <ul class="sub-menu">
+    
+    <li><a href="/evol/projects/">Projects</a></li>
+    
+    <li><a href="/evol/publications/">Publications</a></li>
+    
+    <li><a href="/evol/students/">The Team</a></li>
+    
+    <li><a href="/evol/talks/">Talks</a></li>
+    
+    <li><a href="/evol/join/">Join EVOL</a></li>
+    
+    </ul>
+    
+    </li>
+    
+    
+     <li><a href="/teaching/" class="page-link">Teaching</a>
+    
+    </li>
+    
+    
+     <li><a href="/service/" class="page-link">Service</a>
+    
+    </li>
+    
+    
+     <li><a href="/misc/" class="page-link">Misc</a>
+    
+    </li>
+    
+    </ul>
+        <!-- 
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/CI/">CS472 - CI - Using GitHub Actions - Setting up workflow</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/">CS 472/672 - Software Product Design and Development I</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/">CS 473/673 - Software Product Design and Development II</a>
+          
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472-Spring2023/Timetable/CD/">CS472 - CI - Building a Tekton Pipeline</a>
+          
+        
+          
+          <a class="page-link" href="/cv/">CV and Resume</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/dynamic/">Dynamic Analysis- Testing</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Exam/">Exam</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/FAQ/">Frequently Asked Questions</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/GPT/">CS472 - CHAT GPT - Tutorial</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/Group/">Groups</a>
+          
+        
+          
+          <a class="page-link" href="/">John Businge</a>
+          
+        
+          
+          <a class="page-link" href="/resources/item-1/">Item 1</a>
+          
+        
+          
+          <a class="page-link" href="/resources/item-2/">Item 2</a>
+          
+        
+          
+          <a class="page-link" href="/evol/join/">You would like to join EVOL?</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/study_material/loading_ttt/">CS472 - Loading TicTacToe in CLion</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/metrics/">Metrics and Visualization</a>
+          
+        
+          
+          <a class="page-link" href="/miscellany/">Miscellany</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/Git_and_GitHub/">CS472 - Git and GitHub</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/msr/">Mining Software Repositories</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/nfr/">Non-functional requirements</a>
+          
+        
+          
+          <a class="page-link" href="/notebook/">Research Notebook</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/optional_lab/">CS472 - Optional Lab</a>
+          
+        
+          
+          <a class="page-link" href="/miscellany/phd-beyond/">Miscellany - PhD & Beyond</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/Presentations/">Presentations</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/project/">Project</a>
+          
+        
+          
+          <a class="page-link" href="/evol/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/evol/publications/">Publications</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/refactoring/">Refactoring Assistants</a>
+          
+        
+          
+          <a class="page-link" href="/evol/">Research</a>
+          
+        
+          
+          <a class="page-link" href="/resources/">Useful Resources</a>
+          
+        
+          
+          <a class="page-link" href="/service/">Service</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/integration/">Software Integration</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS473-Fall2022/project/">Reengineering Project - linkedin/kafka</a>
+          
+        
+          
+          <a class="page-link" href="/students/">Students</a>
+          
+        
+          
+          <a class="page-link" href="/evol/students/">Students</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/study_material/">Study Material</a>
+          
+        
+          
+          <a class="page-link" href="/evol/talks/">Talks</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/dynamic_analysis/">CS472 - Dynamic Analysis</a>
+          
+        
+          
+          <a class="page-link" href="/teaching/CS472/Timetable/">Timetable</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/old_readme">Steve’s No-Good-Very-Bad Jekyll Theme</a>
+          
+        
+          
+        
+          
+         -->
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">CS472 - CI - Using GitHub Actions - Setting up workflow</h1>
+  </header>
+
+  <article class="post-content">
+    <div class="main-component">
+<form action="/teaching/CS472/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Course Overview" />
+</form>
+
+<form action="/teaching/CS472/Timetable/">
+    <input type="submit" style="background-color:firebrick;color:white;width:185px;
+height:40px;" value="Timetable" />
+</form>
+<form action="/teaching/CS472/Exam/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Exam" />
+</form>
+<form action="/teaching/CS472/project/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Project" />
+</form>
+</div>
+<p><br /></p>
+
+<h1 id="labs">Labs</h1>
+<div class="main-component">
+<form action="/teaching/CS472/Timetable/Git_and_GitHub/">
+    <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
+height:30px;" value="Git &amp; GitHub" />
+</form>
+<form action="/teaching/CS472/Timetable/dynamic_analysis/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="Testing" />
+</form>
+<form action="/teaching/CS472/Timetable/CI/">
+    <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
+height:30px;" value="CI" />
+</form>
+<form action="/teaching/CS472/Timetable/GPT/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="CHAT GPT" />
+</form>
+</div>
+
+<p><br />
+<br /></p>
+
+<h3 id="this-individual-assignment-is-due-10032023"><strong>This individual assignment is due 10/03/2023</strong></h3>
+
+<p>In this lab, you will kick off from where you stopped in the <a href="../dynamic_analysis">Testing lab</a>
+and build a GitHub Action Continuous Integration pipeline.
+This pipeline will run automatically when you push/commit your code to the GitHub 
+repository based on the events described in the workflow.</p>
+
+<p>You will push changes to your cloned repo at the end of this lab. This requires you 
+to authenticate with GitHub using a <code class="language-plaintext highlighter-rouge">personal access token</code> (ref. <a href="../Git_and_GitHub/">Git &amp; GitHub lab</a>).</p>
+
+<h2 id="task-1-5-points">Task 1: (5 points)</h2>
+<ol>
+  <li>In this lab, we will only focus on the TDD. You will use the code you cloned and updated (<a href="https://github.com/johnxu21/tdd">Python Testing lab</a>)</li>
+  <li>On the root directory of your repo, create the directory structure <code class="language-plaintext highlighter-rouge">.github/workflows/</code> and create a file called <code class="language-plaintext highlighter-rouge">workflow.yml</code>. You can use the two commands below.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p .github/workflows
+touch .github/workflows/workflow.yml
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Create a Workflow</strong>: Every workflow starts with a name. The name will be displayed on the Actions page 
+and on any badges. Give your workflow the name <code class="language-plaintext highlighter-rouge">CI workflow</code> by adding a <code class="language-plaintext highlighter-rouge">name:</code> 
+tag as the first line in the file.</li>
+  <li><strong>Add Event Triggers</strong>: Event triggers define which events can cause the workflow to 
+run. You will use the <code class="language-plaintext highlighter-rouge">on:</code> tag to add the following events: 1) Run the workflow on 
+every push to the main branch and 2) Run the workflow whenever a pull request is created to the main branch.
+    <ul>
+      <li>Add the <code class="language-plaintext highlighter-rouge">on:</code> keyword to the workflow at the same level of indentation as the <code class="language-plaintext highlighter-rouge">name:</code></li>
+      <li>Add a <code class="language-plaintext highlighter-rouge">push:</code> event as the first event that can trigger the workflow. 
+ This is added as the child element of <code class="language-plaintext highlighter-rouge">on:</code> so it must be indented under it.</li>
+      <li>Add the <code class="language-plaintext highlighter-rouge">"main"</code> branch to the push event. You want the workflow to start every 
+ time somebody pushes to the main branch. This also includes merge events. You do 
+ this by using the branches: keyword followed by a list of branches either as
+ <code class="language-plaintext highlighter-rouge">[]</code> or <code class="language-plaintext highlighter-rouge">-</code></li>
+      <li>Add a <code class="language-plaintext highlighter-rouge">pull_request:</code> event similar to the push event you just finished. It should be 
+ triggered whenever the user makes a pull request on the main branch.</li>
+    </ul>
+  </li>
+  <li><strong>Add a Job</strong>: You will now add a job called build to the workflow file. This job will 
+run on the <code class="language-plaintext highlighter-rouge">ubuntu-latest</code> runner. Remember, a job is a collection of steps that are run on 
+the events you added in the previous step.
+    <ul>
+      <li>Add the <code class="language-plaintext highlighter-rouge">jobs:</code> section to the workflow at the same level of indentation as the
+<code class="language-plaintext highlighter-rouge">name</code> (i.e., no indent).</li>
+      <li>Next, you need to name the job. Name your job <code class="language-plaintext highlighter-rouge">build:</code> by adding a new line under the
+ <code class="language-plaintext highlighter-rouge">jobs:</code> section.</li>
+      <li>Finally, you need a runner. Tell GitHub Actions to use the <code class="language-plaintext highlighter-rouge">ubuntu-latest</code> runner for 
+ this job. You can do this by using the <code class="language-plaintext highlighter-rouge">runs-on:</code> keyword.</li>
+    </ul>
+  </li>
+  <li><strong>Target Python 3.9</strong>: It is important to consistently use the same version of 
+dependencies and operating system for all phases of development including the CI 
+pipeline. This project was developed on Python 3.9, so you need to ensure that the 
+CI pipeline also runs on the same version of Python. You will accomplish this by 
+running your workflow in a container inside the GitHub action.
+    <ul>
+      <li>Add a <code class="language-plaintext highlighter-rouge">container:</code> section under the runs-on: section of the build job, and 
+ tell GitHub Actions to use <code class="language-plaintext highlighter-rouge">python:3.9-slim</code> as the image.</li>
+    </ul>
+  </li>
+  <li>Save and commit your changes to your repository.</li>
+</ol>
+
+<p>When you click on <code class="language-plaintext highlighter-rouge">Actions</code> tab in your repository, you should be able to see screen like the one below.</p>
+
+<p><img src="/teaching/CS472/Timetable/CI/task1.jpeg" alt="WorkflowWithNoSteps" style="width:612px;height:114px;" align="center" /></p>
+
+<h2 id="task-2-5-points">Task 2 (5 points)</h2>
+<p>In this task, you will continue building the Continuous Integration pipeline by setting up the 
+steps under job in your workflow. As a result, your application shall be automatically built 
+and tested when you commit your code to the GitHub repository.</p>
+<ol>
+  <li>Add the <code class="language-plaintext highlighter-rouge">steps:</code> section under <code class="language-plaintext highlighter-rouge">build</code> job in the workflow file.</li>
+  <li>Add the checkout step as the first step. Give it the <code class="language-plaintext highlighter-rouge">name:</code> <code class="language-plaintext highlighter-rouge">Checkout</code> and call the 
+action <code class="language-plaintext highlighter-rouge">actions/checkout@v3</code> by using the <code class="language-plaintext highlighter-rouge">uses:</code> keyword.</li>
+  <li>
+    <p><strong>Install Dependencies</strong>: Now that you have checked out the code, the next step is to install 
+the dependencies. This application uses pip, the Python package manager, to install all the 
+dependencies from the PyPI package. The <code class="language-plaintext highlighter-rouge">pip</code> command refers to the <code class="language-plaintext highlighter-rouge">requirements.txt</code> file for the 
+list of dependencies. The <code class="language-plaintext highlighter-rouge">python:3.9-slim</code> container you are using already has the pip package 
+manager installed. The commands that you will use in this step are:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python -m pip install --upgrade pip
+ pip install -r requirements.txt
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     * Add a new named step after the checkout step. Name this step ```Install dependencies```.
+     * Next, you want to run the commands to update the package manager ```pip``` and then install the  dependencies. Since there are two commands, you can run these inline using the ```run:```  keyword with the pipe ```|``` operator.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Lint with flake8</strong>: It is always a good idea to add quality checks to your CI pipeline. 
+This is especially true if you are working on an open source project with many contributors. 
+This makes sure that everyone who contributes is following the same style guidelines.
+<br /><br />
+ The next step is to use <code class="language-plaintext highlighter-rouge">flake8</code> to lint the source code. Linting is checking your code for 
+syntactical and stylistic issues. Some examples are line spacing, using spaces or tabs for 
+indentation, locating uninitialized or undefined variables, and missing parentheses. The <code class="language-plaintext highlighter-rouge">flake8</code> 
+library was installed as a dependency in the <code class="language-plaintext highlighter-rouge">requirements.txt</code> file.
+<br /><br />
+The flake8 commands take a few parameters. Now, take a look at the command and the parameters:</p>
+
+    <pre><code class="language-angular2html"> flake8 service --count --select=E9,F63,F7,F82 --show-source --statistics
+</code></pre>
+    <p>This command will run <code class="language-plaintext highlighter-rouge">flake8</code> for the service folder of your repository. By adding the following 
+ options, you customize the linting process:</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">--count</code> : shows the count of all warnings and errors in the result of the command</li>
+      <li><code class="language-plaintext highlighter-rouge">--select=E9,F63,F7,F82</code> : limits the checks to syntax errors</li>
+      <li><code class="language-plaintext highlighter-rouge">--show-source</code> : adds the actual line number where the error/warning is found</li>
+      <li><code class="language-plaintext highlighter-rouge">--statistics</code> : shows the count of each type of error and warning in the result
+        <pre><code class="language-angular2html">flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
+</code></pre>
+        <p>Unlike the first command that checks for syntax errors only, the second command will run all 
+ the available checks on the service folder of your repository.
+      * Add a new named step after the <code class="language-plaintext highlighter-rouge">Install dependencies</code> step. Call this step <code class="language-plaintext highlighter-rouge">Lint with flake8</code>.
+      * Next, you want to run the <code class="language-plaintext highlighter-rouge">flake8</code> commands to lint your code. The commands are explained in 
+ detail above</p>
+        <pre><code class="language-angular2html"> flake8 service --count --select=E9,F63,F7,F82 --show-source --statistics
+ flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
+</code></pre>
+        <p>You can run inline commands using the <code class="language-plaintext highlighter-rouge">run:</code> keyword with the pipe <code class="language-plaintext highlighter-rouge">|</code> operator.
+      * <strong>In the file <code class="language-plaintext highlighter-rouge">requirements.txt</code> the dependency for <code class="language-plaintext highlighter-rouge">flake8</code> is missing. Include <code class="language-plaintext highlighter-rouge">flake8</code>, otherwise CI build will not succeed.</strong></p>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Test Code Coverage with nosetests</strong>: You will use nose in this step to unit test the source code. 
+Nose is configured via the included setup.cfg file to automatically include the flags <code class="language-plaintext highlighter-rouge">-–with-spec</code> 
+and <code class="language-plaintext highlighter-rouge">–-spec-color</code> so that red-green-refactor is meaningful. If you are in a command shell that 
+supports colors, passing tests will be <span style="color:green"><strong>green</strong></span> and failing tests will be <span style="color:red"><strong>red</strong></span>.
+<br /><br />
+Nose is also configured to automatically run the coverage tool, and you should see a percentage 
+of coverage report at the end of your tests.
+    <ul>
+      <li>Add a new named step after the <code class="language-plaintext highlighter-rouge">Lint with flake8</code> step. Call this step <code class="language-plaintext highlighter-rouge">Run unit tests with nose</code>.</li>
+      <li>Next, you want to run the <code class="language-plaintext highlighter-rouge">nosetests</code> command to test your code and report on code coverage.
+        <pre><code class="language-angular2html"> nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
+</code></pre>
+        <p>Since you are running a single command, you do not have to use the pipe <code class="language-plaintext highlighter-rouge">|</code> operator with <code class="language-plaintext highlighter-rouge">run</code>.</p>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Push Code to GitHub</strong>.</li>
+</ol>
+
+<p>When you click on <code class="language-plaintext highlighter-rouge">Actions</code> tab in your repository, and then click on the latest workflow run (in green). 
+You should be able to see screen like the one below.</p>
+
+<p><img src="/teaching/CS472/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:172px;" align="center" /></p>
+
+<p><img src="/teaching/CS472/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center" /></p>
+
+<p>If the CI build did not succeed, you can click and see where a problem could have occurred, then fix it locally and push again.</p>
+
+<p>Clicking on <code class="language-plaintext highlighter-rouge">Run unit tests with nose</code>, you should be able to see the screen below.</p>
+
+<p>Fig 4: CI builds
+<img src="/teaching/CS472/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center" /></p>
+
+<ul>
+  <li>From the image above, we can see that there are three <code class="language-plaintext highlighter-rouge">Test Cases</code> for the <code class="language-plaintext highlighter-rouge">counter.py</code> file. These are the
+<code class="language-plaintext highlighter-rouge">Test Cases</code> you were required to write in the <a href="../dynamic_analysis">Testing lab</a>. In this lab, 
+you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that
+the fourth <code class="language-plaintext highlighter-rouge">Test Cases</code> turns <span style="color:green"><strong>GREEN</strong></span> in your CI builds.</li>
+</ul>
+
+<p><strong>You will write a test case to delete a counter. (10 points)</strong></p>
+
+<p>Per REST API guidelines, a read uses a <code class="language-plaintext highlighter-rouge">DELETE</code> request and returns a
+<code class="language-plaintext highlighter-rouge">204_NO_CONTENT</code> code if successful. Create a function that deletes the 
+counter that matches the specified name.</p>
+
+<p>Like in the <a href="../dynamic_analysis">Testing Lab</a>, detail the phases (red/green/refactor) you followed to implement the 
+requirements. Include in your report the code snippets you wrote at every step as well as the 
+exceptions you encountered while running nosetests. <strong>Make your report self-contained so that it is 
+easy to follow without running your code</strong>.</p>
+
+<p><strong>Remember to commit your code</strong>.</p>
+
+<h1 id="submitting-the-assignment">Submitting the Assignment</h1>
+<ul>
+  <li>Write a report for all the tasks. Include a link to your GitHub repository at the start of the report.</li>
+  <li>Make sure that your repository is public so that we are able to access repository.</li>
+  <li>To show that you were able to complete the tasks. Include screenshots for each task in your report. 
+The screenshots should include the address bar of the browser so that we are able to see repo name.</li>
+  <li>Submit your report on <strong>Canvas</strong></li>
+</ul>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">John Businge</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+            <a target="_blank" href="https://github.com/johnxu21"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a>
+ |
+            <a target="_blank" href="https://www.linkedin.com/in/johnxu211"><span class="icon icon--linkedin"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></span></a> 
+			<!--|<a target="_blank" href="https://facebook.com/"><span class="icon icon--envelope"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1579 128q35 0 60 25t25 60v1366q0 35-25 60t-60 25h-391v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-735q-35 0-60-25t-25-60v-1366q0-35 25-60t60-25h1366z"/></svg></span></a>
+ |
+            <a target="_blank" href="https://twitter.com/"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span></a>
+-->
+          <!-- <li>John Businge</li> -->
+          <!-- <li><b><em>Template by: </em></b><a href="http://svmiller.com/" target="_blank">Steven V. Miller</a></li> -->
+          <!-- <li><b><em>Last modified: </em></b></li> -->
+          <!-- <li><a href="mailto:john.businge@unlv.edu">john.businge@unlv.edu</a></li> -->
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+ <!--            <a target="_blank" href="https://github.com/johnxu21"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a>
+ |
+            <a target="_blank" href="https://www.linkedin.com/in/johnxu211"><span class="icon icon--linkedin"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></span></a> |
+            <a target="_blank" href="https://facebook.com/"><span class="icon icon--envelope"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1579 128q35 0 60 25t25 60v1366q0 35-25 60t-60 25h-391v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-735q-35 0-60-25t-25-60v-1366q0-35 25-60t60-25h1366z"/></svg></span></a>
+ |
+            <a target="_blank" href="https://twitter.com/"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span></a>
+ -->
+
+<!--           
+          <li>
+            <a target="_blank" href="https://github.com/johnxu21"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/johnxu211"><span class="icon icon--linkedin"><svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></span></a>
+          </li>
+          
+
+          
+
+           -->
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+      <small>
+        <b>Last Updated:</b> Jan 12, 2024
+      </small>
+        <!-- <p><b><em>Address: </em></b>Room E32, Engineering 2 <br /></p>
+        <a href="http://www.ucsc.edu/" target="_blank"><img src="/images/ucsc.png" alt="University of California, Santa Cruz" style="width:204px;height:64px;"></a> -->
+
+        <!-- Department of Computer Science </br> -->
+        <!-- University of California, Santa Cruz</br> -->
+        <!--  -->
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>
