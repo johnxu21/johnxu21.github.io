@@ -103,7 +103,7 @@ Our use case is `Swarmion`: A set of tools to build and deploy type-safe microse
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:800px;" align="center"></p>
 
-As you can observe, the `CONTRIBUTION.md` file was updated by simply copying the documentation 
+As you can observe, the ```CONTRIBUTION.md``` file was updated by simply copying the documentation 
 written by ChatGPT.
 
 ## Use case 2 - Example 3: Code Generation and Programming Assistance Task
