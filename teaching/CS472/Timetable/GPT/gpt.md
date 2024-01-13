@@ -75,10 +75,10 @@ engineering:
 8. Task Automation
 9. Bug Reporting and Issue Tracking:
 
-In the next three sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate 2 uses how developers incorporate code from ChatGPT:
+In the next three sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate two uses how developers incorporate code from ChatGPT:
 
- - **Use case 1:** Developers incorporate the entire code snippet suggested by ChatGPT into the pull request. This is shown in `Example 1` and `Example 2`
- - **Use case 2:** Developers pick part of the code snippet suggested by ChatGPT and modifies it to fit their requirement, as illustrated in `Example 3`
+ - **Use case 1:** Developers incorporate the entire code snippet suggested by ChatGPT into the pull request. This is shown in **Example 1** and **Example 2**.
+ - **Use case 2:** Developers pick part of the code snippet suggested by ChatGPT and modifies it to fit their requirement, as illustrated in **Example 3**.
 
 ## Use case 1 - Example 1: Code Generation and Programming Assistance Task
 In this example, a developer is using ChatGPT to improve code readability and observe the `DRY` 
