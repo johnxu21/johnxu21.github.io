@@ -62,18 +62,27 @@ receives.
 ## How is ChatGPT being used in Software Engineering?
 ChatGPT is being used in various ways in the field of software engineering. Its natural language 
 understanding and generation capabilities make it a valuable tool for developers, both for 
-individual tasks and collaborative projects. Here are some ways ChatGPT is applied in software 
-engineering:
+individual tasks and collaborative projects. ChatGPT has be used to address different tasks in the six phases of SDLC.
+Details of the definition of the tasks and how LLMs have been used to address the tasks
+can be found in **Section 6** of the paper Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
 
-1. Code Generation and Completion
-2. Programming Assistance
-3. Learning and Education
-4. Documentation and Technical Writing
-5. Code Reviews
-6. Prototyping and Idea Exploration
-7. Natural Language Interfaces
-8. Task Automation
-9. Bug Reporting and Issue Tracking:
+1. Requirements engineering tasks e.g.,
+  * Anaphoric ambiguity treatment
+  * Requirements classification
+2. Software design tasks, e.g.,
+  * GUI retrieval
+  * Rapid prototyping
+3. Software development
+  * Code generation
+  * Code search
+4. Software quality assurance
+  * Test generation
+  * Failure-inducing test Identification
+5. Software maintenance
+   * Code review
+   * Duplicate bug report detection
+6. Software management
+  * Effort estimation
 
 In the next three sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate two uses how developers incorporate code from ChatGPT:
 
@@ -81,8 +90,8 @@ In the next three sections, we provide **concrete examples on how developers are
  - **Use case 2:** Developers pick part of the code snippet suggested by ChatGPT and modifies it to fit their requirement, as illustrated in **Example 3**.
 
 ## Use case 1 - Example 1: Code Generation and Programming Assistance Task
-In this example, a developer is using ChatGPT to improve code readability and observe the `DRY` 
-software engineering principle. Here is the link to both the PR and ChatGPT conversation.
+In this example, a developer is using ChatGPT in Software maintenance to address the task of **code duplication** in the code. 
+Here is the link to both the PR and ChatGPT conversation.
 
 - PR: [https://github.com/nbd-wtf/nostr-tools/pull/241](https://github.com/nbd-wtf/nostr-tools/pull/241)
 - ChatGPT Link: [https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398](https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398)
