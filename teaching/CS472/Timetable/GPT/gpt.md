@@ -72,16 +72,16 @@ can be found in **Section 6** of the paper Hou at al. [LLMs for SE: A SLR](https
 2. Software design tasks, e.g.,
   * GUI retrieval
   * Rapid prototyping
-3. Software development
+3. Software development and implementation tasks, e.g.,
   * Code generation
   * Code search
-4. Software quality assurance
+4. Software quality assurance tasks, e.g.,
   * Test generation
   * Failure-inducing test Identification
-5. Software maintenance
+5. Software maintenance tasks, e.g.,
    * Code review
    * Duplicate bug report detection
-6. Software management
+6. Software management tasks, e.g.,
   * Effort estimation
 
 In the next three sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate two uses how developers incorporate code from ChatGPT:
@@ -89,7 +89,7 @@ In the next three sections, we provide **concrete examples on how developers are
  - **Use case 1:** Developers incorporate the entire code snippet suggested by ChatGPT into the pull request. This is shown in **Example 1** and **Example 2**.
  - **Use case 2:** Developers pick part of the code snippet suggested by ChatGPT and modifies it to fit their requirement, as illustrated in **Example 3**.
 
-## Use case 1 - Example 1: Code Generation and Programming Assistance Task
+## Use case 1 - Example 1: Duplicate code detection and resolution
 In this example, a developer is using ChatGPT in Software maintenance to address the task of **code duplication** in the code. 
 Here is the link to both the PR and ChatGPT conversation.
 
@@ -108,12 +108,14 @@ on the keys and values of the interface. My code is blow. Is it possible to do w
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="ShareChatGPTConversations" style="max-width:1000px;max-width:1000px;" align="center"></p>
 
-## Use case 1 - Example 2: Documentation and Technical Writing
-This example demonstrates how developers are using ChatGPT to speed up software documentation tasks.
+## Use case 1 - Example 2: Software Configuration Management
+This example demonstrates how a developer is using ChatGPT in **Software implementation**  to address the task of **configuration management**
+
 Our use case is `Swarmion`: A set of tools to build and deploy type-safe microservices. 
 
 - PR: [https://github.com/swarmion/swarmion/pull/678](https://github.com/swarmion/swarmion/pull/678)
 - ChatGPT Link: [https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0)
+
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:800px;" align="center"></p>
 
