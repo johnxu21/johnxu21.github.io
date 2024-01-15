@@ -107,6 +107,7 @@ on the keys and values of the interface. My code is blow. Is it possible to do w
 ```
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-1.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
 
+GitHub [file diff](https://github.com/nbd-wtf/nostr-tools/pull/241/files#diff-98476df5961449c9b87e4a05e4cf190b90d14815cb1b23f1e2d5398467287b61)
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="ShareChatGPTConversations" style="max-width:1000px;max-width:1000px;" align="center"></p>
 
 ## Use case 1 - Example 2: Software Development and Implementation
@@ -121,7 +122,7 @@ Our use case is `Swarmion`: A set of tools to build and deploy type-safe microse
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;border:'1px solid black;" align="center"></p>
 <br />
 
-As you can observe, the ```CONTRIBUTION.md``` file was updated by simply copying the documentation written by ChatGPT. This documentation is intended to ease the process of on-boarding new contributors to the project
+As you can observe, the [CONTRIBUTION.md](https://github.com/swarmion/swarmion/pull/678/files#diff-eca12c0a30e25b4b46522ebf89465a03ba72a03f540796c979137931d8f92055) file was updated by simply copying the documentation written by ChatGPT. This documentation is intended to ease the process of on-boarding new contributors to the project
 <p style="text-align:center">
 <img src="/teaching/CS472/Timetable/GPT/example-2-2.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;" align="center">
 </p>
