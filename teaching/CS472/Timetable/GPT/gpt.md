@@ -113,8 +113,6 @@ GitHub [file diff](https://github.com/nbd-wtf/nostr-tools/pull/241/files#diff-98
 ## Use case 1 - Example 2: Software Development and Implementation
 This example demonstrates how a developer is using ChatGPT in **Software development and implementation**  to address the task of **code documentation**
 
-Our use case is `Swarmion`: A set of tools to build and deploy type-safe microservices. 
-
 - PR: [https://github.com/swarmion/swarmion/pull/678](https://github.com/swarmion/swarmion/pull/678)
 - ChatGPT Link: [https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0)
 

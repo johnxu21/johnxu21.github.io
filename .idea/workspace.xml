@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/GPT/gpt.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/GPT/gpt.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,7 @@
       <workItem from="1702502594678" duration="587000" />
       <workItem from="1704570946446" duration="6515000" />
       <workItem from="1705077088627" duration="19763000" />
-      <workItem from="1705341404617" duration="1970000" />
+      <workItem from="1705341404617" duration="2692000" />
     </task>
     <servers />
   </component>
