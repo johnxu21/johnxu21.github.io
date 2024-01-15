@@ -65,23 +65,24 @@ All the labs have been tested on macOS environment (Unix flavour). If you are us
 
 The first exercise lab sessions is meant to practice working with Git and GitHub.
 The next lab session is meant to practice writing unit tests and test driven development to increase test coverage.
-The last lab session aimed at introducing you to CI/CD. 
-After a few weeks, the lab sessions switch to independent work, i.e. the labs are organized as sessions 
-in the computer rooms where you can work on your project freely, and where an assistant is 
+The third lab session aimed at introducing you to CI/CD. 
+The last lab session aimed introducing to you how Large Language Models (LLMs) are being used to solve in Software Engineering tasks. 
+After a few weeks, the lab sessions switch to independent work, i.e. the labs are organized as sessions where you can work on your project freely, and where an assistant is 
 present to answer any questions. During those hours, the computer room are reserved for you, 
 so that you can certainly work. Since most of the students have personal laptops, they may choose not to
 visit the lab. The previous class did not visit the computer lab.
-
-
 
 * The rest of the semester you work freely on your project. You can come to campus for this, the 
 computer room is available for you during the scheduled hours of the class. 
 However, it is also perfectly possible to work on the project from home. If you have any questions 
 or problems, you can contact me or the assistant on the [Discord workspace](https://discord.gg/CQUCUFTcDY)
 
-
 Below is the detailed time-schedule, which is subject to change. Changes will be notified over 
 e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY). 
+
+## Key
+[L] Lab
+[T] Teaching
 
 <table style="border-collapse:collapse;">
 <tr >
@@ -103,39 +104,39 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">02</td>
 <td style="border: 1px solid black;">Tu 01/23</td>
-<td style="border: 1px solid black;"> Public Holiday - No Class </td>
+<td style="border: 1px solid black;">[T] More Git & GitHub</td>
 <td style="border: 1px solid black;">Th 01/25 </td>
-<td style="border: 1px solid black;">Senior Design Competition talk by Molly Marks >> [T] More Git & GitHub</td>
+<td style="border: 1px solid black;">[L] Git and GitHub </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
 <td style="border: 1px solid black;">Tu 01/30 </td>
-<td style="border: 1px solid black;"> [L] Git and GitHub</td>
-<td style="border: 1px solid black;">Th 02/01 </td>
 <td style="border: 1px solid black;">[T] Software Testing </td>
+<td style="border: 1px solid black;">Th 02/01 </td>
+<td style="border: 1px solid black;">[L] Software Testing </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Tu 02/06</td>
-<td style="border: 1px solid black;">[L] Software Testing </td>
+<td style="border: 1px solid black;">[T] Application of LLMs in SE</td>
 <td style="border: 1px solid black;">Th 02/08 </td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[L] Application of LLMs in SE</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Tu 02/13</td>
-<td style="border: 1px solid black;">[T] More OO Design & Architecture </td>
-<td style="border: 1px solid black;">Th 02/15 </td>
 <td style="border: 1px solid black;">[T] Survey results presentation </td>
+<td style="border: 1px solid black;">Th 02/15 </td>
+<td style="border: 1px solid black;">L] Free Project Work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/20</td>
-<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Th 02/22 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
@@ -143,7 +144,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">07</td>
 <td style="border: 1px solid black;">Tu 02/27</td>
-<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
 <td style="border: 1px solid black;">Th 02/29 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>

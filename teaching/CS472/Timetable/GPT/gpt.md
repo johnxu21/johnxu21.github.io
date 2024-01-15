@@ -48,6 +48,8 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
+### **This individual assignment is due Feb 18th, 2024**
+
 In this lab, you will learn how to leverage ChatGPT for software development tasks. You will also 
 learn various ways of sharing you conversation to support collaborative software engineering.
 
