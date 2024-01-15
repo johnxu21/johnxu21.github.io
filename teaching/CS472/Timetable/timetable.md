@@ -128,15 +128,15 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Tu 02/13</td>
-<td style="border: 1px solid black;">[T] Survey results presentation </td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Th 02/15 </td>
-<td style="border: 1px solid black;">L] Free Project Work</td>
+<td style="border: 1px solid black;">[T] Survey results presentation </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/20</td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 <td style="border: 1px solid black;">Th 02/22 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
@@ -200,25 +200,25 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">14</td>
 <td style="border: 1px solid black;">Tu 04/16</td>
-<td style="border: 1px solid black;">Trial Presentation</td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
 <td style="border: 1px solid black;">Th 04/18 </td>
-<td style="border: 1px solid black;">Trial Presentation</td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">15</td>
 <td style="border: 1px solid black;">Tu 04/23</td>
-<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;">Trial Presentation</td>
 <td style="border: 1px solid black;">Th 04/25 </td>
-<td style="border: 1px solid black;"><b>Project Presentation</b></td>
+<td style="border: 1px solid black;">Trial Presentation</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">16</td>
 <td style="border: 1px solid black;">Tu 04/30</td>
-<td style="border: 1px solid black;"><b></b></td>
+<td style="border: 1px solid black;"><b>Project Presentation</b></td>
 <td style="border: 1px solid black;">Th 05/02 </td>
-<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"><b>Project Presentation</b></td>
 </tr>
 
 <tr>
