@@ -165,9 +165,9 @@ on June 5, 2023, the developer seeks to understand how to present code in a more
 ChatGPT responds by stating that the developer's code is correct and idiomatic.
 Furthermore, ChatGPT also suggests the developer use a **helper function** to improve code readability.
 
-Looking the [PR link](https://github.com/dust-tt/dust/pull/508) we can also observe that on the same day June 5, 2023,
-the developer asked aa colleague a similar question that was posted on ChatGPT (see the figure below). 
-It is possible that developer first seeked help from the colleague and since the colleague did not provide
+Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe that on the same day, June 5, 2023,
+the developer asked a colleague a similar question posted on ChatGPT (see the figure below). 
+It is possible that the developer first sought help from the colleague, and since the colleague did not provide
 a quick response, the developer submitted the same question to ChatGPT.
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center"></p>
