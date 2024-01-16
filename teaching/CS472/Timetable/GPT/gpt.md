@@ -90,7 +90,7 @@ can be found in **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](http
 In the next three sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate two uses how developers incorporate code from ChatGPT:
 
  - **Use case 1:** Developers incorporate the entire code snippet suggested by ChatGPT into the pull request. This is shown in **Example 1** and **Example 2**.
- - **Use case 2:** Developers pick part of the code snippet suggested by ChatGPT and modifies it to fit their requirement, as illustrated in **Example 3**.
+ - **Use case 2:** Developers does not adapt the code suggested by ChatGPT but uses the knowledge gained to address two other software engineering tasks. Presented in **Example 3**.
 
 ## Use case 1 - Example 1: Duplicate code detection and resolution
 In this example, a developer uses ChatGPT in **Software maintenance** to address the task of **code duplication** in the code. 
