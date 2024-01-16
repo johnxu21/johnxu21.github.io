@@ -148,9 +148,85 @@ To follow this example, see the details of PR and ChatGPT conversation links bel
 
 - PR: [https://github.com/dust-tt/dust/pull/508](https://github.com/dust-tt/dust/pull/508)
 - ChatGPT Link: [https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee)
+  
+The developer provided this **prompt**:
+```angular2html
+I have the following code:
+```
+```typescript
+export function getProviderLogoPathForDataSource(
+  ds: DataSourceType
+): string | null {
+  const provider = ds.connectorProvider;
 
-<!-- <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-3.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
+  if (!provider) {
+    return null;
+  }
 
+  switch (provider) {
+    case "notion":
+      return `/static/notion_32x32.png`;
+
+    case "slack":
+      return `/static/slack_32x32.png`;
+
+    case "github":
+      return `/static/github_black_32x32.png`;
+
+    default:
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      ((_provider: never) => {
+        // cannot happen
+        // this is to make sure we handle all cases
+      })(provider);
+      return null;
+  }
+}
+```
+```angular2html
+I use this `never` case to make sure all enum values are handled. Is there a more idiomatic way to do this ?
+```
+ChatGPT confirmed that is the code is generally correct and "idomatic". It also provided additionally information for the developer to further refine the code for better readability. This is observed in Line `20-21` and `25-27` of the code below.
+
+**ChatGPT Response:**
+```angular2html
+The way you are handling this is generally correct and idiomatic. The `never` type is used to ensure that all cases are handled and that new cases aren't forgotten. The technique is called Exhaustiveness checking in TypeScript. However, instead of using an inline arrow function, you could use a helper function to assert exhaustiveness. This would improve readability and remove the necessity for eslint disabling:
+```
+
+{% highlight typescript linenos %}
+export function getProviderLogoPathForDataSource(
+  ds: DataSourceType
+): string | null {
+  const provider = ds.connectorProvider;
+
+  if (!provider) {
+    return null;
+  }
+
+  switch (provider) {
+    case "notion":
+      return `/static/notion_32x32.png`;
+
+    case "slack":
+      return `/static/slack_32x32.png`;
+
+    case "github":
+      return `/static/github_black_32x32.png`;
+
+    default:
+      return assertNever(provider);
+  }
+}
+
+function assertNever(value: never): never {
+    throw new Error(`Unexpected value '${value}'`);
+}
+{% endhighlight %}
+
+The developer did not adopt the code suggested by ChatGPT but was re-asured that the code works well. The developer then shared this conversation as a review comment to aid the PR review process.
+
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center"></p>
+<!-- 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-4.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p> -->
 
 Task 1 - Example of Code Generation and Optimization using ChatGPT
