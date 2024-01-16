@@ -23,6 +23,9 @@ height:40px;" value="Project" />
 
 <br/>
 
+Labs
+=======
+
 <div class="main-component">
 <form action="/teaching/CS472/Timetable/Git_and_GitHub/">
     <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
