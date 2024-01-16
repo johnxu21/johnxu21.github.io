@@ -49,7 +49,7 @@ height:30px;" value="CHAT GPT" />
 <br/>
 <br/>
 
-### **This individual assignment is due 10/03/2023**
+### **This individual assignment is due Feb 11th, 2024**
 
 In this lab, you will kick off from where you stopped in the [Testing lab](../dynamic_analysis)
 and build a GitHub Action Continuous Integration pipeline.

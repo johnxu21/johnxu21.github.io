@@ -86,13 +86,15 @@ Please pay attention to the following instructions. The group leader **should se
   * The full name of the members in your group.
   * Attach the **pre-conditions report** (PDF format) in your message.
 
-* Your Pre-conditions Report should contain the following: **Due date: 09/22/2023**
+* Your Pre-conditions Report should contain the following: **Due date: Feb 11th, 2024**
   * Project Name
   * Full names of all the members in your group
   * A **detailed project description**
-  * A link to the groups GitHub repository
-  * Whether the team will participate in the **Senior Design Competition**
-    * If your team is not planning to participate, kindly a few sentences giving the reason.
+  * A name or acronym of your teams GitHub project (**No spaces in the name/acronym**)
+
+[//]: # (  * Whether the team will participate in the **Senior Design Competition**)
+
+[//]: # (    * If your team is not planning to participate, kindly a few sentences giving the reason.)
 
 Instructions to the UML Diagrams
 =========
