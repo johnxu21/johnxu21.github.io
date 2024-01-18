@@ -52,7 +52,7 @@ Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Class overview [PDF](ClassOverview.pdf) [last updated 01/16/2024]
-2. Introduction to Git and GitHub [Google_Slides](https://docs.google.com/presentation/d/1YG1uXfERIPtHF9STDQQMoxvluU3X8QRO/edit#slide=id.p3) [last updated 02/2023]
+2. Introduction to Git and GitHub [Google_Slides](https://docs.google.com/presentation/d/1YG1uXfERIPtHF9STDQQMoxvluU3X8QRO/edit#slide=id.p3) [last updated 01/19/2023]
 3. Software Testing [PPTX](Testing-2033-fall.pptx) [last updated 09/15/2023]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/15/2023]
 5. Survey Results [PDF](Survey_Presentation.pdf)
