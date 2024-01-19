@@ -133,6 +133,7 @@ activities over time for the repository scottyab/rootbeer.
 <img src="/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
 ### Part 3. Executive Summary (5 pts)
+**This section also contains the individual part of the assignment**
 
 Pretend you are a project manager writing a status report on the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) project 
 to your boss as if it was a company-owned project.  The report should take the 
