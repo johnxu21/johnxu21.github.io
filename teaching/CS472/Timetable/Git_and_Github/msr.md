@@ -86,13 +86,16 @@ git push
 * one of the repository maintainers should integrate your contribution.
 
 
-### Part 2. Add a new file to the repository (20 pts)
+### Part 2. Add a new file to the repository (20 pts) 
+**This part of the assignment mainly contains the individual part of the assignment. 
+You are supposed to modify ```CollectFiles.py``` file so that you can extract information from the repository.
+As soon as the team project is created, you will work on the team part of the assignment.**
 
 * create a folder on your local fork repository called ```repo_mining```
 * create and checkout a new branch on your local fork repository using the following command ```git checkout -b mine_repository```
 * clone my repo [johnxu21/msrLab](https://github.com/johnxu21/msrLab) in a separate local repository
 * browse the ```src``` folder and copy the file ```CollectFiles.py``` into the ```repo_mining``` folder on your forks' local repository
-* Rename the file ```CollectFiles.py``` to ```<your-names>_CollectFiles.py```.
+* Rename the file ```CollectFiles.py``` to ```<your-names>_CollectFiles.py```. 
 * generate a [GitHub token](https://github.com/settings/tokens/new?scopes=repo) that you will use to mine content using the GitHub API
 * Replace the fake ```tokens``` in the code of ```<your-names>_CollectFiles.py``` with the token you have just generated.
 * Thereafter, run the file ```<your-names>_CollectFiles.py``` and look at the output. 
