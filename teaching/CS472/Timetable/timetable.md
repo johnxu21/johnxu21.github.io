@@ -52,7 +52,7 @@ Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Class overview [PDF](ClassOverview.pdf) [last updated 01/16/2024]
-2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/19/2024]
+2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/23/2024]
 3. Software Testing [PPTX](Testing-2033-fall.pptx) [last updated 09/15/2023]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/15/2023]
 5. Survey Results [PDF](Survey_Presentation.pdf)
@@ -84,8 +84,8 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY). 
 
 ## Key
-[L] Lab
-[T] Teaching
+* [L] Lab - You do not have to come to class. You can do the labs from anywhere.
+* [T] Teaching - Face-to-Face Classes
 
 <table style="border-collapse:collapse;">
 <tr >
