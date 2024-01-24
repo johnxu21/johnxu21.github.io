@@ -38,6 +38,10 @@ height:30px;" value="FAQ" />
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Presentations" />
 </form>
+<form action="/teaching/CS472/project/Competition/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="SD Competition" />
+</form>
 </div>
 
 <br/>
@@ -67,26 +71,4 @@ Frequently Asked Questions
   * No. The theory lessons are only during the first four weeks.
   * What if a group mate gives up?
   * Contact us as soon as possible. (By the way, this applies to all problems you might have with your group mates) Then we look for an individual solution.
-
-
-[//]: # (### About the Specification 1.0 &#40;Traffic Simulation&#41;)
-
-[//]: # (* What unit is the traffic light "cycle" and the vehicle generator "frequency"?)
-
-[//]: # (  * These are expressed in seconds. Note that each simulated second consists of several simulation steps. The simulation time &#40;time in seconds that elapses during 1 simulation step&#41; is equal to 0.0166. You can also find these in the table on the last page of the assignment.)
-
-[//]: # (* Will we still get XML files to test our project?)
-
-[//]: # (  * No, you will have to create XML files yourself to test your project.)
-
-[//]: # (* How should we simulate the traffic simulator automatically? Will this run indefinitely?)
-
-[//]: # (  * If you do not generate any trams, the simulation may stop when all vehicles have left the track. Otherwise, you are allowed to implement a maximum simulation time / maximum number of iterations.)
-
-[//]: # (* Is it true that trams never come to a complete stop? Is it true that trams that are behind another tram always slow down a little bit?)
-
-[//]: # (  * This is right! If this causes problems during testing, or with your contracts, you may round the acceleration, speed, and position to 3 decimal places. )
-
-[//]: # ()
-[//]: # (### About the Specification 2.0)
 

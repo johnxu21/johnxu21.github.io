@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Comptetion-Spring-2024.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Comptetion-Spring-2024_Page_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Comptetion-Spring-2024_Page_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/Git-and-GitHub.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Git-and-GitHub.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/FAQ/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/FAQ/faq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Group/groups.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Group/groups.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Presentations/presentations.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Presentations/presentations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/nfr/nfr.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Competition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/project.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/project.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +111,7 @@
       <workItem from="1705077088627" duration="19763000" />
       <workItem from="1705341404617" duration="2692000" />
       <workItem from="1705345358485" duration="27855000" />
-      <workItem from="1705965225815" duration="1603000" />
+      <workItem from="1705965225815" duration="4230000" />
     </task>
     <servers />
   </component>

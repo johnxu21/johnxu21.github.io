@@ -39,6 +39,11 @@ height:30px;" value="FAQ" />
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Presentations" />
 </form>
+
+<form action="/teaching/CS472/project/Competition/">
+    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+height:30px;" value="SD Competition" />
+</form>
 </div>
 
 <br/>
@@ -46,8 +51,8 @@ height:30px;" value="Presentations" />
 
 Groups
 =======
-There are 24 students who enrolled for this class. We will have 4 groups comprising 
-6 students each (One group - 6 + 1). 
+There are 82 students who enrolled for this class. We will have 8 groups comprising 
+10 students each (2 group2 - 10 + 1). 
 You can voluntarily choose your group mates. During the first lab on
 [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/), we will collect all the names of individuals 
 who have not yet found a group and then allocate you one of the already existing group. 
