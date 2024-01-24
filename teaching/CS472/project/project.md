@@ -78,29 +78,13 @@ Evaluation criteria 472 [[Google Doc](https://docs.google.com/document/d/1AhUVxW
 Deliverables
 ========
 The following documents will guide you produce the deliverables of the project:
+* Precondition report ([Doc](https://docs.google.com/document/d/1tLiXVKfddl_lBFB0id7Wr_jb-19wDip664vMxTusj34/edit))
 * Design Portfolio I ([Doc](https://docs.google.com/document/d/1y9Fl1yHl8S3Uh3TzEdQYhd7bQUkYVwZTEcB4H43SlvE/edit#))
 * Design Portfolio II ([Doc](https://docs.google.com/document/d/1mUBX7hakgAdiBDJv9HPzD9436Ezvr2nPeZkdk9psGa8/edit#))
 * Design Portfolio III ([Doc](https://docs.google.com/document/d/13xShWs_zi9bBmfkToTYu4v68KwVXHZOjAdw7-obOIgg/edit))
 * Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit))
 
-Getting Started Instructions
-=======
-Please pay attention to the following instructions. The group leader **should send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with**:
-* Subject "SDD - Project - ```<Group Identifier>```". 
-* Message Body:
-  * The full name of the members in your group.
-  * Attach the **pre-conditions report** (PDF format) in your message.
-
-* Your Pre-conditions Report should contain the following: **Due date: Feb 11th, 2024**
-  * Project Name
-  * Full names of all the members in your group
-  * A **detailed project description**
-  * A name or acronym of your teams GitHub project (**No spaces in the name/acronym**)
-
-[//]: # (  * Whether the team will participate in the **Senior Design Competition**)
-
-[//]: # (    * If your team is not planning to participate, kindly a few sentences giving the reason.)
-
+  
 Instructions to the UML Diagrams
 =========
 You will use simple **use case diagrams**, **class diagram** and **sequence diagrams** or any other UML diagrams you find suitable.
