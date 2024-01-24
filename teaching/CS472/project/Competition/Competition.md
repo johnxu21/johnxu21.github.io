@@ -56,5 +56,5 @@ The form for the data link can be found here
 [Data link](https://forms.gle/Pu7kET7hbZpcc8US9) 
 <br>
 
-<p style="text-align:center"><img src="/teaching/CS472/project/Competition/Comptetion-Spring-2024_Page_1.jpg" alt="CompetitionFlyer" style="max-width:1000px;max-height:1000px;border:'1px solid black;" align="center"></p>
-<p style="text-align:center"><img src="/teaching/CS472/project/Competition/Comptetion-Spring-2024_Page_1.jpg" alt="CompetitionFlyer" style="max-width:1000px;max-height:1000px;border:'1px solid black;" align="center"></p>
+<p style="text-align:center"><img src="/teaching/CS472/project/Competition/Competetion-Spring-2024_Page_1.jpg" alt="CompetitionFlyer" style="max-width:1000px;max-height:1000px;border:'1px solid black;" align="center"></p>
+<p style="text-align:center"><img src="/teaching/CS472/project/Competition/Competetion-Spring-2024_Page_2.jpg" alt="CompetitionFlyer" style="max-width:1000px;max-height:1000px;border:'1px solid black;" align="center"></p>
