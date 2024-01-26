@@ -132,6 +132,8 @@ activities over time for the repository scottyab/rootbeer.
 
 <img src="/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
+**0 weeks-means the file was touched in the early days of the project lifetime and 250 weeks means the file was touched in the 250th week of the project lifetime.**
+
 ### Part 3. Executive Summary (5 pts)
 **This section also contains the individual part of the assignment**
 
