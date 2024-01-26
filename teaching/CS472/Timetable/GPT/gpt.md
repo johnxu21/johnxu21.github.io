@@ -50,15 +50,14 @@ height:30px;" value="ChatGPT" />
 
 ### **This individual assignment is due Feb 18th, 2024**
 
-In this lab, you will learn how to leverage ChatGPT for software development tasks. You will also 
-learn various ways of sharing you conversation to support collaborative software engineering.
+In this lab, you will learn how to leverage ChatGPT to address the different software development tasks. You will also 
+learn various ways of sharing your conversation to support collaborative software engineering.
 
 Overview
 =======
 ChatGPT is a language model developed by OpenAI. It is part of the GPT (Generative Pre-trained 
 Transformer) family of models, specifically GPT-3.5-turbo. GPT-3.5-turbo is a highly advanced 
-language model that is designed to understand and generate human-like text based on the input it 
-receives.
+language model designed to understand and generate human-like text based on its input.
 
 
 ## How is ChatGPT being used in Software Engineering?
@@ -66,7 +65,7 @@ ChatGPT is being used in various ways in the field of software engineering. Its 
 understanding and generation capabilities make it a valuable tool for developers, both for 
 individual tasks and collaborative projects. ChatGPT has be used to address different tasks in the six phases of SDLC.
 Details of the definition of the tasks and how LLMs have been used to address the tasks
-can be found in **Section 6** of the paper Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
+can be found in **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
 
 1. Requirements engineering tasks e.g.,
   * Anaphoric ambiguity treatment
@@ -92,11 +91,11 @@ can be found in **Section 6** of the paper Hou at al. [LLMs for SE: A SLR](https
 In the next three sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate two uses how developers incorporate code from ChatGPT:
 
  - **Use case 1:** Developers incorporate the entire code snippet suggested by ChatGPT into the pull request. This is shown in **Example 1** and **Example 2**.
- - **Use case 2:** Developers incorporate the **part of** the code snippet suggested by ChatGPT into the pull request. This is shown in **Example 3**.
- - **Use case 3:** Developers pick part of the code snippet suggested by ChatGPT and modifies it to fit their requirement, as illustrated in **Example 4**.
+ - **Use case 2:** Developers incorporate the **portion** the code snippet suggested by ChatGPT into the pull request. This is shown in **Example 3**.
+ - **Use case 3:** Developers does not adapt the code suggested by ChatGPT but uses the knowledge gained to address two other software engineering tasks. Presented in **Example 4**.
 
 ## Use case 1 - Example 1: Duplicate code detection and resolution
-In this example, a developer uses ChatGPT in Software maintenance to address the task of **code duplication** in the code. 
+In this example, a developer uses ChatGPT in **Software maintenance** to address the task of **code duplication** in the code. 
 Here is the link to both the PR and ChatGPT conversation.
 
 - PR: [https://github.com/nbd-wtf/nostr-tools/pull/241](https://github.com/nbd-wtf/nostr-tools/pull/241)
@@ -116,9 +115,13 @@ GitHub [file diff](https://github.com/nbd-wtf/nostr-tools/pull/241/files#diff-98
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="ShareChatGPTConversations" style="max-width:1000px;max-width:1000px;" align="center"></p>
 
 ## Use case 1 - Example 2: Code documentation
-This example demonstrates how a developer is using ChatGPT address the task of **code documentation**. Software documentation encompasses various types of documents that serve different purposes throughout the software development life cycle. Here are some common types of software documentation: `Requirements Documentation`, `Design Documentation`, `Technical Documentation` and `User (Guide) Documentation`.
+This example demonstrates how a developer is using ChatGPT address the task of **code documentation**. 
+Software documentation encompasses various types of documents that serve different purposes throughout 
+the software development life cycle. Here are some common types of software documentation: `Requirements Documentation`, `Design Documentation`, `Technical Documentation` and `User (Guide) Documentation`.
 
-**Code documentation** is part of `Technical Documentation`: The primary goal of code documentation is to facilitate comprehension of the codebase by both the original authors and other developers who may work on or maintain the code in the future. 
+**Code documentation** is part of `Technical Documentation`: The primary goal of code documentation is to facilitate 
+comprehension of the codebase by both the original authors and other developers who may work on or 
+maintain the code in the future. 
 
 In this example, the developer used ChatGPT with the following prompt:
 
@@ -168,97 +171,38 @@ The link to the Git Diff file and conversation with ChatGPT is provided below:
 - ChatGPT Link: [https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728](https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728)
 
 ## Use case 3 - Example 4: Code understanding
- In this example, we illustrate another scenario where the developer uses ChatGPT for code "quality assurance" or validation. We refer to these tasks as **code understanding**. It is defined as the process of deeply comprehending and analyzing source code. It involves gaining insights into the logic, structure, functionality, and dependencies of the code, as well as understanding the programming languages, frameworks, and libraries used.
+In this example, the developer does not integrate the code suggested by ChatGPT, but 
+uses ChatGPT for **Software development** and **Software maintenance** 
+for the tasks  **code understanding** and **code reviewing**, respectively. 
 
-To follow this example, see the details of PR and ChatGPT conversation links below:
+In the study of Hou et al. [article](https://arxiv.org/pdf/2308.10620.pdf), **code understanding** 
+is defined as the process of deeply comprehending and analyzing source code. It involves gaining 
+insights into the logic, structure, functionality, and dependencies of the code, as well as 
+understanding the programming languages, frameworks, and libraries used.
+
+The details of PR and ChatGPT conversation links are below:
 
 - PR: [https://github.com/dust-tt/dust/pull/508](https://github.com/dust-tt/dust/pull/508)
 - ChatGPT Link: [https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee)
   
-The developer provided this **prompt**:
-```angular2html
-I have the following code:
-```
-```typescript
-export function getProviderLogoPathForDataSource(
-  ds: DataSourceType
-): string | null {
-  const provider = ds.connectorProvider;
+As can be seen from the [ChatGPT link](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee), 
+on June 5, 2023, the developer seeks to understand how to present code in a more idiomatic way. 
+ChatGPT responds by stating that the developer's code is correct and idiomatic.
+Furthermore, ChatGPT also suggests the developer use a **helper function** to improve code readability.
 
-  if (!provider) {
-    return null;
-  }
-
-  switch (provider) {
-    case "notion":
-      return `/static/notion_32x32.png`;
-
-    case "slack":
-      return `/static/slack_32x32.png`;
-
-    case "github":
-      return `/static/github_black_32x32.png`;
-
-    default:
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      ((_provider: never) => {
-        // cannot happen
-        // this is to make sure we handle all cases
-      })(provider);
-      return null;
-  }
-}
-```
-```angular2html
-I use this `never` case to make sure all enum values are handled.
-Is there a more idiomatic way to do this ?
-```
-ChatGPT confirmed that is the code is generally correct and "idomatic". It also provided additionally information for the developer to further refine the code for better readability. This is observed in Line `20-21` and `25-27` of the code below.
-
-**ChatGPT Response:**
-```angular2html
-The way you are handling this is generally correct and idiomatic. 
-The `never` type is used to ensure that all cases are handled and that new cases aren't forgotten. 
-The technique is called Exhaustiveness checking in TypeScript. 
-However, instead of using an inline arrow function, you could use a helper function to assert exhaustiveness.
-This would improve readability and remove the necessity for eslint disabling:
-```
-
-{% highlight typescript linenos %}
-export function getProviderLogoPathForDataSource(
-  ds: DataSourceType
-): string | null {
-  const provider = ds.connectorProvider;
-
-  if (!provider) {
-    return null;
-  }
-
-  switch (provider) {
-    case "notion":
-      return `/static/notion_32x32.png`;
-
-    case "slack":
-      return `/static/slack_32x32.png`;
-
-    case "github":
-      return `/static/github_black_32x32.png`;
-
-    default:
-      return assertNever(provider);
-  }
-}
-
-function assertNever(value: never): never {
-    throw new Error(`Unexpected value '${value}'`);
-}
-{% endhighlight %}
-
-The developer did not adopt the code suggested by ChatGPT but was re-asured that the code works well. The developer then shared this conversation as a review comment to aid the PR review process.
+Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe that on the same day, June 5, 2023,
+the developer asked a colleague a similar question posted on ChatGPT (see the figure below). 
+It is possible that the developer first sought help from the colleague, and since the colleague did not provide
+a quick response, the developer submitted the same question to ChatGPT.
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center"></p>
-<!-- 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-4.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p> -->
+
+On critical analysis of the conversation between the developer and ChatGPT, we observe that the code suggested by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
+We therefore categorize the software engineering task that the developer wanted to address is
+**code understanding**. We also categorize the task as **code review** since the developer 
+shared the details of the conversation with the colleagues to aid the 
+PR review process. 
+
 
 Task 1 - Example of Code Generation and Optimization using ChatGPT
 =======

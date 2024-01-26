@@ -23,6 +23,9 @@ height:40px;" value="Project" />
 
 <br/>
 
+Labs
+=======
+
 <div class="main-component">
 <form action="/teaching/CS472/Timetable/Git_and_GitHub/">
     <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
@@ -48,8 +51,8 @@ height:30px;" value="ChatGPT" />
 Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
-1. Class overview [PDF](ClassOverview.pdf)
-2. Introduction to Git and GitHub [Google_Slides](https://docs.google.com/presentation/d/1YG1uXfERIPtHF9STDQQMoxvluU3X8QRO/edit#slide=id.p3) [last updated 02/2023]
+1. Class overview [PDF](ClassOverview.pdf) [last updated 01/16/2024]
+2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/23/2024]
 3. Software Testing [PPTX](Testing-2033-fall.pptx) [last updated 09/15/2023]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/15/2023]
 5. Survey Results [PDF](Survey_Presentation.pdf)
@@ -81,8 +84,8 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY). 
 
 ## Key
-[L] Lab
-[T] Teaching
+* [L] Lab - You do not have to come to class. You can do the labs from anywhere.
+* [T] Teaching - Face-to-Face Classes
 
 <table style="border-collapse:collapse;">
 <tr >
