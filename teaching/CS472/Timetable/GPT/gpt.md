@@ -95,7 +95,7 @@ In the next three sections, we provide **concrete examples on how developers are
  - **Use case 3:** Developers does not adapt the code suggested by ChatGPT but uses the knowledge gained to address two other software engineering tasks. Presented in **Example 4**.
 
 ## Use case 1 - Example 1: Duplicate code detection and resolution
-In this example, a developer uses ChatGPT in the `Software Engineering` activity of **Software maintenance** to address the task of **code duplication** in the code. 
+In this example, a developer uses ChatGPT in the `Software Engineering` activity of `Software maintenance` to address the task of **code duplication** in the code. 
 Here is the link to both the PR and ChatGPT conversation.
 
 
