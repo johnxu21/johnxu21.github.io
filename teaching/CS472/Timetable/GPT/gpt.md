@@ -95,7 +95,7 @@ In the next three sections, we provide **concrete examples on how developers are
  - **Use case 3:** Developers does not adapt the code suggested by ChatGPT but uses the knowledge gained to address two other software engineering tasks. Presented in **Example 4**.
 
 ## Use case 1 - Example 1: Duplicate code detection and resolution
-In this example, a developer uses ChatGPT in the `Software Engineering` activity of `Software maintenance` to address the task of **code duplication** in the code. 
+In this example, a developer uses ChatGPT in the `Software Engineering` activity of `Software maintenance` to address the task of `code duplication` in the code. 
 Here is the link to both the PR and ChatGPT conversation.
 
 
@@ -103,7 +103,7 @@ Here is the link to both the PR and ChatGPT conversation.
 - ChatGPT Link: [https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398](https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398)
 
 After reviewing the ChatGPT link and the associated GitHub pull request, it appears that the 
-developer is addressing `code duplication`. The ChatGPT prompts indicate a concern about code 
+developer is addressing the Software Engineering task of `code duplication`. The ChatGPT prompts indicate a concern about code 
 repetition and a desire to refactor or improve the existing code.
 
 The GitHub pull request link shows changes made to the codebase, particularly in the `nostr-tools` project. 
@@ -133,7 +133,6 @@ and serve diverse purposes, for example:
 * *Technical Documentation*: Provides in-depth technical details about code, APIs, algorithms, and data structures.
 * *Testing and QA Documentation*: Describes test plans, cases, and quality assurance processes.
 * *Deployment Documentation*: Guides administrators on deploying and configuring software in a production environment.
-
 
 In this example, the developer used ChatGPT with the following [prompt](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0),
 and appears to seek assistance in creating user-friendly and concise documentation for the `release.sh` script. 
@@ -199,9 +198,9 @@ The link to the Git Diff file and conversation with ChatGPT is provided below:
 ## Use case 3 - Example 4: Code understanding and Code review
 In this example, the developer does not integrate the code suggested by ChatGPT, but 
 uses ChatGPT for the `Software Engineering` activities of **Software development** and **Software maintenance** 
-for the tasks  **code understanding** and **code reviewing**, respectively. 
+for the tasks  `code understanding` and `code reviewing`, respectively. 
 
-In the study of Hou et al. [article](https://arxiv.org/pdf/2308.10620.pdf), **code understanding** 
+In the study of Hou et al. [article](https://arxiv.org/pdf/2308.10620.pdf), `code understanding` 
 is defined as the process of deeply comprehending and analyzing source code. It involves gaining 
 insights into the logic, structure, functionality, and dependencies of the code, as well as 
 understanding the programming languages, frameworks, and libraries used.
@@ -219,17 +218,15 @@ task where the developer is trying to comprehend and potentially enhance a speci
 Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe an interaction in the pull request 
 involves communication with another contributor, *lasryaric*, where the developer *fontanierh* shares 
 their approach and seeks input on potential improvements. This collaborative exchange and the discussion of 
-alternative approaches align with the process of **code review**, where developers assess each other's code for 
+alternative approaches align with the process of `code review`, where developers assess each other's code for 
 correctness, clarity, and best practices. Therefore, the developer appears to be concurrently engaged in both 
-**code understanding** and **code review** tasks.
+`code understanding` and `code review` tasks.
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center"></p>
 
-On critical analysis of the conversation between the developer and ChatGPT, we observe that the code suggested by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
-We therefore categorize the software engineering task that the developer wanted to address is
-**code understanding**. We also categorize the task as **code review** since the developer 
-shared the details of the conversation with the colleagues to aid the 
-PR review process. 
+On critical analysis of the conversation between the developer and ChatGPT, we observe that the code suggested
+by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
+
 
 
 Task 1 - Example of Code Generation and Optimization using ChatGPT
