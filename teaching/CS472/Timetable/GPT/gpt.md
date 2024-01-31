@@ -207,14 +207,16 @@ The details of PR and ChatGPT conversation links are below:
 - ChatGPT Link: [https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee)
   
 As can be seen from the [ChatGPT link](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee), 
-on June 5, 2023, the developer seeks to understand how to present code in a more idiomatic way. 
-ChatGPT responds by stating that the developer's code is correct and idiomatic.
-Furthermore, ChatGPT also suggests the developer use a **helper function** to improve code readability.
+the developer seeking guidance on a specific code pattern (using a `never` case in a switch statement) and questioning 
+whether there might be a more idiomatic or improved way to handle the situation. This suggests a code understanding 
+task where the developer is trying to comprehend and potentially enhance a specific piece of code.
 
-Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe that on the same day, June 5, 2023,
-the developer asked a colleague a similar question posted on ChatGPT (see the figure below). 
-It is possible that the developer first sought help from the colleague, and since the colleague did not provide
-a quick response, the developer submitted the same question to ChatGPT.
+Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe an interaction in the pull request 
+involves communication with another contributor, **lasryaric**, where the developer **fontanierh** shares 
+their approach and seeks input on potential improvements. This collaborative exchange and the discussion of 
+alternative approaches align with the process of **code review**, where developers assess each other's code for 
+correctness, clarity, and best practices. Therefore, the developer appears to be concurrently engaged in both 
+**code understanding** and **code review** tasks.
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center"></p>
 
