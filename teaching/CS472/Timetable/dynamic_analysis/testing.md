@@ -313,7 +313,7 @@ test cases for the code you wish you had and then write the code to make the tes
 In this Task, you will write test cases based on the requirements given to you, and then you 
 will write the code to make the test cases pass.
 
-1. You will clone and use the repo ([Python Testing lab](https://github.com/johnxu21/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
+1. Clone and use the repo ([Python Testing lab](https://github.com/johnxu21/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
       * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
       *  ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
@@ -463,5 +463,10 @@ Submitting the Assignment
 * one of the repository maintainers should integrate your contribution into the main branch.
 * **for Tasks 4 & 5, only the report is required.**
 * You should also submit your report on **Canvas**
+
+This lab aims to evaluate your proficiency in both GitHub usage and software testing. Tasks 2 and 3 will assess both skills, while Tasks 4 and 5 will focus solely on evaluating your software testing abilities.
+
+Importantly, for Tasks 4 and 5, there's no requirement to commit your code to the team repository. The evaluation will be based on your software testing proficiency in the report submitted rather than GitHub usage. However, when submitting your report on Canvas, ensure it includes documentation for all tasks.
+
 
 
