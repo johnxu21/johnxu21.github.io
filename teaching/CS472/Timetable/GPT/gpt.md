@@ -245,6 +245,8 @@ Example 2
 Example 3
 =====
 
+## Tasks
+
 Task 1 - Example of Code Generation and Optimization using ChatGPT
 =======
 To begin using ChatGPT (if you haven't already), simply go to [https://chat.openai.com/](https://chat.openai.com/) and create a free account. For this class, the free ChatGPT 3.5 is sufficient.
