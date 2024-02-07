@@ -54,7 +54,7 @@ The theory consists of four lessons where we explain the techniques to be used.:
 1. Class overview [PDF](ClassOverview.pdf) [last updated 01/16/2024]
 2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/23/2024]
 3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 01/30/2024]
-4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/15/2023]
+4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 02/06/2024]
 5. Survey Results [PDF](Survey_Presentation.pdf)
 6. Object-oriented design 
   * Slides [PDF](OOD-V2.pptx)
