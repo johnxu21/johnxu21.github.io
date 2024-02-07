@@ -227,23 +227,6 @@ correctness, clarity, and best practices. Therefore, the developer appears to be
 On critical analysis of the conversation between the developer and ChatGPT, we observe that the code suggested
 by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
 
-## Prompt Patterns
-Prompt patterns refer to specific structures or formats used in input queries or prompts for language models, particularly when interacting with natural language processing models like ChatGPT. These patterns are designed to elicit desired responses or behaviors from the model.
-
-In software engineering, when employing a language model like ChatGPT for code generation, a prompt pattern might entail structuring the input query in a manner that explicitly outlines the desired functionality, input parameters, or coding style. 
-By incorporating specific cues within the prompt pattern, developers can guide the model to produce code snippets aligned with their preferences or project requirements. These prompt patterns can impact not only the accuracy and relevance of the generated code but also influence factors like coding style, variable naming conventions, or error handling. 
-Software engineers often iterate through different prompt patterns to fine-tune the model's responses, ensuring that the generated code meets their specific criteria and adheres to the established coding practices.
-
-Below we provide some concrete examples on how prompt patters have been used by software developers on ChatGPT.
-
-Example 1
-======
-
-Example 2
-=====
-
-Example 3
-=====
 
 ## Tasks
 
