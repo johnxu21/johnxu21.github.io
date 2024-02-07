@@ -50,20 +50,21 @@ height:30px;" value="ChatGPT" />
 
 ### **This individual assignment is due Feb 18th, 2024**
 
-In this lab, you will learn how to leverage ChatGPT to address the different software development tasks. You will also 
-learn various ways of sharing your conversation to support collaborative software engineering.
+In this lab, you will learn how to leverage ChatGPT, a powerful language model developed by OpenAI, 
+to address various software engineering tasks. ChatGPT, part of the GPT (Generative Pre-trained Transformer) 
+family of models, is capable of understanding and generating human-like text based on its input. 
+Throughout this lab, you will explore different ways developers incorporate ChatGPT into their workflow and 
+complete tasks in software engineering.
 
-Overview
+
+Overview of ChatGPT in Software Engineering
 =======
-ChatGPT is a language model developed by OpenAI. It is part of the GPT (Generative Pre-trained 
-Transformer) family of models, specifically GPT-3.5-turbo. GPT-3.5-turbo is a highly advanced 
-language model designed to understand and generate human-like text based on its input.
+ChatGPT is being used extensively in software engineering due to its natural language understanding and 
+generation capabilities. Developers utilize ChatGPT for a wide range of tasks across the software development 
+life cycle (SDLC), including requirements engineering, software design, development and implementation, 
+quality assurance, maintenance, and management. Some common tasks include code generation, code search, 
+test generation, code review, and more.
 
-
-## How is ChatGPT being used in Software Engineering?
-ChatGPT is being used in various ways in the field of software engineering. Its natural language 
-understanding and generation capabilities make it a valuable tool for developers, both for 
-individual tasks and collaborative projects. ChatGPT has be used to address different tasks in the six phases of SDLC.
 Details of the definition of the tasks and how LLMs have been used to address the tasks
 can be found in **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
 
@@ -88,7 +89,7 @@ can be found in **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](http
 6. Software management tasks, e.g.,
   * Effort estimation
 
-In the next three sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate two uses how developers incorporate code from ChatGPT:
+In the next four sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate two uses how developers incorporate code from ChatGPT:
 
  - **Use case 1:** Developers incorporate the entire code snippet suggested by ChatGPT into the pull request. This is shown in **Example 1** and **Example 2**.
  - **Use case 2:** Developers incorporate the **portion** the code snippet suggested by ChatGPT into the pull request. This is shown in **Example 3**.
@@ -227,79 +228,18 @@ correctness, clarity, and best practices. Therefore, the developer appears to be
 On critical analysis of the conversation between the developer and ChatGPT, we observe that the code suggested
 by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
 
+## How to share
 
-## Tasks
-
-Task 1 - Example of Code Generation and Optimization using ChatGPT
-=======
 To begin using ChatGPT (if you haven't already), simply go to [https://chat.openai.com/](https://chat.openai.com/) and create a free account. For this class, the free ChatGPT 3.5 is sufficient.
 
 To effectively use ChatGPT, you should provide it a good "prompt". The concept of ``Prompt Engineering`` is detailed in this research paper: [A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT](https://arxiv.org/abs/2302.11382).
-1. Let us use ChatGPT to generate the code for this LeetCode problem  ```Two Sum```: [https://leetcode.com/problems/two-sum/description/](https://leetcode.com/problems/two-sum/description/)
-   * **Simple prompt:** Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`
-  
-   ```python
-    def two_sum(nums, target):
-        # Create a dictionary to store the indices of elements
-        num_indices = {}
 
-        # Iterate through the array
-        for i, num in enumerate(nums):
-            # Calculate the complement needed to reach the target
-            complement = target - num
 
-            # Check if the complement is in the dictionary
-            if complement in num_indices:
-                # If found, return the indices of the two numbers
-                return [num_indices[complement], i]
-
-            # Otherwise, store the current element's index in the dictionary
-            num_indices[num] = i
-
-        # If no solution is found, return an empty list or raise an exception
-        # (depending on the problem requirements)
-        return []
-   ```
-
-   * Let us give ChatGPT more information:
-    -  **Prompt:** Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
-  
-    ```python
-    def two_sum(nums, target):
-        # Create a dictionary to store the indices of elements
-        num_indices = {}
-
-        # Iterate through the array
-        for i, num in enumerate(nums):
-            # Calculate the complement needed to reach the target
-            complement = target - num
-
-            # Check if the complement is in the dictionary
-            if complement in num_indices:
-                # If found, return the indices of the two numbers
-                return [num_indices[complement], i]
-
-            # Otherwise, store the current element's index in the dictionary
-            num_indices[num] = i
-
-        # No need to handle the case when no solution is found, as the problem
-        # states that there is exactly one solution.
-
-    ```
-
-  You can continue refining the prompt in order to get a more precise and optimized solution. See the full conversation here: [https://chat.openai.com/share/5ed4faed-52c3-45dd-9c6a-1363b3f0dd91](https://chat.openai.com/share/5ed4faed-52c3-45dd-9c6a-1363b3f0dd91)
-
-1. In this second part of task 1, try to use ChatGPT any task of your choice. Observe how designing and refining prompts can help you achieve your goal.
-   - Are you able to get your solution?
-   - How long did you take to get your answer?
-   - What prompting pattern (s) did you adopt? 
-
-Task 2: Sharing Your ChatGPT Conversations on GitHub
+Sharing Your ChatGPT Conversations on GitHub
 ====
-In this task shows you how to share you ChatGPT conversations with fellow developers. 
 Sharing ChatGPT conversations with other developers can be beneficial for several reasons:
 
-- Collaborative Problem Solving
+- Collaborative problem-solving
 - Learning and Knowledge Sharing
 - Code Review and Improvement
 - Getting Diverse Perspectives
@@ -309,7 +249,7 @@ Sharing ChatGPT conversations with other developers can be beneficial for severa
 - Ethical Considerations
 - Innovation and Exploration
 
-1. Once you are ready to share your converstions, following the screenshots below to generate and copy a 
+1. Once you are ready to share your conversations, following the screenshots below to generate and copy a 
 URL/Link. **Note: Don't worry, your personal profile will NOT be visible after the conversation link is generated, 
 it will be automatically changed to ```Anonymous```**.
 
@@ -328,3 +268,153 @@ the link in the `PR` description or `PR` review comment. See the below:
     
     <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share-review-2.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:600px;" class="center"></p>
 
+# Lab Tasks:
+
+## Task 1: Familiarizing with ChatGPT
+1. Read the provided overview of ChatGPT in software engineering.
+2. Explore the provided use cases and review the associated PRs and ChatGPT conversations.
+3. Identify the different ways developers incorporate ChatGPT into their workflow.
+4. Understand the tasks addressed in each use case and the outcomes achieved.
+
+## Task 2: Hands-on with ChatGPT
+In all these tasks, you will continue working on the **team repo** where you submitted your previous lab tasks.
+
+In the tasks below you will be adding files to your team repository according the provided instructions.
+
+* **Note 1: To keep your team repository code organised, teams should discuss the appropriate folder names for each of the tasks below.**
+The folder names should be clearly described in the report for ease of grading. Remember to also put your name identifiers to avoid cases where a teammate selected the same name
+**For example**: In Task 2.1 below you could choose to name your file `yournames_<whatever code snippet name you want>`.
+* Note 2: Since you already know the steps involved in opening a pull request on a team repository, in the tasks below I will not labor explaining the steps. You should figure out yourself.
+
+Task 2.1: Code Refactoring
+====
+Objective:
+
+Refactor a code snippet using ChatGPT to improve code quality and readability.
+
+**Instructions**:
+1. **Choose a Code Snippet**: Select a code snippet in any programming language of your choice, may be from your own projects, an open-source repository, or Stackoverflow, that exhibits duplication issues or could benefit from refactoring. 
+2. **Open a pull request**: Open a pull request on the team repository with the code snippet you have identified and give it a good description.
+3. **Task ChatGPT**: Engage with ChatGPT to seek advice on how to refactor the chosen code snippet. Provide ChatGPT with a brief description of the code's purpose and the specific areas you believe require improvement.
+4. **Implement Refactorings**: Based on the suggestions provided by ChatGPT, implement the necessary refactorings to improve the quality and readability of the code. Ensure that the functionality of the code remains intact after refactoring.
+5. **Open another pull request**: Create another pull request to showcase the refactorings made to the code. Include a summary of the changes made and any insights gained from the ChatGPT conversation. Also include the ChatGPT link of your conversations.
+
+Example:
+
+```python
+# Original Code Snippet
+def calculate_circle_area(radius):
+    area = 3.14 * radius * radius
+    return area
+
+def calculate_rectangle_area(length, width):
+    area = length * width
+    return area
+
+def calculate_triangle_area(base, height):
+    area = 0.5 * base * height
+    return area
+
+# Refactored Code Snippet
+import math
+
+def calculate_circle_area(radius):
+    return math.pi * radius ** 2
+
+def calculate_rectangle_area(length, width):
+    return length * width
+
+def calculate_triangle_area(base, height):
+    return 0.5 * base * height
+```
+
+Notes:
+* In this example, the original code snippet contains duplication in the calculation of areas for different shapes (circle, rectangle, triangle).
+* ChatGPT could provide suggestions on using built-in functions or libraries to simplify the calculations and eliminate redundancy.
+* The refactored code snippet improves readability by using the `math` module for accurate calculations and removing unnecessary variables.
+* Ensure to document the changes made and the rationale behind each refactoring in the GitHub pull request description.
+
+Task 2.2: Documentation Assistance
+====
+
+Objective:
+
+Create user-friendly and concise documentation for our code snippet from Task 2.1 using insights from ChatGPT.
+
+**Instructions**:
+1. **Select a Code Snippet**: Select a code snippet in any programming language of your choice from your projects an open-source repository, or Stackoverflow that requires documentation. The code snippet should perform a specific function or task.
+2. **Open a pull request**: Open a pull request on the team repository with the code snippet you have identified and give it a good description.
+3. **Engage with ChatGPT**: Interact with ChatGPT to generate documentation for the selected code snippet. Provide ChatGPT with a brief description of the script's purpose and functionality, along with any specific formatting or content requirements.
+4. **Document Generation**: Use the insights and suggestions provided by ChatGPT to create user-friendly documentation for the code snippet. Include details such as code snippet description, usage instructions, input/output format, and any relevant examples.
+5. **Open another pull request**: Create another pull request to showcase the added generated documentation to the project repository. Include a summary of the changes made and any insights gained from the ChatGPT conversation. Also include the ChatGPT link of your conversations.
+
+Example:
+
+```python
+# Original Script: release.py
+
+def release_version(version_number):
+    """
+    Release a new version of the software.
+    
+    Args:
+        version_number (str): The version number to release.
+    
+    Returns:
+        bool: True if the release was successful, False otherwise.
+    """
+    # Implementation details...
+    pass
+
+# Example Usage:
+# success = release_version("1.0.0")
+# print("Release successful:", success)
+```
+Notes:
+* In this example, the original Python script `release.py` lacks comprehensive documentation.
+* ChatGPT could provide suggestions on how to improve the documentation by adding a detailed description, usage instructions, and examples.
+* The generated documentation should enhance the usability and understanding of the script for other developers.
+* Ensure to follow best practices for documentation formatting and readability, such as using clear and concise language, providing relevant examples, and organizing content logically.
+
+Task 2.3: Understanding Complex Code
+====
+
+**Objective**:
+
+Gain insights and understanding of complex code segments using ChatGPT to facilitate code comprehension and improvement.
+
+**Instructions**:
+1. **Select a Code Segment**: Select a complex code segment in any programming language of your choice from your projects an open-source repository, or Stackoverflow that requires better understanding or optimization. The code segment should be non-trivial and may involve intricate logic or algorithms.
+2. **Open a pull request**: Open a pull request on the team repository with the code segment you have identified and give it a good description.
+3. **Engage with ChatGPT**: Interact with ChatGPT to seek insights and recommendations for understanding or improving the selected code segment. Provide ChatGPT with a brief description of the code segment's purpose, any specific challenges or areas of confusion, and the desired outcome (e.g., optimization, clarity).
+4. **Insights and Recommendations**: Utilize the insights and recommendations provided by ChatGPT to gain a deeper understanding of the code segment. Consider alternative approaches, optimizations, or simplifications suggested by ChatGPT to enhance the code's readability, performance, or maintainability.
+5. **Code Enhancement**: Implement any recommended changes or improvements based on the insights gained from ChatGPT. Refactor the code segment to incorporate the suggested optimizations, clarify complex logic, or address identified issues.
+6. **GitHub Pull Request**: Create a hypothetical GitHub pull request to apply the enhancements or improvements to the project repository. Include a summary of the changes made, the insights gained from the ChatGPT conversation, and the rationale behind the modifications.
+
+Example:
+```python
+# Original Code Segment: complex_algorithm.py
+
+def complex_algorithm(input_data):
+    """
+    Perform a complex algorithmic operation on the input data.
+    
+    Args:
+        input_data (list): A list of input data points.
+    
+    Returns:
+        list: A list of processed output data points.
+    """
+    # Complex algorithm implementation...
+    pass
+
+# Example Usage:
+# result = complex_algorithm(input_data)
+# print("Result:", result)
+```
+
+Notes:
+* In this example, the original code segment `complex_algorithm.py` represents a non-trivial algorithm that may be difficult to understand or optimize.
+* ChatGPT could provide insights on potential optimizations, alternative algorithms, or simplifications to enhance the code's readability or performance.
+* The enhanced code segment should address any identified issues, improve clarity, and potentially optimize the algorithm's efficiency.
+* Ensure to thoroughly review and test the modified code segment to validate the effectiveness of the enhancements before merging into the project repository.
