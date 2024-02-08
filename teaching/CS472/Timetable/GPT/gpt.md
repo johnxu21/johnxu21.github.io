@@ -429,10 +429,8 @@ Gain insights and understanding of complex code segments using ChatGPT to facili
 def complex_operation(number):
     """
     Perform a complex mathematical operation on the input number.
-    
     Args:
         number (int): The input number.
-    
     Returns:
         int: The result of the complex operation.
     """
@@ -442,10 +440,8 @@ def complex_operation(number):
 def simplified_operation(number):
     """
     Perform a simplified mathematical operation on the input number.
-    
     Args:
         number (int): The input number.
-    
     Returns:
         int: The result of the simplified operation.
     """
