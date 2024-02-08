@@ -58,7 +58,6 @@ family of models, is capable of understanding and generating human-like text bas
 Throughout this lab, you will explore different ways developers incorporate ChatGPT into their workflow and 
 complete tasks in software engineering.
 
-
 Overview of ChatGPT in Software Engineering
 =======
 ChatGPT is being used extensively in software engineering due to its natural language understanding and 
@@ -450,7 +449,10 @@ def simplified_operation(number):
     Returns:
         int: The result of the simplified operation.
     """
-    return number * (number + 1)
+    result = number * number  # Square the number
+    result += number * number * number  # Cube the number and add to the result
+    return result
+
 ```
 
 **Notes**:
