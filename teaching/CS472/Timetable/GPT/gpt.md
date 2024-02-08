@@ -345,12 +345,11 @@ Task 2.2: Documentation Assistance
 Create user-friendly and concise documentation for your code snippet using insights from ChatGPT.
 
 **Instructions**:
-1. **Select a Code Snippet**: Select a code snippet in any programming language of your choice from your projects, an open-source repository, or Stackoverflow that requires documentation. The code snippet should perform a specific function or task.
-2. **Open a pull request**: Open a pull request on the team repository with the code snippet you have identified and give it a good description.
-3. **Engage with ChatGPT**: Interact with ChatGPT to generate documentation for the selected code snippet. Provide ChatGPT with a brief description of the script's purpose and functionality, along with any specific formatting or content requirements.
-4. **Document Generation**: Use the insights and suggestions provided by ChatGPT to create user-friendly documentation for the code snippet. Include details such as code snippet description, usage instructions, input/output format, and any relevant examples.
-5. **Update the Pull Request**: Update the pull request to showcase the added generated documentation to the project repository. Include a summary of the changes made and any insights gained from the ChatGPT conversation inside the pull request's **comment section**. Also include the ChatGPT link of your conversations.
-6. **Merge Pull request**: After the peer review process, merge the pull request into the team repository.
+1. **Identify Code Snippet**: Select a code snippet in any programming language from your own projects, previous classes, an open-source repository, or Stack Overflow. Look for code that exhibits duplication issues, complex logic, or poor readability, indicating areas that could benefit from refactoring.
+2. **Create an Issue**: Open an issue on the team repository describing the problem you've identified in the code snippet. Provide a clear description of the code's purpose and the specific areas you believe require improvement. Assign the issue to yourself to take ownership of the task. This step allows for collaboration and ensures transparency within the team. 
+3. **Task ChatGPT**: Engage with ChatGPT to seek advice on how to refactor the chosen code snippet. Provide ChatGPT with context regarding the code's functionality, any specific issues you've identified, and your goals for improving it. Consider discussing potential refactorings, design patterns, or best practices that could be applied. 
+4. **Implement Refactorings**: Based on the suggestions provided by ChatGPT, implement the necessary refactorings to enhance the quality and readability of the code. Focus on simplifying complex logic, removing duplication, improving variable names, and adhering to coding standards. Ensure that the functionality of the code remains intact after refactoring. 
+5. **Open a Pull Request**: Open a pull request on the team repository with the refactored code snippet. In the pull request description, summarize the changes made and insights gained from the ChatGPT conversation. Include the ChatGPT link of your conversation for reference. Request feedback from team members and iterate on the changes as necessary to achieve consensus and maintain code quality.
 
 **Example**:
 
