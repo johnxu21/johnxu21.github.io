@@ -50,6 +50,8 @@ height:30px;" value="ChatGPT" />
 
 ### **This individual assignment is due Feb 18th, 2024**
 
+**Note: This lab is still under development (80% complete). It will be ready by monday next week. However, you can already start reviewing the contents as you wait for the final updates.**
+
 In this lab, you will learn how to leverage ChatGPT, a powerful language model developed by OpenAI, 
 to address various software engineering tasks. ChatGPT, part of the GPT (Generative Pre-trained Transformer) 
 family of models, is capable of understanding and generating human-like text based on its input. 
