@@ -89,7 +89,7 @@ can be found in **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](http
 6. Software management tasks, e.g.,
   * Effort estimation
 
-In the next four sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate two uses how developers incorporate code from ChatGPT:
+In the next four sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate three uses how developers incorporate code from ChatGPT:
 
  - **Use case 1:** Developers incorporate the entire code snippet suggested by ChatGPT into the pull request. This is shown in **Example 1** and **Example 2**.
  - **Use case 2:** Developers incorporate the **portion** the code snippet suggested by ChatGPT into the pull request. This is shown in **Example 3**.
@@ -286,6 +286,7 @@ The folder names should be clearly described in the report for ease of grading. 
 **For example**: In Task 2.1 below you could choose to name your file `yournames_<whatever code snippet name you want>`.
 * **Note 2**: Since you already know the steps involved in opening a pull request on a team repository, in the tasks below I will not labor explaining the steps. You should figure out yourself.
 * **Note 3**: In each of the tasks, you will first open a pull request with the code snippet that needs to me modified. After incorporating ChatGPT suggestions you will update the pull request. You will then merge the pull request into the team repository or the individual repository according to the instructions of the task.
+* **Note 4**: **Verify Suggestions to Prevent Hallucinations**: In each and every task teammates will perform a verification step. After implementing the suggested changes, thoroughly review the code to ensure that it aligns with best practices, improves readability, and maintains functionality. Test the code with various inputs to validate its correctness and effectiveness. Additionally, consider seeking feedback from peers to validate the improvements independently (at least one teammate should review the code). This verification step ensures that the provided suggestions are not solely based on ChatGPT's recommendations but are genuinely beneficial enhancements to the codebase and avoid any potential hallucinations.
 
 Task 2.1: Code Refactoring
 ====
@@ -348,6 +349,7 @@ Create user-friendly and concise documentation for your code snippet using insig
 3. **Engage with ChatGPT**: Interact with ChatGPT to generate documentation for the selected code snippet. Provide ChatGPT with a brief description of the script's purpose and functionality, along with any specific formatting or content requirements.
 4. **Document Generation**: Use the insights and suggestions provided by ChatGPT to create user-friendly documentation for the code snippet. Include details such as code snippet description, usage instructions, input/output format, and any relevant examples.
 5. **Update the Pull Request**: Update the pull request to showcase the added generated documentation to the project repository. Include a summary of the changes made and any insights gained from the ChatGPT conversation inside the pull request's **comment section**. Also include the ChatGPT link of your conversations.
+6. **Merge Pull request**: After the peer review process, merge the pull request into the team repository.
 
 **Example**:
 
@@ -454,9 +456,6 @@ def simplified_operation(number):
 * ChatGPT could provide insights on potential simplifications, alternative algorithms, or optimizations to enhance the function's readability or performance.
 * The simplified function `simplified_operation(data_point)` demonstrates how the algorithmic complexity can be reduced while achieving the same functionality.
 * Ensure to thoroughly test the simplified function to validate its correctness and efficiency before integrating it into the project.
-
-
-
 
 
 # Conclusion
