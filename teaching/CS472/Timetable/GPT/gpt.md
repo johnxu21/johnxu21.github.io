@@ -369,7 +369,6 @@ if __name__ == "__main__":
     main()
 
 # Documented Script: fibonacci_sequence.py
-
 def fibonacci_sequence(n):
     """
     Generate a Fibonacci sequence up to the nth term.
@@ -418,9 +417,9 @@ Gain insights and understanding of complex code segments using ChatGPT to facili
 
 **Example**:
 
-<div style="text-align:center;">
+<!--div style="text-align:center;">
     <img src="task2.3.png" alt="Code Snippet" style="max-width:600px;max-height:600px;">
-</div>
+</div-->
 
 ```python
 # Original Code Snippet: Complex Operation
