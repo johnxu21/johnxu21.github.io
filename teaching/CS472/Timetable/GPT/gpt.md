@@ -338,7 +338,7 @@ Notes:
 Task 2.2: Documentation Assistance
 ====
 
-Objective:
+**Objective**:
 
 Create user-friendly and concise documentation for your code snippet using insights from ChatGPT.
 
@@ -417,6 +417,11 @@ Gain insights and understanding of complex code segments using ChatGPT to facili
 6. **Update the Pull Request**: Update the pull request to apply the enhancements or improvements to the code snippet. Include a summary of the changes made and any insights gained from the ChatGPT conversation inside the pull request's **comment section**. Also include the ChatGPT link of your conversations.
 
 **Example**:
+
+<div style="text-align:center;">
+    <img src="task2.3.png" alt="Code Snippet" style="max-width:600px;max-height:600px;">
+</div>
+
 ```python
 # Original Code Snippet: Complex Operation
 def complex_operation(number):
@@ -450,8 +455,6 @@ def simplified_operation(number):
 * ChatGPT could provide insights on potential simplifications, alternative algorithms, or optimizations to enhance the function's readability or performance.
 * The simplified function `simplified_operation(data_point)` demonstrates how the algorithmic complexity can be reduced while achieving the same functionality.
 * Ensure to thoroughly test the simplified function to validate its correctness and efficiency before integrating it into the project.
-
-
 
 
 
