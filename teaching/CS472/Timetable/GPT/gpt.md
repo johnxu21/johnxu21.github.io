@@ -287,7 +287,7 @@ You will engage in practical exercises leveraging ChatGPT to enhance code qualit
 
 Task 2.1: Code Refactoring
 ====
-Objective:
+**Objective**:
 
 Refactor a code snippet using ChatGPT to improve code quality and readability.
 
