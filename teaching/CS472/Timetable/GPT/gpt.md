@@ -279,15 +279,11 @@ the link in the `PR` description or `PR` review comment. See the below:
 
 ## Task 2: Hands-on with ChatGPT
 In all these tasks, you will continue working on the **team repo** where you submitted your previous lab tasks.
+You will engage in practical exercises leveraging ChatGPT to enhance code quality, documentation, and understanding.
 
-In the tasks below you will be adding files to your team repository according the provided instructions.
-
-* **Note 1: To keep your team repository code organised, teams should discuss the appropriate folder names for each of the tasks below.**
-The folder names should be clearly described in the report for ease of grading. Remember to also put your name identifiers to avoid cases where a teammate selected the same name
-**For example**: In Task 2.1 below you could choose to name your file `yournames_<whatever code snippet name you want>`.
-* **Note 2**: Since you already know the steps involved in opening a pull request on a team repository, in the tasks below I will not labor explaining the steps. You should figure out yourself.
-* **Note 3**: In each of the tasks, you will first open a pull request with the code snippet that needs to me modified. After incorporating ChatGPT suggestions you will update the pull request.
-* **Note 4**: **Verify Suggestions to Prevent Hallucinations**: In each and every task, you should perform a verification step. After implementing the suggested changes, thoroughly review the code to ensure that it aligns with best practices, improves readability, and maintains functionality. Test the code with various inputs to validate its correctness and effectiveness. Additionally, consider seeking feedback from peers to validate the improvements independently (at least one teammate should review the code). This verification step ensures that the provided suggestions are not solely based on ChatGPT's recommendations but are genuinely beneficial enhancements to the codebase and avoid any potential hallucinations. If everything looks fine, merge the pull request into the team repository or the individual repository according to the instructions of the task.
+* **Organizational Guidelines**: Ensure your team repository remains organized by discussing appropriate folder names for each task and clearly documenting them in the report. Additionally, add unique identifiers, such as your names, to filenames to avoid potential conflicts. **For example**: In Task 2.1 below you could choose to name your file `yournames_<whatever code snippet name you want>`.
+* **Pull Request Process**: Familiarize yourself with the steps involved in opening a pull request on your team repository. Instructions for this are intentionally omitted, encouraging independent problem-solving and skill development.
+* **Verification and Collaboration**: Each task involves initiating a pull request with the code snippet requiring modification. After incorporating ChatGPT suggestions, update the pull request accordingly. Thoroughly verify suggestions to prevent potential issues, ensuring adherence to best practices, readability, and functionality. Test the code with diverse inputs and seek peer feedback to independently verify improvements.
 
 Task 2.1: Code Refactoring
 ====
