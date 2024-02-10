@@ -395,7 +395,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-Notes:
+**Notes**:
 * In this example, the original code snippet `fibonacci_sequence.py` lacks comprehensive documentation, making it unclear what the function `fibonacci_sequence` does and how to use it.
 * Without proper documentation, it may be challenging for other developers to understand the purpose of the function and its intended usage.
 * Adding documentation to describe the functionality, input parameters, return value, and any other relevant details would enhance the clarity and usability of the code.
