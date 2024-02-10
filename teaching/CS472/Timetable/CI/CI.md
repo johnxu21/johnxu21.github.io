@@ -118,10 +118,10 @@ dependencies from the PyPI package. The ```pip``` command refers to the ```requi
 list of dependencies. The ```python:3.9-slim``` container you are using already has the pip package 
 manager installed. The commands that you will use in this step are:
     
-   ```
+  ```
     python -m pip install --upgrade pip
     pip install -r requirements.txt
-    ```
+  ```
   * Add a new named step after the checkout step. Name this step ```Install dependencies```.
   * Next, you want to run the commands to update the package manager ```pip``` and then install the 
 dependencies. Since there are two commands, you can run these inline using the ```run:``` 
@@ -138,25 +138,25 @@ library was installed as a dependency in the ```requirements.txt``` file.
 The flake8 commands take a few parameters. Now, take a look at the command and the parameters:
 
     ```angular2html
-    flake8 service --count --select=E9,F63,F7,F82 --show-source --statistics
+    flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics
     ```
-    This command will run ```flake8``` for the service folder of your repository. By adding the following 
+    This command will run ```flake8``` for the src folder of your repository. By adding the following 
     options, you customize the linting process:
     * ```--count``` : shows the count of all warnings and errors in the result of the command
     * ```--select=E9,F63,F7,F82``` : limits the checks to syntax errors
     * ```--show-source``` : adds the actual line number where the error/warning is found
     * ```--statistics``` : shows the count of each type of error and warning in the result
-      ```angular2html
-      flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
-      ``` 
-    Unlike the first command that checks for syntax errors only, the second command will run all 
-    the available checks on the service folder of your repository.
-  * Add a new named step after the ```Install dependencies``` step. Call this step ```Lint with flake8```.
-  * Next, you want to run the ```flake8``` commands to lint your code. The commands are explained in 
-    detail above
+    
     ```angular2html
-    flake8 service --count --select=E9,F63,F7,F82 --show-source --statistics
-    flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
+    flake8 src --count --max-complexity=10 --max-line-length=127 --statistics
+    ``` 
+    Unlike the first command that checks for syntax errors only, the second command will run all 
+    the available checks on the src folder of your repository.
+  * Add a new named step after the ```Install dependencies``` step. Call this step ```Lint with flake8```.
+  * Next, you want to run the ```flake8``` commands to lint your code. The commands are explained in detail above
+    ```angular2html
+    flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics
+    flake8 src --count --max-complexity=10 --max-line-length=127 --statistics
     ```
     You can run inline commands using the ```run:``` keyword with the pipe ```|``` operator.
   * **In the file ```requirements.txt``` the dependency for ```flake8``` is missing. Include ```flake8```, otherwise CI build will not succeed.**
