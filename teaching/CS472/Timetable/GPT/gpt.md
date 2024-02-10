@@ -455,5 +455,85 @@ def simplified_operation(number):
 * The simplified function `simplified_operation(data_point)` demonstrates how the algorithmic complexity can be reduced while achieving the same functionality.
 * Ensure to thoroughly test the simplified function to validate its correctness and efficiency before integrating it into the project.
 
+Task 2.4: Workflow Automation with GitHub Actions (Continuation from CI Lab)
+====
+
+**Objective:**
+
+Continue building the Continuous Integration (CI) pipeline initiated in the previous lab on Testing and CI. Automate workflow tasks using GitHub Actions to enhance efficiency and streamline development processes.
+
+**Instructions:**
+
+**1. Review Previous Workflow:** 
+* Review the CI workflow created in the previous lab (Task 2). Understand the structure of the workflow file (`workflow.yml`) and the sequence of steps defined to build, test, and validate the application code.
+
+**2. Enhance Workflow with Additional Automation:**
+
+* Identify areas within the CI workflow where additional automation can be beneficial. This may include steps for code analysis, documentation generation, or deployment preparations.
+Consider incorporating tasks that leverage external tools or services, such as code quality analysis tools, static code analysis, or vulnerability scanning services.
+
+**3. Engage with ChatGPT for Workflow Optimization:**
+
+* Discuss potential enhancements or optimizations for the CI workflow with ChatGPT. Describe the current workflow structure, any bottlenecks or inefficiencies, and the desired outcome of automation improvements.
+* Seek recommendations on best practices for integrating additional automation steps, ensuring compatibility with existing workflow components, and maximizing workflow performance.
+
+**4. Implement ChatGPT Recommendations:**
+
+* Based on the insights and recommendations provided by ChatGPT, update the workflow file (`workflow.yml`) to incorporate the suggested automation improvements.
+Modify the existing workflow steps or add new steps as necessary to integrate the recommended automation tasks seamlessly into the CI pipeline.
+
+**5. Testing:**
+
+* Test the modified CI workflow to ensure that the new automation tasks function as expected and do not introduce regressions.
+
+**6. Documentation and Reporting:**
+* Document the changes made to the CI workflow, including the rationale behind each automation enhancement and the specific tasks performed by the workflow.
+Create a report detailing the improvements made to the CI pipeline, the impact on development efficiency and code quality, and any challenges encountered during implementation.
+* Include screenshots or logs from GitHub Actions showing the execution of the enhanced CI workflow and the successful completion of automation tasks.
+* **NB: The report should not exceed 1 page. Save the report in you repository with the name `<yourname>_CI_report`**
+
+**Example:** 
+
+```angular2html
+name: CI workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Lint with Flake8
+        run: |
+          flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 src --count --max-complexity=10 --max-line-length=127 --statistics
+      - name: Run unit tests with nose
+        run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=src
+      - name: SonarQube analysis
+        run: |
+          # Replace <SONAR_TOKEN> and <SONAR_PROJECT_KEY> with your SonarQube token and project key
+          sonar-scanner \
+            -Dsonar.projectKey=<SONAR_PROJECT_KEY> \
+            -Dsonar.sources=src \
+            -Dsonar.host.url=<SONARQUBE_URL> \
+            -Dsonar.login=<SONAR_TOKEN>
+```
+Notes:
+- In this example, the CI workflow file `ci_workflow.yml` is enhanced with additional automation steps based on recommendations from ChatGPT.
+- This modification adds a step named "SonarQube analysis" that runs SonarScanner to analyze the src directory of your project and sends the results to the SonarQube server for evaluation.
+- ChatGPT recommendations may include suggestions for integrating third-party tools or services, optimizing workflow performance, or ensuring code quality and security.
+- Regularly review and update the CI workflow based on feedback from ChatGPT, changes in project requirements, or advancements in CI/CD best practices.
+
 # Conclusion
 In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
