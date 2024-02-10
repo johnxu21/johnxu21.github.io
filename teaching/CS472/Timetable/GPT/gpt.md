@@ -455,8 +455,5 @@ def simplified_operation(number):
 * The simplified function `simplified_operation(data_point)` demonstrates how the algorithmic complexity can be reduced while achieving the same functionality.
 * Ensure to thoroughly test the simplified function to validate its correctness and efficiency before integrating it into the project.
 
-
 # Conclusion
-In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. 
-Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code 
-understanding. These skills will be valuable as you embark on collaborative software development team projects.
+In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
