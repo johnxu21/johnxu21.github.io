@@ -53,8 +53,8 @@ Theory
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Class overview [PDF](ClassOverview.pdf) [last updated 01/16/2024]
 2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/23/2024]
-3. Software Testing [PPTX](Testing-2033-fall.pptx) [last updated 09/15/2023]
-4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/15/2023]
+3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 01/30/2024]
+4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 02/06/2024]
 5. Survey Results [PDF](Survey_Presentation.pdf)
 6. Object-oriented design 
   * Slides [PDF](OOD-V2.pptx)
@@ -123,25 +123,25 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Tu 02/06</td>
-<td style="border: 1px solid black;">[T] Application of LLMs in SE</td>
+<td style="border: 1px solid black;">[T] Continuous Integration</td>
 <td style="border: 1px solid black;">Th 02/08 </td>
-<td style="border: 1px solid black;">[L] Application of LLMs in SE</td>
+<td style="border: 1px solid black;">[L] Continuous Integration</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Tu 02/13</td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[T] Application of LLMs in SEe</td>
 <td style="border: 1px solid black;">Th 02/15 </td>
-<td style="border: 1px solid black;">[T] Survey results presentation </td>
+<td style="border: 1px solid black;">[T] Application of LLMs in SE </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/20</td>
-<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;">[L] Intro to OO Design & Architectur</td>
 <td style="border: 1px solid black;">Th 02/22 </td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[L] Survey results presentation </td>
 </tr>
 
 <tr>
