@@ -464,33 +464,21 @@ Continue building the Continuous Integration (CI) pipeline initiated in the prev
 
 **Instructions:**
 
-**1. Review Previous Workflow:** 
-* Review the CI workflow created in the previous lab (Task 2). Understand the structure of the workflow file (`workflow.yml`) and the sequence of steps defined to build, test, and validate the application code.
+1. **Review Previous Workflow**: Review the CI workflow created in the previous lab (Task 2). Understand the structure of the workflow file (`workflow.yml`) and the sequence of steps defined to build, test, and validate the application code.
 
-**2. Enhance Workflow with Additional Automation:**
-
-* Identify areas within the CI workflow where additional automation can be beneficial. This may include steps for code analysis, documentation generation, or deployment preparations.
+2. **Enhance Workflow with Additional Automation:** Identify areas within the CI workflow where additional automation can be beneficial. This may include steps for code analysis, documentation generation, or deployment preparations.
 Consider incorporating tasks that leverage external tools or services, such as code quality analysis tools, static code analysis, or vulnerability scanning services.
 
-**3. Engage with ChatGPT for Workflow Optimization:**
-
-* Discuss potential enhancements or optimizations for the CI workflow with ChatGPT. Describe the current workflow structure, any bottlenecks or inefficiencies, and the desired outcome of automation improvements.
-* Seek recommendations on best practices for integrating additional automation steps, ensuring compatibility with existing workflow components, and maximizing workflow performance.
-
-**4. Implement ChatGPT Recommendations:**
-
-* Based on the insights and recommendations provided by ChatGPT, update the workflow file (`workflow.yml`) to incorporate the suggested automation improvements.
+3. **Engage with ChatGPT for Workflow Optimization:** Discuss potential enhancements or optimizations for the CI workflow with ChatGPT. Describe the current workflow structure, any bottlenecks or inefficiencies, and the desired outcome of automation improvements. Seek recommendations on best practices for integrating additional automation steps, ensuring compatibility with existing workflow components, and maximizing workflow performance.
+4. **Implement ChatGPT Recommendations**: Based on the insights and recommendations provided by ChatGPT, update the workflow file (`workflow.yml`) to incorporate the suggested automation improvements.
 Modify the existing workflow steps or add new steps as necessary to integrate the recommended automation tasks seamlessly into the CI pipeline.
 
-**5. Testing:**
+5. **Testing**: Test the modified CI workflow to ensure that the new automation tasks function as expected and do not introduce regressions.
 
-* Test the modified CI workflow to ensure that the new automation tasks function as expected and do not introduce regressions.
-
-**6. Documentation and Reporting:**
-* Document the changes made to the CI workflow, including the rationale behind each automation enhancement and the specific tasks performed by the workflow.
-Create a report detailing the improvements made to the CI pipeline, the impact on development efficiency and code quality, and any challenges encountered during implementation.
-* Include screenshots or logs from GitHub Actions showing the execution of the enhanced CI workflow and the successful completion of automation tasks.
-* **NB: The report should not exceed 1 page. Save the report in you repository with the name `<yourname>_CI_report`**
+6. **Documentation and Reporting**: Document the changes made to the CI workflow, including the rationale behind each automation enhancement and the specific tasks performed by the workflow.
+Create a report detailing the improvements made to the CI pipeline, the impact on development efficiency and code quality, and any challenges encountered during implementation. 
+  * Include screenshots or logs from GitHub Actions showing the execution of the enhanced CI workflow and the successful completion of automation tasks.
+  * **NB: The report should not exceed 1 page. Save the report in you repository with the name `<yourname>_CI_report`**
 
 **Example:** 
 
