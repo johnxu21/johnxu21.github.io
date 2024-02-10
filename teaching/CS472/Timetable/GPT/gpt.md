@@ -492,7 +492,48 @@ Create a report detailing the improvements made to the CI pipeline, the impact o
 * Include screenshots or logs from GitHub Actions showing the execution of the enhanced CI workflow and the successful completion of automation tasks.
 * **NB: The report should not exceed 1 page. Save the report in you repository with the name `<yourname>_CI_report`**
 
+**Example:** 
 
+```angular2html
+name: CI workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Lint with Flake8
+        run: |
+          flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 src --count --max-complexity=10 --max-line-length=127 --statistics
+      - name: Run unit tests with nose
+        run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=src
+      - name: SonarQube analysis
+        run: |
+          # Replace <SONAR_TOKEN> and <SONAR_PROJECT_KEY> with your SonarQube token and project key
+          sonar-scanner \
+            -Dsonar.projectKey=<SONAR_PROJECT_KEY> \
+            -Dsonar.sources=src \
+            -Dsonar.host.url=<SONARQUBE_URL> \
+            -Dsonar.login=<SONAR_TOKEN>
+```
+Notes:
+- In this example, the CI workflow file ci_workflow.yml is enhanced with additional automation steps based on recommendations from ChatGPT.
+- This modification adds a step named "SonarQube analysis" that runs SonarScanner to analyze the src directory of your project and sends the results to the SonarQube server for evaluation.
+- ChatGPT recommendations may include suggestions for integrating third-party tools or services, optimizing workflow performance, or ensuring code quality and security.
+- Regularly review and update the CI workflow based on feedback from ChatGPT, changes in project requirements, or advancements in CI/CD best practices.
 
 # Conclusion
 In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. 
