@@ -489,7 +489,9 @@ Modify the existing workflow steps or add new steps as necessary to integrate th
 **6. Documentation and Reporting:**
 * Document the changes made to the CI workflow, including the rationale behind each automation enhancement and the specific tasks performed by the workflow.
 Create a report detailing the improvements made to the CI pipeline, the impact on development efficiency and code quality, and any challenges encountered during implementation.
-Include screenshots or logs from GitHub Actions showing the execution of the enhanced CI workflow and the successful completion of automation tasks.
+* Include screenshots or logs from GitHub Actions showing the execution of the enhanced CI workflow and the successful completion of automation tasks.
+* **NB: The report should not exceed 1 page. Save the report in you repository with the name `<yourname>_CI_report`**
+
 
 
 # Conclusion
