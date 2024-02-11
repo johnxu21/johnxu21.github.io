@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS472 - CHAT GPT - Tutorial
+title: CS472 - CHAT GPT - Lab
 permalink: /teaching/CS472/Timetable/GPT/
 ---
 <div class="main-component">
