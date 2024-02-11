@@ -48,9 +48,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
-### **This individual assignment is due Feb 18th, 2024**
-
-**Note: This lab is still under development (80% complete). It will be ready by monday next week. However, you can already start reviewing the contents as you wait for the final updates.**
+### **This individual assignment is due Feb 25th, 2024**
 
 In this lab, you will learn how to leverage ChatGPT, a powerful language model developed by OpenAI, 
 to address various software engineering tasks. ChatGPT, part of the GPT (Generative Pre-trained Transformer) 
@@ -114,7 +112,6 @@ quality. Code duplication is a common issue in software development that can lea
 increased likelihood of bugs, and reduced readability. The developer is using ChatGPT to seek advice on how to best approach and 
 implement these code changes, demonstrating a typical scenario where AI assistance can enhance 
 the efficiency of **code maintenance** tasks.
-
 
 **Developer prompt** 
 ```angular2html
@@ -475,11 +472,6 @@ Modify the existing workflow steps or add new steps as necessary to integrate th
 
 5. **Testing**: Test the modified CI workflow to ensure that the new automation tasks function as expected and do not introduce regressions.
 
-6. **Documentation and Reporting**: Document the changes made to the CI workflow, including the rationale behind each automation enhancement and the specific tasks performed by the workflow.
-Create a report detailing the improvements made to the CI pipeline, the impact on development efficiency and code quality, and any challenges encountered during implementation. 
-  * Include screenshots or logs from GitHub Actions showing the execution of the enhanced CI workflow and the successful completion of automation tasks.
-  * **NB: The report should not exceed 1 page. Save the report in you repository with the name `<yourname>_CI_report`**
-
 **Example:** 
 
 ```angular2html
@@ -522,6 +514,37 @@ Notes:
 - This modification adds a step named "SonarQube analysis" that runs SonarScanner to analyze the src directory of your project and sends the results to the SonarQube server for evaluation.
 - ChatGPT recommendations may include suggestions for integrating third-party tools or services, optimizing workflow performance, or ensuring code quality and security.
 - Regularly review and update the CI workflow based on feedback from ChatGPT, changes in project requirements, or advancements in CI/CD best practices.
+
+# Task 3: Reflection Report
+
+**Objective**:
+Reflect on your experience with ChatGPT in completing the hands-on tasks and its impact on your understanding of software engineering practices.
+
+Instructions:
+Write a reflection report discussing your experience with ChatGPT during the completion of the lab tasks outlined below:
+
+* Task 1: Familiarizing with ChatGPT
+* Task 2.1: Code Refactoring
+* Task 2.2: Documentation Assistance
+* Task 2.3: Understanding Complex Code
+* Task 2.4: Workflow Automation with GitHub Actions
+
+In your reflection, address the following points:
+1. *Initial Impressions*: Describe your initial expectations and impressions of using ChatGPT for software engineering tasks.
+2. *Task Experiences*: Reflect on your experiences with each task, including any challenges faced, insights gained, and lessons learned. Provide concrete examples by linking to relevant pull requests or the CI pipeline for Task 2.4.
+3. *Impact*: Discuss how ChatGPT has impacted your approach to software development, collaboration with teammates, and problem-solving skills.
+4. *Lessons Learned*: Summarize the key lessons you've learned from working with ChatGPT and how they may influence your future projects.
+5. *Future Applications*: Explore potential applications of ChatGPT in your future software development projects or other areas of interest.
+
+**Format**: Your reflection report should be structured as a brief document with the following sections:
+
+* **Title**: Reflection Report on ChatGPT Usage
+* **Introduction**: Brief overview of the purpose and structure of the reflection report.
+* **Task Experiences**: Concise reflection on each task, highlighting challenges, insights, and lessons learned. Include hyperlinks to relevant pull requests or the CI pipeline for Task 2.4 to provide concrete examples of your work and experiences with ChatGPT. **(1-2 paragraphs per task)**
+* **Impact**: Discussion on the overall impact of ChatGPT on your software development process and skills. **(1-2 paragraphs)**
+* **Lessons Learned**: Summary of key lessons learned from working with ChatGPT and their implications for future projects. **(1-2 paragraphs)**
+* **Future Applications**: Exploration of potential future applications of ChatGPT in software development or related fields. **(1-2 paragraphs)**
+* **Conclusion**: Closing remarks summarizing your reflections on using ChatGPT in software engineering tasks.
 
 # Conclusion
 In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)

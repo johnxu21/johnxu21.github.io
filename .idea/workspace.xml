@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="" />
+    <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/GPT/gpt.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/GPT/gpt.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +107,7 @@
       <workItem from="1706805184450" duration="3601000" />
       <workItem from="1707158340082" duration="2576000" />
       <workItem from="1707261339379" duration="31723000" />
-      <workItem from="1707599317949" duration="2170000" />
+      <workItem from="1707599317949" duration="3513000" />
     </task>
     <servers />
   </component>
