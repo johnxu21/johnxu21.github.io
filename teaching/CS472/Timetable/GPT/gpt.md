@@ -546,5 +546,10 @@ In your reflection, address the following points:
 * **Future Applications**: Exploration of potential future applications of ChatGPT in software development or related fields. **(1-2 paragraphs)**
 * **Conclusion**: Closing remarks summarizing your reflections on using ChatGPT in software engineering tasks.
 
+**Submission**:
+Submit your reflection report on Web Campus.
+
+**Note**: The reflection report should be concise and focused, providing insights into your experience with ChatGPT without requiring extensive elaboration. Aim to capture the key points and lessons learned from each task, as well as your overall impressions and future outlook.
+
 # Conclusion
 In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
