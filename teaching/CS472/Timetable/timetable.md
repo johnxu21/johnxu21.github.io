@@ -140,15 +140,15 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/20</td>
-<td style="border: 1px solid black;">[L] Intro to OO Design & Architectur</td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Th 02/22 </td>
-<td style="border: 1px solid black;">[L] Survey results presentation </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">07</td>
 <td style="border: 1px solid black;">Tu 02/27</td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[T] Survey results presentation </td>
 <td style="border: 1px solid black;">Th 02/29 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
