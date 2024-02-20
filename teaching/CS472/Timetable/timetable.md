@@ -134,7 +134,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 02/13</td>
 <td style="border: 1px solid black;">[T] Application of LLMs in SEe</td>
 <td style="border: 1px solid black;">Th 02/15 </td>
-<td style="border: 1px solid black;">[T] Application of LLMs in SE </td>
+<td style="border: 1px solid black;">[L] Application of LLMs in SE </td>
 </tr>
 
 <tr>
