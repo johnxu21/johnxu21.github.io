@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS472 - CHAT GPT - Lab
+title: CS472 - Leveraging ChatGPT in Software Engineering - Lab
 permalink: /teaching/CS472/Timetable/GPT/
 ---
 <div class="main-component">
