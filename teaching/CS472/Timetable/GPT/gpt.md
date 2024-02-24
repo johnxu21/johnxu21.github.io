@@ -453,7 +453,7 @@ def simplified_operation(number):
 
 Task 2.4: Workflow Automation with GitHub Actions (Continuation from CI Lab)
 ====
-In this task, you will continue building the Continuous Integration (CI) pipeline initiated in the previous lab on **Testing and CI**. All the code will be implementated in you individual **CI Lab** Repo.
+In this task, you will continue building the Continuous Integration (CI) pipeline initiated in the previous lab on **Testing and CI**. All the code will be implemented in you individual **CI Lab** Repo (or fork).
 
 **Objective:**
 
