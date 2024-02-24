@@ -275,7 +275,7 @@ the link in the `PR` description or `PR` review comment. See the below:
 4. Understand the tasks addressed in each use case and the outcomes achieved.
 
 ## Task 2: Hands-on with ChatGPT
-In all these tasks, you will continue working on the **team repo** where you submitted your previous lab tasks.
+In **Task 2.1, 2.2 & 2.3** below, you will continue working on the **team repo** where you submitted your previous lab tasks.
 You will engage in practical exercises leveraging ChatGPT to enhance code quality, documentation, and understanding.
 
 * **Organizational Guidelines**: Ensure your team repository remains organized by discussing appropriate folder names for each task and clearly documenting them in the report. Additionally, add unique identifiers, such as your names, to filenames to avoid potential conflicts. **For example**: In Task 2.1 below you could choose to name your file `yournames_<whatever code snippet name you want>`.
@@ -289,7 +289,7 @@ Task 2.1: Code Refactoring
 Refactor a code snippet using ChatGPT to improve code quality and readability.
 
 **Instructions**:
-1. **Select a Code Snippet and Create an Issue**: Choose a code snippet in any programming language from your projects, an open-source repository, or Stack Overflow that exhibits duplication issues or could benefit from refactoring. Open an issue on the team repository describing the code snippet you've identified, the specific areas requiring improvement, and your goals for refactoring it. Provide a clear description of the code's purpose and any challenges you've encountered. 
+1. **Select a Code Snippet and Create an Issue**: Choose a code snippet in any programming language from your projects, an open-source repository, or Stack Overflow that exhibits duplication issues or could benefit from refactoring. Open an issue on the team repository describing the code snippet you've identified, the specific areas requiring improvement, and your goals for refactoring it. 
 2. **Open a Pull Request**: Once the issue is created, open a pull request on the team repository with the identified code snippet and initiate the refactoring process. Provide a detailed description of the pull request, referencing the issue created in the previous step to provide context for the code snippet. In the description of the pull request, include a reference to the issue using one of the following keywords followed by the issue number: Closes #123, Fixes #123, Resolves #123.
   * For example, if the issue number is 123, you can write Closes #123 in the pull request description. This ensures proper tracking and closing of the issue when the pull request is merged.
 3. **Task ChatGPT**: Engage with ChatGPT to seek advice on how to refactor the chosen code snippet. Provide ChatGPT with a brief description of the code's purpose and the specific areas you believe require improvement.
@@ -340,8 +340,8 @@ Task 2.2: Documentation Assistance
 Create user-friendly and concise documentation for your code snippet using insights from ChatGPT.
 
 **Instructions**:
-1. **Select a Code Snippet and Create an Issue**: Choose a code snippet in any programming language from your own projects, previous classes, an open-source repository, or Stack Overflow. Look for code that exhibits duplication issues, complex logic, or poor readability, indicating areas that could benefit from refactoring. Open an issue on the team repository describing the problem you've identified in the code snippet. Provide a clear description of the code's purpose and the specific areas you believe require improvement. Assign the issue to yourself to take ownership of the task. This step allows for collaboration and ensures transparency within the team.
-2. **Open a Pull Request**: Once the issue is created, open a pull request on the team repository with the identified code snippet and initiate the refactoring process. Provide a comprehensive description of the pull request, referencing the issue created in the previous step to provide context for the code snippet. In the description of the pull request, include a reference to the issue using one of the following keywords followed by the issue number: Closes #123, Fixes #123, Resolves #123. 
+1. **Select a Code Snippet and Create an Issue**: Choose a code snippet in any programming language from your own projects, previous classes, an open-source repository, or Stack Overflow. Open an issue on the team repository, providing a clear description of the code's purpose. Assign the issue to yourself to take ownership of the task. This step allows for collaboration and ensures transparency within the team.
+2. **Open a Pull Request**: Once the issue is created, open a pull request on the team repository with the identified code snippet. Provide a comprehensive description of the pull request, referencing the issue created in the previous step to provide context for the code snippet. In the description of the pull request, include a reference to the issue using one of the following keywords followed by the issue number: Closes #123, Fixes #123, Resolves #123. 
 3. **Engage with ChatGPT**: Interact with ChatGPT to seek advice on how to improve the documentation for the chosen code snippet. Provide ChatGPT with context regarding the code's functionality, any specific areas where the documentation is lacking or unclear, and your goals for enhancing it. Consider discussing potential improvements in organization, clarity, completeness, and language style.
 4. **Implement Documentation Enhancements**: Based on the suggestions provided by ChatGPT, implement the necessary enhancements to the documentation to improve its clarity, completeness, and effectiveness. Focus on addressing any identified gaps, clarifying complex concepts, and ensuring that the documentation aligns with best practices and standards. 
 5. **Update the Pull Request**: After implementing the documentation enhancements, update the pull request to reflect these changes. Include a summary of the changes made and insights gained from the ChatGPT conversation regarding the documentation improvements inside the pull request's comment section. Also include the ChatGPT link of your conversations. Request feedback from team members and iterate on the changes as necessary to achieve consensus and maintain documentation quality.
@@ -453,10 +453,11 @@ def simplified_operation(number):
 
 Task 2.4: Workflow Automation with GitHub Actions (Continuation from CI Lab)
 ====
+In this task, you will continue building the Continuous Integration (CI) pipeline initiated in the previous lab on **Testing and CI**. All the code will be implementated in you individual **CI Lab** Repo.
 
 **Objective:**
 
-Continue building the Continuous Integration (CI) pipeline initiated in the previous lab on Testing and CI. Automate workflow tasks using GitHub Actions to enhance efficiency and streamline development processes.
+Automate workflow tasks using GitHub Actions to enhance efficiency and streamline development processes.
 
 **Instructions:**
 
@@ -509,7 +510,7 @@ jobs:
             -Dsonar.login=<SONAR_TOKEN>
 ```
 Notes:
-- In this example, the CI workflow file `ci_workflow.yml` is enhanced with additional automation steps based on recommendations from ChatGPT.
+- In this example, the CI workflow file `workflow.yml` is enhanced with additional automation steps based on recommendations from ChatGPT.
 - This modification adds a step named "SonarQube analysis" that runs SonarScanner to analyze the src directory of your project and sends the results to the SonarQube server for evaluation.
 - ChatGPT recommendations may include suggestions for integrating third-party tools or services, optimizing workflow performance, or ensuring code quality and security.
 - Regularly review and update the CI workflow based on feedback from ChatGPT, changes in project requirements, or advancements in CI/CD best practices.
