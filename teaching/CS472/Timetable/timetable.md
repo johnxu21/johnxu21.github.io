@@ -55,11 +55,13 @@ The theory consists of four lessons where we explain the techniques to be used.:
 2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/23/2024]
 3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 01/30/2024]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 02/06/2024]
-5. Survey Results [PDF](Survey_Presentation.pdf)
+5. Leveraging ChatGPT in Software Engineering [PPTX](LLM.pptx) [last updated 02/13/2024]
 6. Object-oriented design 
-  * Slides [PDF](OOD-V2.pptx)
+  * Slides [PDF](OOD-V2.pptx) [last updated 02/20/2024]
   * Analysing a System [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_6)"
   * Design and Implementation [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_7)
+7. Survey Results [PDF](Survey_Presentation.pdf) [last updated 09/20/2023]
+
 
 Labs
 ========
@@ -133,21 +135,21 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 02/13</td>
 <td style="border: 1px solid black;">[T] Application of LLMs in SEe</td>
 <td style="border: 1px solid black;">Th 02/15 </td>
-<td style="border: 1px solid black;">[T] Application of LLMs in SE </td>
+<td style="border: 1px solid black;">[L] Application of LLMs in SE </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/20</td>
-<td style="border: 1px solid black;">[L] Intro to OO Design & Architectur</td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Th 02/22 </td>
-<td style="border: 1px solid black;">[L] Survey results presentation </td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">07</td>
 <td style="border: 1px solid black;">Tu 02/27</td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[T] Survey results presentation </td>
 <td style="border: 1px solid black;">Th 02/29 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
