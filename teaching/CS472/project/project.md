@@ -73,6 +73,12 @@ To see how things work in concrete terms, you will find the form below with the 
 
 Evaluation criteria 472 [[Google Doc](https://docs.google.com/document/d/1AhUVxWgfDtQVmgEJD0acVPnD72SRoKTHJ2Qh5X6IPqY/edit#)]
 
+Weekly Group Meetings:
+====
+
+A template for the minutes can be found [here](https://docs.google.com/document/d/1bq32N9LfLpy4ogQ7UOonJxeK8di6-GyuSPCGBUecLoE/edit) 
+
+
 Deliverables
 ========
 
@@ -123,7 +129,9 @@ Issues are used to describe the problem.
 The issue should contain a link to the code under discussion, and some questions to think about when looking at the issue, 
 the code, and the pull request.
 
-## Best practices when reporting an issue
+ Best practices when reporting an issue
+====
+
 You team repo should use [GitHub issues templates](https://code-review.org/docs/exercises/examine-issues/) to prompt people to provide relevant information
 
 What is important information you would like to someone to give in an issue?
@@ -160,11 +168,11 @@ Review the pull request, does the pull request fix the issue?
 * Add suggestions for code changes.
 * Would you accept the pull request as is? If not, why not.
 
-## Adding comments 
+### Adding comments 
 To add a comment, click on the `+` or `-` by the line number. A blue box `+` will show up when you hover over 
 a `+` or `-`. You can only comment on the green (new lines of code) or red (code removed) sections.
 
-## Adding suggestions 
+### Adding suggestions 
 Suggestions are the same as comments, but you suggest an edit to the code that can be committed from the pull request. 
 Click the suggestion icon in the comment box:
 
@@ -241,6 +249,33 @@ Take a look at organizations you admire or appreciate. What practices do they em
 [Python Discord, Code Reviews: A Primer](https://www.pythondiscord.com/pages/guides/pydis-guides/code-reviews-primer/)
 
 
+# 7. Guidance for MVP Development: Fostering Collaboration to Mitigate Challenges
 
-### 5. Weekly Group Meetings
-A template for the minutes can be found [here](https://docs.google.com/document/d/1bq32N9LfLpy4ogQ7UOonJxeK8di6-GyuSPCGBUecLoE/edit) 
+As you embark on the development of your minimum viable product (MVP), fostering collaboration among your team members will be crucial to overcoming challenges and maximizing the effectiveness of ChatGPT usage. Here are some key points to consider:
+
+## Leveraging Collaboration Platforms:
+
+1. **Issue Discussions**: Utilize issue discussions on your project repository to openly communicate about the integration of ChatGPT into your software development process. Encourage team members to share their insights, questions, and solutions related to ChatGPT usage.
+
+2. **Pull Requests**: When submitting pull requests that involve ChatGPT-generated code or contributions, actively seek feedback from your teammates. Peer review not only ensures the quality of the code but also promotes knowledge sharing and collaborative problem-solving.
+
+3. **Team Meetings**: Schedule regular team meetings to discuss ChatGPT usage strategies, share experiences, and address any challenges or uncertainties collectively. These meetings provide a platform for collaborative decision-making and learning from each other's perspectives.
+
+## Sharing Insights and Learnings:
+
+1. **Documentation**: Document your ChatGPT interactions and findings in the project repository. Share your experiences, best practices, and any lessons learned with your team members to facilitate knowledge exchange and learning.
+
+2. **Feedback Loop**: Establish a feedback loop within your team to continuously evaluate the effectiveness of ChatGPT usage and identify areas for improvement. Encourage open communication and constructive feedback to iteratively enhance your approach.
+
+3. **Resource Sharing**: Share useful resources, tutorials, or examples related to ChatGPT and software engineering tasks with your team members. Collaboratively explore additional tools or techniques that complement ChatGPT and enhance your development process.
+
+## Preparation for Final Exam:
+
+While focusing on MVP development, keep in mind that the insights and data generated from your collaborative efforts will be invaluable for your final exam. You'll be required to reflect on your team's ChatGPT usage and identify specific use cases, challenges, and solutions in your reflection report. Therefore, actively participate in team collaboration and document your experiences for future reference.
+
+## Conclusion:
+
+By fostering collaboration and leveraging the collective expertise of your team, you can effectively mitigate challenges and maximize the benefits of using ChatGPT in your MVP development process. Embrace the opportunity to work together, share insights, and learn from each other's experiences as you strive towards project success.
+
+
+
