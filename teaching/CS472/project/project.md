@@ -90,19 +90,15 @@ The following documents will guide you produce the deliverables of the project:
 * Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit))
 
 
-# 1. **Team Collaboration and Assessment Requirements:**
+# 1. Team Collaboration and Assessment Requirements:
 
 Each team member will be assessed based on their active participation in the collaborative development process. The assessment criteria include the following:
 
 1. **Meaningful Pull Requests:** Each team member must contribute a **minimum of 6** meaningful pull requests throughout the project duration. A meaningful pull request is defined as one that adds value to the project, such as implementing a new feature, fixing a bug, or improving code quality.
-
 2. **Meaningful Peer Reviews:** Additionally, each team member is required to conduct a **minimum of 6** meaningful peer reviews. Peer reviews can be performed on issues or pull requests raised by other team members. A meaningful peer review involves providing constructive feedback, suggestions for improvement, and ensuring adherence to project guidelines.
-
 3. **Distribution of Contributions:** To ensure balanced participation, team members should aim to have **at least 3** meaningful pull requests and 3 meaningful peer reviews in Design Portfolio II, and the remaining 3 of each in Design Portfolio III.
-
 4. **Clear Guidelines for Contributions:** Team members are encouraged to establish clear guidelines for meaningful contributions, starting from the logging of feature requests as issues. When submitting pull requests, they should thoroughly develop the requested feature, fix, or improvement and link the pull request to the corresponding issue for proper tracking and reference.
 
- 
 # 2. Instructions to the UML Diagrams
 
 You will use simple **use case diagrams**, **class diagram** and **sequence diagrams** or any other UML diagrams you find suitable.
