@@ -109,8 +109,10 @@ tests, also name the branch name appropriately.
 reviewers should resolve pull request only if the guidelines have been followed.
 
 ### 4. Code Review
+
 What is the goal of code review?
 ====
+
 * Reviewing can be challenging, requiring thoughtful consideration of how to effectively communicate constructive and actionable criticism.
 * Become more comfortable having your code reviewed. People will explain a scientific idea with a sketch on a whiteboard, or a napkin no problem. But when it comes to code, there is a real tendency to keep it hidden. You might have heard people say, “oh I need to polish this before I show it to you.” There is some psychological effect behind this, and it would be great to change this and get people showing even pseudo code to each other. Sharing early and often becomes second nature.
 * Use code review as a collaboration tool. Use code review as part of your onboarding new team members and collaborators. Share knowledge and know-how between team members. There is a real benefit to being on both sides of the review. We’re trying to humanize this process, and build rapport between people.
@@ -118,6 +120,7 @@ What is the goal of code review?
 
 
 When reviewing:
+====
 
 Does the pull request address the issue?
 * Are there any deal breakers that would stop you accepting the changes?
@@ -133,7 +136,8 @@ When working on your own contributions:
 * What makes a good pull request, what makes a bad pull request?
 * Can you commit code in a way that lets someone review your code more easily? Should you separate functional changes from style changes? Would you use a tool such as [commitizen](https://commitizen.github.io/cz-cli/) to prompt yourself at commit time? Why? Why not?
 
-* How do you tell if code is better?
+How do you tell if code is better?
+====
 
 Correctness, Readability , Design , Style, Functionality, Complexity, Consistency
 
@@ -154,6 +158,19 @@ Does the pull request improve the existing code?
 * Does the author follow the style of the rest of the code? Do you have a style guide?
 * Can I accept the pull request as-is, or are there changes that must be made?
 
+# Giving Feedback 
+When giving feedback on code, try to give comments that:
+
+* are actionable.
+* differentiate between a suggestion, a definite change, or a point that needs a discussion or clarification.
+* are collaborative not accusatory.
+
+# How do organizations decide if code is better? 
+Take a look at organizations you admire or appreciate. What practices do they employ for code review? Below are some examples of code review guides from well known organizations.
+
+[Google eng-practices](https://google.github.io/eng-practices/review/reviewer/looking-for.html)
+[Microsoft Code with Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/code-reviews/)
+[Python Discord, Code Reviews: A Primer](https://www.pythondiscord.com/pages/guides/pydis-guides/code-reviews-primer/)
 
 
 
