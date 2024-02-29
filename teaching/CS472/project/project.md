@@ -87,6 +87,7 @@ The following documents will guide you produce the deliverables of the project:
   
 # 2. Instructions to the UML Diagrams
 =========
+
 You will use simple **use case diagrams**, **class diagram** and **sequence diagrams** or any other UML diagrams you find suitable.
 A simple class diagram has only the name of the class and its interactions with the other classes 
 (there are two examples in [JPacman](https://github.com/johnxu21/jpacman/tree/master/doc/uml) repository in the "docs" folder). 
