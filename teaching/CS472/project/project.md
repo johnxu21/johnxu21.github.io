@@ -113,7 +113,7 @@ An issue is a way to discuss, plan and track work on a GitHub repository.
 
 Issues can be bugs, complaints from users, requests for new features or added functionality.
 
-When reading though an issue,
+When reading through an issue, these are some of the questions that can guide you.
 * Are there multiple problems reported in the issue?
 * Can you confirm the issue by reading the code or documentation?
 * Do you need to run the code to confirm the issue?
