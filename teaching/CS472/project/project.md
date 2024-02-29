@@ -124,7 +124,7 @@ The issue should contain a link to the code under discussion, and some questions
 the code, and the pull request.
 
 ## Best practices when reporting an issue
-Use [GitHub issues templates](https://code-review.org/docs/exercises/examine-issues/) to prompt people to provide relevant information?
+You team repo should use [GitHub issues templates](https://code-review.org/docs/exercises/examine-issues/) to prompt people to provide relevant information
 
 What is important information you would like to someone to give in an issue?
 
