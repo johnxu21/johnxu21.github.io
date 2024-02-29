@@ -139,8 +139,13 @@ When working on your own contributions:
 How do you tell if code is better?
 ====
 
-Correctness, Readability , Design , Style, Functionality, Complexity, Consistency
-
+* Correctness
+* Readability
+* Design
+* Style
+* Functionality
+* Complexity
+* Consistency
 Depending on your experience you may focus on one, many, or all of these.
 
 The main question to ask yourself when reviewing code is:
@@ -169,7 +174,9 @@ When giving feedback on code, try to give comments that:
 Take a look at organizations you admire or appreciate. What practices do they employ for code review? Below are some examples of code review guides from well known organizations.
 
 [Google eng-practices](https://google.github.io/eng-practices/review/reviewer/looking-for.html)
+
 [Microsoft Code with Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/code-reviews/)
+
 [Python Discord, Code Reviews: A Primer](https://www.pythondiscord.com/pages/guides/pydis-guides/code-reviews-primer/)
 
 
