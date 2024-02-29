@@ -108,5 +108,54 @@ tests, also name the branch name appropriately.
 * The group should explicitly set **contribution guidelines** that the team members should follow. The 
 reviewers should resolve pull request only if the guidelines have been followed.
 
-### 4. Weekly Group Meetings
+### 4. Code Review
+What is the goal of code review?
+====
+* Reviewing can be challenging, requiring thoughtful consideration of how to effectively communicate constructive and actionable criticism.
+* Become more comfortable having your code reviewed. People will explain a scientific idea with a sketch on a whiteboard, or a napkin no problem. But when it comes to code, there is a real tendency to keep it hidden. You might have heard people say, “oh I need to polish this before I show it to you.” There is some psychological effect behind this, and it would be great to change this and get people showing even pseudo code to each other. Sharing early and often becomes second nature.
+* Use code review as a collaboration tool. Use code review as part of your onboarding new team members and collaborators. Share knowledge and know-how between team members. There is a real benefit to being on both sides of the review. We’re trying to humanize this process, and build rapport between people.
+* Read more code than you write! Take a peek into your favorite open source tools. Encourage people to have a look inside the software they are using. How does this work? Why did they do this?
+
+
+When reviewing:
+
+Does the pull request address the issue?
+* Are there any deal breakers that would stop you accepting the changes?
+* Can you suggest any improvements?
+* What is a good way to phrase your suggested improvements?
+* Is the solution overly complicated? For an example of an overly complicated solution, see the [famous fizz buzz in Tensorflow](https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/).
+* Are the comments up to date, necessary, helpful?
+* Would you except the pull request as it is now? Are your suggested changes must-do? nice-to-have? nitpicks? How would you communicate this?
+* Do you spend a lot of time reviewing the code style? Is it worth having a style guide for contributors? Can you make use of an existing style guide? Or a linter?
+
+When working on your own contributions:
+* When putting in a pull request, how can you make it easy for a reviewer to understand what you have done?
+* What makes a good pull request, what makes a bad pull request?
+* Can you commit code in a way that lets someone review your code more easily? Should you separate functional changes from style changes? Would you use a tool such as [commitizen](https://commitizen.github.io/cz-cli/) to prompt yourself at commit time? Why? Why not?
+
+* How do you tell if code is better?
+
+Correctness, Readability , Design , Style, Functionality, Complexity, Consistency
+
+Depending on your experience you may focus on one, many, or all of these.
+
+The main question to ask yourself when reviewing code is:
+
+Does the pull request improve the existing code?
+
+* Are there unnecessary changes? If the pull request contains other changes that are not related to the issue, how does your team deal with this. It is ok to close the pull request?
+* Is now a good time to add new functionality?
+* Does the code do what it says it does?
+* What testing has been carried out?
+* What dependencies does the code have? Are they required? Are they secure? Are they manageable?
+* How does the code handle errors?
+* Does the new code change how users interact with the software? Does this require a change to the documentation?
+* Did the author write comments? Do the comments match the code? Are all the comments necessary and helpful?
+* Does the author follow the style of the rest of the code? Do you have a style guide?
+* Can I accept the pull request as-is, or are there changes that must be made?
+
+
+
+
+### 5. Weekly Group Meetings
 A template for the minutes can be found [here](https://docs.google.com/document/d/1bq32N9LfLpy4ogQ7UOonJxeK8di6-GyuSPCGBUecLoE/edit) 
