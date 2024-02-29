@@ -50,22 +50,20 @@ height:30px;" value="SD Competition" />
 
 Project 2022-2023
 =========
+
 Groups will develop their custom projects. The groups will also deliver a specification document along with Design Portfolio I. You can borrow a leaf from the specification documents for the two projects below. The quality of the group’s specification document does not have to be like the ones presented but should be reasonable. I will review your Specification documents to approve the group’s custom project.
 
 
-Senior Design Ideas submitted to CoE
-=====
-Please take a look at some Senior Design ideas submitted to the College of Engineering.
-[SD Ideas to be updated]()
-
 Subway Simulation
-=======
+======
+
 * Functional Requirements:
   * Specification 1.0 [[pdf](../../../files/472Files/specification1.0.pdf)]
   * Specification 2.0 [[pdf](../../../files/472Files/specification2.0.pdf)]
 
 Traffic Simulation
 ========
+
 * Functional Requirements:
   * Specification 1.0 [[pdf](../../../files/472Files/Traffic_simulationSpec1.0.pdf)]
   * Specification 2.0 [[pdf](../../../files/472Files/Traffic_simulationSpec2.0.pdf)]
@@ -77,6 +75,7 @@ Evaluation criteria 472 [[Google Doc](https://docs.google.com/document/d/1AhUVxW
 
 Deliverables
 ========
+
 The following documents will guide you produce the deliverables of the project:
 * Precondition report ([Doc](https://docs.google.com/document/d/1tLiXVKfddl_lBFB0id7Wr_jb-19wDip664vMxTusj34/edit))
 * Design Portfolio I ([Doc](https://docs.google.com/document/d/1y9Fl1yHl8S3Uh3TzEdQYhd7bQUkYVwZTEcB4H43SlvE/edit#))
@@ -109,7 +108,68 @@ tests, also name the branch name appropriately.
 * The group should explicitly set **contribution guidelines** that the team members should follow. The 
 reviewers should resolve pull request only if the guidelines have been followed.
 
-# 4. Code Review
+# 4. Examining Issues
+An issue is a way to discuss, plan and track work on a GitHub repository.
+
+Issues can be bugs, complaints from users, requests for new features or added functionality.
+
+When reading though an issue,
+* Are there multiple problems reported in the issue?
+* Can you confirm the issue by reading the code or documentation?
+* Do you need to run the code to confirm the issue?
+* Can you reproduce the problem?
+
+Issues are used to describe the problem. 
+The issue should contain a link to the code under discussion, and some questions to think about when looking at the issue, 
+the code, and the pull request.
+
+## Best practices when reporting an issue
+Use [GitHub issues templates](https://code-review.org/docs/exercises/examine-issues/) to prompt people to provide relevant information?
+
+What is important information you would like to someone to give in an issue?
+
+* version of the code being used?
+* a small example the shows the bug?
+* screenshots of the problem?
+* error messages?
+* desired solution?
+* operating system where the problem occurred (Windows, Mac, Linux)?
+* does the issue describe the problem accurately?
+
+
+# 5. Working with Pull requests
+A pull request is a proposed change. A review is feedback on the change.
+
+When you are reviewing, you’ll need to assess the scope and size of the pull request. This will give you some 
+idea of how much work will be involved in the review, and what feedback you need to give.
+
+Read the pull request description. Ideally this will give you the scope:
+* What’s changed.
+* Why the changes were made.
+* What the person is looking for from the review. They may have code ready to release, they may have an urgent bug fix, they may have a draft that they want you to look at before they do any more work.
+
+Small code changes can have big impacts, so lines of code changed does not necessarily correlate with how difficult, important, or necessary a change is. But you can use GitHub to see:
+* How many lines of code have been added or removed.
+* How many files have been changed.
+* How many commits were made.
+
+The pull request is a solution to the issue.
+Review the pull request, does the pull request fix the issue?
+
+* Add comments about what is good, what is bad.
+* Add suggestions for code changes.
+* Would you accept the pull request as is? If not, why not.
+
+## Adding comments 
+To add a comment, click on the `+` or `-` by the line number. A blue box `+` will show up when you hover over 
+a `+` or `-`. You can only comment on the green (new lines of code) or red (code removed) sections.
+
+## Adding suggestions 
+Suggestions are the same as comments, but you suggest an edit to the code that can be committed from the pull request. 
+Click the suggestion icon in the comment box:
+
+
+# 6. Code Review
 
 What is the goal of code review?
 ====
@@ -118,7 +178,6 @@ What is the goal of code review?
 * Become more comfortable having your code reviewed. People will explain a scientific idea with a sketch on a whiteboard, or a napkin no problem. But when it comes to code, there is a real tendency to keep it hidden. You might have heard people say, “oh I need to polish this before I show it to you.” There is some psychological effect behind this, and it would be great to change this and get people showing even pseudo code to each other. Sharing early and often becomes second nature.
 * Use code review as a collaboration tool. Use code review as part of your onboarding new team members and collaborators. Share knowledge and know-how between team members. There is a real benefit to being on both sides of the review. We’re trying to humanize this process, and build rapport between people.
 * Read more code than you write! Take a peek into your favorite open source tools. Encourage people to have a look inside the software they are using. How does this work? Why did they do this?
-
 
 When reviewing:
 ====
