@@ -277,6 +277,50 @@ As you embark on the development of your minimum viable product (MVP), fostering
 
 3. **Resource Sharing**: Share useful resources, tutorials, or examples related to ChatGPT and software engineering tasks with your team members. Collaboratively explore additional tools or techniques that complement ChatGPT and enhance your development process.
 
+## Instructions for AI-Generated Code in Team Projects
+
+As part of your team projects, you have the option to leverage AI-generated code to facilitate software development tasks. However, it is essential to maintain transparency and documentation regarding the use of such code within your project repositories.
+
+1. **Annotation Requirement:** When integrating AI-generated code into your project, each team member must annotate the code snippets with relevant information describing the generative model used and the level of human intervention performed on the code. This annotation should be included directly within the code comments.
+
+2. **Annotation Format:** Follow the annotation format outlined below:
+   - Use the comment markers `// ai-gen start` and `// ai-gen end` to encapsulate the AI-generated code section.
+   - Within the AI-generated code section, specify the following information:
+     - Type of generator used (e.g., ChatGPT-3.5, ChatGPT-4).
+     - Level of human intervention:
+       - Level 0: No intervention (code used directly with zero changes).
+       - Level 1: Minor intervention (code used with ≤ 10% of lines changed).
+       - Level 2: Major intervention (code used with > 10% of lines changed).
+
+3. **Example Annotation:** Refer to the example below for annotating AI-generated code:
+   ```cpp
+   // ai-gen start (ChatGPT-3.5, 0)
+   // Insert AI-generated code here
+   // ai-gen end
+   ```
+   
+```cpp
+   #pragma once
+   #include <utility>
+   #include <vector>
+   #include <string>
+   // ai-gen start (gpt3, 0)
+   struct vectorHash {
+       std::size_t operator () (const std::vector<std::string> vect) const {
+           std::size_t seed = 0;
+           for (const std::string& str : vect) {
+               seed ^= std::hash<std::string>{}(str) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+           }
+           return seed;
+       }
+   };
+   // ai-gen end
+```
+
+4. **Data Collection:** The annotations serve as a means of tracking and documenting the integration of AI-generated code into your project. Ensure consistency in annotation format and placement to facilitate automated data collection at key project milestones.
+
+By adhering to these guidelines, you promote transparency and accountability in the utilization of AI-generated code while ensuring proper documentation for project evaluation and assessment.
+
 ## Preparation for Final Exam:
 
 While focusing on MVP development, keep in mind that the insights and data generated from your collaborative efforts will be invaluable for your final exam. You'll be required to reflect on your team's ChatGPT usage and identify specific use cases, challenges, and solutions in your reflection report. Therefore, actively participate in team collaboration and document your experiences for future reference.
