@@ -85,7 +85,7 @@ The following documents will guide you produce the deliverables of the project:
 * Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit))
 
   
-Instructions to the UML Diagrams
+# 2. Instructions to the UML Diagrams
 =========
 You will use simple **use case diagrams**, **class diagram** and **sequence diagrams** or any other UML diagrams you find suitable.
 A simple class diagram has only the name of the class and its interactions with the other classes 
@@ -97,7 +97,7 @@ class calls Class X, and Class X calls Class Y, then you do not need to show Cla
 not being called directly by the feature class you are implementing). I am are not going to evaluate your strictness to the 
 proper UML notations, therefore focus on modeling and understanding classes interactions. 
 
-### 3. General Coding Instructions
+# 3. General Coding Instructions
 The following coding/repository instructions apply:
 * Fork the group repository and clone that fork onto your local repository.
 * Create a branch on your fork for every "qualified contribution" you would like to make on the group/main repository. 
@@ -108,7 +108,7 @@ tests, also name the branch name appropriately.
 * The group should explicitly set **contribution guidelines** that the team members should follow. The 
 reviewers should resolve pull request only if the guidelines have been followed.
 
-### 4. Code Review
+# 4. Code Review
 
 What is the goal of code review?
 ====
@@ -146,6 +146,7 @@ How do you tell if code is better?
 * Functionality
 * Complexity
 * Consistency
+
 Depending on your experience you may focus on one, many, or all of these.
 
 The main question to ask yourself when reviewing code is:
