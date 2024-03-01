@@ -267,9 +267,7 @@ As you embark on the development of your minimum viable product (MVP), fostering
 ## Leveraging Collaboration Platforms:
 
 1. **Issue Discussions**: Utilize issue discussions on your project repository to openly communicate about the integration of ChatGPT into your software development process. Encourage team members to share their insights, questions, and solutions related to ChatGPT usage.
-
 2. **Pull Requests**: When submitting pull requests that involve ChatGPT-generated code or contributions, actively seek feedback from your teammates. Peer review not only ensures the quality of the code but also promotes knowledge sharing and collaborative problem-solving.
-
 3. **Team Meetings**: Schedule regular team meetings to discuss ChatGPT usage strategies, share experiences, and address any challenges or uncertainties collectively. These meetings provide a platform for collaborative decision-making and learning from each other's perspectives.
 
 ## Sharing Insights and Learnings:
@@ -283,7 +281,6 @@ As you embark on the development of your minimum viable product (MVP), fostering
 As part of your team projects, you have the option to leverage AI-generated code to facilitate software development tasks. However, it is essential to maintain transparency and documentation regarding the use of such code within your project repositories.
 
 1. **Annotation Requirement:** When integrating AI-generated code into your project, each team member must annotate the code snippets with relevant information describing the generative model used and the level of human intervention performed on the code. This annotation should be included directly within the code comments.
-
 2. **Annotation Format:** Follow the annotation format outlined below:
    - Use the comment markers `// ai-gen start` and `// ai-gen end` to encapsulate the AI-generated code section.
    - Within the AI-generated code section, specify the following information:
@@ -292,7 +289,6 @@ As part of your team projects, you have the option to leverage AI-generated code
        - Level 0: No intervention (code used directly with zero changes).
        - Level 1: Minor intervention (code used with ≤ 10% of lines changed).
        - Level 2: Major intervention (code used with > 10% of lines changed).
-
 3. **Example Annotation:** Refer to the example below for annotating AI-generated code:
    ```cpp
    // ai-gen start (ChatGPT-3.5, 0)
