@@ -301,7 +301,7 @@ As part of your team projects, you have the option to leverage AI-generated code
    ```
    
 ```python
-   # ai-gen start (gpt3, 0)
+   # ai-gen start (ChatGPT-3.5, 0)
    def fibonacci(n):
        if n <= 1:
            return n
