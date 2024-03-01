@@ -310,7 +310,7 @@ As part of your team projects, you have the option to leverage AI-generated code
    # ai-gen end
 ```
 
-4. **Data Collection:** The annotations serve as a means of tracking and documenting the integration of AI-generated code into your project. Ensure consistency in annotation format and placement to facilitate automated data collection at key project milestones.
+**Data Collection:** The annotations serve as a means of tracking and documenting the integration of AI-generated code into your project. Ensure consistency in annotation format and placement to facilitate automated data collection at key project milestones.
 
 By adhering to these guidelines, you promote transparency and accountability in the utilization of AI-generated code while ensuring proper documentation for project evaluation and assessment.
 
