@@ -98,6 +98,9 @@ Each team member will be assessed based on their active participation in the col
 2. **Meaningful Peer Reviews:** Additionally, each team member is required to conduct a **minimum of 6** meaningful peer reviews. Peer reviews can be performed on issues or pull requests raised by other team members. A meaningful peer review involves providing constructive feedback, suggestions for improvement, and ensuring adherence to project guidelines.
 3. **Distribution of Contributions:** To ensure balanced participation, team members should aim to have **at least 3** meaningful pull requests and 3 meaningful peer reviews in Design Portfolio II, and the remaining 3 of each in Design Portfolio III.
 4. **Clear Guidelines for Contributions:** Team members are encouraged to establish clear guidelines for meaningful contributions, starting from the logging of feature requests as issues. When submitting pull requests, they should thoroughly develop the requested feature, fix, or improvement and link the pull request to the corresponding issue for proper tracking and reference. Additionally, reviewers should carefully consider whether the issue has been adequately addressed before approving and merging the pull request.
+5. **Review of AI-Generated Code:** Reviewers should also ensure that contributors have followed the instructions for AI-generated code integration, as outlined in the project guidelines. This includes verifying the presence of annotations within the code comments, indicating the type of generator used and the level of human intervention performed (see [Instructions for AI-Generated Code in Team Projects](#instructions-for-ai-generated-code-in-team-projects) section).
+
+
 
 # 2. Instructions to the UML Diagrams
 
@@ -272,9 +275,7 @@ As you embark on the development of your minimum viable product (MVP), fostering
 ## Sharing Insights and Learnings:
 
 1. **Documentation**: Document your ChatGPT interactions and findings in the project repository. Share your experiences, best practices, and any lessons learned with your team members to facilitate knowledge exchange and learning.
-
 2. **Feedback Loop**: Establish a feedback loop within your team to continuously evaluate the effectiveness of ChatGPT usage and identify areas for improvement. Encourage open communication and constructive feedback to iteratively enhance your approach.
-
 3. **Resource Sharing**: Share useful resources, tutorials, or examples related to ChatGPT and software engineering tasks with your team members. Collaboratively explore additional tools or techniques that complement ChatGPT and enhance your development process.
 
 ## Instructions for AI-Generated Code in Team Projects
@@ -299,22 +300,14 @@ As part of your team projects, you have the option to leverage AI-generated code
    // ai-gen end
    ```
    
-```cpp
-   #pragma once
-   #include <utility>
-   #include <vector>
-   #include <string>
-   // ai-gen start (gpt3, 0)
-   struct vectorHash {
-       std::size_t operator () (const std::vector<std::string> vect) const {
-           std::size_t seed = 0;
-           for (const std::string& str : vect) {
-               seed ^= std::hash<std::string>{}(str) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
-           }
-           return seed;
-       }
-   };
-   // ai-gen end
+```python
+   # ai-gen start (gpt3, 0)
+   def fibonacci(n):
+       if n <= 1:
+           return n
+       else:
+           return fibonacci(n-1) + fibonacci(n-2)
+   # ai-gen end
 ```
 
 4. **Data Collection:** The annotations serve as a means of tracking and documenting the integration of AI-generated code into your project. Ensure consistency in annotation format and placement to facilitate automated data collection at key project milestones.
