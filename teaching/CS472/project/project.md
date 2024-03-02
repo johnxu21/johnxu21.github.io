@@ -80,7 +80,7 @@ A template for the minutes can be found [here](https://docs.google.com/document/
 
 
 Deliverables
-========
+=====
 
 The following documents will guide you produce the deliverables of the project:
 * Precondition report ([Doc](https://docs.google.com/document/d/1tLiXVKfddl_lBFB0id7Wr_jb-19wDip664vMxTusj34/edit))
