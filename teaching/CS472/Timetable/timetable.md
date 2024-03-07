@@ -223,7 +223,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 04/30</td>
 <td style="border: 1px solid black;"><b>Project Presentation</b></td>
 <td style="border: 1px solid black;">Th 05/02 </td>
-<td style="border: 1px solid black;"><b>Senior Design Competition</b>b></td>
+<td style="border: 1px solid black;"><b>Senior Design Competition</b></td>
 </tr>
 
 <tr>
