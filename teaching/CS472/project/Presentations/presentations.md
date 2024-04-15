@@ -48,12 +48,18 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
-Trial Presentations (Ungraded) (Last edited 04/2023)
+Venue for the Trial and Final Presentation
 =======
-We will have <b>strictly <=15 minutes</b> for the presentation and <b>atmost 10 minutes</b> of feedback session.
+The trial and final project presentations will take place in **Flora Dungan Humanities 109 (FDU 109)**
+
+Trial Presentations (Ungraded) (Last edited 0415//2024)
+=======
+
+
+We will have <b>strictly <=15 minutes</b> for the presentation and <b>utmost 10 minutes</b> of feedback session.
 
 Members from other teams are encouraged to attend and give feedback towards improving a team's 
-presentation. In the final presentation, I expect <b> at least four group members </b> to present a 
+presentation. In the final presentation, I expect <b> all team members </b> to present a 
 section of the team project. Try this out during the trial to practice. All teams have 
 exciting projects; please listen, learn and give feedback. Those presenting earlier, please give back the 
 favor and provide feedback to the ones presenting later you.
@@ -72,9 +78,9 @@ favor and provide feedback to the ones presenting later you.
 
   <tr>
 
-    <td style="border: 1px solid black;">Pocket Therapist -- Gp-3</td>
+    <td style="border: 1px solid black;">SmallTalk -- Gp-4</td>
 
-    <td style="border: 1px solid black;">11/29</td>
+    <td style="border: 1px solid black;">04/18</td>
 
     <td style="border: 1px solid black;">12:30 pm - 12:55 pm</td>
 
@@ -82,9 +88,9 @@ favor and provide feedback to the ones presenting later you.
 
   <tr>
 
-    <td style="border: 1px solid black;">AstroPonics -- Gp-1</td>
+    <td style="border: 1px solid black;">LifeQuest -- Gp-7</td>
 
-    <td style="border: 1px solid black;">11/29</td>
+    <td style="border: 1px solid black;">04/18</td>
 
     <td style="border: 1px solid black;">1:00 pm - 1:25 pm</td>
 
@@ -93,25 +99,14 @@ favor and provide feedback to the ones presenting later you.
 
   <tr>
 
-    <td style="border: 1px solid black;">Bayview -- Gp-4</td>
+    <td style="border: 1px solid black;">RightWay -- Gp-6</td>
 
-    <td style="border: 1px solid black;">11/29</td>
+    <td style="border: 1px solid black;">04/18</td>
 
     <td style="border: 1px solid black;">1:25 pm - 1:50 pm</td>
 
   </tr>
 
-  <tr>
-
-
-    <td style="border: 1px solid black;">MyCourseEvaluation -- Gp-2</td>
-
-    <td style="border: 1px solid black;">11/29</td>
-
-    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
-
-
-  </tr>
 
 </table>
 
@@ -141,9 +136,9 @@ are supposed to wait for their time slots.
 
   <tr>
 
-    <td style="border: 1px solid black;">AstroPonics -- Gr-1</td>
+    <td style="border: 1px solid black;">SmallTalk -- Gr-4</td>
 
-    <td style="border: 1px solid black;">12/06</td>
+    <td style="border: 1px solid black;">04/25</td>
 
     <td style="border: 1px solid black;">12:50 pm - 1:10 pm</td>
 
@@ -151,9 +146,9 @@ are supposed to wait for their time slots.
 
   <tr>
 
-    <td style="border: 1px solid black;">Pocket Therapist -- Gp-3</td>
+    <td style="border: 1px solid black;">Crypto Wars -- Gp-8</td>
 
-    <td style="border: 1px solid black;">12/06</td>
+    <td style="border: 1px solid black;">04/25</td>
 
     <td style="border: 1px solid black;">1:10 pm - 1:30 pm</td>
 
@@ -162,9 +157,9 @@ are supposed to wait for their time slots.
 
   <tr>
 
-    <td style="border: 1px solid black;">MyCourseEvaluation -- Gp-2</td>
+    <td style="border: 1px solid black;">RightWay -- Gp-6</td>
 
-    <td style="border: 1px solid black;">12/06</td>
+    <td style="border: 1px solid black;">04/25</td>
 
     <td style="border: 1px solid black;">1:30 pm - 1:50 pm</td>
 
@@ -173,9 +168,51 @@ are supposed to wait for their time slots.
   
 <tr>
 
-    <td style="border: 1px solid black;">Bayview -- Gp-4</td>
+    <td style="border: 1px solid black;">2DRove -- Gp-2</td>
 
-    <td style="border: 1px solid black;">12/06</td>
+    <td style="border: 1px solid black;">04/25</td>
+
+    <td style="border: 1px solid black;">1:50 pm - 2:10 pm</td>
+
+  </tr>
+
+<tr>
+
+    <td style="border: 1px solid black;">LifeQuest -- Gr-7</td>
+
+    <td style="border: 1px solid black;">04/30</td>
+
+    <td style="border: 1px solid black;">12:50 pm - 1:10 pm</td>
+
+  </tr>
+
+  <tr>
+
+    <td style="border: 1px solid black;">Munch -- Gp-5</td>
+
+    <td style="border: 1px solid black;">04/30</td>
+
+    <td style="border: 1px solid black;">1:10 pm - 1:30 pm</td>
+
+  </tr>
+
+
+  <tr>
+
+    <td style="border: 1px solid black;">Roadwatch -- Gp-1</td>
+
+    <td style="border: 1px solid black;">04/30</td>
+
+    <td style="border: 1px solid black;">1:30 pm - 1:50 pm</td>
+
+  </tr>
+
+  
+<tr>
+
+    <td style="border: 1px solid black;">Barbell -- Gp-3</td>
+
+    <td style="border: 1px solid black;">04/30</td>
 
     <td style="border: 1px solid black;">1:50 pm - 2:10 pm</td>
 
