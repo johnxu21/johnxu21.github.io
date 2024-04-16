@@ -56,7 +56,7 @@ Trial Presentations (Ungraded) (Last edited 0415//2024)
 =======
 
 
-We will have <b>strictly <=15 minutes</b> for the presentation and <b>utmost 10 minutes</b> of feedback session.
+We will have <b>strictly <=16 minutes</b> for the presentation and <b>utmost 9 minutes</b> of feedback session.
 
 Members from other teams are encouraged to attend and give feedback towards improving a team's 
 presentation. In the final presentation, I expect <b> all team members </b> to present a 
@@ -116,7 +116,7 @@ favor and provide feedback to the ones presenting later you.
 Final Presentations
 =======
 
-We will have <b>strictly <=15 minutes</b> for the presentation and <b>at most 5 minutes</b> of questions/feedback.
+We will have <b>strictly <=16 minutes</b> for the presentation and <b>at most 4 minutes</b> of questions/feedback.
 
 
 Only the presenting team will be allowed in the room for the final presentation. Other teams presenting later 
