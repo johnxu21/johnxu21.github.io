@@ -52,7 +52,7 @@ Venue for the Trial and Final Presentation
 =======
 The **trial and final project presentations** will take place in **Flora Dungan Humanities 109 (FDU 109)**
 
-Trial Presentations (Ungraded) (Last edited 0415//2024)
+Trial Presentations (Ungraded) (Last edited 04/15/2024)
 =======
 
 
@@ -103,7 +103,7 @@ favor and provide feedback to the ones presenting later you.
 
     <td style="border: 1px solid black;">04/18</td>
 
-    <td style="border: 1px solid black;">1:25 pm - 1:50 pm</td>
+    <td style="border: 1px solid black;">1:45 pm - 2:10 pm</td>
 
   </tr>
 
