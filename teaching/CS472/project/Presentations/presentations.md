@@ -140,7 +140,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">04/25</td>
 
-    <td style="border: 1px solid black;">12:50 pm - 1:10 pm</td>
+    <td style="border: 1px solid black;">12:40 pm - 1:00 pm</td>
 
   </tr>
 
@@ -150,7 +150,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">04/25</td>
 
-    <td style="border: 1px solid black;">1:10 pm - 1:30 pm</td>
+    <td style="border: 1px solid black;">1:00 pm - 1:20 pm</td>
 
   </tr>
 
@@ -161,7 +161,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">04/25</td>
 
-    <td style="border: 1px solid black;">1:30 pm - 1:50 pm</td>
+    <td style="border: 1px solid black;">1:20 pm - 1:40 pm</td>
 
   </tr>
 
@@ -172,7 +172,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">04/25</td>
 
-    <td style="border: 1px solid black;">1:50 pm - 2:10 pm</td>
+    <td style="border: 1px solid black;">1:40 pm - 2:00 pm</td>
 
   </tr>
 
@@ -182,7 +182,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">04/30</td>
 
-    <td style="border: 1px solid black;">12:50 pm - 1:10 pm</td>
+    <td style="border: 1px solid black;">12:40 pm - 1:00 pm</td>
 
   </tr>
 
@@ -192,7 +192,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">04/30</td>
 
-    <td style="border: 1px solid black;">1:10 pm - 1:30 pm</td>
+    <td style="border: 1px solid black;">1:00 pm - 1:20 pm</td>
 
   </tr>
 
@@ -203,7 +203,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">04/30</td>
 
-    <td style="border: 1px solid black;">1:30 pm - 1:50 pm</td>
+    <td style="border: 1px solid black;">1:20 pm - 1:40 pm</td>
 
   </tr>
 
@@ -214,7 +214,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">04/30</td>
 
-    <td style="border: 1px solid black;">1:50 pm - 2:10 pm</td>
+    <td style="border: 1px solid black;">1:40 pm - 2:00 pm</td>
 
   </tr>
 
