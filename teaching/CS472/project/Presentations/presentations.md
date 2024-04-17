@@ -107,6 +107,16 @@ favor and provide feedback to the ones presenting later you.
 
   </tr>
 
+<tr>
+
+    <td style="border: 1px solid black;">Crypto Wars -- Gp-8</td>
+
+    <td style="border: 1px solid black;">04/18</td>
+
+    <td style="border: 1px solid black;">1:20 pm - 1:45 pm</td>
+
+  </tr>
+
 
 </table>
 
@@ -206,7 +216,6 @@ are supposed to wait for their time slots.
     <td style="border: 1px solid black;">1:20 pm - 1:40 pm</td>
 
   </tr>
-
   
 <tr>
 
@@ -217,7 +226,5 @@ are supposed to wait for their time slots.
     <td style="border: 1px solid black;">1:40 pm - 2:00 pm</td>
 
   </tr>
-
-
 
 </table>
