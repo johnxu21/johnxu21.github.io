@@ -111,7 +111,7 @@ favor and provide feedback to the ones presenting later you.
 
     <td style="border: 1px solid black;">Crypto Wars -- Gp-8</td>
 
-    <td style="border: 1px solid black;">04/18</td>
+    <td style="border: 1px solid black;">04/23</td>
 
     <td style="border: 1px solid black;">1:20 pm - 1:45 pm</td>
 
