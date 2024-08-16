@@ -85,7 +85,7 @@ Materials & Tools Used for this Session
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
-* [nosetests](https://nose.readthedocs.io/en/latest/) extends python unittest to make testing easier.
+* [pytest](https://docs.pytest.org/en/stable/) Most popular python testing framework - makes it easy to write small, readable tests, and can scale to support complex functional testing for applications and libraries.
 * [flask](https://flask.palletsprojects.com/en/2.3.x/) a web framework, it's a Python module that lets you develop web applications easily.
 
 
@@ -211,15 +211,15 @@ interpret the report to determine which lines of code do not have test cases, an
 2. You will do all your editing work in the file ```tests/test_account.py```.
 3. Before writing any code, you should always check that the test cases are passing. 
    Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
-  * run the ```nosetests``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
+  * run the ```pytest``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
 
-```nosetests
+```pytest
   Name                 Stmts   Miss  Cover   Missing
 --------------------------------------------------
-models/__init__.py       6      0   100%
+models/__init__.py       7      0   100%
 models/account.py       40     13    68%   26, 30, 34-35, 45-48, 52-54, 74-75
 --------------------------------------------------
-TOTAL                   46     13    72%
+TOTAL                   47     13    72%
 ----------------------------------------------------------------------
 Ran 2 tests in 0.349s
 ```
@@ -245,16 +245,16 @@ def test_repr(self):
     self.assertEqual(str(account), "<Account 'Foo'>")
 ```
 
-5. Run ```nosetests``` again to ensure line ```26``` is now covered through testing and to determine 
+5. Run ```pytest``` again to ensure line ```26``` is now covered through testing and to determine 
 the next line of code for which you should write a new test case:
 
 ```angular2html
 Name                 Stmts   Miss  Cover   Missing
 --------------------------------------------------
-models/__init__.py       6      0   100%
+models/__init__.py       7      0   100%
 models/account.py       40     12    70%   30, 34-35, 45-48, 52-54, 74-75
 --------------------------------------------------
-TOTAL                   46     12    74%
+TOTAL                   47     12    74%
 ----------------------------------------------------------------------
 Ran 3 tests in 0.387s
 ```
@@ -272,28 +272,30 @@ def to_dict(self) -> dict:
     return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 ```
 Notice that this code is the ```to_dict()``` method. Now, let us add a new test case in ```test_account.py``` 
-that executes the ```to_dict()``` method on an Account, and thereafter run ```nosetests``` again.
+that executes the ```to_dict()``` method on an Account, and thereafter run ```pytest``` again.
 
 ```python
-def test_to_dict(self):
+def test_to_dict():
     """ Test account to dict """
-    data = ACCOUNT_DATA[self.rand] # get a random account
+    rand = randrange(0, len(ACCOUNT_DATA))  # Generate a random index
+    data = ACCOUNT_DATA[rand]  # get a random account
     account = Account(**data)
     result = account.to_dict()
-    self.assertEqual(account.name, result["name"])
-    self.assertEqual(account.email, result["email"])
-    self.assertEqual(account.phone_number, result["phone_number"])
-    self.assertEqual(account.disabled, result["disabled"])
-    self.assertEqual(account.date_joined, result["date_joined"])
+
+    assert account.name == result["name"]
+    assert account.email == result["email"]
+    assert account.phone_number == result["phone_number"]
+    assert account.disabled == result["disabled"]
+    assert account.date_joined == result["date_joined"]
 ```
 
 ```angular2html
 Name                 Stmts   Miss  Cover   Missing
 --------------------------------------------------
-models/__init__.py       6      0   100%
+models/__init__.py       7      0   100%
 models/account.py       40     11    72%   34-35, 45-48, 52-54, 74-75
 --------------------------------------------------
-TOTAL                   46     11    76%
+TOTAL                   47     11    77%
 ----------------------------------------------------------------------
 Ran 4 tests in 0.368s
 ```
@@ -313,19 +315,19 @@ test cases for the code you wish you had and then write the code to make the tes
 In this Task, you will write test cases based on the requirements given to you, and then you 
 will write the code to make the test cases pass.
 
-1. Clone and use the repo ([Python Testing lab](https://github.com/johnxu21/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
+1. Clone and use the repo ([Python Testing lab](https://github.com/UNLV-CS472-672/tdd.git)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
       * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
-      *  ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
+      *  ```pytest.ini``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```pytest``` only returns testing results for that file, e.g., ```--cov=counter```
       * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
 3. You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
 #### Creating a counter
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
-a PUT request and returns code ```200_OK``` if successful. Create a counter and then update it.
-1. Write the following code in the file ```test_counter.py```. Run ```nosetests```. You should see an error ```ModuleNotFoundError```
+a POST request and returns code ```201_OK``` if successful. Create a counter and then update it.
+1. Write the following code in the file ```test_counter.py```. Run ```pytest```. You should see an error ```ModuleNotFoundError```
 
 ```python
-from unittest import TestCase
+import pytest
 
 # we need to import the unit under test - counter
 from src.counter import app 
@@ -333,19 +335,28 @@ from src.counter import app
 # we need to import the file that contains the status codes
 from src import status 
 
-class CounterTest(TestCase):
-    """Counter tests"""
 ```
-2. Create a new file in the ```src``` directory called ```counter.py``` and run ```nosetests``` again. You should see an ```ImportError```, cannot find ```app```
-3. Write the code below and run ```nosetests``` again. The tests should run with no error.
-  
+2. Create a new file in the ```src``` directory called ```counter.py``` and run ```pytest``` again. You should see an ```ImportError```, cannot find ```app``` - ```ImportError: cannot import name 'app' from 'src.counter'```
+3. Write the code below and run ```pytest``` again. The tests should run with no error.
+
 ```python
 from flask import Flask
 
 app = Flask(__name__)
 ```
 
-4. Let us write our first test case and run ```nosetests``` again. 
+The output should be similar to the one below:
+```shell
+Name              Stmts   Miss  Cover   Missing
+-----------------------------------------------
+src/__init__.py       0      0   100%
+src/counter.py        2      0   100%
+src/status.py         6      0   100%
+-----------------------------------------------
+TOTAL                 8      0   100%
+```
+
+1. Let us write our first test case and run ```pytest``` again. 
 ```python
     def test_create_a_counter(self):
         """It should create a counter"""
@@ -357,7 +368,7 @@ This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404
 I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of 
 code we need to go write.
 
-5. Let's go to ```counters.py``` and create that endpoint. 
+1. Let's go to ```counters.py``` and create that endpoint.  Import status code from the status file - ```from . import status``` and add the code below:
 
 ```python
 COUNTERS = {}
@@ -376,30 +387,43 @@ def create_counter(name):
 ```
 
 Now we've implemented this first endpoint that should make the test pass. 
-When we run ```nosetests``` again, we will have <span style="color:green">**GREEN**</span>.
+When we run ```pytest``` again, we will have <span style="color:green">**GREEN**</span>.
 
 ## Duplicate names must return a conflict error code.
 The second requirement is if the name being created already exists, return a 409 conflict.
-* Since a lot of the code is a repeat we will <span style="color:blue">**REFACTOR**</span> 
-the repetitive code into ```setUp``` function. Since ```self.client = app.test_client()``` that is
+Since a lot of the code is going to be repeated, we will <span style="color:blue">**REFACTOR**</span> 
+the repetitive code using the ```fixture``` feature of ```pytest```. 
+1. For this example, ```client = app.test_client()``` that is
 inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span>
-it into the ```setUp``` function.
+it into new function called ```client``` and decorate it with ```@pytest.fixture()```. 
+1. Next we will also create a class called ```TestCounterEndPoints``` to group all our counter related tests and move the first test inside the class declaration. 
+2. For the last part of our refactoring, we need make the client fixture automatically available to all the test methods within our class. This can be achieved by using the pytest ```usefixtures``` decorator at the class level: ```@pytest.mark.usefixtures("client")```. The finally code is shown below:
 
 ```python
-def setUp(self):
-  self.client = app.test_client()
+@pytest.fixture()
+def client():
+  return app.test_client()
+
+@pytest.mark.usefixtures("client")
+class TestCounterEndPoints:
+    """Test cases for Counter-related endpoints"""
+
+    def test_create_a_counter(self, client):
+        """It should create a counter"""
+        result = client.post('/counters/foo')
+        assert result.status_code == status.HTTP_201_CREATED
 ```
 
-* Let us now write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
+* Now, let us now write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
 The second time we expect to get a ```HTTP_409_CONFLICT```. 
 
 ```python
-def test_duplicate_a_counter(self):
+def test_duplicate_a_counter(self, client):
   """It should return an error for duplicates"""
-  result = self.client.post('/counters/bar')
-  self.assertEqual(result.status_code, status.HTTP_201_CREATED)
-  result = self.client.post('/counters/bar')
-  self.assertEqual(result.status_code, status.HTTP_409_CONFLICT)
+  result = client.post('/counters/bar')
+  assert result.status_code == status.HTTP_201_CREATED
+  result = client.post('/counters/bar')
+  assert result.status_code == status.HTTP_409_CONFLICT
 ```
 When we run our test cases we obtain
 <span style="color:red">**RED**</span> phase - ```AssertionError: 201 != 409```.
@@ -414,7 +438,7 @@ Copy and paste the code snippet below and place it right after the code line ```
 if name in COUNTERS:
   return {"Message":f"Counter {name} already exists"}, status.HTTP_409_CONFLICT
 ```
-When we run ```nosetests``` again we should get the <span style="color:green">**GREEN**</span> phase.
+When we run ```pytest``` again we should get the <span style="color:green">**GREEN**</span> phase.
 
 ## Your task (15 points)
 You will implement the updating the counter by name following the TDD workflow (write test cases and 
@@ -424,7 +448,7 @@ Following REST API guidelines, an update uses a ```PUT``` request and returns co
 Create a counter and then update it. 
 You will implement the following requirements:
 
-In ```test_counter.py```, create a test called ```test_update_a_counter(self)```. It should implement the following steps:
+In ```test_counter.py```, create a test called ```test_update_a_counter(self, client)```. It should implement the following steps:
 1. Make a call to Create a counter.
 2. Ensure that it returned a successful return code.
 3. Check the counter value as a baseline.
@@ -432,7 +456,7 @@ In ```test_counter.py```, create a test called ```test_update_a_counter(self)```
 5. Ensure that it returned a successful return code.
 6. Check that the counter value is one more than the baseline you measured in step 3.
 
-When you run ```nosetests```, you should be in the <span style="color:red">**RED**</span> phase.
+When you run ```pytest```, you should be in the <span style="color:red">**RED**</span> phase.
 
 Next, in ```counter.py```, create a function called ```update_counter(name)```. 
 It should implement the following steps:
@@ -448,7 +472,7 @@ Here you should figure out the requirements for the test case as well as code yo
 
 Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
 to implement the requirements. Include in your report the code snippets you wrote at every step as well as 
-the exceptions you encountered while running ```nosetests```. 
+the exceptions you encountered while running ```pytest```. 
 **Make your report self-contained so that it is easy to follow without running your code**
  
 Submitting the Assignment
