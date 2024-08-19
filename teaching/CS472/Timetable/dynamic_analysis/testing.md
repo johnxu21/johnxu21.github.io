@@ -207,7 +207,7 @@ Task 4 -- Working with Python Test Coverage
 In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and 
 interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
-1. Clone the git project [Python Testing lab](https://github.com/johnxu21/test_coverage). Open the IDE, navigate to the directory ```test_coverage``` and run the command ```pip install -r requirements.txt```
+1. Clone the git project [Python Testing lab](https://github.com/UNLV-CS472-672/test_coverage). Open the IDE, navigate to the directory ```test_coverage``` and run the command ```pip install -r requirements.txt```
 2. You will do all your editing work in the file ```tests/test_account.py```.
 3. Before writing any code, you should always check that the test cases are passing. 
    Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
@@ -238,11 +238,11 @@ printing it out. We will add a new test case in ```test_account.py``` that calls
 method on an Account.
 
 ```python
-def test_repr(self):
+def test_repr():
     """Test the representation of an account"""
     account = Account()
     account.name = "Foo"
-    self.assertEqual(str(account), "<Account 'Foo'>")
+    assert str(account) == "<Account 'Foo'>"
 ```
 
 5. Run ```pytest``` again to ensure line ```26``` is now covered through testing and to determine 
