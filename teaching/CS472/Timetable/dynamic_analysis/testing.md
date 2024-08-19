@@ -186,12 +186,8 @@ A simple Google sheet having two columns would help get the group organised.
 Task 3 -- JaCoCo Report on JPacman (10 points)
 =====
 
-The gradle build file provided in ```JPacman```, already has ```JaCoCo``` configured. Look at the folder 
-```build/reports/jacoco/test/html```, right-click on the file ```index.html``` and select 
-"Open in Browser". This is the coverage report from the ```JaCoCo``` tool. As you can see, ```JaCoCo``` shows not only 
-line coverage but also branch coverage. Click on the ```level``` package, then on the ```Player``` class, 
-and after that on any method. You will see the source code with color information on which branches are 
-covered (or partially covered).
+The gradle build file provided in ```JPacman```, already has ```JaCoCo``` configured. Look at the folder ```build/reports/jacoco/test/html```, right-click on the file ```index.html``` and select 
+"Open in Browser". This is the coverage report from the ```JaCoCo``` tool. As you can see, ```JaCoCo``` shows not only line coverage but also branch coverage. Click on the ```level``` package, then on the ```Player``` class, and after that on any method. You will see the source code with color information on which branches are covered (or partially covered).
  
 **Questions:** 
 * Are the coverage results from ```JaCoCo``` similar to the ones you got from ```IntelliJ``` in the last task? Why so or why not?
@@ -204,13 +200,11 @@ Make sure that your report is descriptive enough for me to follow without lookin
 
 Task 4 -- Working with Python Test Coverage
 =====
-In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and 
-interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
+In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
 1. Clone the git project [Python Testing lab](https://github.com/UNLV-CS472-672/test_coverage). Open the IDE, navigate to the directory ```test_coverage``` and run the command ```pip install -r requirements.txt```
 2. You will do all your editing work in the file ```tests/test_account.py```.
-3. Before writing any code, you should always check that the test cases are passing. 
-   Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
+3. Before writing any code, you should always check that the test cases are passing.Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
   * run the ```pytest``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
 
 ```pytest
@@ -225,8 +219,7 @@ Ran 2 tests in 0.349s
 ```
 
 4. Starting with 72% test coverage. The goal is to reach 100%! Looking at the first missed line, 
-line 26 in ```account.py``` to see if we can write a test case for it. To increase the test coverage, 
-we first investigate line 26 in ```models/account.py```. This file is in the ```model``` 
+line 26 in ```account.py``` to see if we can write a test case for it. To increase the test coverage, we first investigate line 26 in ```models/account.py```. This file is in the ```model``` 
 package from the root of the repo. Look at the following code on lines ```25``` and ```26```.
 
 ```python
@@ -234,8 +227,7 @@ def __repr__(self):
     return '<Account %r>' % self.name
 ```
 Notice that this method is one of the magic methods that is called to represent the class when 
-printing it out. We will add a new test case in ```test_account.py``` that calls the ```__repr__()``` 
-method on an Account.
+printing it out. We will add a new test case in ```test_account.py``` that calls the ```__repr__()``` method on an Account.
 
 ```python
 def test_repr():
@@ -258,21 +250,18 @@ TOTAL                   47     12    74%
 ----------------------------------------------------------------------
 Ran 3 tests in 0.387s
 ```
-Note that the overall test coverage has increased from 72% to 74% and the new report does not 
-list line ``26`` in the Missing column. 
+Note that the overall test coverage has increased from 72% to 74% and the new report does not list line ``26`` in the Missing column. 
 
 6. Next, let us look at the next line of code listed in the lines of code missing tests cases, line 
 is ```30```. Examine this line in ```models/account.py``` to find out what that code is doing.
 
-We will look at code of the entire function on lines ```28``` through ```30``` to see what it is 
-doing.
+We will look at code of the entire function on lines ```28``` through ```30``` to see what it is doing.
 ```python
 def to_dict(self) -> dict:
     """Serializes the class as a dictionary"""
     return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 ```
-Notice that this code is the ```to_dict()``` method. Now, let us add a new test case in ```test_account.py``` 
-that executes the ```to_dict()``` method on an Account, and thereafter run ```pytest``` again.
+Notice that this code is the ```to_dict()``` method. Now, let us add a new test case in ```test_account.py``` that executes the ```to_dict()``` method on an Account, and thereafter run ```pytest``` again.
 
 ```python
 def test_to_dict():
@@ -302,18 +291,13 @@ Ran 4 tests in 0.368s
 Note that the overall test coverage increased from 74% to 76%. 
 
 #### Your task - Getting coverage to 100% (20)
-In this task to try to get the test coverage to close to 100% as possible. You will 
-examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` 
-to find out what that code is doing.
+In this task to try to get the test coverage to close to 100% as possible. You will examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` to find out what that code is doing.
 
 **Add to your report of the previous tasks and include the code snippets for your test cases.**
 
 Task 5 - TDD
 =======
-Test driven development (TDD) is an approach to software development in which you first write the 
-test cases for the code you wish you had and then write the code to make the test cases pass.
-In this Task, you will write test cases based on the requirements given to you, and then you 
-will write the code to make the test cases pass.
+Test driven development (TDD) is an approach to software development in which you first write the test cases for the code you wish you had and then write the code to make the test cases pass. In this Task, you will write test cases based on the requirements given to you, and then you will write the code to make the test cases pass.
 
 1. Clone and use the repo ([Python Testing lab](https://github.com/UNLV-CS472-672/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
@@ -321,9 +305,9 @@ will write the code to make the test cases pass.
       *  ```pytest.ini``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```pytest``` only returns testing results for that file, e.g., ```--cov=counter```
       * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
 3. You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
+   
 #### Creating a counter
-You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
-a POST request and returns code ```201_OK``` if successful. Create a counter and then update it.
+You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses a POST request and returns code ```201_OK``` if successful. Create a counter and then update it.
 1. Write the following code in the file ```test_counter.py```. Run ```pytest```. You should see an error ```ModuleNotFoundError```
 
 ```python
@@ -388,8 +372,7 @@ When we run ```pytest``` again, we will have <span style="color:green">**GREEN**
 
 ## Duplicate names must return a conflict error code.
 The second requirement is if the name being created already exists, return a 409 conflict.
-Since a lot of the code is going to be repeated, we will <span style="color:blue">**REFACTOR**</span> 
-the repetitive code using the ```fixture``` feature of ```pytest```. 
+Since a lot of the code is going to be repeated, we will <span style="color:blue">**REFACTOR**</span> the repetitive code using the ```fixture``` feature of ```pytest```. 
 1. For this example, ```client = app.test_client()``` that is inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span> it into new function called ```client``` and decorate it with ```@pytest.fixture()```.
 2. Next we will also create a class called ```TestCounterEndPoints``` to group all our counter related tests and move the first test inside the class declaration. 
 3. For the last part of our refactoring, we need make the client fixture automatically available to all the test methods within our class. This can be achieved by using the pytest ```usefixtures``` decorator at the class level: ```@pytest.mark.usefixtures("client")```. The finally code is shown below:
@@ -458,15 +441,11 @@ It should implement the following steps:
 1. Create a route for method ```PUT``` on endpoint ```/counters/<name>```.
 2. Create a function to implement that route.
 3. Increment the counter by 1.
-3. Return the new counter and a ```200_OK``` return code.
+4. Return the new counter and a ```200_OK``` return code.
 
-Next, you will write another test case to read a counter. Following REST API guidelines, a read uses a 
-```GET``` request and returns a ```200_OK``` code if successful. Create a counter and then read it. 
-Here you should figure out the requirements for the test case as well as code you will put in the unit under test.
+Next, you will write another test case to read a counter. Following REST API guidelines, a read uses a ```GET``` request and returns a ```200_OK``` code if successful. Create a counter and then read it. Here you should figure out the requirements for the test case as well as code you will put in the unit under test.
 
-Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
-to implement the requirements. Include in your report the code snippets you wrote at every step as well as 
-the exceptions you encountered while running ```pytest```. 
+Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed to implement the requirements. Include in your report the code snippets you wrote at every step as well as the exceptions you encountered while running ```pytest```. 
 **Make your report self-contained so that it is easy to follow without running your code**
  
 Submitting the Assignment
