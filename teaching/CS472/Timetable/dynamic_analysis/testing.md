@@ -315,7 +315,7 @@ test cases for the code you wish you had and then write the code to make the tes
 In this Task, you will write test cases based on the requirements given to you, and then you 
 will write the code to make the test cases pass.
 
-1. Clone and use the repo ([Python Testing lab](https://github.com/UNLV-CS472-672/tdd.git)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
+1. Clone and use the repo ([Python Testing lab](https://github.com/UNLV-CS472-672/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
 2. Open the IDE, navigate to the directory ```tdd```.
       * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
       *  ```pytest.ini``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```pytest``` only returns testing results for that file, e.g., ```--cov=counter```
@@ -364,11 +364,8 @@ TOTAL                 8      0   100%
         result = client.post('/counters/foo')
         self.assertEqual(result.status_code, status.HTTP_201_CREATED)
 ```
-This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. 
-I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of 
-code we need to go write.
-
-1. Let's go to ```counters.py``` and create that endpoint.  Import status code from the status file - ```from . import status``` and add the code below:
+This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of code we need to go write.
+2. Let's go to ```counters.py``` and create that endpoint.  Import status code from the status file - ```from . import status``` and add the code below:
 
 ```python
 COUNTERS = {}
@@ -393,11 +390,9 @@ When we run ```pytest``` again, we will have <span style="color:green">**GREEN**
 The second requirement is if the name being created already exists, return a 409 conflict.
 Since a lot of the code is going to be repeated, we will <span style="color:blue">**REFACTOR**</span> 
 the repetitive code using the ```fixture``` feature of ```pytest```. 
-1. For this example, ```client = app.test_client()``` that is
-inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span>
-it into new function called ```client``` and decorate it with ```@pytest.fixture()```. 
-1. Next we will also create a class called ```TestCounterEndPoints``` to group all our counter related tests and move the first test inside the class declaration. 
-2. For the last part of our refactoring, we need make the client fixture automatically available to all the test methods within our class. This can be achieved by using the pytest ```usefixtures``` decorator at the class level: ```@pytest.mark.usefixtures("client")```. The finally code is shown below:
+1. For this example, ```client = app.test_client()``` that is inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span> it into new function called ```client``` and decorate it with ```@pytest.fixture()```.
+2. Next we will also create a class called ```TestCounterEndPoints``` to group all our counter related tests and move the first test inside the class declaration. 
+3. For the last part of our refactoring, we need make the client fixture automatically available to all the test methods within our class. This can be achieved by using the pytest ```usefixtures``` decorator at the class level: ```@pytest.mark.usefixtures("client")```. The finally code is shown below:
 
 ```python
 @pytest.fixture()
@@ -414,8 +409,7 @@ class TestCounterEndPoints:
         assert result.status_code == status.HTTP_201_CREATED
 ```
 
-* Now, let us now write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
-The second time we expect to get a ```HTTP_409_CONFLICT```. 
+* Now, let us now write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times. The second time we expect to get a ```HTTP_409_CONFLICT```. 
 
 ```python
 def test_duplicate_a_counter(self, client):
