@@ -171,7 +171,7 @@ Like in the [Testing Lab](../dynamic_analysis), detail the phases (red/green/ref
 **Remember to commit your code**.
 
 Submitting the Assignment
-=======
+==========================
 * Write a report for all the tasks. Include a link to your GitHub repository at the start of the report.
 * Make sure that your repository is public so that we are able to access repository.
 * To show that you were able to complete the tasks. Include screenshots for each task in your report. The screenshots should include the address bar of the browser so that we are able to see repo name.
