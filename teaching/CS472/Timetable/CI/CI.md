@@ -136,16 +136,16 @@ This command will run ```flake8``` for the src folder of your repository. By add
     You can run inline commands using the ```run:``` keyword with the pipe ```|``` operator.
   * **In the file ```requirements.txt``` the dependency for ```flake8``` is missing. Include ```flake8```, otherwise CI build will not succeed.**
 
-5. **Test Code Coverage with pytests**: You will use nose in this step to unit test the source code. Nose is configured via the included setup.cfg file to automatically include the flags ```-–with-spec``` and ```–-spec-color``` so that red-green-refactor is meaningful. If you are in a command shell that supports colors, passing tests will be <span style="color:green">**green**</span> and failing tests will be <span style="color:red">**red**</span>.
+1. **Test Code Coverage with pytests**: You will use pytest in this step to unit test the source code. Pytest is configured via the included ```pytest.ini``` file to automatically include the flags ```-–with-spec``` and ```–-spec-color``` so that red-green-refactor is meaningful. If you are in a command shell that supports colors, passing tests will be <span style="color:green">**green**</span> and failing tests will be <span style="color:red">**red**</span>.
    <br/><br/>
-Nose is also configured to automatically run the coverage tool, and you should see a percentage of coverage report at the end of your tests.
+Pytest is also configured to automatically run the coverage tool, and you should see a percentage of coverage report at the end of your tests.
   * Add a new named step after the ```Lint with flake8``` step. Call this step ```Run unit tests with pytests```.
   * Next, you want to run the ```pytests``` command to test your code and report on code coverage.
     ```angular2html
     pytest -v --tb=short --color=yes --cov=src --cov-report=term-missing
     ```
     Since you are running a single command, you do not have to use the pipe ```|``` operator with ```run```.
-6. **Push Code to GitHub**.
+1. **Push Code to GitHub**.
 
 When you click on ```Actions``` tab in your repository, and then click on the latest workflow run (in green). You should be able to see screen like the one below.
 
@@ -166,7 +166,7 @@ Fig 4: CI builds
 
 Per REST API guidelines, a read uses a ```DELETE``` request and returns a ```204_NO_CONTENT``` code if successful. Create a function that deletes the counter that matches the specified name.
 
-Like in the [Testing Lab](../dynamic_analysis), detail the phases (red/green/refactor) you followed to implement the requirements. Include in your report the code snippets you wrote at every step as well as the exceptions you encountered while running nosetests. **Make your report self-contained so that it is easy to follow without running your code**.
+Like in the [Testing Lab](../dynamic_analysis), detail the phases (red/green/refactor) you followed to implement the requirements. Include in your report the code snippets you wrote at every step as well as the exceptions you encountered while running pytests. **Make your report self-contained so that it is easy to follow without running your code**.
 
 **Remember to commit your code**.
 
