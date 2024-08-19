@@ -67,8 +67,8 @@ Task 1: (5 points)
 mkdir -p .github/workflows
 touch .github/workflows/workflow.yml
 ```
-2. **Create a Workflow**: Every workflow starts with a name. The name will be displayed on the Actions page and on any badges. Give your workflow the name ```CI workflow``` by adding a ```name:``` tag as the first line in the file.
-3. **Add Event Triggers**: Event triggers define which events can cause the workflow to run. You will use the ```on:``` tag to add the following events: 1) Run the workflow on every push to the main branch and 2) Run the workflow whenever a pull request is created to the main branch.
+3. **Create a Workflow**: Every workflow starts with a name. The name will be displayed on the Actions page and on any badges. Give your workflow the name ```CI workflow``` by adding a ```name:``` tag as the first line in the file.
+4. **Add Event Triggers**: Event triggers define which events can cause the workflow to run. You will use the ```on:``` tag to add the following events: 1) Run the workflow on every push to the main branch and 2) Run the workflow whenever a pull request is created to the main branch.
   * Add the ```on:``` keyword to the workflow at the same level of indentation as the ```name:```
   * Add a ```push:``` event as the first event that can trigger the workflow. 
     This is added as the child element of ```on:``` so it must be indented under it.
@@ -78,17 +78,17 @@ touch .github/workflows/workflow.yml
     ```[]``` or ```-```
   * Add a ```pull_request:``` event similar to the push event you just finished. It should be 
     triggered whenever the user makes a pull request on the main branch.
-4. **Add a Job**: You will now add a job called build to the workflow file. This job will run on the ```ubuntu-latest``` runner. Remember, a job is a collection of steps that are run on the events you added in the previous step.
+5. **Add a Job**: You will now add a job called build to the workflow file. This job will run on the ```ubuntu-latest``` runner. Remember, a job is a collection of steps that are run on the events you added in the previous step.
   * Add the ```jobs:``` section to the workflow at the same level of indentation as the 
    ```name``` (i.e., no indent).
   * Next, you need to name the job. Name your job ```build:``` by adding a new line under the 
     ```jobs:``` section.
   * Finally, you need a runner. Tell GitHub Actions to use the ```ubuntu-latest``` runner for 
     this job. You can do this by using the ```runs-on:``` keyword.
-5. **Target Python 3.9**: It is important to consistently use the same version of dependencies and operating system for all phases of development including the CI pipeline. This project was developed on Python 3.9, so you need to ensure that the CI pipeline also runs on the same version of Python. You will accomplish this by running your workflow in a container inside the GitHub action.
+6. **Target Python 3.9**: It is important to consistently use the same version of dependencies and operating system for all phases of development including the CI pipeline. This project was developed on Python 3.9, so you need to ensure that the CI pipeline also runs on the same version of Python. You will accomplish this by running your workflow in a container inside the GitHub action.
   * Add a ```container:``` section under the runs-on: section of the build job, and 
     tell GitHub Actions to use ```python:3.9-slim``` as the image.
-6. Save and commit your changes to your repository.
+7. Save and commit your changes to your repository.
 
 When you click on ```Actions``` tab in your repository, you should be able to see screen like the one below.
 
