@@ -149,22 +149,22 @@ Pytest is also configured to automatically run the coverage tool, and you should
 
 When you click on ```Actions``` tab in your repository, and then click on the latest workflow run (in green). You should be able to see screen like the one below.
 
-<img src="/teaching/CS472/Timetable/CI/task2.jpeg" alt="CompeteWorkflow" style="width:1035px;height:172px;" align="center">
+<img src="/teaching/CS472/Timetable/CI/task2.png" alt="CompeteWorkflow" style="width:1035px;height:172px;" align="center">
 
-<img src="/teaching/CS472/Timetable/CI/task2_2.jpeg" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center">
+<img src="/teaching/CS472/Timetable/CI/task2_2.png" alt="CompeteWorkflow" style="width:1601px;height:353px;" align="center">
 
 If the CI build did not succeed, you can click and see where a problem could have occurred, then fix it locally and push again.
 
 Clicking on ```Run unit tests with pytest```, you should be able to see the screen below. 
 
 Fig 4: CI builds
-<img src="/teaching/CS472/Timetable/CI/task2_3.jpeg" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
+<img src="/teaching/CS472/Timetable/CI/task2_3.png" alt="CompeteWorkflow" style="width:727px;height:567px;" align="center">
 
 * From the image above, we can see that there are three ```Test Cases``` for the ```counter.py``` file. These are the ```Test Cases``` you were required to write in the [Testing lab](../dynamic_analysis). In this lab, you will write one more test case, using the red/green/refactor workflow, and push the code in your repository. You should be able to see that the fourth ```Test Cases``` turns <span style="color:green">**GREEN**</span> in your CI builds.
 
 **You will write a test case to delete a counter. (10 points)**
 
-Per REST API guidelines, a read uses a ```DELETE``` request and returns a ```204_NO_CONTENT``` code if successful. Create a function that deletes the counter that matches the specified name.
+Per REST API guidelines, a delete uses a ```DELETE``` request and returns a ```204_NO_CONTENT``` code if successful. Create a function that deletes the counter that matches the specified name.
 
 Like in the [Testing Lab](../dynamic_analysis), detail the phases (red/green/refactor) you followed to implement the requirements. Include in your report the code snippets you wrote at every step as well as the exceptions you encountered while running pytests. **Make your report self-contained so that it is easy to follow without running your code**.
 
