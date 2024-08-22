@@ -3,7 +3,7 @@ layout: default
 ---
 
 # John Businge
-Assistant Professor, Computer Science <a href="/images/john.jpeg" target="_blank"><img src="/images/jb.JPG" alt="John Businge" style="width:190px;height:190px;" align="right"></a> <br>
+Assistant Professor, Computer Science <a href="/images/jb.JPG" target="_blank"><img src="/images/jb.JPG" alt="John Businge" style="width:250px;height:250px;" align="right"></a> <br>
 [University of Nevada, Las Vegas](https://www.unlv.edu/) <br>
 Office: 4245 Science and Engineering Building (SEB) <br>
 Telephone (Office): (702)-895-4216<br>
