@@ -102,136 +102,129 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">01</td>
 <td style="border: 1px solid black;">Mo 08/26</td>
 <td style="border: 1px solid black;">[T] Class overview</td>
-<td style="border: 1px solid black;">Mo 08/28</td>
+<td style="border: 1px solid black;">We 08/28</td>
 <td style="border: 1px solid black;">[T] Intro to Git & GitHub </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">02</td>
-<td style="border: 1px solid black;">Mo 01/23</td>
+<td style="border: 1px solid black;">Mo 09/02</td>
 <td style="border: 1px solid black;">[T] More Git & GitHub</td>
-<td style="border: 1px solid black;">We01/25 </td>
+<td style="border: 1px solid black;">We 09/04 </td>
 <td style="border: 1px solid black;">[L] Git and GitHub </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
-<td style="border: 1px solid black;">Mo 01/30 </td>
+<td style="border: 1px solid black;">Mo 09/09 </td>
 <td style="border: 1px solid black;">[T] Software Testing </td>
-<td style="border: 1px solid black;">We02/01 </td>
+<td style="border: 1px solid black;">We 09/11 </td>
 <td style="border: 1px solid black;">[L] Software Testing </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
-<td style="border: 1px solid black;">Mo 02/06</td>
+<td style="border: 1px solid black;">Mo 09/16</td>
 <td style="border: 1px solid black;">[T] Continuous Integration</td>
-<td style="border: 1px solid black;">We02/08 </td>
+<td style="border: 1px solid black;">We 09/18 </td>
 <td style="border: 1px solid black;">[L] Continuous Integration</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
-<td style="border: 1px solid black;">Mo 02/13</td>
+<td style="border: 1px solid black;">Mo 09/23</td>
 <td style="border: 1px solid black;">[T] Application of LLMs in SEe</td>
-<td style="border: 1px solid black;">We02/15 </td>
+<td style="border: 1px solid black;">We 09/25 </td>
 <td style="border: 1px solid black;">[L] Application of LLMs in SE </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
-<td style="border: 1px solid black;">Mo 02/20</td>
+<td style="border: 1px solid black;">Mo 09/30</td>
 <td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
-<td style="border: 1px solid black;">We02/22 </td>
+<td style="border: 1px solid black;">We 10/02 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">07</td>
-<td style="border: 1px solid black;">Mo 02/27</td>
+<td style="border: 1px solid black;">Mo 10/07</td>
 <td style="border: 1px solid black;">[T] Survey results presentation </td>
-<td style="border: 1px solid black;">We02/29 </td>
+<td style="border: 1px solid black;">We 10/09 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">08</td>
-<td style="border: 1px solid black;">Mo 03/05</td>
+<td style="border: 1px solid black;">Mo 10/14</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">We03/07 </td>
+<td style="border: 1px solid black;">We 10/16 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">09</td>
-<td style="border: 1px solid black;">Mo 03/12</td>
+<td style="border: 1px solid black;">Mo 10/21</td>
 <td style="border: 1px solid black;">Spring Break</td>
-<td style="border: 1px solid black;">We03/14 </td>
+<td style="border: 1px solid black;">We 10/23 </td>
 <td style="border: 1px solid black;">Spring Break</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">10</td>
-<td style="border: 1px solid black;">Mo 03/19</td>
+<td style="border: 1px solid black;">Mo 10/28</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">We03/21 </td>
+<td style="border: 1px solid black;">We 10/30 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">11</td>
-<td style="border: 1px solid black;">Mo 03/26</td>
+<td style="border: 1px solid black;">Mo 11/04</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">We03/28 </td>
+<td style="border: 1px solid black;">We 11/06 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">12</td>
-<td style="border: 1px solid black;">Mo 04/02</td>
+<td style="border: 1px solid black;">Mo 11/11</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">We04/04 </td>
+<td style="border: 1px solid black;">We 11/13 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">13</td>
-<td style="border: 1px solid black;">Mo 04/09</td>
+<td style="border: 1px solid black;">Mo 11/18</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
-<td style="border: 1px solid black;">We04/11 </td>
+<td style="border: 1px solid black;">We 11/20 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">14</td>
-<td style="border: 1px solid black;">Mo 04/16</td>
+<td style="border: 1px solid black;">Mo 11/25</td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
-<td style="border: 1px solid black;">We04/18 </td>
+<td style="border: 1px solid black;">We 11/27 </td>
 <td style="border: 1px solid black;">Trial Presentation</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">15</td>
-<td style="border: 1px solid black;">Mo 04/23</td>
+<td style="border: 1px solid black;">Mo 12/02</td>
 <td style="border: 1px solid black;">Trial Presentation</td>
-<td style="border: 1px solid black;">We04/25 </td>
+<td style="border: 1px solid black;">We 12/04 </td>
 <td style="border: 1px solid black;"><b>Project Presentation</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">16</td>
-<td style="border: 1px solid black;">Mo 04/30</td>
-<td style="border: 1px solid black;"><b>Project Presentation</b></td>
-<td style="border: 1px solid black;">We05/02 </td>
-<td style="border: 1px solid black;"><b>Senior Design Competition</b></td>
-</tr>
-
-<tr>
-<td style="border: 1px solid black;">17</td>
-<td style="border: 1px solid black;">Mo 05/07</td>
+<td style="border: 1px solid black;">Mo 12/09</td>
 <td style="border: 1px solid black;"><b>Final Exam</b></td>
-<td style="border: 1px solid black;">We05/09 </td>
+<td style="border: 1px solid black;">We 05/02 </td>
 <td style="border: 1px solid black;"></td>
 </tr>
+
 
 </table>
