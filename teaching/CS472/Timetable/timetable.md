@@ -109,49 +109,49 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">02</td>
 <td style="border: 1px solid black;">Mo 09/02</td>
-<td style="border: 1px solid black;">[T] More Git & GitHub</td>
+<td style="border: 1px solid black;"><b>Labor Day recess</b></td>
 <td style="border: 1px solid black;">We 09/04 </td>
-<td style="border: 1px solid black;">[L] Git and GitHub </td>
+<td style="border: 1px solid black;">[T] More of Git & GitHub </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
 <td style="border: 1px solid black;">Mo 09/09 </td>
-<td style="border: 1px solid black;">[T] Software Testing </td>
+<td style="border: 1px solid black;">[L] Git and GitHub </td>
 <td style="border: 1px solid black;">We 09/11 </td>
-<td style="border: 1px solid black;">[L] Software Testing </td>
+<td style="border: 1px solid black;">[T] Software Testing </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Mo 09/16</td>
-<td style="border: 1px solid black;">[T] Continuous Integration</td>
+<td style="border: 1px solid black;">[L] Software Testing</td>
 <td style="border: 1px solid black;">We 09/18 </td>
-<td style="border: 1px solid black;">[L] Continuous Integration</td>
+<td style="border: 1px solid black;">[T] Continuous Integration</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Mo 09/23</td>
-<td style="border: 1px solid black;">[T] Application of LLMs in SEe</td>
+<td style="border: 1px solid black;">[L] Continuous Integration</td>
 <td style="border: 1px solid black;">We 09/25 </td>
-<td style="border: 1px solid black;">[L] Application of LLMs in SE </td>
+<td style="border: 1px solid black;">[T] Application of LLMs in SE </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Mo 09/30</td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[L] Application of LLMs in SE</td>
 <td style="border: 1px solid black;">We 10/02 </td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">07</td>
 <td style="border: 1px solid black;">Mo 10/07</td>
-<td style="border: 1px solid black;">[T] Survey results presentation </td>
+<td style="border: 1px solid black;">[L] Free Project Work  </td>
 <td style="border: 1px solid black;">We 10/09 </td>
-<td style="border: 1px solid black;">[L] Free Project Work </td>
+<td style="border: 1px solid black;">[T] Survey results presentation</td>
 </tr>
 
 <tr>
@@ -165,9 +165,9 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">09</td>
 <td style="border: 1px solid black;">Mo 10/21</td>
-<td style="border: 1px solid black;">Spring Break</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 <td style="border: 1px solid black;">We 10/23 </td>
-<td style="border: 1px solid black;">Spring Break</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 </tr>
 
 <tr>
