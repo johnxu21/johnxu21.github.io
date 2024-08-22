@@ -71,8 +71,6 @@ Traffic Simulation
 
 To see how things work in concrete terms, you will find the form below with the assessment criteria.
 
-Evaluation criteria 472 [[Google Doc](https://docs.google.com/document/d/1AhUVxWgfDtQVmgEJD0acVPnD72SRoKTHJ2Qh5X6IPqY/edit#)]
-
 Weekly Group Meetings:
 ====
 
@@ -88,6 +86,11 @@ The following documents will guide you produce the deliverables of the project:
 * Design Portfolio II ([Doc](https://docs.google.com/document/d/1mUBX7hakgAdiBDJv9HPzD9436Ezvr2nPeZkdk9psGa8/edit#))
 * Design Portfolio III ([Doc](https://docs.google.com/document/d/13xShWs_zi9bBmfkToTYu4v68KwVXHZOjAdw7-obOIgg/edit))
 * Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit))
+
+Evaluation Design Portfolio 
+* Design Portfolio I ([Doc](https://docs.google.com/document/d/15HKZ10h56K-V7aLgyaN5e4hQ6GHTeGHc0BLzVsXhofU/edit))
+* Design Portfolio II ([Doc](https://docs.google.com/document/d/10qp_z0OMqyIvfSuUjU-3hKK0v3G5s9DhNuVhoASBjGk/edit))
+* Design Portfolio III ([Doc](https://docs.google.com/document/d/1APCK159uvnm7XuY8d4N_JQ7sZ4VDrencIXrrtzRrkHE/edit))
 
 
 # 1. Team Collaboration and Assessment Requirements:
