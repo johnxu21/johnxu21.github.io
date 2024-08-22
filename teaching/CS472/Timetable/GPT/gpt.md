@@ -48,7 +48,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
-### **This individual assignment is due Feb 26th, 2024**
+### **This individual assignment is due Oct 1st, 2024**
 
 In this lab, you will learn how to leverage ChatGPT, a powerful language model developed by OpenAI, 
 to address various software engineering tasks. ChatGPT, part of the GPT (Generative Pre-trained Transformer) 
