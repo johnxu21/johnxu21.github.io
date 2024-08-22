@@ -3,7 +3,7 @@ layout: default
 ---
 
 # John Businge
-Assistant Professor, Computer Science <a href="/images/jb.JPG" target="_blank"><img src="/images/jb.JPG" alt="John Businge" style="width:250px;height:250px;" align="right"></a> <br>
+Assistant Professor, Computer Science <a href="/images/jb.JPG" target="_blank"><img src="/images/jb.JPG" alt="John Businge" style="width:300px;height:300px;" align="right"></a> <br>
 [University of Nevada, Las Vegas](https://www.unlv.edu/) <br>
 Office: 4245 Science and Engineering Building (SEB) <br>
 Telephone (Office): (702)-895-4216<br>
@@ -34,24 +34,28 @@ More about my research can be found on the (<a href="https://johnxu21.github.io/
 ## News
 <!--<table style="white-space: nowrap;"> -->
 <table>
+<tr>
+	<td width="150"><b>August, 2024</b></td>
+	<td> Our project "Integrating AI Technologies into Software Engineering Education" has been awarded $50,000 by NASA through the Nevada System of Higher Education. The project runs from August 2024 to April 2025. </td> 
+</tr>
 
 <tr>
 	<td width="150"><b>September, 2023</b></td>
-	<td> Our book chapter on Analyzing Variant Forks of Software Repositories from Social Coding Platforms has been published on SpringerLink </td> 
+	<td> Our book chapter on Analyzing Variant Forks of Software Repositories from Social Coding Platforms has been published on SpringerLink. </td> 
 </tr>
 
 <tr>
 	<td width="150"><b>June, 2022</b></td>
-	<td> Our paper on PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family has been accepted in ESEC/FSE 2022 </td> 
+	<td> Our paper on PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family has been accepted in ESEC/FSE 2022. </td> 
 </tr>
 
 <tr>
 	<td width="150"><b>March, 2022</b></td>
-	<td> Our paper on Reuse and Maintenance Practices among Divergent Forks in three Software Ecosystems has been accepted in EMSE 2022 </td> 
+	<td> Our paper on Reuse and Maintenance Practices among Divergent Forks in three Software Ecosystems has been accepted in EMSE 2022. </td> 
 </tr>
 
 <tr>
 	<td width="150"><b>December, 2021</b></td>
-	<td> Our paper on Variant Forks - Motivations and Impediments has been accepted in SANER 2022 </td> 
+	<td> Our paper on Variant Forks - Motivations and Impediments has been accepted in SANER 2022. </td> 
 </tr>
 </table>
