@@ -342,11 +342,11 @@ TOTAL                 8      0   100%
 
 1. Let us write our first test case and run ```pytest``` again. 
 ```python
-    def test_create_a_counter(self):
+    def test_create_a_counter():
         """It should create a counter"""
         client = app.test_client()
         result = client.post('/counters/foo')
-        self.assertEqual(result.status_code, status.HTTP_201_CREATED)
+        self.assert result.status_code == status.HTTP_201_CREATED
 ```
 This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of code we need to go write.
 2. Let's go to ```counters.py``` and create that endpoint.  Import status code from the status file - ```from . import status``` and add the code below:
