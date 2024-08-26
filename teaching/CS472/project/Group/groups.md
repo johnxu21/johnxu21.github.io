@@ -51,8 +51,8 @@ height:30px;" value="SD Competition" />
 
 Groups
 =======
-There are 82 students who enrolled for this class. We will have 8 groups comprising 
-10 students each (2 group2 - 10 + 1). 
+There are 19 students who enrolled for this class. We will have 3 groups comprising 
+6-7 students each. 
 You can voluntarily choose your group mates. During the first lab on
 [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/), we will collect all the names of individuals 
 who have not yet found a group and then allocate you one of the already existing group. 
