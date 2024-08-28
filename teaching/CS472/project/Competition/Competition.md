@@ -52,9 +52,7 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
-This will be updated soon
-
-[//]: # (The form for the data link can be found here )
+The form for the data link can be found [here](https://forms.gle/AyC1KgSdXYwUAchw5) 
 
 [//]: # ([Data link]&#40;https://forms.gle/Pu7kET7hbZpcc8US9&#41; )
 
