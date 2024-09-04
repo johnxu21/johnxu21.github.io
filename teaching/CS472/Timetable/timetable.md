@@ -189,7 +189,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">12</td>
 <td style="border: 1px solid black;">Mo 11/11</td>
-<td style="border: 1px solid black;">[L] Free Project Work</td>
+<td style="border: 1px solid black;"><b>Veterans Day recess</b></td>
 <td style="border: 1px solid black;">We 11/13 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
