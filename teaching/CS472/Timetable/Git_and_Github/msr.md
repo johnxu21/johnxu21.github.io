@@ -61,7 +61,7 @@ If you haven't done this yet look at the Pro Git book or online for help.)
 
 ### Part 1. Clone your team's repository and add files (5 pts)
 
-By now, everyone should have a GitHub account and been given added to the 
+By now, everyone should have a GitHub account and been added to the 
 team's repository as ```collaborators```. In the team repository there should be a file ```contributors.txt```
 that contains the contributor list of the team.
 
