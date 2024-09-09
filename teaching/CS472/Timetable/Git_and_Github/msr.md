@@ -67,7 +67,7 @@ that contains the contributor list of the team.
 
 **Invite me and the TA as collaborators on your repository.**  
 * my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
-* TA [GitHub ID: ```Godlander```](https://github.com/Godlander)
+* TA [GitHub ID: ```danielogen```](https://github.com/danielogen)
 
 Fork the teams repository and clone the fork onto your laptop.
 * create a branch on your local repository called ```contributors``` using the following command ```git branch contributors```.
