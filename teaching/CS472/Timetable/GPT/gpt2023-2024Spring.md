@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - Leveraging ChatGPT in Software Engineering Tasks - Lab
-permalink: /teaching/CS472/Timetable/GPT/
+permalink: #
 ---
 <div class="main-component">
 <form action="/teaching/CS472/">
@@ -54,7 +54,7 @@ In this lab, you will learn how to leverage ChatGPT, a powerful language model d
 to address various software engineering tasks. ChatGPT, part of the GPT (Generative Pre-trained Transformer) 
 family of models, is capable of understanding and generating human-like text based on its input. 
 Throughout this lab, you will explore different ways developers incorporate ChatGPT into their workflow and 
-complete tasks in software engineering. **The lab will guide you on the responsible use of ChatGPT to improve productivity in software engineering** 
+complete tasks in software engineering.
 
 Overview of ChatGPT in Software Engineering
 =======
@@ -88,19 +88,13 @@ can be found in **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](http
 6. Software management tasks, e.g.,
   * Effort estimation
 
-The figure below presents a typical GitHub PR workflow augmented with ChatGPT interactions, which can originate from either the PR author or a reviewer. 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/illustration.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:500px;" align="center"></p>
-Consider a scenario where a developer, intending to fix a bug, add a feature, or enhance an existing one, initiates a change to a file named ```Foo```. Using pull-based development workflow, this process starts with the creation of a new branch and committing the changes. During development, the developer might encounter challenges or seek optimal solutions, prompting them to consult ChatGPT. The response from ChatGPT might be textual or might include a code snippet. Based on the nature of the response, the following scenarios can arise.
+In the next four sections, we provide **concrete examples on how developers are using ChatGPT**. We demonstrate three uses how developers incorporate code from ChatGPT:
 
-1. When the response includes a code snippet, the developer may apply this directly to Foo as a patch, either as provided or after modifications. This scenario is labeled as **"Patch Applied (PA)"**.
-2. If the code snippets are not applied, or modified beyond recognition (resulting in a semantic clone), Foo may remain unchanged or include changes influenced by the discussed concepts. This scenario is defined as **"Patch Not Applied (PN)"**.
-3. If the interaction with ChatGPT involves only textual advice without code snippets, similar to the previous scenario, Foo may remain unchanged or may be modified based on the guidance received. This scenario is referred to as **None Existing Patch (NE)**
+ - **Use case 1:** Developers incorporate the entire code snippet suggested by ChatGPT into the pull request. This is shown in **Example 1** and **Example 2**.
+ - **Use case 2:** Developers incorporate the **portion** the code snippet suggested by ChatGPT into the pull request. This is shown in **Example 3**.
+ - **Use case 3:** Developers does not adapt the code suggested by ChatGPT but uses the knowledge gained to address two other software engineering tasks. Presented in **Example 4**.
 
-
-In the next three sections, we provide **concrete examples for each of the scenarios mentioned above**. We demonstrate how developers incorporate code and how they utilized textual advice without code snippers from ChatGPT.
-
-## Patch Applied (PA)
-
+## Use case 1 - Example 1: Code Duplication and Refactoring
 In this example, a developer uses ChatGPT in the `Software Engineering` activity of `Software maintenance` to address the task of `code duplication and refactoring` in the code. 
 Here is the link to both the PR and ChatGPT conversation.
 
@@ -129,7 +123,78 @@ on the keys and values of the interface. My code is blow. Is it possible to do w
 GitHub [file diff](https://github.com/nbd-wtf/nostr-tools/pull/241/files#diff-98476df5961449c9b87e4a05e4cf190b90d14815cb1b23f1e2d5398467287b61)
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="ShareChatGPTConversations" style="max-width:1000px;max-width:1000px;" align="center"></p>
 
-## Patch Not Applied (PN)
+## Use case 1 - Example 2:  Deployment documentation
+In the software development process, various types of documentation play distinct roles in facilitating 
+effective communication, collaboration, and understanding. These documents cater to different stakeholders 
+and serve diverse purposes, for example:
+* *Requirements Documentation*: Describes functional and non-functional specifications.
+* *Design Documentation*: Details system architecture, data flow, and component specifications.
+* *Technical Documentation*: Provides in-depth technical details about code, APIs, algorithms, and data structures.
+* *Testing and QA Documentation*: Describes test plans, cases, and quality assurance processes.
+* *Deployment Documentation*: Guides administrators on deploying and configuring software in a production environment.
+
+In this example, the developer used ChatGPT with the following [prompt](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0),
+and appears to seek assistance in creating user-friendly and concise documentation for the `release.sh` script. 
+This would likely fall under the umbrella of deployment documentation, helping system administrators and 
+DevOps teams understand how to effectively use the script for software releases.
+
+**Developer prompt:** 
+```angular2html
+Act as an enthusiast developer advocate with 5 years of experience.
+Write a quick documentation about this `release.sh` bash script. What does it do? Use bullets points.
+How do we use it? Use short sentences. Add emojis where needed.
+```
+
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;border:'1px solid black;" align="center"></p>
+<br />
+
+As you can observe, the [CONTRIBUTION.md](https://github.com/swarmion/swarmion/pull/678/files#diff-eca12c0a30e25b4b46522ebf89465a03ba72a03f540796c979137931d8f92055) file was updated by simply copying the documentation written by ChatGPT. This documentation is intended to ease the process of on-boarding new contributors to the project
+<p style="text-align:center">
+<img src="/teaching/CS472/Timetable/GPT/example-2-2.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;" align="center">
+</p>
+
+The link to PR and ChatGPT conversation is provided below:
+- PR [Link](https://github.com/swarmion/swarmion/pull/678)
+- ChatGPT [Link](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0)
+
+## Use case 2 - Example 3: Configuring GitHub Actions workflow
+In Examples 1 and 2 above, the developer used the code generated by ChatGPT "as-is." 
+However, this example demonstrates another use case where the developer integrates 
+only a *portion* of the code snippet suggested by ChatGPT. The prompt provided by the 
+developer aligns with `Configuring GitHub Actions workflow` task which falls under the
+`Software Engineering` activity of `Software Configuration Management (SCM)` task. 
+SCM encompasses version control, configuration management, and process management.
+Configuring GitHub Actions workflow specifically relates to the automation of building, 
+testing, and deploying code changes, which aligns with CI practices.
+
+In the context of the use case, after reviewing the GitHub link and ChatGPT conversation, we can see that the developer is seeking 
+guidance on setting up and configuring `GitHub Actions workflows` for the `Faker.js` library. The GitHub link specifically shows changes made to the `GitHub Actions workflow` configuration file.
+
+
+**Developer prompt 1:** 
+```angular2html
+Write a GitHub Action yml file that blocks the PR from merging when there is a label
+named "do NOT merge yet" or "s: on hold"
+```
+**Developer prompt 2:** 
+```angular2html
+How can I check "s: on hold" with "contains" using "github.event.pull_request.labels.*.name"
+```
+Below is the final code snippet generated by ChatGPT and the portion integrated in GitHub pull request.
+
+<p style="text-align:center">
+<img src="/teaching/CS472/Timetable/GPT/use-case-2-example-3-1.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:800px;" align="center">
+</p>
+
+<p style="text-align:center">
+<img src="/teaching/CS472/Timetable/GPT/use-case-2-example-3-2.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;" align="center">
+</p>
+
+The link to the Git Diff file and conversation with ChatGPT is provided below:
+- Git Diff file: [Here](https://github.com/faker-js/faker/pull/2405/files#diff-1918769d4ce5178c72d08b74f069e98856eeddcb0391e5c39636c8c33051f7f9)
+- ChatGPT Link: [https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728](https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728)
+
+## Use case 3 - Example 4: Code understanding and Code review
 In this example, the developer does not integrate the code suggested by ChatGPT, but 
 uses ChatGPT for the `Software Engineering` activities of **Software development** and **Software maintenance** 
 for the tasks  `code understanding` and `code reviewing`, respectively. 
@@ -145,34 +210,23 @@ The details of PR and ChatGPT conversation links are below:
 - ChatGPT Link: [https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee)
   
 As can be seen from the [ChatGPT link](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee), 
-the developer seeking guidance on a specific code pattern (using a `never` case in a switch statement) and questioning  whether there might be a more idiomatic or improved way to handle the situation. This suggests a code understanding task where the developer is trying to comprehend and potentially enhance a specific piece of code.
+the developer seeking guidance on a specific code pattern (using a `never` case in a switch statement) and questioning 
+whether there might be a more idiomatic or improved way to handle the situation. This suggests a code understanding 
+task where the developer is trying to comprehend and potentially enhance a specific piece of code.
 
-Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe an interaction in the pull request involves communication with another contributor, *lasryaric*, where the developer *fontanierh* shares their approach and seeks input on potential improvements. This collaborative exchange and the discussion of alternative approaches align with the process of `code review`, where developers assess each other's code for correctness, clarity, and best practices. Therefore, the developer appears to be concurrently engaged in both `code understanding` and `code review` tasks.
+Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe an interaction in the pull request 
+involves communication with another contributor, *lasryaric*, where the developer *fontanierh* shares 
+their approach and seeks input on potential improvements. This collaborative exchange and the discussion of 
+alternative approaches align with the process of `code review`, where developers assess each other's code for 
+correctness, clarity, and best practices. Therefore, the developer appears to be concurrently engaged in both 
+`code understanding` and `code review` tasks.
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center"></p>
 
 On critical analysis of the conversation between the developer and ChatGPT, we observe that the code suggested
 by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
 
-## None Existing Patch (NE)
-In this example ChatGPT does not recommend specific patches. Instead, the discussions revolve around broader programming concepts and design principles. These conversations aim to enhance code readability and maintainability by focusing on theoretical advice and best practices, rather than direct code implementations. 
-
-The details of PR and ChatGPT conversation links are below:
-
-- PR: [https://github.com/codecrafters-io/frontend/pull/1061](https://github.com/codecrafters-io/frontend/pull/1061)
-- ChatGPT Link: [https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e](https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e) 
-
-The reviewer used ChatGPT to critique poor naming conventions, stating: ```"Bad naming,
-this should be something like selectedPricingFrequency. Reasoning: [chatgpt link]"```. In response, the PR author acknowledged the need for improvement: ```"[...] we don’t seem to be getting better with naming [..], talk to ChatGPT about it, [...] we need to pay extra attention to it"```. 
-
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/ne-example.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
-
-In this case, a code snippet was not necessary because the discussion focused on best practices for **naming variables** rather than on specific feature implementation or bug fixes. The interaction was primarily conceptual, aimed at improving code quality.
-
-Developers can benefit from using AI tools like ChatGPT to refine and elevate their **coding standards**, particularly in areas like naming conventions which significantly impact code readability
-and maintainability. In addition, learning and self-review practices should be encouraged within development teams, using AI as a tool to provide immediate feedback and suggestions on how to improve code quality and adhere to best practices.
-
-## Getting Started With ChatGPT
+## How to share
 
 To begin using ChatGPT (if you haven't already), simply go to [https://chat.openai.com/](https://chat.openai.com/) and create a free account. For this class, the free ChatGPT 3.5 is sufficient.
 
