@@ -221,9 +221,12 @@ the developer seeking guidance on a specific code pattern (using a `never` case 
 
 Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe an interaction in the pull request involves communication with another contributor, *lasryaric*, where the developer *fontanierh* shares their approach and seeks input on potential improvements. This collaborative exchange and the discussion of alternative approaches align with the process of `code review`, where developers assess each other's code for correctness, clarity, and best practices. Therefore, the developer appears to be concurrently engaged in both `code understanding` and `code review` tasks.
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center"></p>
+<p style="text-align:center">
+<img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:500px;">
+<img src="/teaching/CS472/Timetable/GPT/pn-example-1-chatgpt.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:400px;">
+</p>
 
-On critical analysis of the conversation between the developer and ChatGPT, we observe that the code suggested
+On critical analysis of the conversation between the developer and ChatGPT (PR review shown in left figure and ChatGPT code shown in the right figure), we observe that the code suggested
 by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
 
 ### **Example 2: Methodological Guidance**
@@ -231,13 +234,20 @@ This example demonstrates how ChatGPT’s advice can significantly influence dev
 
 The details of PR and ChatGPT conversation links are below:
 
-- PR: [https://github.com/dust-tt/dust/pull/508](https://github.com/dust-tt/dust/pull/508)
-- ChatGPT Link: [https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee)
+- PR: [https://github.com/darklang/dark/pull/5063](https://github.com/darklang/dark/pull/5063)
+- ChatGPT Link: [https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8](https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8)
 
 
 The developer aimed to resolve an issue discussed in the PR which involved adding package functions that call built-in functions. Although the initial solution implemented by the PR author was functional, a reviewer suggested simplification based on the suggestions of ChatGPT. The reviewer commented: ```"While this works, it feels like overkill. I asked ChatGPT about how best to do this, and it suggested using (int)c. That seems to me like it would work. ChatGPT-link[...]"```. This interaction prompted the PR author to re-evaluate the initial approach, leading to the adoption of a more streamlined and efficient solution suggested by ChatGPT.
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/pn-example-2.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center"></p>
+<p style="text-align:center">
+PR Conversation: <br />
+<img src="/teaching/CS472/Timetable/GPT/pn-example-2.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center">
+</p>
+<p style="text-align:center">
+ChatGPT Conversation: <br />
+<img src="/teaching/CS472/Timetable/GPT/pn-example-2-chatgpt.png" alt="ShareChatGPTConversations" style="max-width:650px;max-height:550px;" align="center">
+</p>
 
 Developers can use ChatGPT to gain alternative perspectives on coding solutions, particularly for complex code. The aforementioned example showcases how AI can suggest more efficient approaches to achieve the same outcomes, leading to cleaner and more maintainable code.
 
