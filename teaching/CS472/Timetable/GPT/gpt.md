@@ -96,8 +96,24 @@ Consider a scenario where a developer, intending to fix a bug, add a feature, or
 2. If the code snippets are not applied, or modified beyond recognition (resulting in a semantic clone), Foo may remain unchanged or include changes influenced by the discussed concepts. This scenario is defined as **"Patch Not Applied (PN)"**.
 3. If the interaction with ChatGPT involves only textual advice without code snippets, similar to the previous scenario, Foo may remain unchanged or may be modified based on the guidance received. This scenario is referred to as **None Existing Patch (NE)**
 
+This [research paper](ASE_Paper_2024.pdf) published in the 2024 international conference of software engineering is part of our work in studying how developers are actively utilizing ChatGPT. We provide detailed explanations and findings related to the above scenarios. For PA scenario, we used clone detection to determine if code snippet suggested by ChatGPT was integrated in the pull request. For PN and NE cases, we applied qualitative analysis using card sorting to identify interest themes to justify why patch suggested by ChatGPT was not applied and how they utilized textual advice. We found interesting themes as shown below;
 
-In the next three sections, we provide **concrete examples for each of the scenarios mentioned above**. We demonstrate how developers incorporate code and how they utilized textual advice without code snippers from ChatGPT. The examples will also correspond to software engineering tasks listed above.
+PN Themes:
+- Adaptation to project needs
+- Methodological guidance 
+- Specific functionality enhancements 
+- Technical limitations
+- Clarification & correction 
+- Documentation improvements 
+
+NE Themes:
+- Conceptual Guidance & Theoretical Advice
+- Documentation
+- Communication & Translation
+- Education and Knowledge Sharing
+- Debugging & Optimization Strategies
+
+In the next three sections, we will look at some **concrete examples for each of the scenarios mentioned above**. We demonstrate how developers incorporate code and how they utilized textual advice without code snippets from ChatGPT. The examples will also correspond to themes and software engineering tasks mentioned earlier.
 
 ## Patch Applied (PA)
 ### **Example 1: Code Duplication and Refactoring**
@@ -201,7 +217,7 @@ The link to the Git Diff file and conversation with ChatGPT is provided below:
 - ChatGPT Link: [https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728](https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728)
 
 ## Patch Not Applied (PN)
-### **Example 1: Code understanding and Code review**
+### **Example 1: Clarification and Correction**
 In this example, the developer does not integrate the code suggested by ChatGPT, but 
 uses ChatGPT for the `Software Engineering` activities of **Software development** and **Software maintenance** 
 for the tasks  `code understanding` and `code reviewing`, respectively. 
