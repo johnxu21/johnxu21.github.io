@@ -296,7 +296,7 @@ This doesn't accurately reflect what the variable was being used for:
 to store the **selected pricing frequency** (like 'monthly' or 'yearly').
 
 #### **Developer's Implementation**
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-2.png" alt="ShareChatGPTConversations" style="max-width:1674px;max-height:116px;" align="center"></p>
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-2.png" alt="ShareChatGPTConversations" style="max-width:1004px;max-height:70px;" align="center"></p>
 
 After the conversation, the developer implemented the change, renaming `pricingFrequencyClicked` to `selectedPricingFrequency`. 
 This new name more accurately conveys that the variable holds the user's selection for pricing frequency, which improves readability and maintainability of the code.
