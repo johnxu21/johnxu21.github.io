@@ -96,7 +96,10 @@ Consider a scenario where a developer, intending to fix a bug, add a feature, or
 2. If the code snippets are not applied, or modified beyond recognition (resulting in a semantic clone), Foo may remain unchanged or include changes influenced by the discussed concepts. This scenario is defined as **"Patch Not Applied (PN)"**.
 3. If the interaction with ChatGPT involves only textual advice without code snippets, similar to the previous scenario, Foo may remain unchanged or may be modified based on the guidance received. This scenario is referred to as **None Existing Patch (NE)**
 
-This [research paper](ASE_Paper_2024.pdf) published in the 2024 in the International Conference of Automated Software Engineering is part of our work in studying how developers are actively utilizing ChatGPT. We provide detailed explanations and findings related to the above scenarios. For PA scenario, we used clone detection to determine if code snippet suggested by ChatGPT was integrated in the pull request. For PN and NE cases, we applied qualitative analysis using card sorting to identify interest themes to justify why patch suggested by ChatGPT was not applied and how they utilized textual advice. We found interesting themes as shown below;
+This [research paper](ASE_Paper_2024.pdf) published in the 2024 in the International Conference of Automated Software Engineering is part of our work in the Evol Lab. We are 
+studying how developers are actively utilizing ChatGPT. We provide detailed explanations and findings related to the above scenarios. For PA scenario, we used clone detection to determine if code snippet suggested by ChatGPT was integrated in the pull request. 
+For PN and NE cases, we employed a rigorous qualitative analysis methodology. This involved summarizing ChatGPT-developer conversations and GitHub PRs using the **Framework Method**, followed by thematic extraction using **card sorting** technique.
+We found interesting themes as shown below:
 
 ## PN Themes:
 - **Adaptation to project needs:** Conceptual advice from ChatGPT adapted for customized solutions fitting unique project needs. Highlights the customization of these insights for specific project needs
