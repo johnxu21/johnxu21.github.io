@@ -346,7 +346,7 @@ Software Engineering task of **performance optimization**, as the developer used
 the algorithm and enhance the code's efficiency. ChatGPT guided the process by suggesting a more 
 efficient approach for handling list operations.
 
-# Getting Started With ChatGPT
+# **Getting Started With ChatGPT**
 
 To begin using ChatGPT (if you haven't already), simply go to [https://chat.openai.com/](https://chat.openai.com/) and create a free account. For this class, the free ChatGPT 3.5 is sufficient.
 
