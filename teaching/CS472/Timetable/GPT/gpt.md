@@ -251,10 +251,20 @@ Recall that in this theme ChatGPT's advice informs approaches or refined solutio
 
 The developer's interaction with ChatGPT in the pull request shows a clear progression from a more complex approach to a simpler, more efficient one. Let's break it down step by step:
 
-#### Initial Code (Before ChatGPT's Suggestion)
+#### **Initial Code (Before ChatGPT's Suggestion)**
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/PN-EX-2.png" alt="ShareChatGPTConversations" style="max-width:710px;max-height:355px;" align="center"></p>
 
+In this initial code, the developer is converting a `char` to its Unicode (UTF-32) code point using `System.Char.ConvertToUtf32`. 
+This method works but is more suitable for handling UTF-16 surrogate pairs rather than single char values (which is likely overkill for the use case). 
+The method is useful if you're dealing with surrogate pairs, but for ASCII or basic Unicode characters, it's unnecessary.
+
+The reviewer (@pbiggar), after consulting ChatGPT, pointed out that using (int)c could achieve the same result in a simpler and more efficient way.
+Goes ahead to state that ChatGPT suggested casting the `char` to an `int`, which would return the Unicode (or ASCII) code point for the character, and for most simple characters, this works perfectly.
+
+#### **Refined Code (After ChatGPT’s Suggestion)**
+The refined code can be gotten in the file [backend/src/BuiltinExecution/Libs/Char.fs](https://github.com/darklang/dark/pull/5063/files#diff-2949d723a79b066aa811f68b3bc6f1aa712cf44b63c8210febd62378a408c536)
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/PN-EX-2.png" alt="ShareChatGPTConversations" style="max-width:916px;max-height:200px;" align="center"></p>
 
 ## None Existing Patch (NE)
 ### **Example 1: Conceptual Guidance & Theoretical Advice**
