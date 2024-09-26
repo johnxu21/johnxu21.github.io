@@ -240,7 +240,7 @@ public function ulid(): self
 
 #### **Conclusion**
 This pull request demonstrates how the developer adapted ChatGPT’s suggested regex to meet the specific requirements of the project. 
-The task falls under **code customization**, as the developer further modified the generated code to align with project standards and feedback. 
+The task falls under the Software Engineering task of **code customization**, as the developer further modified the generated code to align with project standards and feedback. 
 This aligns with the theme of **adaptation to project needs**, where conceptual advice from ChatGPT was tailored to ensure consistency with Laravel’s framework.
 
 ### **Example 2: Methodological Guidance**
@@ -275,7 +275,7 @@ In the updated version:
 
 #### **Conclusion**
 The developer's interaction with ChatGPT falls under the **methodological guidance** theme, where ChatGPT's advice helped refine the developer's approach rather than being directly applied as a patch. 
-This guidance is explicitly connected to **program repair** as it involved identifying and fixing inefficiencies in the initial code, simplifying the solution based on ChatGPT’s recommendation. 
+This guidance can be linked to the Software Engineering task of **program repair** as it involved identifying and fixing inefficiencies in the initial code, simplifying the solution based on ChatGPT’s recommendation. 
 In both cases, ChatGPT informed the process of improving the code, aligning with these software engineering tasks.
 
 
