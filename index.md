@@ -34,6 +34,11 @@ More about my research can be found on the (<a href="https://johnxu21.github.io/
 ## News
 <!--<table style="white-space: nowrap;"> -->
 <table>
+
+<tr>
+	<td width="150"><b>September, 2024</b></td>
+	<td> Our paper: PatchTrack: Analyzing ChatGPT's Impact on Software Patch Decision-Making in Pull Requests, has been accepted in the Poster Track ASE 2024. </td> 
+</tr>
 <tr>
 	<td width="150"><b>August, 2024</b></td>
 	<td> Our project "Integrating AI Technologies into Software Engineering Education" has been awarded $50,000 by NASA through the Nevada System of Higher Education. The project runs from August 2024 to April 2025. </td> 
@@ -46,7 +51,7 @@ More about my research can be found on the (<a href="https://johnxu21.github.io/
 
 <tr>
 	<td width="150"><b>June, 2022</b></td>
-	<td> Our paper on PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family has been accepted in ESEC/FSE 2022. </td> 
+	<td> Our paper on PaReco: Patched Clones and Missed Patches among the Divergent Variants of a Software Family, has been accepted in ESEC/FSE 2022. </td> 
 </tr>
 
 <tr>
