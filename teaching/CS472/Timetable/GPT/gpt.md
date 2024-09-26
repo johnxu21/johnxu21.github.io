@@ -332,7 +332,7 @@ This operation can be costly if done repeatedly because it may require traversin
 
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-2-2.png" alt="ShareChatGPTConversations" style="max-width:676px;max-height:72px;" align="center"></p>
 
-The developer switched to using `push` (which I assume adds to the front) and planned to reverse the 
+The developer switched to using `push` (assumed to be adding to the front) and planned to reverse the 
 list at the end. This approach improves performance because adding to the front of the list is 
 usually an O(1) operation in many functional languages, while `pushBack` could be O(n) 
 where n is the length of the list.
