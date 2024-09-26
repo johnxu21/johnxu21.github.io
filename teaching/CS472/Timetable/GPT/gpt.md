@@ -106,7 +106,7 @@ This [research paper](ASE_Paper_2024.pdf) published in the 2024 in the Internati
 - **Clarification & correction:** Clarifications or corrections led to refining approaches rather than applying new patches.
 
 ## NE Themes:
-- **Conceptual Guidance & Theoretical Advice:** Discussions focused on programming concepts, design principles, optimization strategies, and the importance of clear naming in code and documentation to enhance readability and maintainability, emphasizing theoretical advice and best practices without specific code implementations.
+- **Conceptual Guidance & Theoretical Advice:** The discussions emphasized programming concepts, design principles, and optimization strategies, focusing on best practices for readability and maintainability without specific code implementations.
 - **Documentation & Localization Enhancements:** Discussions focused on enhancements in documentation clarity, communication refinement, and localization accuracy, highlighting efforts in making content accessible and understandable to diverse audiences, thereby improving overall documentation quality and effectiveness.
 - **Education and Knowledge Sharing:** Sharing knowledge on programming concepts, language-specific features, or explaining code functionalities, serving an educational purpose and enhancing understanding of complex concepts.
 - **Debugging & Optimization Strategies:** Centered on debugging methods, performance optimization, and refining algorithms, offering strategic insights into problem-solving approaches without specific code snippets.
@@ -278,38 +278,64 @@ The developer's interaction with ChatGPT falls under the **methodological guidan
 This guidance can be linked to the Software Engineering task of **program repair** as it involved identifying and fixing inefficiencies in the initial code, simplifying the solution based on ChatGPT’s recommendation. 
 In both cases, ChatGPT informed the process of improving the code, aligning with these software engineering tasks.
 
-
 ## None Existing Patch (NE)
 ### **Example 1: Conceptual Guidance & Theoretical Advice**
-In this example ChatGPT does not recommend specific patches. Instead, the discussions revolve around broader programming concepts and design principles. These conversations aim to enhance code readability and maintainability by focusing on theoretical advice and best practices, rather than direct code implementations. 
+Recall that this theme the discussions emphasized programming concepts, design principles, and optimization strategies, focusing on best practices for readability and maintainability without specific code implementations.
 
-The details of PR and ChatGPT conversation links are below:
+- [PR link](https://github.com/codecrafters-io/frontend/pull/1061)
+- [ChatGPT Link](https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e) 
 
-- PR: [https://github.com/codecrafters-io/frontend/pull/1061](https://github.com/codecrafters-io/frontend/pull/1061)
-- ChatGPT Link: [https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e](https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e) 
+Let's break down the situation to understand how the developer changed their code based on the ChatGPT conversation:
 
-The reviewer used ChatGPT to critique poor naming conventions, stating: ```"Bad naming,
-this should be something like selectedPricingFrequency. Reasoning: [chatgpt link]"```. In response, the PR author acknowledged the need for improvement: ```"[...] we don’t seem to be getting better with naming [..], talk to ChatGPT about it, [...] we need to pay extra attention to it"```. 
+#### **Original Problem**
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-1.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:325px;" align="center"></p>
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/ne-example.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
+The developer was using the variable name `pricingFrequencyClicked`, which was flagged as problematic because the name 
+implied an action (a click) rather than a state (the selected frequency). 
+This doesn't accurately reflect what the variable was being used for: 
+to store the **selected pricing frequency** (like 'monthly' or 'yearly').
 
-In this case, a code snippet was not necessary because the discussion focused on best practices for **naming variables** rather than on specific feature implementation or bug fixes. The interaction was primarily conceptual, aimed at improving code quality.
+#### **Developer's Implementation**
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-2.png" alt="ShareChatGPTConversations" style="max-width:1674px;max-height:116px;" align="center"></p>
 
-Developers can benefit from using AI tools like ChatGPT to refine and elevate their **coding standards**, particularly in areas like naming conventions which significantly impact code readability
-and maintainability. In addition, learning and self-review practices should be encouraged within development teams, using AI as a tool to provide immediate feedback and suggestions on how to improve code quality and adhere to best practices. 
+After the conversation, the developer implemented the change, renaming `pricingFrequencyClicked` to `selectedPricingFrequency`. 
+This new name more accurately conveys that the variable holds the user's selection for pricing frequency, which improves readability and maintainability of the code.
+
+#### **ChatGPT's Advice**
+In the conversation, ChatGPT highlighted the issue with the variable name, explaining that 
+`pricingFrequencyClicked` was not an appropriate name because it didn't align with the variable's 
+purpose. It suggested using a name like `selectedPricingFrequency` to reflect that the variable holds 
+the selected value, not an action.
+
+#### **Conclusion**
+The developer's interaction with ChatGPT falls under the "**Conceptual Guidance & Theoretical Advice**"
+theme, where ChatGPT's recommendations helped improve the clarity and maintainability of the code by suggesting better naming conventions, rather than being directly applied as a patch. 
+This guidance aligns with the software engineering tasks of **code review** and **code quality enhancement**, as it involved refining naming practices to enhance the overall readability of the code. 
+In this case, ChatGPT informed the process of improving code structure and long-term maintainability, aligning with these software engineering tasks.
+
 
 ### **Example 2: Debugging and Optimization Strategies**
-This example showcase how developers utilize ChatGPT for debugging, performance optimization and refining algorithms. The details of PR and ChatGPT conversation links are below:
+Recall that the examples of this theme are centered on debugging methods, performance optimization, and refining algorithms, offering strategic insights into problem-solving approaches without specific code snippets.
 
-- PR: [https://github.com/darklang/dark/pull/5068](https://github.com/darklang/dark/pull/5068)
-- ChatGPT Link: [https://chat.openai.com/share/7fe27ca4-5c0e-431b-953b-7f6e23710b5c](https://chat.openai.com/share/7fe27ca4-5c0e-431b-953b-7f6e23710b5c) 
+- [PR link](https://github.com/darklang/dark/pull/5068)
+- [ChatGPT Link](https://chat.openai.com/share/7fe27ca4-5c0e-431b-953b-7f6e23710b5c) 
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/ne-example-2.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
+Let's break down the situation to understand how the developer changed their code based on the ChatGPT conversation:
 
-The PR reviewer requested an alternative method to optimize performance issues, recalling, ```"I remember you mentioning that the performance of pushback isn’t great. Do you recommend a different approach"```. In response, the PR author employed ChatGPT to evaluate code performance and investigate other optimization strategies. After reviewing ChatGPT’s recommendations, the author suggested a new approach: ```"[...] appending it to the front and then reversing should do it [...]"```. The discussion did not yield a specific
-code snippet because ChatGPT offered a strategy for optimization rather than a direct coding solution.
+#### **Original Code**
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-2-1.png" alt="ShareChatGPTConversations" style="max-width:895px;max-height:446px;" align="center"></p>
 
-Developers can leverage AI tools to obtain high-level recommendations for code optimization, allowing them to rethink and refine their implementations based on AI-generated insights, which can lead to more efficient solutions.
+The developer was using `pushBack`, which adds an element to the end of the list. 
+This operation can be costly if done repeatedly because it may require traversing the entire list.
+
+#### **After the ChatGPT's Advise**
+
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-2-2.png" alt="ShareChatGPTConversations" style="max-width:676px;max-height:72px;" align="center"></p>
+
+The developer switched to using `push` (which I assume adds to the front) and planned to reverse the 
+list at the end. This approach improves performance because adding to the front of the list is 
+usually an O(1) operation in many functional languages, while `pushBack` could be O(n) 
+where n is the length of the list.
 
 ## Getting Started With ChatGPT
 
