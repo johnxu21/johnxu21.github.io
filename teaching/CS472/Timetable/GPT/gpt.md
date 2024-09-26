@@ -215,43 +215,40 @@ The link to the Git Diff file and conversation with ChatGPT is provided below:
 - ChatGPT Link: [https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728](https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728)
 
 ## Patch Not Applied (PN)
-### **Example 1: Clarification and Correction**
-In this example, the developer does not integrate the code suggested by ChatGPT, but 
-uses ChatGPT for the `Software Engineering` activities of **Software development** and **Software maintenance** 
-for the tasks  `code understanding` and `code reviewing`, respectively. 
+### **Example 1: Adaptation and tailored solutions**
+Recall that deals with Conceptual advice from ChatGPT adapted for customized solutions fitting unique project needs.
+- [PR link](https://github.com/laravel-json-api/core/pull/12)
+- [ChatGPT link](https://chatgpt.com/share/e9555822-4ffb-4845-8e40-0bc6cbbc658d)
 
-In the study of Hou et al. [article](https://arxiv.org/pdf/2308.10620.pdf), `code understanding` 
-is defined as the process of deeply comprehending and analyzing source code. It involves gaining 
-insights into the logic, structure, functionality, and dependencies of the code, as well as 
-understanding the programming languages, frameworks, and libraries used.
+#### Conversation Summary
+1. **Initial ChatGPT Suggestion:** The developer initially received a regex for ULID from ChatGPT: ```^[0-9A-HJKMNP-TV-Z]{26}$``` [ChatGPT link](https://chatgpt.com/share/e9555822-4ffb-4845-8e40-0bc6cbbc658d). This regex is technically correct in terms of the ULID format, as it matches a 26-character string using base32 encoding.
+2. **Reviewer's Suggestion:** A reviewer (`@lindyhopchris`) in the pull request (PR) pointed out that to maintain consistency, they should follow the regex used by Laravel's `whereUlid()` method for route constraints. This suggestion ensures uniformity across the codebase, aligning with how ULIDs are handled in the Laravel framework.
 
-The details of PR and ChatGPT conversation links are below:
+The Laravel framework’s regex for ULIDs (in the link provided by the reviewer) is: [links](https://github.com/laravel/framework/blob/53b02b3c1d926c095cccca06883a35a5c6729773/src/Illuminate/Routing/CreatesRegularExpressionRouteConstraints.php#L48) are below:
+```regex
+[0-7][0-9a-hjkmnp-tv-zA-HJKMNP-TV-Z]{25}
+```
+This regex is slightly more specific than the one suggested by ChatGPT. It specifies that the first character should be a digit between 0-7, while the subsequent 25 characters can include both uppercase and lowercase letters from the ULID base32 set.
 
-- PR: [https://github.com/dust-tt/dust/pull/508](https://github.com/dust-tt/dust/pull/508)
-- ChatGPT Link: [https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee)
-  
-As can be seen from the [ChatGPT link](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee), 
-the developer seeking guidance on a specific code pattern (using a `never` case in a switch statement) and questioning  whether there might be a more idiomatic or improved way to handle the situation. This suggests a code understanding task where the developer is trying to comprehend and potentially enhance a specific piece of code.
+3. **PR author's Acceptance:** The PR author acknowledges the suggestion by stating, "*good idea to check Laravel directly!*" and proceeds to change their code to reflect the Laravel-style regex, which was confirmed in the code (File [MatchedIDs.php](https://github.com/laravel-json-api/core/pull/12/files)) with:
+```php
+public function ulid(): self
+{
+        return $this->matchAs('[0-7][0-9a-hjkmnp-tv-zA-HJKMNP-TV-Z]{25}');
+}
+```
 
-Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe an interaction in the pull request involves communication with another contributor, *lasryaric*, where the developer *fontanierh* shares their approach and seeks input on potential improvements. This collaborative exchange and the discussion of alternative approaches align with the process of `code review`, where developers assess each other's code for correctness, clarity, and best practices. Therefore, the developer appears to be concurrently engaged in both `code understanding` and `code review` tasks.
+#### Conclusion
+This pull request and the accompanying ChatGPT conversation illustrate how the developer adapted and customized ChatGPT’s suggested regex to fit the specific needs of the project. The task described can be categorized under code generation, as it involves generating a regex from natural language input using ChatGPT. It also involves code customization, as the developer further adapted the generated code based on project-specific needs and feedback from a reviewer. This aligns with the theme of adaptation to project needs, where conceptual advice from ChatGPT is tailored to provide customized solutions that fit unique project requirements. By tailoring ChatGPT's response and ensuring consistency with the Laravel framework's standards, the developer demonstrated both the practical application of LLMs in software engineering and the ability to adapt generated code to maintain project integrity.
 
-<p style="text-align:center">
-<img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:500px;">
-<img src="/teaching/CS472/Timetable/GPT/pn-example-1-chatgpt.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:400px;">
-</p>
-
-On critical analysis of the conversation between the developer and ChatGPT (PR review shown in left figure and ChatGPT code shown in the right figure), we observe that the code suggested
-by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
-
-### **Example 2: Methodological Guidance**
+#### **Example 2: Methodological Guidance**
 This example demonstrates how ChatGPT’s advice can significantly influence developers’ decisions or strategies for crafting solutions to specific tasks. Developers not only use suggestions from ChatGPT to devise new solutions but also to refine and enhance existing ones.
 
-The details of PR and ChatGPT conversation links are below:
 
-- PR: [https://github.com/darklang/dark/pull/5063](https://github.com/darklang/dark/pull/5063)
-- ChatGPT Link: [https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8](https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8)
+1.  PR: [https://github.com/darklang/dark/pull/5063](https://github.com/darklang/dark/pull/5063)
+2. ChatGPT Link: [https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8](https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8)
 
-
+The details of PR and ChatGPT conversation 
 The developer aimed to resolve an issue discussed in the PR which involved adding package functions that call built-in functions. Although the initial solution implemented by the PR author was functional, a reviewer suggested simplification based on the suggestions of ChatGPT. The reviewer commented: ```"While this works, it feels like overkill. I asked ChatGPT about how best to do this, and it suggested using (int)c. That seems to me like it would work. ChatGPT-link[...]"```. This interaction prompted the PR author to re-evaluate the initial approach, leading to the adoption of a more streamlined and efficient solution suggested by ChatGPT.
 
 <p style="text-align:center">
