@@ -253,7 +253,7 @@ The developer's interaction with ChatGPT in the pull request shows a clear progr
 
 #### Initial Code (Before ChatGPT's Suggestion)
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/PN-EX-2.png" alt="ShareChatGPTConversations" style="max-width:888px;max-height:444px;" align="center"></p>
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/PN-EX-2.png" alt="ShareChatGPTConversations" style="max-width:710px;max-height:355px;" align="center"></p>
 
 
 ## None Existing Patch (NE)
