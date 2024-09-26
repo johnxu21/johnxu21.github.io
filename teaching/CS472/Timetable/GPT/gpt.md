@@ -238,9 +238,9 @@ public function ulid(): self
 }
 ```
 
-#### Conclusion
+#### **Conclusion**
 This pull request demonstrates how the developer adapted ChatGPT’s suggested regex to meet the specific requirements of the project. 
-The task falls under **code generation**, where ChatGPT was used to automatically generate a regex from a natural language prompt, and **code customization**, as the developer further modified the generated code to align with project standards and feedback. 
+The task falls under **code customization**, as the developer further modified the generated code to align with project standards and feedback. 
 This aligns with the theme of **adaptation to project needs**, where conceptual advice from ChatGPT was tailored to ensure consistency with Laravel’s framework.
 
 ### **Example 2: Methodological Guidance**
@@ -273,10 +273,9 @@ In the updated version:
   * Range validation: The charValue is checked to see if it's in the range `[0, 256)`, likely to ensure it's within the ASCII range.
   * Conditional Handling: If the charValue is valid (within the range), it returns an optional integer (`Dval.optionSome (DInt charValue)`), otherwise it returns `Dval.optionNone`.
 
-#### Conclusion
-The developer's interaction with ChatGPT falls under the methodological guidance theme, where ChatGPT's advice helped refine the developer's approach rather than being directly applied as a patch. 
-This guidance is explicitly connected to program repair as it involved identifying and fixing inefficiencies in the initial code, simplifying the solution based on ChatGPT’s recommendation. 
-Additionally, it relates to code generation because ChatGPT suggested an alternative method to generate the correct code, enabling the developer to implement a more efficient solution. 
+#### **Conclusion**
+The developer's interaction with ChatGPT falls under the **methodological guidance** theme, where ChatGPT's advice helped refine the developer's approach rather than being directly applied as a patch. 
+This guidance is explicitly connected to **program repair** as it involved identifying and fixing inefficiencies in the initial code, simplifying the solution based on ChatGPT’s recommendation. 
 In both cases, ChatGPT informed the process of improving the code, aligning with these software engineering tasks.
 
 
