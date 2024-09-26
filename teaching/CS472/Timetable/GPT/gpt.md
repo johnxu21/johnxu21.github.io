@@ -264,7 +264,14 @@ Goes ahead to state that ChatGPT suggested casting the `char` to an `int`, which
 
 #### **Refined Code (After ChatGPT’s Suggestion)**
 The refined code can be gotten in the file [backend/src/BuiltinExecution/Libs/Char.fs](https://github.com/darklang/dark/pull/5063/files#diff-2949d723a79b066aa811f68b3bc6f1aa712cf44b63c8210febd62378a408c536)
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/PN-EX-2.png" alt="ShareChatGPTConversations" style="max-width:916px;max-height:200px;" align="center"></p>
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/PN-EX-2-2.png" alt="ShareChatGPTConversations" style="max-width:916px;max-height:200px;" align="center"></p>
+
+In the updated version:
+* **Simplified Conversion:** The developer replaced `System.Char.ConvertToUtf32` with `int c.[0]`, which is a much simpler and direct way to get the integer (ASCII/Unicode) value of a character.
+* Added Validation: The code now includes additional logic:
+  * Check if the character is a digit: `System.Char.IsDigit(c[0])`.
+  * Range validation: The charValue is checked to see if it's in the range `[0, 256)`, likely to ensure it's within the ASCII range.
+  * Conditional Handling: If the charValue is valid (within the range), it returns an optional integer (`Dval.optionSome (DInt charValue)`), otherwise it returns `Dval.optionNone`.
 
 ## None Existing Patch (NE)
 ### **Example 1: Conceptual Guidance & Theoretical Advice**
