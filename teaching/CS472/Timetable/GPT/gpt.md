@@ -96,22 +96,20 @@ Consider a scenario where a developer, intending to fix a bug, add a feature, or
 2. If the code snippets are not applied, or modified beyond recognition (resulting in a semantic clone), Foo may remain unchanged or include changes influenced by the discussed concepts. This scenario is defined as **"Patch Not Applied (PN)"**.
 3. If the interaction with ChatGPT involves only textual advice without code snippets, similar to the previous scenario, Foo may remain unchanged or may be modified based on the guidance received. This scenario is referred to as **None Existing Patch (NE)**
 
-This [research paper](ASE_Paper_2024.pdf) published in the 2024 international conference of software engineering is part of our work in studying how developers are actively utilizing ChatGPT. We provide detailed explanations and findings related to the above scenarios. For PA scenario, we used clone detection to determine if code snippet suggested by ChatGPT was integrated in the pull request. For PN and NE cases, we applied qualitative analysis using card sorting to identify interest themes to justify why patch suggested by ChatGPT was not applied and how they utilized textual advice. We found interesting themes as shown below;
+This [research paper](ASE_Paper_2024.pdf) published in the 2024 in the International Conference of Automated Software Engineering is part of our work in studying how developers are actively utilizing ChatGPT. We provide detailed explanations and findings related to the above scenarios. For PA scenario, we used clone detection to determine if code snippet suggested by ChatGPT was integrated in the pull request. For PN and NE cases, we applied qualitative analysis using card sorting to identify interest themes to justify why patch suggested by ChatGPT was not applied and how they utilized textual advice. We found interesting themes as shown below;
 
-PN Themes:
-- Adaptation to project needs
-- Methodological guidance 
-- Specific functionality enhancements 
-- Technical limitations
-- Clarification & correction 
-- Documentation improvements 
+## PN Themes:
+- **Adaptation to project needs:** Conceptual advice from ChatGPT adapted for customized solutions fitting unique project needs. Highlights the customization of these insights for specific project needs
+- **Methodological guidance:**  ChatGPT's advice informed approaches or refined solutions, not directly applied as patches. Focuses on the broader approach or strategy influenced by ChatGPT
+- **Specific functionality enhancements:** Enhancements informed by ChatGPT insights, tailored to specific functionality rather than direct patches.
+- **Technical limitations:** Non-application of patches due to technical constraints or preference for alternative solutions.
+- **Clarification & correction:** Clarifications or corrections led to refining approaches rather than applying new patches.
 
-NE Themes:
-- Conceptual Guidance & Theoretical Advice
-- Documentation
-- Communication & Translation
-- Education and Knowledge Sharing
-- Debugging & Optimization Strategies
+## NE Themes:
+- **Conceptual Guidance & Theoretical Advice:** Discussions focused on programming concepts, design principles, optimization strategies, and the importance of clear naming in code and documentation to enhance readability and maintainability, emphasizing theoretical advice and best practices without specific code implementations.
+- **Documentation & Localization Enhancements:** Discussions focused on enhancements in documentation clarity, communication refinement, and localization accuracy, highlighting efforts in making content accessible and understandable to diverse audiences, thereby improving overall documentation quality and effectiveness.
+- **Education and Knowledge Sharing:** Sharing knowledge on programming concepts, language-specific features, or explaining code functionalities, serving an educational purpose and enhancing understanding of complex concepts.
+- **Debugging & Optimization Strategies:** Centered on debugging methods, performance optimization, and refining algorithms, offering strategic insights into problem-solving approaches without specific code snippets.
 
 In the next three sections, we will look at some **concrete examples for each of the scenarios mentioned above**. We demonstrate how developers incorporate code and how they utilized textual advice without code snippets from ChatGPT. The examples will also correspond to themes and software engineering tasks mentioned earlier.
 
