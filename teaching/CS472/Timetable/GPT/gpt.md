@@ -89,10 +89,13 @@ These findings illustrate how ChatGPT is used in practice and will help guide yo
 
 ## Patch Applied (PA)
 ### **Example 1: Code Duplication and Refactoring**
+
+- [PR link](https://github.com/nbd-wtf/nostr-tools/pull/241)
+- [ChatGPT Link](https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398)
+- 
 A developer used ChatGPT during the `Software maintenance` task of `code duplication and refactoring` in the `nostr-tools` project. The developer aimed to resolve code repetition and refactor the code.
 
-- PR: [https://github.com/nbd-wtf/nostr-tools/pull/241](https://github.com/nbd-wtf/nostr-tools/pull/241)
-- ChatGPT Link: [https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398](https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398)
+
 
 The pull request shows code changes to address **duplication issues**, improving code quality. Code duplication often leads to maintenance challenges, bugs, and reduced readability. By using ChatGPT, the developer sought guidance to efficiently refactor the code.
 
@@ -112,39 +115,38 @@ I have some duplication in my TypeScript code. I want to resolve it by creating 
 </p>
 
 
-### **Example 2:  Deployment documentation**
-In the software development process, various types of documentation play distinct roles in facilitating 
-effective communication, collaboration, and understanding. These documents cater to different stakeholders 
-and serve diverse purposes, for example:
-* *Requirements Documentation*: Describes functional and non-functional specifications.
-* *Design Documentation*: Details system architecture, data flow, and component specifications.
-* *Technical Documentation*: Provides in-depth technical details about code, APIs, algorithms, and data structures.
-* *Testing and QA Documentation*: Describes test plans, cases, and quality assurance processes.
-* *Deployment Documentation*: Guides administrators on deploying and configuring software in a production environment.
+### **Example 2: Deployment Documentation**
 
-In this example, the developer used ChatGPT with the following [prompt](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0),
-and appears to seek assistance in creating user-friendly and concise documentation for the `release.sh` script. 
-This would likely fall under the umbrella of deployment documentation, helping system administrators and 
-DevOps teams understand how to effectively use the script for software releases.
+Links to PR and ChatGPT conversation:
+- [PR Link](https://github.com/swarmion/swarmion/pull/678)
+- [ChatGPT Conversation](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0)
 
-**Developer prompt:** 
-```angular2html
-Act as an enthusiast developer advocate with 5 years of experience.
-Write a quick documentation about this `release.sh` bash script. What does it do? Use bullets points.
-How do we use it? Use short sentences. Add emojis where needed.
+Documentation plays a key role in ensuring effective communication and collaboration in software development. It can take various forms such as:
+- **Requirements Documentation**: Specifications (functional & non-functional).
+- **Design Documentation**: System architecture, data flow.
+- **Technical Documentation**: Code, APIs, algorithms, and data.
+- **Testing & QA Documentation**: Test plans and quality assurance.
+- **Deployment Documentation**: Guidelines for software deployment.
+
+In this case, the developer used ChatGPT to generate user-friendly, concise deployment documentation for the `release.sh` script. 
+
+**Developer's prompt:**
+```plaintext
+Act as a developer advocate with 5 years of experience. Write quick documentation for this `release.sh` script. Use bullet points and short sentences. Add emojis where needed.
 ```
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;border:'1px solid black;" align="center"></p>
+<p style="text-align:center">
+<img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;border:1px solid black;" align="center">
+</p>
+
 <br />
 
-As you can observe, the [CONTRIBUTION.md](https://github.com/swarmion/swarmion/pull/678/files#diff-eca12c0a30e25b4b46522ebf89465a03ba72a03f540796c979137931d8f92055) file was updated by simply copying the documentation written by ChatGPT. This documentation is intended to ease the process of on-boarding new contributors to the project
+As a result, the [`CONTRIBUTION.md`](https://github.com/swarmion/swarmion/pull/678/files#diff-eca12c0a30e25b4b46522ebf89465a03ba72a03f540796c979137931d8f92055) file was updated with documentation from ChatGPT to help new contributors get started.
+
 <p style="text-align:center">
 <img src="/teaching/CS472/Timetable/GPT/example-2-2.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;" align="center">
 </p>
 
-The link to PR and ChatGPT conversation is provided below:
-- PR [Link](https://github.com/swarmion/swarmion/pull/678)
-- ChatGPT [Link](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0)
 
 ### **Example 3: Configuring GitHub Actions workflow**
 In Examples 1 and 2 above, the developer used the code generated by ChatGPT "as-is." 
