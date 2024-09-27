@@ -89,33 +89,28 @@ These findings illustrate how ChatGPT is used in practice and will help guide yo
 
 ## Patch Applied (PA)
 ### **Example 1: Code Duplication and Refactoring**
-In this example, a developer uses ChatGPT in the `Software Engineering` activity of `Software maintenance` to address the task of `code duplication and refactoring` in the code. 
-Here is the link to both the PR and ChatGPT conversation.
-
+A developer used ChatGPT during the `Software maintenance` task of `code duplication and refactoring` in the `nostr-tools` project. The developer aimed to resolve code repetition and refactor the code.
 
 - PR: [https://github.com/nbd-wtf/nostr-tools/pull/241](https://github.com/nbd-wtf/nostr-tools/pull/241)
 - ChatGPT Link: [https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398](https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398)
 
-After reviewing the ChatGPT link and the associated GitHub pull request, it appears that the 
-developer is addressing the Software Engineering task of `code duplication`. The ChatGPT prompts indicate a concern about code 
-repetition and a desire to refactor or improve the existing code.
+The pull request shows code changes to address **duplication issues**, improving code quality. Code duplication often leads to maintenance challenges, bugs, and reduced readability. By using ChatGPT, the developer sought guidance to efficiently refactor the code.
 
-The GitHub pull request link shows changes made to the codebase, particularly in the `nostr-tools` project. 
-The changes involve modifying existing code to address **duplication issues** and improve the overall code 
-quality. Code duplication is a common issue in software development that can lead to maintenance challenges, 
-increased likelihood of bugs, and reduced readability. The developer is using ChatGPT to seek advice on how to best approach and 
-implement these code changes, demonstrating a typical scenario where AI assistance can enhance 
-the efficiency of **code maintenance** tasks.
-
-**Developer prompt** 
-```angular2html
-I have some duplication in my TypeScript code. I resolve it, I want to create a discriminated union based
-on the keys and values of the interface. My code is blow. Is it possible to do what I want?
+**Developer Prompt:**
+```text
+I have some duplication in my TypeScript code. I want to resolve it by creating a discriminated union based on the keys and values of the interface. Is this possible?
 ```
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-1.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
 
-GitHub [file diff](https://github.com/nbd-wtf/nostr-tools/pull/241/files#diff-98476df5961449c9b87e4a05e4cf190b90d14815cb1b23f1e2d5398467287b61)
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="ShareChatGPTConversations" style="max-width:1000px;max-width:1000px;" align="center"></p>
+<p align="center">
+  <img src="/teaching/CS472/Timetable/GPT/example-1-1.png" alt="ChatGPTPrompt" style="max-width:700px; max-height:700px;">
+</p>
+
+**GitHub file diff:** [View here](https://github.com/nbd-wtf/nostr-tools/pull/241/files#diff-98476df5961449c9b87e4a05e4cf190b90d14815cb1b23f1e2d5398467287b61)
+
+<p align="center">
+  <img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="FileDiff" style="max-width:1000px; max-height:1000px;">
+</p>
+
 
 ### **Example 2:  Deployment documentation**
 In the software development process, various types of documentation play distinct roles in facilitating 
@@ -304,7 +299,7 @@ The developer was using `pushBack`, which adds an element to the end of the list
 This operation can be costly if done repeatedly because it may require traversing the entire list.
 
 #### **After the ChatGPT's Advise**
-
+The updated code can be found in the following PR file: [backend/testfiles/execution/stdlib/result.dark](https://github.com/darklang/dark/pull/5068/files#diff-ad820db3a141ba69514679a4698e3acb98c351faa8e2aaca9c3511c2740b8c19)
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-2-2.png" alt="ShareChatGPTConversations" style="max-width:676px;max-height:72px;" align="center"></p>
 
 The developer switched to using `push` (assumed to be adding to the front) and planned to reverse the 
