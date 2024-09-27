@@ -273,36 +273,34 @@ In this case, ChatGPT played a key role in informing the process of improving co
 
 
 ### **Example 2: Debugging and Optimization Strategies**
-Recall that the examples of this theme are centered on debugging methods, performance optimization, and refining algorithms, offering strategic insights into problem-solving approaches without specific code snippets.
+This theme focuses on debugging methods, performance optimization, and refining algorithms, offering strategic insights into problem-solving approaches without providing specific code snippets.
 
 - [PR link](https://github.com/darklang/dark/pull/5068)
-- [ChatGPT Link](https://chat.openai.com/share/7fe27ca4-5c0e-431b-953b-7f6e23710b5c) 
+- [ChatGPT Link](https://chat.openai.com/share/7fe27ca4-5c0e-431b-953b-7f6e23710b5c)
 
-Let's break down the situation to understand how the developer changed their code based on the ChatGPT conversation:
+Let's break down how the developer improved their code based on a conversation with ChatGPT:
 
 #### **Original Code**
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-2-1.png" alt="ShareChatGPTConversations" style="max-width:895px;max-height:446px;" align="center"></p>
 
-The developer was using `pushBack`, which adds an element to the end of the list. 
-This operation can be costly if done repeatedly because it may require traversing the entire list.
+Initially, the developer was using `pushBack`, which appends an element to the end of a list. However, repeatedly using this operation can be inefficient, as it may require traversing the entire list, especially in larger datasets.
 
-#### **After the ChatGPT's Advise**
-The updated code can be found in the following PR file: [backend/testfiles/execution/stdlib/result.dark](https://github.com/darklang/dark/pull/5068/files#diff-ad820db3a141ba69514679a4698e3acb98c351faa8e2aaca9c3511c2740b8c19)
+#### **ChatGPT's Advice**
+After consulting ChatGPT, the developer received a suggestion to optimize the list operation by switching to `push` (which likely adds elements to the front of the list) and then reversing the list at the end. This approach is generally more efficient because adding to the front of the list is an O(1) operation in many functional languages, whereas `pushBack` can be an O(n) operation, where n is the length of the list.
+
+#### **Updated Code**
+The optimized code can be found in this PR file: [backend/testfiles/execution/stdlib/result.dark](https://github.com/darklang/dark/pull/5068/files#diff-ad820db3a141ba69514679a4698e3acb98c351faa8e2aaca9c3511c2740b8c19).
+
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-2-2.png" alt="ShareChatGPTConversations" style="max-width:676px;max-height:72px;" align="center"></p>
 
-The developer switched to using `push` (assumed to be adding to the front) and planned to reverse the 
-list at the end. This approach improves performance because adding to the front of the list is 
-usually an O(1) operation in many functional languages, while `pushBack` could be O(n) 
-where n is the length of the list.
+In this updated code:
+- The developer switched to using `push` (adding to the front) and planned to reverse the list at the end.
+- This new approach enhances performance, as adding to the front of the list is typically O(1), whereas using `pushBack` could result in O(n) complexity.
 
 #### **Conclusion**
-The developer's interaction with ChatGPT falls under the **Debugging & Optimization Strategies** theme, 
-where ChatGPT provided performance improvement advice. Instead of offering a direct code solution, 
-ChatGPT suggested a strategy to append elements to the front of the list and reverse it later, 
-optimizing performance by avoiding inefficiencies with `pushBack`. This aligns with the 
-Software Engineering task of **performance optimization**, as the developer used this advice to refine 
-the algorithm and enhance the code's efficiency. ChatGPT guided the process by suggesting a more 
-efficient approach for handling list operations.
+This interaction falls under the **Debugging & Optimization Strategies** theme, where ChatGPT provided advice to improve performance. Rather than directly offering a code solution, ChatGPT suggested a strategy—appending elements to the front of the list and reversing it later—to optimize performance. This aligns with the **Software Engineering task of performance optimization**, where the developer refined the algorithm based on ChatGPT's advice, ultimately enhancing the efficiency of the code.
+
+ChatGPT played a key role in guiding the developer toward a more efficient solution for handling list operations, demonstrating how strategic advice can lead to performance improvements in software engineering.
 
 # **Getting Started With ChatGPT**
 
