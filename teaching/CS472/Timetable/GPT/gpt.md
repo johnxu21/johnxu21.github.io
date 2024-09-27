@@ -616,36 +616,35 @@ In this task, you will continue building the Continuous Integration (CI) pipelin
 **Objective**:
 Reflect on your experience with ChatGPT in completing the hands-on tasks and its impact on your understanding of software engineering practices.
 
-Instructions:
-Write a reflection report discussing your experience with ChatGPT during the completion of the lab tasks outlined below:
+### Instructions:
+Write a concise reflection report that covers the following:
 
-* Task 1: Familiarizing with ChatGPT
-* Task 2.1: Code Refactoring
-* Task 2.2: Documentation Assistance
-* Task 2.3: Understanding Complex Code
-* Task 2.4: Workflow Automation with GitHub Actions
+1. **Task Experiences**: 
+   - Reflect on each of the tasks (Familiarizing with ChatGPT, Code Refactoring, Documentation Assistance, Understanding Complex Code, Workflow Automation).
+   - Include challenges you faced, key insights, and lessons learned. Provide concrete examples, such as links to relevant pull requests or ChatGPT conversations.
 
-In your reflection, address the following points:
-1. *Initial Impressions*: Describe your initial expectations and impressions of using ChatGPT for software engineering tasks.
-2. *Task Experiences*: Reflect on your experiences with each task, including any challenges faced, insights gained, and lessons learned. Provide concrete examples by linking to relevant pull requests or the CI pipeline for Task 2.4.
-3. *Impact*: Discuss how ChatGPT has impacted your approach to software development, collaboration with teammates, and problem-solving skills.
-4. *Lessons Learned*: Summarize the key lessons you've learned from working with ChatGPT and how they may influence your future projects.
-5. *Future Applications*: Explore potential applications of ChatGPT in your future software development projects or other areas of interest.
+2. **Code Review Experience**: 
+   - Reflect on your experience reviewing your colleagues’ code using ChatGPT.
+   - How did the feedback from your peer review process and ChatGPT enhance the final code?
+   - Include how feedback was incorporated and how it improved code quality and team collaboration.
 
-**Format**: Your reflection report should be structured as a brief document with the following sections:
+3. **Impact and Lessons Learned**: 
+   - Discuss how ChatGPT affected your software development process, teamwork, and problem-solving skills.
+   - Highlight any key lessons from using ChatGPT and how they may influence future projects.
 
-* **Title**: Reflection Report on ChatGPT Usage
-* **Introduction**: Brief overview of the purpose and structure of the reflection report.
-* **Task Experiences**: Concise reflection on each task, highlighting challenges, insights, and lessons learned. Include hyperlinks to relevant pull requests or the CI pipeline for Task 2.4 to provide concrete examples of your work and experiences with ChatGPT. **(1-2 paragraphs per task)**
-* **Impact**: Discussion on the overall impact of ChatGPT on your software development process and skills. **(1-2 paragraphs)**
-* **Lessons Learned**: Summary of key lessons learned from working with ChatGPT and their implications for future projects. **(1-2 paragraphs)**
-* **Future Applications**: Exploration of potential future applications of ChatGPT in software development or related fields. **(1-2 paragraphs)**
-* **Conclusion**: Closing remarks summarizing your reflections on using ChatGPT in software engineering tasks.
+4. **Ethical and Practical Considerations**: 
+   - Briefly discuss any limitations or ethical concerns you observed while using ChatGPT in software engineering tasks.
+   - How might the responsible use of AI tools influence future software development practices?
 
-**Submission**:
-Submit your reflection report on Web Campus.
+5. **Future Applications**: 
+   - Consider how you might use ChatGPT in future software engineering tasks or projects.
 
-**Note**: The reflection report should be concise and focused, providing insights into your experience with ChatGPT without requiring extensive elaboration. Aim to capture the key points and lessons learned from each task, as well as your overall impressions and future outlook.
+### Submission:
+Submit your report on Web Campus.
+
+**Note**: The report should be concise (not more than 500 words), highlighting the most important insights from your work with ChatGPT.
+
+
 
 # Conclusion
 In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
