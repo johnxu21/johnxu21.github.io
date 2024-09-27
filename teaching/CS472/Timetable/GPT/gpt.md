@@ -198,7 +198,7 @@ Recall that deals with Conceptual advice from ChatGPT adapted for customized sol
 * **Initial ChatGPT Suggestion:** The developer initially received a regex for ULID from ChatGPT: ```^[0-9A-HJKMNP-TV-Z]{26}$``` [ChatGPT link](https://chatgpt.com/share/e9555822-4ffb-4845-8e40-0bc6cbbc658d). This regex is technically correct in terms of the ULID format, as it matches a 26-character string using base32 encoding.
 * **Reviewer's Suggestion:** The reviewer (`@lindyhopchris`) in the pull request (PR) pointed out that to maintain consistency, they should follow the regex used by Laravel's `whereUlid()` method for route constraints. This suggestion ensures uniformity across the codebase, aligning with how ULIDs are handled in the Laravel framework.
 
-The Laravel framework’s regex for ULIDs (in the link provided by the reviewer) is: [links](https://github.com/laravel/framework/blob/53b02b3c1d926c095cccca06883a35a5c6729773/src/Illuminate/Routing/CreatesRegularExpressionRouteConstraints.php#L48) are below:
+The Laravel framework’s regex for ULIDs (in the [link](https://github.com/laravel/framework/blob/53b02b3c1d926c095cccca06883a35a5c6729773/src/Illuminate/Routing/CreatesRegularExpressionRouteConstraints.php#L48) provided by the reviewer) is: 
 ```regex
 [0-7][0-9a-hjkmnp-tv-zA-HJKMNP-TV-Z]{25}
 ```
@@ -270,7 +270,8 @@ This doesn't accurately reflect what the variable was being used for:
 to store the **selected pricing frequency** (like 'monthly' or 'yearly').
 
 #### **Developer's Implementation**
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-2.png" alt="ShareChatGPTConversations" style="max-width:1004px;max-height:70px;" align="center"></p>
+The final updates in the PR can be gotten in the file: [app/controllers/pay.js](https://github.com/codecrafters-io/frontend/pull/1061/files#diff-430dcbc461b77b60fd320d970946d870ed279a2952a06350872de59304e427e8)
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-2.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:55px;" align="center"></p>
 
 After the conversation, the developer implemented the change, renaming `pricingFrequencyClicked` to `selectedPricingFrequency`. 
 This new name more accurately conveys that the variable holds the user's selection for pricing frequency, which improves readability and maintainability of the code.
