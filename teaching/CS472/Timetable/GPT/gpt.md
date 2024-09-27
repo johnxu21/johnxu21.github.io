@@ -237,46 +237,39 @@ In the updated version:
   * **Conditional Handling**: If `charValue` is valid, it returns `Dval.optionSome (DInt charValue)`, otherwise it returns `Dval.optionNone`.
 
 #### **Conclusion**
-The interaction in this pull request is a clear example of **methodological guidance**, where ChatGPT’s advice helps **refine the developer's approach** instead of being directly applied as a patch. This refinement aligns with the **Software Engineering task of program repair**, as it involved simplifying and improving the initial code to address inefficiencies.
+The interaction in this pull request is a clear example of **methodological guidance**, where ChatGPT’s advice helps refine the developer's approach instead of being directly applied as a patch. This refinement aligns with the Software Engineering task of **program repair**, as it involved simplifying and improving the initial code to address inefficiencies.
 
 By following ChatGPT's advice, the developer made the code more efficient and easier to maintain, demonstrating how **methodological guidance** can lead to better solutions in software engineering.
 
 
 ## None Existing Patch (NE)
 ### **Example 1: Conceptual Guidance & Theoretical Advice**
-Recall that this theme the discussions emphasized programming concepts, design principles, and optimization strategies, focusing on best practices for readability and maintainability without specific code implementations.
+This theme emphasizes programming concepts, design principles, and optimization strategies, focusing on best practices for readability and maintainability without specific code implementations.
 
 - [PR link](https://github.com/codecrafters-io/frontend/pull/1061)
-- [ChatGPT Link](https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e) 
+- [ChatGPT Link](https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e)
 
 Let's break down the situation to understand how the developer changed their code based on the ChatGPT conversation:
 
 #### **Original Problem**
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-1.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:325px;" align="center"></p>
 
-The developer was using the variable name `pricingFrequencyClicked`, which was flagged as problematic because the name 
-implied an action (a click) rather than a state (the selected frequency). 
-This doesn't accurately reflect what the variable was being used for: 
-to store the **selected pricing frequency** (like 'monthly' or 'yearly').
+The developer was using the variable name `pricingFrequencyClicked`, which was problematic because the name implied an action (a click) rather than a state (the selected frequency). This didn't accurately reflect what the variable was being used for: to store the **selected pricing frequency** (e.g., 'monthly' or 'yearly').
 
 #### **Developer's Implementation**
-The final updates in the PR can be gotten in the file: [app/controllers/pay.js](https://github.com/codecrafters-io/frontend/pull/1061/files#diff-430dcbc461b77b60fd320d970946d870ed279a2952a06350872de59304e427e8)
+The final updates in the PR can be viewed in the file: [app/controllers/pay.js](https://github.com/codecrafters-io/frontend/pull/1061/files#diff-430dcbc461b77b60fd320d970946d870ed279a2952a06350872de59304e427e8).
+
 <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-2.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:55px;" align="center"></p>
 
-After the conversation, the developer implemented the change, renaming `pricingFrequencyClicked` to `selectedPricingFrequency`. 
-This new name more accurately conveys that the variable holds the user's selection for pricing frequency, which improves readability and maintainability of the code.
+After the ChatGPT conversation, the developer renamed `pricingFrequencyClicked` to `selectedPricingFrequency`. This new name more accurately reflects that the variable holds the user's selection for pricing frequency, improving both readability and maintainability of the code.
 
 #### **ChatGPT's Advice**
-In the conversation, ChatGPT highlighted the issue with the variable name, explaining that 
-`pricingFrequencyClicked` was not an appropriate name because it didn't align with the variable's 
-purpose. It suggested using a name like `selectedPricingFrequency` to reflect that the variable holds 
-the selected value, not an action.
+ChatGPT highlighted the issue with the variable name, explaining that `pricingFrequencyClicked` was not appropriate because it didn't align with the variable's purpose. It suggested using a name like `selectedPricingFrequency` to more accurately reflect that the variable holds a selection, not an action.
 
 #### **Conclusion**
-The developer's interaction with ChatGPT falls under the "**Conceptual Guidance & Theoretical Advice**"
-theme, where ChatGPT's recommendations helped improve the clarity and maintainability of the code by suggesting better naming conventions, rather than being directly applied as a patch. 
-This guidance aligns with the software engineering tasks of **code review** and **code quality enhancement**, as it involved refining naming practices to enhance the overall readability of the code. 
-In this case, ChatGPT informed the process of improving code structure and long-term maintainability, aligning with these software engineering tasks.
+This interaction falls under the **"Conceptual Guidance & Theoretical Advice"** theme, where ChatGPT's recommendations helped improve the clarity and maintainability of the code by suggesting better naming conventions. This aligns with the software engineering tasks of **code review** and **code quality enhancement**, as it involved refining naming practices to enhance readability and maintainability.
+
+In this case, ChatGPT played a key role in informing the process of improving code structure and long-term maintainability, aligning with these software engineering tasks.
 
 
 ### **Example 2: Debugging and Optimization Strategies**
