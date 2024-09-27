@@ -48,73 +48,44 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
-### **This individual assignment is due Oct 1st, 2024**
+# **This individual assignment is due Oct 1st, 2024**
 
-In this lab, you will learn how to leverage ChatGPT, a powerful language model developed by OpenAI, 
-to address various software engineering tasks. ChatGPT, part of the GPT (Generative Pre-trained Transformer) 
-family of models, is capable of understanding and generating human-like text based on its input. 
-Throughout this lab, you will explore different ways developers incorporate ChatGPT into their workflow and 
-complete tasks in software engineering. **The lab will guide you on the responsible use of ChatGPT to improve productivity in software engineering** 
+# Introduction to ChatGPT in Software Engineering
 
-Overview of ChatGPT in Software Engineering
-=======
-ChatGPT is being used extensively in software engineering due to its natural language understanding and 
-generation capabilities. Developers utilize ChatGPT for a wide range of tasks across the software development 
-life cycle (SDLC), including requirements engineering, software design, development and implementation, 
-quality assurance, maintenance, and management. Some common tasks include code generation, code search, 
-test generation, code review, and more.
+In this lab, you'll learn how to use ChatGPT, a language model developed by OpenAI, to tackle software engineering tasks. ChatGPT, part of the GPT family, can generate human-like text based on input and has become a valuable tool for developers. Throughout the lab, you'll explore how developers incorporate ChatGPT into their workflow and learn how to use it responsibly to improve productivity.
 
-Details of the definition of the tasks and how LLMs have been used to address the tasks
-can be found in **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
+This lab leverages results from our published research in the [2024 International Conference on Automated Software Engineering (ASE)](ASE_Paper_2024.pdf), where we studied the application of ChatGPT in industry, particularly in open-source projects. We provide insights into how ChatGPT impacts software engineering tasks and decision-making in real-world scenarios.
 
-1. Requirements engineering tasks e.g.,
-  * Anaphoric ambiguity treatment
-  * Requirements classification
-2. Software design tasks, e.g.,
-  * GUI retrieval
-  * Rapid prototyping
-3. Software development and implementation tasks, e.g.,
-  * Code generation
-  * Code search
-  * Code documentation
-  * Code understanding
-  * Program synthesis
-4. Software quality assurance tasks, e.g.,
-  * Test generation
-  * Failure-inducing test Identification
-5. Software maintenance tasks, e.g.,
-   * Code review
-   * Duplicate bug report detection
-6. Software management tasks, e.g.,
-  * Effort estimation
+## Overview of ChatGPT's Role in Software Engineering
 
-The figure below presents a typical GitHub PR workflow augmented with ChatGPT interactions, which can originate from either the PR author or a reviewer. 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/illustration.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:500px;" align="center"></p>
-Consider a scenario where a developer, intending to fix a bug, add a feature, or enhance an existing one, initiates a change to a file named ```Foo```. Using pull-based development workflow, this process starts with the creation of a new branch and committing the changes. During development, the developer might encounter challenges or seek optimal solutions, prompting them to consult ChatGPT. The response from ChatGPT might be textual or might include a code snippet. Based on the nature of the response, the following scenarios can arise.
+ChatGPT is widely used in various stages of the software development lifecycle, including requirements engineering, design, development, testing, and maintenance. Common uses include code generation, test creation, code review, and more.
 
-1. When the response includes a code snippet, the developer may apply this directly to Foo as a patch, either as provided or after modifications. This scenario is labeled as **"Patch Applied (PA)"**.
-2. If the code snippets are not applied, or modified beyond recognition (resulting in a semantic clone), Foo may remain unchanged or include changes influenced by the discussed concepts. This scenario is defined as **"Patch Not Applied (PN)"**.
-3. If the interaction with ChatGPT involves only textual advice without code snippets, similar to the previous scenario, Foo may remain unchanged or may be modified based on the guidance received. This scenario is referred to as **None Existing Patch (NE)**
+A detailed description of how language models are applied in software engineering tasks can be found in **Section 6** of Hou et al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf).
 
-This [research paper](ASE_Paper_2024.pdf) published in the 2024 in the International Conference of Automated Software Engineering is part of our work in the Evol Lab. We are 
-studying how developers are actively utilizing ChatGPT. We provide detailed explanations and findings related to the above scenarios. For PA scenario, we used clone detection to determine if code snippet suggested by ChatGPT was integrated in the pull request. 
-For PN and NE cases, we employed a rigorous qualitative analysis methodology. This involved summarizing ChatGPT-developer conversations and GitHub PRs using the **Framework Method**, followed by thematic extraction using **card sorting** technique.
-We found interesting themes as shown below:
+### The typical tasks include:
 
-## PN Themes:
-- **Adaptation to project needs:** Conceptual advice from ChatGPT adapted for customized solutions fitting unique project needs. Highlights the customization of these insights for specific project needs
-- **Methodological guidance:**  ChatGPT's advice informed approaches or refined solutions, not directly applied as patches. Focuses on the broader approach or strategy influenced by ChatGPT
-- **Specific functionality enhancements:** Enhancements informed by ChatGPT insights, tailored to specific functionality rather than direct patches.
-- **Technical limitations:** Non-application of patches due to technical constraints or preference for alternative solutions.
-- **Clarification & correction:** Clarifications or corrections led to refining approaches rather than applying new patches.
+- **Requirements engineering**: e.g., requirements classification, resolving ambiguity
+- **Software design**: e.g., GUI retrieval, rapid prototyping
+- **Development**: e.g., code generation, search, documentation
+- **Quality assurance**: e.g., test generation, bug detection
+- **Maintenance**: e.g., code review, duplicate bug detection
+- **Management**: e.g., effort estimation
 
-## NE Themes:
-- **Conceptual Guidance & Theoretical Advice:** The discussions emphasized programming concepts, design principles, and optimization strategies, focusing on best practices for readability and maintainability without specific code implementations.
-- **Documentation & Localization Enhancements:** Discussions focused on enhancements in documentation clarity, communication refinement, and localization accuracy, highlighting efforts in making content accessible and understandable to diverse audiences, thereby improving overall documentation quality and effectiveness.
-- **Education and Knowledge Sharing:** Sharing knowledge on programming concepts, language-specific features, or explaining code functionalities, serving an educational purpose and enhancing understanding of complex concepts.
-- **Debugging & Optimization Strategies:** Centered on debugging methods, performance optimization, and refining algorithms, offering strategic insights into problem-solving approaches without specific code snippets.
+### Scenarios and Themes from Industry
 
-In the next three sections, we will look at some **concrete examples for each of the scenarios mentioned above**. We demonstrate how developers incorporate code and how they utilized textual advice without code snippets from ChatGPT. The examples will also correspond to themes and software engineering tasks mentioned earlier.
+In our ASE paper, we explored several practical scenarios where developers use ChatGPT in GitHub pull requests:
+
+1. **Patch Applied (PA)**: Developers apply code snippets generated by ChatGPT directly into their projects.
+2. **Patch Not Applied (PN)**: Code snippets were discussed but not applied, or significantly modified.
+3. **None Existing Patch (NE)**: Developers receive conceptual advice from ChatGPT without code snippets.
+
+We conducted clone detection for PA scenarios to verify code integration, and for PN/NE cases, we used rigorous qualitative analysis to extract themes. Key themes included:
+
+- **PN Themes**: Project adaptation, methodological guidance, specific functionality, technical limitations, and clarifications.
+- **NE Themes**: Conceptual guidance, documentation improvement, education, debugging, and optimization strategies.
+
+These findings illustrate how ChatGPT is used in practice and will help guide you in understanding the responsible and effective use of ChatGPT in software engineering.
+
 
 ## Patch Applied (PA)
 ### **Example 1: Code Duplication and Refactoring**
