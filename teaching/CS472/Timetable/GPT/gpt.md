@@ -521,5 +521,6 @@ Submit your report on Web Campus.
 
 
 
-# Conclusion
-In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
+[//]: # (# Conclusion)
+
+[//]: # (In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR]&#40;https://arxiv.org/pdf/2308.10620.pdf&#41;)
