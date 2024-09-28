@@ -50,6 +50,13 @@ height:30px;" value="ChatGPT" />
 
 # **This individual assignment is due Oct 11th, 2024**
 
+# Important Note:
+
+While this lab may appear lengthy, please note that most of the content is informative and includes illustration diagrams to help you understand the tasks. It is designed to be easy to read and follow.
+
+In the previous semesters, some students rushed through the lab and missed important details, leading to unnecessary questions that could have been avoided by reading the provided material carefully. Please take your time to go through the content and ensure you understand each part before proceeding with the tasks.
+
+
 # Introduction to ChatGPT in Software Engineering
 
 In this lab, you'll learn how to use ChatGPT, a language model developed by OpenAI, to tackle software engineering tasks. ChatGPT, part of the GPT family, can generate human-like text based on input and has become a valuable tool for developers. Throughout the lab, you'll explore how developers incorporate ChatGPT into their workflow and learn how to use it responsibly to improve productivity.
@@ -346,19 +353,30 @@ Sharing your ChatGPT conversations with other developers can be highly beneficia
 
 ## Task 1: Exploring ChatGPT's Role in Software Engineering
 
-1. **Read and Reflect**: Begin by reading the provided overview of how developers use ChatGPT in software engineering, focusing on open-source projects.
+**Objective**:
+Understand how developers incorporate ChatGPT into their workflow by going through various illustrative examples and case studies.
 
-2. **Explore Case Studies**: Go through the provided use cases for **Patch Applied (PA)**, **Patch Not Applied (PN)**, and **None Existing Patch (NE)**, including the pull requests and ChatGPT conversations.
+### Instructions:
 
-3. **Identify Key Tasks**: Reflect on how developers incorporated ChatGPT into their workflow to tackle various software engineering tasks (e.g., refactoring, code enhancement, debugging).
+1. **Read and Reflect**: 
+   - Carefully read all the provided material, including the illustrative examples and case studies for:
+     - **Patch Applied (PA)**
+     - **Patch Not Applied (PN)**
+     - **None Existing Patch (NE)**
+   - For each case study, review the associated pull requests (PRs) and ChatGPT conversations to fully understand how ChatGPT was used to improve software engineering tasks, such as code refactoring, documentation, and debugging.
 
-4. **Submit Reflection**: Write a **300-word reflection** for each of the three case studies (PA, PN, and NE). For **each case study**, reference at least **two specific quotes or code snippets** from the material to support your analysis. Explain why you chose these particular quotes or code snippets and how they illustrate ChatGPT’s role in improving the code or decision-making process. This reflection must be submitted **before** proceeding to the hands-on tasks.
+2. **Take Time to Understand**:
+   - This task is designed to ensure you fully understand the material **before moving on to the hands-on exercises**.
+   - Thoroughly review each example to see how ChatGPT has been integrated into the developer workflow and how it impacted the decision-making process.
+   - **Rushing through this material can lead to confusion in later tasks**, so take the necessary time to digest the information.
 
-### Example Prompt for Task 1:
-- **Reflection Questions**: 
-  - *In the PA case study, how did the developer apply ChatGPT’s suggestions to improve the patch? Include at least two specific quotes or code snippets from the case study and explain how they demonstrate ChatGPT’s influence on the developer’s decision-making process.*
-  - *In the PN case study, discuss how the developer adapted ChatGPT’s advice to meet the project needs without directly applying the patch. Reference at least two quotes or code snippets to support your analysis.*
-  - *In the NE case study, how did ChatGPT provide conceptual guidance without code implementation? Support your answer with at least two specific quotes or examples from the case study.*
+3. **Submit Reflection**:
+   - After going through all the examples, write a **300-word reflection** for each of the three case studies (PA, PN, and NE).
+   - Your reflection should include at least **two specific quotes or code snippets** from the material to support your analysis.
+   - Explain how these examples illustrate ChatGPT’s role in improving code quality, decision-making, or problem-solving.
+
+4. **Reminder**:
+   - Ensure you thoroughly understand the material, as it will help you avoid confusion and make the hands-on exercises much easier to tackle.
 
 ## Task 2: Hands-on with ChatGPT
 
