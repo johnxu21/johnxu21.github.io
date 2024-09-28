@@ -486,39 +486,26 @@ In this task, you will continue building the Continuous Integration (CI) pipelin
 7. **Merge PR**: Once you have confirmed that the workflow improvements are successful and thoroughly tested, merge the PR into your main branch.
 
 
-# Task 3: Reflection Report
+# Task 3: Summary Report
 
 **Objective**:
-Reflect on your experience with ChatGPT in completing the hands-on tasks and its impact on your understanding of software engineering practices.
+Provide a brief summary of the work completed during the hands-on tasks and submit links to the relevant individual pull requests (PRs).
 
-### Instructions:
-Write a concise reflection report that covers the following:
+### **Instructions**:
+Write a brief report that includes:
 
-1. **Task Experiences**: 
-   - Reflect on each of the tasks (Familiarizing with ChatGPT, Code Refactoring, Documentation Assistance, Understanding Complex Code, Workflow Automation).
-   - Include challenges you faced, key insights, and lessons learned. Provide concrete examples, such as links to relevant pull requests or ChatGPT conversations.
+1. **Task Summary**: 
+   - For each task (Familiarizing with ChatGPT, Code Refactoring, Documentation Assistance, Understanding Complex Code, Workflow Automation), provide a short description (1-2 sentences) of what you did.
+   - Include the link to the individual pull request (PR) for each task.
 
-2. **Code Review Experience**: 
-   - Reflect on your experience reviewing your colleagues’ code using ChatGPT.
-   - How did the feedback from your peer review process and ChatGPT enhance the final code?
-   - Include how feedback was incorporated and how it improved code quality and team collaboration.
+2. **Peer Review Summary** (for Tasks 2.1 to 2.3):
+   - Briefly mention how you reviewed a colleague’s code using ChatGPT and how your code was reviewed.
+   - Include any improvements made based on the review process.
 
-3. **Impact and Lessons Learned**: 
-   - Discuss how ChatGPT affected your software development process, teamwork, and problem-solving skills.
-   - Highlight any key lessons from using ChatGPT and how they may influence future projects.
+### **Submission**:
+- Submit your report on Web Campus.
 
-4. **Ethical and Practical Considerations**: 
-   - Briefly discuss any limitations or ethical concerns you observed while using ChatGPT in software engineering tasks.
-   - How might the responsible use of AI tools influence future software development practices?
-
-5. **Future Applications**: 
-   - Consider how you might use ChatGPT in future software engineering tasks or projects.
-
-### **Submission:**
-Submit your report on Web Campus.
-
-**Note**: The report should be concise (not more than 500 words), highlighting the most important insights from your work with ChatGPT.
-
+**Note**: The report should be brief, focused on summarizing the work and including PR links.
 
 
 [//]: # (# Conclusion)
