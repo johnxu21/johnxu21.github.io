@@ -48,7 +48,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
-# **This individual assignment is due Oct 1st, 2024**
+# **This individual assignment is due Oct 11th, 2024**
 
 # Introduction to ChatGPT in Software Engineering
 
@@ -409,41 +409,6 @@ In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where 
 7. **Merge PR**: Once your colleague has reviewed the PR and confirmed the improvements, you can merge the PR into the team repository.
 
 
-**Example:**
-
-```python
-# Original Code Snippet
-def calculate_circle_area(radius):
-    area = 3.14 * radius * radius
-    return area
-
-def calculate_rectangle_area(length, width):
-    area = length * width
-    return area
-
-def calculate_triangle_area(base, height):
-    area = 0.5 * base * height
-    return area
-
-# Refactored Code Snippet
-import math
-
-def calculate_circle_area(radius):
-    return math.pi * radius ** 2
-
-def calculate_rectangle_area(length, width):
-    return length * width
-
-def calculate_triangle_area(base, height):
-    return 0.5 * base * height
-```
-
-Notes:
-* In this example, the original code snippet contains duplication in the calculation of areas for different shapes (circle, rectangle, triangle).
-* ChatGPT could provide suggestions on using built-in functions or libraries to simplify the calculations and eliminate redundancy.
-* The refactored code snippet improves readability by using the `math` module for accurate calculations and removing unnecessary variables.
-* Ensure to document the changes made and the rationale behind each refactoring in the GitHub pull request description.
-
 ## Task 2.2: Improving Documentation with ChatGPT
 
 **Objective**: Use ChatGPT to enhance documentation for a selected code snippet.
@@ -464,57 +429,6 @@ Notes:
 
 7. **Merge PR**: After the review is completed and improvements are confirmed, merge the PR into the main branch of your team repository.
 
-**Example**:
-
-```python
-# Original Script: fibonacci_sequence.py
-def fibonacci_sequence(n):
-    sequence = [0, 1]
-    for i in range(2, n):
-        next_term = sequence[-1] + sequence[-2]
-        sequence.append(next_term)
-    return sequence
-
-def main():
-    n = 10
-    sequence = fibonacci_sequence(n)
-    print(f"The Fibonacci sequence up to {n} terms is: {sequence}")
-
-if __name__ == "__main__":
-    main()
-
-# Documented Script: fibonacci_sequence.py
-def fibonacci_sequence(n):
-    """
-    Generate a Fibonacci sequence up to the nth term.
-    Args:
-        n (int): The number of terms in the Fibonacci sequence to generate.
-    Returns:
-        list: A list containing the Fibonacci sequence up to the nth term.
-    """
-    sequence = [0, 1]
-    for i in range(2, n):
-        next_term = sequence[-1] + sequence[-2]
-        sequence.append(next_term)
-    return sequence
-
-def main():
-    """
-    Main function to demonstrate the usage of the fibonacci_sequence function.
-    """
-    n = 10
-    sequence = fibonacci_sequence(n)
-    print(f"The Fibonacci sequence up to {n} terms is: {sequence}")
-
-if __name__ == "__main__":
-    main()
-```
-**Notes**:
-* In this example, the original code snippet `fibonacci_sequence.py` lacks comprehensive documentation, making it unclear what the function `fibonacci_sequence` does and how to use it.
-* Without proper documentation, it may be challenging for other developers to understand the purpose of the function and its intended usage.
-* Adding documentation to describe the functionality, input parameters, return value, and any other relevant details would enhance the clarity and usability of the code.
-* Clear and concise documentation is essential for facilitating collaboration and ensuring that code is maintainable and understandable by others.
-
 ## Task 2.3: Understanding Complex Code with ChatGPT
 
 **Objective**: Use ChatGPT to help comprehend and improve a complex code segment.
@@ -534,45 +448,6 @@ if __name__ == "__main__":
 6. **Update PR**: After receiving feedback, update the PR description with the ChatGPT conversation links from both the author and reviewer, and summarize the improvements made.
 
 7. **Merge PR**: Once the review is complete and all changes are confirmed, merge the PR into the team repository.
-
-
-**Example**:
-
-<!--div style="text-align:center;">
-    <img src="task2.3.png" alt="Code Snippet" style="max-width:600px;max-height:600px;">
-</div-->
-
-```python
-# Original Code Snippet: Complex Operation
-def complex_operation(number):
-    """
-    Perform a complex mathematical operation on the input number.
-    Args:
-        number (int): The input number.
-    Returns:
-        int: The result of the complex operation.
-    """
-    return number ** 2 + number ** 3
-
-# Updated Code Snippet: Simplified Operation
-def simplified_operation(number):
-    """
-    Perform a simplified mathematical operation on the input number.
-    Args:
-        number (int): The input number.
-    Returns:
-        int: The result of the simplified operation.
-    """
-    result = number * number  # Square the number
-    result += number * number * number  # Cube the number and add to the result
-    return result
-```
-
-**Notes**:
-* In this example, the original function `some_complex_operation(data_point)` represents a complex algorithmic operation that may be difficult to understand or optimize.
-* ChatGPT could provide insights on potential simplifications, alternative algorithms, or optimizations to enhance the function's readability or performance.
-* The simplified function `simplified_operation(data_point)` demonstrates how the algorithmic complexity can be reduced while achieving the same functionality.
-* Ensure to thoroughly test the simplified function to validate its correctness and efficiency before integrating it into the project.
 
 ## Task 2.4: Workflow Automation with GitHub Actions
 
