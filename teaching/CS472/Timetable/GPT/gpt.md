@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS472 - Leveraging ChatGPT in Software Engineering Tasks - Lab
+title: CS472 - Responsible use ChatGPT in Software Engineering Tasks - Lab
 permalink: /teaching/CS472/Timetable/GPT/
 ---
 <div class="main-component">
