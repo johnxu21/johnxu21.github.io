@@ -370,10 +370,14 @@ Understand how developers incorporate ChatGPT into their workflow by going throu
    - Thoroughly review each example to see how ChatGPT has been integrated into the developer workflow and how it impacted the decision-making process.
    - **Rushing through this material can lead to confusion in later tasks**, so take the necessary time to digest the information.
 
-3. ****Submit Reflection**:
+3. **Submit Reflection**:
    - After going through all the examples, write a **reflection of up to 300 words** that covers all three case studies (PA, PN, and NE).
-   - Your reflection should include at least **two specific quotes or code snippets** from the material to support your analysis.
+   - For **each case study**, include at least **two specific quotes or code snippets** from the material to support your analysis.
    - Explain how these examples illustrate ChatGPT’s role in improving code quality, decision-making, or problem-solving.
+
+**Reminder**:
+   - Ensure you thoroughly understand the material, as it will help you avoid confusion and make the hands-on exercises much easier to tackle.
+
 
 **Reminder**:
    - Ensure you thoroughly understand the material, as it will help you avoid confusion and make the hands-on exercises much easier to tackle.
