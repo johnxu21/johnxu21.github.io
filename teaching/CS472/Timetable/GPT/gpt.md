@@ -499,7 +499,7 @@ Provide a brief summary of the work completed during the hands-on tasks and subm
 Write a brief report that includes:
 
 1. **Task Summary**: 
-   - For each task (Familiarizing with ChatGPT, Code Refactoring, Documentation Assistance, Understanding Complex Code, Workflow Automation), provide a short description (1-2 sentences) of what you did.
+   - For each task (Exploring ChatGPT's Role in Software Engineering, Code Refactoring, Documentation Assistance, Understanding Complex Code, Workflow Automation), provide a short description (1-2 sentences) of what you did.
    - Include the link to the individual pull request (PR) for each task.
 
 2. **Peer Review Summary** (for Tasks 2.1 to 2.3):
