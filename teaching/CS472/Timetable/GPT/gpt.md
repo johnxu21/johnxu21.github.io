@@ -372,8 +372,8 @@ Understand how developers incorporate ChatGPT into their workflow by going throu
 
 3. **Submit Reflection**:
    - After going through all the examples, write a **reflection of up to 300 words** that covers all three case studies (PA, PN, and NE).
-   - For **each case study**, include at least **two specific quotes or code snippets** from the material to support your analysis.
-   - Explain how these examples illustrate ChatGPT’s role in improving code quality, decision-making, or problem-solving.
+   - For **each case study**, include at least **two specific quotes or code snippets** from the material to support your analysis. This means you will need a total of **six references (quotes or snippets)**, two for each case study.
+   - In your reflection, explain how these examples demonstrate ChatGPT’s role in improving code quality, decision-making, or problem-solving.
 
 **Reminder**:
    - Ensure you thoroughly understand the material, as it will help you avoid confusion and make the hands-on exercises much easier to tackle.
