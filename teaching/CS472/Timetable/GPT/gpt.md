@@ -384,7 +384,7 @@ Understand how developers incorporate ChatGPT into their workflow by going throu
 
 ## Task 2: Hands-on with ChatGPT
 
-In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where previous lab tasks were submitted. You'll use ChatGPT to improve code quality, documentation, and comprehension. All code must be reviewed by at least one colleague, and both the author and the reviewer must use ChatGPT during the review process.
+In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where previous lab tasks were submitted. You'll use ChatGPT to improve code quality, documentation, and comprehension. All code must be reviewed by at least one colleague. The author must use ChatGPT during the development process, and the reviewer may use ChatGPT if it adds value to the review.
 
 ### **Organizational Guidelines**:
 1. **Repository Structure**: Agree on folder names for each task and document them in your report. Add unique identifiers (e.g., your name) to filenames to avoid conflicts.
