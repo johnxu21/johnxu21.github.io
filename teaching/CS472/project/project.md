@@ -145,15 +145,17 @@ By following these structured guidelines, you ensure that design thinking is pri
  
 
 # 3. General Coding Instructions
-The following coding/repository instructions apply:
-* Fork the group repository and clone that fork onto your local repository.
-* Create a branch on your fork for every "qualified contribution" you would like to make on the group/main repository. 
-For example, if you have been assigned to develop **UC-2.1**, create a branch on your fork called  **UC-2.1**. 
-If you are fixing a bug on the main repository, name the branch with an appropriate name. If you are introducing missing 
-tests, also name the branch name appropriately.
-* All the contributions to the main repository have to be submitted through pull requests that at least two other group members should have review.
-* The group should explicitly set **contribution guidelines** that the team members should follow. The 
-reviewers should resolve pull request only if the guidelines have been followed.
+
+The following coding and repository instructions apply:
+
+- **Fork the group repository** and clone your fork to your local machine.
+- **Create a branch** on your fork for every "qualified contribution" you plan to make on the group/main repository.
+  - For example, if you're assigned to develop **UC-2.1**, create a branch named **UC-2.1** on your fork.
+  - If you're fixing a bug on the main repository, use a descriptive name for the branch (e.g., **bugfix-login-error**).
+  - If you're adding missing tests, name the branch accordingly (e.g., **add-missing-tests**).
+- **Submit all contributions** to the main repository through pull requests (PRs), which should be reviewed by at least two other group members.
+- The group should establish **clear contribution guidelines** for all members to follow. Reviewers should only approve pull requests if these guidelines have been followed.
+
 
 # 4. Examining Issues
 An issue is a way to discuss, plan and track work on a GitHub repository.
