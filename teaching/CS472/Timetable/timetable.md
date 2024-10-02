@@ -57,7 +57,7 @@ The theory consists of four lessons where we explain the techniques to be used.:
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/18/2024]
 5. Leveraging ChatGPT in Software Engineering [PPTX](LLM.pptx) [last updated 09/25/2024]
 6. Object-oriented design 
-  * Slides [PDF](OOD-V2.pptx) [last updated 02/20/2024]
+  * Slides [PDF](OOD-V2.pptx) [last updated 10/02/2024]
   * Analysing a System [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_6)"
   * Design and Implementation [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_7)
 7. Survey Results [PDF](Survey_Presentation.pdf) [last updated 02/27/2024]
