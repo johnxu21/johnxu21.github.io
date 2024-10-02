@@ -115,7 +115,7 @@ You may use **use case diagrams**, **class diagrams**, and **sequence diagrams**
 
 ## Guidelines:
 - **Minimum Requirement**: Each feature or use case must be represented by at least one design diagram (use case, sequence, or class diagram). Select the type of diagram that best illustrates how your feature interacts with other system components.
-  - For non-object-oriented projects (such as JavaScript/TypeScript), where class diagrams may not always be applicable, you may focus on sequence diagrams or use case diagrams to represent interactions.
+  - For **non-object-oriented projects** (such as JavaScript/TypeScript), where class diagrams may not always be applicable, you may focus on sequence diagrams or use case diagrams to represent interactions.
   
 - **Focus on Interaction**: The goal of the design diagram is to ensure that you fully understand how the feature or use case interacts with other components before implementation. This also ensures that team members can easily follow your thought process when reviewing pull requests.
 
