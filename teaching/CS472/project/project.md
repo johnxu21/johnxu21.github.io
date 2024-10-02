@@ -107,17 +107,42 @@ Each team member will be assessed based on their active participation in the col
 
 
 
-# 2. Instructions to the UML Diagrams
+# 2. Instructions to the UML Diagrams and Design Process
 
-You will use simple **use case diagrams**, **class diagram** and **sequence diagrams** or any other UML diagrams you find suitable.
-A simple class diagram has only the name of the class and its interactions with the other classes 
-(there are two examples in [JPacman](https://github.com/johnxu21/jpacman/tree/master/doc/uml) repository in the "docs" folder). 
-This is to reinforce your initial understanding of the 
-system. You only need to focus on the classes associated with the feature/use case and the classes that are 
-called in those classes. There is no need to go deeper into the class structure (i.e., if feature 
-class calls Class X, and Class X calls Class Y, then you do not need to show Class Y since it is 
-not being called directly by the feature class you are implementing). I am are not going to evaluate your strictness to the 
-proper UML notations, therefore focus on modeling and understanding classes interactions. 
+Before authoring a pull request for any new feature or use case, **at least one design diagram** should be created to model how the feature interacts with the rest of the system.
+
+You may use **use case diagrams**, **class diagrams**, and **sequence diagrams**, or any other UML diagrams you find suitable to represent your feature. The purpose of these diagrams is to **reinforce your understanding of the system** and how different components interact with each other.
+
+## Guidelines:
+- **Minimum Requirement**: Each feature or use case must be represented by at least one design diagram (use case, sequence, or class diagram). Select the type of diagram that best illustrates how your feature interacts with other system components.
+  - For non-object-oriented projects (such as JavaScript/TypeScript), where class diagrams may not always be applicable, you may focus on sequence diagrams or use case diagrams to represent interactions.
+  
+- **Focus on Interaction**: The goal of the design diagram is to ensure that you fully understand how the feature or use case interacts with other components before implementation. This also ensures that team members can easily follow your thought process when reviewing pull requests.
+
+## Diagram Guidelines:
+- **Use Case Diagrams**: These represent the interactions between the users (actors) and the system. Keep them simple and focused on the specific feature you are developing.
+  
+- **Class Diagrams**: A simple class diagram should include the **class name** and its **interactions with other classes**. There is no need to detail every attribute and method—just focus on the relationships (associations, dependencies, etc.) between classes.
+  - You only need to show the classes directly involved with the feature or use case. If **Class X** calls **Class Y**, but **Class Y** is not directly related to your feature, you don’t need to show **Class Y**.
+
+- **Sequence Diagrams**: These should capture the **flow of interactions** between different objects or components within the system. Focus on how messages or function calls are passed in sequence during the execution of your feature.
+
+## Tips:
+- **Start Simple**: Diagrams are meant to help you understand the system. Begin with simple diagrams that show key interactions, and add more detail if needed.
+  
+- **Collaboration**: Work with your team to ensure everyone shares the same understanding of how different components interact. Use diagrams to facilitate these discussions.
+
+- **Diagram Selection**: Choose the type of diagram that best represents your feature. For example, if a class diagram doesn’t make sense, a sequence diagram or use case diagram might better illustrate the interaction.
+
+- **No Strict UML Notation**: I’m not evaluating strict adherence to UML syntax, so focus on **modeling and understanding** class interactions and system components rather than perfect UML representation.
+
+## Repository Structure & Pull Requests:
+- **Repository Structure**: Maintain a clear folder structure in the repository for design diagrams, with folders organized by features or use cases. This will make diagrams easy to locate and understand.
+  
+- **Pull Requests**: When submitting a pull request (PR), include a link to the corresponding design diagram in the PR description. This will help reviewers understand the feature or use case in context.
+
+By following these structured guidelines, you ensure that design thinking is prioritized while keeping the process streamlined and manageable.
+ 
 
 # 3. General Coding Instructions
 The following coding/repository instructions apply:
