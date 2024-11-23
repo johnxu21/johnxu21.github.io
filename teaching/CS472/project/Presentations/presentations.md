@@ -50,7 +50,7 @@ height:30px;" value="SD Competition" />
 
 Venue for the Trial and Final Presentation
 =======
-The **trial and final project presentations** will take place in **Flora Dungan Humanities 109 (FDU 109)**
+The **trial and final project presentations** will take place in **BEH 121**
 
 Trial Presentations (Ungraded) (Last edited 04/15/2024)
 =======
