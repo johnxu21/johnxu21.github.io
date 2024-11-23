@@ -137,7 +137,7 @@ are supposed to wait for their time slots.
 
   <tr>
 
-    <td style="border: 1px solid black;">sg1-umlg -- Gr-1</td>
+    <td style="border: 1px solid black;">sg1-umlg -- Gr-2</td>
 
     <td style="border: 1px solid black;">12/04</td>
 
