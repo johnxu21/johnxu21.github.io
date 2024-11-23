@@ -52,7 +52,7 @@ Venue for the Trial and Final Presentation
 =======
 The **trial and final project presentations** will take place in **BEH 121**
 
-Trial Presentations (Ungraded) (Last edited 04/15/2024)
+Trial Presentations (Ungraded) (Last edited 11/23/2024)
 =======
 
 
