@@ -64,6 +64,8 @@ section of the team project. Try this out during the trial to practice. All team
 exciting projects; please listen, learn and give feedback. Those presenting earlier, please give back the 
 favor and provide feedback to the ones presenting later you.
 
+Presentation Guidelines: [[Google Doc]( https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit?tab=t.0)]
+
 <table>
 
   <tr>
@@ -78,45 +80,34 @@ favor and provide feedback to the ones presenting later you.
 
   <tr>
 
-    <td style="border: 1px solid black;">SmallTalk -- Gp-4</td>
+    <td style="border: 1px solid black;">Tabby -- Gp-1</td>
 
-    <td style="border: 1px solid black;">04/18</td>
+    <td style="border: 1px solid black;">11/27</td>
 
-    <td style="border: 1px solid black;">12:30 pm - 12:55 pm</td>
+    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
 
   </tr>
 
   <tr>
 
-    <td style="border: 1px solid black;">LifeQuest -- Gp-7</td>
+    <td style="border: 1px solid black;">Rebel Hub -- Gp-3</td>
 
-    <td style="border: 1px solid black;">04/18</td>
+    <td style="border: 1px solid black;">12/02</td>
 
-    <td style="border: 1px solid black;">1:00 pm - 1:25 pm</td>
+    <td style="border: 1px solid black;">1:25 pm - 1:47 pm</td>
 
   </tr>
 
 
   <tr>
 
-    <td style="border: 1px solid black;">RightWay -- Gp-6</td>
+    <td style="border: 1px solid black;">Tabby -- Gp-1</td>
 
-    <td style="border: 1px solid black;">04/18</td>
+    <td style="border: 1px solid black;">12/02</td>
 
-    <td style="border: 1px solid black;">1:45 pm - 2:10 pm</td>
-
-  </tr>
-
-<tr>
-
-    <td style="border: 1px solid black;">Crypto Wars -- Gp-8</td>
-
-    <td style="border: 1px solid black;">04/23</td>
-
-    <td style="border: 1px solid black;">1:20 pm - 1:45 pm</td>
+    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
 
   </tr>
-
 
 </table>
 
@@ -146,84 +137,32 @@ are supposed to wait for their time slots.
 
   <tr>
 
-    <td style="border: 1px solid black;">SmallTalk -- Gr-4</td>
+    <td style="border: 1px solid black;">sg1-umlg -- Gr-1</td>
 
-    <td style="border: 1px solid black;">04/25</td>
+    <td style="border: 1px solid black;">12/04</td>
 
-    <td style="border: 1px solid black;">12:40 pm - 1:00 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">Crypto Wars -- Gp-8</td>
-
-    <td style="border: 1px solid black;">04/25</td>
-
-    <td style="border: 1px solid black;">1:00 pm - 1:20 pm</td>
-
-  </tr>
-
-
-  <tr>
-
-    <td style="border: 1px solid black;">RightWay -- Gp-6</td>
-
-    <td style="border: 1px solid black;">04/25</td>
-
-    <td style="border: 1px solid black;">1:20 pm - 1:40 pm</td>
-
-  </tr>
-
-  
-<tr>
-
-    <td style="border: 1px solid black;">2DRove -- Gp-2</td>
-
-    <td style="border: 1px solid black;">04/25</td>
-
-    <td style="border: 1px solid black;">1:40 pm - 2:00 pm</td>
-
-  </tr>
-
-<tr>
-
-    <td style="border: 1px solid black;">LifeQuest -- Gr-7</td>
-
-    <td style="border: 1px solid black;">04/30</td>
-
-    <td style="border: 1px solid black;">12:40 pm - 1:00 pm</td>
+    <td style="border: 1px solid black;">1:00 pm - 1:23 pm</td>
 
   </tr>
 
   <tr>
 
-    <td style="border: 1px solid black;">Munch -- Gp-5</td>
+    <td style="border: 1px solid black;">Rebel Hub -- Gp-3</td>
 
-    <td style="border: 1px solid black;">04/30</td>
+    <td style="border: 1px solid black;">12/04</td>
 
-    <td style="border: 1px solid black;">1:00 pm - 1:20 pm</td>
+    <td style="border: 1px solid black;">1:25 pm - 1:45 pm</td>
 
   </tr>
 
 
   <tr>
 
-    <td style="border: 1px solid black;">Roadwatch -- Gp-1</td>
+    <td style="border: 1px solid black;">Tabby -- Gp-1</td>
 
-    <td style="border: 1px solid black;">04/30</td>
+    <td style="border: 1px solid black;">12/04</td>
 
-    <td style="border: 1px solid black;">1:20 pm - 1:40 pm</td>
-
-  </tr>
-  
-<tr>
-
-    <td style="border: 1px solid black;">Barbell -- Gp-3</td>
-
-    <td style="border: 1px solid black;">04/30</td>
-
-    <td style="border: 1px solid black;">1:40 pm - 2:00 pm</td>
+    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
 
   </tr>
 
