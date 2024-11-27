@@ -64,7 +64,7 @@ section of the team project. Try this out during the trial to practice. All team
 exciting projects; please listen, learn and give feedback. Those presenting earlier, please give back the 
 favor and provide feedback to the ones presenting later you.
 
-Presentation Guidelines: [[Google Doc]( https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit?tab=t.0)]
+Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit?tab=t.0)]
 
 <table>
 
@@ -85,6 +85,16 @@ Presentation Guidelines: [[Google Doc]( https://docs.google.com/document/d/16m2-
     <td style="border: 1px solid black;">11/27</td>
 
     <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
+
+  </tr>
+
+  <tr>
+
+    <td style="border: 1px solid black;">sg1-umlg -- Gp-2</td>
+
+    <td style="border: 1px solid black;">12/02</td>
+
+    <td style="border: 1px solid black;">1:00 pm - 1:23 pm</td>
 
   </tr>
 
