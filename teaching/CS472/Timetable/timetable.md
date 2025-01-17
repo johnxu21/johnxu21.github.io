@@ -215,12 +215,20 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 04/29</td>
 <td style="border: 1px solid black;">Trial Presentation</td>
 <td style="border: 1px solid black;">Thu 05/01 </td>
-<td style="border: 1px solid black;"><b>Project Presentation</b></td>
+<td style="border: 1px solid black;"><b>Trial Presentation</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">16</td>
 <td style="border: 1px solid black;">Tu 05/06</td>
+<td style="border: 1px solid black;"><b>Project Presentation</b></td>
+<td style="border: 1px solid black;">Thu 05/08 </td>
+<td style="border: 1px solid black;"><b>Project Presentation</b></td>
+</tr>
+
+<tr>
+<td style="border: 1px solid black;">16</td>
+<td style="border: 1px solid black;">Tu 05/13</td>
 <td style="border: 1px solid black;"><b>Final Exam</b></td>
 <td style="border: 1px solid black;"> </td>
 <td style="border: 1px solid black;"></td>
