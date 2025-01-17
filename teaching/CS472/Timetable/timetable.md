@@ -189,7 +189,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">12</td>
 <td style="border: 1px solid black;">Tu 04/08</td>
-<td style="border: 1px solid black;"><b>Free Projeect work</b></td>
+<td style="border: 1px solid black;"><b>[L] Free Project work</b></td>
 <td style="border: 1px solid black;">Thu 04/12 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
