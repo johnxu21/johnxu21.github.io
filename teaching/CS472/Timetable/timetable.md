@@ -207,7 +207,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 04/22</td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 <td style="border: 1px solid black;">Thu 04/24 </td>
-<td style="border: 1px solid black;">Trial Presentation</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 </tr>
 
 <tr>
