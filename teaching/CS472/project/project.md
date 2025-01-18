@@ -335,15 +335,4 @@ As part of your team projects, you have the option to leverage AI-generated code
 
 By adhering to these guidelines, you promote transparency and accountability in the utilization of AI-generated code while ensuring proper documentation for project evaluation and assessment.
 
-## Preparation for Final Exam:
-
-While focusing on MVP development, keep in mind that the insights and data generated from your collaborative efforts will be invaluable for your final exam. You'll be required to reflect on your team's ChatGPT usage and identify specific use cases, challenges, and solutions in your reflection report. Therefore, actively participate in team collaboration and document your experiences for future reference.
-
-**Reminder**: The take-home exam will be distributed four weeks before the exam week. You are free to submit the exam anytime, but the deadline for submission is the University-scheduled exam date. If you have not received the exam by then, please send me a reminder.
-
-## Conclusion:
-
-By fostering collaboration and leveraging the collective expertise of your team, you can effectively mitigate challenges and maximize the benefits of using ChatGPT in your MVP development process. Embrace the opportunity to work together, share insights, and learn from each other's experiences as you strive towards project success.
-
-
 
