@@ -109,7 +109,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">02</td>
 <td style="border: 1px solid black;">Tu 01/28</td>
-<td style="border: 1px solid black;"><b>Ture of Git & GitHub</b></td>
+<td style="border: 1px solid black;"><b>More of Git & GitHub</b></td>
 <td style="border: 1px solid black;">Thu 01/30 </td>
 <td style="border: 1px solid black;">[T] Software Testing </td>
 </tr>
@@ -127,13 +127,13 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 02/11</td>
 <td style="border: 1px solid black;">[L] Continuous Integration</td>
 <td style="border: 1px solid black;">Thu 02/13 </td>
-<td style="border: 1px solid black;">[T] Application of LLMs in SE</td>
+<td style="border: 1px solid black;">[T] Application of GenAI in SE</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Tu 02/18</td>
-<td style="border: 1px solid black;">[L] Application of LLMs in SE</td>
+<td style="border: 1px solid black;">[L] Application of GenAI in SE</td>
 <td style="border: 1px solid black;">Thu 02/20 </td>
 <td style="border: 1px solid black;">[T] Intro to OO Design & Architecture </td>
 </tr>
