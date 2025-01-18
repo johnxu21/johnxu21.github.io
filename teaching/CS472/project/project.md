@@ -58,14 +58,12 @@ Subway Simulation
 ======
 
 * Functional Requirements:
-  * Specification 1.0 [[pdf](../../../files/472Files/specification1.0.pdf)]
   * Specification 2.0 [[pdf](../../../files/472Files/specification2.0.pdf)]
 
 Traffic Simulation
 ========
 
 * Functional Requirements:
-  * Specification 1.0 [[pdf](../../../files/472Files/Traffic_simulationSpec1.0.pdf)]
   * Specification 2.0 [[pdf](../../../files/472Files/Traffic_simulationSpec2.0.pdf)]
 
 
@@ -81,9 +79,9 @@ Deliverables
 =====
 
 The following documents will guide you produce the deliverables of the project:
-* Precondition report ([Doc](https://docs.google.com/document/d/1tLiXVKfddl_lBFB0id7Wr_jb-19wDip664vMxTusj34/edit)) **- Feb 4th, 2024**
+* Precondition report ([Doc](https://docs.google.com/document/d/1tLiXVKfddl_lBFB0id7Wr_jb-19wDip664vMxTusj34/edit)) **- Jan 31st, 2025**
 * Design Portfolio I ([Doc](https://docs.google.com/document/d/1y9Fl1yHl8S3Uh3TzEdQYhd7bQUkYVwZTEcB4H43SlvE/edit#)) **- Feb 18th 2025**
-* Design Portfolio II ([Doc](https://docs.google.com/document/d/1mUBX7hakgAdiBDJv9HPzD9436Ezvr2nPeZkdk9psGa8/edit#)) **- March 20th 2025**
+* Design Portfolio II ([Doc](https://docs.google.com/document/d/1mUBX7hakgAdiBDJv9HPzD9436Ezvr2nPeZkdk9psGa8/edit#)) **- March 24th 2025**
 * Design Portfolio III ([Doc](https://docs.google.com/document/d/13xShWs_zi9bBmfkToTYu4v68KwVXHZOjAdw7-obOIgg/edit)) **- May 5th 2025**
 * Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit)) **- May 6th 2025**
 
