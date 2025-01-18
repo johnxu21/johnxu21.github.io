@@ -52,8 +52,8 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
-The form for the data link can be found [here](https://forms.gle/AyC1KgSdXYwUAchw5) 
-
+- The form for the data link can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSdYIx7X_AU-8hUR0nB8_ZmL5dFGeFpBVGvilhIN5J91A51gwg/viewform?usp=sharing) 
+- Molly's Class Presentation [pptx](~$Classroom%20Visit%20Spring%202025.pptx)
 [//]: # ([Data link]&#40;https://forms.gle/Pu7kET7hbZpcc8US9&#41; )
 
 [//]: # (<br>)
