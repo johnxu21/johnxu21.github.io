@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc422fa-81c3-4308-9ce2-d4693e293f43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Classroom Visit Spring 2025.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/FAQ Senior Design Spring 2025.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Informational Paperwork Spring 2025.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Poster Design Workshop Slides.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/REIMBURSMENT DOCUMENT.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Senior Design Flyer Spring 2025.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/SeniorDesign4x3template_completelyblank (2).pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Spring 2025 Senior Design Abstract Form.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/seniordesigndocumentationforspring2025/Classroom Visit Spring 2025.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/seniordesigndocumentationforspring2025/FAQ Senior Design Spring 2025.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/seniordesigndocumentationforspring2025/Informational Paperwork Spring 2025.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/seniordesigndocumentationforspring2025/Poster Design Workshop Slides.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/seniordesigndocumentationforspring2025/REIMBURSMENT DOCUMENT.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/seniordesigndocumentationforspring2025/Senior Design Flyer Spring 2025.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/seniordesigndocumentationforspring2025/SeniorDesign4x3template_completelyblank (2).pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/seniordesigndocumentationforspring2025/Spring 2025 Senior Design Abstract Form.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Competition/Competetion-Spring-2024.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Competition/Competetion-Spring-2024_Page_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Competition/Competetion-Spring-2024_Page_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Competition/Competition.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Competition/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Competition/Competition.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Competition/Competition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Competition/~$Classroom Visit Spring 2025.pptx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +148,7 @@
       <workItem from="1728062696936" duration="9241000" />
       <workItem from="1731514893378" duration="557000" />
       <workItem from="1731516985708" duration="10182000" />
-      <workItem from="1734110199353" duration="20057000" />
+      <workItem from="1734110199353" duration="20364000" />
     </task>
     <servers />
   </component>
