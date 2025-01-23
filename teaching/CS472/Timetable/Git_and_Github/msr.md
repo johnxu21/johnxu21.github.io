@@ -147,6 +147,7 @@ The repository scottyab/rootbeer has a total of 17+ unique source files. It has 
 of 33+ authors who have touched the 17+ unique files (the data points in the graph) who have been 
 updating the files and committing their changes. The scatter plot  below  shows the authors 
 activities over time for the repository scottyab/rootbeer. 
+This graph below was generated some time ago, so your graph is expected to be more detailed, reflecting the additional updates made to the repository since then.
 
 <img src="/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
