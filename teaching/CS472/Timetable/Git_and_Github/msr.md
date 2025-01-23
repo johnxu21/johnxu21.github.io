@@ -100,10 +100,11 @@ This is an individual assignment; however, you will practice submitting your wor
 
 6. **Submit a Pull Request:**  
    - The repository creator should create a pull request from their branch to the main branch.  
-   - Team members who forked the repository should create a pull request to merge changes from their fork into the team repository.  
+   - Team members who forked the repository should create a pull request to merge changes from their fork into the team repository. 
+   - If there are any conflicts, resolve them collaboratively before merging the pull request.  
 
 
-### Part 2. Add a new file to the repository (20 pts) 
+### **Part 2. Add a new file to the repository (20 pts) **
 **This part of the assignment mainly contains the individual part of the assignment. 
 You are supposed to modify ```CollectFiles.py``` file so that you can extract information from the repository.
 As soon as the team project is created, you will work on the team part of the assignment.**
@@ -151,7 +152,7 @@ activities over time for the repository scottyab/rootbeer.
 
 **0 weeks-means the file was touched in the early days of the project lifetime and 250 weeks means the file was touched in the 250th week of the project lifetime.**
 
-### Part 3. Executive Summary (5 pts)
+### **Part 3. Executive Summary (5 pts)**
 **This section also contains the individual part of the assignment**
 
 Pretend you are a project manager writing a status report on the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) project 
