@@ -66,29 +66,41 @@ This is an individual assignment; however, you will practice submitting your wor
 
 ### Part 1. Clone your team's repository and add files (5 pts)
 
-By now, everyone should have a GitHub account and been added to the 
-team's repository as ```collaborators```. In the team repository there should be a file ```contributors.txt```
-that contains the contributor list of the team.
+1. **Create a Team Repository:**  
+   - One team member should create a **new GitHub repository** using your group name (e.g., `Group-1`, `Group-2`, etc.) as the repository name. Add all team members as **collaborators** to the repository.  
+   - The team member who creates the repository should not push directly to the main branch. Instead, they should:  
+     - Create a new branch for their changes.  
+     - Make their updates on the branch.  
+     - Open a pull request to merge the branch into the main branch.  
 
-**Invite me and the TA as collaborators on your repository.**  
-* my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
-* TA [GitHub ID: ```danielogen```](https://github.com/danielogen)
+2. **Fork the Repository:**  
+   - All other team members should **fork** the repository into their own GitHub accounts and then clone their fork onto their local machines.  
 
-Fork the teams repository and clone the fork onto your laptop.
-* create a branch on your local repository called ```contributors``` using the following command ```git branch contributors```.
-* run the command ```git checkout contributors```
-* edit the ```contributors.txt``` and add your ```name``` and ```email address```.
-* type the following commands
-```commandline
-git add contributors.txt
-git commit -m "your commit message here"
-git push
-```
-<img src="/teaching/CS472/Timetable/Git_and_Github/contributors.jpeg" alt="contributors" style="width:600px;height:376px;" align="center">
- 
-* in your fork on GitHub, you should be able to see a screen like the image above.
-* open a pull request and write an appropriate title and body.
-* one of the repository maintainers should integrate your contribution.
+3. **Add the `contributors.txt` File:**  
+   - The repository should include a file named `contributors.txt` to track the contributor list for your team.  
+
+4. **Invite Me and the TA as Collaborators:**  
+   - Add the following GitHub IDs as collaborators on your repository:  
+     - My GitHub ID: [**`johnxu21`**](https://github.com/johnxu21)  
+     - TA GitHub ID: [**`danielogen`**](https://github.com/danielogen)  
+
+5. **Update and Commit Your Contribution:**  
+   - Create a new branch called `contributors` and switch to it:  
+     ```bash
+     git branch contributors
+     git checkout contributors
+     ```  
+   - Edit the `contributors.txt` file and add your **name** and **email address**.  
+   - Commit your changes and push them:  
+     ```bash
+     git add contributors.txt
+     git commit -m "Added my name and email to contributors.txt"
+     git push
+     ```  
+
+6. **Submit a Pull Request:**  
+   - The repository creator should create a pull request from their branch to the main branch.  
+   - Team members who forked the repository should create a pull request to merge changes from their fork into the team repository.  
 
 
 ### Part 2. Add a new file to the repository (20 pts) 
