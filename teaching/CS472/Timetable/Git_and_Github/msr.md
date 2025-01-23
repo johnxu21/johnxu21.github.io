@@ -104,7 +104,7 @@ This is an individual assignment; however, you will practice submitting your wor
    - If there are any conflicts, resolve them collaboratively before merging the pull request.  
 
 
-### **Part 2. Add a new file to the repository (20 pts) **
+### **Part 2. Add a new file to the repository (20 pts)**
 **This part of the assignment mainly contains the individual part of the assignment. 
 You are supposed to modify ```CollectFiles.py``` file so that you can extract information from the repository.
 As soon as the team project is created, you will work on the team part of the assignment.**
