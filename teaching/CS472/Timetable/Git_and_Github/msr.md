@@ -64,7 +64,7 @@ Important Note
 
 This is an individual assignment; however, you will practice submitting your work to the team repository once groups are formed. While waiting to be assigned to a group, you can begin working on **Part 2** and **Part 3** of the assignment. These sections do not require the team repository and focus on adapting scripts, analyzing repository data, and preparing an executive summary. Once your groups are formed, you can proceed with Part 1 and practice collaborative repository management.
 
-### Part 1. Clone your team's repository and add files (5 pts)
+### **Part 1. Set Up Your Team Repository and Add Files (5 pts)**  
 
 1. **Create a Team Repository:**  
    - One team member should create a **new GitHub repository** using your group name (e.g., `Group-1`, `Group-2`, etc.) as the repository name. Add all team members as **collaborators** to the repository.  
