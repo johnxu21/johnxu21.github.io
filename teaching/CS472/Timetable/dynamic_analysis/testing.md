@@ -51,7 +51,7 @@ height:30px;" value="CHAT GPT" />
 
 ### **This individual assignment is due Sept 17th, 2024**
 
-In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
+In this Lab your will practice writing unit tests and analysing test coverage using Python programming language.
 In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
 for this Lab in the **Team's repository** you created and used in the 
 [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab.
@@ -82,123 +82,13 @@ Materials & Tools Used for this Session
 ===============
 
 [//]: # (* Session slides [here]&#40;../Testing.pdf&#41;.)
-* [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
-* [JPacman](https://github.com/johnxu21/jpacman) repository.
-* [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
+* Install Python `>= 3.8`. The exercise has been testing with the following Python versions: 3.8.1, 3.9.5, 3.9.6, 3.9.7 and 3.10.10 but any version of python `3.8+` should work without any configuration issues.
+* Download and install IDE of your choice. Popular options are [Microsoft Visual Studio Code](https://code.visualstudio.com/) and [IntelliJ IDE](https://www.jetbrains.com/idea/)
 * [pytest](https://docs.pytest.org/en/stable/) Most popular python testing framework - makes it easy to write small, readable tests, and can scale to support complex functional testing for applications and libraries.
 * [flask](https://flask.palletsprojects.com/en/2.3.x/) a web framework, it's a Python module that lets you develop web applications easily.
 
 
-Setup / Preparation
-=============
-
-[//]: # (First, make sure to fork the JPacman from the [Prof's repository]&#40;https://github.com/johnxu21/jpacman&#41; into your GitHub account. It is necessary to fork the project because the free version of CodeScene can only see projects from your own account.)
-
-To start getting acquainted with the JPacman source code. Download/Clone the JPacman project from the 
-[Prof's repository](https://github.com/johnxu21/jpacman) and open it on IntelliJ; build it. JPacman uses Gradle as a built/dependency manager. 
-Make sure you can build and run it before doing any source code modification.
-Now look at the source code and try to understand its internal structure. In the "docs/uml" folder there are two simplified UML diagrams.
-
-Task 1 -- JPacman Test Coverage
-===========
- 
-We will begin by using the [IntelliJ IDE](https://www.jetbrains.com/idea/) test coverage plugin. 
-The testing and coverage plugins should be enabled by default. If you are not sure, check under ```IntelliJ IDEA > Preferences > Plugins > installed``` if your 
-plugins called ```Code Coverage for Java```, ```JUnit```, and ```TestNG``` are enabled.
- 
-First, make sure that you can test your JPacman, by using the following command line in the 
-[IntelliJ IDE](https://www.jetbrains.com/idea/) terminal:
-```
-./gradlew test
-```
-**Note:** Remember to set the project to point to the JDK version on which it was built. Look at ```External Libraries``` under the 
-Project's folder in IntelliJ IDE to see the JDK version.
-
-Now, right-click on the ```test``` folder (inside the ```src``` folder) and select the option "Run 'Tests' 
-in ```jpacman.test``` with Coverage". If that option is not available, select "Build Module 
-```jpacman.test```" and after the build right-click again and the option  "Run 'Tests' in 
-```jpacman.test``` with Coverage" should be available.
-
-Alternatively, you can also right-click on the Gradle task ```test```, inside the module ```Task->verification```
-shown in the ```Gradle plugin``` (default position is a collapsed tab on the right part of your IntelliJ). 
-Select ```Run 'jpacman [test]' with Coverage```. This Gradle task should produce the same coverage. 
-Therefore, use whichever you prefer. 
- 
-If everything executed without errors, you should see a new window showing the code coverage. 
-Please try to remember this coverage (or take a screenshot to not depend on your memory).
- 
-**Question:**
-* Is the coverage good enough?
-
-Task 2 -- Increasing Coverage on JPacman 
-===================
-  
-For the second task, we will increase the coverage on JPacman. Doing that is very simple, 
-we just need to write more tests. In this task, we are going to write one new test case. 
-As you have seen from **Task 1** that the coverage for several packages is zero percent.
- 
-Let's create a simple ```unit test``` on a method. We will test the ```isAlive()``` method in class ```Player``` 
-(package ```level```). You should look at the ```DirectionTest``` class (folder ```test```, package ```board```) as a template 
-for your test case. **The hardest part is instantiating a ```Player``` object as it requires other objects.** 
-The ```PlayerFactory``` class is responsible for creating instances of ```Player```. And, ```PlayerFactory``` 
-constructor requires a ```PacManSprites``` (package ```sprites```) object. Therefore, you need to instantiate a 
-```PacManSprites``` object, to pass it on to the constructor of ```PlayerFactory```, and only then you can 
-call the factory method to create a ```Player```.
- 
-Create the package ```level``` in the ```test``` folder. Then, create the class ```PlayerTest``` inside this 
-package ```level```. Now you can write the test case for testing the method ```isAlive()``` from ```Player```. 
- 
-[Here is an example](/teaching/CS473-Fall2022/dynamic/PlayerTest.java_.txt) of such a test class, but I 
-strongly advise you to try for yourself (it is a simple test and the hardest part is just to instantiate 
-the objects).
- 
-After adding the new test, build ```jpacman.test``` again and run it with coverage. If your test does not 
-have any errors, you should see the IntelliJ window showing the code coverage. Leave this window with the 
-coverage information on as you may need it to answer the questions from the next task 
-(or take a screenshot of it).
-
-Task 2.1 - 15 points (5 points each)
-====
-Identify **three or more methods** in any java classes and write ```unit tests``` of those methods. 
-**Remember to take screenshots of the test coverage before and after creating the unit tests.** 
-**Since there are many methods in the project, I should not find almost all the group members of a given group attempting the same methods.** 
-Discuss between the group mates what methods you will be writing unit tests for. 
-A simple Google sheet having two columns would help get the group organised.
-
-<table>
-  <tr>
-    <th style="border: 1px solid black;">Names</th>
-    <th style="border: 1px solid black;">Fully Qualified Method Name</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black;">John Businge </td>
-    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/game/GameFactory.createSinglePlayerGame</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black;">John Businge </td>
-    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/board/BoardFactory.createBoard</td>
-  </tr>
-
-</table> 
- 
-<br/>
-
-Task 3 -- JaCoCo Report on JPacman (10 points)
-=====
-
-The gradle build file provided in ```JPacman```, already has ```JaCoCo``` configured. Look at the folder ```build/reports/jacoco/test/html```, right-click on the file ```index.html``` and select 
-"Open in Browser". This is the coverage report from the ```JaCoCo``` tool. As you can see, ```JaCoCo``` shows not only line coverage but also branch coverage. Click on the ```level``` package, then on the ```Player``` class, and after that on any method. You will see the source code with color information on which branches are covered (or partially covered).
- 
-**Questions:** 
-* Are the coverage results from ```JaCoCo``` similar to the ones you got from ```IntelliJ``` in the last task? Why so or why not?
-* Did you find helpful the source code visualization from ```JaCoCo``` on uncovered branches?
-* Which visualization did you prefer and why? ```IntelliJ```'s coverage window or ```JaCoCo```'s report?
-
-**Write a report for Tasks 2.1 and Task 3. Name the report ```<your-names>_unitTesting.pdf>```**
-Remember to include the **code snippets of your unit tests** for Tasks 2.1 in your report.
-Make sure that your report is descriptive enough for me to follow without looking at your project code.
-
-Task 4 -- Working with Python Test Coverage
+Task 1 -- Working with Python Test Coverage
 =====
 In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
@@ -295,7 +185,7 @@ In this task to try to get the test coverage to close to 100% as possible. You w
 
 **Add to your report of the previous tasks and include the code snippets for your test cases.**
 
-Task 5 - TDD
+Task 2 - TDD
 =======
 Test driven development (TDD) is an approach to software development in which you first write the test cases for the code you wish you had and then write the code to make the test cases pass. In this Task, you will write test cases based on the requirements given to you, and then you will write the code to make the test cases pass.
 
@@ -451,19 +341,18 @@ Add to your report of the previous tasks and detail the steps (red/green/refacto
 Submitting the Assignment
 =======
 * Put a **link to your fork repository in the report**.
-* create a folder on your local fork repository called ```jpacman```.
-* create a branch on your local fork repository called ```jpacman_tests``` using the following command ```git branch jpacman_tests```.
-* run the command ```git checkout jpacman_tests```
-* copy your report--```<your-names>_unitTesting.pdf>``` and paste it in the folder ```jpacman```
+* create a folder on your local fork repository called ```test_coverage```.
+* create a branch on your local fork repository called ```python_tests``` using the following command ```git branch python_tests```.
+* run the command ```git checkout python_tests```
+* copy your report--```<your-names>_unitTesting.pdf>``` and paste it in the folder ```test_coverage```
 * push the changes onto your remote fork repository.
 * open a pull request on the ```main branch``` of the Team repository and write an appropriate title and body.
 * one of the repository maintainers should integrate your contribution into the main branch.
-* **for Tasks 4 & 5, only the report is required.**
 * You should also submit your report on **Canvas**
 
-This lab aims to evaluate your proficiency in both GitHub usage and software testing. Tasks 2 and 3 will assess both skills, while Tasks 4 and 5 will focus solely on evaluating your software testing abilities.
+<!-- This lab aims to evaluate your proficiency in both GitHub usage and software testing. Tasks 2 and 3 will assess both skills, while Tasks 4 and 5 will focus solely on evaluating your software testing abilities. -->
 
-Importantly, for Tasks 4 and 5, there's no requirement to commit your code to the team repository. The evaluation will be based on your software testing proficiency in the report submitted rather than GitHub usage. However, when submitting your report on Canvas, ensure it includes documentation for all tasks.
+<!-- Importantly, for Tasks 4 and 5, there's no requirement to commit your code to the team repository. The evaluation will be based on your software testing proficiency in the report submitted rather than GitHub usage. However, when submitting your report on Canvas, ensure it includes documentation for all tasks. -->
 
 
 
