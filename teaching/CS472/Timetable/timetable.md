@@ -52,7 +52,7 @@ Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
 1. Class overview [PDF](ClassOverview.pdf) [**last updated 01/20/2025**]
-2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 09/04/2024]
+2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/29/2024]
 3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 09/11/2024]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/18/2024]
 5. Using Generative AI in Software Engineering [PPTX](LLM.pptx) [last updated 09/25/2024]
