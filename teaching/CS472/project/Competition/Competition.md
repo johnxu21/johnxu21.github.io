@@ -52,9 +52,15 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
-The form for the data link can be found [here](https://forms.gle/AyC1KgSdXYwUAchw5) 
-
-[//]: # ([Data link]&#40;https://forms.gle/Pu7kET7hbZpcc8US9&#41; )
+- The form for the data link can be found [here](https://docs.google.com/forms/d/e/1FAIpQLSdYIx7X_AU-8hUR0nB8_ZmL5dFGeFpBVGvilhIN5J91A51gwg/viewform?usp=sharing) 
+- Molly's Class Presentation [pptx](Classroom%20Visit%20Spring%202025.pptx)
+- Poster Design Workshop Slided [pptx](Poster%20Design%20Workshop%20Slides.pptx)
+- REIMBURSMENT DOCUMENT [docx](REIMBURSMENT%20DOCUMENT.docx)
+- Senior Design Flyer Spring 2025 [pdf](Senior%20Design%20Flyer%20Spring%202025.pdf)
+- SeniorDesign4x3template_completelyblank (2) [pptx](SeniorDesign4x3template_completelyblank%20(2).pptx)
+- Spring 2025 Senior Design Abstract Form [docx](Spring%202025%20Senior%20Design%20Abstract%20Form.docx)
+- FAQ Senior Design Spring 2025 [docx](FAQ%20Senior%20Design%20Spring%202025.docx)
+- Informational Paperwork Spring 2025 [docx](Informational%20Paperwork%20Spring%202025.docx)
 
 [//]: # (<br>)
 

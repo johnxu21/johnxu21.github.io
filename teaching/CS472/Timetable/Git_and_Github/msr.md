@@ -50,7 +50,7 @@ height:30px;" value="CHAT GPT" />
 <br/>
 
 
-### **This individual assignment is due Sept 10th, 2024**
+### **This individual assignment is due Jan 29th, 2025**
 
 For this lab, you will be learning how to explore an open 
 source repository from GitHub. You will also learn how to extract useful 
@@ -59,34 +59,52 @@ writing a short executive summary on your findings.
 (This assignment assumes you have installed git on your computer.  
 If you haven't done this yet look at the Pro Git book or online for help.)
 
-### Part 1. Clone your team's repository and add files (5 pts)
+Important Note
+======
 
-By now, everyone should have a GitHub account and been added to the 
-team's repository as ```collaborators```. In the team repository there should be a file ```contributors.txt```
-that contains the contributor list of the team.
+This is an individual assignment; however, you will practice submitting your work to the team repository once groups are formed. While waiting to be assigned to a group, you can begin working on **Part 2** and **Part 3** of the assignment. These sections do not require the team repository and focus on adapting scripts, analyzing repository data, and preparing an executive summary. Once your groups are formed, you can proceed with Part 1 and practice collaborative repository management.
 
-**Invite me and the TA as collaborators on your repository.**  
-* my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
-* TA [GitHub ID: ```danielogen```](https://github.com/danielogen)
+### **Part 1. Set Up Your Team Repository and Add Files (5 pts)**  
 
-Fork the teams repository and clone the fork onto your laptop.
-* create a branch on your local repository called ```contributors``` using the following command ```git branch contributors```.
-* run the command ```git checkout contributors```
-* edit the ```contributors.txt``` and add your ```name``` and ```email address```.
-* type the following commands
-```commandline
-git add contributors.txt
-git commit -m "your commit message here"
-git push
-```
-<img src="/teaching/CS472/Timetable/Git_and_Github/contributors.jpeg" alt="contributors" style="width:600px;height:376px;" align="center">
- 
-* in your fork on GitHub, you should be able to see a screen like the image above.
-* open a pull request and write an appropriate title and body.
-* one of the repository maintainers should integrate your contribution.
+1. **Create a Team Repository:**  
+   - One team member should create a **new GitHub repository** using your group name (e.g., `Group-1`, `Group-2`, etc.) as the repository name. Add all team members as **collaborators** to the repository.  
+   - The team member who creates the repository should not push directly to the main branch. Instead, they should:  
+     - Create a new branch for their changes.  
+     - Make their updates on the branch.  
+     - Open a pull request to merge the branch into the main branch.  
+
+2. **Fork the Repository:**  
+   - All other team members should **fork** the repository into their own GitHub accounts and then clone their fork onto their local machines.  
+
+3. **Add the `contributors.txt` File:**  
+   - The repository should include a file named `contributors.txt` to track the contributor list for your team.  
+
+4. **Invite Me and the TA as Collaborators:**  
+   - Add the following GitHub IDs as collaborators on your repository:  
+     - My GitHub ID: [**`johnxu21`**](https://github.com/johnxu21)  
+     - TA GitHub ID: [**`danielogen`**](https://github.com/danielogen)  
+
+5. **Update and Commit Your Contribution:**  
+   - Create a new branch called `contributors` and switch to it:  
+     ```bash
+     git branch contributors
+     git checkout contributors
+     ```  
+   - Edit the `contributors.txt` file and add your **name** and **email address**.  
+   - Commit your changes and push them:  
+     ```bash
+     git add contributors.txt
+     git commit -m "Added my name and email to contributors.txt"
+     git push
+     ```  
+
+6. **Submit a Pull Request:**  
+   - The repository creator should create a pull request from their branch to the main branch.  
+   - Team members who forked the repository should create a pull request to merge changes from their fork into the team repository. 
+   - If there are any conflicts, resolve them collaboratively before merging the pull request.  
 
 
-### Part 2. Add a new file to the repository (20 pts) 
+### **Part 2. Add a new file to the repository (20 pts)**
 **This part of the assignment mainly contains the individual part of the assignment. 
 You are supposed to modify ```CollectFiles.py``` file so that you can extract information from the repository.
 As soon as the team project is created, you will work on the team part of the assignment.**
@@ -113,7 +131,7 @@ You can find a repo's programming languages on the bottom right of the repo's pa
 (some repos could be written in more than one programming language).
 * First, write a script with the name ```<'your_firstname'_authorsFileTouches.py>``` that collects 
 the authors and the dates when they touched each file in the list of files generated by the 
-adapted file CollectFiles.py (only source files.).
+adapted file CollectFiles.py (only source files - **feel free to define what your source files and give your reasoning in the report**).
 * Second, write a script that generates a scatter plot (using matplotlib) of weeks vs file 
 variables where the points are shaded according to author variable. Each author should have 
 a distinct color. Looking at the scatter plot one should be able to tell a file that is 
@@ -129,12 +147,13 @@ The repository scottyab/rootbeer has a total of 17+ unique source files. It has 
 of 33+ authors who have touched the 17+ unique files (the data points in the graph) who have been 
 updating the files and committing their changes. The scatter plot  below  shows the authors 
 activities over time for the repository scottyab/rootbeer. 
+This graph below was generated some time ago, so your graph is expected to be more detailed, reflecting the additional updates made to the repository since then.
 
 <img src="/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
 
 **0 weeks-means the file was touched in the early days of the project lifetime and 250 weeks means the file was touched in the 250th week of the project lifetime.**
 
-### Part 3. Executive Summary (5 pts)
+### **Part 3. Executive Summary (5 pts)**
 **This section also contains the individual part of the assignment**
 
 Pretend you are a project manager writing a status report on the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) project 

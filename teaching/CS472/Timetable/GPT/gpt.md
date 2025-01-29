@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS472 - Leveraging ChatGPT in Software Engineering Tasks - Lab
+title: CS472 - Responsible use ChatGPT in Software Engineering Tasks - Lab
 permalink: /teaching/CS472/Timetable/GPT/
 ---
 <div class="main-component">
@@ -48,145 +48,132 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
-### **This individual assignment is due Oct 1st, 2024**
+# **This individual assignment is due Oct 8th, 2024**
 
-In this lab, you will learn how to leverage ChatGPT, a powerful language model developed by OpenAI, 
-to address various software engineering tasks. ChatGPT, part of the GPT (Generative Pre-trained Transformer) 
-family of models, is capable of understanding and generating human-like text based on its input. 
-Throughout this lab, you will explore different ways developers incorporate ChatGPT into their workflow and 
-complete tasks in software engineering. **The lab will guide you on the responsible use of ChatGPT to improve productivity in software engineering** 
+# **Important Note:**
 
-Overview of ChatGPT in Software Engineering
-=======
-ChatGPT is being used extensively in software engineering due to its natural language understanding and 
-generation capabilities. Developers utilize ChatGPT for a wide range of tasks across the software development 
-life cycle (SDLC), including requirements engineering, software design, development and implementation, 
-quality assurance, maintenance, and management. Some common tasks include code generation, code search, 
-test generation, code review, and more.
+While this lab may appear lengthy, please note that most of the content is informative and includes illustration diagrams to help you understand the tasks. It is designed to be easy to read and follow.
 
-Details of the definition of the tasks and how LLMs have been used to address the tasks
-can be found in **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
-
-1. Requirements engineering tasks e.g.,
-  * Anaphoric ambiguity treatment
-  * Requirements classification
-2. Software design tasks, e.g.,
-  * GUI retrieval
-  * Rapid prototyping
-3. Software development and implementation tasks, e.g.,
-  * Code generation
-  * Code search
-  * Code documentation
-  * Code understanding
-  * Program synthesis
-4. Software quality assurance tasks, e.g.,
-  * Test generation
-  * Failure-inducing test Identification
-5. Software maintenance tasks, e.g.,
-   * Code review
-   * Duplicate bug report detection
-6. Software management tasks, e.g.,
-  * Effort estimation
-
-The figure below presents a typical GitHub PR workflow augmented with ChatGPT interactions, which can originate from either the PR author or a reviewer. 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/illustration.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:500px;" align="center"></p>
-Consider a scenario where a developer, intending to fix a bug, add a feature, or enhance an existing one, initiates a change to a file named ```Foo```. Using pull-based development workflow, this process starts with the creation of a new branch and committing the changes. During development, the developer might encounter challenges or seek optimal solutions, prompting them to consult ChatGPT. The response from ChatGPT might be textual or might include a code snippet. Based on the nature of the response, the following scenarios can arise.
-
-1. When the response includes a code snippet, the developer may apply this directly to Foo as a patch, either as provided or after modifications. This scenario is labeled as **"Patch Applied (PA)"**.
-2. If the code snippets are not applied, or modified beyond recognition (resulting in a semantic clone), Foo may remain unchanged or include changes influenced by the discussed concepts. This scenario is defined as **"Patch Not Applied (PN)"**.
-3. If the interaction with ChatGPT involves only textual advice without code snippets, similar to the previous scenario, Foo may remain unchanged or may be modified based on the guidance received. This scenario is referred to as **None Existing Patch (NE)**
+In the previous semesters, some students rushed through the lab and missed important details, leading to unnecessary questions that could have been avoided by reading the provided material carefully. Please take your time to go through the content and ensure you understand each part before proceeding with the tasks.
 
 
-In the next three sections, we provide **concrete examples for each of the scenarios mentioned above**. We demonstrate how developers incorporate code and how they utilized textual advice without code snippers from ChatGPT. The examples will also correspond to software engineering tasks listed above.
+# **Introduction to ChatGPT in Software Engineering**
+
+In this lab, you'll learn how to use ChatGPT, a language model developed by OpenAI, to tackle software engineering tasks. ChatGPT, part of the GPT family, can generate human-like text based on input and has become a valuable tool for developers. Throughout the lab, you'll explore how developers incorporate ChatGPT into their workflow and learn how to use it responsibly to improve productivity.
+
+This lab leverages results from our published research in the [2024 International Conference on Automated Software Engineering (ASE)](ASE_Paper_2024.pdf), where we studied the application of ChatGPT in industry, particularly in open-source projects. We provide insights into how ChatGPT impacts software engineering tasks and decision-making in real-world scenarios.
+
+## **Overview of ChatGPT's Role in Software Engineering**
+
+ChatGPT is widely used in various stages of the software development lifecycle, including requirements engineering, design, development, testing, and maintenance. Common uses include code generation, test creation, code review, and more.
+
+A detailed description of how language models are applied in software engineering tasks can be found in **Section 6** of Hou et al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf).
+
+### The typical tasks include:
+
+- **Requirements engineering**: e.g., requirements classification, resolving ambiguity
+- **Software design**: e.g., GUI retrieval, rapid prototyping
+- **Development**: e.g., code generation, search, documentation
+- **Quality assurance**: e.g., test generation, bug detection
+- **Maintenance**: e.g., code review, duplicate bug detection
+- **Management**: e.g., effort estimation
+
+### Scenarios and Themes from Industry
+
+In our ASE paper, we explored several practical scenarios where developers use ChatGPT in GitHub pull requests:
+
+1. **Patch Applied (PA)**: Developers apply code snippets generated by ChatGPT directly into their projects.
+2. **Patch Not Applied (PN)**: Code snippets were discussed but not applied, or significantly modified.
+3. **None Existing Patch (NE)**: Developers receive conceptual advice from ChatGPT without code snippets.
+
+We conducted clone detection for PA scenarios to verify code integration, and for PN/NE cases, we used rigorous qualitative analysis to extract themes. Key themes included:
+
+- **PN Themes**: Project adaptation, methodological guidance, specific functionality, technical limitations, and clarifications.
+- **NE Themes**: Conceptual guidance, documentation improvement, education, debugging, and optimization strategies.
+
+These findings illustrate how ChatGPT is used in practice and will help guide you in understanding the responsible and effective use of ChatGPT in software engineering.
+
 
 ## Patch Applied (PA)
 ### **Example 1: Code Duplication and Refactoring**
-In this example, a developer uses ChatGPT in the `Software Engineering` activity of `Software maintenance` to address the task of `code duplication and refactoring` in the code. 
-Here is the link to both the PR and ChatGPT conversation.
+
+- [PR link](https://github.com/nbd-wtf/nostr-tools/pull/241)
+- [ChatGPT Link](https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398)
+- 
+A developer used ChatGPT during the `Software maintenance` task of `code duplication and refactoring` in the `nostr-tools` project. The developer aimed to resolve code repetition and refactor the code.
 
 
-- PR: [https://github.com/nbd-wtf/nostr-tools/pull/241](https://github.com/nbd-wtf/nostr-tools/pull/241)
-- ChatGPT Link: [https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398](https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398)
 
-After reviewing the ChatGPT link and the associated GitHub pull request, it appears that the 
-developer is addressing the Software Engineering task of `code duplication`. The ChatGPT prompts indicate a concern about code 
-repetition and a desire to refactor or improve the existing code.
+The pull request shows code changes to address **duplication issues**, improving code quality. Code duplication often leads to maintenance challenges, bugs, and reduced readability. By using ChatGPT, the developer sought guidance to efficiently refactor the code.
 
-The GitHub pull request link shows changes made to the codebase, particularly in the `nostr-tools` project. 
-The changes involve modifying existing code to address **duplication issues** and improve the overall code 
-quality. Code duplication is a common issue in software development that can lead to maintenance challenges, 
-increased likelihood of bugs, and reduced readability. The developer is using ChatGPT to seek advice on how to best approach and 
-implement these code changes, demonstrating a typical scenario where AI assistance can enhance 
-the efficiency of **code maintenance** tasks.
-
-**Developer prompt** 
-```angular2html
-I have some duplication in my TypeScript code. I resolve it, I want to create a discriminated union based
-on the keys and values of the interface. My code is blow. Is it possible to do what I want?
-```
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-1.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
-
-GitHub [file diff](https://github.com/nbd-wtf/nostr-tools/pull/241/files#diff-98476df5961449c9b87e4a05e4cf190b90d14815cb1b23f1e2d5398467287b61)
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="ShareChatGPTConversations" style="max-width:1000px;max-width:1000px;" align="center"></p>
-
-### **Example 2:  Deployment documentation**
-In the software development process, various types of documentation play distinct roles in facilitating 
-effective communication, collaboration, and understanding. These documents cater to different stakeholders 
-and serve diverse purposes, for example:
-* *Requirements Documentation*: Describes functional and non-functional specifications.
-* *Design Documentation*: Details system architecture, data flow, and component specifications.
-* *Technical Documentation*: Provides in-depth technical details about code, APIs, algorithms, and data structures.
-* *Testing and QA Documentation*: Describes test plans, cases, and quality assurance processes.
-* *Deployment Documentation*: Guides administrators on deploying and configuring software in a production environment.
-
-In this example, the developer used ChatGPT with the following [prompt](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0),
-and appears to seek assistance in creating user-friendly and concise documentation for the `release.sh` script. 
-This would likely fall under the umbrella of deployment documentation, helping system administrators and 
-DevOps teams understand how to effectively use the script for software releases.
-
-**Developer prompt:** 
-```angular2html
-Act as an enthusiast developer advocate with 5 years of experience.
-Write a quick documentation about this `release.sh` bash script. What does it do? Use bullets points.
-How do we use it? Use short sentences. Add emojis where needed.
+**Developer Prompt:**
+```text
+I have some duplication in my TypeScript code. I want to resolve it by creating a discriminated union based on the keys and values of the interface. Is this possible?
 ```
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;border:'1px solid black;" align="center"></p>
+<p align="center">
+  <img src="/teaching/CS472/Timetable/GPT/example-1-1.png" alt="ChatGPTPrompt" style="max-width:700px; max-height:700px;">
+</p>
+
+**GitHub file diff:** [View here](https://github.com/nbd-wtf/nostr-tools/pull/241/files#diff-98476df5961449c9b87e4a05e4cf190b90d14815cb1b23f1e2d5398467287b61)
+
+<p align="center">
+  <img src="/teaching/CS472/Timetable/GPT/example-1-2.png" alt="FileDiff" style="max-width:1000px; max-height:1000px;">
+</p>
+
+
+### **Example 2: Deployment Documentation**
+
+Links to PR and ChatGPT conversation:
+- [PR Link](https://github.com/swarmion/swarmion/pull/678)
+- **Note:** The original ChatGPT conversation link has been deleted by the developer. However, all the necessary details and context from the conversation are provided here for your reference. You can still follow along with the example using the information already included.
+
+Documentation plays a key role in ensuring effective communication and collaboration in software development. It can take various forms such as:
+- **Requirements Documentation**: Specifications (functional & non-functional).
+- **Design Documentation**: System architecture, data flow.
+- **Technical Documentation**: Code, APIs, algorithms, and data.
+- **Testing & QA Documentation**: Test plans and quality assurance.
+- **Deployment Documentation**: Guidelines for software deployment.
+
+In this case, the developer used ChatGPT to generate user-friendly, concise deployment documentation for the `release.sh` script. 
+
+**Developer's prompt:**
+```plaintext
+Act as a developer advocate with 5 years of experience. Write quick documentation for this `release.sh` script. Use bullet points and short sentences. Add emojis where needed.
+```
+
+<p style="text-align:center">
+<img src="/teaching/CS472/Timetable/GPT/example-2-1.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;border:1px solid black;" align="center">
+</p>
+
 <br />
 
-As you can observe, the [CONTRIBUTION.md](https://github.com/swarmion/swarmion/pull/678/files#diff-eca12c0a30e25b4b46522ebf89465a03ba72a03f540796c979137931d8f92055) file was updated by simply copying the documentation written by ChatGPT. This documentation is intended to ease the process of on-boarding new contributors to the project
+As a result, the [`CONTRIBUTION.md`](https://github.com/swarmion/swarmion/pull/678/files#diff-eca12c0a30e25b4b46522ebf89465a03ba72a03f540796c979137931d8f92055) file was updated with documentation from ChatGPT to help new contributors get started.
+
 <p style="text-align:center">
 <img src="/teaching/CS472/Timetable/GPT/example-2-2.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;" align="center">
 </p>
 
-The link to PR and ChatGPT conversation is provided below:
-- PR [Link](https://github.com/swarmion/swarmion/pull/678)
-- ChatGPT [Link](https://chat.openai.com/share/7538b618-c08d-45b7-a4ed-bb168e9c1eb0)
 
-### **Example 3: Configuring GitHub Actions workflow**
-In Examples 1 and 2 above, the developer used the code generated by ChatGPT "as-is." 
-However, this example demonstrates another use case where the developer integrates 
-only a *portion* of the code snippet suggested by ChatGPT. The prompt provided by the 
-developer aligns with `Configuring GitHub Actions workflow` task which falls under the
-`Software Engineering` activity of `Software Configuration Management (SCM)` task. 
-SCM encompasses version control, configuration management, and process management.
-Configuring GitHub Actions workflow specifically relates to the automation of building, 
-testing, and deploying code changes, which aligns with CI practices.
+### **Example 3: Configuring GitHub Actions Workflow**
 
-In the context of the use case, after reviewing the GitHub link and ChatGPT conversation, we can see that the developer is seeking 
-guidance on setting up and configuring `GitHub Actions workflows` for the `Faker.js` library. The GitHub link specifically shows changes made to the `GitHub Actions workflow` configuration file.
+- [PR link](https://github.com/faker-js/faker/pull/2405) - [Git Diff File](https://github.com/faker-js/faker/pull/2405/files#diff-1918769d4ce5178c72d08b74f069e98856eeddcb0391e5c39636c8c33051f7f9)
+- [ChatGPT Conversation](https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728)
 
+In Examples 1 and 2 above, the developer used the code generated by ChatGPT "as-is." However, this example demonstrates another use case where the developer integrates only a *portion* of the code snippet suggested by ChatGPT. The prompt provided by the developer aligns with the `Configuring GitHub Actions Workflow` task, which falls under the `Software Configuration Management (SCM)` activity. SCM encompasses version control, configuration management, and process management. Configuring GitHub Actions workflow specifically relates to automating the building, testing, and deploying of code changes, which aligns with CI practices.
 
-**Developer prompt 1:** 
-```angular2html
-Write a GitHub Action yml file that blocks the PR from merging when there is a label
-named "do NOT merge yet" or "s: on hold"
+In this case, after reviewing the GitHub link and ChatGPT conversation, we can see that the developer is seeking guidance on setting up and configuring `GitHub Actions workflows` for the `Faker.js` library. The GitHub link shows changes made to the `GitHub Actions workflow` configuration file.
+
+**Developer Prompt 1:** 
+```plaintext
+Write a GitHub Action yml file that blocks the PR from merging when there is a label named "do NOT merge yet" or "s: on hold"
 ```
-**Developer prompt 2:** 
-```angular2html
+
+**Developer Prompt 2:**
+```plaintext
 How can I check "s: on hold" with "contains" using "github.event.pull_request.labels.*.name"
 ```
-Below is the final code snippet generated by ChatGPT and the portion integrated in GitHub pull request.
+Below is the final code snippet generated by ChatGPT and the portion integrated into the GitHub pull request.
 
 <p style="text-align:center">
 <img src="/teaching/CS472/Timetable/GPT/use-case-2-example-3-1.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:800px;" align="center">
@@ -196,417 +183,335 @@ Below is the final code snippet generated by ChatGPT and the portion integrated 
 <img src="/teaching/CS472/Timetable/GPT/use-case-2-example-3-2.png" alt="ShareChatGPTConversations" style="max-width:550px;max-height:550px;" align="center">
 </p>
 
-The link to the Git Diff file and conversation with ChatGPT is provided below:
-- Git Diff file: [Here](https://github.com/faker-js/faker/pull/2405/files#diff-1918769d4ce5178c72d08b74f069e98856eeddcb0391e5c39636c8c33051f7f9)
-- ChatGPT Link: [https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728](https://chat.openai.com/share/8cb16814-2855-4fbd-87e5-bde8ba349728)
 
-## Patch Not Applied (PN)
-### **Example 1: Code understanding and Code review**
-In this example, the developer does not integrate the code suggested by ChatGPT, but 
-uses ChatGPT for the `Software Engineering` activities of **Software development** and **Software maintenance** 
-for the tasks  `code understanding` and `code reviewing`, respectively. 
+## **Patch Not Applied (PN)**
 
-In the study of Hou et al. [article](https://arxiv.org/pdf/2308.10620.pdf), `code understanding` 
-is defined as the process of deeply comprehending and analyzing source code. It involves gaining 
-insights into the logic, structure, functionality, and dependencies of the code, as well as 
-understanding the programming languages, frameworks, and libraries used.
+### **Example 1: Adaptation and Tailored Solutions**
+This example shows how ChatGPT's conceptual advice was adapted for customized solutions to fit unique project needs.
+- [PR link](https://github.com/laravel-json-api/core/pull/12)
+- [ChatGPT link](https://chatgpt.com/share/e9555822-4ffb-4845-8e40-0bc6cbbc658d)
 
-The details of PR and ChatGPT conversation links are below:
+#### **Conversation Summary**
+* **Initial ChatGPT Suggestion:** ChatGPT provided a regex for ULID: `^[0-9A-HJKMNP-TV-Z]{26}$` to match a 26-character string using base32 encoding.
+* **Reviewer's Suggestion:** The reviewer (`@lindyhopchris`) recommended using Laravel's `whereUlid()` regex for consistency, aligning with how ULIDs are handled in the Laravel framework. 
+The Laravel [regex](https://github.com/laravel/framework/blob/53b02b3c1d926c095cccca06883a35a5c6729773/src/Illuminate/Routing/CreatesRegularExpressionRouteConstraints.php#L48) provided by the reviewer is
 
-- PR: [https://github.com/dust-tt/dust/pull/508](https://github.com/dust-tt/dust/pull/508)
-- ChatGPT Link: [https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee)
-  
-As can be seen from the [ChatGPT link](https://chat.openai.com/share/0c93321b-b553-430f-a06f-a6c82f56e4ee), 
-the developer seeking guidance on a specific code pattern (using a `never` case in a switch statement) and questioning  whether there might be a more idiomatic or improved way to handle the situation. This suggests a code understanding task where the developer is trying to comprehend and potentially enhance a specific piece of code.
+    ```regex
+    [0-7][0-9a-hjkmnp-tv-zA-HJKMNP-TV-Z]{25}
+    ```
 
-Looking at the [PR link](https://github.com/dust-tt/dust/pull/508), we can also observe an interaction in the pull request involves communication with another contributor, *lasryaric*, where the developer *fontanierh* shares their approach and seeks input on potential improvements. This collaborative exchange and the discussion of alternative approaches align with the process of `code review`, where developers assess each other's code for correctness, clarity, and best practices. Therefore, the developer appears to be concurrently engaged in both `code understanding` and `code review` tasks.
+    This regex specifies that the first character is a digit between 0-7, followed by 25 base32 characters.
 
-<p style="text-align:center">
-<img src="/teaching/CS472/Timetable/GPT/example-1-5.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:500px;">
-<img src="/teaching/CS472/Timetable/GPT/pn-example-1-chatgpt.png" alt="ShareChatGPTConversations" style="max-width:500px;max-height:400px;">
-</p>
+* **PR Author's Acceptance:** The author (@Ashk2a) acknowledged the feedback and updated the code (File [MatchedIDs.php](https://github.com/laravel-json-api/core/pull/12/files)) to reflect the Laravel-style regex:
 
-On critical analysis of the conversation between the developer and ChatGPT (PR review shown in left figure and ChatGPT code shown in the right figure), we observe that the code suggested
-by ChatGPT was not adapted by the developer but was re-assured that the code works well. 
+    ```php
+    public function ulid(): self
+    {
+        return $this->matchAs('[0-7][0-9a-hjkmnp-tv-zA-HJKMNP-TV-Z]{25}');
+    }
+    ```
+
+#### **Conclusion**
+This pull request demonstrates how the developer adapted ChatGPT’s suggested regex to meet the specific requirements of the project. The task falls under the Software Engineering activity of **code customization**, as the developer further modified the generated code to align with project standards and feedback. This aligns with the theme of **adaptation to project needs**, where conceptual advice from ChatGPT was tailored to ensure consistency with Laravel’s framework.
+
 
 ### **Example 2: Methodological Guidance**
-This example demonstrates how ChatGPT’s advice can significantly influence developers’ decisions or strategies for crafting solutions to specific tasks. Developers not only use suggestions from ChatGPT to devise new solutions but also to refine and enhance existing ones.
+This theme focuses on how **ChatGPT's advice informs approaches or refined solutions**, rather than being directly applied as patches. The emphasis is on broader strategies influenced by ChatGPT.
 
-The details of PR and ChatGPT conversation links are below:
+* [PR link](https://github.com/darklang/dark/pull/5063)
+* [ChatGPT Link](https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8)
 
-- PR: [https://github.com/darklang/dark/pull/5063](https://github.com/darklang/dark/pull/5063)
-- ChatGPT Link: [https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8](https://chat.openai.com/share/2a6f10f0-d45d-4e71-ac57-584570baeda8)
+The developer's interaction with ChatGPT in this pull request demonstrates a progression from a complex to a simpler, more efficient solution. Here's a breakdown:
 
+#### **Initial Code (Before ChatGPT's Suggestion)**
 
-The developer aimed to resolve an issue discussed in the PR which involved adding package functions that call built-in functions. Although the initial solution implemented by the PR author was functional, a reviewer suggested simplification based on the suggestions of ChatGPT. The reviewer commented: ```"While this works, it feels like overkill. I asked ChatGPT about how best to do this, and it suggested using (int)c. That seems to me like it would work. ChatGPT-link[...]"```. This interaction prompted the PR author to re-evaluate the initial approach, leading to the adoption of a more streamlined and efficient solution suggested by ChatGPT.
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/PN-EX-2.png" alt="ShareChatGPTConversations" style="max-width:710px;max-height:355px;" align="center"></p>
 
-<p style="text-align:center">
-PR Conversation: <br />
-<img src="/teaching/CS472/Timetable/GPT/pn-example-2.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:550px;" align="center">
-</p>
-<p style="text-align:center">
-ChatGPT Conversation: <br />
-<img src="/teaching/CS472/Timetable/GPT/pn-example-2-chatgpt.png" alt="ShareChatGPTConversations" style="max-width:650px;max-height:550px;" align="center">
-</p>
+In the initial code, the developer uses `System.Char.ConvertToUtf32` to convert a `char` to its Unicode (UTF-32) code point. While effective, this method is mainly suited for handling UTF-16 surrogate pairs and is unnecessary for basic `char` values. It's an overly complex solution for ASCII or basic Unicode characters.
 
-Developers can use ChatGPT to gain alternative perspectives on coding solutions, particularly for complex code. The aforementioned example showcases how AI can suggest more efficient approaches to achieve the same outcomes, leading to cleaner and more maintainable code.
+The reviewer (@pbiggar), after consulting ChatGPT, noted that casting the `char` to an `int` would achieve the same result in a simpler and more efficient way. **ChatGPT suggested casting `char` to `int`**, which directly returns the Unicode (or ASCII) code point for the character—perfect for most simple characters.
+
+#### **Refined Code (After ChatGPT’s Suggestion)**
+The refined code can be found in the file [backend/src/BuiltinExecution/Libs/Char.fs](https://github.com/darklang/dark/pull/5063/files#diff-2949d723a79b066aa811f68b3bc6f1aa712cf44b63c8210febd62378a408c536).
+
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/PN-EX-2-2.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:175px;" align="center"></p>
+
+In the updated version:
+* **Simplified Conversion**: The developer replaced `System.Char.ConvertToUtf32` with `int c.[0]`, which is a simpler and direct way to get the integer (ASCII/Unicode) value of a character.
+* **Added Validation**: Additional logic was included to handle edge cases:
+  * **Digit Check**: The code checks if the character is a digit using `System.Char.IsDigit(c[0])`.
+  * **Range Validation**: It verifies that `charValue` is within the `[0, 256)` range, ensuring the value is within the ASCII range.
+  * **Conditional Handling**: If `charValue` is valid, it returns `Dval.optionSome (DInt charValue)`, otherwise it returns `Dval.optionNone`.
+
+#### **Conclusion**
+The interaction in this pull request is a clear example of **methodological guidance**, where ChatGPT’s advice helps refine the developer's approach instead of being directly applied as a patch. This refinement aligns with the Software Engineering task of **program repair**, as it involved simplifying and improving the initial code to address inefficiencies.
+
+By following ChatGPT's advice, the developer made the code more efficient and easier to maintain, demonstrating how **methodological guidance** can lead to better solutions in software engineering.
+
 
 ## None Existing Patch (NE)
 ### **Example 1: Conceptual Guidance & Theoretical Advice**
-In this example ChatGPT does not recommend specific patches. Instead, the discussions revolve around broader programming concepts and design principles. These conversations aim to enhance code readability and maintainability by focusing on theoretical advice and best practices, rather than direct code implementations. 
+This theme emphasizes programming concepts, design principles, and optimization strategies, focusing on best practices for readability and maintainability without specific code implementations.
 
-The details of PR and ChatGPT conversation links are below:
+- [PR link](https://github.com/codecrafters-io/frontend/pull/1061)
+- [ChatGPT Link](https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e)
 
-- PR: [https://github.com/codecrafters-io/frontend/pull/1061](https://github.com/codecrafters-io/frontend/pull/1061)
-- ChatGPT Link: [https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e](https://chat.openai.com/share/d668d64c-182e-4e9d-8e17-6517d91fc65e) 
+Let's break down the situation to understand how the developer changed their code based on the ChatGPT conversation:
 
-The reviewer used ChatGPT to critique poor naming conventions, stating: ```"Bad naming,
-this should be something like selectedPricingFrequency. Reasoning: [chatgpt link]"```. In response, the PR author acknowledged the need for improvement: ```"[...] we don’t seem to be getting better with naming [..], talk to ChatGPT about it, [...] we need to pay extra attention to it"```. 
+#### **Original Problem**
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-1.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:325px;" align="center"></p>
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/ne-example.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
+The developer was using the variable name `pricingFrequencyClicked`, which was problematic because the name implied an action (a click) rather than a state (the selected frequency). This didn't accurately reflect what the variable was being used for: to store the **selected pricing frequency** (e.g., 'monthly' or 'yearly').
 
-In this case, a code snippet was not necessary because the discussion focused on best practices for **naming variables** rather than on specific feature implementation or bug fixes. The interaction was primarily conceptual, aimed at improving code quality.
+#### **Developer's Implementation**
+The final updates in the PR can be viewed in the file: [app/controllers/pay.js](https://github.com/codecrafters-io/frontend/pull/1061/files#diff-430dcbc461b77b60fd320d970946d870ed279a2952a06350872de59304e427e8).
 
-Developers can benefit from using AI tools like ChatGPT to refine and elevate their **coding standards**, particularly in areas like naming conventions which significantly impact code readability
-and maintainability. In addition, learning and self-review practices should be encouraged within development teams, using AI as a tool to provide immediate feedback and suggestions on how to improve code quality and adhere to best practices. 
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-1-2.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:55px;" align="center"></p>
+
+After the ChatGPT conversation, the developer renamed `pricingFrequencyClicked` to `selectedPricingFrequency`. This new name more accurately reflects that the variable holds the user's selection for pricing frequency, improving both readability and maintainability of the code.
+
+#### **ChatGPT's Advice**
+ChatGPT highlighted the issue with the variable name, explaining that `pricingFrequencyClicked` was not appropriate because it didn't align with the variable's purpose. It suggested using a name like `selectedPricingFrequency` to more accurately reflect that the variable holds a selection, not an action.
+
+#### **Conclusion**
+This interaction falls under the **"Conceptual Guidance & Theoretical Advice"** theme, where ChatGPT's recommendations helped improve the clarity and maintainability of the code by suggesting better naming conventions. This aligns with the software engineering tasks of **code review** and **code quality enhancement**, as it involved refining naming practices to enhance readability and maintainability.
+
+In this case, ChatGPT played a key role in informing the process of improving code structure and long-term maintainability, aligning with these software engineering tasks.
+
 
 ### **Example 2: Debugging and Optimization Strategies**
-This example showcase how developers utilize ChatGPT for debugging, performance optimization and refining algorithms. The details of PR and ChatGPT conversation links are below:
+This theme focuses on debugging methods, performance optimization, and refining algorithms, offering strategic insights into problem-solving approaches without providing specific code snippets.
 
-- PR: [https://github.com/darklang/dark/pull/5068](https://github.com/darklang/dark/pull/5068)
-- ChatGPT Link: [https://chat.openai.com/share/7fe27ca4-5c0e-431b-953b-7f6e23710b5c](https://chat.openai.com/share/7fe27ca4-5c0e-431b-953b-7f6e23710b5c) 
+- [PR link](https://github.com/darklang/dark/pull/5068)
+- [ChatGPT Link](https://chat.openai.com/share/7fe27ca4-5c0e-431b-953b-7f6e23710b5c)
 
-<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/ne-example-2.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
+Let's break down how the developer improved their code based on a conversation with ChatGPT:
 
-The PR reviewer requested an alternative method to optimize performance issues, recalling, ```"I remember you mentioning that the performance of pushback isn’t great. Do you recommend a different approach"```. In response, the PR author employed ChatGPT to evaluate code performance and investigate other optimization strategies. After reviewing ChatGPT’s recommendations, the author suggested a new approach: ```"[...] appending it to the front and then reversing should do it [...]"```. The discussion did not yield a specific
-code snippet because ChatGPT offered a strategy for optimization rather than a direct coding solution.
+#### **Original Code**
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-2-1.png" alt="ShareChatGPTConversations" style="max-width:895px;max-height:446px;" align="center"></p>
 
-Developers can leverage AI tools to obtain high-level recommendations for code optimization, allowing them to rethink and refine their implementations based on AI-generated insights, which can lead to more efficient solutions.
+Initially, the developer was using `pushBack`, which appends an element to the end of a list. However, repeatedly using this operation can be inefficient, as it may require traversing the entire list, especially in larger datasets.
 
-## Getting Started With ChatGPT
+#### **ChatGPT's Advice**
+After consulting ChatGPT, the developer received a suggestion to optimize the list operation by switching to `push` (which likely adds elements to the front of the list) and then reversing the list at the end. This approach is generally more efficient because adding to the front of the list is an O(1) operation in many functional languages, whereas `pushBack` can be an O(n) operation, where n is the length of the list.
 
-To begin using ChatGPT (if you haven't already), simply go to [https://chat.openai.com/](https://chat.openai.com/) and create a free account. For this class, the free ChatGPT 3.5 is sufficient.
+#### **Updated Code**
+The optimized code can be found in this PR file: [backend/testfiles/execution/stdlib/result.dark](https://github.com/darklang/dark/pull/5068/files#diff-ad820db3a141ba69514679a4698e3acb98c351faa8e2aaca9c3511c2740b8c19).
 
-To effectively use ChatGPT, you should provide it a good "prompt". The concept of ``Prompt Engineering`` is detailed in this research paper: [A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT](https://arxiv.org/abs/2302.11382).
+<p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/NE-EX-2-2.png" alt="ShareChatGPTConversations" style="max-width:676px;max-height:72px;" align="center"></p>
 
+In this updated code:
+- The developer switched to using `push` (adding to the front) and planned to reverse the list at the end.
+- This new approach enhances performance, as adding to the front of the list is typically O(1), whereas using `pushBack` could result in O(n) complexity.
 
-Sharing Your ChatGPT Conversations on GitHub
-====
-Sharing ChatGPT conversations with other developers can be beneficial for several reasons:
+#### **Conclusion**
+This interaction falls under the **Debugging & Optimization Strategies** theme, where ChatGPT provided advice to improve performance. Rather than directly offering a code solution, ChatGPT suggested a strategy—appending elements to the front of the list and reversing it later—to optimize performance. This aligns with the Software Engineering task of **performance optimization**, where the developer refined the algorithm based on ChatGPT's advice, ultimately enhancing the efficiency of the code.
 
+ChatGPT played a key role in guiding the developer toward a more efficient solution for handling list operations, demonstrating how strategic advice can lead to performance improvements in software engineering.
+
+# **Getting Started With ChatGPT**
+
+To start using ChatGPT, go to [https://chat.openai.com/](https://chat.openai.com/) and create a free account. For this class, the free version of ChatGPT 3.5 is sufficient.
+
+To make the most of ChatGPT, it’s important to provide well-structured prompts. The concept of **Prompt Engineering** is explored in this research paper: [A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT](https://arxiv.org/abs/2302.11382).
+
+## Sharing Your ChatGPT Conversations on GitHub
+
+Sharing your ChatGPT conversations with other developers can be highly beneficial for several reasons, such as:
 - Collaborative problem-solving
-- Learning and Knowledge Sharing
-- Code Review and Improvement
-- Getting Diverse Perspectives
-- Best Practices and Tips
-- Avoiding Pitfalls
-- Building a Supportive Community
-- Ethical Considerations
-- Innovation and Exploration
+- Learning and knowledge sharing
+- Code review and improvement
+- Gaining diverse perspectives
+- Sharing best practices and tips
+- Avoiding common pitfalls
+- Building a supportive community
+- Ethical considerations
+- Innovation and exploration
 
-1. Once you are ready to share your conversations, following the screenshots below to generate and copy a 
-URL/Link. **Note: Don't worry, your personal profile will NOT be visible after the conversation link is generated, 
-it will be automatically changed to ```Anonymous```**.
+### How to Share Your ChatGPT Conversations
 
-   <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share1.png" alt="ShareChatGPTConversations" style="max-width:700px;max-height:700px;" align="center"></p>
+1. **Generating a Shareable Link**:
+   Once you're ready to share your ChatGPT conversation, follow the steps below to generate a shareable link. 
+   **Note:** Your personal profile will be anonymized when the conversation link is generated.
 
-   <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share2.png" alt="ShareChatGPTConversations" style="max-width:500px;height:500px;" align="center"></p>
+   <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share1.png" alt="Generating a ChatGPT Share Link" style="max-width:700px;max-height:700px;" align="center"></p>
 
-2. After copying the link, there are many places on GitHub where you can share your conversation (e.g., inside a PR, Issue, or Commit message).
-For example, if you used ChatGPT to help you solve a bug, it would be better to add 
-the link in the `PR` description or `PR` review comment. See the below:
-   - Adding your conversation link in PR description
-    
-    <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share-review-1.png" alt="ShareChatGPTConversations" style="max-width:800px;max-height:800px;" class="center"></p>
+   <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share2.png" alt="Sharing ChatGPT Conversations" style="max-width:500px;max-height:500px;" align="center"></p>
 
-   - Adding your conversation link during PR review activity
-    
-    <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share-review-2.png" alt="ShareChatGPTConversations" style="max-width:600px;max-height:600px;" class="center"></p>
+2. **Sharing on GitHub**:
+   After copying the link, you can include it in various places on GitHub, such as a pull request (PR), issue, or commit message. For instance, if ChatGPT helped you solve a bug, you could include the link in the PR description or during a PR review. See examples below:
+
+   - **Adding the conversation link in a PR description**:
+
+     <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share-review-1.png" alt="Adding ChatGPT Link to PR Description" style="max-width:800px;max-height:800px;" class="center"></p>
+
+   - **Adding the conversation link during PR review**:
+
+     <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share-review-2.png" alt="Adding ChatGPT Link during PR Review" style="max-width:600px;max-height:600px;" class="center"></p>
 
 # Lab Tasks:
 
-## Task 1: Familiarizing with ChatGPT
-1. Read the provided overview of ChatGPT in software engineering.
-2. Explore the provided use cases and review the associated PRs and ChatGPT conversations.
-3. Identify the different ways developers incorporate ChatGPT into their workflow.
-4. Understand the tasks addressed in each use case and the outcomes achieved.
+## Task 1: Exploring ChatGPT's Role in Software Engineering
+
+**Objective**:
+Understand how developers incorporate ChatGPT into their workflow by going through various illustrative examples and case studies.
+
+### Instructions:
+
+1. **Read and Reflect**: 
+   - Carefully read all the provided material, including the illustrative examples and case studies for:
+     - **Patch Applied (PA)**
+     - **Patch Not Applied (PN)**
+     - **None Existing Patch (NE)**
+   - For each case study, review the associated pull requests (PRs) and ChatGPT conversations to fully understand how ChatGPT was used to improve software engineering tasks, such as code refactoring, documentation, and debugging.
+
+2. **Take Time to Understand**:
+   - This task is designed to ensure you fully understand the material **before moving on to the hands-on exercises**.
+   - Thoroughly review each example to see how ChatGPT has been integrated into the developer workflow and how it impacted the decision-making process.
+   - **Rushing through this material can lead to confusion in later tasks**, so take the necessary time to digest the information.
+
+3. **Submit Reflection**:
+   - After going through all the examples, write a **reflection of up to 300 words** that covers all three case studies (PA, PN, and NE).
+   - For **each case study**, include at least **two specific quotes or code snippets** from the material to support your analysis. This means you will need a total of **six references (quotes or snippets)**, two for each case study.
+   - In your reflection, explain how these examples demonstrate ChatGPT’s role in improving code quality, decision-making, or problem-solving.
+
+**Reminder**:
+   - Ensure you thoroughly understand the material, as it will help you avoid confusion and make the hands-on exercises much easier to tackle.
+
+
+**Reminder**:
+   - Ensure you thoroughly understand the material, as it will help you avoid confusion and make the hands-on exercises much easier to tackle.
 
 ## Task 2: Hands-on with ChatGPT
-In **Task 2.1, 2.2 & 2.3** below, you will continue working on the **team repo** where you submitted your previous lab tasks.
-You will engage in practical exercises leveraging ChatGPT to enhance code quality, documentation, and understanding.
 
-* **Organizational Guidelines**: Ensure your team repository remains organized by discussing appropriate folder names for each task and clearly documenting them in the report. Additionally, add unique identifiers, such as your names, to filenames to avoid potential conflicts. **For example**: In Task 2.1 below you could choose to name your file `yournames_<whatever code snippet name you want>`.
-* **Pull Request Process**: Familiarize yourself with the steps involved in opening a pull request on your team repository. Instructions for this are intentionally omitted, encouraging independent problem-solving and skill development.
-* **Verification and Collaboration**: Each task involves initiating a pull request with the code snippet requiring modification. After incorporating ChatGPT suggestions, update the pull request accordingly. Thoroughly verify suggestions to prevent potential issues, ensuring adherence to best practices, readability, and functionality. Test the code with diverse inputs and seek peer feedback to independently verify improvements.
+In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where previous lab tasks were submitted. You'll use ChatGPT to improve code quality, documentation, and comprehension. All code must be reviewed by at least one colleague. The author must use ChatGPT during the development process, and the reviewer may use ChatGPT if it adds value to the review.
 
-Task 2.1: Code Refactoring
-====
-**Objective**:
+### **Organizational Guidelines**:
+1. **Repository Structure**: Agree on folder names for each task and document them in your report. Add unique identifiers (e.g., your name) to filenames to avoid conflicts.
+   - **Example**: `yourname_refactor_code.py`
+2. **Pull Requests (PRs)**: Open PRs for each task with clear descriptions, including references to ChatGPT suggestions.
+   - **Example**: "Refactored function X using ChatGPT's recommendation."
+3. **Collaborative Review**: All PRs must be reviewed by at least one team member. The reviewer may use ChatGPT for insights if necessary and include the conversation link in the PR comments when relevant.
+   - **Note**: The use of ChatGPT by the reviewer is **optional** and only required if it adds value to the review process.
 
-Refactor a code snippet using ChatGPT to improve code quality and readability.
+### **Verification and Collaboration**:
+1. **Testing**: Verify all changes and test thoroughly before submitting the PR.
+2. **Peer Feedback**: Each PR must be independently reviewed. Reviewers should provide feedback on:
+   - Code readability
+   - Best practices
+   - Functionality
+   - **Learning Purpose**: Not all feedback needs to result in code changes. Sometimes, feedback is provided to help understand concepts. For example, in the "None Existing Patch (NE) – Concrete examples" from the class slides, the conversation about managing multi-architecture installations of Homebrew on Mac M1 systems enhanced understanding of specifying architecture flags and paths for x86_64 binaries. These insights help deepen knowledge without directly altering the code.
+3. **Finalizing PRs**: After incorporating feedback, whether it results in code changes or just learning, update the PR with a summary and the ChatGPT conversation link. Merge only after the review is complete.
 
-**Instructions**:
-1. **Select a Code Snippet and Create an Issue**: Choose a code snippet in any programming language from your projects, an open-source repository, or Stack Overflow that exhibits duplication issues or could benefit from refactoring. Open an issue on the team repository describing the code snippet you've identified, the specific areas requiring improvement, and your goals for refactoring it. 
-2. **Open a Pull Request**: Once the issue is created, open a pull request on the team repository with the identified code snippet and initiate the refactoring process. Provide a detailed description of the pull request, referencing the issue created in the previous step to provide context for the code snippet. In the description of the pull request, include a reference to the issue using one of the following keywords followed by the issue number: Closes #123, Fixes #123, Resolves #123.
-  * For example, if the issue number is 123, you can write Closes #123 in the pull request description. This ensures proper tracking and closing of the issue when the pull request is merged.
-3. **Task ChatGPT**: Engage with ChatGPT to seek advice on how to refactor the chosen code snippet. Provide ChatGPT with a brief description of the code's purpose and the specific areas you believe require improvement.
-4. **Implement Refactorings**: Based on the suggestions provided by ChatGPT, implement the necessary refactorings to improve the quality and readability of the code. Ensure that the functionality of the code remains intact after refactoring.
-5. **Update the Pull Request**: After implementing the refactorings, update the pull request to showcase the changes made to the code. Include a summary of the refactorings and any insights gained from the ChatGPT conversation inside the pull request's comment section. Also include the ChatGPT link of your conversations. This documentation aids in understanding the rationale behind the changes made and serves as a reference for future discussions or code reviews.
-6. **Merge Pull Request**: Once the refactorings are implemented and reviewed, merge the pull request into the main repository. 
+### **Google Sheet for Peer Review**:
+- Use the Google Sheet (shared on **Discord**) to organize reviews. Indicate who will review which tasks (Task 2.1, 2.2, or 2.3).
+   - Ensure each student’s work is reviewed at least once.
+   - Update the sheet before starting the review process.
+- **Reviewer Responsibilities**: Provide feedback using ChatGPT and share your ChatGPT conversation link in the PR comments.
 
-Example:
 
-```python
-# Original Code Snippet
-def calculate_circle_area(radius):
-    area = 3.14 * radius * radius
-    return area
+## Task 2.1: Code Refactoring Using ChatGPT
 
-def calculate_rectangle_area(length, width):
-    area = length * width
-    return area
+**Objective**: Refactor a code snippet using ChatGPT to improve code quality and readability.
 
-def calculate_triangle_area(base, height):
-    area = 0.5 * base * height
-    return area
+### **Instructions**:
 
-# Refactored Code Snippet
-import math
+1. **Select a Code Snippet**: Choose a code snippet from your project or an open-source repository that requires refactoring. Open an issue on the team repository identifying the specific problems (e.g., duplication, inefficiency).
+2. **Consult ChatGPT**: Ask ChatGPT for advice on how to refactor the code. Provide context on the code's purpose and areas needing improvement. Copy the link to the ChatGPT conversation.
+3. **Open a Pull Request (PR)**: Submit a PR with the selected code snippet. Reference the issue created earlier (e.g., "Closes #123") and provide a summary of the refactoring goal in the PR description.
+4. **Implement Refactorings**: Apply ChatGPT's suggestions to improve the code’s quality and readability. Ensure that the functionality of the code remains intact after refactoring.
+5. **Code Review**: A team member must review your code using ChatGPT to offer additional suggestions. The reviewer must share the ChatGPT conversation link in the PR comments and update the Google Sheet shared on Discord.
+6. **Update PR**: After receiving feedback, make the necessary changes and update the PR description with ChatGPT conversation links from both the author and reviewer.
+7. **Merge PR**: Once your colleague has reviewed the PR and confirmed the improvements, you can merge the PR into the team repository.
 
-def calculate_circle_area(radius):
-    return math.pi * radius ** 2
 
-def calculate_rectangle_area(length, width):
-    return length * width
+## Task 2.2: Improving Documentation with ChatGPT
 
-def calculate_triangle_area(base, height):
-    return 0.5 * base * height
-```
+**Objective**: Use ChatGPT to enhance documentation for a selected code snippet.
 
-Notes:
-* In this example, the original code snippet contains duplication in the calculation of areas for different shapes (circle, rectangle, triangle).
-* ChatGPT could provide suggestions on using built-in functions or libraries to simplify the calculations and eliminate redundancy.
-* The refactored code snippet improves readability by using the `math` module for accurate calculations and removing unnecessary variables.
-* Ensure to document the changes made and the rationale behind each refactoring in the GitHub pull request description.
+### **Instructions**:
 
-Task 2.2: Documentation Assistance
-====
+1. **Select a Code Snippet**: Choose a code snippet from your project or from open-source code that lacks proper documentation. Open an issue on the team repository to take ownership of the task.
+2. **Consult ChatGPT**: Ask ChatGPT to help generate clear and user-friendly documentation for the code. Provide relevant context about the code's functionality and any areas where the documentation is lacking.
+3. **Open a Pull Request (PR)**: Submit a PR with the improved documentation to your team repository. Reference the issue using keywords like "Closes #123" or "Fixes #123."
+4. **Update Documentation**: Based on ChatGPT’s suggestions, improve the code documentation to ensure it is clear, complete, and easy to understand.
+5. **Code Review**: A team member must review the updated documentation using ChatGPT. The reviewer should share their ChatGPT conversation link in the PR comments and update the Google Sheet with the review details.
+6. **Update PR**: After receiving feedback, update the PR with the ChatGPT conversation links from both the author and reviewer. Summarize how the documentation was improved based on ChatGPT’s suggestions and the review.
+7. **Merge PR**: After the review is completed and improvements are confirmed, merge the PR into the main branch of your team repository.
 
-**Objective**:
+## Task 2.3: Understanding Complex Code with ChatGPT
 
-Create user-friendly and concise documentation for your code snippet using insights from ChatGPT.
+**Objective**: Use ChatGPT to help comprehend and improve a complex code segment.
 
-**Instructions**:
-1. **Select a Code Snippet and Create an Issue**: Choose a code snippet in any programming language from your own projects, previous classes, an open-source repository, or Stack Overflow. Open an issue on the team repository, providing a clear description of the code's purpose. Assign the issue to yourself to take ownership of the task. This step allows for collaboration and ensures transparency within the team.
-2. **Open a Pull Request**: Once the issue is created, open a pull request on the team repository with the identified code snippet. Provide a comprehensive description of the pull request, referencing the issue created in the previous step to provide context for the code snippet. In the description of the pull request, include a reference to the issue using one of the following keywords followed by the issue number: Closes #123, Fixes #123, Resolves #123. 
-3. **Engage with ChatGPT**: Interact with ChatGPT to seek advice on how to improve the documentation for the chosen code snippet. Provide ChatGPT with context regarding the code's functionality, any specific areas where the documentation is lacking or unclear, and your goals for enhancing it. Consider discussing potential improvements in organization, clarity, completeness, and language style.
-4. **Implement Documentation Enhancements**: Based on the suggestions provided by ChatGPT, implement the necessary enhancements to the documentation to improve its clarity, completeness, and effectiveness. Focus on addressing any identified gaps, clarifying complex concepts, and ensuring that the documentation aligns with best practices and standards. 
-5. **Update the Pull Request**: After implementing the documentation enhancements, update the pull request to reflect these changes. Include a summary of the changes made and insights gained from the ChatGPT conversation regarding the documentation improvements inside the pull request's comment section. Also include the ChatGPT link of your conversations. Request feedback from team members and iterate on the changes as necessary to achieve consensus and maintain documentation quality.
-6. **Merge Pull Request**: Once the documentation enhancements are implemented and reviewed, merge the pull request into the main repository. 
+### **Instructions**:
 
-**Example**:
+1. **Select a Complex Code Segment**: Choose a complex code segment from your projects or from an open-source repository. Open an issue on your team repository detailing the complexity and the challenges you're facing in understanding the code.
+2. **Consult ChatGPT**: Provide ChatGPT with the code and highlight specific areas where you need clarity or improvements. Ask for suggestions on how to simplify, optimize, or improve the code.
+3. **Open a Pull Request (PR)**: Submit a PR to your team repository with the selected code segment. Reference the issue you created and explain the goal of simplifying or optimizing the code in the PR description.
+4. **Implement Changes**: Apply ChatGPT’s recommendations to simplify or optimize the code, ensuring that functionality is maintained.
+5. **Code Review**: A team member must review the PR using ChatGPT to provide additional insights. The reviewer must share their ChatGPT conversation link in the PR comments and update the Google Sheet with the review details.
+6. **Update PR**: After receiving feedback, update the PR description with the ChatGPT conversation links from both the author and reviewer, and summarize the improvements made.
+7. **Merge PR**: Once the review is complete and all changes are confirmed, merge the PR into the team repository.
 
-```python
-# Original Script: fibonacci_sequence.py
-def fibonacci_sequence(n):
-    sequence = [0, 1]
-    for i in range(2, n):
-        next_term = sequence[-1] + sequence[-2]
-        sequence.append(next_term)
-    return sequence
+## Task 2.4: Workflow Automation with GitHub Actions
 
-def main():
-    n = 10
-    sequence = fibonacci_sequence(n)
-    print(f"The Fibonacci sequence up to {n} terms is: {sequence}")
+**Objective**: Build upon your previous CI lab by improving the continuous integration (CI) pipeline using recommendations from ChatGPT.
 
-if __name__ == "__main__":
-    main()
+### **Instructions**:
 
-# Documented Script: fibonacci_sequence.py
-def fibonacci_sequence(n):
-    """
-    Generate a Fibonacci sequence up to the nth term.
-    Args:
-        n (int): The number of terms in the Fibonacci sequence to generate.
-    Returns:
-        list: A list containing the Fibonacci sequence up to the nth term.
-    """
-    sequence = [0, 1]
-    for i in range(2, n):
-        next_term = sequence[-1] + sequence[-2]
-        sequence.append(next_term)
-    return sequence
+In this task, you will continue building the Continuous Integration (CI) pipeline initiated in the previous lab on **Testing and CI**. All the code will be implemented in your individual **CI Lab** Repo (or fork).
 
-def main():
-    """
-    Main function to demonstrate the usage of the fibonacci_sequence function.
-    """
-    n = 10
-    sequence = fibonacci_sequence(n)
-    print(f"The Fibonacci sequence up to {n} terms is: {sequence}")
+1. **Review Existing Workflow**: Start by reviewing the CI workflow you created in the previous lab. Ensure that the current workflow has the following basic components:
+   - Event triggers (push, pull request)
+   - A job that runs on `ubuntu-latest`
+   - Python 3.9 as the container
+   - Steps for checking out the repository, installing dependencies, linting with `flake8`, and running unit tests with `pytest`
 
-if __name__ == "__main__":
-    main()
-```
-**Notes**:
-* In this example, the original code snippet `fibonacci_sequence.py` lacks comprehensive documentation, making it unclear what the function `fibonacci_sequence` does and how to use it.
-* Without proper documentation, it may be challenging for other developers to understand the purpose of the function and its intended usage.
-* Adding documentation to describe the functionality, input parameters, return value, and any other relevant details would enhance the clarity and usability of the code.
-* Clear and concise documentation is essential for facilitating collaboration and ensuring that code is maintainable and understandable by others.
+2. **Open an Issue for Improvements**: Open an issue in your individual repository to document potential improvements to the CI workflow. Consider areas such as:
+   - Adding more automated tests
+   - Enhancing code quality checks
+   - Adding security analysis or vulnerability scanning
+   - Testing on multiple platforms or environments
 
-Task 2.3: Understanding Complex Code
-====
+3. **Consult ChatGPT**: Ask ChatGPT for suggestions on how to improve your CI workflow. You can request recommendations for:
+   - Adding more stages (e.g., code quality analysis, security checks)
+   - Integrating third-party tools (e.g., `SonarQube` for code analysis, `Trivy` for security scanning)
+   - Optimizing existing steps or adding new ones for improved workflow efficiency.
+
+4. **Update Workflow**: Based on ChatGPT’s recommendations, modify the `workflow.yml` file to incorporate the improvements. Be sure to maintain functionality while enhancing the workflow.
+
+5. **Open a Pull Request (PR)**: 
+   - Submit a PR with the updated CI workflow to your individual repository.
+   - Reference the issue you opened (e.g., "Closes #123") and describe the changes made, including any improvements based on ChatGPT’s suggestions.
+
+6. **Test the Workflow**: Ensure that the updated CI workflow runs smoothly without any regressions. Use the GitHub Actions tab to verify that all jobs complete successfully.
+   - Include any test results and the ChatGPT conversation link in the PR description to document the changes.
+
+7. **Merge PR**: Once you have confirmed that the workflow improvements are successful and thoroughly tested, merge the PR into your main branch.
+
+
+# Task 3: Summary Report
 
 **Objective**:
+Provide a brief summary of the work completed during the hands-on tasks and submit links to the relevant individual pull requests (PRs).
 
-Gain insights and understanding of complex code segments using ChatGPT to facilitate code comprehension and improvement.
+### **Instructions**:
+Write a brief report that includes:
 
-**Instructions**:
-1. **Select a Code Segment and Create an Issue**: Choose a complex code segment in any programming language from your projects, an open-source repository, or Stack Overflow. The code segment should be non-trivial and may involve intricate logic or algorithms. Open an issue on the team repository describing the complex code segment you've identified, the challenges you're facing in understanding or optimizing it, and the desired outcome (e.g., optimization, clarity). Provide a clear description of the code's purpose, any specific areas of confusion, and the desired outcome. This issue will serve as the context for the code segment. After creating the issue, copy the issue URL.
-2. **Open a Pull Request**: After creating the issue, open a pull request on the team repository with the identified code snippet and initiate the refactoring process. Provide a comprehensive description of the pull request, referencing the issue created in the previous step to provide context for the code segment. In the description of the pull request, include a reference to the issue using one of the following keywords followed by the issue number: Closes #123, Fixes #123, Resolves #123. For example, if the issue number is 123, you can write Closes #123 in the pull request description. This ensures proper tracking and closing of the issue when the pull request is merged.
-3. **Engage with ChatGPT and Apply Insights**: Interact with ChatGPT to seek insights and recommendations for understanding or improving the selected code segment. Provide ChatGPT with details from the issue, including the code segment's purpose, challenges, and desired outcome. Utilize the insights and recommendations provided by ChatGPT to gain a deeper understanding of the code segment and apply any suggested alternative approaches, optimizations, or simplifications to enhance the code's readability, performance, or maintainability.
-4. **Code Enhancement**: Implement any recommended changes or improvements based on the insights gained from ChatGPT. Refactor the code segment to incorporate the suggested optimizations, clarify complex logic, or address identified issues.
-5. **Update the Pull Request**: After making the necessary enhancements or improvements to the code snippet, update the pull request to reflect these changes. Include a summary of the changes made and any insights gained from the ChatGPT conversation inside the pull request's comment section. Also include the ChatGPT link of your conversations. This documentation aids in understanding the rationale behind the changes made and serves as a reference for future discussions or code reviews.
-6. **Merge Pull Request**: Once the refactorings and enhancements are implemented and reviewed, merge the pull request into the main repository. 
+1. **Task Summary**: 
+   - For each task (Exploring ChatGPT's Role in Software Engineering, Code Refactoring, Documentation Assistance, Understanding Complex Code, Workflow Automation), provide a short description (1-2 sentences) of what you did.
+   - Include the link to the individual pull request (PR) for each task.
 
-**Example**:
+2. **Peer Review Summary** (for Tasks 2.1 to 2.3):
+   - Briefly mention how you reviewed a colleague’s code using ChatGPT and how your code was reviewed.
+   - Include any improvements made based on the review process.
 
-<!--div style="text-align:center;">
-    <img src="task2.3.png" alt="Code Snippet" style="max-width:600px;max-height:600px;">
-</div-->
+### **Submission**:
+- Submit your report on Web Campus.
 
-```python
-# Original Code Snippet: Complex Operation
-def complex_operation(number):
-    """
-    Perform a complex mathematical operation on the input number.
-    Args:
-        number (int): The input number.
-    Returns:
-        int: The result of the complex operation.
-    """
-    return number ** 2 + number ** 3
+**Note**: The report should be brief, focused on summarizing the work and including PR links.
 
-# Updated Code Snippet: Simplified Operation
-def simplified_operation(number):
-    """
-    Perform a simplified mathematical operation on the input number.
-    Args:
-        number (int): The input number.
-    Returns:
-        int: The result of the simplified operation.
-    """
-    result = number * number  # Square the number
-    result += number * number * number  # Cube the number and add to the result
-    return result
-```
 
-**Notes**:
-* In this example, the original function `some_complex_operation(data_point)` represents a complex algorithmic operation that may be difficult to understand or optimize.
-* ChatGPT could provide insights on potential simplifications, alternative algorithms, or optimizations to enhance the function's readability or performance.
-* The simplified function `simplified_operation(data_point)` demonstrates how the algorithmic complexity can be reduced while achieving the same functionality.
-* Ensure to thoroughly test the simplified function to validate its correctness and efficiency before integrating it into the project.
+[//]: # (# Conclusion)
 
-Task 2.4: Workflow Automation with GitHub Actions (Continuation from CI Lab)
-====
-In this task, you will continue building the Continuous Integration (CI) pipeline initiated in the previous lab on **Testing and CI**. All the code will be implemented in you individual **CI Lab** Repo (or fork).
-
-**Objective:**
-
-Automate workflow tasks using GitHub Actions to enhance efficiency and streamline development processes.
-
-**Instructions:**
-
-1. **Review Previous Workflow**: Review the CI workflow created in the previous lab (Task 2). Understand the structure of the workflow file (`workflow.yml`) and the sequence of steps defined to build, test, and validate the application code.
-
-2. **Enhance Workflow with Additional Automation:** Identify areas within the CI workflow where additional automation can be beneficial. This may include steps for code analysis, documentation generation, or deployment preparations.
-Consider incorporating tasks that leverage external tools or services, such as code quality analysis tools, static code analysis, or vulnerability scanning services.
-
-3. **Engage with ChatGPT for Workflow Optimization:** Discuss potential enhancements or optimizations for the CI workflow with ChatGPT. Describe the current workflow structure, any bottlenecks or inefficiencies, and the desired outcome of automation improvements. Seek recommendations on best practices for integrating additional automation steps, ensuring compatibility with existing workflow components, and maximizing workflow performance.
-4. **Implement ChatGPT Recommendations**: Based on the insights and recommendations provided by ChatGPT, update the workflow file (`workflow.yml`) to incorporate the suggested automation improvements.
-Modify the existing workflow steps or add new steps as necessary to integrate the recommended automation tasks seamlessly into the CI pipeline.
-
-5. **Testing**: Test the modified CI workflow to ensure that the new automation tasks function as expected and do not introduce regressions.
-
-**Example:** 
-
-```angular2html
-name: CI workflow
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    container: python:3.9-slim
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Lint with Flake8
-        run: |
-          flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics
-          flake8 src --count --max-complexity=10 --max-line-length=127 --statistics
-      - name: Run unit tests with nose
-        run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=src
-      - name: SonarQube analysis
-        run: |
-          # Replace <SONAR_TOKEN> and <SONAR_PROJECT_KEY> with your SonarQube token and project key
-          sonar-scanner \
-            -Dsonar.projectKey=<SONAR_PROJECT_KEY> \
-            -Dsonar.sources=src \
-            -Dsonar.host.url=<SONARQUBE_URL> \
-            -Dsonar.login=<SONAR_TOKEN>
-```
-Notes:
-- In this example, the CI workflow file `workflow.yml` is enhanced with additional automation steps based on recommendations from ChatGPT.
-- This modification adds a step named "SonarQube analysis" that runs SonarScanner to analyze the src directory of your project and sends the results to the SonarQube server for evaluation.
-- ChatGPT recommendations may include suggestions for integrating third-party tools or services, optimizing workflow performance, or ensuring code quality and security.
-- Regularly review and update the CI workflow based on feedback from ChatGPT, changes in project requirements, or advancements in CI/CD best practices.
-
-# Task 3: Reflection Report
-
-**Objective**:
-Reflect on your experience with ChatGPT in completing the hands-on tasks and its impact on your understanding of software engineering practices.
-
-Instructions:
-Write a reflection report discussing your experience with ChatGPT during the completion of the lab tasks outlined below:
-
-* Task 1: Familiarizing with ChatGPT
-* Task 2.1: Code Refactoring
-* Task 2.2: Documentation Assistance
-* Task 2.3: Understanding Complex Code
-* Task 2.4: Workflow Automation with GitHub Actions
-
-In your reflection, address the following points:
-1. *Initial Impressions*: Describe your initial expectations and impressions of using ChatGPT for software engineering tasks.
-2. *Task Experiences*: Reflect on your experiences with each task, including any challenges faced, insights gained, and lessons learned. Provide concrete examples by linking to relevant pull requests or the CI pipeline for Task 2.4.
-3. *Impact*: Discuss how ChatGPT has impacted your approach to software development, collaboration with teammates, and problem-solving skills.
-4. *Lessons Learned*: Summarize the key lessons you've learned from working with ChatGPT and how they may influence your future projects.
-5. *Future Applications*: Explore potential applications of ChatGPT in your future software development projects or other areas of interest.
-
-**Format**: Your reflection report should be structured as a brief document with the following sections:
-
-* **Title**: Reflection Report on ChatGPT Usage
-* **Introduction**: Brief overview of the purpose and structure of the reflection report.
-* **Task Experiences**: Concise reflection on each task, highlighting challenges, insights, and lessons learned. Include hyperlinks to relevant pull requests or the CI pipeline for Task 2.4 to provide concrete examples of your work and experiences with ChatGPT. **(1-2 paragraphs per task)**
-* **Impact**: Discussion on the overall impact of ChatGPT on your software development process and skills. **(1-2 paragraphs)**
-* **Lessons Learned**: Summary of key lessons learned from working with ChatGPT and their implications for future projects. **(1-2 paragraphs)**
-* **Future Applications**: Exploration of potential future applications of ChatGPT in software development or related fields. **(1-2 paragraphs)**
-* **Conclusion**: Closing remarks summarizing your reflections on using ChatGPT in software engineering tasks.
-
-**Submission**:
-Submit your reflection report on Web Campus.
-
-**Note**: The reflection report should be concise and focused, providing insights into your experience with ChatGPT without requiring extensive elaboration. Aim to capture the key points and lessons learned from each task, as well as your overall impressions and future outlook.
-
-# Conclusion
-In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf)
+[//]: # (In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR]&#40;https://arxiv.org/pdf/2308.10620.pdf&#41;)

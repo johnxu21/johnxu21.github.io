@@ -49,11 +49,11 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
-Groups
-=======
-There are 19 students who enrolled for this class. We will have 3 groups comprising 
-6-7 students each. 
-You can voluntarily choose your group mates. During the first lab on
-[Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/), we will collect all the names of individuals 
-who have not yet found a group and then allocate you one of the already existing group. 
-Also feel free to use the Discord communication channel to request joining a group.
+## Group Formation Guidelines
+This class has 63 enrolled students, and we will form 6 groups of 10-11 students each. Please voluntarily select your group mates in the survey. For those who do not specify their preferred teammates, groups will be assigned based on the survey information (e.g., software development experience, shared project ideas, etc.).
+
+It is essential to finalize group formation within the first week of the class so we can begin working on the project and assignments promptly. Feel free to use the Discord communication channel to coordinate and request to join a group.
+
+
+
+

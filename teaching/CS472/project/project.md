@@ -48,7 +48,7 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
-Project 2022-2023
+Project
 =========
 
 Groups will develop their custom projects. The groups will also deliver a specification document along with Design Portfolio I. You can borrow a leaf from the specification documents for the two projects below. The quality of the group’s specification document does not have to be like the ones presented but should be reasonable. I will review your Specification documents to approve the group’s custom project.
@@ -58,14 +58,12 @@ Subway Simulation
 ======
 
 * Functional Requirements:
-  * Specification 1.0 [[pdf](../../../files/472Files/specification1.0.pdf)]
   * Specification 2.0 [[pdf](../../../files/472Files/specification2.0.pdf)]
 
 Traffic Simulation
 ========
 
 * Functional Requirements:
-  * Specification 1.0 [[pdf](../../../files/472Files/Traffic_simulationSpec1.0.pdf)]
   * Specification 2.0 [[pdf](../../../files/472Files/Traffic_simulationSpec2.0.pdf)]
 
 
@@ -81,11 +79,11 @@ Deliverables
 =====
 
 The following documents will guide you produce the deliverables of the project:
-* Precondition report ([Doc](https://docs.google.com/document/d/1tLiXVKfddl_lBFB0id7Wr_jb-19wDip664vMxTusj34/edit))
-* Design Portfolio I ([Doc](https://docs.google.com/document/d/1y9Fl1yHl8S3Uh3TzEdQYhd7bQUkYVwZTEcB4H43SlvE/edit#))
-* Design Portfolio II ([Doc](https://docs.google.com/document/d/1mUBX7hakgAdiBDJv9HPzD9436Ezvr2nPeZkdk9psGa8/edit#))
-* Design Portfolio III ([Doc](https://docs.google.com/document/d/13xShWs_zi9bBmfkToTYu4v68KwVXHZOjAdw7-obOIgg/edit))
-* Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit))
+* Precondition report ([Doc](https://docs.google.com/document/d/1tLiXVKfddl_lBFB0id7Wr_jb-19wDip664vMxTusj34/edit)) **- Jan 31st, 2025**
+* Design Portfolio I ([Doc](https://docs.google.com/document/d/1y9Fl1yHl8S3Uh3TzEdQYhd7bQUkYVwZTEcB4H43SlvE/edit#)) **- Feb 18th 2025**
+* Design Portfolio II ([Doc](https://docs.google.com/document/d/1mUBX7hakgAdiBDJv9HPzD9436Ezvr2nPeZkdk9psGa8/edit#)) **- March 24th 2025**
+* Design Portfolio III ([Doc](https://docs.google.com/document/d/13xShWs_zi9bBmfkToTYu4v68KwVXHZOjAdw7-obOIgg/edit)) **- May 5th 2025**
+* Presentation ([Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit)) **- May 6th 2025**
 
 Design Portfolio Evaluation 
 =====
@@ -107,28 +105,48 @@ Each team member will be assessed based on their active participation in the col
 
 
 
-# 2. Instructions to the UML Diagrams
+# 2. Instructions to the UML Diagrams and Design Process
 
-You will use simple **use case diagrams**, **class diagram** and **sequence diagrams** or any other UML diagrams you find suitable.
-A simple class diagram has only the name of the class and its interactions with the other classes 
-(there are two examples in [JPacman](https://github.com/johnxu21/jpacman/tree/master/doc/uml) repository in the "docs" folder). 
-This is to reinforce your initial understanding of the 
-system. You only need to focus on the classes associated with the feature/use case and the classes that are 
-called in those classes. There is no need to go deeper into the class structure (i.e., if feature 
-class calls Class X, and Class X calls Class Y, then you do not need to show Class Y since it is 
-not being called directly by the feature class you are implementing). I am are not going to evaluate your strictness to the 
-proper UML notations, therefore focus on modeling and understanding classes interactions. 
+Before authoring a pull request for any new feature or use case, **at least one design diagram** should be created to model how the feature interacts with the rest of the system.
+
+You may use **use case diagrams**, **class diagrams**, and **sequence diagrams**, or any other UML diagrams you find suitable to represent your feature. The purpose of these diagrams is to **reinforce your understanding of the system** and how different components interact with each other.
+
+## Guidelines:
+- **Minimum Requirement**: Each feature or use case must be represented by at least one design diagram (use case, sequence, or class diagram). Select the type of diagram that best illustrates how your feature interacts with other system components.
+  - For **non-object-oriented projects** (such as JavaScript/TypeScript), where class diagrams may not always be applicable, you may focus on sequence diagrams or use case diagrams to represent interactions.
+- **Focus on Interaction**: The goal of the design diagram is to ensure that you fully understand how the feature or use case interacts with other components before implementation. This also ensures that team members can easily follow your thought process when reviewing pull requests.
+
+## Diagram Guidelines:
+- **Use Case Diagrams**: These represent the interactions between the users (actors) and the system. Keep them simple and focused on the specific feature you are developing.
+- **Class Diagrams**: A simple class diagram should include the **class name** and its **interactions with other classes**. There is no need to detail every attribute and method—just focus on the relationships (associations, dependencies, etc.) between classes.
+  - You only need to show the classes directly involved with the feature or use case. If **Class X** calls **Class Y**, but **Class Y** is not directly related to your feature, you don’t need to show **Class Y**.
+- **Sequence Diagrams**: These should capture the **flow of interactions** between different objects or components within the system. Focus on how messages or function calls are passed in sequence during the execution of your feature.
+
+## Tips:
+- **Start Simple**: Diagrams are meant to help you understand the system. Begin with simple diagrams that show key interactions, and add more detail if needed.
+- **Collaboration**: Work with your team to ensure everyone shares the same understanding of how different components interact. Use diagrams to facilitate these discussions.
+- **Diagram Selection**: Choose the type of diagram that best represents your feature. For example, if a class diagram doesn’t make sense, a sequence diagram or use case diagram might better illustrate the interaction.
+- **No Strict UML Notation**: I’m not evaluating strict adherence to UML syntax, so focus on **modeling and understanding** class interactions and system components rather than perfect UML representation.
+
+## Repository Structure & Pull Requests:
+- **Repository Structure**: Maintain a clear folder structure in the repository for design diagrams, with folders organized by features or use cases. This will make diagrams easy to locate and understand.
+- **Pull Requests**: When submitting a pull request (PR), include a link to the corresponding design diagram in the PR description. This will help reviewers understand the feature or use case in context.
+
+By following these structured guidelines, you ensure that design thinking is prioritized while keeping the process streamlined and manageable.
+ 
 
 # 3. General Coding Instructions
-The following coding/repository instructions apply:
-* Fork the group repository and clone that fork onto your local repository.
-* Create a branch on your fork for every "qualified contribution" you would like to make on the group/main repository. 
-For example, if you have been assigned to develop **UC-2.1**, create a branch on your fork called  **UC-2.1**. 
-If you are fixing a bug on the main repository, name the branch with an appropriate name. If you are introducing missing 
-tests, also name the branch name appropriately.
-* All the contributions to the main repository have to be submitted through pull requests that at least two other group members should have review.
-* The group should explicitly set **contribution guidelines** that the team members should follow. The 
-reviewers should resolve pull request only if the guidelines have been followed.
+
+The following coding and repository instructions apply:
+
+- **Fork the group repository** and clone your fork to your local machine.
+- **Create a branch** on your fork for every "qualified contribution" you plan to make on the group/main repository.
+  - For example, if you're assigned to develop **UC-2.1**, create a branch named **UC-2.1** on your fork.
+  - If you're fixing a bug on the main repository, use a descriptive name for the branch (e.g., **bugfix-login-error**).
+  - If you're adding missing tests, name the branch accordingly (e.g., **add-missing-tests**).
+- **Submit all contributions** to the main repository through pull requests (PRs), which should be reviewed by at least two other group members.
+- The group should establish **clear contribution guidelines** for all members to follow. Reviewers should only approve pull requests if these guidelines have been followed.
+
 
 # 4. Examining Issues
 An issue is a way to discuss, plan and track work on a GitHub repository.
@@ -314,16 +332,5 @@ As part of your team projects, you have the option to leverage AI-generated code
 **Data Collection:** The annotations serve as a means of tracking and documenting the integration of AI-generated code into your project. Ensure consistency in annotation format and placement to facilitate automated data collection at key project milestones.
 
 By adhering to these guidelines, you promote transparency and accountability in the utilization of AI-generated code while ensuring proper documentation for project evaluation and assessment.
-
-## Preparation for Final Exam:
-
-While focusing on MVP development, keep in mind that the insights and data generated from your collaborative efforts will be invaluable for your final exam. You'll be required to reflect on your team's ChatGPT usage and identify specific use cases, challenges, and solutions in your reflection report. Therefore, actively participate in team collaboration and document your experiences for future reference.
-
-**Reminder**: The take-home exam will be distributed four weeks before the exam week. You are free to submit the exam anytime, but the deadline for submission is the University-scheduled exam date. If you have not received the exam by then, please send me a reminder.
-
-## Conclusion:
-
-By fostering collaboration and leveraging the collective expertise of your team, you can effectively mitigate challenges and maximize the benefits of using ChatGPT in your MVP development process. Embrace the opportunity to work together, share insights, and learn from each other's experiences as you strive towards project success.
-
 
 
