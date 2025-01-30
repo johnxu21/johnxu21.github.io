@@ -235,24 +235,6 @@ Push you changes back to the main repository, make a pull request and merge.
 
 
 Task 2 -- Test Driven Development
-=======
-Test driven development (TDD) is an approach to software development in which you first write the test cases for the code you wish you had and then write the code to make the test cases pass. In this Task, you will write test cases based on the requirements given to you, and then you will write the code to make the test cases pass.
-
-Task 2.1 -- Set Up Your Team Repository for TDD
-======
-The steps for setting up your team repository are identical to those described in Task 1.1. The key difference is that you will now use the [Test Driven Development](https://github.com/UNLV-CS472-672/tdd) repository.
-```bash
-     git clone https://github.com/UNLV-CS472-672/tdd.git
-```
-
-Once you set up is complete, open the IDE, navigate to the directory ```tdd```.
-   * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
-   * ```pytest.ini``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```pytest``` only returns testing results for that file, e.g., ```--cov=counter```
-   * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
-You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
-   
-Creating a counter
-=====
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses a POST request and returns code ```201_OK``` if successful. Create a counter and then update it.
 1. Write the following code in the file ```test_counter.py```. Run ```pytest```. You should see an error ```ModuleNotFoundError```
 
