@@ -49,7 +49,7 @@ height:30px;" value="CHAT GPT" />
 <br/>
 
 
-### **This individual assignment is due Sept 17th, 2024**
+### **This individual assignment is due Feb 5th, 2025**
 
 In this Lab your will practice writing unit tests and analysing test coverage using Python programming language.
 In the Lab you will also continue working with Git and GitHub facilities. You will submit your final report for this Lab in the **Team's repository** you created and used in the 
@@ -97,7 +97,7 @@ Task 1.1 -- Set Up Your Team Repository for Test Coverage
      ```bash
      git clone https://github.com/UNLV-CS472-672/test_coverage.git
      ```
-   - This repository contains the necessary files for this lab.
+   - This repository contains the necessary starter files for this lab.
 
 2. **Copy the Contents into Your Team Repository**  
    - Navigate into the cloned repository:  

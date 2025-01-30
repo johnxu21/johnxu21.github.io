@@ -64,44 +64,31 @@ Important Note
 
 This is an individual assignment; however, you will practice submitting your work to the team repository once groups are formed. While waiting to be assigned to a group, you can begin working on **Part 2** and **Part 3** of the assignment. These sections do not require the team repository and focus on adapting scripts, analyzing repository data, and preparing an executive summary. Once your groups are formed, you can proceed with Part 1 and practice collaborative repository management.
 
-### **Part 1. Set Up Your Team Repository and Add Files (5 pts)**  
+### **Task 1: Set Up Your Team Repository for Test Coverage Lab (5 pts)**
 
-1. **Create a Team Repository:**  
-   - One team member should create a **new GitHub repository** using your group name (e.g., `Group-1`, `Group-2`, etc.) as the repository name. Add all team members as **collaborators** to the repository.  
-   - The team member who creates the repository should not push directly to the main branch. Instead, they should:  
-     - Create a new branch for their changes.  
-     - Make their updates on the branch.  
-     - Open a pull request to merge the branch into the main branch.  
+This lab is a continuation of the previous Git and GitHub lab. You will continue working in your existing **team repository**, organizing files using folders rather than creating a new repository.
 
-2. **Fork the Repository:**  
-   - All other team members should **fork** the repository into their own GitHub accounts and then clone their fork onto their local machines.  
+#### **1. Organize Your Repository**  
+- Each team member should create a dedicated folder named `test_coverage_lab` in their **local clone** of the team repository to store all files related to the **Test Coverage Lab**.  
+- **Use the exact spelling**: `test_coverage_lab` to maintain consistency and avoid duplicate folders when pushing to the repository.
 
-3. **Add the `contributors.txt` File:**  
-   - The repository should include a file named `contributors.txt` to track the contributor list for your team.  
+#### **2. Copy and Set Up the Starter Files**  
+- Each team member should **clone the provided Test Coverage repository** and copy the starter files into the `test_coverage_lab/` folder in their **local clone** of the team repository.  
+- After copying, **stage, commit, and push** the changes to the **team repository**.  
 
-4. **Invite Me and the TA as Collaborators:**  
-   - Add the following GitHub IDs as collaborators on your repository:  
-     - My GitHub ID: [**`johnxu21`**](https://github.com/johnxu21)  
-     - TA GitHub ID: [**`danielogen`**](https://github.com/danielogen)  
+#### **3. Build and Verify the Setup**  
+- Ensure that everything compiles successfully before pushing.  
+- After pushing, team members should **pull the latest changes** from the team repository and **build the project on their local machines** to confirm the setup is working correctly.  
+- If any issues arise, debug and resolve them before proceeding.
 
-5. **Update and Commit Your Contribution:**  
-   - Create a new branch called `contributors` and switch to it:  
-     ```bash
-     git branch contributors
-     git checkout contributors
-     ```  
-   - Edit the `contributors.txt` file and add your **name** and **email address**.  
-   - Commit your changes and push them:  
-     ```bash
-     git add contributors.txt
-     git commit -m "Added my name and email to contributors.txt"
-     git push
-     ```  
+#### **4. Branching and Collaboration**  
+- Each team member should **create a new branch** for their work in the Test Coverage lab.  
+- Make your changes, add tests, and commit your work.  
+- Push your branch to your forked repository and submit a **pull request (PR) to your team repository**.
 
-6. **Submit a Pull Request:**  
-   - The repository creator should create a pull request from their branch to the main branch.  
-   - Team members who forked the repository should create a pull request to merge changes from their fork into the team repository. 
-   - If there are any conflicts, resolve them collaboratively before merging the pull request.  
+#### **5. Merge Your Work into the Team Repository**  
+- Once your PR is open, team members can review the changes.  
+- After reviewing, the team can **merge the PR into the main branch**. 
 
 
 ### **Part 2. Add a new file to the repository (20 pts)**
