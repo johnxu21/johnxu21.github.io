@@ -89,64 +89,28 @@ Task 1 -- Test Coverage
 ===
 In this task, you will practice writing tests and improving your tests coverage in Python. You will generate a test coverage report and interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
-Task 1.1 -- Set Up Your Team Repository for Test Coverage 
-===
+### **Task 1: Set Up Your Team Repository for Test Coverage Lab (5 pts)**
 
-1. **Clone the Provided Test Coveraage Repository**  
-   - **One team member** should **clone** the `test_coverage` repository to their local machine:  
-     ```bash
-     git clone https://github.com/UNLV-CS472-672/test_coverage.git
-     ```
-   - This repository contains the necessary starter files for this lab.
+This lab is a continuation of the previous Git and GitHub lab. You will continue working in your existing **team repository**, organizing files using folders rather than creating a new repository.
 
-2. **Copy the Contents into Your Team Repository**  
-   - Navigate into the cloned repository:  
-     ```bash
-     cd test_coverage
-     ```
-   - In your **team repository (created in the Git and GitHub lab)**, create a dedicated folder for this lab:  
-     ```bash
-     mkdir -p ../your-team-repo/test_coverage_lab
-     ```
-   - Copy all files from the cloned repository into this folder:  
-     ```bash
-     cp -r * ../your-team-repo/test_coverage_lab/
-     ```
-   - Navigate to your team repository:  
-     ```bash
-     cd ../your-team-repo
-     ```
-   - Verify that the files are in the `test_coverage_lab/` folder by running:  
-     ```bash
-     ls test_coverage_lab/
-     ```
+#### **1. Organize Your Repository**  
+- Each team member should create a dedicated folder named `test_coverage_lab` in their **local clone** of the team repository to store all files related to the **Test Coverage Lab**.  
+- **Use the exact spelling**: `test_coverage_lab` to maintain consistency and avoid duplicate folders when pushing to the repository.
 
-3. **Push the Files to Your Team Repository**  
-   - Change directory to your team’s repository:  
-     ```bash
-     cd ../your-team-repo
-     ```
-   - Copy the files:  
-     ```bash
-     cp -r ../test_coverage/* .
-     ```
-   - Stage, commit, and push the files to your team repository:  
-     ```bash
-     git add .
-     git commit -m "Added test coverage lab files"
-     git push origin main
-     ```
+#### **2. Copy and Set Up the Starter Files**  
+- Each team member should **clone the provided Test Coverage repository** and copy the starter files into the `test_coverage_lab/` folder in their **local clone** of the team repository.  
+- After copying, **stage, commit, and push** the changes to the **team repository**.  
 
-4. **Branching and Collaboration**
+#### **3. Build and Verify the Setup**  
+- Ensure that everything compiles successfully before pushing.  
+- After pushing, team members should **pull the latest changes** from the team repository and **build the project on their local machines** to confirm the setup is working correctly.  
+- If any issues arise, debug and resolve them before proceeding.
 
-   - Each team member should **create a new branch** for their work in the test coverage lab:  
-     ```bash
-     git checkout -b test-coverage-lab
-     ```
-   - Make your changes, add tests, and commit your work.  
-   - Push your branch to your forked repository and submit a **pull request (PR) to your team repository**.
+#### **4. Branching and Collaboration**  
+- Each team member should **create a new branch** for their work in the Test Coverage lab.  
+- Make your changes, add tests, and commit your work.  
+- Push your branch to your forked repository and submit a **pull request (PR) to your team repository**.
 
-5. **Merge Your Work into the Team Repository**  
 
 
 Task 1.2 -- Working with Python Test Coverage
