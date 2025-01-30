@@ -104,7 +104,22 @@ Task 1.1 -- Set Up Your Team Repository for Test Coverage
      ```bash
      cd test_coverage
      ```
-   - Copy all files into your **team repository that was created in the Git and GitHub lab**.
+   - In your **team repository (created in the Git and GitHub lab)**, create a dedicated folder for this lab:  
+     ```bash
+     mkdir -p ../your-team-repo/test_coverage_lab
+     ```
+   - Copy all files from the cloned repository into this folder:  
+     ```bash
+     cp -r * ../your-team-repo/test_coverage_lab/
+     ```
+   - Navigate to your team repository:  
+     ```bash
+     cd ../your-team-repo
+     ```
+   - Verify that the files are in the `test_coverage_lab/` folder by running:  
+     ```bash
+     ls test_coverage_lab/
+     ```
 
 3. **Push the Files to Your Team Repository**  
    - Change directory to your team’s repository:  
