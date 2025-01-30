@@ -83,6 +83,8 @@ Materials & Tools Used for this Session
 * [pytest](https://docs.pytest.org/en/stable/) Most popular python testing framework - makes it easy to write small, readable tests, and can scale to support complex functional testing for applications and libraries.
 * [flask](https://flask.palletsprojects.com/en/2.3.x/) a web framework, it's a Python module that lets you develop web applications easily.
 * (Optional) Read about [RESTFUL API](https://restfulapi.net/)
+* [Test Coverage](https://github.com/UNLV-CS472-672/test_coverage) repository.
+* [Test Driven Development](https://github.com/UNLV-CS472-672/tdd) repository.
 
 
 Task 1 -- Test Coverage
@@ -99,118 +101,160 @@ This lab is a continuation of the previous Git and GitHub lab. You will continue
 
 #### **2. Copy and Set Up the Starter Files**  
 - Each team member should **clone the provided Test Coverage repository** and copy the starter files into the `test_coverage_lab/` folder in their **local clone** of the team repository.  
-- After copying, **stage, commit, and push** the changes to the **team repository**.  
+- No need to push changes to the main repository yet—this step is just for setting up your local environment. 
 
 #### **3. Build and Verify the Setup**  
-- Ensure that everything compiles successfully before pushing.  
-- After pushing, team members should **pull the latest changes** from the team repository and **build the project on their local machines** to confirm the setup is working correctly.  
-- If any issues arise, debug and resolve them before proceeding.
-
-#### **4. Branching and Collaboration**  
-- Each team member should **create a new branch** for their work in the Test Coverage lab.  
-- Make your changes, add tests, and commit your work.  
-- Push your branch to your forked repository and submit a **pull request (PR) to your team repository**.
-
-
-
-Task 1.2 -- Working with Python Test Coverage
-=====
-You will do all your editing work in the file ```tests/test_account.py```. Before writing any code, you should always check that the test cases are passing.Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
-
-Run the ```pytest``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
-
-```pytest
+- Navigate into the `test_coverage_lab` folder.  
+- Navigate into the `test_coverage_lab` folder.  
+- Install the required dependencies from `requirements.txt`:  
+  ```bash
+  cd test_coverage_lab
+  ```
+  ```bash
+  pip install -r requirements.txt # For stable versions
+  ```
+  or 
+- ```bash
+  pip install -r requirements-dev.txt # For latest updates
+  ```
+- 
+- Run `pytest` to check if the provided test cases are passing:
+- Ensure that everything compiles successfully before proceeding.
+- If any issues arise, debug and resolve them as needed.
+- If your tests run successfully, you should see an output similar to this:
+  ```pytest
+  tests/test_account.py::test_account_role_assignment PASSED                                                                                                                         [100%]
+  ---------- coverage: platform darwin, python 3.9.7-final-0 -----------
   Name                 Stmts   Miss  Cover   Missing
---------------------------------------------------
-models/__init__.py       7      0   100%
-models/account.py       40     13    68%   26, 30, 34-35, 45-48, 52-54, 74-75
---------------------------------------------------
-TOTAL                   47     13    72%
-----------------------------------------------------------------------
-Ran 2 tests in 0.349s
+  --------------------------------------------------
+  models/__init__.py       7      0   100%
+  models/account.py       45     18    60%   30, 34, 47-49, 53-55, 59-63, 67, 71, 76, 81-82
+  --------------------------------------------------
+  TOTAL                   52     18    65%
+  ----------------------------------------------------------------------
+  1 passed in 1.06s
+   ```
+- Commit the successful build to your forked repository:
+```bash
+git add .
+git commit -m "Successful setup and initial test run"
+git push origin main
 ```
 
-1. Starting with 72% test coverage. The goal is to reach 100%! Looking at the first missed line, 
-line 26 in ```account.py``` to see if we can write a test case for it. To increase the test coverage, we first investigate line 26 in ```models/account.py```. This file is in the ```model``` 
-package from the root of the repo. Look at the following code on lines ```25``` and ```26```.
 
+**Include in Your Lab Report**  
+
+As the first task in your **final lab report**, include the following:
+
+1. Screenshot of Your Terminal**  
+Provide a screenshot that shows:  
+- The `test_coverage_lab` folder inside your repository.  
+- A successful build of the setup files (i.e., running `pytest` without errors).  
+
+2. Commit Link from Your Forked Repository**  
+Submit a commit link that includes:  
+- The `test_coverage_lab` folder added to your repository.  
+- Your commit history reflecting the setup process.  
+
+This section serves as proof that you successfully set up the environment before proceeding to Task 1.2.  
+
+
+# **Task 1.2: Working with Python Test Coverage**
+
+
+In this task, you will improve test coverage by writing new test cases. All work will be done in the `test_coverage_lab/` folder, and you will submit your changes through a **pull request (PR) from your branch** to the team repository.
+
+## **1. Understanding the Current Test Coverage**  
+- Refer to your previous `pytest` test coverage report from **Task 1**.
+- Ensure you understand which lines of code are missing test cases before proceeding.
+
+## **2. Set Up Your Work Environment**  
+- Create a branch for this task (this will be used for your PR later):  
+  ```bash
+  git checkout -b test-coverage
+  ```
+- Create a unique test file inside `test_coverage_lab/` using the following format:
+
+### 2. Assigning Test Cases  
+Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented:  
+
+| **Test Number** | **Description**                          | **Target Method**              |
+|---------------|----------------------------------|------------------------------|
+| **Student 1**  | Test account serialization         | `to_dict()`                   |
+| **Student 2**  | Test invalid email input          | `validate_email()`            |
+| **Student 3**  | Test missing required fields      | `Account()` initialization    |
+| **Student 4**  | Test positive deposit            | `deposit()`                   |
+| **Student 5**  | Test deposit with zero/negative values | `deposit()`              |
+| **Student 6**  | Test valid withdrawal            | `withdraw()`                  |
+| **Student 7**  | Test withdrawal with insufficient funds | `withdraw()`            |
+| **Student 8**  | Test password hashing            | `set_password()` / `check_password()` |
+| **Student 9**  | Test role assignment             | `change_role()`               |
+| **Student 10** | Test invalid role assignment     | `change_role()`               |
+| **Student 11** | Test deleting an account        | `delete()`                     |
+
+Your team should discuss who will implement each test.
+
+### 3. Writing Your Test Case
+- Open `tests/test_account.py` and add your assigned test case.
+- Include your details at the top of your test case:
+
+# ===========================
+# Test: Account Role Assignment
+# Author: John Doe
+# Date: 2025-01-30
+# Description: Ensure roles can be assigned and checked.
+# ===========================
 ```python
-def __repr__(self):
-    return '<Account %r>' % self.name
-```
-Notice that this method is one of the magic methods that is called to represent the class when 
-printing it out. We will add a new test case in ```test_account.py``` that calls the ```__repr__()``` method on an Account.
+# ===========================
+# Test: Account Role Assignment
+# Author: John Businge
+# Date: 2025-01-30
+# Description: Ensure roles can be assigned and checked.
+# ===========================
 
-```python
-def test_repr():
-    """Test the representation of an account"""
-    account = Account()
-    account.name = "Foo"
-    assert str(account) == "<Account 'Foo'>"
-```
+def test_account_role_assignment():
+    """Test assigning roles to an account"""
+    account = Account(name="John Doe", email="johndoe@example.com", role="user")
+    db.session.add(account)
+    db.session.commit()
 
-5. Run ```pytest``` again to ensure line ```26``` is now covered through testing and to determine 
-the next line of code for which you should write a new test case:
+    # Retrieve from database
+    retrieved_account = Account.query.filter_by(email="johndoe@example.com").first()
+    assert retrieved_account.role == "user"
 
-```angular2html
-Name                 Stmts   Miss  Cover   Missing
---------------------------------------------------
-models/__init__.py       7      0   100%
-models/account.py       40     12    70%   30, 34-35, 45-48, 52-54, 74-75
---------------------------------------------------
-TOTAL                   47     12    74%
-----------------------------------------------------------------------
-Ran 3 tests in 0.387s
-```
-Note that the overall test coverage has increased from 72% to 74% and the new report does not list line ``26`` in the Missing column. 
+    # Change role and verify
+    retrieved_account.change_role("admin")
+    db.session.commit()
 
-6. Next, let us look at the next line of code listed in the lines of code missing tests cases, line 
-is ```30```. Examine this line in ```models/account.py``` to find out what that code is doing.
-
-We will look at code of the entire function on lines ```28``` through ```30``` to see what it is doing.
-```python
-def to_dict(self) -> dict:
-    """Serializes the class as a dictionary"""
-    return {c.name: getattr(self, c.name) for c in self.__table__.columns}
-```
-Notice that this code is the ```to_dict()``` method. Now, let us add a new test case in ```test_account.py``` that executes the ```to_dict()``` method on an Account, and thereafter run ```pytest``` again.
-
-```python
-def test_to_dict():
-    """ Test account to dict """
-    rand = randrange(0, len(ACCOUNT_DATA))  # Generate a random index
-    data = ACCOUNT_DATA[rand]  # get a random account
-    account = Account(**data)
-    result = account.to_dict()
-
-    assert account.name == result["name"]
-    assert account.email == result["email"]
-    assert account.phone_number == result["phone_number"]
-    assert account.disabled == result["disabled"]
-    assert account.date_joined == result["date_joined"]
+    updated_account = Account.query.filter_by(email="johndoe@example.com").first()
+    assert updated_account.role == "admin"
 ```
 
-```angular2html
-Name                 Stmts   Miss  Cover   Missing
---------------------------------------------------
-models/__init__.py       7      0   100%
-models/account.py       40     11    72%   34-35, 45-48, 52-54, 74-75
---------------------------------------------------
-TOTAL                   47     11    77%
-----------------------------------------------------------------------
-Ran 4 tests in 0.368s
+### 4. Committing and Pushing Your Test Case  
+
+- Create a new branch for your test case:**  
+```bash
+git checkout -b add-test-<your-test-name>
 ```
-Note that the overall test coverage increased from 74% to 76%. 
+- Commit your changes
+- Push to your forked repository
 
-#### Your task - Getting coverage to 100% (20)
-In this task to try to get the test coverage to close to 100% as possible. You will examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` to find out what that code is doing.
+### 5. Submitting a Pull Request
+- Open a Pull Request (PR) from your branch to the team repository.
+- In the PR description, include:
+  - brief summary of what your test case does.
+  - The line(s) of code covered in `models/account.py`.
 
-Push you changes back to the main repository, make a pull request and merge.
+### 6. Lab Report Submission  
 
-**Write a report for Tasks 1. Remember to include the code snippets of your test cases. Make sure that your report is descriptive enough for me to follow without looking at your project code. Additionally, add a link to your pull request in the report**
+As a second task in the report, include:  
+- ✅ **A link to your Pull Request.**  
+- ✅ **A copy of your test case.**  
+- ✅ **A brief explanation of what your test does and why it is important.**  
 
 
-Task 2 -- Test Driven Development
+
+## **Task 2 -- Test Driven Development**
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses a POST request and returns code ```201_OK``` if successful. Create a counter and then update it.
 1. Write the following code in the file ```test_counter.py```. Run ```pytest```. You should see an error ```ModuleNotFoundError```
 
