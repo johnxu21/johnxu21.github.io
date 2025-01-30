@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS472 - Dynamic Analysis
+title: CS472 - Software Testing
 permalink: /teaching/CS472/Timetable/dynamic_analysis/
 ---
 
@@ -56,26 +56,23 @@ In the Lab you will also continue working with Git and GitHub facilities. You wi
 [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab.
 
 
-Dynamic Analysis
+Software testing
 =========
+Software testing is the process of evaluating and verifying that a software product or application does what it’s supposed to do. 
+The benefits of good testing include preventing bugs and improving performance [IBM](https://www.ibm.com/think/topics/software-testing?).
 
-Dynamic analysis is “the analysis of the properties of a running software system” 
-[[Ball1999](https://ansymore.uantwerpen.be/system/files/Ball1999.pdf)]. 
-It is complementary to static analysis techniques. Some properties that cannot be 
-studied through static analysis can be examined with dynamic analysis and vice versa. 
-The applications of dynamic analysis techniques are very broad: program comprehension, 
-system verification, resource profiling, test analysis, etc. In this session, we focus on 
-one very important aspect of dynamic analysis: **Testing**.
+### **Tests: Your Life Insurance!**  
 
-"Tests: Your Life Insurance!" 
-Tests are essential for software engineering activities. They can help you: 
-1. to reveal unwanted side effects of changing the code 
-2. to understand the inner workings of a system.
+Tests are a crucial part of software engineering. They help to:  
+1. Detect unwanted side effects when modifying code.  
+2. Gain a deeper understanding of a system’s inner workings.  
 
-The presence of automated tests does however not offer any guarantee about its quality. 
-Do the tests cover the whole system or are some parts left untested? 
-Which parts are covered to which extent? Hence, measuring test coverage is a useful, even 
-necessary, way to assess the quality and usefulness of a test suite in the context of software engineering.
+However, the presence of automated tests alone does not guarantee software quality. Important questions to consider include:  
+- Do the tests cover the entire system, or are some parts left untested?  
+- To what extent are different parts of the system covered?  
+
+Measuring **test coverage** is a valuable and necessary practice in assessing the effectiveness of a test suite, ensuring that critical components of the software are thoroughly tested.
+
 
 Materials & Tools Used for this Session
 ===============
