@@ -198,12 +198,6 @@ Your team should discuss who will implement each test.
 - Open `tests/test_account.py` and add your assigned test case.
 - Include your details at the top of your test case:
 
-# ===========================
-# Test: Account Role Assignment
-# Author: John Doe
-# Date: 2025-01-30
-# Description: Ensure roles can be assigned and checked.
-# ===========================
 ```python
 # ===========================
 # Test: Account Role Assignment
