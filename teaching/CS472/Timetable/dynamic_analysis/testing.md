@@ -178,11 +178,11 @@ In this task, you will improve test coverage by writing new test cases. All work
 ### 2. Assigning Test Cases  
 Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented:  
 
-| **Test Number** | **Description**                          | **Target Method**              |
+| **Test Number** | **Description**                          | **Target Method**             |
 |---------------|----------------------------------|------------------------------|
 | **Student 1**  | Test account serialization         | `to_dict()`                   |
 | **Student 2**  | Test invalid email input          | `validate_email()`            |
-| **Student 3**  | Test missing required fields      | `Account()` initialization    |
+| **Student 3**  | Test missing required fields      | `Account() initialization`    |
 | **Student 4**  | Test positive deposit            | `deposit()`                   |
 | **Student 5**  | Test deposit with zero/negative values | `deposit()`              |
 | **Student 6**  | Test valid withdrawal            | `withdraw()`                  |
@@ -190,7 +190,7 @@ Your team will divide the uncovered code areas among students. Below are suggest
 | **Student 8**  | Test password hashing            | `set_password()` / `check_password()` |
 | **Student 9**  | Test role assignment             | `change_role()`               |
 | **Student 10** | Test invalid role assignment     | `change_role()`               |
-| **Student 11** | Test deleting an account        | `delete()`                     |
+| **Student 11** | Test deleting an account        | `delete()`                    |
 
 Your team should discuss who will implement each test.
 
@@ -208,19 +208,19 @@ Your team should discuss who will implement each test.
 
 def test_account_role_assignment():
     """Test assigning roles to an account"""
-    account = Account(name="John Doe", email="johndoe@example.com", role="user")
+    account = Account(name="John Businge", email="johnbusinge@example.com", role="user")
     db.session.add(account)
     db.session.commit()
 
     # Retrieve from database
-    retrieved_account = Account.query.filter_by(email="johndoe@example.com").first()
+    retrieved_account = Account.query.filter_by(email="johnbusinge@example.com").first()
     assert retrieved_account.role == "user"
 
     # Change role and verify
     retrieved_account.change_role("admin")
     db.session.commit()
 
-    updated_account = Account.query.filter_by(email="johndoe@example.com").first()
+    updated_account = Account.query.filter_by(email="johnbusinge@example.com").first()
     assert updated_account.role == "admin"
 ```
 
