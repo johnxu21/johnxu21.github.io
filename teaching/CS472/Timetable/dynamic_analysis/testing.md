@@ -164,7 +164,7 @@ This section serves as proof that you successfully set up the environment before
 
 In this task, you will improve test coverage by writing new test cases. All work will be done in the `test_coverage_lab/` folder, and you will submit your changes through a **pull request (PR) from your branch** to the team repository.
 
-## **1. Understanding the Current Test Coverage**  
+### **1. Understanding the Current Test Coverage**  
 - Refer to your previous `pytest` test coverage report from **Task 1**.
 - Ensure you understand which lines of code are missing test cases before proceeding.
 
