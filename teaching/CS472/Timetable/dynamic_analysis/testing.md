@@ -240,16 +240,18 @@ Test driven development (TDD) is an approach to software development in which yo
 
 Task 2.1 -- Set Up Your Team Repository for TDD
 ======
+The steps for setting up your team repository are identical to those described in Task 1.1. The key difference is that you will now use the [Test Driven Development](https://github.com/UNLV-CS472-672/tdd) repository.
+```bash
+     git clone https://github.com/UNLV-CS472-672/tdd.git
+```
 
-1. Fork the git project [Test Driven Development](https://github.com/UNLV-CS472-672/tdd). Open the IDE, navigate to the directory ```tdd``` and create a branch in this format: `tdd-<yourFirstname>-<yourLastname>`. Checkout to this branch using this command: ```git checkout -b <your newly created branch bame>```
-2. Now, install the required packages by running the command ```pip install pip --upgrade``` followed by ```pip install -r requirements.txt```
-3. Open the IDE, navigate to the directory ```tdd```.
-      * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
-      *  ```pytest.ini``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```pytest``` only returns testing results for that file, e.g., ```--cov=counter```
-      * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
-4. You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
+Once you set up is complete, open the IDE, navigate to the directory ```tdd```.
+   * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
+   * ```pytest.ini``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```pytest``` only returns testing results for that file, e.g., ```--cov=counter```
+   * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
+You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
    
-Task 2.2 -- Creating a counter
+Creating a counter
 =====
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses a POST request and returns code ```201_OK``` if successful. Create a counter and then update it.
 1. Write the following code in the file ```test_counter.py```. Run ```pytest```. You should see an error ```ModuleNotFoundError```
@@ -314,7 +316,7 @@ def create_counter(name):
 Now we've implemented this first endpoint that should make the test pass. 
 When we run ```pytest``` again, we will have <span style="color:green">**GREEN**</span>.
 
-Task 2.3 -- Duplicate names must return a conflict error code.
+Duplicate names must return a conflict error code.
 =====
 The second requirement is if the name being created already exists, return a 409 conflict.
 Since a lot of the code is going to be repeated, we will <span style="color:blue">**REFACTOR**</span> the repetitive code using the ```fixture``` feature of ```pytest```. 
@@ -397,14 +399,19 @@ Add to your report of the previous tasks and detail the steps (red/green/refacto
 **Make your report self-contained so that it is easy to follow without running your code. Remember to add a link to your pull request in the report**
  
 Submitting Your Final Report 
-=======
-The final report will be submitted to the Team's repository created in the [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab and on **Canvas**.
+======  
 
-* Copy your report--```<your-names>_TestingLab.pdf>``` and paste it in your local fork repository.
-* Commit and Push the changes onto your remote fork repository.
-* Open a pull request on the ```main branch``` of the Team repository and write an appropriate title and body.
-* One of the repository maintainers (or your self) should integrate your contribution into the main branch.
-* You should also submit your report on **Canvas**
+The final report should be submitted to **both** the team's repository created in the [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab and on **Canvas**.  
+
+1. **Prepare your report** – Ensure your final report is saved as:  
+   ```<your-names>_TestingLab.pdf```  
+2. **Add your report to the repository** – Copy the file and place it in your local forked repository.  
+3. **Commit and push** – Commit the changes and push them to your remote forked repository.  
+4. **Create a pull request** –  
+   - Open a pull request (PR) targeting the **`main` branch** of the Team repository.  
+   - Provide a clear and descriptive title and body for the PR.  
+5. **Merge the pull request** – A repository maintainer (or yourself, if applicable) should integrate your contribution into the `main` branch.  
+6. **Submit on Canvas** – Upload the same report to **Canvas** to complete your submission.  
 
 <!-- This lab aims to evaluate your proficiency in both GitHub usage and software testing. Tasks 2 and 3 will assess both skills, while Tasks 4 and 5 will focus solely on evaluating your software testing abilities. -->
 
