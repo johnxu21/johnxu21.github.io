@@ -88,15 +88,60 @@ Materials & Tools Used for this Session
 * (Optional) Read about [RESTFUL API](https://restfulapi.net/)
 
 
-Task 1 -- Working with Python Test Coverage
-=====
+Task 1 -- Test Coverage
+===
 In this task, you will practice writing tests and improving your tests coverage in Python. You will generate a test coverage report and interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
-1. Fork the git project [Python Testing lab](https://github.com/UNLV-CS472-672/test_coverage). Open the IDE, navigate to the directory ```test_coverage``` and create a branch in this format: `testing-<yourFirstname>-<yourLastname>`. Checkout to this branch using this command: ```git checkout -b <your newly created branch bame>```
-2. Now, install the required packages by running the command ```pip install pip --upgrade``` followed by ```pip install -r requirements.txt```
-3. You will do all your editing work in the file ```tests/test_account.py```.
-4. Before writing any code, you should always check that the test cases are passing.Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
-  * run the ```pytest``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
+Task 1.1 -- Set Up Your Team Repository for Test Coverage 
+===
+
+1. **Clone the Provided Test Coveraage Repository**  
+   - **One team member** should **clone** the `test_coverage` repository to their local machine:  
+     ```bash
+     git clone https://github.com/UNLV-CS472-672/test_coverage.git
+     ```
+   - This repository contains the necessary files for this lab.
+
+2. **Copy the Contents into Your Team Repository**  
+   - Navigate into the cloned repository:  
+     ```bash
+     cd test_coverage
+     ```
+   - Copy all files into your **team repository that was created in the Git and GitHub lab**.
+
+3. **Push the Files to Your Team Repository**  
+   - Change directory to your team’s repository:  
+     ```bash
+     cd ../your-team-repo
+     ```
+   - Copy the files:  
+     ```bash
+     cp -r ../test_coverage/* .
+     ```
+   - Stage, commit, and push the files to your team repository:  
+     ```bash
+     git add .
+     git commit -m "Added test coverage lab files"
+     git push origin main
+     ```
+
+4. **Branching and Collaboration**
+
+   - Each team member should **create a new branch** for their work in the test coverage lab:  
+     ```bash
+     git checkout -b test-coverage-lab
+     ```
+   - Make your changes, add tests, and commit your work.  
+   - Push your branch to your forked repository and submit a **pull request (PR) to your team repository**.
+
+5. **Merge Your Work into the Team Repository**  
+
+
+Task 1.2 -- Working with Python Test Coverage
+=====
+You will do all your editing work in the file ```tests/test_account.py```. Before writing any code, you should always check that the test cases are passing.Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
+
+Run the ```pytest``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
 
 ```pytest
   Name                 Stmts   Miss  Cover   Missing
@@ -109,7 +154,7 @@ TOTAL                   47     13    72%
 Ran 2 tests in 0.349s
 ```
 
-4. Starting with 72% test coverage. The goal is to reach 100%! Looking at the first missed line, 
+1. Starting with 72% test coverage. The goal is to reach 100%! Looking at the first missed line, 
 line 26 in ```account.py``` to see if we can write a test case for it. To increase the test coverage, we first investigate line 26 in ```models/account.py```. This file is in the ```model``` 
 package from the root of the repo. Look at the following code on lines ```25``` and ```26```.
 
@@ -184,14 +229,17 @@ Note that the overall test coverage increased from 74% to 76%.
 #### Your task - Getting coverage to 100% (20)
 In this task to try to get the test coverage to close to 100% as possible. You will examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` to find out what that code is doing.
 
-Using the skills you learn from the [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab, push you changes back to the main repository and make a pull request. The TA will review and merge your changes accordingly.
+Push you changes back to the main repository, make a pull request and merge.
 
 **Write a report for Tasks 1. Remember to include the code snippets of your test cases. Make sure that your report is descriptive enough for me to follow without looking at your project code. Additionally, add a link to your pull request in the report**
 
 
-Task 2 - TDD
+Task 2 -- Test Driven Development
 =======
 Test driven development (TDD) is an approach to software development in which you first write the test cases for the code you wish you had and then write the code to make the test cases pass. In this Task, you will write test cases based on the requirements given to you, and then you will write the code to make the test cases pass.
+
+Task 2.1 -- Set Up Your Team Repository for TDD
+======
 
 1. Fork the git project [Test Driven Development](https://github.com/UNLV-CS472-672/tdd). Open the IDE, navigate to the directory ```tdd``` and create a branch in this format: `tdd-<yourFirstname>-<yourLastname>`. Checkout to this branch using this command: ```git checkout -b <your newly created branch bame>```
 2. Now, install the required packages by running the command ```pip install pip --upgrade``` followed by ```pip install -r requirements.txt```
@@ -201,7 +249,8 @@ Test driven development (TDD) is an approach to software development in which yo
       * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
 4. You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
    
-## Creating a counter
+Task 2.2 -- Creating a counter
+=====
 You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses a POST request and returns code ```201_OK``` if successful. Create a counter and then update it.
 1. Write the following code in the file ```test_counter.py```. Run ```pytest```. You should see an error ```ModuleNotFoundError```
 
@@ -265,7 +314,8 @@ def create_counter(name):
 Now we've implemented this first endpoint that should make the test pass. 
 When we run ```pytest``` again, we will have <span style="color:green">**GREEN**</span>.
 
-## Duplicate names must return a conflict error code.
+Task 2.3 -- Duplicate names must return a conflict error code.
+=====
 The second requirement is if the name being created already exists, return a 409 conflict.
 Since a lot of the code is going to be repeated, we will <span style="color:blue">**REFACTOR**</span> the repetitive code using the ```fixture``` feature of ```pytest```. 
 1. For this example, ```client = app.test_client()``` that is inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span> it into new function called ```client``` and decorate it with ```@pytest.fixture()```.
@@ -340,7 +390,7 @@ It should implement the following steps:
 
 Next, you will write another test case to read a counter. Following REST API guidelines, a read uses a ```GET``` request and returns a ```200_OK``` code if successful. Create a counter and then read it. Here you should figure out the requirements for the test case as well as code you will put in the unit under test.
 
-Using the skills you learn from the [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab, push you changes back to the main repository and make a pull request. The TA will review and merge your changes accordingly.
+Push you changes back to the main repository, make a pull request and merge. 
 
 Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed to implement the requirements. Include in your report the code snippets you wrote at every step as well as the exceptions you encountered while running ```pytest```. 
 
@@ -350,12 +400,10 @@ Submitting Your Final Report
 =======
 The final report will be submitted to the Team's repository created in the [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab and on **Canvas**.
 
-* Create a branch on your local fork repository called ```python_tests_<yourFirstname>-<yourLastName``` using the following command ```git branch python_tests_<yourFirstname>-<yourLastName```.
-* Run the command ```git checkout python_tests_<yourFirstname>-<yourLastName```
 * Copy your report--```<your-names>_TestingLab.pdf>``` and paste it in your local fork repository.
 * Commit and Push the changes onto your remote fork repository.
 * Open a pull request on the ```main branch``` of the Team repository and write an appropriate title and body.
-* One of the repository maintainers should integrate your contribution into the main branch.
+* One of the repository maintainers (or your self) should integrate your contribution into the main branch.
 * You should also submit your report on **Canvas**
 
 <!-- This lab aims to evaluate your proficiency in both GitHub usage and software testing. Tasks 2 and 3 will assess both skills, while Tasks 4 and 5 will focus solely on evaluating your software testing abilities. -->
