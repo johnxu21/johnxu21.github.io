@@ -168,13 +168,6 @@ In this task, you will improve test coverage by writing new test cases. All work
 - Refer to your previous `pytest` test coverage report from **Task 1**.
 - Ensure you understand which lines of code are missing test cases before proceeding.
 
-## **2. Set Up Your Work Environment**  
-- Create a branch for this task (this will be used for your PR later):  
-  ```bash
-  git checkout -b test-coverage
-  ```
-- Create a unique test file inside `test_coverage_lab/` using the following format:
-
 ### 2. Assigning Test Cases  
 Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented:  
 
