@@ -252,7 +252,7 @@ This lab follows a **Test-Driven Development (TDD)** approach where you will:
 
 Each student will be responsible for **one test case** and the corresponding implementation in the **Counter API**.
 
-Refer to the **[README.md](README.md)** file in your repository for **setup instructions** and **common errors & solutions**.
+Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the TDD repository for **setup instructions** and **common errors & solutions**.
 
 ---
 
@@ -264,7 +264,7 @@ Refer to the **[README.md](README.md)** file in your repository for **setup inst
 - This folder will store all files related to this **TDD Lab**.
 
 ### **2. Copy the Starter Files**
-- Copy **all files** from the **root of your repository** and place them inside your newly created **`tdd_lab/`** folder.
+- Copy **all files** from the **root of the provided [tdd repository](https://github.com/UNLV-CS472-672/tdd)** and place them inside your newly created **`tdd_lab/`** folder.
 
 ### **3. Install Dependencies & Verify Setup**
 - Navigate into the **`tdd_lab/`** folder and install the required dependencies:
