@@ -142,7 +142,7 @@ git push origin main
 ```
 
 
-**Include in Your Lab Report**  
+#### **4. Include in Your Lab Report**  
 
 As the first task in your **final lab report**, include the following:
 
@@ -241,170 +241,198 @@ As a second task in the report, include:
 
 
 
-## **Task 2 -- Test Driven Development**
-You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses a POST request and returns code ```201_OK``` if successful. Create a counter and then update it.
-1. Write the following code in the file ```test_counter.py```. Run ```pytest```. You should see an error ```ModuleNotFoundError```
+# **📌 Task 2: Test-Driven Development (TDD) Lab Assignment (15 pts)**
 
-```python
-import pytest
+## **🔍 Overview**
+This lab follows a **Test-Driven Development (TDD)** approach where you will:
+1. **Write a test case first** for a missing feature.
+2. **Run the test** and observe it **fail** (**Red Phase**).
+3. **Implement the feature** to make the test **pass** (**Green Phase**).
+4. **Refactor the code** to improve structure (**Refactor Phase**).
 
-# we need to import the unit under test - counter
-from src.counter import app 
+Each student will be responsible for **one test case** and the corresponding implementation in the **Counter API**.
 
-# we need to import the file that contains the status codes
-from src import status 
+Refer to the **[README.md](README.md)** file in your repository for **setup instructions** and **common errors & solutions**.
 
+---
+
+## **1️⃣ Setting Up Your Work Environment (5 pts)**
+
+### **1. Organize Your Repository**
+- Each team member should **create a new folder** in their local clone of the **team repository**, similar to the previous lab.
+- The folder name should be **`tdd_lab`** (use exact spelling for consistency).
+- This folder will store all files related to this **TDD Lab**.
+
+### **2. Copy the Starter Files**
+- Copy **all files** from the **root of your repository** and place them inside your newly created **`tdd_lab/`** folder.
+
+### **3. Install Dependencies & Verify Setup**
+- Navigate into the **`tdd_lab/`** folder and install the required dependencies:
+  ```bash
+    cd tdd_lab
+    pip install -r requirements.txt
+    ```
+
+- Run pytest (even though the tests will be empty initially):
+```bash
+  pytest --cov=src
 ```
-2. Create a new file in the ```src``` directory called ```counter.py``` and run ```pytest``` again. You should see an ```ImportError```, cannot find ```app``` - ```ImportError: cannot import name 'app' from 'src.counter'```
-3. Write the code below and run ```pytest``` again. The tests should run with no error.
-
-```python
-from flask import Flask
-
-app = Flask(__name__)
+- Expected output (since no tests exist yet):
+```bash
+configfile: ov=src
+plugins: cov-6.0.0
+collected 0 items 
 ```
+- If any errors arise, refer to the [README.md](https://github.com/UNLV-CS472-672/tdd) file in the repository for troubleshooting.
 
-The output should be similar to the one below:
-```shell
-Name              Stmts   Miss  Cover   Missing
------------------------------------------------
-src/__init__.py       0      0   100%
-src/counter.py        2      0   100%
-src/status.py         6      0   100%
------------------------------------------------
-TOTAL                 8      0   100%
-```
-
-1. Let us write our first test case and run ```pytest``` again. 
-```python
-    def test_create_a_counter():
-        """It should create a counter"""
-        client = app.test_client()
-        result = client.post('/counters/foo')
-        self.assert result.status_code == status.HTTP_201_CREATED
-```
-This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of code we need to go write.
-2. Let's go to ```counters.py``` and create that endpoint.  Import status code from the status file - ```from . import status``` and add the code below:
-
-```python
-COUNTERS = {}
-
-# We will use the app decorator and create a route called slash counters.
-# specify the variable in route <name>
-# let Flask know that the only methods that is allowed to called
-# on this function is "POST".
-@app.route('/counters/<name>', methods=['POST'])
-def create_counter(name):
-    """Create a counter"""
-    app.logger.info(f"Request to create counter: {name}")
-    global COUNTERS
-    COUNTERS[name] = 0
-    return {name: COUNTERS[name]}, status.HTTP_201_CREATED
+### 4. Commit & Push the Initial Setup
+- After successfully setting up your environment, commit your changes to your forked repository:
+```bash
+  git add .
+  git commit -m "Successful TDD setup and initial test run"
+  git push origin main
 ```
 
-Now we've implemented this first endpoint that should make the test pass. 
-When we run ```pytest``` again, we will have <span style="color:green">**GREEN**</span>.
+## Task 2.2. Introduction to TDD (Worked Example)
+Before you begin writing your own test case, let’s go through a guided example.
 
-Duplicate names must return a conflict error code.
-=====
-The second requirement is if the name being created already exists, return a 409 conflict.
-Since a lot of the code is going to be repeated, we will <span style="color:blue">**REFACTOR**</span> the repetitive code using the ```fixture``` feature of ```pytest```. 
-1. For this example, ```client = app.test_client()``` that is inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span> it into new function called ```client``` and decorate it with ```@pytest.fixture()```.
-2. Next we will also create a class called ```TestCounterEndPoints``` to group all our counter related tests and move the first test inside the class declaration. 
-3. For the last part of our refactoring, we need make the client fixture automatically available to all the test methods within our class. This can be achieved by using the pytest ```usefixtures``` decorator at the class level: ```@pytest.mark.usefixtures("client")```. The finally code is shown below:
+### Step 1: Start with an Empty Test File
+The provided `test_counter.py` file will initially be empty except for this header:
 
+### Step 2: Create the `src/counter.py` File
+```bash
+  touch src/counter.py
+```
+- Add the following code to `src/counter.py`:
 ```python
-@pytest.fixture()
-def client():
-  return app.test_client()
+    """
+    Counter API Implementation
+    """
+    from flask import Flask
 
-@pytest.mark.usefixtures("client")
-class TestCounterEndPoints:
-    """Test cases for Counter-related endpoints"""
+    app = Flask(__name__)
+```
+- Now the `counter.py` file exists, but it does nothing yet.
 
-    def test_create_a_counter(self, client):
+### Step 3: Write a Failing Test
+- Before implementing a new feature, write a test that fails.
+- Add the following test case in `tests/test_counter.py`:
+```python
+    import pytest
+    from src import app
+    from src import status
+
+    @pytest.fixture()
+    def client():
+        return app.test_client()
+
+    @pytest.mark.usefixtures("client")
+    class TestCounterEndpoints:
+        """Test cases for Counter API"""
+
+    def test_create_counter(self, client):
         """It should create a counter"""
         result = client.post('/counters/foo')
         assert result.status_code == status.HTTP_201_CREATED
 ```
-
-* Now, let us now write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times. The second time we expect to get a ```HTTP_409_CONFLICT```. 
-
-```python
-def test_duplicate_a_counter(self, client):
-  """It should return an error for duplicates"""
-  result = client.post('/counters/bar')
-  assert result.status_code == status.HTTP_201_CREATED
-  result = client.post('/counters/bar')
-  assert result.status_code == status.HTTP_409_CONFLICT
+- Run `pytest --cov=src`
+- Expected failure:
+```php
+   <span style="color:red">**RED**</span> - AssertionError: 404 != 201
 ```
-When we run our test cases we obtain
-<span style="color:red">**RED**</span> phase - ```AssertionError: 201 != 409```.
-It happily created that counter a second time, which is very dangerous because it set it to zero. 
-If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
-it's going to reset it to zero.
+- The test fails because the endpoint does not exist yet.
 
-* Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
-Copy and paste the code snippet below and place it right after the code line ```global COUNTERS```.
-
+### Step 4: Implement the Minimum Code
+- Modify `src/counter.py` to create the missing Flask app. Add the code below:
 ```python
-if name in COUNTERS:
-  return {"Message":f"Counter {name} already exists"}, status.HTTP_409_CONFLICT
+    COUNTERS = {}
+
+    @app.route('/counters/<name>', methods=['POST'])
+    def create_counter(name):
+        """Create a counter"""
+        if name in COUNTERS:
+            return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
+        COUNTERS[name] = 0
+        return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 ```
-When we run ```pytest``` again we should get the <span style="color:green">**GREEN**</span> phase.
-
-## Your task (15 points)
-You will implement the updating the counter by name following the TDD workflow (write test cases and 
-write the code to make the test cases pass).
-The test cases you will add to are in ```test_counter.py```, and the code you will add is in ```counter.py```. These are the only two files you will work with.
-Following REST API guidelines, an update uses a ```PUT``` request and returns code ```200_OK``` if successful. 
-Create a counter and then update it. 
-You will implement the following requirements:
-
-In ```test_counter.py```, create a test called ```test_update_a_counter(self, client)```. It should implement the following steps:
-1. Make a call to Create a counter.
-2. Ensure that it returned a successful return code.
-3. Check the counter value as a baseline.
-4. Make a call to Update the counter that you just created.
-5. Ensure that it returned a successful return code.
-6. Check that the counter value is one more than the baseline you measured in step 3.
-
-When you run ```pytest```, you should be in the <span style="color:red">**RED**</span> phase.
-
-Next, in ```counter.py```, create a function called ```update_counter(name)```. 
-It should implement the following steps:
-
-1. Create a route for method ```PUT``` on endpoint ```/counters/<name>```.
-2. Create a function to implement that route.
-3. Increment the counter by 1.
-4. Return the new counter and a ```200_OK``` return code.
-
-Next, you will write another test case to read a counter. Following REST API guidelines, a read uses a ```GET``` request and returns a ```200_OK``` code if successful. Create a counter and then read it. Here you should figure out the requirements for the test case as well as code you will put in the unit under test.
-
-Push you changes back to the main repository, make a pull request and merge. 
-
-Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed to implement the requirements. Include in your report the code snippets you wrote at every step as well as the exceptions you encountered while running ```pytest```. 
-
-**Make your report self-contained so that it is easy to follow without running your code. Remember to add a link to your pull request in the report**
+- Run `pytest --cov=src`
+```less
+<span style="color:green">**GREEN**</span> - All tests passed ✅
+```
  
-Submitting Your Final Report 
-======  
+### Step 5: Refactor for Reusability
+- Refactor the counter creation check into a helper function:
+```python
+def counter_exists(name):
+    """Check if counter exists"""
+    return name in COUNTERS
+```
+- Now update the API to use this function:
+```python
+@app.route('/counters/<name>', methods=['POST'])
+def create_counter(name):
+    """Create a counter"""
+    if counter_exists(name):
+        return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
+    COUNTERS[name] = 0
+    return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
+```
+- This makes the code cleaner and reusable.
 
-The final report should be submitted to **both** the team's repository created in the [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab and on **Canvas**.  
+## Your tasks
 
-1. **Prepare your report** – Ensure your final report is saved as:  
-   ```<your-names>_TestingLab.pdf```  
-2. **Add your report to the repository** – Copy the file and place it in your local forked repository.  
-3. **Commit and push** – Commit the changes and push them to your remote forked repository.  
-4. **Create a pull request** –  
-   - Open a pull request (PR) targeting the **`main` branch** of the Team repository.  
-   - Provide a clear and descriptive title and body for the PR.  
-5. **Merge the pull request** – A repository maintainer (or yourself, if applicable) should integrate your contribution into the `main` branch.  
-6. **Submit on Canvas** – Upload the same report to **Canvas** to complete your submission.  
+## **1️⃣ Task Overview**
+Each **student** will be responsible for implementing **one test case** and the corresponding function.
 
-<!-- This lab aims to evaluate your proficiency in both GitHub usage and software testing. Tasks 2 and 3 will assess both skills, while Tasks 4 and 5 will focus solely on evaluating your software testing abilities. -->
+| **Student #** | **Test Case Description** | **Target API Method** |
+|--------------|--------------------------|-----------------------|
+| **Student 1** | Create a new counter | `POST /counters/<name>` |
+| **Student 2** | Prevent duplicate counters | `POST /counters/<name>` |
+| **Student 3** | Retrieve an existing counter | `GET /counters/<name>` |
+| **Student 4** | Return 404 for non-existent counter | `GET /counters/<name>` |
+| **Student 5** | Increment a counter | `PUT /counters/<name>` |
+| **Student 6** | Prevent updating non-existent counter | `PUT /counters/<name>` |
+| **Student 7** | Delete a counter | `DELETE /counters/<name>` |
+| **Student 8** | Prevent deleting non-existent counter | `DELETE /counters/<name>` |
+| **Student 9** | Reset all counters | `POST /counters/reset` |
+| **Student 10** | List all counters | `GET /counters` |
+| **Student 11** | Handle invalid HTTP methods | Unsupported HTTP Methods |
 
-<!-- Importantly, for Tasks 4 and 5, there's no requirement to commit your code to the team repository. The evaluation will be based on your software testing proficiency in the report submitted rather than GitHub usage. However, when submitting your report on Canvas, ensure it includes documentation for all tasks. -->
+Each student **must:**
+1. **Write a test case** inside `tests/test_counter.py`
+2. **Implement the feature** inside `src/counter.py`
+3. **Run `pytest --cov=src` to verify the test case passes**
+4. **Submit a Pull Request (PR) to the team repository**
+
+###  Step 1: Create a Branch
+```bash
+git checkout -b add-test-<your-feature>
+```
+
+
+## 📌 **Final Report Submission (10 pts)**
+
+After completing all tasks in the lab, compile a **single report** documenting your work. This report should be **comprehensive** and should include **all tasks**, including **Test Coverage** and **Test-Driven Development (TDD)**.
+
+### ✅ **What to Include in Your Report:**
+1. **Test Coverage Lab Results**
+   - A screenshot or commit link showing your repository setup.
+   - A summary of the **test coverage** before and after your test contributions.
+   - A description of the test cases you wrote, including the function(s) they cover.
+   - A **link to your Pull Request (PR)** for the Test Coverage Lab.
+
+2. **Test-Driven Development Lab Results**
+   - A link to your **Pull Request (PR)** for the TDD Lab.
+   - A **copy of the test case** you wrote.
+   - A **brief explanation** of what your test case does and how it contributes to the Counter API.
+   - A **summary of your Red-Green-Refactor process**, including:
+     - The failing test (**RED Phase**).
+     - The implemented feature that made the test pass (**GREEN Phase**).
+     - Any code improvements or refactoring you made (**REFACTOR Phase**).
+
+### 📤 **Submission Instructions**
+- Upload your final report as a **PDF** on Canvas.
+- Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.
 
 
 
