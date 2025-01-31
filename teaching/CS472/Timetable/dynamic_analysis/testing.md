@@ -336,9 +336,9 @@ class TestCounterEndpoints:
 ```
 - Run `pytest --cov=src`
 - Expected failure:
-```php
+
    <span style="color:red">**RED**</span> - AssertionError: 404 != 201
-```
+
 - The test fails because the endpoint does not exist yet.
 
 ### Step 4: Implement the Minimum Code
@@ -355,9 +355,9 @@ class TestCounterEndpoints:
         return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 ```
 - Run `pytest --cov=src`
-```less
+
 <span style="color:green">**GREEN**</span> - All tests passed ✅
-```
+
  
 ### Step 5: Refactor for Reusability
 - Refactor the counter creation check into a helper function:
