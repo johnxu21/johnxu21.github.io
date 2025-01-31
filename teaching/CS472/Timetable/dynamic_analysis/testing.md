@@ -256,7 +256,7 @@ Refer to the **[README.md](README.md)** file in your repository for **setup inst
 
 ---
 
-## **1️⃣ Setting Up Your Work Environment (5 pts)**
+## **1. Setting Up Your Work Environment (5 pts)**
 
 ### **1. Organize Your Repository**
 - Each team member should **create a new folder** in their local clone of the **team repository**, similar to the previous lab.
@@ -285,7 +285,7 @@ collected 0 items
 ```
 - If any errors arise, refer to the [README.md](https://github.com/UNLV-CS472-672/tdd) file in the repository for troubleshooting.
 
-### 4. Commit & Push the Initial Setup
+### **4. Commit & Push the Initial Setup**
 - After successfully setting up your environment, commit your changes to your forked repository:
 ```bash
   git add .
@@ -293,7 +293,7 @@ collected 0 items
   git push origin main
 ```
 
-## Task 2.2. Introduction to TDD (Worked Example)
+## **Task 2.2. Introduction to TDD (Worked Example)**
 Before you begin writing your own test case, let’s go through a guided example.
 
 ### Step 1: Start with an Empty Test File
@@ -410,7 +410,7 @@ git checkout -b add-test-<your-feature>
 ```
 
 
-## 📌 **Final Report Submission (10 pts)**
+## **Final Report Submission (10 pts)**
 
 After completing all tasks in the lab, compile a **single report** documenting your work. This report should be **comprehensive** and should include **all tasks**, including **Test Coverage** and **Test-Driven Development (TDD)**.
 
