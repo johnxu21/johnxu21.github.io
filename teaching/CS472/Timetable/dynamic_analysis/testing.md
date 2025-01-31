@@ -424,9 +424,9 @@ After completing all tasks in the lab, compile a **single report** documenting y
    - A **copy of the test case** you wrote.
    - A **brief explanation** of what your test case does and how it contributes to the Counter API.
    - A **summary of your Red-Green-Refactor process**, including:
-     - The failing test (**RED Phase**).
-     - The implemented feature that made the test pass (**GREEN Phase**).
-     - Any code improvements or refactoring you made (**REFACTOR Phase**).
+     - The failing test (**<span style="color:red;">RED</span> Phase**).
+     - The implemented feature that made the test pass (**<span style="color:green;">GREEN</span> Phase**).
+     - Any code improvements or refactoring you made (**<span style="color:blue;">REFACTOR</span> Phase**).
 
 ### 📤 **Submission Instructions**
 - Upload your final report as a **PDF** on Canvas.
