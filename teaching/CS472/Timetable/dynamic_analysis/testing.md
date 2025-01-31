@@ -279,8 +279,6 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 ```
 - Expected output (since no tests exist yet):
 ```bash
-configfile: ov=src
-plugins: cov-6.0.0
 collected 0 items 
 ```
 - If any errors arise, refer to the [README.md](https://github.com/UNLV-CS472-672/tdd) file in the repository for troubleshooting.
@@ -296,10 +294,10 @@ collected 0 items
 ## **Task 2.2. Introduction to TDD (Worked Example)**
 Before you begin writing your own test case, let’s go through a guided example.
 
-### Step 1: Start with an Empty Test File
-The provided `test_counter.py` file will initially be empty except for this header:
+### **Step 1: Start with an Empty Test File**
+The provided `test_counter.py` file will initially be empty except:
 
-### Step 2: Create the `src/counter.py` File
+### **Step 2: Create the `src/counter.py` File**
 ```bash
   touch src/counter.py
 ```
@@ -314,21 +312,22 @@ The provided `test_counter.py` file will initially be empty except for this head
 ```
 - Now the `counter.py` file exists, but it does nothing yet.
 
-### Step 3: Write a Failing Test
+### **Step 3: Write a Failing Test**
 - Before implementing a new feature, write a test that fails.
 - Add the following test case in `tests/test_counter.py`:
 ```python
-    import pytest
-    from src import app
-    from src import status
+import pytest
+from src import app
+from src import status
 
-    @pytest.fixture()
-    def client():
-        return app.test_client()
+@pytest.fixture()
+def client():
+    """Fixture for Flask test client"""
+    return app.test_client()
 
-    @pytest.mark.usefixtures("client")
-    class TestCounterEndpoints:
-        """Test cases for Counter API"""
+@pytest.mark.usefixtures("client")
+class TestCounterEndpoints:
+    """Test cases for Counter API"""
 
     def test_create_counter(self, client):
         """It should create a counter"""

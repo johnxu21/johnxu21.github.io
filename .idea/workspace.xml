@@ -11,6 +11,7 @@
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/tdd_lab/pytest.ini" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/tdd_lab/requirements.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/tdd_lab/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/tdd_lab/src/counter.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/tdd_lab/src/status.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/tdd_lab/tests/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/tdd_lab/tests/test_counter.py" afterDir="false" />
@@ -63,7 +64,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -177,7 +178,7 @@
       <workItem from="1731514893378" duration="557000" />
       <workItem from="1731516985708" duration="10182000" />
       <workItem from="1734110199353" duration="41108000" />
-      <workItem from="1738102349817" duration="23187000" />
+      <workItem from="1738102349817" duration="24269000" />
     </task>
     <servers />
   </component>
