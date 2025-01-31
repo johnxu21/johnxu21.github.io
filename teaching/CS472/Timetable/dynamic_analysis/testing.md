@@ -294,10 +294,9 @@ collected 0 items
 ## **Task 2.2. Introduction to TDD (Worked Example)**
 Before you begin writing your own test case, let’s go through a guided example.
 
-### **Step 1: Start with an Empty Test File**
-The provided `test_counter.py` file will initially be empty except:
+- The provided `test_counter.py` file will initially be empty.
 
-### **Step 2: Create the `src/counter.py` File**
+### **Step 1: Create the `src/counter.py` File**
 ```bash
   touch src/counter.py
 ```
@@ -312,7 +311,7 @@ The provided `test_counter.py` file will initially be empty except:
 ```
 - Now the `counter.py` file exists, but it does nothing yet.
 
-### **Step 3: Write a Failing Test**
+### **Step 2: Write a Failing Test**
 - Before implementing a new feature, write a test that fails.
 - Add the following test case in `tests/test_counter.py`:
 ```python
@@ -341,7 +340,7 @@ class TestCounterEndpoints:
 
 - The test fails because the endpoint does not exist yet.
 
-### **Step 4: Implement the Minimum Code**
+### **Step 3: Implement the Minimum Code**
 - Modify `src/counter.py` to create the missing Flask app. Add the code below:
 ```python
     COUNTERS = {}
@@ -359,7 +358,7 @@ class TestCounterEndpoints:
 <span style="color:green">**GREEN**</span> - All tests passed ✅
 
  
-### **Step 5: Refactor for Reusability**
+### **Step 4: Refactor for Reusability**
 - Refactor the counter creation check into a helper function:
 ```python
 def counter_exists(name):
@@ -380,7 +379,7 @@ def create_counter(name):
 
 ## Your tasks
 
-## **1️⃣ Task Overview**
+## **Task Overview**
 Each **student** will be responsible for implementing **one test case** and the corresponding function.
 
 | **Student #** | **Test Case Description** | **Target API Method** |
@@ -403,7 +402,7 @@ Each student **must:**
 3. **Run `pytest --cov=src` to verify the test case passes**
 4. **Submit a Pull Request (PR) to the team repository**
 
-###  Step 1: Create a Branch
+###  **Step 1: Create a Branch**
 ```bash
 git checkout -b add-test-<your-feature>
 ```
