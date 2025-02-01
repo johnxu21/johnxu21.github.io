@@ -241,7 +241,7 @@ As a second task in the report, include:
 
 
 
-# **📌 Task 2: Test-Driven Development (TDD) Lab Assignment (15 pts)**
+# **Task 2: Test-Driven Development (TDD) Lab Assignment (15 pts)**
 
 ## **🔍 Overview**
 This lab follows a **Test-Driven Development (TDD)** approach where you will:
@@ -265,6 +265,8 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 
 ### **2. Copy the Starter Files**
 - Copy **all files** from the **root of the provided [tdd repository](https://github.com/UNLV-CS472-672/tdd)** and place them inside your newly created **`tdd_lab/`** folder.
+- While copying, ensure that the `.git/` **directory is NOT included** to avoid creating a nested repository.
+
 
 ### **3. Install Dependencies & Verify Setup**
 - Navigate into the **`tdd_lab/`** folder and install the required dependencies:
