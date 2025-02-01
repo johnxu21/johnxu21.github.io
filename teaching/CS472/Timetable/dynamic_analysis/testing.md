@@ -167,7 +167,7 @@ In this task, you will improve test coverage by writing new test cases. All work
 - Refer to your previous `pytest` test coverage report from **Task 1**.
 - Ensure you understand which lines of code are missing test cases before proceeding.
 
-### 2. Assigning Test Cases  
+### **2. Assigning Test Cases**  
 Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented:  
 
 | **Test Number** | **Description**                          | **Target Method**             |
@@ -186,7 +186,7 @@ Your team will divide the uncovered code areas among students. Below are suggest
 
 Your team should discuss who will implement each test.
 
-### 3. Writing Your Test Case
+### **3. Writing Your Test Case**
 - Open `tests/test_account.py` and add your assigned test case.
 - Include your details at the top of your test case:
 
@@ -216,7 +216,7 @@ def test_account_role_assignment():
     assert updated_account.role == "admin"
 ```
 
-### 4. Committing and Pushing Your Test Case  
+### **4. Committing and Pushing Your Test Case**  
 
 - Create a new branch for your test case:**  
 ```bash
@@ -225,13 +225,13 @@ git checkout -b add-test-<your-test-name>
 - Commit your changes
 - Push to your forked repository
 
-### 5. Submitting a Pull Request
+### **5. Submitting a Pull Request**
 - Open a Pull Request (PR) from your branch to the team repository.
 - In the PR description, include:
   - brief summary of what your test case does.
   - The line(s) of code covered in `models/account.py`.
 
-### 6. Lab Report Submission  
+### **6. Lab Report Submission**  
 
 As a second task in the report, include:  
 - **A link to your Pull Request.**  
@@ -411,7 +411,6 @@ Each student **must:**
 ```bash
 git checkout -b add-test-<your-feature>
 ```
-
 ## **Final Report Submission (10 pts)**
 
 After completing all tasks in the lab, compile a **single report** documenting your work. This report should be **comprehensive** and should include **all tasks**, including **Test Coverage** and **Test-Driven Development (TDD)**.
