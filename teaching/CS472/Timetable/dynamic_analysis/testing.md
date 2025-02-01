@@ -101,6 +101,7 @@ This lab is a continuation of the previous Git and GitHub lab. You will continue
 
 #### **2. Copy and Set Up the Starter Files**  
 - Each team member should **clone the provided Test Coverage repository** and copy the starter files into the `test_coverage_lab/` folder in their **local clone** of the team repository.  
+- While copying, ensure that the `.git/` **directory is NOT included** to avoid creating a nested repository.
 - No need to push changes to the main repository yet—this step is just for setting up your local environment. 
 
 #### **3. Build and Verify the Setup**  
