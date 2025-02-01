@@ -380,9 +380,9 @@ def create_counter(name):
 ```
 - This makes the code cleaner and reusable.
 
-## Your tasks
+## **Your tasks**
 
-## **Task Overview**
+### **Task Overview**
 Each **student** will be responsible for implementing **one test case** and the corresponding function.
 
 | **Student #** | **Test Case Description** | **Target API Method** |
@@ -404,6 +404,7 @@ Each student **must:**
 2. **Implement the feature** inside `src/counter.py`
 3. **Run `pytest --cov=src` to verify the test case passes**
 4. **Submit a Pull Request (PR) to the team repository**
+5. All PRs should be opened on the main branch of the team repository
 
 ###  **Step 1: Create a Branch**
 ```bash
@@ -425,7 +426,7 @@ After completing all tasks in the lab, compile a **single report** documenting y
    - A link to your **Pull Request (PR)** for the TDD Lab.
    - A **copy of the test case** you wrote.
    - A **brief explanation** of what your test case does and how it contributes to the Counter API.
-   - A **summary of your Red-Green-Refactor process**, including:
+   - A **summary of your <span style="color:red;">RED</span>-<span style="color:green;">GREEN</span>-<span style="color:blue;">REFACTOR</span> process**, including:
      - The failing test (**<span style="color:red;">RED</span> Phase**).
      - The implemented feature that made the test pass (**<span style="color:green;">GREEN</span> Phase**).
      - Any code improvements or refactoring you made (**<span style="color:blue;">REFACTOR</span> Phase**).
