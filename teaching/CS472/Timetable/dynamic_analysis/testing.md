@@ -105,7 +105,6 @@ This lab is a continuation of the previous Git and GitHub lab. You will continue
 
 #### **3. Build and Verify the Setup**  
 - Navigate into the `test_coverage_lab` folder.  
-- Navigate into the `test_coverage_lab` folder.  
 - Install the required dependencies from `requirements.txt`:  
   ```bash
   cd test_coverage_lab
@@ -406,7 +405,6 @@ Each student **must:**
 ```bash
 git checkout -b add-test-<your-feature>
 ```
-
 
 ## **Final Report Submission (10 pts)**
 
