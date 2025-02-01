@@ -234,9 +234,9 @@ git checkout -b add-test-<your-test-name>
 ### 6. Lab Report Submission  
 
 As a second task in the report, include:  
-- ✅ **A link to your Pull Request.**  
-- ✅ **A copy of your test case.**  
-- ✅ **A brief explanation of what your test does and why it is important.**  
+- **A link to your Pull Request.**  
+- **A copy of your test case.**  
+- **A brief explanation of what your test does and why it is important.**  
 
 
 
@@ -291,8 +291,8 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 ```
 
 ## **Task 2.2. Introduction to TDD (Worked Example)**
-Before you begin writing your own test case, let’s go through a guided example.
-
+- You should read the instructions in the [README.md](https://github.com/UNLV-CS472-672/tdd) to ensure flask is running before they start testing.
+- Before you begin writing your own test case, let’s go through a guided example.
 - The provided `test_counter.py` file will initially be empty.
 
 ### **Step 1: Create the `src/counter.py` File**
@@ -339,7 +339,7 @@ Before you begin writing your own test case, let’s go through a guided example
 - Run `pytest --cov=src`
 - Expected failure:
 
-   <span style="color:red">**RED**</span> - AssertionError: 404 != 201
+   <span style="color:red">**RED**</span> - `AssertionError: 404 != 201`
 
 - The test fails because the endpoint does not exist yet.
 
