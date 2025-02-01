@@ -415,7 +415,7 @@ git checkout -b add-test-<your-feature>
 
 After completing all tasks in the lab, compile a **single report** documenting your work. This report should be **comprehensive** and should include **all tasks**, including **Test Coverage** and **Test-Driven Development (TDD)**.
 
-### ✅ **What to Include in Your Report:**
+### **What to Include in Your Report:**
 1. **Test Coverage Lab Results**
    - A screenshot or commit link showing your repository setup.
    - A summary of the **test coverage** before and after your test contributions.
@@ -431,7 +431,7 @@ After completing all tasks in the lab, compile a **single report** documenting y
      - The implemented feature that made the test pass (**<span style="color:green;">GREEN</span> Phase**).
      - Any code improvements or refactoring you made (**<span style="color:blue;">REFACTOR</span> Phase**).
 
-### 📤 **Submission Instructions**
+### **Submission Instructions**
 - Upload your final report as a **PDF** on Canvas.
 - Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.
 
