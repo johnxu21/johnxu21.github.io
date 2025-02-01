@@ -267,10 +267,10 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 
 ### **3. Install Dependencies & Verify Setup**
 - Navigate into the **`tdd_lab/`** folder and install the required dependencies:
-  ```bash
-    cd tdd_lab
-    pip install -r requirements.txt
-    ```
+```bash
+  cd tdd_lab
+  pip install -r requirements.txt
+```
 
 - Run pytest (even though the tests will be empty initially):
 ```bash
@@ -278,7 +278,7 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 ```
 - Expected output (since no tests exist yet):
 ```bash
-collected 0 items 
+  collected 0 items 
 ```
 - If any errors arise, refer to the [README.md](https://github.com/UNLV-CS472-672/tdd) file in the repository for troubleshooting.
 
@@ -300,6 +300,7 @@ Before you begin writing your own test case, let’s go through a guided example
   touch src/counter.py
 ```
 - Add the following code to `src/counter.py`:
+
 ```python
     """
     Counter API Implementation
@@ -308,30 +309,33 @@ Before you begin writing your own test case, let’s go through a guided example
 
     app = Flask(__name__)
 ```
+
 - Now the `counter.py` file exists, but it does nothing yet.
 
 ### **Step 2: Write a Failing Test**
 - Before implementing a new feature, write a test that fails.
 - Add the following test case in `tests/test_counter.py`:
+
 ```python
-import pytest
-from src import app
-from src import status
-
-@pytest.fixture()
-def client():
-    """Fixture for Flask test client"""
-    return app.test_client()
-
-@pytest.mark.usefixtures("client")
-class TestCounterEndpoints:
-    """Test cases for Counter API"""
-
-    def test_create_counter(self, client):
-        """It should create a counter"""
-        result = client.post('/counters/foo')
-        assert result.status_code == status.HTTP_201_CREATED
+    import pytest
+    from src import app
+    from src import status
+    
+    @pytest.fixture()
+    def client():
+        """Fixture for Flask test client"""
+        return app.test_client()
+    
+    @pytest.mark.usefixtures("client")
+    class TestCounterEndpoints:
+        """Test cases for Counter API"""
+    
+        def test_create_counter(self, client):
+            """It should create a counter"""
+            result = client.post('/counters/foo')
+            assert result.status_code == status.HTTP_201_CREATED
 ```
+
 - Run `pytest --cov=src`
 - Expected failure:
 
