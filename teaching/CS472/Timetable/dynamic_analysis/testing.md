@@ -404,7 +404,8 @@ Each student **must:**
 2. **Implement the feature** inside `src/counter.py`
 3. **Run `pytest --cov=src` to verify the test case passes**
 4. **Submit a Pull Request (PR) to the team repository**
-5. All PRs should be opened on the main branch of the team repository
+5. All PRs should be opened on the **main branch** of the team repository.
+6. Write a report for the activities.
 
 ###  **Step 1: Create a Branch**
 ```bash
