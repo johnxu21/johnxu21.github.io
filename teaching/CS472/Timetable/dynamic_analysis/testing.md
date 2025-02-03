@@ -416,7 +416,7 @@ git checkout -b add-test-<your-feature>
 ```
 ## **Final Report Submission (10 pts)**
 
-After completing all tasks in the lab, compile a **single report** documenting your work. This report should be **comprehensive** and should include **all tasks**, including **Test Coverage** and **Test-Driven Development (TDD)**.
+Each student must submit one **single report** that documents both the **Test Coverage** tasks and the **Test-Driven Development (TDD)** tasks. The report should be **comprehensive**, meaning it includes all the required details for both tasks in a single PDF.
 
 ### **What to Include in Your Report:**
 1. **Test Coverage Lab Results**
@@ -435,8 +435,11 @@ After completing all tasks in the lab, compile a **single report** documenting y
      - Any code improvements or refactoring you made (**<span style="color:blue;">REFACTOR</span> Phase**).
 
 ### **Submission Instructions**
-- Upload your final report as a **PDF** on Canvas.
+- Your report must include both Task 1 (Test Coverage) and Task 2 (TDD).
+- Do not submit separate reports for each task. Submit one PDF covering all required details.
 - Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.
+- Upload your final report as a **PDF** on Canvas.
+
 
 
 
