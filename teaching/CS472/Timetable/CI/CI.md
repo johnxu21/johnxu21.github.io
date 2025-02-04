@@ -244,56 +244,85 @@ git commit -m "Fixed Flake8 linting errors"
 git push origin main
 ```
 
-## **🚀 Refining CI with Branch Protection and PR Reviews**
-In this step, we will enforce **branch protection rules**, require passing CI checks before merging, and ensure **peer reviews** on pull requests to improve collaboration and maintain code quality.
+# **Writing & Automating Your Test Case in CI**
+
+Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next task is to **extend test coverage** by adding new test cases that will be automatically executed in CI.
 
 ---
 
-### **1. Enforcing Branch Protection Rules**
-To prevent merging untested or broken code into the `main` branch, follow these steps:
+# **Extending Tests and Automating CI**
 
-1. Go to your **GitHub repository**.
-2. Click on **"Settings"** → **"Branches"**.
-3. Under **Branch Protection Rules**, click **"Add Rule"**.
-4. In the **Branch name pattern**, enter `main`.
-5. Enable the following protections:
-   - ✅ **Require a pull request before merging**
-   - ✅ **Require status checks to pass before merging** (select your CI workflow)
-   - ✅ **Require branches to be up to date before merging**
-   - ✅ **Include administrators** (optional)
-6. Click **"Create"** to enforce these rules.
+## **Task Overview**
+In this step, you will **extend test coverage** by implementing new test cases that build upon the work done in the Testing Lab. Your goal is to **write and automate these new tests** in GitHub Actions, ensuring they run successfully as part of the CI pipeline.
 
-Now, any new code must pass the CI checks **before** being merged.
+**Important:**  
+- You **do not** need to modify the `counter.py` API implementation unless you are performing **necessary refactorings** to make your tests pass.
+- The API is largely complete from the Testing Lab. Focus on **adding new test cases** and ensuring they are properly automated in CI.
 
 ---
 
-### **2. Requiring CI Checks Before Merging**
-Once branch protection is enabled:
-- ✅ **Pull requests cannot be merged unless CI checks pass**.
-- ❌ **If tests fail**, contributors must fix them before merging.
-- 🔄 **If the `main` branch has updates**, contributors must **rebase or merge** to ensure compatibility.
+## **Test Case Assignments**
+Each student will extend the Counter API by implementing and testing new features beyond the basics covered in the Testing Lab.
+
+| **Student #** | **New Test Case Description** | **Target API Method** |
+|--------------|------------------------------|-----------------------|
+| **Student 1** | Get total count of all counters | `GET /counters/total` |
+| **Student 2** | Retrieve the top N highest counters | `GET /counters/top/<n>` |
+| **Student 3** | Retrieve the top N lowest counters | `GET /counters/bottom/<n>` |
+| **Student 4** | Set a counter to a specific value | `PUT /counters/<name>/set/<value>` |
+| **Student 5** | Ensure setting a counter to a negative value is not allowed | `PUT /counters/<name>/set/<value>` |
+| **Student 6** | Reset a single counter | `POST /counters/<name>/reset` |
+| **Student 7** | Return an error when resetting a non-existent counter | `POST /counters/<name>/reset` |
+| **Student 8** | Return a count of how many counters exist | `GET /counters/count` |
+| **Student 9** | Retrieve counters with values greater than a given threshold | `GET /counters/greater/<threshold>` |
+| **Student 10** | Retrieve counters with values less than a given threshold | `GET /counters/less/<threshold>` |
+| **Student 11** | Validate counter names (e.g., prevent special characters) | `POST /counters/<name>` |
 
 ---
 
-### **3. Enforcing Peer Code Reviews**
-Code reviews help maintain high-quality contributions. For this lab, each student **must review at least one pull request (PR)** before merging. However, since the changes are minimal, students can approve PRs with a simple comment.
+## **🛠 Steps to Implement Your Test Case**
 
-#### **Reviewing a PR**
-1. Click on the **PR** you want to review.
-2. Go to the **"Files changed"** tab to inspect the code.
-3. Click **"Review changes"**.
-4. Write a comment in the review box. For this lab, simply write: "**LGTM (Looks Good To Me)** 👍"
+### **1. Assign Test Cases**
+- Coordinate with your team to ensure each student implements a **different test case** from the list above.
 
-5. Click **"Approve"** and **Submit Review**.
-6. Once approved and CI checks pass, the author can merge the PR.
-
-**⚠️ Note:** In the **MVP phase**, "LGTM" alone will **not** be allowed—students must provide meaningful feedback.
 ---
 
-### **4. Submitting a Pull Request**
-Now that branch protection is enabled, follow these steps to **submit and review a PR**:
+### **2. Write the Test Case**
+- Open `tests/test_counter.py` and add your assigned test case.
+- Follow the same structure you used in the **Testing Lab**, ensuring:
+  - **Proper function documentation**
+  - **Use of pytest fixtures for the test client**
+  - **Assertions for both status codes and response content**
 
-1. Push your branch to GitHub:
-```bash
-git push origin <your-branch>
+**Example Test Case Format**
+```python
+# ===========================
+# Test: Retrieve total count of all counters
+# Author: Jane Doe
+# Date: 2025-02-05
+# Description: Ensures the API returns the correct total count of all counters.
+# ===========================
+
+def test_get_total_counters(client):
+    """Test retrieving the total count of all counters"""
+    client.post("/counters/test1")  # Create a test counter
+    client.post("/counters/test2")  # Create another counter
+    response = client.get("/counters/total")  # Fetch total count
+    
+    # Assertions: Validate response
+    assert response.status_code == 200
+    assert response.get_json() == {"total": 2}
 ```
+
+### **3. Commit and Push Your Changes**
+Once you have added your test case, create a new branch and follow your regular Git workflow to commit and push the changes to your **forked** team repository.
+
+- **Create a new branch** following your team’s naming conventions (e.g., `add-test-total-counters`).
+- **Commit your test case** to `tests/test_counter.py`.
+- **Push your changes** to your forked repository.
+
+Once pushed, you are ready to submit a **Pull Request (PR)**.
+
+### **4. Submit a Pull Request**
+
+### **5. Verify CI Automation**
