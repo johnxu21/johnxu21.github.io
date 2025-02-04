@@ -171,19 +171,19 @@ In this task, you will improve test coverage by writing new test cases. All work
 ### **2. Assigning Test Cases**  
 Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented:  
 
-| **Test Number** | **Description**                          | **Target Method**             |
+| **Test Number** | **Description**                          | **Target Method**            |
 |---------------|----------------------------------|------------------------------|
-| **Student 1**  | Test account serialization         | `to_dict()`                   |
-| **Student 2**  | Test invalid email input          | `validate_email()`            |
-| **Student 3**  | Test missing required fields      | `Account() initialization`    |
-| **Student 4**  | Test positive deposit            | `deposit()`                   |
+| **Student 1**  | Test account serialization         | `to_dict()`                  |
+| **Student 2**  | Test invalid email input          | `validate_email()`           |
+| **Student 3**  | Test missing required fields      | `Account() initialization`   |
+| **Student 4**  | Test positive deposit            | `deposit()`                  |
 | **Student 5**  | Test deposit with zero/negative values | `deposit()`              |
-| **Student 6**  | Test valid withdrawal            | `withdraw()`                  |
+| **Student 6**  | Test valid withdrawal            | `withdraw()`                 |
 | **Student 7**  | Test withdrawal with insufficient funds | `withdraw()`            |
 | **Student 8**  | Test password hashing            | `set_password()` / `check_password()` |
-| **Student 9**  | Test role assignment             | `change_role()`               |
-| **Student 10** | Test invalid role assignment     | `change_role()`               |
-| **Student 11** | Test deleting an account        | `delete()`                    |
+| **Student 9**  | Test account deactivation/reactivation             | deactivate() / reactivate()  |
+| **Student 10** | Test email uniqueness enforcement     | `validate_unique_email()`    |
+| **Student 11** | Test deleting an account        | `delete()`                   |
 
 Your team should discuss who will implement each test.
 
@@ -305,12 +305,12 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 - Add the following code to `src/counter.py`:
 
 ```python
-    """
-    Counter API Implementation
-    """
-    from flask import Flask
+"""
+Counter API Implementation
+"""
+from flask import Flask
 
-    app = Flask(__name__)
+app = Flask(__name__)
 ```
 
 - Now the `counter.py` file exists, but it does nothing yet.
@@ -320,23 +320,23 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 - Add the following test case in `tests/test_counter.py`:
 
 ```python
-    import pytest
-    from src import app
-    from src import status
-    
-    @pytest.fixture()
-    def client():
-        """Fixture for Flask test client"""
-        return app.test_client()
-    
-    @pytest.mark.usefixtures("client")
-    class TestCounterEndpoints:
-        """Test cases for Counter API"""
-    
-        def test_create_counter(self, client):
-            """It should create a counter"""
-            result = client.post('/counters/foo')
-            assert result.status_code == status.HTTP_201_CREATED
+import pytest
+from src import app
+from src import status
+
+@pytest.fixture()
+def client():
+    """Fixture for Flask test client"""
+    return app.test_client()
+
+@pytest.mark.usefixtures("client")
+class TestCounterEndpoints:
+    """Test cases for Counter API"""
+
+    def test_create_counter(self, client):
+        """It should create a counter"""
+        result = client.post('/counters/foo')
+        assert result.status_code == status.HTTP_201_CREATED
 ```
 
 - Run `pytest --cov=src`
@@ -349,15 +349,15 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 ### **Step 3: Implement the Minimum Code**
 - Modify `src/counter.py` to create the missing Flask app. Add the code below:
 ```python
-    COUNTERS = {}
+COUNTERS = {}
 
-    @app.route('/counters/<name>', methods=['POST'])
-    def create_counter(name):
-        """Create a counter"""
-        if name in COUNTERS:
-            return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
-        COUNTERS[name] = 0
-        return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
+@app.route('/counters/<name>', methods=['POST'])
+def create_counter(name):
+    """Create a counter"""
+    if name in COUNTERS:
+        return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
+    COUNTERS[name] = 0
+    return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 ```
 - Run `pytest --cov=src`
 
