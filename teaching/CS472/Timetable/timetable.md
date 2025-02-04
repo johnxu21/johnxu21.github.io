@@ -117,33 +117,33 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">03</td>
 <td style="border: 1px solid black;">Tu 02/04 </td>
-<td style="border: 1px solid black;">[L] Software Testing </td>
-<td style="border: 1px solid black;">Thu 02/06 </td>
 <td style="border: 1px solid black;">[T] Continuous Integration </td>
+<td style="border: 1px solid black;">Thu 02/06 </td>
+<td style="border: 1px solid black;">[L] Continuous Integration </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Tu 02/11</td>
-<td style="border: 1px solid black;">[L] Continuous Integration</td>
-<td style="border: 1px solid black;">Thu 02/13 </td>
 <td style="border: 1px solid black;">[T] Application of GenAI in SE</td>
+<td style="border: 1px solid black;">Thu 02/13 </td>
+<td style="border: 1px solid black;">[L] Application of GenAI in SE</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Tu 02/18</td>
-<td style="border: 1px solid black;">[L] Application of GenAI in SE</td>
+<td style="border: 1px solid black;">[L] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Thu 02/20 </td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture </td>
+<td style="border: 1px solid black;">[L] Free Project work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/25</td>
-<td style="border: 1px solid black;">[L] Free Project work</td>
-<td style="border: 1px solid black;">Thu 02/27 </td>
 <td style="border: 1px solid black;">[T] Survey results presentation</td>
+<td style="border: 1px solid black;">Thu 02/27 </td>
+<td style="border: 1px solid black;">[L] Free Project work</td>
 </tr>
 
 <tr>
