@@ -308,7 +308,8 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 """
 Counter API Implementation
 """
-from flask import Flask
+from flask import Flask, jsonify
+from . import status
 
 app = Flask(__name__)
 ```
@@ -348,6 +349,7 @@ class TestCounterEndpoints:
 
 ### **Step 3: Implement the Minimum Code**
 - Modify `src/counter.py` to create the missing Flask app. Add the code below:
+
 ```python
 COUNTERS = {}
 
@@ -372,6 +374,7 @@ def counter_exists(name):
     return name in COUNTERS
 ```
 - Now update the API to use this function:
+
 ```python
 @app.route('/counters/<name>', methods=['POST'])
 def create_counter(name):
@@ -381,6 +384,7 @@ def create_counter(name):
     COUNTERS[name] = 0
     return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 ```
+
 - This makes the code cleaner and reusable.
 
 ## **Your tasks**
