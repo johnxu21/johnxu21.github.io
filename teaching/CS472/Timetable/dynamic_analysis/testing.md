@@ -225,6 +225,9 @@ git checkout -b add-test-<your-test-name>
 ```
 - Commit your changes
 - Push to your forked repository
+```bash
+git push -u origin <your-branch-name>
+```
 
 ### **5. Submitting a Pull Request**
 - Open a Pull Request (PR) from your branch to the team repository.
@@ -417,7 +420,9 @@ Each student **must:**
 ###  **Step 1: Create a Branch**
 ```bash
 git checkout -b add-test-<your-feature>
+git push -u origin <your-branch-name>
 ```
+
 ## **Final Report Submission (10 pts)**
 
 Each student must submit one **single report** that documents both the **Test Coverage** tasks and the **Test-Driven Development (TDD)** tasks. The report should be **comprehensive**, meaning it includes all the required details for both tasks in a single PDF.
