@@ -51,9 +51,9 @@ height:30px;" value="ChatGPT" />
 Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
-1. Class overview [PDF](ClassOverview.pdf) [**last updated 01/20/2025**]
-2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/29/2024]
-3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 09/11/2024]
+1. Class overview [PDF](ClassOverview.pdf) [last updated 01/20/2025]
+2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/29/2025]
+3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 01/28/2025]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/18/2024]
 5. Using Generative AI in Software Engineering [PPTX](LLM.pptx) [last updated 09/25/2024]
 6. Object-oriented design 
@@ -117,33 +117,33 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">03</td>
 <td style="border: 1px solid black;">Tu 02/04 </td>
-<td style="border: 1px solid black;">[L] Software Testing </td>
-<td style="border: 1px solid black;">Thu 02/06 </td>
 <td style="border: 1px solid black;">[T] Continuous Integration </td>
+<td style="border: 1px solid black;">Thu 02/06 </td>
+<td style="border: 1px solid black;">[L] Continuous Integration </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Tu 02/11</td>
-<td style="border: 1px solid black;">[L] Continuous Integration</td>
-<td style="border: 1px solid black;">Thu 02/13 </td>
 <td style="border: 1px solid black;">[T] Application of GenAI in SE</td>
+<td style="border: 1px solid black;">Thu 02/13 </td>
+<td style="border: 1px solid black;">[L] Application of GenAI in SE</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Tu 02/18</td>
-<td style="border: 1px solid black;">[L] Application of GenAI in SE</td>
+<td style="border: 1px solid black;">[L] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Thu 02/20 </td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture </td>
+<td style="border: 1px solid black;">[L] Free Project work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/25</td>
-<td style="border: 1px solid black;">[L] Free Project work</td>
-<td style="border: 1px solid black;">Thu 02/27 </td>
 <td style="border: 1px solid black;">[T] Survey results presentation</td>
+<td style="border: 1px solid black;">Thu 02/27 </td>
+<td style="border: 1px solid black;">[L] Free Project work</td>
 </tr>
 
 <tr>
