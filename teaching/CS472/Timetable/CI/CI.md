@@ -57,7 +57,7 @@ This **Continuous Integration (CI) Lab** builds upon the work done in the **Test
 
 CI ensures that all code changes are **continuously tested** and **validated** before being merged into the repository. You will work collaboratively, submitting **Pull Requests (PRs)** to incorporate your modifications while ensuring the test suite runs successfully in an **automated CI pipeline**.
 
-## ** Learning Outcomes**
+## **Learning Outcomes**
 By completing this lab, you will be able to:
 
 - **Set up a GitHub Actions workflow** for Continuous Integration (CI).  
