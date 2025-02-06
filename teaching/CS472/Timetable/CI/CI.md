@@ -60,20 +60,26 @@ By the end of this lab, you will have a **fully automated CI pipeline** that run
 ## ** Learning Outcomes**
 By completing this lab, you will be able to:
 
-✔️ **Set up a GitHub Actions workflow** for Continuous Integration (CI).  
-✔️ **Automate test execution** for your repository using GitHub Actions.  
-✔️ **Enforce code quality** with Flake8 for Python linting.  
-✔️ **Extend test coverage** by adding new test cases.  
-✔️ **Resolve merge conflicts** and collaborate efficiently using GitHub.
+- **Set up a GitHub Actions workflow** for Continuous Integration (CI).  
+-  **Automate test execution** for your repository using GitHub Actions.  
+-  **Enforce code quality** with Flake8 for Python linting.  
+-  **Extend test coverage** by adding new test cases.  
+-  **Resolve merge conflicts** and collaborate efficiently using GitHub.
 
 ---
 
-## **📁 Repository Setup**
+## ** By the end of this lab, you will:**
+- Add **meaningful assertions** to enhance existing test cases.  
+- Submit a **Pull Request (PR)** to integrate your changes.  
+- Ensure your tests **run successfully** in the CI workflow.  
+- Collaborate effectively using GitHub.
+
+## ** Repository Setup**
 To begin, download the **starter files** from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) and copy them into the local copy of your fork of the team repository.
 
 # **🔧 Step 1: Setting Up GitHub Actions for Continuous Integration (CI)**
 
-## **📌 Overview**
+## ** Overview**
 In this step, you will create a **GitHub Actions workflow** to automatically **run tests and enforce code quality checks** whenever changes are pushed to the repository.
 
 GitHub Actions enables automation for:
@@ -267,6 +273,11 @@ Now that you have successfully configured **Continuous Integration (CI) with Git
 Each student will **modify one test case** in `tests/test_counter.py` by adding **one meaningful assertion**.  
 This helps improve test coverage and ensures our **CI workflow** runs effectively.  
 
+## **Key Points to Remember**
+- **You do NOT need to modify `counter.py`**—the API is already implemented.  
+- **All test cases are written**—your task is to **add assertions** to improve validation.  
+- You **must submit a Pull Request** with your changes.  
+- Work **collaboratively**—review each other’s work and resolve merge conflicts.
 ---
 
 ## Assertion Assignments
@@ -287,4 +298,19 @@ This helps improve test coverage and ensures our **CI workflow** runs effectivel
 
 ---
 
-### Now, proceed with modifying your assigned test case and submit your PR!
+## 📝 **What to Include in Your Report**
+
+### ** Continuous Integration (CI) Lab Results**
+- A link to your **Pull Request (PR)** for the CI Lab.
+- A **copy of the assertion** you added to your assigned test case.
+- A **brief explanation** of what your assertion does and how it improves test quality.
+- A **summary of the CI results**, including:
+  - ✅ Whether your test passed after the modification.
+  - ❌ Any CI failures and how you fixed them.
+  - Any additional improvements or refactoring needed.
+
+---
+
+## 📤 **Submission Instructions**
+- Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.  
+- Upload your final report as a **PDF on Canvas**.
