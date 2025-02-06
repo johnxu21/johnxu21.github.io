@@ -53,9 +53,9 @@ height:30px;" value="CHAT GPT" />
 
 
 ## **📢 Introduction**
-This **Continuous Integration (CI) Lab** builds upon the work done in the **[Testing lab](../dynamic_analysis)**. In this lab, you will extend your testing process by integrating **GitHub Actions** to automate test execution and enforce code quality checks. CI ensures that code changes are **continuously tested** and **validated** before being merged into the main repository.
+This **Continuous Integration (CI) Lab** builds upon the work done in the **Testing Lab**. In this lab, you will extend the testing process by **enhancing existing test cases** with additional assertions and integrating **GitHub Actions** to automate test execution.  
 
-By the end of this lab, you will have a **fully automated CI pipeline** that runs your test suite and checks for code quality issues **whenever a change is pushed or a pull request is made**.
+CI ensures that all code changes are **continuously tested** and **validated** before being merged into the repository. You will work collaboratively, submitting **Pull Requests (PRs)** to incorporate your modifications while ensuring the test suite runs successfully in an **automated CI pipeline**.
 
 ## ** Learning Outcomes**
 By completing this lab, you will be able to:
@@ -77,7 +77,7 @@ By completing this lab, you will be able to:
 ## ** Repository Setup**
 To begin, download the **starter files** from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) and copy them into the local copy of your fork of the team repository.
 
-# **🔧 Step 1: Setting Up GitHub Actions for Continuous Integration (CI)**
+# **Step 1: Setting Up GitHub Actions for Continuous Integration (CI)**
 
 ## ** Overview**
 In this step, you will create a **GitHub Actions workflow** to automatically **run tests and enforce code quality checks** whenever changes are pushed to the repository.
@@ -142,8 +142,8 @@ git push origin main
 1. Go to your **GitHub repository**.
 2. Click on the **"Actions"** tab.
 3. You should see your **CI Workflow** listed.
-4. ✅ If successful, you should see a **green checkmark** indicating the workflow has run successfully.
-5. ❌ **If you see an error (red ❌ or failure message):**
+4. If successful, you should see a **green checkmark** indicating the workflow has run successfully.
+5. **If you see an error (red ❌ or failure message):**
    - Click on the failed workflow run to view the error logs.
    - Read the logs carefully to identify what went wrong.
    - Common issues and fixes:
@@ -189,7 +189,7 @@ git push origin main
 ### **4. Verify Your Tests Run in CI**
 1. Go to your **GitHub repository**.
 2. Click on the **"Actions"** tab and select the latest workflow run.
-3. ✅ **If successful, you should see output similar to:**
+3. **If successful, you should see output similar to:**
 
 ```diff
 ==================== test session starts ====================
@@ -197,7 +197,7 @@ collected X items
 ... (list of passing tests)
 ================== coverage report ===================
 ```
-4.  ❌ **If Errors Occur:**
+4.  **If Errors Occur:**
 - Click on the **failed workflow run** in the **"Actions"** tab.
 - Check the **error logs** to identify the issue.
 - Ensure all dependencies are correctly installed in `requirements.txt`.
@@ -224,9 +224,9 @@ Modify your `.github/workflows/ci.yml` file to add a **linting step**:
 ## **2. Understanding the Linting Step**
 - **Install Flake8**: Ensures that Flake8 is available in the CI environment.
 - **Run Flake8 Linting**: Checks for:
-  - 🔴 **Syntax errors** (`E9`)
-  - ⚠️ **Undefined names** (`F63`, `F7`, `F82`)
-  - 📝 **General code style issues**
+  - **Syntax errors** (`E9`)
+  - ⚠**Undefined names** (`F63`, `F7`, `F82`)
+  - **General code style issues**
 
 ---
 
@@ -298,7 +298,7 @@ This helps improve test coverage and ensures our **CI workflow** runs effectivel
 
 ---
 
-## 📝 **What to Include in Your Report**
+## **What to Include in Your Report**
 
 ### ** Continuous Integration (CI) Lab Results**
 - A link to your **Pull Request (PR)** for the CI Lab.
@@ -311,6 +311,6 @@ This helps improve test coverage and ensures our **CI workflow** runs effectivel
 
 ---
 
-## 📤 **Submission Instructions**
+## **Submission Instructions**
 - Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.  
 - Upload your final report as a **PDF on Canvas**.
