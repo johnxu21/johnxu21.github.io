@@ -201,11 +201,13 @@ collected X items
 ... (list of passing tests)
 ================== coverage report ===================
 ```
+
 - **If Errors Occur:**
 - Click on the **failed workflow run** in the **"Actions"** tab.
 - Check the **error logs** to identify the issue.
 - Ensure all dependencies are correctly installed in `requirements.txt`.
 - Fix any **failing tests** and push the changes:
+
 ```bash
 git add .
 git commit -m "Fixed failing tests"
@@ -231,8 +233,6 @@ Modify your `.github/workflows/ci.yml` file to add a **linting step**:
   - **Syntax errors** (`E9`)
   - ⚠**Undefined names** (`F63`, `F7`, `F82`)
   - **General code style issues**
-
----
 
 ### **3. Commit and Push the Changes**
 After adding the Flake8 linting step, commit and push your changes:
@@ -307,8 +307,6 @@ This helps improve test coverage and ensures our **CI workflow** runs effectivel
   - Whether your test passed after the modification.
   - Any CI failures and how you fixed them.
   - Any additional improvements or refactoring needed.
-
-
 
 ## **Submission Instructions**
 - Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.  
