@@ -66,7 +66,6 @@ By completing this lab, you will be able to:
 -  **Extend test coverage** by adding new test cases.  
 -  **Resolve merge conflicts** and collaborate efficiently using GitHub.
 
----
 
 ## ** By the end of this lab, you will:**
 - Add **meaningful assertions** to enhance existing test cases.  
@@ -87,7 +86,6 @@ GitHub Actions enables automation for:
 - Checking for **code style violations** using **Flake8**.  
 - Ensuring all test cases pass before merging changes.  
 
----
 
 ## **1. Creating a GitHub Actions Workflow File**
 1. Navigate to the **root directory** of your repository.
@@ -143,7 +141,7 @@ git push origin main
 2. Click on the **"Actions"** tab.
 3. You should see your **CI Workflow** listed.
 4. If successful, you should see a **green checkmark** indicating the workflow has run successfully.
-5. **If you see an error (red ❌ or failure message):**
+5. **If you see an error:**
    - Click on the failed workflow run to view the error logs.
    - Read the logs carefully to identify what went wrong.
    - Common issues and fixes:
@@ -242,8 +240,8 @@ git push origin main
 ### **4. Verify Linting in GitHub Actions**
 1. Go to your **GitHub repository**.
 2. Click on the **"Actions"** tab and select the latest workflow run.
-3. ✅ **If successful**, the workflow will complete without issues.
-4. ❌ **If errors occur**, Flake8 will list the violations. Fix them and push the changes.
+3. **If successful**, the workflow will complete without issues.
+4. **If errors occur**, Flake8 will list the violations. Fix them and push the changes.
 
 ```bash
 # Example: Fix Flake8 issues, then commit and push
@@ -256,8 +254,6 @@ git push origin main
 
 Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next task is to **extend test coverage** by adding new test cases that will be automatically executed in CI.
 
----
-
 # **Extending CI: Adding Assertions to Existing Tests**
 Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next step is to **collaborate with your team** to extend test coverage by **adding new assertions** to existing test cases.
 
@@ -267,18 +263,16 @@ Now that you have successfully configured **Continuous Integration (CI) with Git
 - **All test cases are already written**—you only **add assertions** to strengthen them.  
 - Your goal is to **submit a pull request (PR)** with **one assertion**, ensuring your test runs in CI.
 
----
 
 ## What You Will Do  
 Each student will **modify one test case** in `tests/test_counter.py` by adding **one meaningful assertion**.  
 This helps improve test coverage and ensures our **CI workflow** runs effectively.  
 
 ## **Key Points to Remember**
-- **You do NOT need to modify `counter.py`**—the API is already implemented.  
-- **All test cases are written**—your task is to **add assertions** to improve validation.  
+- **You do NOT need to modify `counter.py`** —the API is already implemented.  
+- **All test cases are written** — your task is to **add assertions** to improve validation.  
 - You **must submit a Pull Request** with your changes.  
-- Work **collaboratively**—review each other’s work and resolve merge conflicts.
----
+- Work **collaboratively** — resolve merge conflicts.
 
 ## Assertion Assignments
 
@@ -296,7 +290,6 @@ This helps improve test coverage and ensures our **CI workflow** runs effectivel
 | **Student 10** | Retrieve counters less than a threshold | `GET /counters/less/<threshold>` | Ensure threshold is **exclusive** (values must be strictly less) |
 | **Student 11** | Validate counter names (e.g., prevent special characters) | `POST /counters/<name>` | Ensure error message contains `"Invalid counter name"` |
 
----
 
 ## **What to Include in Your Report**
 
@@ -305,11 +298,11 @@ This helps improve test coverage and ensures our **CI workflow** runs effectivel
 - A **copy of the assertion** you added to your assigned test case.
 - A **brief explanation** of what your assertion does and how it improves test quality.
 - A **summary of the CI results**, including:
-  - ✅ Whether your test passed after the modification.
-  - ❌ Any CI failures and how you fixed them.
+  - Whether your test passed after the modification.
+  - Any CI failures and how you fixed them.
   - Any additional improvements or refactoring needed.
 
----
+
 
 ## **Submission Instructions**
 - Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.  
