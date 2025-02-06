@@ -52,7 +52,7 @@ height:30px;" value="CHAT GPT" />
 ## **This individual assignment is due Feb 12th, 2025**
 
 
-## **📢 Introduction**
+## **Introduction**
 This **Continuous Integration (CI) Lab** builds upon the work done in the **Testing Lab**. In this lab, you will extend the testing process by **enhancing existing test cases** with additional assertions and integrating **GitHub Actions** to automate test execution.  
 
 CI ensures that all code changes are **continuously tested** and **validated** before being merged into the repository. You will work collaboratively, submitting **Pull Requests (PRs)** to incorporate your modifications while ensuring the test suite runs successfully in an **automated CI pipeline**.
@@ -263,39 +263,25 @@ Now that you have successfully configured **Continuous Integration (CI) with Git
 # **Extending CI: Adding Assertions to Existing Tests**
 Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next step is to **collaborate with your team** to extend test coverage by **adding new assertions** to existing test cases.
 
-
-## Key Points to Remember
-- You **do NOT** need to modify `counter.py`.  
-- **All test cases are already written**—you only **add assertions** to strengthen them.  
-- Your goal is to **submit a pull request (PR)** with **one assertion**, ensuring your test runs in CI.
-
-
 ## What You Will Do  
 Each student will **modify one test case** in `tests/test_counter.py` by adding **one meaningful assertion**.  
 This helps improve test coverage and ensures our **CI workflow** runs effectively.  
 
 ## **Key Points to Remember**
-- **You do NOT need to modify `counter.py`** —the API is already implemented.  
-- **All test cases are written** — your task is to **add assertions** to improve validation.  
-- You **must submit a Pull Request** with your changes.  
-- Work **collaboratively** — resolve merge conflicts.
+- You do NOT need to modify `counter.py` —the API is already implemented.  
+- All test cases are written — your task is to add assertions to improve validation.  
+- You must submit a Pull Request with your changes.  
+- Work collaboratively — resolve merge conflicts.
 
-## Assertion Assignments
+## Finding Your Assigned Task
+Each student has been assigned a specific assertion to add in the `tests/test_counter.py` file.  
+Your assigned test case is already labeled in the file with:
 
-| **Student #** | **Test Case Description** | **Target API Method** | **Assertion to Add** |
-|--------------|------------------------------|-----------------------|----------------------|
-| **Student 1** | Get total count of all counters | `GET /counters/total` | Ensure total is an `int` and matches the expected sum |
-| **Student 2** | Retrieve the top N highest counters | `GET /counters/top/<n>` | Ensure exactly `n` counters are returned, and they are sorted correctly |
-| **Student 3** | Retrieve the top N lowest counters | `GET /counters/bottom/<n>` | Ensure the lowest counter has value `0`, and it appears in the response |
-| **Student 4** | Set a counter to a specific value | `PUT /counters/<name>/set/<value>` | Ensure setting a counter to the same value does not alter it |
-| **Student 5** | Ensure setting a counter to a negative value is not allowed | `PUT /counters/<name>/set/<value>` | Ensure setting a counter to zero is allowed, but not negative values |
-| **Student 6** | Reset a single counter | `POST /counters/<name>/reset` | Ensure the counter still exists after reset (value becomes 0) |
-| **Student 7** | Return an error when resetting a non-existent counter | `POST /counters/<name>/reset` | Ensure it does **not** create the counter and returns `"not found"` |
-| **Student 8** | Return a count of how many counters exist | `GET /counters/count` | Ensure the count is an `int` and matches expected value |
-| **Student 9** | Retrieve counters greater than a threshold | `GET /counters/greater/<threshold>` | Ensure threshold is **exclusive** (values must be strictly greater) |
-| **Student 10** | Retrieve counters less than a threshold | `GET /counters/less/<threshold>` | Ensure threshold is **exclusive** (values must be strictly less) |
-| **Student 11** | Validate counter names (e.g., prevent special characters) | `POST /counters/<name>` | Ensure error message contains `"Invalid counter name"` |
-
+- A label such as "Student 1", "Student 2", etc.  
+- A description of the test case  
+- A `TODO` comment specifying the assertion you need to add  
+- Coordinate within your group to decide which student takes each labeled task. 
+- Submit a PR to integrate your modification into the team repository
 
 ## **What to Include in Your Report**
 
