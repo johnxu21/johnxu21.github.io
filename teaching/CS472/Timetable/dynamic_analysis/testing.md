@@ -181,7 +181,7 @@ Your team will divide the uncovered code areas among students. Below are suggest
 | **Student 6**  | Test valid withdrawal            | `withdraw()`                 |
 | **Student 7**  | Test withdrawal with insufficient funds | `withdraw()`            |
 | **Student 8**  | Test password hashing            | `set_password()` / `check_password()` |
-| **Student 9**  | Test account deactivation/reactivation             | deactivate() / reactivate()  |
+| **Student 9**  | Test account deactivation/reactivation             | `deactivate() / reactivate()`  |
 | **Student 10** | Test email uniqueness enforcement     | `validate_unique_email()`    |
 | **Student 11** | Test deleting an account        | `delete()`                   |
 

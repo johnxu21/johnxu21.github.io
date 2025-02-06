@@ -59,11 +59,13 @@ By the end of this lab, you will have a **fully automated CI pipeline** that run
 
 ## ** Learning Outcomes**
 By completing this lab, you will be able to:
+
 ✔️ **Set up a GitHub Actions workflow** for Continuous Integration (CI).  
 ✔️ **Automate test execution** for your repository using GitHub Actions.  
 ✔️ **Enforce code quality** with Flake8 for Python linting.  
 ✔️ **Extend test coverage** by adding new test cases.  
 ✔️ **Resolve merge conflicts** and collaborate efficiently using GitHub.
+
 ---
 
 ## **📁 Repository Setup**
@@ -250,79 +252,39 @@ Now that you have successfully configured **Continuous Integration (CI) with Git
 
 ---
 
-# **Extending Tests and Automating CI**
+# **Extending CI: Adding Assertions to Existing Tests**
+Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next step is to **collaborate with your team** to extend test coverage by **adding new assertions** to existing test cases.
 
-## **Task Overview**
-In this step, you will **extend test coverage** by implementing new test cases that build upon the work done in the Testing Lab. Your goal is to **write and automate these new tests** in GitHub Actions, ensuring they run successfully as part of the CI pipeline.
 
-**Important:**  
-- You **do not** need to modify the `counter.py` API implementation unless you are performing **necessary refactorings** to make your tests pass.
-- The API is largely complete from the Testing Lab. Focus on **adding new test cases** and ensuring they are properly automated in CI.
-
----
-
-## **Test Case Assignments**
-Each student will extend the Counter API by implementing and testing new features beyond the basics covered in the Testing Lab.
-
-| **Student #** | **New Test Case Description** | **Target API Method** |
-|--------------|------------------------------|-----------------------|
-| **Student 1** | Get total count of all counters | `GET /counters/total` |
-| **Student 2** | Retrieve the top N highest counters | `GET /counters/top/<n>` |
-| **Student 3** | Retrieve the top N lowest counters | `GET /counters/bottom/<n>` |
-| **Student 4** | Set a counter to a specific value | `PUT /counters/<name>/set/<value>` |
-| **Student 5** | Ensure setting a counter to a negative value is not allowed | `PUT /counters/<name>/set/<value>` |
-| **Student 6** | Reset a single counter | `POST /counters/<name>/reset` |
-| **Student 7** | Return an error when resetting a non-existent counter | `POST /counters/<name>/reset` |
-| **Student 8** | Return a count of how many counters exist | `GET /counters/count` |
-| **Student 9** | Retrieve counters with values greater than a given threshold | `GET /counters/greater/<threshold>` |
-| **Student 10** | Retrieve counters with values less than a given threshold | `GET /counters/less/<threshold>` |
-| **Student 11** | Validate counter names (e.g., prevent special characters) | `POST /counters/<name>` |
+## Key Points to Remember
+- You **do NOT** need to modify `counter.py`.  
+- **All test cases are already written**—you only **add assertions** to strengthen them.  
+- Your goal is to **submit a pull request (PR)** with **one assertion**, ensuring your test runs in CI.
 
 ---
 
-## **🛠 Steps to Implement Your Test Case**
-
-### **1. Assign Test Cases**
-- Coordinate with your team to ensure each student implements a **different test case** from the list above.
+## What You Will Do  
+Each student will **modify one test case** in `tests/test_counter.py` by adding **one meaningful assertion**.  
+This helps improve test coverage and ensures our **CI workflow** runs effectively.  
 
 ---
 
-### **2. Write the Test Case**
-- Open `tests/test_counter.py` and add your assigned test case.
-- Follow the same structure you used in the **Testing Lab**, ensuring:
-  - **Proper function documentation**
-  - **Use of pytest fixtures for the test client**
-  - **Assertions for both status codes and response content**
+## Assertion Assignments
 
-**Example Test Case Format**
-```python
-# ===========================
-# Test: Retrieve total count of all counters
-# Author: Jane Doe
-# Date: 2025-02-05
-# Description: Ensures the API returns the correct total count of all counters.
-# ===========================
+| **Student #** | **Test Case Description** | **Target API Method** | **Assertion to Add** |
+|--------------|------------------------------|-----------------------|----------------------|
+| **Student 1** | Get total count of all counters | `GET /counters/total` | Ensure total is an `int` and matches the expected sum |
+| **Student 2** | Retrieve the top N highest counters | `GET /counters/top/<n>` | Ensure exactly `n` counters are returned, and they are sorted correctly |
+| **Student 3** | Retrieve the top N lowest counters | `GET /counters/bottom/<n>` | Ensure the lowest counter has value `0`, and it appears in the response |
+| **Student 4** | Set a counter to a specific value | `PUT /counters/<name>/set/<value>` | Ensure setting a counter to the same value does not alter it |
+| **Student 5** | Ensure setting a counter to a negative value is not allowed | `PUT /counters/<name>/set/<value>` | Ensure setting a counter to zero is allowed, but not negative values |
+| **Student 6** | Reset a single counter | `POST /counters/<name>/reset` | Ensure the counter still exists after reset (value becomes 0) |
+| **Student 7** | Return an error when resetting a non-existent counter | `POST /counters/<name>/reset` | Ensure it does **not** create the counter and returns `"not found"` |
+| **Student 8** | Return a count of how many counters exist | `GET /counters/count` | Ensure the count is an `int` and matches expected value |
+| **Student 9** | Retrieve counters greater than a threshold | `GET /counters/greater/<threshold>` | Ensure threshold is **exclusive** (values must be strictly greater) |
+| **Student 10** | Retrieve counters less than a threshold | `GET /counters/less/<threshold>` | Ensure threshold is **exclusive** (values must be strictly less) |
+| **Student 11** | Validate counter names (e.g., prevent special characters) | `POST /counters/<name>` | Ensure error message contains `"Invalid counter name"` |
 
-def test_get_total_counters(client):
-    """Test retrieving the total count of all counters"""
-    client.post("/counters/test1")  # Create a test counter
-    client.post("/counters/test2")  # Create another counter
-    response = client.get("/counters/total")  # Fetch total count
-    
-    # Assertions: Validate response
-    assert response.status_code == 200
-    assert response.get_json() == {"total": 2}
-```
+---
 
-### **3. Commit and Push Your Changes**
-Once you have added your test case, create a new branch and follow your regular Git workflow to commit and push the changes to your **forked** team repository.
-
-- **Create a new branch** following your team’s naming conventions (e.g., `add-test-total-counters`).
-- **Commit your test case** to `tests/test_counter.py`.
-- **Push your changes** to your forked repository.
-
-Once pushed, you are ready to submit a **Pull Request (PR)**.
-
-### **4. Submit a Pull Request**
-
-### **5. Verify CI Automation**
+### Now, proceed with modifying your assigned test case and submit your PR!
