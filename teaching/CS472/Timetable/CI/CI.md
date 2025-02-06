@@ -185,9 +185,9 @@ git push origin main
 ```
 
 ### **4. Verify Your Tests Run in CI**
-1. Go to your **GitHub repository**.
-2. Click on the **"Actions"** tab and select the latest workflow run.
-3. **If successful, you should see output similar to:**
+- Go to your **GitHub repository**.
+- Click on the **"Actions"** tab and select the latest workflow run.
+- **If successful, you should see output similar to:**
 
 ```diff
 ==================== test session starts ====================
@@ -195,7 +195,7 @@ collected X items
 ... (list of passing tests)
 ================== coverage report ===================
 ```
-4.  **If Errors Occur:**
+- **If Errors Occur:**
 - Click on the **failed workflow run** in the **"Actions"** tab.
 - Check the **error logs** to identify the issue.
 - Ensure all dependencies are correctly installed in `requirements.txt`.
