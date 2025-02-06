@@ -90,14 +90,17 @@ GitHub Actions enables automation for:
 ## **1. Creating a GitHub Actions Workflow File**
 1. Navigate to the **root directory** of your repository.
 2. Create the **workflow directory**:
-   ```bash
-   mkdir -p .github/workflows
-   ```
+
+```bash
+mkdir -p .github/workflows
+```
 3. Create the workflow configuration file:
-    ```bash
-    touch .github/workflows/ci.yml
-    ```
+
+```bash
+touch .github/workflows/ci.yml
+```
 4. Open the `ci.yml` file and add the following initial setup:
+
 ```yaml
 name: CI Workflow  # Name of the workflow
 
@@ -124,14 +127,17 @@ jobs:
 
 ## **3. Committing and Pushing the Workflow**
 ### **Add the workflow file to Git:**
+
 ```bash
 git add .github/workflows/ci.yml
 ```
 - Commit the changes:
+
 ```bash
 git commit -m "Added initial GitHub Actions workflow"
 ```
 - Push to the main repository:
+
 ```bash
 git push origin main
 ```
@@ -200,11 +206,11 @@ collected X items
 - Check the **error logs** to identify the issue.
 - Ensure all dependencies are correctly installed in `requirements.txt`.
 - Fix any **failing tests** and push the changes:
-   ```bash
-   git add .
-   git commit -m "Fixed failing tests"
-   git push origin main
-
+```bash
+git add .
+git commit -m "Fixed failing tests"
+git push origin main
+```
 ## **Next Step: Enforcing Code Quality with Flake8**
 Now that your tests are running in the CI workflow, the next step is to **enforce Python code style and quality checks** using **Flake8**.
 
