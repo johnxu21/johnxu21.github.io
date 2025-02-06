@@ -76,6 +76,8 @@ By completing this lab, you will be able to:
 ## ** Repository Setup**
 To begin, download the **starter files** from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) and copy them into the local copy of your fork of the team repository.
 
+- Make sure to copy create or copy the `.gitignore` file [CI Lab repository](https://github.com/UNLV-CS472-672/CI) in your repository to prevent committing unnecessary files like `.pyc`, `__pycache__/`, and environment-specific files.
+
 # **Step 1: Setting Up GitHub Actions for Continuous Integration (CI)**
 
 ## ** Overview**
