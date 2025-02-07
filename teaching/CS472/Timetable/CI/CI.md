@@ -74,7 +74,7 @@ By completing this lab, you will be able to:
 - Collaborate effectively using GitHub.
 
 ## ** Repository Setup**
-To begin, download the **starter files** from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) and copy them into the local copy of your fork of the team repository.
+To begin, create a folder named `ci_lab` in your local copy of the team repository. Then, download the **starter files** from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) and copy them into the `ci_lab` folder.
 
 - Make sure to copy create or copy the `.gitignore` file from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) in your repository to prevent committing unnecessary files like `.pyc`, `__pycache__/`, and environment-specific files.
 
@@ -127,22 +127,41 @@ jobs:
 - **Job Name:** The job is named **`build`**, which runs on an **Ubuntu environment**.
 - **Checkout Code:** The first step **checks out** the repository so the CI workflow has access to the files.
 
-## **3. Committing and Pushing the Workflow**
-### **Add the workflow file to Git:**
+## **3. Preventing Merge Conflicts in `ci.yml`**
+Since all students will be adding a GitHub Actions workflow, follow these steps to **avoid merge conflicts**:
 
+### **1. Sync Your Fork with the Team Repository**
+Before making any changes, **ensure your fork is up to date** with the team repository:  
+
+#### **If You Haven't Added the Team Repository as a Remote Yet**
+First, add the **team repository** as an upstream remote (only needed once):
+```bash
+git remote add upstream <your team repo>.git
+git checkout main
+git fetch upstream
+git merge upstream/main
+```
+- After syncing, update your forked repository:
+```bash
+git push origin main 
+```
+
+### 2 **Create a new branch** before making changes:
+After syncing, create a new branch for your changes:
+   ```bash
+   git checkout -b add-ci-workflow
+   ```
+### 3. Commit and Push the Workflow File
+If you haven't already, commit and push your ci.yml file:
 ```bash
 git add .github/workflows/ci.yml
-```
-- Commit the changes:
-
-```bash
 git commit -m "Added initial GitHub Actions workflow"
+git push origin add-ci-workflow
 ```
-- Push to the main repository:
-
-```bash
-git push origin main
-```
+### **4. Open a Pull Request (PR)**  
+- Open a PR from your `add-ci-workflow` branch to the **team repository (`upstream/main`)**.  
+- Add a **descriptive title and summary**.  
+- **Do not merge immediately**—wait for CI tests to run.  
 
 ## 4. **Check Your CI Workflow**
 1. Go to your **GitHub repository**.
@@ -157,6 +176,35 @@ git push origin main
      - **Invalid GitHub Actions Version:** Check if you're using the latest version (`actions/checkout@v3`).
      - **File Not Found:** Ensure your repository has the correct structure and files in place.
    - If you're stuck, ask for help in the **CI Discord channel**
+
+### **6. Merging PRs Without Conflicts**
+To prevent merge conflicts:
+- Merge **one PR at a time**—coordinate with your team.  
+- Before modifying `ci.yml`, always pull the latest version of `main` from the **team repository**:  
+
+```bash
+git checkout main
+git fetch upstream
+git merge upstream/main
+git push origin main
+```
+- After pulling the latest version, switch back to your feature branch:
+```bash
+git checkout add-ci-workflow
+git merge main
+```
+- Resolve any merge conflicts locally before pushing again.
+
+### **7. Handling Merge Conflicts**
+If you encounter a merge conflict in `ci.yml`:
+1. Git will mark conflicting lines. Open `ci.yml` and manually resolve the differences.  
+2. After resolving conflicts, add and commit the changes:  
+
+```bash
+git add .github/workflows/ci.yml
+git commit -m "Resolved merge conflict in ci.yml"
+git push origin add-ci-workflow
+```
 
 ## **Installing Dependencies & Running Tests in CI**
 Now that your GitHub Actions workflow is set up, the next step is to install dependencies, run test cases automatically, and enforce code quality checks.
@@ -270,7 +318,7 @@ Each student will **modify one test case** in `tests/test_counter.py` by adding 
 This helps improve test coverage and ensures our **CI workflow** runs effectively.  
 
 ## **Key Points to Remember**
-- You do NOT need to modify `counter.py` —the API is already implemented.  
+- You **do NOT** need to modify `counter.py` — the API is already implemented.  
 - All test cases are written — your task is to add assertions to improve validation.  
 - You must submit a Pull Request with your changes.  
 - Work collaboratively — resolve merge conflicts.
