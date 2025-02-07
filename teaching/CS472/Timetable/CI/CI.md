@@ -121,7 +121,7 @@ jobs:
 - **Job Name:** The job is named **`build`**, which runs on an **Ubuntu environment**.
 - **Checkout Code:** The first step **checks out** the repository so the CI workflow has access to the files.
 
-### **3. Preventing Merge Conflicts in `ci.yml`**
+### 3. Preventing Merge Conflicts in `ci.yml`
 Since all students will be adding a GitHub Actions workflow, follow these steps to **avoid merge conflicts**:
 
 #### **a. Sync Your Fork with the Team Repository**
