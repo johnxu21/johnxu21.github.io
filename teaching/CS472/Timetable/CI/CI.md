@@ -61,22 +61,16 @@ CI ensures that all code changes are **continuously tested** and **validated** b
 By completing this lab, you will be able to:
 
 - **Set up a GitHub Actions workflow** for Continuous Integration (CI).  
--  **Automate test execution** for your repository using GitHub Actions.  
--  **Enforce code quality** with Flake8 for Python linting.  
--  **Extend test coverage** by adding new test cases.  
--  **Resolve merge conflicts** and collaborate efficiently using GitHub.
-
-
-## ** By the end of this lab, you will:**
-- Add **meaningful assertions** to enhance existing test cases.  
-- Submit a **Pull Request (PR)** to integrate your changes.  
-- Ensure your tests **run successfully** in the CI workflow.  
-- Collaborate effectively using GitHub.
+- **Automate test execution** for your repository using GitHub Actions.  
+- **Enforce code quality** with Flake8 for Python linting.  
+- **Extend test coverage** by adding meaningful assertions to existing tests.  
+- **Resolve merge conflicts** and collaborate efficiently using GitHub.  
+- **Submit a Pull Request (PR)** and ensure tests run successfully in CI.  
 
 ## ** Repository Setup**
 To begin, create a folder named `ci_lab` in your local copy of the team repository. Then, download the **starter files** from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) and copy them into the `ci_lab` folder.
 
-- Make sure to copy create or copy the `.gitignore` file from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) in your repository to prevent committing unnecessary files like `.pyc`, `__pycache__/`, and environment-specific files.
+- Make sure you create or copy the `.gitignore` file from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) in your repository to prevent committing unnecessary files like `.pyc`, `__pycache__/`, and environment-specific files.
 
 # **Step 1: Setting Up GitHub Actions for Continuous Integration (CI)**
 
