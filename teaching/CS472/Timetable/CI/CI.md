@@ -67,14 +67,14 @@ By completing this lab, you will be able to:
 - **Resolve merge conflicts** and collaborate efficiently using GitHub.  
 - **Submit a Pull Request (PR)** and ensure tests run successfully in CI.  
 
-## ** Repository Setup**
+## **Repository Setup**
 To begin, create a folder named `ci_lab` in your local copy of the team repository. Then, download the **starter files** from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) and copy them into the `ci_lab` folder.
 
 - Make sure you create or copy the `.gitignore` file from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) in your repository to prevent committing unnecessary files like `.pyc`, `__pycache__/`, and environment-specific files.
 
-# **Step 1: Setting Up GitHub Actions for Continuous Integration (CI)**
+## **Step 1: Setting Up GitHub Actions for Continuous Integration (CI)**
 
-## ** Overview**
+### **Overview**
 In this step, you will create a **GitHub Actions workflow** to automatically **run tests and enforce code quality checks** whenever changes are pushed to the repository.
 
 GitHub Actions enables automation for:
@@ -83,19 +83,19 @@ GitHub Actions enables automation for:
 - Ensuring all test cases pass before merging changes.  
 
 
-## **1. Creating a GitHub Actions Workflow File**
-1. Navigate to the **root directory** of your repository.
-2. Create the **workflow directory**:
+### **1. Creating a GitHub Actions Workflow File**
+- Navigate to the **root directory** of your repository.
+- Create the **workflow directory**:
 
 ```bash
 mkdir -p .github/workflows
 ```
-3. Create the workflow configuration file:
+- Create the workflow configuration file:
 
 ```bash
 touch .github/workflows/ci.yml
 ```
-4. Open the `ci.yml` file and add the following initial setup:
+- Open the `ci.yml` file and add the following initial setup:
 
 ```yaml
 name: CI Workflow  # Name of the workflow
@@ -116,18 +116,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 ```
-## **2. Understanding the Workflow**
+### **2. Understanding the Workflow**
 - **Triggers:** This workflow runs **on every push** and **pull request** to the `main` branch.
 - **Job Name:** The job is named **`build`**, which runs on an **Ubuntu environment**.
 - **Checkout Code:** The first step **checks out** the repository so the CI workflow has access to the files.
 
-## **3. Preventing Merge Conflicts in `ci.yml`**
+### **3. Preventing Merge Conflicts in `ci.yml`**
 Since all students will be adding a GitHub Actions workflow, follow these steps to **avoid merge conflicts**:
 
-### **1. Sync Your Fork with the Team Repository**
+#### **a. Sync Your Fork with the Team Repository**
 Before making any changes, **ensure your fork is up to date** with the team repository:  
 
-#### **If You Haven't Added the Team Repository as a Remote Yet**
+##### **If You Haven't Added the Team Repository as a Remote Yet**
 First, add the **team repository** as an upstream remote (only needed once):
 ```bash
 git remote add upstream <your team repo>.git
@@ -140,29 +140,29 @@ git merge upstream/main
 git push origin main 
 ```
 
-### 2 **Create a new branch** before making changes:
+#### **b. Create a new branch** before making changes:
 After syncing, create a new branch for your changes:
    ```bash
    git checkout -b add-ci-workflow
    ```
-### 3. Commit and Push the Workflow File
+#### **c. Commit and Push the Workflow File**
 If you haven't already, commit and push your ci.yml file:
 ```bash
 git add .github/workflows/ci.yml
 git commit -m "Added initial GitHub Actions workflow"
 git push origin add-ci-workflow
 ```
-### **4. Open a Pull Request (PR)**  
+#### **d. Open a Pull Request (PR)**  
 - Open a PR from your `add-ci-workflow` branch to the **team repository (`upstream/main`)**.  
 - Add a **descriptive title and summary**.  
 - **Do not merge immediately**—wait for CI tests to run.  
 
-## 4. **Check Your CI Workflow**
-1. Go to your **GitHub repository**.
-2. Click on the **"Actions"** tab.
-3. You should see your **CI Workflow** listed.
-4. If successful, you should see a **green checkmark** indicating the workflow has run successfully.
-5. **If you see an error:**
+### **4. Check Your CI Workflow**
+a) Go to your **GitHub repository**.
+b) Click on the **"Actions"** tab.
+c) You should see your **CI Workflow** listed.
+d) If successful, you should see a **green checkmark** indicating the workflow has run successfully.
+e) **If you see an error:**
    - Click on the failed workflow run to view the error logs.
    - Read the logs carefully to identify what went wrong.
    - Common issues and fixes:
@@ -171,7 +171,7 @@ git push origin add-ci-workflow
      - **File Not Found:** Ensure your repository has the correct structure and files in place.
    - If you're stuck, ask for help in the **CI Discord channel**
 
-### **6. Merging PRs Without Conflicts**
+### **5. Merging PRs Without Conflicts**
 To prevent merge conflicts:
 - Merge **one PR at a time**—coordinate with your team.  
 - Before modifying `ci.yml`, always pull the latest version of `main` from the **team repository**:  
@@ -189,7 +189,7 @@ git merge main
 ```
 - Resolve any merge conflicts locally before pushing again.
 
-### **7. Handling Merge Conflicts**
+### **. Handling Merge Conflicts**
 If you encounter a merge conflict in `ci.yml`:
 1. Git will mark conflicting lines. Open `ci.yml` and manually resolve the differences.  
 2. After resolving conflicts, add and commit the changes:  
@@ -200,7 +200,7 @@ git commit -m "Resolved merge conflict in ci.yml"
 git push origin add-ci-workflow
 ```
 
-## **Installing Dependencies & Running Tests in CI**
+## **Step 2: Installing Dependencies & Running Tests in CI**
 Now that your GitHub Actions workflow is set up, the next step is to install dependencies, run test cases automatically, and enforce code quality checks.
 ### 1. Update the GitHub Actions Workflow (`ci.yml`)
 Modify your `.github/workflows/ci.yml` file to include steps for installing dependencies and running tests.
@@ -257,7 +257,7 @@ git add .
 git commit -m "Fixed failing tests"
 git push origin main
 ```
-## **Next Step: Enforcing Code Quality with Flake8**
+## **Step 3: Enforcing Code Quality with Flake8**
 Now that your tests are running in the CI workflow, the next step is to **enforce Python code style and quality checks** using **Flake8**.
 
 ### **1. Updating the Workflow to Include Flake8**
@@ -271,7 +271,7 @@ Modify your `.github/workflows/ci.yml` file to add a **linting step**:
     run: flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics
 ```
 
-## **2. Understanding the Linting Step**
+### **2. Understanding the Linting Step**
 - **Install Flake8**: Ensures that Flake8 is available in the CI environment.
 - **Run Flake8 Linting**: Checks for:
   - **Syntax errors** (`E9`)
@@ -300,24 +300,24 @@ git commit -m "Fixed Flake8 linting errors"
 git push origin main
 ```
 
-# **Writing & Automating Your Test Case in CI**
+## **Writing & Automating Your Test Case in CI**
 
 Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next task is to **extend test coverage** by adding new test cases that will be automatically executed in CI.
 
-# **Extending CI: Adding Assertions to Existing Tests**
+## **Extending CI: Adding Assertions to Existing Tests**
 Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next step is to **collaborate with your team** to extend test coverage by **adding new assertions** to existing test cases.
 
-## What You Will Do  
+### What You Will Do  
 Each student will **modify one test case** in `tests/test_counter.py` by adding **one meaningful assertion**.  
 This helps improve test coverage and ensures our **CI workflow** runs effectively.  
 
-## **Key Points to Remember**
+### **Key Points to Remember**
 - You **do NOT** need to modify `counter.py` — the API is already implemented.  
 - All test cases are written — your task is to add assertions to improve validation.  
 - You must submit a Pull Request with your changes.  
 - Work collaboratively — resolve merge conflicts.
 
-## Finding Your Assigned Task
+### Finding Your Assigned Task
 Each student has been assigned a specific assertion to add in the `tests/test_counter.py` file.  
 Your assigned test case is already labeled in the file with:
 
@@ -327,9 +327,9 @@ Your assigned test case is already labeled in the file with:
 - Coordinate within your group to decide which student takes each labeled task. 
 - Submit a PR to integrate your modification into the team repository
 
-## **What to Include in Your Report**
+### **What to Include in Your Report**
 
-### ** Continuous Integration (CI) Lab Results**
+#### ** Continuous Integration (CI) Lab Results**
 - A link to your **Pull Request (PR)** for the CI Lab.
 - A **copy of the assertion** you added to your assigned test case.
 - A **brief explanation** of what your assertion does and how it improves test quality.
@@ -338,6 +338,6 @@ Your assigned test case is already labeled in the file with:
   - Any CI failures and how you fixed them.
   - Any additional improvements or refactoring needed.
 
-## **Submission Instructions**
+### **Submission Instructions**
 - Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.  
 - Upload your final report as a **PDF on Canvas**.
