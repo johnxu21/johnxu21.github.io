@@ -200,6 +200,36 @@ git commit -m "Added missing assertion for [Student #] test case"
 git push origin add-test-assertion
 ```
 - Submit a Pull Request to integrate your modification into the team repository.
+ - Open a PR from your `add-test-assertion` branch to the team repository (`upstream/main`).
+ - **Wait for CI to run before merging!**
+
+#### **Verify CI Test Results**
+- Go to your **team repository** on GitHub.
+- Click the **"Actions"** tab.
+- Find your **Pull Request** and check if all **CI tests passed**.
+- If the **CI failed**, review the logs, fix the issue, and push your changes again.
+
+---
+
+#### **Resolve Merge Conflicts (If Any)**
+- If you encounter a **merge conflict**, follow these steps to update your branch with the latest changes from `upstream/main`:
+
+```bash
+git checkout main
+git fetch upstream # Fetch the latest changes from the team repository (`upstream/main`) without merging them yet.
+git merge upstream/main
+git push origin main
+git checkout add-test-assertion
+git merge main
+```
+- Manually resolve conflicts in test_counter.py before pushing again.
+- Once resolved, commit and push the changes:
+```bash
+git add tests/test_counter.py
+git commit -m "Resolved merge conflict in test_counter.py"
+git push origin add-test-assertion
+```
+- Once your CI tests pass and there are no conflicts, your PR can be merged into the team repository.
 
 ## **Step 3. What to Include in Your Report**
 
