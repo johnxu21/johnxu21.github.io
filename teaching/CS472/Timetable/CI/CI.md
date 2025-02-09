@@ -73,14 +73,10 @@ To begin, **one team member** should create a folder named `ci_lab` in the local
 1. **One team member** downloads the **starter files** from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI) and places them into the `ci_lab` folder inside the team repository.
 2. **Ensure `.gitignore` is included** to prevent committing unnecessary files like `.pyc`, `__pycache__/`, and environment-specific files.
 
----
-
 ## **Step 1: Setting Up GitHub Actions for Continuous Integration (CI)**
 
 ### **Overview**
 In this step, you will create a **GitHub Actions workflow** to automatically **run tests and enforce code quality checks** whenever changes are pushed to the repository.
-
----
 
 ### **1. One Student Sets Up the `ci.yml` File in the Team Repository**
 Only **one** student should create and set up the CI workflow file to prevent merge conflicts.
@@ -151,32 +147,63 @@ git push origin main #push to your fork
 
 Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next task is to **extend test coverage** by adding new test cases that will be automatically executed in CI.
 
-## **Extending CI: Adding Assertions to Existing Tests**
-Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next step is to **collaborate with your team** to extend test coverage by **adding new assertions** to existing test cases.
+### **1. Pull Latest Changes Before Modifying Test Cases**
+Before making changes to your assigned test case, ensure you have the latest version of the repository:
 
-### What You Will Do  
-Each student will **modify one test case** in `tests/test_counter.py` by adding **one meaningful assertion**.  
-This helps improve test coverage and ensures our **CI workflow** runs effectively.  
+```bash
+git checkout main
+git fetch upstream
+git merge upstream/main
+git push origin main
+```
 
-### **Key Points to Remember**
-- You **do NOT** need to modify `counter.py` — the API is already implemented.  
-- All test cases are written — your task is to add assertions to improve validation.  
-- You must submit a Pull Request with your changes.  
-- Work collaboratively — resolve merge conflicts.
+### **2. Add Your Assertion to the Test Case**  
 
-### Finding Your Assigned Task
 Each student has been assigned a specific assertion to add in the `tests/test_counter.py` file.  
 Your assigned test case is already labeled in the file with:
 
-- A label such as "Student 1", "Student 2", etc.  
-- A description of the test case  
-- A `TODO` comment specifying the assertion you need to add  
-- Coordinate within your group to decide which student takes each labeled task. 
-- Submit a PR to integrate your modification into the team repository
+#### **Key Points to Remember**
+- You **do NOT** need to modify `counter.py` — the API is already implemented.  
+- All test cases are already written — your task is to **add a missing assertion** to improve validation.  
+- You must **submit a Pull Request (PR)** with your changes.  
+- Work collaboratively — discuss assignments and resolve merge conflicts as needed.  
 
-### **What to Include in Your Report**
+#### **Steps to Follow**
+- **Ensure your repository is up-to-date** before making changes:
+   ```bash
+   git checkout main
+   git fetch upstream
+   git merge upstream/main
+   git push origin main
+   ```
+   
+- Create a new branch for your test case modification:
+```bash
+git checkout -b add-test-assertion
+```
 
-#### ** Continuous Integration (CI) Lab Results**
+- Locate your assigned test case in `tests/test_counter.py`:
+  - Find your assigned test case:
+   - Look for the label **"Student 1"**, **"Student 2"**, etc.
+   - Read the **test description** to understand its purpose.
+   - Identify the **`TODO` comment**, which specifies the assertion you need to add.
+- **Add the missing assertion** in the correct location within the test.
+- **Run the tests locally** to ensure your assertion is correct:
+ ```bash
+ pytest --cov=src --cov-report=term-missing
+```
+- Coordinate within your group to ensure each student takes one labeled task.
+- Commit and push your changes to your fork:
+```bash
+git add tests/test_counter.py
+git commit -m "Added missing assertion for [Student #] test case"
+git push origin add-test-assertion
+```
+- Submit a Pull Request to integrate your modification into the team repository.
+
+## **Step 3. What to Include in Your Report**
+
+### **Continuous Integration (CI) Lab Results**
 - A link to your **Pull Request (PR)** for the CI Lab.
 - A **copy of the assertion** you added to your assigned test case.
 - A **brief explanation** of what your assertion does and how it improves test quality.
