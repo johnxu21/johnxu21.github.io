@@ -84,6 +84,8 @@ GitHub Actions enables automation for:
 
 
 ### **1. Creating a GitHub Actions Workflow File**
+Good news, the workflow file is already written for you. Your task to move it to the right location
+
 - Navigate to the **root directory** of your repository.
 - Create the **workflow directory**:
 
@@ -93,9 +95,9 @@ mkdir -p .github/workflows
 - Create the workflow configuration file:
 
 ```bash
-touch .github/workflows/ci.yml
+cd ci_lab/ci.yml .github/workflows/
 ```
-- Open the `ci.yml` file and add the following initial setup:
+<!-- - Open the `ci.yml` file and add the following initial setup:
 
 ```yaml
 name: CI Workflow  # Name of the workflow
@@ -115,13 +117,35 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-```
+``` -->
 ### **2. Understanding the Workflow**
 - **Triggers:** This workflow runs **on every push** and **pull request** to the `main` branch.
 - **Job Name:** The job is named **`build`**, which runs on an **Ubuntu environment**.
 - **Checkout Code:** The first step **checks out** the repository so the CI workflow has access to the files.
+- **Set Up Python:** Ensures the workflow uses Python 3.9.
+- **Install Dependencies:** Installs the required packages listed in `requirements.txt`.
+- **Run Tests with Pytest:** Executes all unit tests and generates a coverage report.
+- **Install Flake8**: Ensures that Flake8 is available in the CI environment.
+- **Run Flake8 Linting**: Checks for:
+  - **Syntax errors** (`E9`)
+  - ⚠**Undefined names** (`F63`, `F7`, `F82`)
+  - **General code style issues**
 
-### 3. Preventing Merge Conflicts in `ci.yml`
+### **3. Commit and Push the Changes:**
+#### **a. Create a new branch** 
+Create a new branch for your changes:
+   ```bash
+   git checkout -b add-ci-workflow
+   ```
+#### **b. Commit and Push the Workflow File**
+If you haven't already, commit and push your CI-Lab f ci.yml file:
+```bash
+git add .github/workflows/ci.yml
+git commit -m "Added initial GitHub Actions workflow"
+git push origin add-ci-workflow
+```
+
+<!-- ### 3. Preventing Merge Conflicts in `ci.yml`
 Since all students will be adding a GitHub Actions workflow, follow these steps to **avoid merge conflicts**:
 
 #### **a. Sync Your Fork with the Team Repository**
@@ -151,12 +175,7 @@ If you haven't already, commit and push your ci.yml file:
 git add .github/workflows/ci.yml
 git commit -m "Added initial GitHub Actions workflow"
 git push origin add-ci-workflow
-```
-#### **d. Open a Pull Request (PR)**  
-- Open a PR from your `add-ci-workflow` branch to the **team repository (`upstream/main`)**.  
-- Add a **descriptive title and summary**.  
-- **Do not merge immediately**—wait for CI tests to run.  
-
+``` -->
 ### **4. Check Your CI Workflow**
 a) Go to your **GitHub repository**.
 b) Click on the **"Actions"** tab.
@@ -171,7 +190,26 @@ e) **If you see an error:**
      - **File Not Found:** Ensure your repository has the correct structure and files in place.
    - If you're stuck, ask for help in the **CI Discord channel**
 
-### **5. Merging PRs Without Conflicts**
+#### **d. Open a Pull Request (PR)**  
+- Open a PR from your `add-ci-workflow` branch to the **team repository (`upstream/main`)**.  
+- Add a **descriptive title and summary**.  
+- **Do not merge immediately**—wait for CI tests to run.  
+
+<!-- ### **4. Check Your CI Workflow**
+a) Go to your **GitHub repository**.
+b) Click on the **"Actions"** tab.
+c) You should see your **CI Workflow** listed.
+d) If successful, you should see a **green checkmark** indicating the workflow has run successfully.
+e) **If you see an error:**
+   - Click on the failed workflow run to view the error logs.
+   - Read the logs carefully to identify what went wrong.
+   - Common issues and fixes:
+     - **YAML Syntax Error:** Ensure proper indentation and correct formatting in `.github/workflows/ci.yml`.
+     - **Invalid GitHub Actions Version:** Check if you're using the latest version (`actions/checkout@v3`).
+     - **File Not Found:** Ensure your repository has the correct structure and files in place.
+   - If you're stuck, ask for help in the **CI Discord channel** -->
+
+<!-- ### **5. Merging PRs Without Conflicts**
 To prevent merge conflicts:
 - Merge **one PR at a time**—coordinate with your team.  
 - Before modifying `ci.yml`, always pull the latest version of `main` from the **team repository**:  
@@ -187,9 +225,9 @@ git push origin main
 git checkout add-ci-workflow
 git merge main
 ```
-- Resolve any merge conflicts locally before pushing again.
+- Resolve any merge conflicts locally before pushing again. -->
 
-### **. Handling Merge Conflicts**
+<!-- ### **. Handling Merge Conflicts**
 If you encounter a merge conflict in `ci.yml`:
 1. Git will mark conflicting lines. Open `ci.yml` and manually resolve the differences.  
 2. After resolving conflicts, add and commit the changes:  
@@ -198,9 +236,9 @@ If you encounter a merge conflict in `ci.yml`:
 git add .github/workflows/ci.yml
 git commit -m "Resolved merge conflict in ci.yml"
 git push origin add-ci-workflow
-```
+``` -->
 
-## **Step 2: Installing Dependencies & Running Tests in CI**
+<!-- ## **Step 2: Installing Dependencies & Running Tests in CI**
 Now that your GitHub Actions workflow is set up, the next step is to install dependencies, run test cases automatically, and enforce code quality checks.
 ### 1. Update the GitHub Actions Workflow (`ci.yml`)
 Modify your `.github/workflows/ci.yml` file to include steps for installing dependencies and running tests.
@@ -223,16 +261,16 @@ Modify your `.github/workflows/ci.yml` file to include steps for installing depe
 ### **2. Understanding the New Workflow Steps**
 - **Set Up Python:** Ensures the workflow uses Python 3.9.
 - **Install Dependencies:** Installs the required packages listed in `requirements.txt`.
-- **Run Tests with Pytest:** Executes all unit tests and generates a coverage report.
+- **Run Tests with Pytest:** Executes all unit tests and generates a coverage report. -->
 
-### **3. Commit and Push the Changes**
+<!-- ### **3. Commit and Push the Changes**
 After modifying the `ci.yml` file, commit and push your changes:
 
 ```bash
 git add .github/workflows/ci.yml
 git commit -m "Added test execution to CI workflow"
 git push origin main
-```
+``` -->
 
 ### **4. Verify Your Tests Run in CI**
 - Go to your **GitHub repository**.
@@ -257,7 +295,7 @@ git add .
 git commit -m "Fixed failing tests"
 git push origin main
 ```
-## **Step 3: Enforcing Code Quality with Flake8**
+<!-- ## **Step 3: Enforcing Code Quality with Flake8**
 Now that your tests are running in the CI workflow, the next step is to **enforce Python code style and quality checks** using **Flake8**.
 
 ### **1. Updating the Workflow to Include Flake8**
@@ -285,22 +323,22 @@ After adding the Flake8 linting step, commit and push your changes:
 git add .github/workflows/ci.yml
 git commit -m "Added Flake8 linting to CI workflow"
 git push origin main
-```
+``` -->
 
-### **4. Verify Linting in GitHub Actions**
+### **5. Verify Linting in GitHub Actions**
 1. Go to your **GitHub repository**.
 2. Click on the **"Actions"** tab and select the latest workflow run.
 3. **If successful**, the workflow will complete without issues.
 4. **If errors occur**, Flake8 will list the violations. Fix them and push the changes.
 
-```bash
+<!-- ```bash
 # Example: Fix Flake8 issues, then commit and push
 git add .
 git commit -m "Fixed Flake8 linting errors"
 git push origin main
-```
+``` -->
 
-## **Writing & Automating Your Test Case in CI**
+## **Step 2: Writing & Automating Your Test Case in CI**
 
 Now that you have successfully configured **Continuous Integration (CI) with GitHub Actions**, your next task is to **extend test coverage** by adding new test cases that will be automatically executed in CI.
 
