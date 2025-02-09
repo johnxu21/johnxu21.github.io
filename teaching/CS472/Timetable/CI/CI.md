@@ -138,8 +138,9 @@ Create a new branch for your changes:
    git checkout -b add-ci-workflow
    ```
 #### **b. Commit and Push the Workflow File**
-If you haven't already, commit and push your CI-Lab f ci.yml file:
+If you haven't already, commit and push your CI-Lab files and ci.yml file:
 ```bash
+git add ci_lab/
 git add .github/workflows/ci.yml
 git commit -m "Added initial GitHub Actions workflow"
 git push origin add-ci-workflow
