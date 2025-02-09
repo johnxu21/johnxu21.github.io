@@ -94,7 +94,7 @@ Only **one** student should create and set up the CI workflow file to prevent me
 mkdir -p .github/workflows
 ```
 
-- Copy the **ci.yaml** fall from the `CI_Lab` directory workflow configuration file:
+- Copy or Move the **ci.yaml** file from the `ci_lab` directory to the `.github/workflow` directory:
 
 ```bash
 cp ci_lab/ci.yml .github/workflows/
