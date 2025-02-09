@@ -84,7 +84,7 @@ GitHub Actions enables automation for:
 
 
 ### **1. Creating a GitHub Actions Workflow File**
-Good news, the workflow file is already written for you. Your task to move it to the right location
+Good news, the workflow file is already written for you. Your task is to move it to the right location.
 
 - Navigate to the **root directory** of your repository.
 - Create the **workflow directory**:
@@ -92,7 +92,7 @@ Good news, the workflow file is already written for you. Your task to move it to
 ```bash
 mkdir -p .github/workflows
 ```
-- Create the workflow configuration file:
+- Copy the **ci.yaml** fall from the CI_Lab directory workflow configuration file:
 
 ```bash
 cd ci_lab/ci.yml .github/workflows/
