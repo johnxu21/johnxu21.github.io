@@ -222,7 +222,7 @@ git push origin main
 git checkout add-test-assertion
 git merge main
 ```
-- Manually resolve conflicts in test_counter.py before pushing again.
+- Manually resolve conflicts in `test_counter.py` before pushing again.
 - Once resolved, commit and push the changes:
 ```bash
 git add tests/test_counter.py
