@@ -49,7 +49,7 @@ height:30px;" value="CHAT GPT" />
 <br/>
 <br/>
 
-## **This individual assignment is due Feb 12th, 2025**
+## **This individual assignment is due Feb 17th, 2025**
 
 
 ## **Introduction**
