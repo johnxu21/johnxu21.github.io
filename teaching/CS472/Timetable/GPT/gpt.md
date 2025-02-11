@@ -122,7 +122,7 @@ These findings illustrate how ChatGPT is used in practice and will help guide yo
 
 - [PR link](https://github.com/nbd-wtf/nostr-tools/pull/241)
 - [ChatGPT Link](https://chat.openai.com/share/f09f38e5-f541-4f98-9483-e183f5650398)
-- 
+
 A developer used ChatGPT during the `Software maintenance` task of `code duplication and refactoring` in the `nostr-tools` project. The developer aimed to resolve code repetition and refactor the code.
 
 
@@ -453,7 +453,7 @@ Provide a brief summary of the work completed during the hands-on tasks and subm
 Write a brief report that includes:
 
 1. **Task Summary**: 
-   - For each task (Exploring ChatGPT's Role in Software Engineering, Code Refactoring, Documentation Assistance, Understanding Complex Code, Workflow Automation), provide a short description (1-2 sentences) of what you did.
+   - For each task (Exploring ChatGPT's Role in Software Engineering, Code Refactoring, Documentation Assistance, Understanding Complex Code), provide a short description (1-2 sentences) of what you did.
    - Include the link to the individual pull request (PR) for each task.
 
 2. **Peer Review Summary** (for Tasks 2.1 to 2.3):
@@ -466,6 +466,4 @@ Write a brief report that includes:
 **Note**: The report should be brief, focused on summarizing the work and including PR links.
 
 
-[//]: # (# Conclusion)
 
-[//]: # (In this lab, you learned about the various ways developers utilize ChatGPT in software engineering tasks. Through hands-on tasks, you practiced leveraging ChatGPT for code refactoring, documentation assistance, workflow automation, and code understanding. These skills will be valuable as you embark on collaborative software development team projects. While the lab has introduced you to how developers seek solutions from ChatGPT for a limited set of software engineering tasks, it's important to note that in your project work, you will experiment with a broader range of software engineering tasks. For a deeper understanding of these tasks, refer to **Section 6** of the paper, Hou at al. [LLMs for SE: A SLR]&#40;https://arxiv.org/pdf/2308.10620.pdf&#41;)

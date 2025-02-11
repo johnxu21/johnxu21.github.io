@@ -133,7 +133,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Tu 02/18</td>
-<td style="border: 1px solid black;">[L] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Thu 02/20 </td>
 <td style="border: 1px solid black;">[L] Free Project work </td>
 </tr>
