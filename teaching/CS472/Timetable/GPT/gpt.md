@@ -48,7 +48,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
-# **This individual assignment is due Oct 8th, 2024**
+# **This individual assignment is due Feb 24th, 2025**
 
 ## **Important Note**  
 

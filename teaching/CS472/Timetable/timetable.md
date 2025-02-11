@@ -55,7 +55,7 @@ The theory consists of four lessons where we explain the techniques to be used.:
 2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/29/2025]
 3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 01/28/2025]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 02/04/2025]
-5. Using Generative AI in Software Engineering [PPTX](LLM.pptx) [last updated 09/25/2024]
+5. Using Generative AI in Software Engineering [PPTX](LLM.pptx) [last updated 02/11/2025]
 6. Object-oriented design 
   * Slides [PDF](OOD-V2.pptx) [last updated 10/02/2024]
   * Analysing a System [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_6)"
