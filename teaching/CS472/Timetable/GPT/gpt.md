@@ -392,29 +392,38 @@ Sharing your ChatGPT conversations with other developers can be highly beneficia
 
 In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where previous lab tasks were submitted. You'll use ChatGPT to improve code quality, documentation, and comprehension. All code must be reviewed by at least one colleague. The author must use ChatGPT during the development process, and the reviewer may use ChatGPT if it adds value to the review.
 
+---
+
 ### **Organizational Guidelines**:
-1. **Repository Structure**: Agree on folder names for each task and document them in your report. Add unique identifiers (e.g., your name) to filenames to avoid conflicts.
-   - **Example**: `yourname_refactor_code.py`
-2. **Pull Requests (PRs)**: Open PRs for each task with clear descriptions, including references to ChatGPT suggestions.
-   - **Example**: "Refactored function X using ChatGPT's recommendation."
-3. **Collaborative Review**: All PRs must be reviewed by at least one team member. The reviewer may use ChatGPT for insights if necessary and include the conversation link in the PR comments when relevant.
-   - **Note**: The use of ChatGPT by the reviewer is **optional** and only required if it adds value to the review process.
+
+1. **Repository Structure**:  
+   - To maintain consistency, **store your files inside the `gen_ai` directory**, with subfolders for each task. For example:
+     ```bash
+     gen_ai/task2.1/yourname_refactor_code.py
+     gen_ai/task2.2/yourname_docstring_update.py
+     ```
+   - If someone has already created the required directories and merged the pull request, **pull the latest changes before adding your files** (see instructions below).
+
+2. **Pull Requests (PRs)**:  
+   - Open a **PR for each task** with clear descriptions, referencing ChatGPT suggestions.
+   - **Example PR Title**:  
+     > "Refactored function X using ChatGPT's recommendation."
+   - **PR Description Example**:  
+     > "Refactored the loop structure to improve efficiency. Suggested by ChatGPT [conversation link]."
+     
+---
 
 ### **Verification and Collaboration**:
-1. **Testing**: Verify all changes and test thoroughly before submitting the PR.
-2. **Peer Feedback**: Each PR must be independently reviewed. Reviewers should provide feedback on:
-   - Code readability
-   - Best practices
-   - Functionality
-   - **Learning Purpose**: Not all feedback needs to result in code changes. Sometimes, feedback is provided to help understand concepts. For example, in the "None Existing Patch (NE) – Concrete examples" from the class slides, the conversation about managing multi-architecture installations of Homebrew on Mac M1 systems enhanced understanding of specifying architecture flags and paths for x86_64 binaries. These insights help deepen knowledge without directly altering the code.
-3. **Finalizing PRs**: After incorporating feedback, whether it results in code changes or just learning, update the PR with a summary and the ChatGPT conversation link. Merge only after the review is complete.
 
-### **Google Sheet for Peer Review**:
-- Use the Google Sheet (shared on **Discord**) to organize reviews. Indicate who will review which tasks (Task 2.1, 2.2, or 2.3).
-   - Ensure each student’s work is reviewed at least once.
-   - Update the sheet before starting the review process.
-- **Reviewer Responsibilities**: Provide feedback using ChatGPT and share your ChatGPT conversation link in the PR comments.
+1. **Ensuring Your Local Repository is Up-to-Date**:  
+   Before making any modifications, **ensure you have the latest version** of the repository by running:
 
+   ```bash
+   git checkout main
+   git fetch upstream  # Fetch the latest changes from the team repository (`upstream/main`) without merging yet.
+   git merge upstream/main  # Merge the latest changes from the team repository into your local main branch.
+   git push origin main  # Push the updated main branch to your fork.
+   ```
 
 ## Task 2.1: Code Refactoring Using ChatGPT
 
@@ -422,14 +431,11 @@ In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where 
 
 ### **Instructions**:
 
-1. **Select a Code Snippet**: Choose a code snippet from your project or an open-source repository that requires refactoring. Open an issue on the team repository identifying the specific problems (e.g., duplication, inefficiency).
+1. **Select a Code Snippet:** Choose a code snippet from your current project, an open-source repository, or a past assignment from your previous programming classes. Open an issue on the team repository identifying specific problems (e.g., duplication, inefficiency, poor readability).
 2. **Consult ChatGPT**: Ask ChatGPT for advice on how to refactor the code. Provide context on the code's purpose and areas needing improvement. Copy the link to the ChatGPT conversation.
 3. **Open a Pull Request (PR)**: Submit a PR with the selected code snippet. Reference the issue created earlier (e.g., "Closes #123") and provide a summary of the refactoring goal in the PR description.
 4. **Implement Refactorings**: Apply ChatGPT's suggestions to improve the code’s quality and readability. Ensure that the functionality of the code remains intact after refactoring.
-5. **Code Review**: A team member must review your code using ChatGPT to offer additional suggestions. The reviewer must share the ChatGPT conversation link in the PR comments and update the Google Sheet shared on Discord.
-6. **Update PR**: After receiving feedback, make the necessary changes and update the PR description with ChatGPT conversation links from both the author and reviewer.
-7. **Merge PR**: Once your colleague has reviewed the PR and confirmed the improvements, you can merge the PR into the team repository.
-
+5. **Merge PR**: Once your colleague has reviewed the PR and confirmed the improvements, you can merge the PR into the team repository.
 
 ## Task 2.2: Improving Documentation with ChatGPT
 
@@ -437,13 +443,11 @@ In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where 
 
 ### **Instructions**:
 
-1. **Select a Code Snippet**: Choose a code snippet from your project or from open-source code that lacks proper documentation. Open an issue on the team repository to take ownership of the task.
+1. **Select a Code Snippet**: Choose a code snippet from your current project, an open-source repository, or a past assignment from your previous programming classes that lacks proper documentation. Open an issue on the team repository to take ownership of the task.
 2. **Consult ChatGPT**: Ask ChatGPT to help generate clear and user-friendly documentation for the code. Provide relevant context about the code's functionality and any areas where the documentation is lacking.
 3. **Open a Pull Request (PR)**: Submit a PR with the improved documentation to your team repository. Reference the issue using keywords like "Closes #123" or "Fixes #123."
 4. **Update Documentation**: Based on ChatGPT’s suggestions, improve the code documentation to ensure it is clear, complete, and easy to understand.
-5. **Code Review**: A team member must review the updated documentation using ChatGPT. The reviewer should share their ChatGPT conversation link in the PR comments and update the Google Sheet with the review details.
-6. **Update PR**: After receiving feedback, update the PR with the ChatGPT conversation links from both the author and reviewer. Summarize how the documentation was improved based on ChatGPT’s suggestions and the review.
-7. **Merge PR**: After the review is completed and improvements are confirmed, merge the PR into the main branch of your team repository.
+5. **Merge PR**: After the review is completed and improvements are confirmed, merge the PR into the main branch of your team repository.
 
 ## Task 2.3: Understanding Complex Code with ChatGPT
 
@@ -451,13 +455,11 @@ In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where 
 
 ### **Instructions**:
 
-1. **Select a Complex Code Segment**: Choose a complex code segment from your projects or from an open-source repository. Open an issue on your team repository detailing the complexity and the challenges you're facing in understanding the code.
+1. **Select a Complex Code Segment**: Choose a complex code segment from your current projects, an open-source repository, or a past programming assignment. Open an issue on your team repository detailing the complexity and the challenges you're facing in understanding the code.
 2. **Consult ChatGPT**: Provide ChatGPT with the code and highlight specific areas where you need clarity or improvements. Ask for suggestions on how to simplify, optimize, or improve the code.
 3. **Open a Pull Request (PR)**: Submit a PR to your team repository with the selected code segment. Reference the issue you created and explain the goal of simplifying or optimizing the code in the PR description.
 4. **Implement Changes**: Apply ChatGPT’s recommendations to simplify or optimize the code, ensuring that functionality is maintained.
-5. **Code Review**: A team member must review the PR using ChatGPT to provide additional insights. The reviewer must share their ChatGPT conversation link in the PR comments and update the Google Sheet with the review details.
-6. **Update PR**: After receiving feedback, update the PR description with the ChatGPT conversation links from both the author and reviewer, and summarize the improvements made.
-7. **Merge PR**: Once the review is complete and all changes are confirmed, merge the PR into the team repository.
+5. **Merge PR**: Once the review is complete and all changes are confirmed, merge the PR into the team repository.
 
 
 # Task 3: Summary Report
@@ -468,13 +470,10 @@ Provide a brief summary of the work completed during the hands-on tasks and subm
 ### **Instructions**:
 Write a brief report that includes:
 
-1. **Task Summary**: 
+**Task Summary**: 
    - For each task (Exploring ChatGPT's Role in Software Engineering, Code Refactoring, Documentation Assistance, Understanding Complex Code), provide a short description (1-2 sentences) of what you did.
    - Include the link to the individual pull request (PR) for each task.
 
-2. **Peer Review Summary** (for Tasks 2.1 to 2.3):
-   - Briefly mention how you reviewed a colleague’s code using ChatGPT and how your code was reviewed.
-   - Include any improvements made based on the review process.
 
 ### **Submission**:
 - Submit your report on Web Campus.
