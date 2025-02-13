@@ -461,8 +461,7 @@ In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where 
 4. **Implement Changes**: Apply ChatGPT’s recommendations to simplify or optimize the code, ensuring that functionality is maintained.
 5. **Merge PR**: Once the review is complete and all changes are confirmed, merge the PR into the team repository.
 
-
-# Task 3: Summary Report
+# **Task 3: Summary Report**
 
 **Objective**:
 Provide a brief summary of the work completed during the hands-on tasks and submit links to the relevant individual pull requests (PRs).
