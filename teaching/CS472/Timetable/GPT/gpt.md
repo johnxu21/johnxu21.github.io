@@ -118,6 +118,22 @@ These findings illustrate how ChatGPT is used in practice and will help guide yo
 
 
 ## Patch Applied (PA)
+In our lab research, we observe that developers integrate ChatGPT-generated patches at different levels based on project constraints such as maintainability, readability, and coding standards. Our findings indicate that a **median integration rate of 25%** suggests that most AI-generated patches are **only partially adopted**, rather than fully applied.
+
+### **Boxplot of ChatGPT Patch Integration**
+The figure below illustrates the distribution of ChatGPT-generated code integrated into pull requests.
+A **boxplot analysis** of merged pull requests shows three categories of integration:
+
+![ChatGPT Patch Integration in Pull Requests Boxplot](boxplot.jpg)
+
+1. **Low (0–25%)** – Only minor elements were used, with significant modifications.
+2. **Moderate (25–75%)** – Some parts were integrated, but developers refined the patch to fit project needs.
+3. **High (75–100%)** – The AI-generated patch was largely accepted with minimal changes.
+
+This data highlights that **ChatGPT serves as a starting point**, but developers still refine AI-suggested code before merging it into real-world projects.
+
+Now that we understand the varying levels of ChatGPT patch integration, let’s look at real-world **examples where AI-generated patches were applied** in GitHub pull requests.
+
 ### **Example 1: Code Duplication and Refactoring**
 
 - [PR link](https://github.com/nbd-wtf/nostr-tools/pull/241)
