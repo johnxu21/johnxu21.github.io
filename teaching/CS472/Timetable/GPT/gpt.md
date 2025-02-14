@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS472 - Responsible use ChatGPT in Software Engineering Tasks - Lab
+title: CS472 - Using GenAI tools in Software Engineering Tasks - Lab
 permalink: /teaching/CS472/Timetable/GPT/
 ---
 <div class="main-component">
@@ -472,7 +472,6 @@ Write a brief report that includes:
 **Task Summary**: 
    - For each task (Exploring ChatGPT's Role in Software Engineering, Code Refactoring, Documentation Assistance, Understanding Complex Code), provide a short description (1-2 sentences) of what you did.
    - Include the link to the individual pull request (PR) for each task.
-
 
 ### **Submission**:
 - Submit your report on Web Campus.
