@@ -389,7 +389,7 @@ In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where 
      gen_ai/task2.1/yourname_refactor_code.py
      gen_ai/task2.2/yourname_docstring_update.py
      ```
-   - If someone has already created the required directories and merged the pull request, **pull the latest changes before adding your files** (see instructions below).
+   - **Check if the directories already exist** before creating them. If another team member has already added them and merged their pull request, **pull the latest changes instead of recreating them** (see instructions below).
 
 2. **Pull Requests (PRs)**:  
    - Open a **PR for each task** with clear descriptions, referencing ChatGPT suggestions.
@@ -449,11 +449,6 @@ In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where 
 5. **Merge PR**: Once the review is complete and all changes are confirmed, merge the PR into the team repository.
 
 # **Task 3: Summary Report**
-
-**Objective**:
-Provide a brief summary of the work completed during the hands-on tasks and submit links to the relevant individual pull requests (PRs).
-
-### **Instructions**:
 Write a brief report that includes:
 
 **Task Summary**: 
@@ -462,8 +457,5 @@ Write a brief report that includes:
 
 ### **Submission**:
 - Submit your report on Web Campus.
-
-**Note**: The report should be brief, focused on summarizing the work and including PR links.
-
 
 
