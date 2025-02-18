@@ -48,13 +48,16 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
-# **This individual assignment is due Feb 24th, 2025**
+# **This individual assignment is due Feb 28th, 2025**
 
 ## **Important Note**  
 
 While this lab may appear lengthy, most of the content is **informative** and includes **illustrations** to help you understand the tasks. It is designed to be easy to read and follow.  
 
-In previous semesters, some students **rushed through the lab** and missed key details, leading to unnecessary questions. Please take your time to go through the material carefully before proceeding.  
+### **Lab Structure & Grading**  
+This lab consists of **two main tasks**:  
+- **Task 1: Quiz (10 points)** – A short quiz to assess your understanding.  
+- **Task 2: Hands-On Activity (20 points)** – A practical exercise where you will apply what you learned.  
 
 ---
 
