@@ -56,7 +56,7 @@ While this lab may appear lengthy, most of the content is **informative** and in
 
 ### **Lab Structure & Grading**  
 This lab consists of **two main tasks**:  
-- **Task 1: Quiz (10 points)** – A short quiz to assess your understanding.  
+- **Task 1: Quiz (10 points)** – A short quiz to assess your understanding on how developers use GenAI to address some software development tasks.  
 - **Task 2: Hands-On Activity (20 points)** – A practical exercise where you will apply what you learned.  
 
 ---
