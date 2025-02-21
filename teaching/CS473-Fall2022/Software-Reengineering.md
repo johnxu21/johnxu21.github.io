@@ -92,7 +92,7 @@ Milestones
 * **Concluding Session**: Two thirds into the project, there is a concluding session, where we will reflect on the lessons learned during the project.
 * **Final Report**: During the exam period you hand in a final report, listing the solutions for the problems you came across and what you learned from them. You will defend this report orally.
 
-Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on August, 31th, 2022.] 
+Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on Feb, 20th, 2025.] 
 
 <table style="border-collapse:collapse;">
 <tr >
