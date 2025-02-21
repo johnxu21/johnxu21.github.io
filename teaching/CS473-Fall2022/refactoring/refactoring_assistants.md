@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Refactoring Assistants
-permalink: /teaching/teaching/Software-Reengineering/refactoring/
+permalink: /teaching/Software-Reengineering/refactoring/
 ---
 <form action="/teaching/Software-Reengineering/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
