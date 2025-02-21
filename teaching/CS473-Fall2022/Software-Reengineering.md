@@ -261,14 +261,14 @@ used for changing a project students must restructure an existing software syste
 new requirements. Note, that the extra functionality as such needs not be implemented; but that the existing 
 design must be adjusted in such a way that adding the new functionality becomes a proverbial "piece of cake".
 
-Project: Assignment 2022
+Project: Assignment 
 ===============
 
 Milestones
-* Monday 12-Oct-2022 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project (standard or custom) and group members by e-mail to John Businge with: (please check the details on the subject and message content in the Assignment page). Include a precondition report, details of this report to follow on the [project page]().
-* Wednesday 26-Oct-2022 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format) by e-mail to Dr. John Businge.
-* Wednesday 16-Nov-2022 Concluding Session & Feedback Session
-* Wednesday 30-Nov-2022 11h59pm (**Date to be confirmed**; one week before the oral exam) - Final Report: Send the Report (in PDF format) by e-mail to Dr. John Businge.
+* Monday 12-Oct-2025 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project (standard or custom) and group members by e-mail to John Businge with: (please check the details on the subject and message content in the Assignment page). Include a precondition report, details of this report to follow on the [project page]().
+* Wednesday 26-Oct-2025 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format) by e-mail to Dr. John Businge.
+* Wednesday 16-Nov-2025 Concluding Session & Feedback Session
+* Wednesday 30-Nov-2025 11h59pm (**Date to be confirmed**; one week before the oral exam) - Final Report: Send the Report (in PDF format) by e-mail to Dr. John Businge.
 * The oral exams themselves are scheduled on XXX Date to be confirmed XXX. See the detailed schedule below
 
 Group Work
@@ -330,11 +330,6 @@ The following check-list will be used to assess your reengineering project
 * Checklist reengineering Pre-conditions Report [ PDF ](../../files/spdd/Pre-conditions_Report_Evaluation_Template.pdf)
 * Checklist reengineering Intermediate Report [ PDF ](../../files/spdd/Intermetdiate_Evaluation_Report_Template.pdf)
 * Checklist reengineering Final Report [PDF](../../files/spdd/Final_Report_Evaluation_Form_Blank.pdf)
-
-### Assessment (CS 673):
-
-Students in CS 673 do the same course as those in 473, with two exceptions which are detailed on 
-the [project](/teaching/Software-Reengineering/project/) page.
 
 
 Detailed exam schedule (Last modified on Monday, -)
