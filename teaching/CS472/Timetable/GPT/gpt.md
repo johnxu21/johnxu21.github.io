@@ -380,7 +380,10 @@ Sharing your ChatGPT conversations with other developers can be highly beneficia
 
 ## Task 2: Hands-on with ChatGPT (20 points)
 
-In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where previous lab tasks were submitted. You'll use ChatGPT to improve code quality, documentation, and comprehension. All code must be reviewed by at least one colleague. The author must use ChatGPT during the development process, and the reviewer may use ChatGPT if it adds value to the review.
+In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where previous lab tasks were submitted. You'll use ChatGPT to improve code quality, documentation, and comprehension.  
+
+- The author **must** use ChatGPT during the development process.  
+- Your goal is to enhance your code by applying ChatGPT's suggestions while ensuring correctness and maintainability.  
 
 ---
 
