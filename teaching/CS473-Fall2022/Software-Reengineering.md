@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS 789 - Software Reengineering
-permalink: /teaching/CS473-Fall2022/
+permalink: /teaching/Software-Reengineering/
 ---
 <form action="/teaching/CS473-Fall2022/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;

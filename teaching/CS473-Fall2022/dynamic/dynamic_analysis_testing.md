@@ -1,34 +1,34 @@
 ---
 layout: page
 title: Dynamic Analysis- Testing
-permalink: /teaching/CS473-Fall2022/dynamic/
+permalink: /teaching/Software-Reengineering/dynamic/
 ---
 
-<form action="/teaching/CS473-Fall2022/">
+<form action="/teaching/Software-Reengineering/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS473-Fall2022/metrics/">
+<form action="/teaching/Software-Reengineering/metrics/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Metrics and Visualization" />
 </form>
-<form action="/teaching/CS473-Fall2022/refactoring/">
+<form action="/teaching/Software-Reengineering/refactoring/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Refactoring Assistants" />
 </form>
-<form action="/teaching/CS473-Fall2022/integration/">
+<form action="/teaching/Software-Reengineering/integration/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Software Integration" />
 </form>
-<form action="/teaching/CS473-Fall2022/dynamic/">
+<form action="/teaching/Software-Reengineering/dynamic/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Dynamic Analysis: Testing" />
 </form>
-<form action="/teaching/CS473-Fall2022/msr/">
+<form action="/teaching/Software-Reengineering/msr/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Mining Software Repositories" />
 </form>
-<form action="/teaching/CS473-Fall2022/project/">
+<form action="/teaching/Software-Reengineering/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Reengineering Project" />
 </form>

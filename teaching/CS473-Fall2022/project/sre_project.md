@@ -1,34 +1,34 @@
 ---
 layout: page
 title: Reengineering Project - linkedin/kafka
-permalink: /teaching/CS473-Fall2022/project/
+permalink: /teaching/Software-Reengineering/project/
 ---
 
-<form action="/teaching/CS473-Fall2022/">
+<form action="/teaching/Software-Reengineering/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS473-Fall2022/metrics/">
+<form action="/teaching/Software-Reengineering/metrics/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Metrics and Visualization" />
 </form>
-<form action="/teaching/CS473-Fall2022/refactoring/">
+<form action="/teaching/Software-Reengineering/refactoring/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Refactoring Assistants" />
 </form>
-<form action="/teaching/CS473-Fall2022/integration/">
+<form action="/teaching/Software-Reengineering/integration/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Software Integration" />
 </form>
-<form action="/teaching/CS473-Fall2022/dynamic/">
+<form action="/teaching/Software-Reengineering/dynamic/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Dynamic Analysis: Testing" />
 </form>
-<form action="/teaching/CS473-Fall2022/msr/">
+<form action="/teaching/Software-Reengineering/msr/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Mining Software Repositories" />
 </form>
-<form action="/teaching/CS473-Fall2022/project/">
+<form action="/teaching/Software-Reengineering/project/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Reengineering Project" />
 </form>
@@ -102,7 +102,7 @@ Since the fork has diverged, it may have changed the shared file(s) present in t
 upstream variant. Therefore, while performing the integration, you might experience merge conflicts. 
 Some conflicts might be a result of refactoring operations applied during the evolution of the 
 file(s) in both branches of [Apache Kafka]((https://github.com/apache/kafka)) and 
-[LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/CS473-Fall2022/integration/) 
+[LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/Software-Reengineering/integration/) 
 we used the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
 (that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)),
 which can identify the **conflicting regions** using the following steps:
@@ -117,7 +117,7 @@ older version of the library of [RefactoringMiner](https://github.com/tsantalis/
 implements a few refactoring operations. You will need to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
 with a few refactoring operations that you find frequently occurring in the patches (pull requests), you are going to integrate into the fork variant [LinkedIn](https://github.com/linkedin/kafka).
 You will identify the frequently occuring refactorings the method we used in *Task 4* in the [Refactoring Assistants
-](/teaching/CS473-Fall2022/refactoring/) lab. Remember to write tests for the newly added refactorings.
+](/teaching/Software-Reengineering/refactoring/) lab. Remember to write tests for the newly added refactorings.
 
 Next, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses ```git merge``` and 
 tries to synchronize the branches. To integrate patches (pull requests), we shall have some changes in 

@@ -1,34 +1,34 @@
 ---
 layout: page
 title: Software Integration
-permalink: /teaching/CS473-Fall2022/integration/
+permalink: /teaching/Software-Reengineering/integration/
 ---
 
-<form action="/teaching/CS473-Fall2022/">
+<form action="/teaching/Software-Reengineering/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS473-Fall2022/metrics/">
+<form action="/teaching/Software-Reengineering/metrics/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Metrics and Visualization" />
 </form>
-<form action="/teaching/CS473-Fall2022/refactoring/">
+<form action="/teaching/Software-Reengineering/refactoring/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Refactoring Assistants" />
 </form>
-<form action="/teaching/CS473-Fall2022/integration/">
+<form action="/teaching/Software-Reengineering/integration/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Software Integration" />
 </form>
-<form action="/teaching/CS473-Fall2022/dynamic/">
+<form action="/teaching/Software-Reengineering/dynamic/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Dynamic Analysis: Testing" />
 </form>
-<form action="/teaching/CS473-Fall2022/msr/">
+<form action="/teaching/Software-Reengineering/msr/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Mining Software Repositories" />
 </form>
-<form action="/teaching/CS473-Fall2022/project/">
+<form action="/teaching/Software-Reengineering/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Reengineering Project" />
 </form>
@@ -120,7 +120,7 @@ Task 1.2
 Scan through the code and understand how these different refactoring aware operations are implemented:
 1. Detecting conflicting regions
 2. Detecting evolutionary changes
-3. Detecting refactorings (notice that only a few refactoring operations have been implemented this tool. In the [Project](/teaching/CS473-Fall2022/project/), you will be required to extend this tool with more refactoring operations)
+3. Detecting refactorings (notice that only a few refactoring operations have been implemented this tool. In the [Project](/teaching/Software-Reengineering/project/), you will be required to extend this tool with more refactoring operations)
 4. Detecting refactorings in the conflicting region
 
 The above steps are explained in detail in **Section 3: Methodology** of the paper [Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8668012&tag=1). Of course reading the whole paper would be ideal, but reading only Section 3 should be sufficient.
@@ -135,10 +135,10 @@ have been implemented. Extend [Refactorings in Merge Commits](https://github.com
 **Note:** [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) implements refactoring operations of  [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) version 2.1.0. Some on the new refactorings are only present in later versions of the tool.
 
 You may find the following links interesting that will help you in the project:
-* [```git log```](https://git-scm.com/docs/git-log). In the [Project](/teaching/CS473-Fall2022/project/) we shall be mining data for analysis from the ```git log```. Therefore, it is very important to understand how they are implemented ```git log``` these two projects: [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation). **Please read the code in depth**
+* [```git log```](https://git-scm.com/docs/git-log). In the [Project](/teaching/Software-Reengineering/project/) we shall be mining data for analysis from the ```git log```. Therefore, it is very important to understand how they are implemented ```git log``` these two projects: [Refactorings in Merge Commits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) and [Refactoring-Aware Merging](https://github.com/ualberta-smr/RefactoringAwareMergingEvaluation). **Please read the code in depth**
 * [```git cherry-pick```](https://github.com/git/git/blob/90b7153806af46ca62b85a92a2810015be2453d4/Documentation/git-cherry-pick.txt) or in general the [git documentation](https://github.com/git/git/tree/90b7153806af46ca62b85a92a2810015be2453d4/Documentation)
 
-[RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) implements **git merge**, but in the [Project](/teaching/CS473-Fall2022/project/) the command **git merge** will be replaced with [**git cherry-pick**](https://github.com/git/git/blob/90b7153806af46ca62b85a92a2810015be2453d4/Documentation/git-cherry-pick.txt)
+[RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) implements **git merge**, but in the [Project](/teaching/Software-Reengineering/project/) the command **git merge** will be replaced with [**git cherry-pick**](https://github.com/git/git/blob/90b7153806af46ca62b85a92a2810015be2453d4/Documentation/git-cherry-pick.txt)
 
 Task 2 (Optional)
 ==========

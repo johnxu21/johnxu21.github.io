@@ -1,33 +1,33 @@
 ---
 layout: page
 title: Refactoring Assistants
-permalink: /teaching/CS473-Fall2022/refactoring/
+permalink: /teaching/teaching/Software-Reengineering/refactoring/
 ---
-<form action="/teaching/CS473-Fall2022/">
+<form action="/teaching/Software-Reengineering/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS473-Fall2022/metrics/">
+<form action="/teaching/Software-Reengineering/metrics/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Metrics and Visualization" />
 </form>
-<form action="/teaching/CS473-Fall2022/refactoring/">
+<form action="/teaching/Software-Reengineering/refactoring/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Refactoring Assistants" />
 </form>
-<form action="/teaching/CS473-Fall2022/integration/">
+<form action="/teaching/Software-Reengineering/integration/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Software Integration" />
 </form>
-<form action="/teaching/CS473-Fall2022/dynamic/">
+<form action="/teaching/Software-Reengineering/dynamic/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Dynamic Analysis: Testing" />
 </form>
-<form action="/teaching/CS473-Fall2022/msr/">
+<form action="/teaching/Software-Reengineering/msr/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Mining Software Repositories" />
 </form>
-<form action="/teaching/CS473-Fall2022/project/">
+<form action="/teaching/Software-Reengineering/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Reengineering Project" />
 </form>
@@ -47,7 +47,7 @@ artifact. Another important pattern to remember when refactorings is “Most Val
 Despite the benefits, in some contexts, refactoring is perceived as change noise, which makes more 
 difficult the completion of various software evolution related tasks. For instance, refactoring 
 operations can cause merge conflicts when merging development branches (we shall look this in detail in 
-Lab of [software integration](/teaching/CS473-Fall2022/integration/)). 
+Lab of [software integration](/teaching/Software-Reengineering/integration/)). 
 They may distract developers when reviewing behavior-altering changes, make bug-inducing analysis algorithms
 to erroneously flag behavior-preserving changes (i.e., refactorings) as bug-introducing, 
 cause breaking changes to clients of libraries and frameworks, cause unnecessary test executions 
@@ -83,7 +83,7 @@ Auxiliary tools are not required for the lab session itself, but they may be use
 
 Setup / Preparation - (Artifacts that need refactoring)
 =============
-Be sure to follow the setup from the first session ([Metrics and Visualization Lab Session](/teaching/CS473-Fall2022/metrics/)) if you had not done so (summarizing it would be: 
+Be sure to follow the setup from the first session ([Metrics and Visualization Lab Session](/teaching/Software-Reengineering/metrics/)) if you had not done so (summarizing it would be: 
 (i) install IntelliJ, (ii) fork JPacman repository, (iii) build & run JPacman). 
 Also if have not already, download the book for this course "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)" (Note: OORP, p.xx refers to a page in the pdf version of this book)
 
@@ -318,7 +318,7 @@ Try out the different API usage guidelines mentioned on the [Readme.md](https://
 Task 5
 ==========
 Scan through the code and understand how the different refactorings are detected (First Contact - Readall the Code in One Hour OORP, p.53).
-Note down the entities which seem important (i.e., classes, packages, ···). This step will help you during the [Project](/teaching/CS473-Fall2022/project/).
+Note down the entities which seem important (i.e., classes, packages, ···). This step will help you during the [Project](/teaching/Software-Reengineering/project/).
 
 "**Intent:** Assess the state of a software system by means of a brief, but intensive code review."
 
