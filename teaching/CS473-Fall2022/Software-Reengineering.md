@@ -3,31 +3,31 @@ layout: page
 title: CS 789 - Software Reengineering
 permalink: /teaching/Software-Reengineering/
 ---
-<form action="/teaching/CS473-Fall2022/">
+<form action="/teaching/Software-Reengineering/">
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Course Overview" />
 </form>
-<form action="/teaching/CS473-Fall2022/metrics/">
+<form action="/teaching/Software-Reengineering/metrics/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Metrics and Visualization" />
 </form>
-<form action="/teaching/CS473-Fall2022/refactoring/">
+<form action="/teaching/Software-Reengineering/refactoring/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Refactoring Assistants" />
 </form>
-<form action="/teaching/CS473-Fall2022/integration/">
+<form action="/teaching/Software-Reengineering/integration/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Software Integration" />
 </form>
-<form action="/teaching/CS473-Fall2022/dynamic/">
+<form action="/teaching/Software-Reengineering/dynamic/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Dynamic Analysis: Testing" />
 </form>
-<form action="/teaching/CS473-Fall2022/msr/">
+<form action="/teaching/Software-Reengineering/msr/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Mining Software Repositories" />
 </form>
-<form action="/teaching/CS473-Fall2022/project/">
+<form action="/teaching/Software-Reengineering/project/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Reengineering Project" />
 </form>
@@ -247,11 +247,11 @@ All students should have read the following book; acquiring the terminology insi
 
 For the lab sessions there is the following material (please only get the materials after it is updated to the current year):
 
-1. [Metrics and Visualization](/teaching/CS473-Fall2022/metrics/) (Updated 2022-08-16)
-2. [Refactoring assistants](/teaching/CS473-Fall2022/refactoring/) (Updated 2022-08-16)
-3. [Software Integration](/teaching/CS473-Fall2022/integration/) (Updated 2022-08-16)
-4. [Dynamic Analysis: Testing](/teaching/CS473-Fall2022/dynamic/) (Updated 2022-08-16)
-5. [Mining Software Repositories](/teaching/CS473-Fall2022/msr/) (Updated 2022-08-16)
+1. [Metrics and Visualization](/teaching/Software-Reengineering/metrics/) (Updated 2022-08-16)
+2. [Refactoring assistants](/teaching/Software-Reengineering/refactoring/) (Updated 2022-08-16)
+3. [Software Integration](/teaching/Software-Reengineering/integration/) (Updated 2022-08-16)
+4. [Dynamic Analysis: Testing](/teaching/Software-Reengineering/dynamic/) (Updated 2022-08-16)
+5. [Mining Software Repositories](/teaching/Software-Reengineering/msr/) (Updated 2022-08-16)
 
 Project
 ======
@@ -334,7 +334,7 @@ The following check-list will be used to assess your reengineering project
 ### Assessment (CS 673):
 
 Students in CS 673 do the same course as those in 473, with two exceptions which are detailed on 
-the [project](/teaching/CS473-Fall2022/project/) page.
+the [project](/teaching/Software-Reengineering/project/) page.
 
 
 Detailed exam schedule (Last modified on Monday, -)
