@@ -46,10 +46,9 @@ Where ? When ?
 * Location: CBC C212
 
 
-**Credits**: 3 <br/>
-**Prerequisites**: CS 472  with a grade of C or better. <br/>
-**Notes**:  This course is crosslisted with CS 673. Credit at the 600-level requires additional work. <br/>
-**[Introductory Slides](../../files/Introduction.pdf)**
+- **Credits**: 3 <br/>
+- **Prerequisites**: Graduate standing. Prior knowledge of data structures and advanced programming is expected.
+- **[Introductory Slides](../../files/Introduction.pdf)**
 
 Rationale
 ======
