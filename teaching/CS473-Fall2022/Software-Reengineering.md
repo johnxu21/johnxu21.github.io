@@ -42,7 +42,7 @@ height:40px;" value="Reengineering Project" />
 
 Where ? When ?
 * Theory & Exercises all during the same time slot
-* Time: MoWe 2:30PM-3:45PM
+* Time: MoWe 4:00PM-5:15PM
 * Location: 
 
 
