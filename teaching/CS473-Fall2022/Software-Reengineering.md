@@ -53,9 +53,7 @@ Where ? When ?
 
 Rationale
 ======
-Synthesis (term project) course to involve students, working in teams, in all of the activities necessary to define, 
-model, implement, test, document, and deliver a program product. Students practice Object-Oriented and 
-Component Based development and utilize UML and CASE tools to model the product and document the process.
+Modernizing and extending existing software systems is a critical challenge in software engineering. CS 789 – Software Reengineering focuses on techniques for analyzing, restructuring, and improving legacy systems to enhance maintainability and prepare them for new functionality. Students will apply reverse engineering, refactoring, software integration, dynamic analysis, and repository mining to transform existing software architectures. Through lectures, hands-on labs, and project-based learning, students gain practical experience with industry-standard tools, preparing them for careers in software maintenance, modernization, and system evolution.
 
 Catalog Description:
 =====
