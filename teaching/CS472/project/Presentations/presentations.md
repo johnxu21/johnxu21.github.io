@@ -58,7 +58,7 @@ Trial Presentations (Ungraded) (Last edited 11/23/2024)
 
 We will have <b>strictly <=16 minutes</b> for the presentation and <b>utmost 9 minutes</b> of feedback session.
 
-Members from other teams are encouraged to attend and give feedback towards improving a team's 
+Members from other teams (at least 5) are expected to attend and give feedback towards improving a team's 
 presentation. In the final presentation, I expect <b> all team members </b> to present a 
 section of the team project. Try this out during the trial to practice. All teams have 
 exciting projects; please listen, learn and give feedback. Those presenting earlier, please give back the 
@@ -80,42 +80,62 @@ Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-b
 
   <tr>
 
-    <td style="border: 1px solid black;">Tabby -- Gp-1</td>
+    <td style="border: 1px solid black;">URP -- Gp-1</td>
 
-    <td style="border: 1px solid black;">11/27</td>
+    <td style="border: 1px solid black;">4/24</td>
 
-    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">sg1-umlg -- Gp-2</td>
-
-    <td style="border: 1px solid black;">12/02</td>
-
-    <td style="border: 1px solid black;">1:00 pm - 1:23 pm</td>
+    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
 
   </tr>
 
   <tr>
 
-    <td style="border: 1px solid black;">Rebel Hub -- Gp-3</td>
+    <td style="border: 1px solid black;">LessonConect -- Gp-2</td>
 
-    <td style="border: 1px solid black;">12/02</td>
+    <td style="border: 1px solid black;">4/24</td>
 
-    <td style="border: 1px solid black;">1:25 pm - 1:47 pm</td>
+    <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
+
+  </tr>
+
+  <tr>
+
+    <td style="border: 1px solid black;">IngrediScan -- Gp-5</td>
+
+    <td style="border: 1px solid black;">4/24</td>
+
+    <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
 
   </tr>
 
 
   <tr>
 
-    <td style="border: 1px solid black;">Tabby -- Gp-1</td>
+    <td style="border: 1px solid black;">PRISM -- Gp-6</td>
 
-    <td style="border: 1px solid black;">12/02</td>
+    <td style="border: 1px solid black;">4/29</td>
 
-    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
+    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
+
+  </tr>
+
+  <tr>
+
+    <td style="border: 1px solid black;">Rebel Remind -- Gp-3</td>
+
+    <td style="border: 1px solid black;">4/29</td>
+
+    <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
+
+  </tr>
+
+  <tr>
+
+    <td style="border: 1px solid black;">EulogyQuest -- Gp-4</td>
+
+    <td style="border: 1px solid black;">4/29</td>
+
+    <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
 
   </tr>
 
@@ -147,32 +167,62 @@ are supposed to wait for their time slots.
 
   <tr>
 
-    <td style="border: 1px solid black;">sg1-umlg -- Gr-2</td>
+    <td style="border: 1px solid black;">URP -- Gp-1</td>
 
-    <td style="border: 1px solid black;">12/04</td>
+    <td style="border: 1px solid black;">4/24</td>
 
-    <td style="border: 1px solid black;">1:00 pm - 1:23 pm</td>
+    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
 
   </tr>
 
   <tr>
 
-    <td style="border: 1px solid black;">Rebel Hub -- Gp-3</td>
+    <td style="border: 1px solid black;">LessonConect -- Gp-2</td>
 
-    <td style="border: 1px solid black;">12/04</td>
+    <td style="border: 1px solid black;">4/24</td>
 
-    <td style="border: 1px solid black;">1:25 pm - 1:45 pm</td>
+    <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
+
+  </tr>
+
+  <tr>
+
+    <td style="border: 1px solid black;">IngrediScan -- Gp-5</td>
+
+    <td style="border: 1px solid black;">4/24</td>
+
+    <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
 
   </tr>
 
 
   <tr>
 
-    <td style="border: 1px solid black;">Tabby -- Gp-1</td>
+    <td style="border: 1px solid black;">PRISM -- Gp-6</td>
 
-    <td style="border: 1px solid black;">12/04</td>
+    <td style="border: 1px solid black;">4/29</td>
 
-    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
+    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
+
+  </tr>
+
+  <tr>
+
+    <td style="border: 1px solid black;">Rebel Remind -- Gp-3</td>
+
+    <td style="border: 1px solid black;">4/29</td>
+
+    <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
+
+  </tr>
+
+  <tr>
+
+    <td style="border: 1px solid black;">EulogyQuest -- Gp-4</td>
+
+    <td style="border: 1px solid black;">4/29</td>
+
+    <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
 
   </tr>
 
