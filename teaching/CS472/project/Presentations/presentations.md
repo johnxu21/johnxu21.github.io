@@ -169,7 +169,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">URP -- Gp-1</td>
 
-    <td style="border: 1px solid black;">4/24</td>
+    <td style="border: 1px solid black;">5/1</td>
 
     <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
 
@@ -179,7 +179,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">LessonConect -- Gp-2</td>
 
-    <td style="border: 1px solid black;">4/24</td>
+    <td style="border: 1px solid black;">5/1</td>
 
     <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
 
@@ -189,7 +189,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">IngrediScan -- Gp-5</td>
 
-    <td style="border: 1px solid black;">4/24</td>
+    <td style="border: 1px solid black;">5/1</td>
 
     <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
 
@@ -200,7 +200,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">PRISM -- Gp-6</td>
 
-    <td style="border: 1px solid black;">4/29</td>
+    <td style="border: 1px solid black;">5/6</td>
 
     <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
 
@@ -210,7 +210,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">Rebel Remind -- Gp-3</td>
 
-    <td style="border: 1px solid black;">4/29</td>
+    <td style="border: 1px solid black;">5/6</td>
 
     <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
 
@@ -220,7 +220,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">EulogyQuest -- Gp-4</td>
 
-    <td style="border: 1px solid black;">4/29</td>
+    <td style="border: 1px solid black;">5/6</td>
 
     <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
 
