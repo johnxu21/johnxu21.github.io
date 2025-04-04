@@ -50,7 +50,7 @@ height:30px;" value="SD Competition" />
 
 Venue for the Trial and Final Presentation
 =======
-The **trial and final project presentations** will take place in **BEH 121**
+The **trial and final project presentations** will take place in **CHB A106**
 
 Trial Presentations (Ungraded) (Last edited 04/04/2025)
 =======
