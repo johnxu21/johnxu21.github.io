@@ -37,13 +37,13 @@ height:40px;" value="Reengineering Project" />
 
 
 
-* Level: Senior 
-* Period: Fall Semester 2022-2023
+* Level: Masters 
+* Period: Fall Semester 2025
 
 Where ? When ?
 * Theory & Exercises all during the same time slot
-* Time: MoWe 4:00PM-5:15PM
-* Location: 
+* Time: MoWe 5:15PM-6:30PM
+* Location: FDH 217
 
 
 - **Credits**: 3
