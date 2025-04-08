@@ -32,7 +32,7 @@ The final exam will consist of:
 - **20 multiple choice questions**
 - **4 short answer questions**
 
-### What to Study
+### **What to Study**
 
 All questions will be based on:
 
@@ -65,8 +65,6 @@ You **do not need to study outside materials**. If you **completed the labs** an
 [//]: # (4. Understanding Skills for OSS Communities on GitHub. [Link]&#40;https://dl.acm.org/doi/abs/10.1145/3540250.3549082&#41;)
 
 
-To be communicated
 
-**Important Information:**
 
 
