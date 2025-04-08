@@ -25,6 +25,32 @@ height:40px;" value="Project" />
 <br/>
 <br/>
 
+## Final Exam Information
+
+The final exam will consist of:
+
+- **20 multiple choice questions**
+- **4 short answer questions**
+
+### What to Study
+
+All questions will be based on:
+
+- **Lecture slides**
+- **Labs**
+- **Team project experience**
+
+Focus areas include:
+
+- Collaborative software development practices  
+- Version control and GitHub workflows  
+- Basic testing strategies  
+- Project management (issue tracking, milestones, team coordination)  
+- Continuous Integration (CI) concepts introduced in labs  
+- Tooling used throughout the course (e.g., pull requests, branching, code review)
+
+You **do not need to study outside materials**. If you **completed the labs** and **actively contributed to your team project**, you should be well-prepared for the exam.
+
 
 [//]: # (The good news is that there will be no written exam. )
 
