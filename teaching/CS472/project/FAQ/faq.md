@@ -58,7 +58,6 @@ Frequently Asked Questions
   * If you have not found a partner by the 2nd week of the class, please contact <em></em><a href="mailto:john.businge@unlv.edu">Prof. John Businge</a> by email or on the Discord Server. We will collect all the names of individuals who have not yet found anyone and then put you in touch with each other.
 * Can we also do the first practicals at home? Is it mandatory to come to the physical practicals? 
   * It is not mandatory to come to the physical practicals.
-  * From the third practical it is free project work every week.
   * We like to physically organize the first three practicals because we can easily help with technical problems during the installation and use of the software libraries. Once the setup of your project is done, you can independently start the real programming.
 * Can we still come to the practicals every week?
   * Yes, the computer lab is available for you to work on the project together.
