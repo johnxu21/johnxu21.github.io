@@ -71,5 +71,12 @@ Frequently Asked Questions
   * However, full credit is typically earned with 4–6 well-executed PRs per DP, depending on team and cross-team comparisons.
   * 80–85% of the time, 4–5 strong PRs are enough for full points.
   * Keep in mind that peer reviews and issue discussions also count heavily toward your grade—balance is key!
+* **How many PR reviews and issue discussions are needed to earn full points?**
+  * The minimum requirement per Design Portfolio (DP) is 3 meaningful PR reviews and at least 1 issue discussion.
+  * Full credit is generally awarded for 4–6 well-executed PR reviews and 1–2 thoughtful issue discussions, but this is not a fixed threshold.
+  * 80–85% of the time, 4–5 strong PR reviews combined with active participation in issue discussions are enough for full points.
+  * Final evaluation is based on overall contribution quality and team/cross-team comparisons, rather than a strict number.  
+  * As with pull requests, the **quality of engagement** matters more than quantity, your feedback should be constructive, relevant, and context-aware.
+
 
 
