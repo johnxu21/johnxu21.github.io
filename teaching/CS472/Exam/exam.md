@@ -30,7 +30,7 @@ height:40px;" value="Project" />
 The final exam will consist of:
 
 - **20 multiple choice questions**
-- **4 short answer questions**
+- **4 short essay answer questions**
 
 ### **What to Study**
 
