@@ -79,7 +79,7 @@ Materials & Tools
 Setup / Preparation - (Artifacts that need refactoring)
 =============
 * Be sure to follow the setup from the first session ([Metrics and Visualization Lab Session](/teaching/Software-Reengineering/metrics/)) 
-* Also if have not already, download the book for this course "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)" (Note: OORP, p.xx refers to a page in the pdf version of this book)
+* Also if have not already, download the book for this course "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)" (_Note: OORP, p.xx refers to a page in the pdf version of this book_)
 
 
 Task 1: Django-CMS on CodeScene
