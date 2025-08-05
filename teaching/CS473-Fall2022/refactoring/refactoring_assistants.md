@@ -84,12 +84,22 @@ Setup / Preparation - (Artifacts that need refactoring)
 
 Task 1: Django-CMS on CodeScene
 =========
- 
-For our first task, we are going to use CodeScene to suggest which artifacts are in need of refactoring. 
+For our first task, we are going to use CodeScene to suggest which artifacts are in need of refactoring.
 
-To do this select in the "Code" menu on the left side, and then the "Hotspots" submenu. 
-In this visualization, the hotspots are artifacts with a lot of commit activities (i.e., they change 
-a lot during the software evolution and maintenance). On that visualization, you can check the tab on Refactoring Targets. Look at the recommended refactorings targets. If you select a specific file in this visualization (or the hotspots visualization) on the right it will display more details, scrolling down on the details you have the "Actions" buttons. There are four actions: View Code, X-ray, Trends, and Code Review. Check those four options and see for yourself what information CodeScene can provide.
+To do this, select the "Code" menu on the left side, and then the "Hotspots" submenu.  
+In this visualization, the hotspots are artifacts with a lot of commit activities (i.e., they change a lot during the software evolution and maintenance).  
+On that visualization, you can check the tab on Refactoring Targets. Look at the recommended refactoring targets.
+
+If you select a specific file in this visualization (or the Hotspots view), on the right it will display more details.  
+Scroll down in the details view to explore the four **Actions** buttons: **View Code**, **X-ray**, **Trends**, and **Code Review**.  
+Check those four options and see for yourself what information CodeScene can provide to support strategic refactoring.
+
+> _As you perform this task, keep in mind the pattern **"Most Valuable First" (OORP, p.29)** — prioritize refactoring opportunities that offer the highest benefit or reduce the most risk._
+  
+> _You should also consider the pattern **"Keep It Simple" (OORP, p.37)** — avoid the temptation to over-engineer when identifying or planning a refactoring._
+
+> _Finally, apply **"Study the Exceptional Entities" (OORP, p.107)** — CodeScene helps reveal outliers in complexity and change frequency that often signal deeper design problems._
+
 
 **Questions:**
 * Did CodeScene visualization help you identify possible targets for refactoring?
