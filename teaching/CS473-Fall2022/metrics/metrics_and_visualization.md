@@ -122,3 +122,7 @@ Did the metrics and visualization tools used in this lab session provide you wit
 you needed to fulfill the goals of the different Reengineering Patterns? Set up an argument about 
 the issues concerning the use of such tools: when would you use them, when wouldn’t you? Can you 
 envision other usages of these tools in other phases in the Reengineering Lifecycle?
+
+Post-Lab Quiz: Metrics & Visualization
+==========
+Posted on WebCampus

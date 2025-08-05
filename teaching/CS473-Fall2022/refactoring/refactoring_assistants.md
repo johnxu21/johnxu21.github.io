@@ -39,9 +39,9 @@ height:40px;" value="Reengineering Project" />
 In this session, we will learn about some different tools available for refactoring assistance. 
 By using tools, we can plan ahead the refactorings activities that could improve our design. 
 We will search for bad smells (symptoms of design problems) that give us hints on where and how 
-to refactor. When planning refactoring activities, keep in mind the pattern "Keep it Simple" 
+to refactor. When planning refactoring activities, keep in mind the pattern "**Keep it Simple**" 
 (OORP, p.37), as it a common mistake for people to over-complicate the design of a refactored 
-artifact. Another important pattern to remember when refactorings is “Most Valuable First” 
+artifact. Another important pattern to remember when refactorings is “**Most Valuable First**” 
 (OORP, p.29), as in you should prioritize the refactorings that bring more benefits first.
 
 Despite the benefits, in some contexts, refactoring is perceived as change noise, which makes more 
