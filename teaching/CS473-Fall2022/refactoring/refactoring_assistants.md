@@ -119,6 +119,16 @@ If you are successful, you should be able to run an analysis of your local clone
 Click on the "Code Smells" and analyse the detected smells. You should see that SonarQube also explains 
 the smells ("Why is this an issue?"). 
 
+> _Use the pattern **"Split Up God Class" (OORP, p.263)** when you encounter very large classes that take on too many responsibilities.  
+> These classes often become maintenance bottlenecks and are prone to error. SonarQube may highlight them through complexity, duplication, or high coupling._
+
+> _If the code is hard to follow or understand, apply the pattern **"Refactor to Understand" (OORP, p.127)**.  
+> Small, safe refactorings like Rename Method or Extract Method can improve clarity and help you reason about the system’s structure before attempting more extensive changes._
+
+> _When unsure about the implications of a smell, use **"Step Through the Execution" (OORP, p.149)**.  
+> Walking through how the code behaves at runtime can help validate whether a static smell points to a deeper design issue._
+
+
 Task 3: Django-CMS Strategic Refactoring
 ========
 For the Reengineering Course, we value the concept of Strategic Refactoring, which is refactoring with a goal. 
