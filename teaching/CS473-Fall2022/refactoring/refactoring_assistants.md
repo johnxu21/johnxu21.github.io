@@ -80,6 +80,7 @@ Setup / Preparation - (Artifacts that need refactoring)
 =============
 * Be sure to follow the setup from the first session ([Metrics and Visualization Lab Session](/teaching/Software-Reengineering/metrics/)) 
 * Also if have not already, download the book for this course "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)" (_Note: OORP, p.xx refers to a page in the pdf version of this book_)
+* **Note:** You are only required to **plan** the refactoring for this lab. Implementation is optional.
 
 
 Task 1: Django-CMS on CodeScene
@@ -154,8 +155,6 @@ There is no wrong path. Do whichever you find easier or most logical for you.
 > _You may also apply **"Expose the Design" (OORP, p.141)** — refactor parts of the system to better reflect their architectural role,  
 > making it easier to support new responsibilities in line with the enhancement issue._
 
-**Note:** You are only required to **plan** the refactoring for this lab. Implementation is optional.
-
 
 Questions:
 1.	What were your strategies and reengineering patterns for planning this refactoring? 
@@ -190,3 +189,6 @@ In case you want to dive deeper into refactoring, here are some extra materials 
 4. F. Khomh, M. D. Penta, Y.-G. Guéhéneuc, and G. Antoniol. An exploratory study of the impact of antipatterns on class change- and fault-proneness. Empirical Softw. Engg., 17(3):243–275, June 2012. http://link.springer.com/article/10.1007%2Fs10664-011-9171-y
 5. Nikolaos Tsantalis, IEEE, Ameya Ketkar, and Danny Dig, [Refactoring 2.0](https://users.encs.concordia.ca/~nikolaos/publications/TSE_2020.pdf). 2020
 
+Post-Lab Quiz: Metrics & Visualization
+==========
+Posted on WebCampus
