@@ -86,13 +86,15 @@ Task 1: Django-CMS on CodeScene
 =========
 For our first task, we are going to use CodeScene to suggest which artifacts are in need of refactoring.
 
-To do this, select the "Code" menu on the left side, and then the "Hotspots" submenu.  
+To do this, select the "**Code**" menu on the left side, and then the "**Hotspots**" submenu.  
 In this visualization, the hotspots are artifacts with a lot of commit activities (i.e., they change a lot during the software evolution and maintenance).  
-On that visualization, you can check the tab on Refactoring Targets. Look at the recommended refactoring targets.
+On that visualization, you can check the tab on **Refactoring Targets**. Look at the recommended refactoring targets.
 
-If you select a specific file in this visualization (or the Hotspots view), on the right it will display more details.  
-Scroll down in the details view to explore the four **Actions** buttons: **View Code**, **X-ray**, **Trends**, and **Code Review**.  
-Check those four options and see for yourself what information CodeScene can provide to support strategic refactoring.
+If you select a specific file in this visualisation (or the hotspots visualisation), on the right, it will display
+more details. When you scroll down to the details section, you can see a few actions. They include Review, 
+Source code, and X-ray. Check out these options and see for yourself what information CodeScene can provide.
+
+Also, notice that, for some files, CodeScene highlights other coupled files. Explore these code couplings as well.
 
 > _As you perform this task, keep in mind the pattern **"Most Valuable First" (OORP, p.29)** — prioritize refactoring opportunities that offer the highest benefit or reduce the most risk._
   
@@ -125,9 +127,13 @@ the smells ("Why is this an issue?").
 > _If the code is hard to follow or understand, apply the pattern **"Refactor to Understand" (OORP, p.127)**.  
 > Small, safe refactorings like Rename Method or Extract Method can improve clarity and help you reason about the system’s structure before attempting more extensive changes._
 
-> _When unsure about the implications of a smell, use **"Step Through the Execution" (OORP, p.149)**.  
+> _When unsure about the implications of a smell, use **"Step Through the Execution" (OORP, p.133)**.  
 > Walking through how the code behaves at runtime can help validate whether a static smell points to a deeper design issue._
 
+**Questions:**
+* Did SonarQube help you identify specific design problems (code smells) that tools like CodeScene did not?
+* Which smells stood out to you as most critical to address, and why?
+* Were there any cases where the smell detection might have been misleading or not worth acting on?
 
 Task 3: Django-CMS Strategic Refactoring
 ========
@@ -140,9 +146,15 @@ You will notice there are some issues which require a patch.
 
 Choose a few issues and plan the necessary refactoring task(s) to support them. You can start with the simplest 
 refactoring tasks to avoid "breaking" the code or go big according to the pattern "**Most Valuable First**". 
-There is no wrong path. Do whichever you find easier or most logical for you. Please note, you need only to 
-"**plan**" the refactoring activities for this lab session, there is no need to implement the refactoring tasks 
-(of course, if you want to do it, go ahead --- just remember that planning is the important part here).
+There is no wrong path. Do whichever you find easier or most logical for you.
+
+> _If the area of the code you're planning to change is hard to understand, consider applying the pattern **"Refactor to Understand" (OORP, p.127)**.  
+> This allows you to use safe refactorings (like renaming or extracting methods) to gain clarity before deeper changes._
+
+> _You may also apply **"Expose the Design" (OORP, p.141)** — refactor parts of the system to better reflect their architectural role,  
+> making it easier to support new responsibilities in line with the enhancement issue._
+
+**Note:** You are only required to **plan** the refactoring for this lab. Implementation is optional.
 
 
 Questions:
