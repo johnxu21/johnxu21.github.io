@@ -117,6 +117,13 @@ python -m coverage
 ```
 If everything is executed without errors, you should see a new file showing the code coverage in html file under htmlcov directory. Rename the generated folder for the unit and integration test you run for branch coverage. Please try to remember this coverage (or take a screenshot to not depend on your memory).
 
+**Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
+
+- **Tests: Your Life Insurance** *(p.149)* – Tests act as a safety net during reengineering. Running coverage analysis shows where the safety net is strong or weak before making changes.
+- **Grow Your Test Base Incrementally** *(p.159)* – Gradually expand your tests in small, safe steps. Here, running both statement and branch coverage provides a baseline for incremental improvement.
+- **Test the Interface, Not the Implementation** *(p.171)* – Focus on verifying observable behavior rather than internal details. When analyzing coverage, look for missing behavioral scenarios, not untested private helpers.
+
+
 Questions
 - Is the coverage good enough?
 - If you make any changes in Pacman-python sources, can you rely on the current tests to catch faults?
