@@ -35,7 +35,6 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
-
 In this session, we will learn about some different tools available for refactoring assistance. 
 By using tools, we can plan ahead the refactorings activities that could improve our design. 
 We will search for bad smells (symptoms of design problems) that give us hints on where and how 
@@ -75,13 +74,11 @@ Materials & Tools
 
 <br/>
 
-
 Setup / Preparation - (Artifacts that need refactoring)
 =============
 * Be sure to follow the setup from the first session ([Metrics and Visualization Lab Session](/teaching/Software-Reengineering/metrics/)) 
 * Also if have not already, download the book for this course "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)" (_Note: OORP, p.xx refers to a page in the pdf version of this book_)
 * **Note:** You are only required to **plan** the refactoring for this lab. Implementation is optional.
-
 
 Task 1: Django-CMS on CodeScene
 =========
@@ -103,14 +100,12 @@ Also, notice that, for some files, CodeScene highlights other coupled files. Exp
 
 > _Finally, apply **"Study the Exceptional Entities" (OORP, p.107)** — CodeScene helps reveal outliers in complexity and change frequency that often signal deeper design problems._
 
-
 **Questions:**
 * Did CodeScene visualization help you identify possible targets for refactoring?
 * Did CodeScene give you hints or clues on how to refactor the proposed targets?
 * Did CodeScene help you visualise the extent of the refactoring activity?
 <br/>
 
-  
 Task 2: Django-CMS on SonarQube
 ============
 For the second task, we will use a more complex and dedicated tool to find refactoring targets. 
@@ -154,7 +149,6 @@ There is no wrong path. Do whichever you find easier or most logical for you.
 
 > _You may also apply **"Expose the Design" (OORP, p.141)** — refactor parts of the system to better reflect their architectural role,  
 > making it easier to support new responsibilities in line with the enhancement issue._
-
 
 Questions:
 1.	What were your strategies and reengineering patterns for planning this refactoring? 

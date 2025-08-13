@@ -37,7 +37,7 @@ height:40px;" value="Reengineering Project" />
 <br/>
 
 Dynamic analysis is “the analysis of the properties of a running software system” 
-[[Ball1999](https://ansymore.uantwerpen.be/system/files/Ball1999.pdf)]. 
+[Ball 1999]. 
 It is complementary to static analysis techniques. Some properties that cannot be 
 studied through static analysis can be examined with dynamic analysis and vice versa. 
 The applications of dynamic analysis techniques are very broad: program comprehension, 
@@ -61,10 +61,7 @@ Materials & Tools Used for this Session
 * [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
 * [JPacman](https://github.com/johnxu21/jpacman) repository.
 * [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition. 
-* [LittleDarwin](https://github.com/aliparsai/LittleDarwin) is a tool to perform Mutation testing on Java applications. Mutation testing is a relatively new topic, therefore it is difficult to find working tools for it. 
 * [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
-* [Pitest](http://pitest.org/) and [Pitest Repo](https://github.com/hcoles/pitest) is a state of the art mutation testing system, providing gold standard test coverage for Java and the jvm. It's fast, scalable and integrates with modern test and build tooling. [Gradle plugin for PIT Mutation Testing
-](https://gradle-pitest-plugin.solidsoft.info/).The plugin provides an ability to perform a mutation testing and calculate a mutation coverage of a Gradle-based projects with PIT.
 
 Auxiliary Tools
 ============
@@ -214,58 +211,7 @@ is very similar to JaCoCo but more interactive.
 * What do you think of the overview coverage visualization provided by SonarQube?
 * Which did you find better to visualize the source code with branch coverage: JaCoCo or SonarQube?
 
-Task 5 -- Mutation Testing on JPacman
-=============
- 
-Mutation testing is a method of determining the quality of a test suite in detail. Mutation testing simulates 
-faults and checks whether the test suite is good enough to catch those simulated faults. It is performed by 
-injecting faults into the software and counting the number of these faults that make at least one test fail. 
-The process for mutation testing requires the following steps. First, faulty versions of the software are created 
-by introducing a single fault into the system (Mutation). This is done by applying a known transformation 
-(Mutation Operator) on a certain part of the code. After generating the faulty versions of the software (Mutants), 
-the test suite is executed on each one of these mutants. If there is an error or failure during the execution of 
-the test suite, the mutant is marked as killed (Killed Mutant). On the other hand, if all tests pass, it means 
-that the test suite could not catch the fault and the mutant has survived (Survived Mutant). Mutation testing 
-demands a green test suite — a test suite in which all the tests pass — to run correctly. The final result is 
-calculated by dividing the number of killed mutants by the number of all mutants. A test suite is said to achieve 
-full test adequacy whenever it can kill all of the mutants. Such test suites are called mutation-adequate test suites. 
- 
-For the lab, we recommend using the tool [LittleDarwin](https://github.com/aliparsai/LittleDarwin) to perform 
-mutation testing on Java. This tool was developed, at the [University of Antwerp](https://www.uantwerpen.be/en/). 
-[LittleDarwin](https://github.com/aliparsai/LittleDarwin) is a mutation testing tool written in python that can 
-analyze a wide range of Java applications. It is built with the purpose of easy deployment in an industrial 
-environment, and it can handle complicated build system structures often found in such cases.  
- 
-To install LittleDarwin follow the instructions on its GitHub page. On Mac/Linux already with python you 
-just need to use the following command to install it:
-```
-pip3 install littledarwin
-```
 
-In this task, you will try mutation testing on JPacman. Install LittleDarwin and run it on JPacman source code. 
-Mutation testing is a slow procedure, the process may take between 10 and 25 minutes on JPacman. Therefore, 
-don't "kill" the process if you think it is taking too long (let the tool do its job). Also, make sure to run 
-LittleDarwin in a separate terminal/command window (otherwise you may freeze your IntelliJ). 
-Use the following command inside the jpacman folder:
-```
-littledarwin  -m -b  -p ./src/main/ -t ./ -c ./gradlew,test --timeout=180
-```
-After it is finished, you can find the report in a structure similar to ```/LittleDarwinResults/report.html``` 
-(there is a zip in the repository with such reports for JPacman so that you can see the results without waiting). 
-This is like a JaCoCo report but instead of showing coverage percentage, it shows Mutation Coverage (
-i.e., the percentage of mutants killed). A high mutation score indicates that your test suite is a good quality one. 
-Take the JaCoCo report or SonarQube results on coverage and compare it with the mutation coverage.
- 
-**Questions:**
-* Find classes that have low mutation coverage and high statement coverage. What does this indicate?
-* In these classes, find a survived mutant that is within a covered statement (you can use the line numbers and the before-after comments inside each mutant to find them in the code). Why does this happen? 
-* Find classes that have high mutation coverage and low statement coverage. What does this indicate?
-* In these classes, look for a killed mutant that is not within a covered statement. Why does this happen?
-* Given the previous observations, do you think statement coverage is a reliable metric for the quality of the test suite? Why (not)?
-* Can the accuracy of mutation testing be improved? If yes, how do you think it is possible?
-* How can mutation testing help write new tests?
- 
- 
 Optional Task -- Increasing (Even More) the Coverage on JPacman
 ================
  
