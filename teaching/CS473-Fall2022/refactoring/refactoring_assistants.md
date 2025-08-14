@@ -15,13 +15,13 @@ height:40px;" value="Metrics and Visualization" />
     <input type="submit" style="background-color:firebrick;color:white;width:185px;
 height:40px;" value="Refactoring Assistants" />
 </form>
-<form action="/teaching/Software-Reengineering/integration/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
-height:40px;" value="Software Integration" />
-</form>
 <form action="/teaching/Software-Reengineering/dynamic/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Dynamic Analysis: Testing" />
+</form>
+<form action="/teaching/Software-Reengineering/integration/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Software Integration" />
 </form>
 <form action="/teaching/Software-Reengineering/msr/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
