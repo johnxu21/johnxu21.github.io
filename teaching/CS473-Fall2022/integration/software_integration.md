@@ -89,24 +89,24 @@ Following the *Most Valuable First* pattern (p.29), we begin with a high-impact 
 
 ### Step-by-Step Instructions
 
-#### 1. Install GACPD
+#### **1. Install GACPD**
 Follow the installation instructions in the [GACPD README](https://github.com/unlv-evol/GACPD).  
 Make sure you can run Jupyter notebooks in your environment.
 
 ---
 
-#### 2. Run the analysis
+#### **2. Run the analysis**
 1. Open the [`OnePR.ipynb`](https://github.com/unlv-evol/GACPD/blob/main/OnePR.ipynb) file in the root of the GACPD repository.  
 2. Execute the notebook cells as instructed.  
 3. Ensure the notebook is configured to analyze **PR #13386** from `apache/kafka`.
-```example.individual_pr_check(13386)
-```
 
-This step applies the Detecting *Duplicated Code pattern (p.223)* — GACPD uses similarity analysis to find duplicated or nearly duplicated changes across repositories.
+`example.individual_pr_check(13386)`
+
+This step applies the *Detecting Duplicated Code pattern (p.223)* — GACPD uses similarity analysis to find duplicated or nearly duplicated changes across repositories.
 
 ---
 
-#### 3. View the GACPD output
+#### **3. View the GACPD output**
 When the analysis finishes, navigate to the output folder:  
 ```Results/Repos_files/1/<PR-number>/MO/<path-to-source-file>/results.txt```
 This file contains the file paths in both repositories that you can use for manual inspection.
@@ -116,7 +116,7 @@ Here, we apply the *Compare Code Mechanically pattern (p.227)* — use automated
 
 ---
 
-#### 4. Read and understand the patch
+#### **4. Read and understand the patch**
 Open Apache Kafka Pull Request [#13386](https://github.com/apache/kafka/pull/13386)
 
 Read the PR description and discussion to understand:
@@ -126,7 +126,7 @@ Read the PR description and discussion to understand:
 
 Pattern cue — *Most Valuable First (OORP, p.29)*: articulate the value/impact of this change before investing further effort, so you focus integration work on the highest‑benefit patches first.
 
-#### 5. Verify the Missed Opportunity
+#### **5. Verify the Missed Opportunity**
 1. **Open the source repository** (`apache/kafka`) and navigate to the file path shown in the report or `results.txt`.  
    - Confirm that the hunk appears in the PR’s changes.  
 2. **Open the target repository** (`linkedin/kafka`) and navigate to the same file path.  
