@@ -36,12 +36,11 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
-In this session, we will explore tools that assist in software integration across related but 
-independently evolving repositories. Many software variants (forks that share a common origin) fail to 
-reuse relevant bug fixes or enhancements from each other. Prior work with **PaReco**
+Many modern software systems are created by forking an existing codebase. While most forks are short-lived and serve temporary collaboration needs, a smaller but more impactful subset evolve into long-lived forks, referred to here as software variants, that follow independent development trajectories. These variants allow customization and organizational control, but over time their structural and semantic divergence complicates the reuse of bug fixes or enhancements from each other Prior work with **PaReco**
 ([paper](https://dl.acm.org/doi/10.1145/3540250.3549112)) shows that reuse gaps often appear as missed 
 opportunities (patch present in the source but absent in the target) or effort duplication (similar patch 
-re‑implemented manually). Our extended tool, **GACPD**, builds on **PaReco** with broader language support, 
+re‑implemented manually). Our extended tool, **[GACPD](https://github.com/unlv-evol/GACPD)**, builds on the 
+**[PaReco](https://github.com/unlv-evol/PaReco)** tool with broader language support, 
 faster token normalization, and developer-facing outputs to surface **candidate patches** worth reusing. 
 When selecting what to integrate, apply **Most Valuable First** (OORP, p.29) to prioritize the highest‑impact 
 patches, and **Keep It Simple** (OORP, p.37) to avoid unnecessary complexity in your plan.
