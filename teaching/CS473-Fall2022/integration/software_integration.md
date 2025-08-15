@@ -135,4 +135,4 @@ Pattern cue — *Most Valuable First (OORP, p.29)*: articulate the value/impact 
 
 ---
 
-## Task 2 – Patch Integration with - RePatch
+## Task 2 – Integrating the Missed Opportunity with RePatch
