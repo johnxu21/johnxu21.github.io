@@ -50,7 +50,7 @@ height:30px;" value="SD Competition" />
 <br/>
 
 ## Group Formation Guidelines
-This class has 63 enrolled students, and we will form 6 groups of 10-11 students each. Please voluntarily select your group mates in the survey. For those who do not specify their preferred teammates, groups will be assigned based on the survey information (e.g., software development experience, shared project ideas, etc.).
+This class has 23 enrolled students, and we will form 3 groups of 7-8 students each. Please voluntarily select your group mates in the survey. For those who do not specify their preferred teammates, groups will be assigned based on the survey information (e.g., software development experience, shared project ideas, etc.).
 
 It is essential to finalize group formation within the first week of the class so we can begin working on the project and assignments promptly. Feel free to use the Discord communication channel to coordinate and request to join a group.
 
