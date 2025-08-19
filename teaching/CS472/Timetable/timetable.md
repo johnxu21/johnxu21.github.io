@@ -111,13 +111,13 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mo 09/01</td>
 <td style="border: 1px solid black;"><b>Labor Day - No Class</b></td>
 <td style="border: 1px solid black;">We 09/03 </td>
-<td style="border: 1px solid black;">[T] Software Testing </td>
+<td style="border: 1px solid black;">[T] Intro to Git & GitHub</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
 <td style="border: 1px solid black;">Mo 02/04 </td>
-<td style="border: 1px solid black;">[T] Continuous Integration </td>
+<td style="border: 1px solid black;">[T] Software Testing </td>
 <td style="border: 1px solid black;">We 02/06 </td>
 <td style="border: 1px solid black;">[L] Continuous Integration </td>
 </tr>
@@ -125,15 +125,15 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Mo 02/11</td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[T] Continuous Integration</td>
 <td style="border: 1px solid black;">We 02/13 </td>
-<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;">[L] Continuous Integration</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Mo 02/18</td>
-<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">We 02/20 </td>
 <td style="border: 1px solid black;">[L] Free Project work </td>
 </tr>
@@ -165,9 +165,9 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">09</td>
 <td style="border: 1px solid black;">Mo 03/18</td>
-<td style="border: 1px solid black;"><b>Spring break recess</b></td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 <td style="border: 1px solid black;">We 03/20 </td>
-<td style="border: 1px solid black;"><b>Spring break recess</b></td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 </tr>
 
 <tr>
