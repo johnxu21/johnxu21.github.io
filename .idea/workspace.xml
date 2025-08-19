@@ -35,7 +35,17 @@
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/fixtures/account_data.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/test_account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS473-Fall2022/integration/software_integration.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS473-Fall2022/integration/software_integration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/CI.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/CI/CI.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$CI-CD.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$ClassOverview.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$Git-and-GitHub.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$LLM.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$OOD-V2.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$OOD.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$Survey_Presentation.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$Testing-2033-fall.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$Testing.pptx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +201,7 @@
       <workItem from="1751057368085" duration="584000" />
       <workItem from="1751900137990" duration="597000" />
       <workItem from="1752516958630" duration="598000" />
-      <workItem from="1753724318727" duration="36250000" />
+      <workItem from="1753724318727" duration="42484000" />
     </task>
     <servers />
   </component>
