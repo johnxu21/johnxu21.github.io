@@ -74,5 +74,5 @@ career goals.
   * [Video of the project](https://mail.google.com/mail/u/2/#search/jay+karma/FMfcgzQbgcSmnPclnTDBlDdBCKXGrnWS?projector=1)
 * Estimarmine 
   * [Project Details](Estimarmine_Precondition_Report.pdf)
-* I am expecting more projects. I will update as they become available. Please check back soon.
+* **I am expecting more projects. I will update as they become available. Please check back soon.**
 
