@@ -69,6 +69,10 @@ Review the opportunities below and consider selecting a client project that alig
 career goals.
 </p>
 
-
+* Novel Gamified Digital Commerce Platform for consumers at Casinos
+  * [Project Details](Gamified-Digital-Commerce-Platform.pdf)
+  * [Video of the project](https://mail.google.com/mail/u/2/#search/jay+karma/FMfcgzQbgcSmnPclnTDBlDdBCKXGrnWS?projector=1)
+* Estimarmine 
+  * [Project Details](Estimarmine_Precondition_Report.pdf)
 
 
