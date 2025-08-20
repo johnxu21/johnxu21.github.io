@@ -68,7 +68,7 @@ Repositories
 
 Setup / Preparation
 ===============
-In this lab you will play with two very related tools: [GACPD](https://github.com/unlv-evol/GACPD) and [RePatch](https://github.com/unlv-evol/RePatch)
+In this lab you will play with two very related tools: [GACPD](https://github.com/unlv-evol/GACPD) and [RePatch](https://github.com/Software-Reengineering/RePatch)
 
 ## Task 1 – Identifying a Missed Opportunity with GACPD
 
@@ -135,3 +135,27 @@ Pattern cue — *Most Valuable First (OORP, p.29)*: articulate the value/impact 
 ---
 
 ## Task 2 – Integrating the Missed Opportunity with RePatch
+In this task, you will use **RePatch** to integrate **MO** patch identified in Task 1 between the two related repositories:  
+ 
+Your goal is to:  
+1. **Run RePatch** to integrate the patch.  
+2. **Verify the results** by inspecting the backend database.  
+
+---
+
+### Step-by-Step Instructions
+
+#### **1. Install RePatch**
+Follow the installation instructions in the [RePatch README](https://github.com/Software-Reengineering/RePatch).  
+
+---
+
+#### **2. Run the Integration Pipeline**
+1. Open and build the project in IntelliJ IDEA. 
+2. Ensure the sample data is configured to analyze **PR #13386** from `apache/kafka` - this is already done for you.
+3. Run the project and wait for the integration to finish.  
+
+---
+
+#### **3. View the output of RePatch**
+When the integration finishes, navigate to the MySQL database to inspect the result. A detailed information is added in the README of the lab project repository
