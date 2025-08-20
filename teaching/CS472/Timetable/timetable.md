@@ -55,7 +55,6 @@ The theory consists of four lessons where we explain the techniques to be used.:
 2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/29/2025]
 3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 01/28/2025]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 02/04/2025]
-5. Using Generative AI in Software Engineering [PPTX](LLM.pptx) [last updated 02/11/2025]
 6. Object-oriented design 
   * Slides [PDF](OOD-V2.pptx) [last updated 10/02/2024]
   * Analysing a System [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_6)"
@@ -71,7 +70,6 @@ All the labs have been tested on macOS environment (Unix flavour). If you are us
 The first exercise lab sessions is meant to practice working with Git and GitHub.
 The next lab session is meant to practice writing unit tests and test driven development to increase test coverage.
 The third lab session aimed at introducing you to CI/CD. 
-The last lab session aimed introducing to you how Large Language Models (LLMs) are being used to solve in Software Engineering tasks. 
 After a few weeks, the lab sessions switch to independent work, i.e. the labs are organized as sessions where you can work on your project freely, and where an assistant is 
 present to answer any questions. During those hours, the computer room are reserved for you, 
 so that you can certainly work. Since most of the students have personal laptops, they may choose not to
