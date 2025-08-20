@@ -41,7 +41,7 @@ height:30px;" value="FAQ" />
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Presentations" />
 </form>
-<form action="/teaching/CS472/project/client_projects/">
+<form action="/teaching/CS472/project/Clients/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Client Projects" />
 </form>
