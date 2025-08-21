@@ -151,11 +151,77 @@ Follow the installation instructions in the [RePatch README](https://github.com/
 ---
 
 #### **2. Run the Integration Pipeline**
-1. Open and build the project in IntelliJ IDEA. 
-2. Ensure the sample data is configured to analyze **PR #13386** from `apache/kafka` - this is already done for you.
-3. Run the project and wait for the integration to finish.  
+- Open and build the project in IntelliJ IDEA.
+- For this lab, the pipeline is already preconfigured to analyze **PR #13386** from apache/kafka. Simply run the project and wait for the integration to finish.
+- For the **project assignments**, you will need to configure `RePatch` to analyze different PRs (four in total).
+  - The PR configuration is stored in the **src/main/resources/complete_data** directory (see README, section Configuring PRs).
+  - To switch to a new PR, update the configuration file(s) in the **src/main/resources/sample_data** with the PR number and repository details provided in your project instructions.
+  - Rebuild and rerun `RePatch` with the updated settings.
 
 ---
 
-#### **3. View the output of RePatch**
-When the integration finishes, navigate to the MySQL database to inspect the result. A detailed information is added in the README of the lab project repository
+#### **3. View RePatch output**
+
+When the integration finishes, inspect the results in MySQL.
+
+* **How to connect:** Use any MySQL client—e.g., MySQL Workbench (GUI), the MySQL CLI, or **phpMyAdmin** (included in the Docker setup for RePatch).
+* **What to look at:** The key table is `merge_result`, which records how **RePatch** reduced or resolved merge conflicts when `git cherry-pick` failed. Other tables include useful metadata and diagnostics (e.g., projects, patches, refactorings, conflicting files, conflict blocks).
+* For setup details, see the lab project’s README.
+
+**Quick start (SQL):**
+
+{% highlight sql %}
+-- List databases
+SHOW DATABASES;
+
+-- Switch to the RePatch database
+USE refactoring_aware_integration_repatch;
+
+-- See available tables
+SHOW TABLES;
+
+-- Inspect the structure of a table
+DESCRIBE merge_result;
+
+-- Preview rows from a specific table
+SELECT * FROM merge_result LIMIT 50;
+{% endhighlight %}
+
+**Template query (replace the placeholder):**
+
+```SELECT * FROM <table_name> LIMIT 50;```
+
+
+<!-- #### **3. View the output of RePatch**
+When the integration finishes, navigate to the MySQL database to inspect the result. There are several tools you can use to connect to the database including; MySQL Workbench (GUI) and MySQL CLI. If you are using the Docker installation of `RePatch`, you alreay have phpMyAdmin configured for you. A detailed information is added in the README of the lab project repository.
+
+ Explore `merge_result` table, which records how `RePatch` reduced or resolved merge conflicts when git cherry-pick failed. The other tables also contain useful metadata and diagnostics such as refactorings, conflicting files, conflict blocks, etc., so give them a look as well. Run the SQL code below - replace **table_name** which the actually table you would like to inspect;
+
+```SELECT * FROM table_name;``` -->
+
+ ---
+
+## Task 4 – Writing Tests for Integrated Changes
+
+Up to now, we have used RePatch to integrate a missed opportunity patch from **Apache Kafka PR #13386** into the target repository. However, integration at the syntactic level is not enough — we also need to ensure that the change behaves correctly in its new context.
+
+In this task, you will write a **missing test** for the integrated patch.
+
+---
+
+### Step-by-Step Instructions
+
+1. Inspect the code hunk from PR #13386 that was integrated into the target repository.  
+2. Identify the behavior or functionality that the hunk is meant to enforce (e.g., offset commit logic, logging, or metrics).  
+3. Write a **unit test or integration test** in the target repository that exercises this functionality.  
+   - Use existing test files as templates.  
+   - Place the new test alongside related tests in the appropriate test suite.  
+4. Run the test suite and verify that your new test passes.  
+   - If it fails, investigate whether the integration requires additional adaptations.  
+
+---
+
+### Reflection Questions (for quiz prep)
+- Did your test confirm that the patch works correctly in the target repository?  
+- Could you imagine cases where a patch integrates syntactically but still breaks functionality?  
+- How do tests strengthen confidence in patch reuse across software variants?  
