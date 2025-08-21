@@ -164,7 +164,7 @@ Follow the installation instructions in the [RePatch README](https://github.com/
 
 When the integration finishes, inspect the results in MySQL.
 
-* **How to connect:** Use any MySQL client—e.g., MySQL Workbench (GUI), the MySQL CLI, or **phpMyAdmin** (included in the Docker setup for RePatch).
+* **How to connect:** Use any MySQL client—e.g., MySQL Workbench (GUI), the MySQL CLI, or **phpMyAdmin** (included in the Docker setup for **RePatch**).
 * **What to look at:** The key table is `merge_result`, which records how **RePatch** reduced or resolved merge conflicts when `git cherry-pick` failed. Other tables include useful metadata and diagnostics (e.g., projects, patches, refactorings, conflicting files, conflict blocks).
 * For setup details, see the lab project’s README.
 
