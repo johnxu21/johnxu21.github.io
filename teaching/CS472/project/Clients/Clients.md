@@ -71,7 +71,7 @@ career goals.
 
 * Novel Gamified Digital Commerce Platform for consumers at Casinos
   * [Project Details](Gamified-Digital-Commerce-Platform.pdf)
-  * [Video of the project](https://mail.google.com/mail/u/2/#search/jay+karma/FMfcgzQbgcSmnPclnTDBlDdBCKXGrnWS?projector=1)
+  * [Video of the project](https://www.youtube.com/watch?v=rpYCsmhbdME)
 * Estimarmine 
   * [Project Details](Estimarmine_Precondition_Report.pdf)
 * **I am expecting more projects. I will update as they become available. Please check back soon.**
