@@ -65,7 +65,7 @@ developer  (```fork_date```), it inherited all commits from variant1. Then, betw
 ```fork_date``` and ```divergence_date```, both variants synchronized commits, keeping both 
 variants even. After the ```divergence_date```, the variants stopped synchronizing commits.
 
-<img src="problem.jpeg" alt="Patch" style="width:2003px;height:769px;" align="center">
+<img src="../../../images/problem.jpeg" alt="Patch" style="width:2003px;height:769px;" align="center">
 
 Let us assume that the developer of ```variant1``` identified a bug after the 
 ```divergence_date``` that is spread across files' foo, bar, and lot. The developer 
