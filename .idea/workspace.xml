@@ -35,10 +35,6 @@
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/fixtures/account_data.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/test_account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Clients/Estimarmine_Precondition_Report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Estimarmine_Precondition_Report.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Clients/Gamified-Digital-Commerce-Platform.docx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Gamified-Digital-Commerce-Platform.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Clients/Gamified-Digital-Commerce-Platform.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Gamified-Digital-Commerce-Platform.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS473-Fall2022/Software-Reengineering.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS473-Fall2022/Software-Reengineering.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +190,7 @@
       <workItem from="1751057368085" duration="584000" />
       <workItem from="1751900137990" duration="597000" />
       <workItem from="1752516958630" duration="598000" />
-      <workItem from="1753724318727" duration="59198000" />
+      <workItem from="1753724318727" duration="60067000" />
     </task>
     <servers />
   </component>
