@@ -45,6 +45,11 @@ Where ? When ?
 * Time: MoWe 5:15PM-6:30PM
 * Location: FDH 217
 
+**Communication**
+
+Office Hours Feel free to reach out for assistance! You can send me a DM on Discord for private communication or post your question in any relevant Discord channel for group discussions and support.
+Discord workspace: [Discord](https://discord.gg/kqzZwSFv)
+
 
 - **Credits**: 3
 - **Prerequisites**: Graduate standing. Prior knowledge of data structures and advanced programming is expected.
