@@ -16,13 +16,13 @@ height:40px;" value="Metrics and Visualization" />
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Refactoring Assistants" />
 </form>
-<form action="/teaching/Software-Reengineering/integration/">
-    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
-height:40px;" value="Software Integration" />
-</form>
 <form action="/teaching/Software-Reengineering/dynamic/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
 height:40px;" value="Dynamic Analysis: Testing" />
+</form>
+<form action="/teaching/Software-Reengineering/integration/">
+    <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
+height:40px;" value="Software Integration" />
 </form>
 <form action="/teaching/Software-Reengineering/msr/">
     <input type="submit" style="background-color:cornflowerblue;color:white;width:185px;
@@ -65,7 +65,7 @@ developer  (```fork_date```), it inherited all commits from variant1. Then, betw
 ```fork_date``` and ```divergence_date```, both variants synchronized commits, keeping both 
 variants even. After the ```divergence_date```, the variants stopped synchronizing commits.
 
-<img src="/images/473/zoomed_patch.jpeg" alt="Patch" style="width:1000px;height:406px;" align="center">
+<img src="../../../images/problem.jpeg" alt="Patch" style="width:1000px;height:384px;" align="center">
 
 Let us assume that the developer of ```variant1``` identified a bug after the 
 ```divergence_date``` that is spread across files' foo, bar, and lot. The developer 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Groups
-permalink: /teaching/CS472/project/Group/
+permalink: /teaching/CS472/project/Clients/
 ---
 
 <div class="main-component">
@@ -28,7 +28,7 @@ height:40px;" value="Project" />
 
 <div class="main-component">
 <form action="/teaching/CS472/project/Group/">
-    <input type="submit" style="background-color:firebrick;float:left; color:white;width:130px;
+    <input type="submit" style="background-color:#008CBA;float:left; color:white;width:130px;
 height:30px;" value="Groups" />
 </form>
 <form action="/teaching/CS472/project/FAQ/">
@@ -40,7 +40,7 @@ height:30px;" value="FAQ" />
 height:30px;" value="Presentations" />
 </form>
 <form action="/teaching/CS472/project/Clients/">
-    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
+    <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="Client Projects" />
 </form>
 <form action="/teaching/CS472/project/Competition/">
@@ -52,11 +52,27 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
-## Group Formation Guidelines
-This class has 23 enrolled students, and we will form 3 groups of 7-8 students each. Please voluntarily select your group mates in the survey. For those who do not specify their preferred teammates, groups will be assigned based on the survey information (e.g., software development experience, shared project ideas, etc.).
+<p>
+Choosing a <strong>client-sponsored project</strong> gives your team the opportunity to work with real stakeholders 
+who provide requirements, feedback, and direction throughout the semester. This allows you to focus your energy 
+on <em>design and development</em> while still benefiting from client input during implementation. 
+</p>
 
-It is essential to finalize group formation within the first week of the class so we can begin working on the project and assignments promptly. Feel free to use the Discord communication channel to coordinate and request to join a group.
+<p>
+In contrast, teams that create their own custom projects must define requirements from scratch—sometimes leading to 
+unrealistic or less engaging "virtual client" scenarios. By working with a client, you gain the added benefit of 
+<strong>clearer goals, real-world constraints, and professional collaboration</strong> that mirror industry practice.
+</p>
 
+<p>
+Review the opportunities below and consider selecting a client project that aligns with your team’s interests and 
+career goals.
+</p>
 
-
+* Novel Gamified Digital Commerce Platform for consumers at Casinos
+  * [Project Details](Gamified-Digital-Commerce-Platform.pdf)
+  * [Video of the project](https://www.youtube.com/watch?v=rpYCsmhbdME)
+* Estimarmine 
+  * [Project Details](Estimarmine_Precondition_Report.pdf)
+* **I am expecting more projects. I will update as they become available. Please check back soon.**
 

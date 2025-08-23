@@ -50,7 +50,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 
 
-### **This individual assignment is due Jan 29th, 2025**
+### **This individual assignment is due Sep 5th, 2025**
 
 For this lab, you will be learning how to explore an open 
 source repository from GitHub. You will also learn how to extract useful 

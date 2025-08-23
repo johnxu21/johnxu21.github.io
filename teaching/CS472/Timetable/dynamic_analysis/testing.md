@@ -49,7 +49,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 
 
-### **This individual assignment is due Feb 5th, 2025**
+### **This individual assignment is due Sept 12th, 2025**
 
 In this Lab your will practice writing unit tests and analysing test coverage using Python programming language.
 In the Lab you will also continue working with Git and GitHub facilities. You will submit your final report for this Lab in the **Team's repository** you created and used in the 

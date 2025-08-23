@@ -49,7 +49,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 <br/>
 
-## **This individual assignment is due Feb 17th, 2025**
+## **This individual assignment is due Sept 19th, 2025**
 
 
 ## **Introduction**
@@ -203,4 +203,3 @@ Your report is the primary artifact for grading. It must be prepared as a **PDF*
   - Do not require graders to browse your fork unless for verification.  
   - Paste or screenshot essential evidence (coverage tables, log snippets, YAML/test code) into the PDF.  
 - Double-check that your **fork repository link** is correct and public.  
-- Submit before the posted deadline (see course timetable).  

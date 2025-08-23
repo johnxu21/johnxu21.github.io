@@ -94,10 +94,9 @@ Milestones
 * **Announce Project**: At the outset of the project, students should announce which software system they intend to reengineer (yes, you can propose one yourself) and whether they intend to do so individually or in groups (duo projects are encouraged).
 * **Precondition Report - Project Setup**. When announcing the project, students should demonstrate that they meet the necessary pre-condition to start the project. They need to have a Git repository for their project and also show the ability to successfully build the project.
 * **Intermediate Report - Tool Usage**: One third into the project, each group should hand in a status report containing screenshots of the tools applied on the project, and interpretations about these results.
-* **Concluding Session**: Two thirds into the project, there is a concluding session, where we will reflect on the lessons learned during the project.
 * **Final Report**: During the exam period you hand in a final report, listing the solutions for the problems you came across and what you learned from them. You will defend this report orally.
 
-Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on Feb, 20th, 2025.] 
+Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on Aug, 22th, 2025.] 
 
 <table style="border-collapse:collapse;">
 <tr >
@@ -110,132 +109,134 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 
 <tr>
 <td style="border: 1px solid black;">01</td>
-<td style="border: 1px solid black;">Mo 08/29</td>
+<td style="border: 1px solid black;">Mo 08/25</td>
 <td style="border: 1px solid black;">[T] Class overview</td>
-<td style="border: 1px solid black;">We 08/31</td>
+<td style="border: 1px solid black;">We 08/27</td>
 <td style="border: 1px solid black;">[T] Introduction </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">02</td>
-<td style="border: 1px solid black;">Mo 09/05</td>
+<td style="border: 1px solid black;">Mo 09/01</td>
 <td style="border: 1px solid black;">Public Holiday </td>
-<td style="border: 1px solid black;">We 09/07 </td>
-<td style="border: 1px solid black;">[L] Metrics and Visualization 1 </td>
+<td style="border: 1px solid black;">We 09/03 </td>
+<td style="border: 1px solid black;">[L] Metrics and Visualization </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
-<td style="border: 1px solid black;">Mo 09/12 </td>
-<td style="border: 1px solid black;">[L] Refactoring assistants 1 </td>
-<td style="border: 1px solid black;">We 09/14 </td>
-<td style="border: 1px solid black;">[L] Refactoring assistants 2 </td>
-</tr>
-
-<tr>
-<td style="border: 1px solid black;">04</td>
-<td style="border: 1px solid black;">Mo 09/19</td>
-<td style="border: 1px solid black;">[L] Software Integration  1 </td>
-<td style="border: 1px solid black;">We 09/21 </td>
-<td style="border: 1px solid black;">[L] Software Integration 2 </td>
+<td style="border: 1px solid black;">Mo 09/08 </td>
+<td style="border: 1px solid black;">[L] Refactoring assistants 1</td>
+<td style="border: 1px solid black;">We 09/10 </td>
+<td style="border: 1px solid black;">[L] Refactoring assistants 2</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
-<td style="border: 1px solid black;">Mo 09/26 </td>
+<td style="border: 1px solid black;">Mo 09/15 </td>
 <td style="border: 1px solid black;">[L] Dynamic Analysis: Testing 1 </td>
-<td style="border: 1px solid black;">We 09/28 </td>
+<td style="border: 1px solid black;">We 09/17 </td>
 <td style="border: 1px solid black;">[L] Dynamic Analysis: Testing 2 </td>
 </tr>
+
+<tr>
+<td style="border: 1px solid black;">04</td>
+<td style="border: 1px solid black;">Mo 09/22</td>
+<td style="border: 1px solid black;">[L] Software Integration  1 </td>
+<td style="border: 1px solid black;">We 09/24 </td>
+<td style="border: 1px solid black;">[L] Software Integration 2 </td>
+</tr>
+
+
 
 
 <tr>
 <td style="border: 1px solid black;">06</td>
-<td style="border: 1px solid black;">Mo 10/03</td>
+<td style="border: 1px solid black;">Mo 09/29</td>
 <td style="border: 1px solid black;">[L] Mining Software Repositories  1 </td>
-<td style="border: 1px solid black;">We 10/05</td>
-<td style="border: 1px solid black;">[L] Mining Software Repositories 2 <br> <b>> hand out assignment here </b></td>
+<td style="border: 1px solid black;">We 10/01</td>
+<td style="border: 1px solid black;">[L] Mining Software Repositories 2</td>
 </tr>
 
 
 <tr>
 <td style="border: 1px solid black;">07</td>
-<td style="border: 1px solid black;">Mo 10/10</td>
+<td style="border: 1px solid black;">Mo 10/06</td>
 <td style="border: 1px solid black;">Free project Work</td>
-<td style="border: 1px solid black;">We 10/12</td>
+<td style="border: 1px solid black;">We 10/08</td>
 <td style="border: 1px solid black;">Free project Work <br/> <b>[Milestone 0] Groups Assembled + <br/> Precondition report</b> </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">08</td>
-<td style="border: 1px solid black;">Mo 10/17</td>
+<td style="border: 1px solid black;">Mo 10/13</td>
 <td style="border: 1px solid black;">Free project Work  </td>
-<td style="border: 1px solid black;">We 10/19</td>
+<td style="border: 1px solid black;">We 10/15</td>
 <td style="border: 1px solid black;">Free project Work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">09</td>
-<td style="border: 1px solid black;">Mo 10/24 </td>
+<td style="border: 1px solid black;">Mo 10/20 </td>
 <td style="border: 1px solid black;">Free project Work </td>
-<td style="border: 1px solid black;">We 10/26</td>
+<td style="border: 1px solid black;">We 10/22</td>
 <td style="border: 1px solid black;">Free project Work <br> <b> [Milestone 1] Report on usage of tools</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">10</td>
-<td style="border: 1px solid black;">Mo 10/31</td> 
+<td style="border: 1px solid black;">Mo 10/27</td> 
 <td style="border: 1px solid black;">Free project Work <br/> <b>[Milestone 1] Feedback Session</b></td>
-<td style="border: 1px solid black;">We 11/02</td>
+<td style="border: 1px solid black;">We 10/29</td>
 <td style="border: 1px solid black;">Free project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">11</td>
-<td style="border: 1px solid black;">Mo 11/07</td>
+<td style="border: 1px solid black;">Mo 11/03</td>
 <td style="border: 1px solid black;">Free project Work </td>
-<td style="border: 1px solid black;">We 11/09</td>
+<td style="border: 1px solid black;">We 11/05</td>
 <td style="border: 1px solid black;">Free project Work <br> <b> [Milestone 2] Intermediate Report</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">12</td>
-<td style="border: 1px solid black;">Mo 11/14</td>
+<td style="border: 1px solid black;">Mo 11/10</td>
 <td style="border: 1px solid black;">Free project Work</td>
-<td style="border: 1px solid black;">We 11/16</td>
+<td style="border: 1px solid black;">We 11/12</td>
 <td style="border: 1px solid black;">Free project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">13</td>
-<td style="border: 1px solid black;">Mo 11/21</td>
+<td style="border: 1px solid black;">Mo 11/17</td>
 <td style="border: 1px solid black;">Concluding Remarks <br> <b>[Milestone 2] Feedback session</b></td>
-<td style="border: 1px solid black;">We 11/23</td>
+<td style="border: 1px solid black;">We 11/19</td>
 <td style="border: 1px solid black;">Free project Work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">14</td>
-<td style="border: 1px solid black;">Mo 11/28</td>
+<td style="border: 1px solid black;">Mo 11/24</td>
 <td style="border: 1px solid black;">Free project Work</td>
-<td style="border: 1px solid black;">We 11/30</td>
+<td style="border: 1px solid black;">We 11/26</td>
 <td style="border: 1px solid black;">Free project Work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">15</td>
-<td style="border: 1px solid black;">Mo 12/05</td>
+<td style="border: 1px solid black;">Mo 12/01</td>
 <td style="border: 1px solid black;">Free project Work</td>
-<td style="border: 1px solid black;">We 12/07</td>
+<td style="border: 1px solid black;">We 12/03</td>
 <td style="border: 1px solid black;">Free project Work >> <b>Final Report</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">16</td>
-<td style="border: 1px solid black;">Mo 12/12</td>
-<td style="border: 1px solid black;">Free project Work</td>
-<td style="border: 1px solid black;">We 12/14</td>
-<td style="border: 1px solid black;"><b> Oral Exam</b></td>
+<td style="border: 1px solid black;">Mo 12/08</td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;">We 12/10</td>
+<td style="border: 1px solid black;"><b> Exam</b></td>
 </tr>
 
 </table>
@@ -252,11 +253,11 @@ All students should have read the following book; acquiring the terminology insi
 
 For the lab sessions there is the following material (please only get the materials after it is updated to the current year):
 
-1. [Metrics and Visualization](/teaching/Software-Reengineering/metrics/) (Updated 2022-08-16)
-2. [Refactoring assistants](/teaching/Software-Reengineering/refactoring/) (Updated 2022-08-16)
-3. [Software Integration](/teaching/Software-Reengineering/integration/) (Updated 2022-08-16)
-4. [Dynamic Analysis: Testing](/teaching/Software-Reengineering/dynamic/) (Updated 2022-08-16)
-5. [Mining Software Repositories](/teaching/Software-Reengineering/msr/) (Updated 2022-08-16)
+1. [Metrics and Visualization](/teaching/Software-Reengineering/metrics/) (Updated 2025-08-16)
+2. [Refactoring assistants](/teaching/Software-Reengineering/refactoring/) (Updated 2025-08-16)
+3. [Dynamic Analysis: Testing](/teaching/Software-Reengineering/dynamic/) (Updated 2025-08-16)
+4. [Software Integration](/teaching/Software-Reengineering/integration/) (Updated 2025-08-16)
+5. [Mining Software Repositories](/teaching/Software-Reengineering/msr/) (Updated 2024-08-16)
 
 Project
 ======
@@ -335,15 +336,6 @@ The following check-list will be used to assess your reengineering project
 * Checklist reengineering Pre-conditions Report [ PDF ](../../files/spdd/Pre-conditions_Report_Evaluation_Template.pdf)
 * Checklist reengineering Intermediate Report [ PDF ](../../files/spdd/Intermetdiate_Evaluation_Report_Template.pdf)
 * Checklist reengineering Final Report [PDF](../../files/spdd/Final_Report_Evaluation_Form_Blank.pdf)
-
-
-Detailed exam schedule (Last modified on Monday, -)
-===========
-Below is the detailed schedule for the oral exam (i.e. discussing the project report and your individual role in the project). 
-If you see your name is missing, or if you spot any other mistakes, please contact Dr. John Businge immediately.
-
-* Exams in room - (office of Dr. John Businge)
-* To be determined
 
 ## Attendance:	
 While I will not directly track your attendance, your class, even online, is designed to be interactive with your classmates. The purpose of this is to encourage active learning, where you engage with the material during the class sessions. As such, a video would not do the course justice and you are highly recommended to attend the online sessions.
