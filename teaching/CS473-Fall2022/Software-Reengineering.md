@@ -48,7 +48,7 @@ Where ? When ?
 
 - **Credits**: 3
 - **Prerequisites**: Graduate standing. Prior knowledge of data structures and advanced programming is expected.
-- **[Introductory Slides](../../files/Introduction.pdf)**
+- **[Introductory Slides](Introduction.pdf)**
 
 Rationale
 ======
