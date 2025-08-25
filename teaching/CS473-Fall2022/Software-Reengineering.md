@@ -42,7 +42,7 @@ height:40px;" value="Reengineering Project" />
 
 Where ? When ?
 * Theory & Exercises all during the same time slot
-* Time: MoWe 5:15PM-6:30PM
+* Time: MoWe 5:30PM-6:45PM
 * Location: FDH 217
 
 **Communication**
