@@ -270,12 +270,13 @@ design must be adjusted in such a way that adding the new functionality becomes 
 Project: Assignment 
 ===============
 
-Milestones
-* Monday 12-Oct-2025 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project (standard or custom) and group members by e-mail to John Businge with: (please check the details on the subject and message content in the Assignment page). Include a precondition report, details of this report to follow on the [project page]().
-* Wednesday 26-Oct-2025 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format) by e-mail to Dr. John Businge.
+**Milestones**
+All Deliverables will be submitted on Canvas
+* Monday 12-Oct-2025 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project and group members on Canvas. Include a precondition report, details of this report to follow on the [project page]().
+* Wednesday 26-Oct-2025 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format).
 * Wednesday 16-Nov-2025 Concluding Session & Feedback Session
-* Wednesday 30-Nov-2025 11h59pm (**Date to be confirmed**; one week before the oral exam) - Final Report: Send the Report (in PDF format) by e-mail to Dr. John Businge.
-* The oral exams themselves are scheduled on XXX Date to be confirmed XXX. See the detailed schedule below
+* Wednesday 30-Nov-2025 11h59pm (**Date to be confirmed**; one week before the oral exam) - Final Report: Send the Report (in PDF format).
+* The oral exams (**Tobe confirmed**)
 
 Group Work
 ========
@@ -307,7 +308,7 @@ Guidelines for the Final Report
 ============
 * Short summary (Who, What, How): Who are the target users? What was the problem? How did we go about things?
 * Status: What did you do, and what is (possibly) going to happen next?
-* Which techniques and reengineering patterns did you use during requirements analysis, design, implementation, and testing. How did you identify the differences between the old requirements and the new ones, the old design and the new one? How did you transform the existing code into the new code? How did you ensure these restructurings did not introduce any errors?
+* Which techniques and reengineering patterns did you use during requirements analysis, design, implementation, testing, and integration. How did you identify the differences between the old requirements and the new ones, the old design and the new one? How did you transform the existing code into the new code? How did you ensure these restructurings did not introduce any errors?
 * Project process: Overview of planning, time schedule, and intermediary problems.
 
 In the project report and during the project defense you should express yourself using the right terminology. (cfr . [Serge Demeyer, Stephane Ducasse, and Oscar Nierstrasz. Object-Oriented Reengineering Patterns. Morgan Kaufmann, 2002](http://scg.unibe.ch/download/oorp/)).
@@ -336,6 +337,13 @@ The following check-list will be used to assess your reengineering project
 * Checklist reengineering Pre-conditions Report [ PDF ](../../files/spdd/Pre-conditions_Report_Evaluation_Template.pdf)
 * Checklist reengineering Intermediate Report [ PDF ](../../files/spdd/Intermetdiate_Evaluation_Report_Template.pdf)
 * Checklist reengineering Final Report [PDF](../../files/spdd/Final_Report_Evaluation_Form_Blank.pdf)
+
+--------
+  [Table I: Grade Distribution:]
+
+<div style="text-align: center;">
+<img src="/files/grade.jpeg" alt="Grade Distribution" style="width:577px;height:414px;" align="center">
+</div>
 
 ## Attendance:	
 While I will not directly track your attendance, your class, even online, is designed to be interactive with your classmates. The purpose of this is to encourage active learning, where you engage with the material during the class sessions. As such, a video would not do the course justice and you are highly recommended to attend the online sessions.
