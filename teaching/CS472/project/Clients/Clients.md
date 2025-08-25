@@ -74,5 +74,7 @@ career goals.
   * [Video of the project](https://www.youtube.com/watch?v=rpYCsmhbdME)
 * Estimarmine 
   * [Project Details](Estimarmine_Precondition_Report.pdf)
-* **I am expecting more projects. I will update as they become available. Please check back soon.**
+* Farcaster Mini-App Development Project
+  * [Project Details](Farcaster_Mini-App_Development_Project.pdf)
+* *I am expecting more projects. I will update as they become available. Please check back soon.**
 
