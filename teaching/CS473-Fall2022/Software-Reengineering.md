@@ -256,7 +256,7 @@ For the lab sessions there is the following material (please only get the materi
 1. [Metrics and Visualization](/teaching/Software-Reengineering/metrics/) (Updated 2025-08-16)
 2. [Refactoring assistants](/teaching/Software-Reengineering/refactoring/) (Updated 2025-08-16)
 3. [Dynamic Analysis: Testing](/teaching/Software-Reengineering/dynamic/) (Updated 2025-08-16)
-4. [Software Integration](/teaching/Software-Reengineering/integration/) (Updated 2025-08-16)
+4. [Software Integration](/teaching/Software-Reengineering/integration/) (Updated 2024-08-16)
 5. [Mining Software Repositories](/teaching/Software-Reengineering/msr/) (Updated 2024-08-16)
 
 Project
@@ -271,11 +271,13 @@ Project: Assignment
 ===============
 
 **Milestones**
-All Deliverables will be submitted on Canvas
-* Monday 12-Oct-2025 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project and group members on Canvas. Include a precondition report, details of this report to follow on the [project page]().
-* Wednesday 26-Oct-2025 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format).
-* Wednesday 16-Nov-2025 Concluding Session & Feedback Session
-* Wednesday 30-Nov-2025 11h59pm (**Date to be confirmed**; one week before the oral exam) - Final Report: Send the Report (in PDF format).
+All Deliverables will be **submitted on Canvas**
+* Monday 10-Oct-2025 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project and group members on Canvas. Include a precondition report, details of this report to follow on the [project page]().
+* Wednesday 22-Oct-2025 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format).
+* Monday 27-Nov-2025 Feedback for the Report on usage of tools
+* Wednesday 05-Nov-2025 Submission of the Intermediate Report
+* Monday 17-Nov-2025 Feedback for the Intermediate Report
+* Wednesday 03-Dec-2025 11h59pm (**Date to be confirmed**; one week before the oral exam) - Final Report: Send the Report (in PDF format).
 * The oral exams (**Tobe confirmed**)
 
 Group Work
