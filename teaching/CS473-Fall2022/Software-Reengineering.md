@@ -91,7 +91,7 @@ means of a Project, which will also serve as the main outcome.
 Milestones
 ====
 
-* **Announce Project**: At the outset of the project, students should announce which software system they intend to reengineer (yes, you can propose one yourself) and whether they intend to do so individually or in groups (duo projects are encouraged).
+* **Announce Project**: At the outset of the project, students should announce which software system they intend to reengineer (yes, you can propose one yourself) in groups (since we are 11 students, we will allow 3 groups of 3 and one group of 2).
 * **Precondition Report - Project Setup**. When announcing the project, students should demonstrate that they meet the necessary pre-condition to start the project. They need to have a Git repository for their project and also show the ability to successfully build the project.
 * **Intermediate Report - Tool Usage**: One third into the project, each group should hand in a status report containing screenshots of the tools applied on the project, and interpretations about these results.
 * **Final Report**: During the exam period you hand in a final report, listing the solutions for the problems you came across and what you learned from them. You will defend this report orally.
@@ -339,7 +339,7 @@ The following check-list will be used to assess your reengineering project
 * Checklist reengineering Final Report [PDF](../../files/spdd/Final_Report_Evaluation_Form_Blank.pdf)
 
 --------
-  [Table I: Grade Distribution:]
+**Table I: Grade Distribution:**
 
 <div style="text-align: center;">
 <img src="/files/grade.jpeg" alt="Grade Distribution" style="width:577px;height:414px;" align="center">
