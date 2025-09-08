@@ -71,6 +71,7 @@ Materials & Tools
 * IDE-  [PyCharm](https://www.jetbrains.com/pycharm/) 
 * [CodeScene](https://codescene.com/) - **no** installation necessary, but it requires a GitHub account. This tool integration with GitHub allows it to visualize your repositories. The Technical Debt part show refactoring targets. The Code Biomarkers show a more detailed analysis of smells but it is only available to paid subscribers.
 * [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition. 
+  * To install and test SonarQube, following the instructions [here](https://docs.sonarsource.com/sonarqube-community-build/try-out-sonarqube/). **Important:** It is recommended  and generally easiest installtion option for Mac M-series users to use [Docker](https://docs.docker.com/desktop/setup/install/mac-install/) instead of the "From the zip file" option. If you face any issue, please reach out to the TAs for help.
 
 <br/>
 
