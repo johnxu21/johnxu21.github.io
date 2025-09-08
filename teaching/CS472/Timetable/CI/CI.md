@@ -55,9 +55,9 @@ height:30px;" value="ChatGPT" />
 ## **Introduction**
 This **Continuous Integration (CI) Lab** builds upon the work done in the **Testing Lab**. In this lab, you will extend the testing process by **enhancing existing test cases** with additional assertions and integrating **GitHub Actions** to automate test execution.  
 
-You will configure a CI pipeline, add tests to improve coverage, enforce code quality gates, and learn to debug failing runs. Unlike earlier labs, this is an **individual assignment**:contentReference[oaicite:1]{index=1}: each student must complete their own contributions, documented and submitted separately.
+You will configure a CI pipeline, add tests to improve coverage, enforce code quality gates, and learn to debug failing runs. Unlike earlier labs, this is an **individual assignment**, each student must complete their own contributions, documented and submitted separately.
 
-CI ensures that all code changes are **continuously tested, linted, and validated** before being merged into the repository. You will practice modern DevOps workflows using **Pull Requests (PRs)**, **Issues**, and **peer reviews**:contentReference[oaicite:2]{index=2}.
+CI ensures that all code changes are **continuously tested, linted, and validated** before being merged into the repository. You will practice modern DevOps workflows using **Pull Requests (PRs)**, **Issues**, and **peer reviews**.
 
 ## Learning Outcomes
 
@@ -164,7 +164,7 @@ _Note:_ If your team already has a working version of one enhancement, you may s
 
 ## 3. **One debugging PR (required)**
    - Introduce a small, controlled failure (failing test, style error, or coverage drop) on a branch.  
-   - Use the **Actions logs** to diagnose, then push a fix and re‑run to green.  
+   - Use the **Actions logs** to diagnose, then push a fix and re‑run to green (successful run).  
    - In the PR description, paste the failing log snippet and the root‑cause + fix summary.  
    This mirrors the CI failure‑investigation flow in the CI lab steps.
 
