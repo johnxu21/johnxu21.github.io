@@ -70,7 +70,7 @@ Materials & Tools
 ========
 * IDE-  [PyCharm](https://www.jetbrains.com/pycharm/) 
 * [CodeScene](https://codescene.com/) - **no** installation necessary, but it requires a GitHub account. This tool integration with GitHub allows it to visualize your repositories. The Technical Debt part show refactoring targets. The Code Biomarkers show a more detailed analysis of smells but it is only available to paid subscribers.
-* [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition. 
+* [SonarQube](https://www.sonarqube.org/) is a tool/platform that performs static analysis on source codes. Download the free community edition.
 
 <br/>
 
@@ -110,7 +110,7 @@ Task 2: Django-CMS on SonarQube
 ============
 For the second task, we will use a more complex and dedicated tool to find refactoring targets. 
 Follow the instructions in the [documentation](https://docs.sonarsource.com/sonarqube-server/latest/try-out-sonarqube/)
-to install and run SonarQube. You may either install it locally or run it in a Docker container.
+to install and run SonarQube. You may either install it locally or run it in a Docker container. **Important:** It is recommended  and generally easiest installtion option for Mac M-series users to use [Docker](https://docs.docker.com/desktop/setup/install/mac-install/) instead of the "From the zip file" option. If you face any issue, please reach out to the TAs for help.
 
 If you are successful, you should be able to run an analysis of your local clone of Django-CMS.
 
