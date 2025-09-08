@@ -156,7 +156,7 @@ Questions:
 3.	Did the previous tools (CodeScene or SonarQube) identify the refactoring targets you deemed necessary for this goal?
 4.	Do you prefer to refactor to improve code quality or to refactor with a goal?
 
-Optional Task  1 -- JPacman Strategic Refactoring (part 2)
+Optional Task 1: Django-CMS Strategic Refactoring (Part 2)
 ===========
 
 To complete this optional task, you should implement the planned refactoring tasks. 
