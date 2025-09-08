@@ -164,7 +164,7 @@ _Note:_ If your team already has a working version of one enhancement, you may s
 
 ## 3. **One debugging PR (required)**
    - Introduce a small, controlled failure (failing test, style error, or coverage drop) on a branch.  
-   - Use the **Actions logs** to diagnose, then push a fix and re‑run to green.  
+   - Use the **Actions logs** to diagnose, then push a fix and re‑run to green (successful run).  
    - In the PR description, paste the failing log snippet and the root‑cause + fix summary.  
    This mirrors the CI failure‑investigation flow in the CI lab steps.
 
