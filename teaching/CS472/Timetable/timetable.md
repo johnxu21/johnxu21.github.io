@@ -51,9 +51,9 @@ height:30px;" value="ChatGPT" />
 Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
-1. Class overview [PDF](ClassOverview.pdf) [last updated 01/20/2025]
-2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 01/29/2025]
-3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 01/28/2025]
+1. Class overview [PDF](ClassOverview.pdf) [last updated 08/25/2025]
+2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 09/05/2025]
+3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 09/08/2025]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 02/04/2025]
 6. Object-oriented design 
   * Slides [PDF](OOD-V2.pptx) [last updated 10/02/2024]
