@@ -62,7 +62,7 @@ Projects
 IDE 
 - PyCharm CE (https://www.jetbrains.com/pycharm) – You can use community edition or other IDEs.
 Tools
-- Coverage.py is a code coverage tool supported by PyCharm (you can use coverage tool at your discretion, but it may require some adaptations for the project we are using during the lab sessions). 
+- [Coverage.py](https://coverage.readthedocs.io/en/7.10.6/) is a code coverage tool supported by PyCharm (you can use coverage tool at your discretion, but it may require some adaptations for the project we are using during the lab sessions). 
 Book 
 - Object-Oriented Reengineering Patterns (OORP - http://scg.unibe.ch/download/oorp)
 
@@ -74,13 +74,15 @@ Auxiliary tools are not required for the lab session itself, but they may be use
 
 Setup / Preparation
 ==============
-Be sure to follow the setup and the tasks from the lab [Refactoring Assistants](/teaching/CS473-Fall2022/refactoring/). 
+Install [Coverage.py](https://coverage.readthedocs.io/en/7.10.6/) using the code: ```pip install coverage```
+
+Be sure to follow the setup and the tasks from the lab [Refactoring Assistants](/teaching/Software-Reengineering/refactoring/). 
 Especially, the task on executing ```SonarQube```. As usual, you will also need PyCharm and projects. 
 Moreover, if you have not already, download the book for this course "Object-Oriented Reengineering Patterns
 
 Task 1 – Coverage.py Test Coverage
 ===========
-We will begin by using the Coverage.py test coverage tool. The testing and coverage tools should be enabled by default.
+We will begin by using the [Coverage.py](https://coverage.readthedocs.io/en/7.10.6/) test coverage tool. The testing and coverage tools should be enabled by default. Remember to install this tool using the code provided in the **setup / preparation** section above
 
 First, make sure that you can test your Pacman-python, by using the following command line in the PyCharm terminal:
 
@@ -113,7 +115,7 @@ And for integration test:
 ```yaml
 python -m coverage run --branch refactored/program_integration_tests.py
 python -m coverage html
-python -m coverage 
+python -m coverage erase
 ```
 If everything is executed without errors, you should see a new file showing the code coverage in html file under htmlcov directory. Rename the generated folder for the unit and integration test you run for branch coverage. Please try to remember this coverage (or take a screenshot to not depend on your memory).
 
@@ -132,16 +134,16 @@ Questions
 
 Task 2 -- Increasing Coverage on Pacman-python
 ===================
-For the second task, we will increase the statement and branch coverage on Pacman-python. Doing that is very simple, we just need to write more tests. In this task, we are going to write one new test case.
+For the second task, we will increase the statement and branch coverage on **Pacman-python**. Doing that is very simple, we just need to write more tests. In this task, we are going to write one new test case.
 
-Let's create a simple unit test on a method. We will test the `move_ghosts` function in " pacman.py" file. You should look at the " pacman_unittests.py" file as a template for your test case.
+Let's create a simple unit test on a method. We will test the `move_ghosts` function in `pacman.py` file in the **refactored** folder. You should look at the `pacman_unittests.py` file as a template for your test case, also in the **refactored** folder.
 
 This activity follows the **Write Tests to Understand** pattern (*OORP*, Chapter 6, pp. 179).  
 > *Intent:* When you need to understand how a part of the system works — especially if it’s not well-documented — write a small, focused test that captures your understanding. The test acts as both **documentation** and a **safety net** for future changes.  
 > *In this task:* Your test for `move_ghosts` will help you learn exactly how the method behaves and record that knowledge so you can verify it in the future.
 
 
-After adding the new test, run "pacman_unittests.py" again and run it with coverage. If your test has no errors, you should see the coverage report showing the code coverage. Leave this report with the coverage information on as you may need it to answer the questions from the next task (or take a screenshot of it).
+After adding the new test, run `pacman_unittests.py` again and run it with coverage. If your test has no errors, you should see the coverage report showing the code coverage. Leave this report with the coverage information on as you may need it to answer some questions (or take a screenshot of it).
 
 Questions:
 - How did the new test affect the coverage?
@@ -152,7 +154,7 @@ SonarQube Coverage Information on Pacman-python
 ===========
 SonarQube is a static analysis tool. But it can show the results from test coverage in its interface. 
 First, let's run SonarQube as is defined in lab TASK 3 [Refactoring Assistants](/teaching/Software-Reengineering/refactoring/). Make sure your SonarQube service is running.  Please see the documentation below for a coverage report from SonarQube.
-https://docs.sonarsource.com/sonarqube/9.8/analyzing-source-code/test-coverage/python-test-coverage/
+[https://docs.sonarsource.com/sonarqube/9.8/analyzing-source-code/test-coverage/python-test-coverage/](https://docs.sonarsource.com/sonarqube/9.8/analyzing-source-code/test-coverage/python-test-coverage/)
 
 Questions:
 - What do you think of the overview coverage visualization provided by SonarQube?
