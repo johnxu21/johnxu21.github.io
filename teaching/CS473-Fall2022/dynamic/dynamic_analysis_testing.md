@@ -56,6 +56,8 @@ necessary, way to assess the quality and usefulness of a test suite in the conte
 
 Materials & Tools Used for this Session
 ===============
+Slides
+ - [pptx](Testing.pptx)
 Projects 
 - pacman-python (https://github.com/kilincceker/pacman-python-ua-sre)
 - django CMS (https://github.com/django-cms/django-cms)
