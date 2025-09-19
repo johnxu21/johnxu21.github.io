@@ -148,6 +148,8 @@ Your goal is to:
 #### **1. Install RePatch**
 Follow the installation instructions in the [RePatch README](https://github.com/Software-Reengineering/RePatch).  
 
+Here we apply **Keep It Simple (OORP, p.37)** — avoid unnecessary setup complexity, stick to the minimal environment needed to run the integration.
+
 ---
 
 #### **2. Run the Integration Pipeline**
@@ -158,6 +160,8 @@ Follow the installation instructions in the [RePatch README](https://github.com/
   - To switch to a new PR, update the configuration file(s) in the **src/main/resources/sample_data** with the PR number and repository details provided in your project instructions.
   - Rebuild and rerun `RePatch` with the updated settings.
 
+This step is guided by *Most Valuable First (OORP, p.29)* — start with a preselected high-impact PR before generalizing to others.
+
 ---
 
 #### **3. View RePatch output**
@@ -167,6 +171,9 @@ When the integration finishes, inspect the results in MySQL.
 * **How to connect:** Use any MySQL client—e.g., MySQL Workbench (GUI), the MySQL CLI, or **phpMyAdmin** (included in the Docker setup for **RePatch**).
 * **What to look at:** The key table is `merge_result`, which records how **RePatch** reduced or resolved merge conflicts when `git cherry-pick` failed. Other tables include useful metadata and diagnostics (e.g., projects, patches, refactorings, conflicting files, conflict blocks).
 * For setup details, see the lab project’s README.
+
+Pattern cue — **Compare Code Mechanically (OORP, p.227)**: rely on automated tool-driven alignment before diving into manual inspection.  
+Pattern cue — **Tests: Your Life Insurance (OORP, p.149)**: even after automated integration, always confirm correctness through testing.
 
 **Quick start (SQL):**
 
@@ -201,7 +208,7 @@ When the integration finishes, navigate to the MySQL database to inspect the res
 
  ---
 
-## Task 4 – Writing Tests for Integrated Changes
+## Task 3 – Writing Tests for Integrated Changes
 
 Up to now, we have used RePatch to integrate a missed opportunity patch from **Apache Kafka PR #13386** into the target repository. However, integration at the syntactic level is not enough — we also need to ensure that the change behaves correctly in its new context.
 
@@ -218,6 +225,11 @@ In this task, you will write a **missing test** for the integrated patch.
    - Place the new test alongside related tests in the appropriate test suite.  
 4. Run the test suite and verify that your new test passes.  
    - If it fails, investigate whether the integration requires additional adaptations.  
+
+Pattern cue — **Tests: Your Life Insurance (OORP, p.149)**: tests protect against regressions and confirm the correctness of integration.  
+Pattern cue — **Write Tests to Understand (OORP, p.179)**: writing tests clarifies what the patch is supposed to do.  
+Pattern cue — **Grow Your Test Base Incrementally (OORP, p.159)**: only add tests around the integrated patch instead of rewriting the whole suite.  
+Pattern cue — **Study the Exceptional Entities (OORP, p.107)**: focus tests on edge cases and unusual conditions where bugs are more likely.
 
 ---
 
