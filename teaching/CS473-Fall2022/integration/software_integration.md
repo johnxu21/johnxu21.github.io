@@ -233,7 +233,12 @@ Pattern cue — **Study the Exceptional Entities (OORP, p.107)**: focus tests on
 
 ---
 
-### Reflection Questions (for quiz prep)
-- Did your test confirm that the patch works correctly in the target repository?  
-- Could you imagine cases where a patch integrates syntactically but still breaks functionality?  
-- How do tests strengthen confidence in patch reuse across software variants?  
+### Reflection Questions (for quiz prep)  
+
+To deepen your understanding, **read the [RePatch](https://arxiv.org/pdf/2508.06718) paper** and use it to guide your answers:  
+
+- Did your test confirm that the patch works correctly in the target repository? If not, what additional adaptations might be needed?  
+- How does patch technical lag (as discussed in PaReco) affect the reliability of tests when integrating long-delayed patches?  
+- RePatch found that many cherry-pick failures stem from refactorings such as Rename Method or Rename Parameter. How might such refactorings influence the kinds of tests you need to write?  
+- How do unit and integration tests together strengthen confidence in patch reuse across software variants? Where might tests still fall short?  
+- Imagine your integrated patch passes syntactic checks and unit tests but fails in production. Based on the research papers, what variant-specific factors could explain this outcome?  
