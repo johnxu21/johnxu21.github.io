@@ -57,7 +57,7 @@ collaborators of the change, and document any manual decisions for review.
 
 Materials & Tools Used for this Session
 ========
-Lecture sides [here](../../../files/Integration.pdf)
+Lecture sides [here](Integration.pptx)
 IDEs  
 * [PyCharm](https://www.jetbrains.com/academy/student-pack/)  
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/) – The **Ultimate Edition** is recommended, as it includes built-in support for generating UML diagrams directly from your code.
