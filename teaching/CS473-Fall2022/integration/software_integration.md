@@ -210,7 +210,7 @@ When the integration finishes, navigate to the MySQL database to inspect the res
 
 ## Task 3 – Writing Tests for Integrated Changes
 
-Up to now, we have used RePatch to integrate a missed opportunity patch from **Apache Kafka PR #13386** into the target repository. However, integration at the syntactic level is not enough — we also need to ensure that the change behaves correctly in its new context.
+Up to now, we have used `RePatch` to integrate a missed opportunity patch from **Apache Kafka PR #13386** into the target repository. However, integration at the syntactic level is not enough — we also need to ensure that the change behaves correctly in its new context.
 
 In this task, you will write a **missing test** for the integrated patch.
 
@@ -218,7 +218,7 @@ In this task, you will write a **missing test** for the integrated patch.
 
 ### Step-by-Step Instructions
 
-1. Inspect the code hunk from PR #13386 that was integrated into the target repository.  
+1. Inspect the code hunk from PR `#13386` that was integrated into the target repository.  
 2. Identify the behavior or functionality that the hunk is meant to enforce (e.g., offset commit logic, logging, or metrics).  
 3. Write a **unit test or integration test** in the target repository that exercises this functionality.  
    - Use existing test files as templates.  
