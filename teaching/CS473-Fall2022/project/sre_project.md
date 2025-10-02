@@ -252,7 +252,7 @@ When working on this assignment, follow these repository and coding practices:
 For each assigned pull request (according to the four categories), perform the following activities and document them in your project report.  
 
 ----------
-  [I. Design recovery]
+#### I. Design Recovery 
 
 
 <center>

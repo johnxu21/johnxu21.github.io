@@ -34,8 +34,6 @@
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/fixtures/account_data.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/test_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS473-Fall2022/project/sre_project.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS473-Fall2022/project/sre_project.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +192,7 @@
       <workItem from="1753724318727" duration="81364000" />
       <workItem from="1757958704852" duration="564000" />
       <workItem from="1757965612115" duration="10147000" />
-      <workItem from="1758665420725" duration="23980000" />
+      <workItem from="1758665420725" duration="24502000" />
     </task>
     <servers />
   </component>
