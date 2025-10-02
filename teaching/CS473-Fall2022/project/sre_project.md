@@ -150,7 +150,7 @@ Although each student is responsible for selecting and working on their PRs, you
 
 **Task:**
 * Identify and document the specific reason for failure (e.g., unsupported refactoring, semantic conflict, or other complex change).
-* Attempt small, targeted manual fixes where feasible (e.g., updating a method signature, adding a missing parameter).
+* Attempt small,  e (e.g., updating a method signature, adding a missing parameter).
 * If integration remains infeasible, clearly explain why developer intervention and domain knowledge are required.
 * Reflect on the nature of these conflicts and discuss potential directions for extending or improving **RePatch** to handle them.
 
@@ -179,12 +179,46 @@ called in those classes. There is no need to go deeper into the class structure 
 class calls Class X, and Class X calls Class Y, then you do not need to show Class Y since it is 
 not being called directly by the buggy class). We are not going to evaluate your strictness to the 
 proper UML notations, therefore focus on modeling and understanding classes interactions. 
-* [Optional] A rough planning of the scope and goals. As you noticed the project refactoring is 
-open to interpretation (this is on purpose). Therefore, is up to you, students, to plan the scope 
-for your project. It is entirely possible for different groups to have different scopes and planned 
-activities based on this assignment.
 
-### 4. General Coding Instructions
+## Pre-conditions Report  
+
+Each group must submit a **Pre-conditions Report (PDF)**. Only one member should upload it on Canvas on behalf of the team.  
+
+The report should include:  
+
+#### 1. Group & Repository Setup  
+- Project name  
+- Full names of all group members  
+- Link to your **forked LinkedIn Kafka repository**  
+- Confirmation that all group members are added as collaborators  
+- Add me as a collaborator on your fork (`GitHub ID: [johnxu21](https://github.com/johnxu21)`)  
+
+#### 2. Build Confirmation  
+- A short statement confirming that your group was able to **successfully build the project**  
+- Each group member must include a **screenshot from their own IDE** showing the project source and a *“Build Successful”* (or equivalent) message  
+- All screenshots should be compiled into the same PDF report  
+
+#### 3. Initial System Understanding  
+- Provide a **simple class diagram** for one of the pull requests you will work on (or the buggy target)  
+- Focus only on:  
+  - The class(es) affected by the patch  
+  - The classes directly called by those classes  
+- Do **not** include transitive dependencies (e.g., if Class A calls Class B, but Class B calls Class C, you don’t need to include Class C)  
+- Strict UML notation is **not required** — clarity of interactions is the priority  
+- See examples in the [JPacman repository (“docs” folder)](https://github.com/johnxu21/jpacman/blob/master/doc/uml/FactoryWiring.png)  
+
+#### 4. Team Coordination (Optional)  
+You may include a short plan for how your team will coordinate during the project.  
+This is not graded, but it will help your group stay organized.  
+
+Consider including:  
+- **Meeting Schedule**: How often will you meet (weekly, bi-weekly)? Online or in person?  
+- **Communication Tools**: Which tools will you use (Discord, Slack, email, GitHub issues)?  
+- **Collaboration Practices**: How will you share progress on your assigned PRs (e.g., regular updates, peer reviews, or joint testing sessions)?  
+- **Contingency Plan**: How will you handle missed deadlines, unresolved conflicts, or a teammate being unavailable?  
+
+
+### **4. General Coding Instructions**
 In order to work on this assignment, the following coding/repository instructions apply:
 * Fork [LinkedIn](https://github.com/linkedin/kafka), and clone the source code for your 
 team to work on it. In the Documentation 
@@ -207,7 +241,7 @@ to remove a God Class, your commit should be:
   * Be sure to commit/push the final version of your reengineering project before the final 
   deadline. The final commit will be considered for evaluation as part of your assignment submission.
 
-### 5. Development Activities 
+### **5. Development Activities** 
 Then, more specifically, we ask you to perform the following activities, and report about these in your project 
 report:
 
