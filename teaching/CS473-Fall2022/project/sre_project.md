@@ -45,7 +45,7 @@ Kafka was born at LinkedIn. The run thousands of brokers to deliver trillions of
 Assignment
 ==========
 
-### 1. Contextualization of the Project
+### **1. Contextualization of the Project**
 
 [LinkedIn](https://github.com/linkedin/kafka) is a clone-and-own variant of 
 [Apache Kafka]((https://github.com/apache/kafka)) that was created by copying and adapting the existing 
@@ -93,7 +93,7 @@ For the project, you are expected to:
 - Inspect the results in the RePatch database (`merge_result`, `conflicting_files`, etc.) and document how conflicts were resolved, or why they could not be resolved.  
 - Connect your observations back to reengineering patterns from the OORP book.  
 
-### 2. Pull Request Categories  
+### **2. Pull Request Categories**  
 
 You will work on pull requests from the following four categories.  
 [PR Categories Spreadsheet](https://docs.google.com/spreadsheets/d/1c2Y9p3mnBy5i_TP-7TNk2LkesAIsvoPma1MzAkU6WkA/edit?usp=sharing)  
@@ -154,7 +154,7 @@ Although each student is responsible for selecting and working on their PRs, you
 * If integration remains infeasible, clearly explain why developer intervention and domain knowledge are required.
 * Reflect on the nature of these conflicts and discuss potential directions for extending or improving **RePatch** to handle them.
 
-### 3. Getting Started Instructions
+### **3. Getting Started Instructions**
 Please pay attention to the following instructions:  
 
 - Each group must prepare a **Pre-conditions Report** (PDF format).  
@@ -285,7 +285,7 @@ For each assigned pull request (according to the four categories), perform the f
 - Report **coverage before and after** integration and reflect on the adequacy of the test suite.  
 
 ----------
-#### IV. Effort Estimation and Risk Assessment  
+#### IV. Project management  
 
 <div style="text-align: center;">
 <img src="/images/473/project-management.jpeg" alt="Project Management" style="width:550px;height:275px;" align="center">
@@ -334,65 +334,91 @@ You are not required to use every technique, but you must **justify your choices
 
 --------
 
-### 5. General Evaluation
-To show that you have passed the assignment, you will have to demonstrate the following:
+### **6. General Evaluation**  
 
-* You possess the knowledge to plan and selected the appropriate reengineering patterns for your project activities.
-* You have made a selection of analysis techniques (e.g., code integration, mining software 
-repositories, metrics and visualization as seen in the lab sessions, but others are allowed 
-as well), and have applied these techniques in a sound, systematic manner. You have indicated 
-clearly (using screenshots, results of the interpretation of the output of the techniques) 
-how you have used the results of these analysis techniques.
-* You have performed the above activities (decomposed into (i) Design Recovery; (ii) Redesign; 
-(iii) Management; and (iv) Refactoring) and discussed them in your project report.
-* The restructurings you have applied are behavior preserving:
-  * You can demonstrate the mapping between each of the classes from the original structure 
-  with the new structure.
-  * The compilation process succeeds flawlessly.
-  * The tests run without flaws and show increased testing coverage making it more reliable.
-* The introduction of the new design clearly indicates the project is ready to be released in a 
-language of choice. You are not supposed to carry out the refactoring process completely. 
-Select and execute a set of refactorings that sufficiently illustrate your proposed solution.
-* The report is written in a clear manner detailing all the steps and reasoning for the project. 
-Remember that the report is the document that registers all your work. Thus, it is the most 
-important artifact for the evaluation process.
+To successfully complete the project, your report and implementation must demonstrate:  
 
-For a more precise on-point view of the evaluation criteria, please look over the check-list 
-(for each report) on the course's main page.
+* **Use of Reengineering Patterns**  
+  - You can plan and select appropriate patterns from the OORP book to guide your activities.  
+  - Your report explains which patterns were applied and why.  
 
-### 6. Report 
-Aspects that we typically like to see addressed in the final report are:
-* **Context**: Briefly discuss the context in which you are running your project (do not just 
-copy verbatim the text on 1. Contextualization).
-* **The Problem at Hand**: Clarify the problem at the base of the project, and indicate its 
-intrinsic difficulties (again, do not just copy the assignment problem description, elaborate 
-based on your chosen interpretation, goals, and scope).
-* **Reengineering Patterns**: You explicitly state the patterns (from the OORP book) that you 
-selected and used throughout the project.
-* **Project management**: Demonstrate how you have organized the work, and how you are controlling 
-it (instead of the work controlling you!)
-  * **Scope**: What are the boundaries of your project? What is not included in the project?
-  * **Risks**: Which risks were envisioned, and which have been mitigated? What is the priority 
-  of the risks that still need to be mitigated? E.g., which external dependencies might have an 
-  effect on your outcome? Which alternatives have you prepared in case this risk instantiates?
-* **Software reengineering**:
-  * **Tests**: How can you verify that you satisfy the requirements? Which testing strategy have 
-  you selected, and what are the arguments for this selection? How confident are you that your 
-  solution satisfies the requirements?
-  * **Quality assurance**: What are the non-functional requirements? E.g., how do you differentiate 
-  between a good and a bad solution?
-  * **Refactoring**: Which refactorings did you perform on the project? Why is it better now? 
-  How does your refactoring help to support the new intended features?
+* **Application of Analysis Techniques**  
+  - You have applied one or more techniques from the lab sessions (e.g., code integration, mining software repositories, metrics & visualization, testing).  
+  - Alternative techniques/tools are welcome, but you must justify their relevance.  
+  - Evidence must be provided (e.g., screenshots, outputs, coverage reports, or metrics) along with your interpretation of the results.  
 
-Those are aspects we like to see addressed/tackled/discussed/explained/presented in the Final 
-Report. In the Intermediate Report, we expect less detail. However, groups that try to start 
-addressing some of the above concerns most often have a better Intermediate Report. In the 
-Pre-conditions Report, although not necessary, it might be better if your group starts to plan 
-the scope and goals for the project.
+* **Execution of Project Activities**  
+  - You have carried out the activities for each PR category (integration, testing, design recovery, redesign, refactoring/manual fixes).  
+  - Your report explains the steps taken and the reasoning behind your decisions.  
 
-Please also keep in mind and check the Report Guidelines and the Evaluation Checklist on the main page.
+* **Behavior-Preserving Restructuring**  
+  - Refactorings and integrations do not break functionality.  
+  - Demonstrate correctness by showing:  
+    - The mapping between classes before and after changes.  
+    - Successful compilation.  
+    - Test results that pass consistently.  
+    - Increased or maintained test coverage to support reliability.  
 
-### 7. Final Remarks
+* **Design Justification**  
+  - Your revised design clearly shows how the integrated patches fit into the system architecture.  
+  - The design should improve or at least maintain code quality and system clarity.  
+  - You are not required to perform every possible refactoring; instead, execute a representative set that illustrates your proposed solution.  
+
+* **Quality of the Report**  
+  - The report is clear, well-structured, and documents all steps of your work.  
+  - Reasoning, evidence, and reflections must be included—not just raw results.  
+  - Remember: the report is the primary artifact used for evaluation.  
+
+For a detailed breakdown, consult the **evaluation checklist** available on the course main page.  
+
+
+### **7. Report**  
+
+This project is a **software reengineering process** applied to variant-aware patch integration.  
+Your report should demonstrate how you applied reengineering concepts — analysis, design recovery, restructuring, and validation — in the context of the four PR categories.  
+
+The following aspects must be addressed:  
+
+* **Context**  
+  - Briefly describe the context of your project: reengineering through patch integration across diverged variants (Apache Kafka → LinkedIn Kafka).  
+  - Frame this as a reengineering challenge, not just a code merge.  
+
+* **Problem at Hand**  
+  - Clarify the reengineering problems encountered in PR integration (e.g., divergence, refactoring conflicts, missing tests).  
+  - Discuss their intrinsic difficulties.  
+
+* **Reengineering Patterns**  
+  - Explicitly state the OORP patterns you selected and used.  
+  - Explain how these patterns informed your analysis, design, integration, testing, and refactoring.  
+
+* **Teamwork and Coordination**  
+  - Describe how your team coordinated work across the four categories.  
+  - Explain how responsibilities were managed, reviews conducted, and challenges addressed.  
+  - Reflect on the effectiveness of your coordination strategy.  
+
+* **Reengineering Patterns**  
+  - You must show how OORP patterns guided your work.  
+  - Do **not** list patterns in isolation; instead, introduce them in the context where they were applied:  
+    - In **Design Recovery/Adaptation**: Which patterns helped you understand or adapt the architecture?  
+    - In **Integration**: Which patterns helped you resolve conflicts or prioritize patches?  
+    - In **Testing**: Which patterns informed how you verified correctness or extended the test suite?  
+    - In **Refactoring**: Which patterns guided structural changes while preserving behavior?  
+  - In your **reflection section**, briefly summarize which patterns were most useful across the categories and why.   
+
+* **Reflection on Techniques**  
+  - Discuss which analysis techniques from the labs (e.g., metrics, mining, visualization, integration tools, testing) were applied.  
+  - Justify your choices and evaluate their benefits/drawbacks.  
+  - Consider alternative techniques/tools where relevant.  
+
+* **Conclusion**  
+  - Summarize lessons learned about **software reengineering in the context of PR integration**.  
+  - Highlight insights about design, testing, refactoring, and teamwork that extend beyond this specific case.  
+
+**Note:** The **Intermediate Report** may cover partial progress with less detail. The **Final Report** should provide a full, polished account of your reengineering process. The **Pre-conditions Report** only ensures setup, but early planning on patterns and risks will strengthen your final outcome.  
+
+Please also review the **Report Guidelines** and **Evaluation Checklist** on the course’s main page.  
+
+### 8. Final Remarks
 If you have any questions about the project or the report, please contact me.
 
 
