@@ -115,27 +115,44 @@ Although each student is responsible for selecting and working on their PRs, you
 - Git cherry-pick succeeds without conflicts.  
 - The integrated code is already covered by tests in the target repository.  
 
-**Task:** Validate the integration by running the existing test suite.  
+**Task:**
+* Identify the **merge commit** of the patch pull request using techniques from the [Mining Software Respositories](/teaching/Software-Reengineering/msr/) class.
+* Run `git cherry-pick` on the identified merge commit.
+* Validate the integration by running the existing test suite.
+
 
 #### Category 2: Cherry-pick succeeds but missing tests
 - Git cherry-pick succeeds without conflicts.  
 - Some of the changed files lack test coverage in the target repository.
 
-**Task:** Write missing unit/integration tests. Measure coverage before and after.  
-
+**Task:**
+* Identify the **merge commit** of the patch pull request using techniques from the [Mining Software Respositories](/teaching/Software-Reengineering/msr/) class.
+* Run `git cherry-pick` on the identified merge commit.
+* Write the missing unit/integration tests for the uncovered changes.
+* Measure coverage before and after adding the tests to ensure improvement.
+ 
 #### Category 3: Cherry-pick fails, RePatch succeeds
-- Git cherry-pick fails due to structural divergence.  
-- RePatch resolves conflicts and integrates the PR.  
-- Some files may or may not have tests.
-**Task:** Run RePatch, inspect the results, and validate with tests. If tests are missing, write them.  
+
+* Git `cherry-pick` fails due to structural divergence.
+* RePatch successfully resolves conflicts and integrates the PR.
+* Some files may or may not have test coverage.
+
+**Task:**
+* Run RePatch and inspect the generated integration results to ensure correctness.
+* Validate the integration by running the existing test suite.
+* If tests are missing, write unit/integration tests for the uncovered changes.
+* Measure coverage before and after adding tests to confirm improvement.
+
 
 #### Category 4: Cherry-pick fails, RePatch cannot resolve conflicts
-- Both Git `cherry-pick` and `RePatch` fail due to unsupported refactorings or complex textual conflicts.
-**Task:**  
-- Diagnose why integration failed (unsupported refactoring? semantic conflict?).  
-- Attempt manual fixes if feasible (e.g., adding a missing parameter).  
-- If infeasible, explain why developer intent is required.  
-- Reflect on the difficulty of conflicts and potential extensions to RePatch.  
+
+* Both Git `cherry-pick` and `RePatch` fail due to **unsupported refactorings** or **complex semantic/textual conflicts**.
+
+**Task:**
+* Identify and document the specific reason for failure (e.g., unsupported refactoring, semantic conflict, or other complex change).
+* Attempt small, targeted manual fixes where feasible (e.g., updating a method signature, adding a missing parameter).
+* If integration remains infeasible, clearly explain why developer intervention and domain knowledge are required.
+* Reflect on the nature of these conflicts and discuss potential directions for extending or improving **RePatch** to handle them.
 
 ### 3. Getting Started Instructions
 Please pay attention to the following instructions:  
