@@ -180,7 +180,7 @@ class calls Class X, and Class X calls Class Y, then you do not need to show Cla
 not being called directly by the buggy class). We are not going to evaluate your strictness to the 
 proper UML notations, therefore focus on modeling and understanding classes interactions. 
 
-## Pre-conditions Report  
+### Pre-conditions Report  
 
 Each group must submit a **Pre-conditions Report (PDF)**. Only one member should upload it on Canvas on behalf of the team.  
 
@@ -219,31 +219,37 @@ Consider including:
 
 
 ### **4. General Coding Instructions**
-In order to work on this assignment, the following coding/repository instructions apply:
-* Fork [LinkedIn](https://github.com/linkedin/kafka), and clone the source code for your 
-team to work on it. In the Documentation 
-webpage, you can find further instructions on how to build the software (adapt accordingly, 
-as many open source projects are a bit careless with keeping their documentation up-to-date).
-* If you are working on this assignment as a group, then all members should be added to 
-the repository as collaborators. 
-* Commit/push your changes regularly providing information on the activity performed. 
-Any "single" activity that requires file maintenance must be committed as a single commit 
-with a simple description of the maintenance performed. For example, if you change the system 
-to remove a God Class, your commit should be:
-  * ```fixing merge conflicts on patch X, class Y  or unit tests for class Y.```
-  * Another example, let's suppose you also introduced new ```tests``` along with the ```refactoring/code changes```:
-  * ```refactoring Class Y to add the patch + new test added```
-  * Of course, pushing the ```tests``` on a separate commit would also be acceptable (actually, it would be better to do so).
-  * It is not considered good practice to commit a big chunk of modified files without providing a 
-  reason that explains why those files have been modified. Therefore, try to split your commits 
-  into smaller units (that may help with the grading).
-  * Your GitHub commits history will be evaluated. Therefore, be sure to commit and push regularly.
-  * Be sure to commit/push the final version of your reengineering project before the final 
-  deadline. The final commit will be considered for evaluation as part of your assignment submission.
+
+When working on this assignment, follow these repository and coding practices:  
+
+* **Fork and Clone**  
+  - Fork [LinkedIn Kafka](https://github.com/linkedin/kafka) and clone the source code for your team to work on.  
+  - Refer to the project’s documentation for build instructions, but adapt as needed since open-source projects may have outdated documentation.  
+
+* **Collaboration**  
+  - Add all members as collaborators on the fork.  
+  - Ensure that everyone has access to build, test, and push changes.  
+
+* **Commit and Push Practices**  
+  - Commit and push **regularly** with clear, descriptive messages.  
+  - Each commit should represent a **single coherent activity** (e.g., resolving a conflict, adding tests, applying a patch).  
+  - Avoid large commits that combine unrelated changes.  
+
+* **Commit Message Guidelines**  
+  - Write concise messages that explain the purpose of the change.  
+  - Examples:  
+    - `fixing merge conflicts on patch X, class Y`  
+    - `adding unit tests for class Y`  
+    - `refactoring class Y to apply patch + added new test`  
+  - If possible, separate code changes and tests into different commits (this improves traceability).  
+
+* **Commit History and Evaluation**  
+  - Your GitHub commit history will be reviewed as part of the evaluation.  
+  - A consistent, clear, and incremental history is expected.  
+  - Make sure to commit and push the **final version** of your reengineering project before the deadline. 
 
 ### **5. Development Activities** 
-Then, more specifically, we ask you to perform the following activities, and report about these in your project 
-report:
+For each assigned pull request (according to the four categories), perform the following activities and document them in your project report.  
 
 ----------
   [I. Design recovery]
@@ -254,61 +260,79 @@ report:
 </center>
 
 
-I. Describe the current design implementation of the selected pull request in the target variant. Clearly indicate how this design is located in the architecture of the project.
+- Describe the current design of the classes and methods affected by the pull request in the **target variant**.  
+- Show how these classes fit into the broader architecture (e.g., their direct dependencies and interactions).  
+- A simple class diagram is sufficient; focus on clarity, not UML formality.  
 
 ----------
-  [II. Redesign]
+#### II. Design Adaptation / Redesign 
 
 <div style="text-align: center;">
 <img src="/images/473/Redesign.jpeg" alt="Redesign" style="width:450px;height:153px;" align="center">
 </div>
 
-II. Compose a generic design that describes how the new functionality / feature should be integrated 
-and how the design handles the interaction with the rest of the system. It should be clear 
-that the new design not only supports the new feature but also does not severely impact the 
-code quality.
-  
-It will be necessary to redesign the test suite in such a way that it can cope with the new feature and design.
+- Analyze how the integrated change (patch) modifies or extends the existing design.  
+- Compose a **revised design view** that shows how the functionality now fits into the system and interacts with related components.  
+- If you wrote new tests, explain how the design of the test suite evolved to handle the change.  
+- Confirm that the redesign supports the new feature/bug fix without degrading code quality.  
 
 ----------
-  [III. Management]
+#### III. Integration and Testing  
+- Attempt to integrate the PR using `git cherry-pick`.  
+- If cherry-pick fails, run **RePatch** and document the results.  
+- Validate the integration by running the test suite of the target variant.  
+- If tests are missing, write appropriate unit/integration tests.  
+- Report **coverage before and after** integration and reflect on the adequacy of the test suite.  
+
+----------
+#### IV. Effort Estimation and Risk Assessment  
 
 <div style="text-align: center;">
 <img src="/images/473/project-management.jpeg" alt="Project Management" style="width:550px;height:275px;" align="center">
 </div>
 
-III. Estimate the effort required for (i) integrating the bug fix; and (ii) changing/extending the tests.
+- Estimate the effort required for:  
+  - (i) integrating the patch, and  
+  - (ii) creating/adapting tests.  
+- Identify PRs that were **exceptional entities** (e.g., large number of files changed, complex conflicts).  
+- Comment on risks to maintainability and potential long-term design debt introduced by the integration.  
 
 --------
-  [IV. Refactoring/ Code Change]
+#### V. Refactoring and Manual Resolution 
 
 <div style="text-align: center;">
 <img src="/images/473/refactor1.jpeg" alt="Project Management" style="width:400px;height:206px;" align="center">
 </div>
 
-IV. Refactor the current implementation of the Software such that it can handle the new feature.
-
-   Adjust/extend the tests of the project to preserve their effectiveness and coverage during and after refactoring.
+- If RePatch cannot resolve conflicts, attempt **manual resolution** (e.g., adjusting parameters, handling renamed methods).  
+- Document any **refactorings** you performed to make the integration feasible.  
+- If manual resolution is not possible without developer intent, explain why.  
+- Ensure tests remain effective and coverage is preserved after changes.  
 
 ----------
 
-* You will be required to perform a number of techniques presented during the lab sessions. These are:
-  * Analyzing: Metrics and Visualization; and Mining Software Repositories.
-  * Restructuring: Testing; and Refactoring; and Integration. **Please use the techniques that you 
-   deem applicable to your problem. You need to convince us in the report why you decided to 
-   use/exclude some techniques.**
-* This project emphasizes the sound, systematic analysis of the presented problem, the associated 
-solution space, and the chosen solution(s). The software reengineering sessions are composed in 
-such a way as to prepare you for such a project. We stimulate you to assess the benefits and 
-drawbacks of the techniques presented in the lab sessions and ask you to exploit the analysis 
-techniques wisely. You are free to use alternative analysis techniques and tools as much as you 
-deem necessary. 
-* What concerns the refactoring-part, we emphasize the use of tests. Our minimum requirements are:
-  * Determine the extent to which the current tests provide feedback on your future refactoring-steps. 
-  Quantify this (i.e., show coverage information).
-  * Compose an argument discussing why the tests are adequate/inadequate for your chosen 
-  refactoring scenario. If inadequate, adjust the tests as needed. Be efficient with regard 
-  to the time invested in testing. 
+#### VI. Reflection on Patterns, Techniques, and Teamwork  
+
+- Identify the **reengineering patterns** from the OORP book that informed your design, integration, testing, and refactoring decisions.  
+- Reflect on how your team coordinated across categories (meetings, reviews, shared testing).  
+- Summarize lessons learned about **design, variant-aware integration, and testing**.  
+
+In addition, your report should demonstrate the use of techniques introduced in the lab sessions:  
+- **Analyzing:** Metrics & Visualization; Mining Software Repositories.  
+- **Restructuring:** Testing, Refactoring, and Integration.  
+
+You are not required to use every technique, but you must **justify your choices**:  
+- Explain why you applied certain techniques and why others were not relevant to your case.  
+- Discuss the **benefits and drawbacks** of the chosen approaches.  
+- You may also use alternative techniques or tools if they are better suited, but explain why.  
+
+**Testing requirements:**  
+- Determine how well the existing tests provide feedback for your refactoring and integration steps.  
+- **Quantify adequacy** (e.g., show coverage before and after).  
+- Argue whether the tests are sufficient for your chosen scenario.  
+- If they are inadequate, adjust or extend them efficiently—balance thoroughness with time investment.  
+
+--------
 
 ### 5. General Evaluation
 To show that you have passed the assignment, you will have to demonstrate the following:
