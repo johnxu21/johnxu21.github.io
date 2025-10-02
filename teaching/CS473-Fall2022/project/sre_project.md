@@ -50,9 +50,9 @@ Assignment
 [LinkedIn](https://github.com/linkedin/kafka) is a clone-and-own variant of 
 [Apache Kafka]((https://github.com/apache/kafka)) that was created by copying and adapting the existing 
 code of Apache Kafka that was forked on 2011-08-15T18:06:16Z. The two software systems kept on synchronizing 
-their new updates until ```2021-07-06T17:39:59Z```. Since ```2021-07-06T17:39:59Z``` (divergence date), the two 
-projects do not share common commits yet actively evolve in parallel. Currently, ( as of ```2022-10-01T15:01:39Z```), 
-LinkedIn has 367 individual commits, and Apache Kafka has 1,216 individual commits. Development becomes 
+their new updates until ```2022-06-02T17:08:43Z```. Since ```2022-06-02T17:08:43Z``` (divergence date), the two 
+projects do not share common commits yet actively evolve in parallel. Currently, ( as of ```2025-10-01T15:01:39Z```), 
+LinkedIn has 471 individual commits, and Apache Kafka has 7,199 individual commits. Development becomes 
 redundant with the continued divergence, and maintenance efforts rapidly grow. For example, if a bug is 
 discovered in a shared file and fixed in one variant, it is not easy to tell if it has been fixed in the 
 other variant.
@@ -60,7 +60,7 @@ other variant.
 **General problem illustration**
 
 The figure below illustrates clone-and-own, where variant2 (forked repository) was 
-cloned-and-owned from ```variant1``` (original repository). When ```variant2``` forked by the 
+cloned-and-owned from ```Source Variant``` (original repository). When ```Target Variant``` forked by the 
 developer  (```fork_date```), it inherited all commits from variant1. Then, between the 
 ```fork_date``` and ```divergence_date```, both variants synchronized commits, keeping both 
 variants even. After the ```divergence_date```, the variants stopped synchronizing commits.
@@ -68,109 +68,95 @@ variants even. After the ```divergence_date```, the variants stopped synchronizi
 <img src="../../../images/problem.jpeg" alt="Patch" style="width:1000px;height:384px;" align="center">
 
 Let us assume that the developer of ```variant1``` identified a bug after the 
-```divergence_date``` that is spread across files' foo, bar, and lot. The developer 
-then decided to create a ```social fork``` or a ```branch``` of the source 
-repository, ```patched``` the ```buggy``` files, and finally integrated the ```patch```
-back into the ```main branch``` of the ```variant1``` using a ```pull request```. 
-There are four possible scenarios on the ```git_head``` of ```variant2```:
+```divergence_date``` in file `Foo.java`. The developer 
+then decided to create a ```bufixing branch``` on the source 
+repository, ```patched``` the ```buggy``` file, and finally integrated the ```patch```
+back into the ```main branch``` of the ```Source Variant``` using a ```pull request```. 
+When the maintainer of ```Target Variant``` wants to integrate the `bug fix` from the ```Source Variant``` into the ```git_head```,
+there are two possible scenarios:
 
-1. The developer of ```variant2``` could have patched the ```buggy``` file in one 
-of the previous commits before the commit at the ```git_head```. This is a case of 
-**effort duplication (ED)**.
-2. The file at the ```git_head``` of the target still contains the ```buggy``` lines.
-This is a case of **missed opportunity (MO)**. We can even calculate how long the 
-target branch has missed the patch by considering the distance between the ```patch``` 
-integration date and date at the ```git_head```.
-3. The file at the ```git_head``` of the target contains both the ```buggy``` and the ```patched``` 
-lines. In this case both effort duplication and missed opportunity are present. 
-This is a ***split case (SP)***.
-4. The file at the ```git_head``` of the target does not contain any of the ```buggy``` 
-or the ```patched``` lines. So this case would **not** be **interesting (NI)**.
+1. The commit will successfully integrate into the ```Target Variant```.
+2. The commit will fail to integrate as a result of merge conflicts in the file `Foo.java`.
 
-We developed a clone detection tool, [PaReco](https://github.com/patchesandmissedmatches/patchesandmissedmatches),
-that can extracts patches from any source variant ( e.g., [Apache Kafka]((https://github.com/apache/kafka)) 
-in a family and classifies the patches as a MO, ED, SP, or NI in the target variant (e.g., [LinkedIn](https://github.com/linkedin/kafka)). 
-The file patches.xls contains patches (MO and SP) that have been identified in the 
-source variant Apache Kafka that are missing in the divergent target variant 
-[LinkedIn](https://github.com/linkedin/kafka).
+Since the fork has diverged, shared file(s) in a patch (pull request) may have changed between the 
+source and target variants. As a result, direct `git cherry-pick` integration often produces **merge conflicts**. 
+Some of these conflicts are purely textual, while others arise because of **refactoring operations** that 
+were applied independently in the two variants (e.g., Apache Kafka vs. LinkedIn Kafka).  
 
-Your assignment is to identify numerous patches from [patches](https://docs.google.com/spreadsheets/d/1zUSgYGCOMewzpQHE2eBd0yfDv_3lBp8_6rols1yp5xo/edit#gid=0) 
-that are of different sizes and integrate them in the divergent target variant LinkedIn. The size can be measured in terms of number of commits, files_changed, 
-added_lines, deleted_lines.
+In this course we use **[RePatch](https://github.com/Software-Reengineering/RePatch)**, 
+which performs **refactoring-aware patch integration** by aligning source and target code 
+around detected refactorings and replaying those changes.  
 
-Since the fork has diverged, it may have changed the shared file(s) present in the patch (pull request) that is applied to the 
-upstream variant. Therefore, while performing the integration, you might experience merge conflicts. 
-Some conflicts might be a result of refactoring operations applied during the evolution of the 
-file(s) in both branches of [Apache Kafka]((https://github.com/apache/kafka)) and 
-[LinkedIn](https://github.com/linkedin/kafka). In the lab on [Software Integration](/teaching/Software-Reengineering/integration/) 
-we used the tool [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) 
-(that implements the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi)),
-which can identify the **conflicting regions** using the following steps:
-1. *Step 1: Detecting Conflicting Regions*: the tool uses the commands ```git merge``` and 
-```git diff``` to determine the **conflicting regions** of a given ```merge_commit```. 
-2. *Step 2: Detecting Evolutionary Changes:* the tool mines the ```git log``` to track the historical evolution (**evolutionary commits**) of a given **conflicting region** using the command ```git log -L <start><end>:file``` (```start```--start of the conflicting region, ```end```--end of the conflicting region, ```file```--file to track). 
-3. *Step 3: Detecting Refactorings:*, the tool detects if there are any refactoring operations in the **evolutionary commits** by implementing the tool [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi). 
-4. *Step 4: Detecting Involved Refactorings:* the tool identifies refactoring operations affected by the evolution of conflicting region. These refactorings are called **involved refactorings** or overlapping refactorings since they are involved in the changes related to the conflicting region.
+You have already seen how to run RePatch in the **Software Integration Lab** (Task 2 with PR #13386).  
+For the project, you are expected to:  
+- Reuse the same integration workflow shown in the lab, or follow the [RePatch README](https://github.com/Software-Reengineering/RePatch) for full instructions.  
+- Inspect the results in the RePatch database (`merge_result`, `conflicting_files`, etc.) and document how conflicts were resolved, or why they could not be resolved.  
+- Connect your observations back to reengineering patterns from the OORP book.  
 
-However, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) has a dependency on an 
-older version of the library of [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner/tree/intellij-psi) that 
-implements a few refactoring operations. You will need to extend [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
-with a few refactoring operations that you find frequently occurring in the patches (pull requests), you are going to integrate into the fork variant [LinkedIn](https://github.com/linkedin/kafka).
-You will identify the frequently occuring refactorings the method we used in *Task 4* in the [Refactoring Assistants
-](/teaching/Software-Reengineering/refactoring/) lab. Remember to write tests for the newly added refactorings.
+### 2. Pull Request Categories  
 
-Next, [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits) uses ```git merge``` and 
-tries to synchronize the branches. To integrate patches (pull requests), we shall have some changes in 
-*Step 1: Detecting Conflicting Regions* as follows:
+You will work on pull requests from the following four categories.  
+[PR Categories Spreadsheet](https://docs.google.com/spreadsheets/d/1c2Y9p3mnBy5i_TP-7TNk2LkesAIsvoPma1MzAkU6WkA/edit?usp=sharing)  
 
-  1. Fork [LinkedIn](https://github.com/linkedin/kafka)
-  2. Clone the fork you have created
-  3. Add the remote repository that we are going to cherry-pick the patch using these two commands.
+Each student will analyze:  
+- **Category 1:** 1 PR  
+- **Category 2:** 2 PRs  
+- **Category 3:** 1 PR  
+- **Category 4:** 3 PR  
 
-``` 
-git remote add apache https://github.com/apache/kafka.git
-git fetch apache
-git cherry-pick merge_commit
-``` 
-The ```merge_commit``` is the pull request merge commit you are trying to integrate into the fork.
+Although each student is responsible for selecting and working on their PRs, you are expected to **collaborate as a team**.  
+- Discuss your findings, challenges, and approaches together.  
+- Share insights on conflicts, testing, and coverage.  
+- Submit one **joint team report** that consolidates everyone’s contributions.  
+- Inside the report, clearly **label which PRs were handled by each student** to ensure individual work is identifiable.   
 
-The next steps are the same as they are applied in [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits)
+#### Category 1: Cherry-pick succeeds and includes tests  
 
+- Git cherry-pick succeeds without conflicts.  
+- The integrated code is already covered by tests in the target repository.  
 
-After identifying the *overlapping refactorings* and the *nonoverlapping refactorings* in 
-the *conflicting region*, use the knowledge of refactoring to integrate the patch into the 
-variant. 
+**Task:** Validate the integration by running the existing test suite.  
 
-   
+#### Category 2: Cherry-pick succeeds but missing tests
+- Git cherry-pick succeeds without conflicts.  
+- Some of the changed files lack test coverage in the target repository.
 
+**Task:** Write missing unit/integration tests. Measure coverage before and after.  
 
+#### Category 3: Cherry-pick fails, RePatch succeeds
+- Git cherry-pick fails due to structural divergence.  
+- RePatch resolves conflicts and integrates the PR.  
+- Some files may or may not have tests.
+**Task:** Run RePatch, inspect the results, and validate with tests. If tests are missing, write them.  
 
+#### Category 4: Cherry-pick fails, RePatch cannot resolve conflicts
+- Both Git `cherry-pick` and `RePatch` fail due to unsupported refactorings or complex textual conflicts.
+**Task:**  
+- Diagnose why integration failed (unsupported refactoring? semantic conflict?).  
+- Attempt manual fixes if feasible (e.g., adding a missing parameter).  
+- If infeasible, explain why developer intent is required.  
+- Reflect on the difficulty of conflicts and potential extensions to RePatch.  
 
+### 3. Getting Started Instructions
+Please pay attention to the following instructions:  
 
-
-
-
-
-### 2. Getting Started Instructions
-Please pay attention to the following instructions. You need to send an email to <em></em><a href="mailto:john.businge@unlv.edu">me</a> with:
-* Subject "Reengineering - Linkedin". 
-* Message Body:
-  * The full name of the members in your group (including yours). Remember, a maximum of 3 
-  people, but you are allowed to work with less than 3 if you want to.
-  * Attach the **pre-conditions report** (PDF format) in your message.
+- Each group must prepare a **Pre-conditions Report** (PDF format).  
+- Only **one member per group** should submit the report on Canvas on behalf of the group.  
+- The report must include:  
+  - The full names of all group members (maximum of 3 people per group; groups of 1–2 are also allowed).
 
 * Your Pre-conditions Report should contain the following:
   * Project Name
   * Full names of all the members in your group
-  * A link to your GitHub repositories (which shows you already forked [LinkedIn] and [RefactoringsInMergeCommits](https://github.com/ualberta-smr/RefactoringsInMergeCommits))
+  * A link to your GitHub repositories (which shows you already forked [LinkedIn](https://github.com/linkedin/kafka)
   * The members are set as collaborators to the GitHub project.
   * Invite me as collaborator on your forked repositories. (my [GitHub ID - ```johnxu21```](https://github.com/johnxu21)).
 * Demonstrate the ability to build the projects. For this, we want a statement from the group 
 attesting they managed to successfully build the projects. You can also attach a screenshot of 
 your IDE with the project source and a message like "build successful".
-* Simple Class Diagram of the class being patched (or buggy class). A simple class diagram has 
+* Simple Class Diagram of one of the pull requests being patched (or buggy target). A simple class diagram has 
 only the name of the class and its interactions with the other classes (there are two examples in 
-JPacman repository in the "docs" folder). This is to reinforce your initial understanding of the 
+[JPacman repository in the "docs" folder](https://github.com/johnxu21/jpacman/blob/master/doc/uml/FactoryWiring.png)). This is to reinforce your initial understanding of the 
 system. You only need to focus on the classes associated with the patch and the classes that are 
 called in those classes. There is no need to go deeper into the class structure (i.e., if buggy 
 class calls Class X, and Class X calls Class Y, then you do not need to show Class Y since it is 
@@ -181,7 +167,7 @@ open to interpretation (this is on purpose). Therefore, is up to you, students, 
 for your project. It is entirely possible for different groups to have different scopes and planned 
 activities based on this assignment.
 
-### 3. General Coding Instructions
+### 4. General Coding Instructions
 In order to work on this assignment, the following coding/repository instructions apply:
 * Fork [LinkedIn](https://github.com/linkedin/kafka), and clone the source code for your 
 team to work on it. In the Documentation 
@@ -204,7 +190,7 @@ to remove a God Class, your commit should be:
   * Be sure to commit/push the final version of your reengineering project before the final 
   deadline. The final commit will be considered for evaluation as part of your assignment submission.
 
-### 4. Development Activities 
+### 5. Development Activities 
 Then, more specifically, we ask you to perform the following activities, and report about these in your project 
 report:
 
@@ -217,7 +203,7 @@ report:
 </center>
 
 
-I. Describe the current design implementation of the selected feature in the current Software. Clearly indicate how this design is located in the architecture of the project.
+I. Describe the current design implementation of the selected pull request in the target variant. Clearly indicate how this design is located in the architecture of the project.
 
 ----------
   [II. Redesign]
@@ -231,7 +217,7 @@ and how the design handles the interaction with the rest of the system. It shoul
 that the new design not only supports the new feature but also does not severely impact the 
 code quality.
   
-   It will be necessary to redesign the test suite in such a way that it can cope with the new feature and design.
+It will be necessary to redesign the test suite in such a way that it can cope with the new feature and design.
 
 ----------
   [III. Management]
@@ -240,7 +226,7 @@ code quality.
 <img src="/images/473/project-management.jpeg" alt="Project Management" style="width:550px;height:275px;" align="center">
 </div>
 
-III. Estimate the effort required for (i) refactoring towards the new requirements; and (ii) changing/extending the tests.
+III. Estimate the effort required for (i) integrating the bug fix; and (ii) changing/extending the tests.
 
 --------
   [IV. Refactoring/ Code Change]
