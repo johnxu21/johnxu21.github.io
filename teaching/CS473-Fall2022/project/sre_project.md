@@ -78,17 +78,6 @@ there are two possible scenarios:
 1. The commit will successfully integrate into the ```Target Variant```.
 2. The commit will fail to integrate as a result of merge conflicts in the file `Foo.java`.
 
-We developed a clone detection tool, [PaReco](https://github.com/patchesandmissedmatches/patchesandmissedmatches),
-that can extracts patches from any source variant ( e.g., [Apache Kafka]((https://github.com/apache/kafka)) 
-in a family and classifies the patches as a MO, ED, SP, or NI in the target variant (e.g., [LinkedIn](https://github.com/linkedin/kafka)). 
-The file patches.xls contains patches (MO and SP) that have been identified in the 
-source variant Apache Kafka that are missing in the divergent target variant 
-[LinkedIn](https://github.com/linkedin/kafka).
-
-Your assignment is to identify numerous patches from [patches](https://docs.google.com/spreadsheets/d/1zUSgYGCOMewzpQHE2eBd0yfDv_3lBp8_6rols1yp5xo/edit#gid=0) 
-that are of different sizes and integrate them in the divergent target variant LinkedIn. The size can be measured in terms of number of commits, files_changed, 
-added_lines, deleted_lines.
-
 Since the fork has diverged, shared file(s) in a patch (pull request) may have changed between the 
 source and target variants. As a result, direct `git cherry-pick` integration often produces **merge conflicts**. 
 Some of these conflicts are purely textual, while others arise because of **refactoring operations** that 
