@@ -120,6 +120,7 @@ Although each student is responsible for selecting and working on their PRs, you
 #### Category 2: Cherry-pick succeeds but missing tests
 - Git cherry-pick succeeds without conflicts.  
 - Some of the changed files lack test coverage in the target repository.
+
 **Task:** Write missing unit/integration tests. Measure coverage before and after.  
 
 #### Category 3: Cherry-pick fails, RePatch succeeds
