@@ -109,16 +109,17 @@ For the project, you are expected to:
 You will work on pull requests from the following four categories.  
 [PR Categories Spreadsheet](https://docs.google.com/spreadsheets/d/1c2Y9p3mnBy5i_TP-7TNk2LkesAIsvoPma1MzAkU6WkA/edit?usp=sharing)  
 
-Each student will be assigned:  
+Each student will analyze:  
 - **Category 1:** 1 PR  
 - **Category 2:** 2 PRs  
 - **Category 3:** 1 PR  
-- **Category 4:** 1 PR  
+- **Category 4:** 3 PR  
 
-Although each student is responsible for selecting and working on their assigned PRs, you are expected to **collaborate as a team**.  
+Although each student is responsible for selecting and working on their PRs, you are expected to **collaborate as a team**.  
 - Discuss your findings, challenges, and approaches together.  
 - Share insights on conflicts, testing, and coverage.  
 - Submit one **joint team report** that consolidates everyone’s contributions.  
+- Inside the report, clearly **label which PRs were handled by each student** to ensure individual work is identifiable.   
 
 #### Category 1: Cherry-pick succeeds and includes tests  
 
@@ -139,7 +140,7 @@ Although each student is responsible for selecting and working on their assigned
 **Task:** Run RePatch, inspect the results, and validate with tests. If tests are missing, write them.  
 
 #### Category 4: Cherry-pick fails, RePatch cannot resolve conflicts
-- Both Git cherry-pick and RePatch fail due to unsupported refactorings or complex textual conflicts.
+- Both Git `cherry-pick` and `RePatch` fail due to unsupported refactorings or complex textual conflicts.
 **Task:**  
 - Diagnose why integration failed (unsupported refactoring? semantic conflict?).  
 - Attempt manual fixes if feasible (e.g., adding a missing parameter).  

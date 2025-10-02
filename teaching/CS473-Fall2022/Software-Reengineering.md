@@ -162,7 +162,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <tr>
 <td style="border: 1px solid black;">07</td>
 <td style="border: 1px solid black;">Mo 10/06</td>
-<td style="border: 1px solid black;">Free project Work</td>
+<td style="border: 1px solid black;">[L] Project discussion</td>
 <td style="border: 1px solid black;">We 10/08</td>
 <td style="border: 1px solid black;">Free project Work <br/> <b>[Milestone 0] Groups Assembled + <br/> Precondition report</b> </td>
 </tr>
