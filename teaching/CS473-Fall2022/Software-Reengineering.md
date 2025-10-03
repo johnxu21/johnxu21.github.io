@@ -336,9 +336,9 @@ C. DIVERSIFICATION: To do better than a passing grade, you have to show that you
  * How did you handle the restructuring process itself? How accurate were your planning and estimation? How did you react to unanticipated circumstances?
 
 The following check-list will be used to assess your reengineering project
-* Checklist reengineering Pre-conditions Report [ PDF ](../../files/spdd/Pre-conditions_Report_Evaluation_Template.pdf)
-* Checklist reengineering Intermediate Report [ PDF ](../../files/spdd/Intermetdiate_Evaluation_Report_Template.pdf)
-* Checklist reengineering Final Report [PDF](../../files/spdd/Final_Report_Evaluation_Form_Blank.pdf)
+* Checklist reengineering Pre-conditions Report [ PDF ](../../files/CS789_SRE/Pre-conditions_Report_Evaluation_Template.pdf)
+* Checklist reengineering Intermediate Report [ PDF ](../../files/CS789_SRE/Intermetdiate_Evaluation_Report_Template.pdf)
+* Checklist reengineering Final Report [PDF](../../files/CS789_SRE/Final_Evaluation_Report_CS-789_Template.pdf)
 
 --------
 **Table I: Grade Distribution:**

@@ -102,7 +102,7 @@ Each student will analyze:
 - **Category 1:** 1 PR  
 - **Category 2:** 2 PRs  
 - **Category 3:** 1 PR  
-- **Category 4:** 3 PR  
+- **Category 4:** 3 PRs  
 
 Although each student is responsible for selecting and working on their PRs, you are expected to **collaborate as a team**.  
 - Discuss your findings, challenges, and approaches together.  
@@ -123,10 +123,10 @@ Although each student is responsible for selecting and working on their PRs, you
 
 #### Category 2: Cherry-pick succeeds but missing tests
 - Git cherry-pick succeeds without conflicts.  
-- Some of the changed files lack test coverage in the target repository.
+- Some of the changed files lack test in the target repository.
 
 **Task:**
-* Identify the **merge commit** of the patch pull request using techniques from the [Mining Software Respositories](/teaching/Software-Reengineering/msr/) class.
+* Identify the **merge commit** of the patch pull request.
 * Run `git cherry-pick` on the identified merge commit.
 * Write the missing unit/integration tests for the uncovered changes.
 * Measure coverage before and after adding the tests to ensure improvement.

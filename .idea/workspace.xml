@@ -35,6 +35,13 @@
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/fixtures/account_data.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/test_account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/spdd/Final_Report_Evaluation_Form_Blank.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/spdd/Final_Report_Evaluation_Form_Blank.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/spdd/Intermediate Report Evaluation CheckList.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/spdd/Intermetdiate_Evaluation_Report_Template.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/spdd/Intermetdiate_Evaluation_Report_Template.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/spdd/Pre-conditions_Report_Evaluation_Template.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/spdd/Pre-conditions_Report_Evaluation_Template.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/teaching/CS473-Fall2022/project/sre_project.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS473-Fall2022/project/sre_project.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +201,7 @@
       <workItem from="1753724318727" duration="81364000" />
       <workItem from="1757958704852" duration="564000" />
       <workItem from="1757965612115" duration="10147000" />
-      <workItem from="1758665420725" duration="25271000" />
+      <workItem from="1758665420725" duration="28182000" />
     </task>
     <servers />
   </component>
