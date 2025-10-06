@@ -57,31 +57,50 @@ redundant with the continued divergence, and maintenance efforts rapidly grow. F
 discovered in a shared file and fixed in one variant, it is not easy to tell if it has been fixed in the 
 other variant.
 
-**General problem illustration**
+#### **General problem illustration**
+
+The figure below illustrates the **clone-and-own** development model, where **Source Variant** 
+(the forked repository) was cloned and independently maintained from the **Source Variant** 
+(the original repository).  
+
+When the **Target Variant** was forked by the developer (**fork_date**), it inherited all commits 
+from the **Source Variant**. Between the **fork_date** and the **divergence_date**, both variants 
+continued synchronizing commits, keeping their histories aligned. After the **divergence_date**, 
+however, synchronization stopped, and the two variants began to evolve independently.  
 
 The figure below illustrates clone-and-own, where variant2 (forked repository) was 
 cloned-and-owned from ```Source Variant``` (original repository). When ```Target Variant``` forked by the 
-developer  (```fork_date```), it inherited all commits from variant1. Then, between the 
+developer  (```fork_date```), it inherited all commits from ```Source Variant```. Then, between the 
 ```fork_date``` and ```divergence_date```, both variants synchronized commits, keeping both 
 variants even. After the ```divergence_date```, the variants stopped synchronizing commits.
 
 <img src="../../../images/problem.jpeg" alt="Patch" style="width:1000px;height:384px;" align="center">
 
-Let us assume that the developer of ```variant1``` identified a bug after the 
-```divergence_date``` in file `Foo.java`. The developer 
-then decided to create a ```bufixing branch``` on the source 
-repository, ```patched``` the ```buggy``` file, and finally integrated the ```patch```
-back into the ```main branch``` of the ```Source Variant``` using a ```pull request```. 
-When the maintainer of ```Target Variant``` wants to integrate the `bug fix` from the ```Source Variant``` into the ```git_head```,
-there are two possible scenarios:
+Assume that after the **divergence_date**, a developer of the **Source Variant** discovers a bug in `Foo.java`.  
+To fix it, the developer creates a **bugfix branch** on the source repository, applies the patch to 
+the buggy file, and then merges the fix back into the **main branch** of the **Source Variant** via a **pull request**.  
 
-1. The commit will successfully integrate into the ```Target Variant```.
-2. The commit will fail to integrate as a result of merge conflicts in the file `Foo.java`.
+Later, the maintainer of the **Target Variant** wants to integrate this same bug fix from the **Source Variant** 
+into the `git_head` of the target repository. At this point, two possible scenarios can occur:  
+
+1. **Successful Integration**  
+   The commit from the **Source Variant** applies cleanly to the **Target Variant**.  
+   The patch merges without conflicts, and the fixed version of `Foo.java` becomes part of the target’s codebase.  
+
+2. **Failed Integration**  
+   The commit from the **Source Variant** fails to apply due to **merge conflicts** in `Foo.java`.  
+   These conflicts may arise from code divergence, refactoring, or other structural differences between the two variants since the **divergence_date**.
 
 Since the fork has diverged, shared file(s) in a patch (pull request) may have changed between the 
-source and target variants. As a result, direct `git cherry-pick` integration often produces **merge conflicts**. 
-Some of these conflicts are purely textual, while others arise because of **refactoring operations** that 
-were applied independently in the two variants (e.g., Apache Kafka vs. LinkedIn Kafka).  
+**Source Variant** and the **Target Variant**. As a result, direct `git cherry-pick` integration often leads to **merge conflicts**.  
+Some of these conflicts are purely **textual**, caused by overlapping edits in the same lines of code,  
+while others are **structural**, resulting from **refactoring operations** independently applied in the two variants  
+(e.g., method renames, class moves, or interface changes between Apache Kafka and LinkedIn Kafka).  
+
+To address such cases, this project employs **[RePatch](https://github.com/Software-Reengineering/RePatch)**, 
+a refactoring-aware integration tool capable of detecting 
+and replaying refactorings to improve patch compatibility across diverged variants.
+  
 
 In this course we use **[RePatch](https://github.com/Software-Reengineering/RePatch)**, 
 which performs **refactoring-aware patch integration** by aligning source and target code 
