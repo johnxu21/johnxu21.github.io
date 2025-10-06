@@ -272,13 +272,11 @@ Project: Assignment
 
 **Milestones**
 All Deliverables will be **submitted on Canvas**
-* Monday 10-Oct-2025 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project and group members on Canvas. Include a precondition report, details of this report to follow on the [project page]().
-* Wednesday 22-Oct-2025 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format).
-* Monday 27-Nov-2025 Feedback for the Report on usage of tools
-* Wednesday 05-Nov-2025 Submission of the Intermediate Report
-* Monday 17-Nov-2025 Feedback for the Intermediate Report
-* Wednesday 03-Dec-2025 11h59pm (**Date to be confirmed**; one week before the oral exam) - Final Report: Send the Report (in PDF format).
-* The oral exams (**Tobe confirmed**)
+* Wed 10/08/2025 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project and group members on Canvas. Include a precondition report, details of this report to follow on the [project page]().
+* Wednesday 11/05/2025 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format).
+* Monday 11/17/2025 Feedback for Intermediate Report
+* Wednesday 12/03/2025 11h59pm Final Report
+* Wednesday 12/10/2025 Oral exam / Presentation (**Tobe confirmed**)
 
 Group Work
 ========
