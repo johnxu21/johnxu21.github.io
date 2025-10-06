@@ -271,18 +271,18 @@ When working on this assignment, follow these repository and coding practices:
 For each assigned pull request (according to the four categories), perform the following activities and document them in your project report.  
 
 ----------
-#### I. Design Recovery 
 
+#### I. Design Recovery 
 
 <center>
 <img src="/images/473/design_recovery.jpeg" alt="Design Recover" style="width:500px;height:427px;" align="center">
 </center>
 
-
-- Describe the current design of the classes and methods affected by the pull request in the **target variant**.  
-- Show how these classes fit into the broader architecture (e.g., their direct dependencies and interactions).  
-- A simple class diagram is sufficient; focus on clarity, not UML formality. 
-- **For Category 4 PRs:** focus on analyzing the **existing design** and identifying the architectural or refactoring differences that prevent successful integration (no redesign is expected). 
+- Extract and describe the **local design** of the classes and methods affected by the pull request in the **source variant** using IntelliJ or a similar tool.  
+- Identify the **corresponding classes or components** in the **target variant** where the integration will occur.  
+- Compare both contexts to highlight structural or architectural differences (e.g., renamed classes, relocated methods, split responsibilities).  
+- A simple side-by-side diagram or annotated class sketch is sufficient; focus on showing the **design gap** between the two variants.
+- **For Category 4 PRs**: focus on analyzing the existing design of the target variant and identifying the architectural misalignments or refactoring-induced differences that prevent successful integration. Since the patch cannot be integrated, no redesign is expected, only a discussion of the design barriers encountered. 
 
 ----------
 #### II. Design Adaptation / Redesign 
@@ -391,7 +391,6 @@ To successfully complete the project, your report and implementation must demons
   - Remember: the report is the primary artifact used for evaluation.  
 
 For a detailed breakdown, consult the **evaluation checklist** available on the course main page.  
-
 
 ### **7. Report**  
 
