@@ -281,7 +281,8 @@ For each assigned pull request (according to the four categories), perform the f
 
 - Describe the current design of the classes and methods affected by the pull request in the **target variant**.  
 - Show how these classes fit into the broader architecture (e.g., their direct dependencies and interactions).  
-- A simple class diagram is sufficient; focus on clarity, not UML formality.  
+- A simple class diagram is sufficient; focus on clarity, not UML formality. 
+- **For Category 4 PRs:** focus on analyzing the **existing design** and identifying the architectural or refactoring differences that prevent successful integration (no redesign is expected). 
 
 ----------
 #### II. Design Adaptation / Redesign 
@@ -294,6 +295,7 @@ For each assigned pull request (according to the four categories), perform the f
 - Compose a **revised design view** that shows how the functionality now fits into the system and interacts with related components.  
 - If you wrote new tests, explain how the design of the test suite evolved to handle the change.  
 - Confirm that the redesign supports the new feature/bug fix without degrading code quality.  
+- **Exclude Category 4 PRs:** since these fail to integrate, instead describe the **design barriers** that caused the failure (e.g., incompatible refactorings, missing interface, or semantic mismatch).  
 
 ----------
 #### III. Integration and Testing  
