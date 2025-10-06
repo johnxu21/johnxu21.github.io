@@ -164,7 +164,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">Mo 10/06</td>
 <td style="border: 1px solid black;">[L] Project discussion</td>
 <td style="border: 1px solid black;">We 10/08</td>
-<td style="border: 1px solid black;">Free project Work <br/> <b>[Milestone 0] Groups Assembled + <br/> Precondition report</b> </td>
+<td style="border: 1px solid black;">Free project Work <br/> <b>[Milestone 1] Groups Assembled + <br/> Precondition report</b> </td>
 </tr>
 
 <tr>
@@ -180,13 +180,13 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">Mo 10/20 </td>
 <td style="border: 1px solid black;">Free project Work </td>
 <td style="border: 1px solid black;">We 10/22</td>
-<td style="border: 1px solid black;">Free project Work <br> <b> [Milestone 1] Report on usage of tools</b></td>
+<td style="border: 1px solid black;">Free project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">10</td>
 <td style="border: 1px solid black;">Mo 10/27</td> 
-<td style="border: 1px solid black;">Free project Work <br/> <b>[Milestone 1] Feedback Session</b></td>
+<td style="border: 1px solid black;">Free project Work </td>
 <td style="border: 1px solid black;">We 10/29</td>
 <td style="border: 1px solid black;">Free project Work </td>
 </tr>
