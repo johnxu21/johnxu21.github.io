@@ -325,14 +325,32 @@ B.  SELECTION: In order to receive a passing grade (MINIMUM NORM), you have to s
  * You can transform the existing source code so that it is more fit to implement the new requirements (i.e. refactoring)
  * You can demonstrate that the code transformations have not affected the existing functionality (i.e. regression tests)
  
-C. DIVERSIFICATION: To do better than a passing grade, you have to show that you have control over the restructuring process.
- * Which techniques (re-engineering patterns) did you use for the different phases? To what extent are you able to back up your choice?
- * How did you analyze the new requirements? To what extent will you be able to maintain control over future changing requirements?
- * How did you validate the design (architecture) that you extracted from the source code? How did you use this design to identify potential problems?
- * How did you handle the code transformation itself? Why will these transformations help to implement the new functionality which is to be added?
- * How did you check on the quality of your test procedure? To what extent are you able to justify the amount of time you put into the testing, related to the existing functionality and the improvements that were made?
- * How did you handle the restructuring process itself? How accurate were your planning and estimation? How did you react to unanticipated circumstances?
+### C. DIVERSIFICATION  
+To earn above a passing grade, you must show **systematic control** and **critical reasoning** throughout your reengineering project.
 
+You should demonstrate that you:
+
+1. **Applied appropriate reengineering patterns**  
+   - Selected and justified OORP patterns that guided your design recovery, integration, testing, and adaptation.  
+   - Linked pattern choices to concrete evidence (e.g., conflicts resolved, coverage improved).
+
+2. **Understood and managed design divergence**  
+   - Identified design gaps between source and target variants.  
+   - Explained how architectural or refactoring differences affected integration outcomes.  
+
+3. **Validated design and transformations**  
+   - Verified the accuracy of recovered designs.  
+   - Ensured that applied transformations or adaptations aligned with the target’s design intent.
+
+4. **Maintained testing discipline**  
+   - Measured and justified test coverage before and after integration.  
+   - Explained how your testing effort supports correctness and confidence.  
+
+5. **Exercised process control**  
+   - Planned and tracked work systematically as a team.  
+   - Adapted effectively to unexpected conflicts, build issues, or refactoring mismatches.  
+   - Reflected on lessons learned about controlling variant-based reengineering.
+   
 The following check-list will be used to assess your reengineering project
 * Checklist reengineering Pre-conditions Report [ PDF ](../../files/CS789_SRE/Pre-conditions_Report_Evaluation_Template.pdf)
 * Checklist reengineering Intermediate Report [ PDF ](../../files/CS789_SRE/Intermetdiate_Evaluation_Report_Template.pdf)
