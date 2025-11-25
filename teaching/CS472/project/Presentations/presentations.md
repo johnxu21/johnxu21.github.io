@@ -143,7 +143,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">12/03</td>
 
-    <td style="border: 1px solid black;">12:50 pm - 1:15 pm</td>
+    <td style="border: 1px solid black;">1:00 pm - 1:20 pm</td>
 
   </tr>
 
@@ -153,7 +153,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">12/03</td>
 
-    <td style="border: 1px solid black;">1:20 pm - 1:45 pm</td>
+    <td style="border: 1px solid black;">1:25 pm - 1:45 pm</td>
 
   </tr>
 
@@ -163,7 +163,7 @@ are supposed to wait for their time slots.
 
     <td style="border: 1px solid black;">12/03</td>
 
-    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
+    <td style="border: 1px solid black;">1:50 pm - 2:10 pm</td>
 
   </tr>
 
