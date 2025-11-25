@@ -83,62 +83,31 @@ Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-b
 
   <tr>
 
-    <td style="border: 1px solid black;">URP -- Gp-1</td>
+    <td style="border: 1px solid black;">GDCP -- Gp-1</td>
 
-    <td style="border: 1px solid black;">4/24</td>
+    <td style="border: 1px solid black;">11/26</td>
 
-    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">LessonConect -- Gp-2</td>
-
-    <td style="border: 1px solid black;">4/24</td>
-
-    <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
+    <td style="border: 1px solid black;">12:50 pm - 1:15 pm</td>
 
   </tr>
 
   <tr>
 
-    <td style="border: 1px solid black;">IngrediScan -- Gp-5</td>
+    <td style="border: 1px solid black;">Rebel Remind -- Gp-2</td>
 
-    <td style="border: 1px solid black;">4/24</td>
+    <td style="border: 1px solid black;">11/26</td>
 
-    <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
-
-  </tr>
-
-
-  <tr>
-
-    <td style="border: 1px solid black;">PRISM -- Gp-6</td>
-
-    <td style="border: 1px solid black;">4/29</td>
-
-    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
+    <td style="border: 1px solid black;">1:20 pm - 1:45 pm</td>
 
   </tr>
 
   <tr>
 
-    <td style="border: 1px solid black;">Rebel Remind -- Gp-3</td>
+    <td style="border: 1px solid black;">Farcaster -- Gp-5</td>
 
-    <td style="border: 1px solid black;">4/29</td>
+    <td style="border: 1px solid black;">11/26</td>
 
-    <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">EulogyQuest -- Gp-4</td>
-
-    <td style="border: 1px solid black;">4/29</td>
-
-    <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
+    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
 
   </tr>
 
@@ -170,62 +139,31 @@ are supposed to wait for their time slots.
 
   <tr>
 
-    <td style="border: 1px solid black;">URP -- Gp-1</td>
+    <td style="border: 1px solid black;">GDCP -- Gp-1</td>
 
-    <td style="border: 1px solid black;">5/1</td>
+    <td style="border: 1px solid black;">12/03</td>
 
-    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">LessonConect -- Gp-2</td>
-
-    <td style="border: 1px solid black;">5/1</td>
-
-    <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
+    <td style="border: 1px solid black;">12:50 pm - 1:15 pm</td>
 
   </tr>
 
   <tr>
 
-    <td style="border: 1px solid black;">IngrediScan -- Gp-5</td>
+    <td style="border: 1px solid black;">Rebel Remind -- Gp-2</td>
 
-    <td style="border: 1px solid black;">5/1</td>
+    <td style="border: 1px solid black;">12/03</td>
 
-    <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
-
-  </tr>
-
-
-  <tr>
-
-    <td style="border: 1px solid black;">PRISM -- Gp-6</td>
-
-    <td style="border: 1px solid black;">5/6</td>
-
-    <td style="border: 1px solid black;">3:50 pm - 4:15 pm</td>
+    <td style="border: 1px solid black;">1:20 pm - 1:45 pm</td>
 
   </tr>
 
   <tr>
 
-    <td style="border: 1px solid black;">Rebel Remind -- Gp-3</td>
+    <td style="border: 1px solid black;">Farcaster -- Gp-5</td>
 
-    <td style="border: 1px solid black;">5/6</td>
+    <td style="border: 1px solid black;">12/03</td>
 
-    <td style="border: 1px solid black;">4:15 pm - 4:40 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">EulogyQuest -- Gp-4</td>
-
-    <td style="border: 1px solid black;">5/6</td>
-
-    <td style="border: 1px solid black;">4:40 pm - 5:10 pm</td>
+    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
 
   </tr>
 
