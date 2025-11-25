@@ -55,7 +55,7 @@ Venue for the Trial and Final Presentation
 =======
 The **trial and final project presentations** will take place in **CHB A106**
 
-Trial Presentations (Ungraded) (Last edited 04/04/2025)
+Trial Presentations (Ungraded) (Last edited 11/25/2025)
 =======
 
 
@@ -116,7 +116,7 @@ Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-b
 <br/>
 <br/>
 
-Final Presentations (Last edited 04/04/2025)
+Final Presentations (Last edited 11/25/2025)
 =======
 
 We will have <b>strictly <=16 minutes</b> for the presentation and <b>at most 4 minutes</b> of questions/feedback.
