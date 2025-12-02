@@ -103,7 +103,7 @@ Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-b
 
   <tr>
 
-    <td style="border: 1px solid black;">Farcaster -- Gp-5</td>
+    <td style="border: 1px solid black;">Farcaster -- Gp-3</td>
 
     <td style="border: 1px solid black;">11/26</td>
 
@@ -159,7 +159,7 @@ are supposed to wait for their time slots.
 
   <tr>
 
-    <td style="border: 1px solid black;">Farcaster -- Gp-5</td>
+    <td style="border: 1px solid black;">Farcaster -- Gp-3</td>
 
     <td style="border: 1px solid black;">12/03</td>
 
