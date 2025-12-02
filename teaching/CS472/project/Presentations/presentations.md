@@ -53,7 +53,7 @@ height:30px;" value="SD Competition" />
 
 Venue for the Trial and Final Presentation
 =======
-The **trial and final project presentations** will take place in **CHB A106**
+The **trial and final project presentations** will take place in **our usual classroom**
 
 Trial Presentations (Ungraded) (Last edited 11/25/2025)
 =======
