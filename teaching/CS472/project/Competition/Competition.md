@@ -55,14 +55,15 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
-- The form for the data link can be found [here](https://docs.google.com/forms/u/2/d/e/1FAIpQLScR9ukfwv2m1pLDf2rn-YKB8R11b9k3GDU0gShE0pOmsyzycg/viewform?usp=send_form&pli=1) 
-- Molly's Class Presentation [pptx](Classroom%20Visit%20Spring%202025.pptx)
-- Poster Design Workshop Slided [pptx](Poster%20Design%20Workshop%20Slides.pptx)
-- REIMBURSMENT DOCUMENT [docx](REIMBURSMENT%20DOCUMENT.docx)
-- SeniorDesign4x3template_completelyblank (2) [pptx](SeniorDesign4x3template_completelyblank%20(2).pptx)
-- Spring 2025 Senior Design Abstract Form [docx](Spring%202025%20Senior%20Design%20Abstract%20Form.docx)
-- FAQ Senior Design [docx](FAQ%20Senior%20Design%20Spring%202025.docx)
-- Informational Paperwork [docx](Informational%20Paperwork%20Spring%202025.docx)
+- Classroom Visit Fall 2026 slides [pptx](Spring26/Classroom%20Visit%20Fall%202026%20(1).pptx) 
+- FAQ Senior Design fall 2025 [docx](Spring26/FAQ%20Senior%20Design%20fall%202026%20(1).docx)
+- Informational Paperwork Spring 2026 [docx](Spring26/Informational%20Paperwork%20Spring%202026%20(1).docx)
+- Maker Space Document [docx](Spring26/Maker%20Space%20Document%20(1).docx)
+- Poster Design Workshop Slides [pptx](Spring26/Poster%20Design%20Workshop%20Slides.pptx)
+- REIMBURSMENT DOCUMENT [docx](Spring26/REIMBURSMENT%20DOCUMENT.docx)
+- Senior Design Flyer Spring 2026 [pdf](Spring26/Senior%20Design%20Flyer%20Spring%202026%20(2).pdf)
+- SeniorDesign4x3template_completelyblank (2) [pptx](Spring26/SeniorDesign4x3template_completelyblank%20(2).pptx)
+- Spring 2026 Senior Design Abstract Form [docx](Spring%202025%20Senior%20Design%20Abstract%20Form.docx)
 
 [//]: # (<br>)
 
