@@ -37,7 +37,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teaching/CS472/CS472.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/CS472.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/project.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/project.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Clients/Clients.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Clients.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/project/Clients/Spring-26/ARED Group Inc.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +200,7 @@
       <workItem from="1758665420725" duration="46639000" />
       <workItem from="1763148433442" duration="1039000" />
       <workItem from="1763590764571" duration="77000" />
-      <workItem from="1763590905491" duration="11020000" />
+      <workItem from="1763590905491" duration="12522000" />
     </task>
     <servers />
   </component>

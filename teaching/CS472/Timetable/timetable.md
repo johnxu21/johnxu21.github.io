@@ -213,7 +213,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 04/28</td>
 <td style="border: 1px solid black;"><b>Trial Presentation</b></td>
 <td style="border: 1px solid black;">Th 04/30 </td>
-<td style="border: 1px solid black;"><b>Project Presentation</b></td>
+<td style="border: 1px solid black;"><b>Trial Presentation</b></td>
 </tr>
 
 <tr>

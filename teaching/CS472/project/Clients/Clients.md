@@ -69,12 +69,18 @@ Review the opportunities below and consider selecting a client project that alig
 career goals.
 </p>
 
-* Novel Gamified Digital Commerce Platform for consumers at Casinos
-  * [Project Details](Gamified-Digital-Commerce-Platform.pdf)
-  * [Video of the project](https://www.youtube.com/watch?v=rpYCsmhbdME)
-* Estimarmine 
-  * [Project Details](Estimarmine_Precondition_Report.pdf)
-* Farcaster Mini-App Development Project
-  * [Project Details](Farcaster_Mini-App_Development_Project.pdf)
-* *I am expecting more projects. I will update as they become available. Please check back soon.**
+1. ARED Group Inc
+  * [Project Details](Spring-26/ARED_Group_Inc.pdf)
+2. Estimarmine 
+  * [Project Details](Spring-26/Estimarmine_Precondition_Report.pdf)
+3. GLAMBRANDI
+  * [Project Details](Spring-26/GLAMBRANDI.pdf)
+4. UnVRap
+ * [Project Details](Spring-26/UnVRap.pdf)
+5. Farmer Community
+ * [Project Details](Spring-26/Farmer-Community.pdf)
+6. Personalized LMS Feature Integration
+ * [Project Details](Spring-26/Personalized_LMS_Feature_Integration.pdf)
+7. Crypto
+ * [Project Details](Spring-26/Crypto.pdf)
 
