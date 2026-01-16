@@ -109,21 +109,21 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 01/27</td>
 <td style="border: 1px solid black;">[T] Intro to Git & GitHub</td>
 <td style="border: 1px solid black;">Th 01/29 </td>
-<td style="border: 1px solid black;">[T] Software Testing </td>
+<td style="border: 1px solid black;">[L] Intro to Git & GitHub </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
 <td style="border: 1px solid black;">Tu 02/03 </td>
-<td style="border: 1px solid black;">[T] Continuous Integration </td>
+<td style="border: 1px solid black;">[T] Software Testing  </td>
 <td style="border: 1px solid black;">Th 02/05 </td>
-<td style="border: 1px solid black;">[L] Continuous Integration </td>
+<td style="border: 1px solid black;">[L] Software Testing </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Tu 02/10</td>
-<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
+<td style="border: 1px solid black;">[T] Continuous Integration</td>
 <td style="border: 1px solid black;">Th 02/12 </td>
 <td style="border: 1px solid black;">Free Project work</td>
 </tr>
@@ -131,17 +131,17 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Tu 02/17</td>
-<td style="border: 1px solid black;">[T] Generative AI</td>
+<td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Th 02/19 </td>
-<td style="border: 1px solid black;">[T] Generative AI</td>
+<td style="border: 1px solid black;">Free Project work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/24</td>
-<td style="border: 1px solid black;">[L] Free Project work</td>
+<td style="border: 1px solid black;">[T] Generative AI</td>
 <td style="border: 1px solid black;">Th 02/26 </td>
-<td style="border: 1px solid black;">[L] Free Project work</td>
+<td style="border: 1px solid black;">[T] Generative AI</td>
 </tr>
 
 <tr>
