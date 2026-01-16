@@ -133,13 +133,13 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 02/17</td>
 <td style="border: 1px solid black;">[T] Generative AI</td>
 <td style="border: 1px solid black;">Th 02/19 </td>
-<td style="border: 1px solid black;">[L] Free Project work </td>
+<td style="border: 1px solid black;">[T] Generative AI</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">06</td>
 <td style="border: 1px solid black;">Tu 02/24</td>
-<td style="border: 1px solid black;">[T] Survey results presentation</td>
+<td style="border: 1px solid black;">[L] Free Project work</td>
 <td style="border: 1px solid black;">Th 02/26 </td>
 <td style="border: 1px solid black;">[L] Free Project work</td>
 </tr>
@@ -205,7 +205,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 04/21</td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 <td style="border: 1px solid black;">Th 04/23 </td>
-<td style="border: 1px solid black;"><b>Trial Presentation</b></td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 </tr>
 
 <tr>

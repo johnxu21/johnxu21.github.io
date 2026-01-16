@@ -34,8 +34,14 @@
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/fixtures/account_data.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/test_account.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Spring-26/ARED Group Inc.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Spring-26/Crypto.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Spring-26/Estimarmine_Precondition_Report.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Spring-26/Farmer-Community.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Spring-26/GLAMBRANDI.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Spring-26/Personalized_LMS_Feature_Integration.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teaching/CS472/project/Clients/Spring-26/UnVRap.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +203,7 @@
       <workItem from="1758665420725" duration="46639000" />
       <workItem from="1763148433442" duration="1039000" />
       <workItem from="1763590764571" duration="77000" />
-      <workItem from="1763590905491" duration="5501000" />
+      <workItem from="1763590905491" duration="8329000" />
     </task>
     <servers />
   </component>
