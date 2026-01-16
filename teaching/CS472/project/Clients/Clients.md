@@ -74,18 +74,11 @@ Review the opportunities below and consider selecting a client project that alig
 career goals.
 </p>
 
-1. ARED Group Inc
-  * [Project Details](Spring-26/ARED_Group_Inc.pdf)
-2. Estimarmine 
-  * [Project Details](Spring-26/Estimarmine_Precondition_Report.pdf)
-3. GLAMBRANDI
-  * [Project Details](Spring-26/GLAMBRANDI.pdf)
-4. UnVRap
- * [Project Details](Spring-26/UnVRap.pdf)
-5. Farmer Community
- * [Project Details](Spring-26/Farmer-Community.pdf)
-6. Personalized LMS Feature Integration
- * [Project Details](Spring-26/Personalized_LMS_Feature_Integration.pdf)
-7. Crypto
- * [Project Details](Spring-26/Crypto.pdf)
+1. ARED Group Inc [Project Details](Spring-26/ARED_Group_Inc.pdf)
+2. Estimarmine [Project Details](Spring-26/Estimarmine_Precondition_Report.pdf)
+3. GLAMBRANDI [Project Details](Spring-26/GLAMBRANDI.pdf)
+4. UnVRap [Project Details](Spring-26/UnVRap.pdf)
+5. Farmer Community [Project Details](Spring-26/Farmer-Community.pdf)
+6. Personalized LMS Feature Integration [Project Details](Spring-26/Personalized_LMS_Feature_Integration.pdf)
+7. Crypto [Project Details](Spring-26/Crypto.pdf)
 
