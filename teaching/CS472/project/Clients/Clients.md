@@ -54,15 +54,20 @@ height:30px;" value="SD Competition" />
 
 <p>
 Choosing a <strong>client-sponsored project</strong> gives your team the opportunity to work with real stakeholders 
-who provide requirements, feedback, and direction throughout the semester. This allows you to focus your energy 
-on <em>design and development</em> while still benefiting from client input during implementation. 
+who provide requirements, feedback, and direction throughout the semester. Most of our clients are 
+<strong>experienced software developers</strong> who have completed senior design or similar capstone projects 
+themselves, so they understand the challenges students face and how to support teams effectively. 
+This allows you to focus your energy on <em>design and development</em> while receiving practical, informed guidance 
+during implementation.
 </p>
 
 <p>
-In contrast, teams that create their own custom projects must define requirements from scratch—sometimes leading to 
-unrealistic or less engaging "virtual client" scenarios. By working with a client, you gain the added benefit of 
-<strong>clearer goals, real-world constraints, and professional collaboration</strong> that mirror industry practice.
+In contrast, teams that create their own custom projects must define requirements from scratch—often leading to 
+unrealistic or less engaging “virtual client” scenarios. Working with an external client offers 
+<strong>clearer goals, real-world constraints, and professional collaboration</strong> that closely mirror 
+industry practice, while still providing a supportive environment tailored to student teams.
 </p>
+
 
 <p>
 Review the opportunities below and consider selecting a client project that aligns with your team’s interests and 
