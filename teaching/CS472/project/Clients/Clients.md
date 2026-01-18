@@ -80,5 +80,5 @@ career goals.
 4. UnVRap [Project Details](Spring-26/UnVRap.pdf)
 5. Farmer Community [Project Details](Spring-26/Farmer-Community.pdf)
 6. Personalized LMS Feature Integration [Project Details](Spring-26/Personalized_LMS_Feature_Integration.pdf)
-7. Crypto [Project Details](Spring-26/Crypto.pdf)
+7. Foot Canada Training [Project Details](Spring-26/Foot_Canada_Training.pdf)
 
