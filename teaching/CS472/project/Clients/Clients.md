@@ -81,4 +81,5 @@ career goals.
 5. Farmer Community [Project Details](Spring-26/Farmer-Community.pdf)
 6. Personalized LMS Feature Integration [Project Details](Spring-26/Personalized_LMS_Feature_Integration.pdf)
 7. Foot Canada Training [Project Details](Spring-26/Foot_Canada_Training.pdf)
+8. Budtenders Association Inc [Project Details](Spring-26/Budtenders_Association_Inc.pdf)
 
