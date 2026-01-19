@@ -53,10 +53,15 @@ height:30px;" value="SD Competition" />
 <br/>
 
 ## Group Formation Guidelines
-This class has 23 enrolled students, and we will form 3 groups of 7-8 students each. Please voluntarily select your group mates in the survey. For those who do not specify their preferred teammates, groups will be assigned based on the survey information (e.g., software development experience, shared project ideas, etc.).
 
-It is essential to finalize group formation within the first week of the class so we can begin working on the project and assignments promptly. Feel free to use the Discord communication channel to coordinate and request to join a group.
+This semester has **84 enrolled students**, and we will form **8 project teams of 10–11 students each**.
 
+Teams will be formed **based on project selection**. Students may either:
+- propose a **custom project**, or
+- select from the list of **client-sponsored projects**.
 
+During the first week of the semester, students will review all available projects and **rank their project preferences via a survey**. Teams will then be formed around shared project interests. When a project attracts more students than available slots, final team composition will be determined based on skill balance, project needs, and overall team alignment.
+
+Group formation will be finalized **by the end of the first week** so project work can begin immediately.
 
 
