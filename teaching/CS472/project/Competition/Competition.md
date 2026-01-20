@@ -55,6 +55,8 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
+**Contact person for Clarifications: Connor O’Toole  (Connor.otoole@unlv.edu).**
+
 - Classroom Visit Fall 2026 slides [pptx](Spring26/Classroom%20Visit%20Fall%202026%20(1).pptx) 
 - FAQ Senior Design fall 2025 [docx](Spring26/FAQ%20Senior%20Design%20fall%202026%20(1).docx)
 - Informational Paperwork Spring 2026 [docx](Spring26/Informational%20Paperwork%20Spring%202026%20(1).docx)
