@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CS472 - Software Testing & Continuous Integration
-permalink: /teaching/CS472/Timetable/dynamic_analysis/
+title: CS472 - Software Testing
+permalink: #
 ---
 
 <div class="main-component">
@@ -33,16 +33,12 @@ height:30px;" value="Git & GitHub" />
 </form>
 <form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
-height:30px;" value="Testing & CI" />
+height:30px;" value="Testing" />
 </form>
-<form action="">
-    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="Generative AI" />
-</form>
-<!-- <form action="/teaching/CS472/Timetable/CI/">
+<form action="/teaching/CS472/Timetable/CI/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="CI" />
-</form> -->
+</form>
 <!--form action="/teaching/CS472/Timetable/GPT/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="ChatGPT" />
@@ -53,18 +49,11 @@ height:30px;" value="ChatGPT" />
 <br/>
 
 
-### **This individual assignment is due....**
+### **This individual assignment is due Sept 12th, 2025**
 
-
-In this lab, you will practice the fundamentals of software quality assurance by writing unit tests and analyzing code coverage using Python. You will also transition to an automated workflow by implementing Continuous Integration (CI) to validate your code automatically. You will continue working with Git and GitHub facilities and submit your final report for this Lab in the **Team's repository** you created and used in the 
+In this Lab your will practice writing unit tests and analysing test coverage using Python programming language.
+In the Lab you will also continue working with Git and GitHub facilities. You will submit your final report for this Lab in the **Team's repository** you created and used in the 
 [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab.
-
-Overview
-========
-This assignment is designed to simulate a professional software engineering workflow. You will progress through three distinct phases:
-1. Phase 1 (Test Coverage): Analyzing existing code and filling testing gaps.
-2. Phase 2 (Test Drive Development): Building a new API using the Red-Green-Refactor cycle.
-3. Phase 3 (Continuous Integration): Automating your tests and enforcing quality gates with GitHub Actions.
 
 
 Software testing
@@ -96,10 +85,10 @@ Materials & Tools Used for this Session
 * (Optional) Read about [RESTFUL API](https://restfulapi.net/)
 * [Test Coverage](https://github.com/UNLV-CS472-672/test_coverage) repository.
 * [Test Driven Development](https://github.com/UNLV-CS472-672/tdd) repository.
-* [Continuous Integration](https://github.com/UNLV-CS472-672/CI) repository.
 
 
-## **Phase 1: Test Coverage**
+Task 1 -- Test Coverage
+===
 In this task, you will practice writing tests and improving your tests coverage in Python. You will generate a test coverage report and interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
 ### **Task 1: Set Up Your Team Repository for Test Coverage Lab (5 pts)**
@@ -125,9 +114,10 @@ This lab is a continuation of the previous Git and GitHub lab. You will continue
   pip install -r requirements.txt # For stable versions
   ```
   or 
-  ```bash
+- ```bash
   pip install -r requirements-dev.txt # For latest updates
   ```
+- 
 - Run `pytest` to check if the provided test cases are passing:
 - Ensure that everything compiles successfully before proceeding.
 - If any issues arise, debug and resolve them as needed.
@@ -156,11 +146,12 @@ git push origin main
 
 As the first task in your **final lab report**, include the following:
 
-- Screenshot of Your Terminal  
+1. Screenshot of Your Terminal**  
 Provide a screenshot that shows:  
-  - The `test_coverage_lab` folder inside your repository.  
-  - A successful build of the setup files (i.e., running `pytest` without errors).  
-- Commit Link from Your Forked Repository  
+- The `test_coverage_lab` folder inside your repository.  
+- A successful build of the setup files (i.e., running `pytest` without errors).  
+
+2. Commit Link from Your Forked Repository**  
 Submit a commit link that includes:  
 - The `test_coverage_lab` folder added to your repository.  
 - Your commit history reflecting the setup process.  
@@ -168,16 +159,16 @@ Submit a commit link that includes:
 This section serves as proof that you successfully set up the environment before proceeding to Task 1.2.  
 
 
-### **Task 1.2: Working with Python Test Coverage**
+# **Task 1.2: Working with Python Test Coverage**
 
 
 In this task, you will improve test coverage by writing new test cases. All work will be done in the `test_coverage_lab/` folder, and you will submit your changes through a **pull request (PR) from your branch** to the team repository.
 
-#### **1. Understanding the Current Test Coverage**  
+### **1. Understanding the Current Test Coverage**  
 - Refer to your previous `pytest` test coverage report from **Task 1**.
 - Ensure you understand which lines of code are missing test cases before proceeding.
 
-#### **2. Assigning Test Cases**  
+### **2. Assigning Test Cases**  
 Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented:  
 
 | **Test Number** | **Description**                          | **Target Method**            |
@@ -196,7 +187,7 @@ Your team will divide the uncovered code areas among students. Below are suggest
 
 Your team should discuss who will implement each test.
 
-#### **3. Writing Your Test Case**
+### **3. Writing Your Test Case**
 - Open `tests/test_account.py` and add your assigned test case.
 - Include your details at the top of your test case:
 
@@ -226,7 +217,7 @@ def test_account_role_assignment():
     assert updated_account.role == "admin"
 ```
 
-#### **4. Committing and Pushing Your Test Case**  
+### **4. Committing and Pushing Your Test Case**  
 
 - Create a new branch for your test case:**  
 ```bash
@@ -238,13 +229,14 @@ git checkout -b add-test-<your-test-name>
 git push -u origin <your-branch-name>
 ```
 
-#### **5. Submitting a Pull Request**
+### **5. Submitting a Pull Request**
 - Open a Pull Request (PR) from your branch to the team repository.
 - In the PR description, include:
   - brief summary of what your test case does.
   - The line(s) of code covered in `models/account.py`.
 
-#### **6. What to Include in Your Report** 
+### **6. Lab Report Submission**  
+
 As a second task in the report, include:  
 - **A link to your Pull Request.**  
 - **A copy of your test case.**  
@@ -252,10 +244,10 @@ As a second task in the report, include:
 
 
 
-## **Phase 2: Test-Driven Development (TDD) - 15 pts**
+# **Task 2: Test-Driven Development (TDD) Lab Assignment (15 pts)**
 
-### **🔍 Overview**
-This phase follows a **Test-Driven Development (TDD)** approach where you will:
+## **🔍 Overview**
+This lab follows a **Test-Driven Development (TDD)** approach where you will:
 1. **Write a test case first** for a missing feature.
 2. **Run the test** and observe it **fail** (**Red Phase**).
 3. **Implement the feature** to make the test **pass** (**Green Phase**).
@@ -267,19 +259,19 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 
 ---
 
-### **1. Setting Up Your Work Environment (5 pts)**
+## **1. Setting Up Your Work Environment (5 pts)**
 
-#### **1. Organize Your Repository**
+### **1. Organize Your Repository**
 - Each team member should **create a new folder** in their local clone of the **team repository**, similar to the previous lab.
 - The folder name should be **`tdd_lab`** (use exact spelling for consistency).
 - This folder will store all files related to this **TDD Lab**.
 
-#### **2. Copy the Starter Files**
+### **2. Copy the Starter Files**
 - Copy **all files** from the **root of the provided [tdd repository](https://github.com/UNLV-CS472-672/tdd)** and place them inside your newly created **`tdd_lab/`** folder.
 - While copying, ensure that the `.git/` **directory is NOT included** to avoid creating a nested repository.
 
 
-#### **3. Install Dependencies & Verify Setup**
+### **3. Install Dependencies & Verify Setup**
 - Navigate into the **`tdd_lab/`** folder and install the required dependencies:
 ```bash
   cd tdd_lab
@@ -296,7 +288,7 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
 ```
 - If any errors arise, refer to the [README.md](https://github.com/UNLV-CS472-672/tdd) file in the repository for troubleshooting.
 
-#### **4. Commit & Push the Initial Setup**
+### **4. Commit & Push the Initial Setup**
 - After successfully setting up your environment, commit your changes to your forked repository:
 ```bash
   git add .
@@ -304,12 +296,12 @@ Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the 
   git push origin main
 ```
 
-### **Task 2.2. Introduction to TDD (Worked Example)**
+## **Task 2.2. Introduction to TDD (Worked Example)**
 - You should read the instructions in the [README.md](https://github.com/UNLV-CS472-672/tdd) to ensure flask is running before they start testing.
 - Before you begin writing your own test case, let’s go through a guided example.
 - The provided `test_counter.py` file will initially be empty.
 
-#### **Step 1: Create the `src/counter.py` File**
+### **Step 1: Create the `src/counter.py` File**
 ```bash
   touch src/counter.py
 ```
@@ -327,7 +319,7 @@ app = Flask(__name__)
 
 - Now the `counter.py` file exists, but it does nothing yet.
 
-#### **Step 2: Write a Failing Test**
+### **Step 2: Write a Failing Test**
 - Before implementing a new feature, write a test that fails.
 - Add the following test case in `tests/test_counter.py`:
 
@@ -358,7 +350,7 @@ class TestCounterEndpoints:
 
 - The test fails because the endpoint does not exist yet.
 
-#### **Step 3: Implement the Minimum Code**
+### **Step 3: Implement the Minimum Code**
 - Modify `src/counter.py` to create the missing Flask app. Add the code below:
 
 ```python
@@ -377,7 +369,7 @@ def create_counter(name):
 <span style="color:green">**GREEN**</span> - All tests passed ✅
 
  
-#### **Step 4: Refactor for Reusability**
+### **Step 4: Refactor for Reusability**
 - Refactor the counter creation check into a helper function:
 ```python
 def counter_exists(name):
@@ -398,9 +390,9 @@ def create_counter(name):
 
 - This makes the code cleaner and reusable.
 
-### **Your tasks**
+## **Your tasks**
 
-#### **Task Overview**
+### **Task Overview**
 Each **student** will be responsible for implementing **one test case** and the corresponding function.
 
 | **Student #** | **Test Case Description** | **Target API Method** |
@@ -425,11 +417,15 @@ Each student **must:**
 5. All PRs should be opened on the **main branch** of the team repository.
 6. Write a report for the activities.
 
-####  **Step 1: Create a Branch**
+###  **Step 1: Create a Branch**
 ```bash
 git checkout -b add-test-<your-feature>
 git push -u origin <your-branch-name>
 ```
+
+## **Final Report Submission (10 pts)**
+
+Each student must submit one **single report** that documents both the **Test Coverage** tasks and the **Test-Driven Development (TDD)** tasks. The report should be **comprehensive**, meaning it includes all the required details for both tasks in a single PDF.
 
 ### **What to Include in Your Report:**
 1. **Test Coverage Lab Results**
@@ -447,159 +443,11 @@ git push -u origin <your-branch-name>
      - The implemented feature that made the test pass (**<span style="color:green;">GREEN</span> Phase**).
      - Any code improvements or refactoring you made (**<span style="color:blue;">REFACTOR</span> Phase**).
 
-## **Phase 3: Continuous Integration**
-This **Continuous Integration (CI) Lab** builds upon the work done in the **Testing Phase**. In this phase, you will extend the testing process by **enhancing existing test cases** with additional assertions and integrating **GitHub Actions** to automate test execution.  
-
-You will configure a CI pipeline, add tests to improve coverage, enforce code quality gates, and learn to debug failing runs. Unlike earlier labs, this is an **individual assignment**, each student must complete their own contributions, documented and submitted separately.
-
-CI ensures that all code changes are **continuously tested, linted, and validated** before being merged into the repository. You will practice modern DevOps workflows using **Pull Requests (PRs)**, **Issues**, and **peer reviews**.
-
-## Learning Outcomes
-
-By completing this lab, you will be able to:
-
-- **Set up and extend a GitHub Actions workflow** for CI.  
-- **Automate test execution** across multiple Python versions.  
-- **Use caching** to optimize CI runtime.  
-- **Enforce code coverage thresholds** (fail if coverage < 80%).  
-- **Integrate code formatting and linting** (Black + Flake8).  
-- **Write and run your own unit test** in CI, and measure coverage before/after.  
-- **Debug CI failures** by interpreting workflow logs.  
-- **Submit focused PRs** linked to Issues and reviewed by peers.   
-  
----
-
-## Repository Setup
-You will complete this lab in **your own fork** of the course repository.
-1. Create a new folder named ``ci_lab`` inside your fork.  
-2. Download starter files from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI).  
-3. Place them into `ci_lab` folder and commit them to your fork.  
-4. Ensure `.gitignore` excludes unnecessary files like `.pyc`, `__pycache__/`, and environment-specific configs. 
-5. Push your changes to your fork’s `main` branch.
-
-After this setup, all of your work (Pipeline PR, Testing PR, Debugging PR) will be done in branches and PRs within your fork.
-
-## General Rules for PRs
-You will complete this lab in **your own fork** of the repository (recommended for individual grading).
-- Each PR must have:
-  - A **descriptive title** (e.g., “Add coverage gate to CI workflow”).  
-  - A **clear PR description** including:
-    - A short YAML excerpt showing the workflow change.  
-    - An explanation of what the change does.  
-    - A link or screenshot of the CI run showing success/failure.  
-- Keep PRs **small and focused**:  
-  - One enhancement per Pipeline PR.  
-  - One new test in the Testing PR.  
-  - One failure+fix in the Debugging PR.  
-
----
-
-## Individual Tasks (3 PRs per student)
-
-Each student must complete **three Pull Requests (PRs)**, linked to Issues, and include **before/after coverage evidence** in their PR description.  
-
-### 1. Pipeline PR (choose ONE unique enhancement)
-
-Each student must complete **one distinct pipeline enhancement** from the list below.  
-No two students in the same team may select the same enhancement.  
-Your PR must include:  
-- The **YAML excerpt** showing your change.  
-- At least **one new test you authored** (all PRs must include a test).  
-- A short explanation of the enhancement and its effect.  
-
-**Requirements for your Pipeline PR:**
-- Focus on implementing **your assigned CI enhancement** (see list below).  
-- Demonstrate that the **existing test suite runs successfully** under your new workflow (link to the CI run or screenshot).  
-- Include a short **YAML excerpt** in your PR description showing the relevant workflow change.  
-- Briefly explain how your enhancement improves the CI pipeline.  
-
-#### Available Enhancements (8 total)
-
-1. **Matrix Setup**  
-   - Extend workflow to run tests on Python 3.9, 3.10, and 3.11.  
-   - Evidence: CI run screenshot showing jobs for all three versions.  
-
-2. **Dependency Caching**  
-   - Use `actions/cache` to cache Python dependencies.  
-   - Evidence: CI logs showing a cache hit on reruns.  
-
-3. **Lint/Format Enforcement**  
-   - Add **Flake8** (lint) and **Black** (formatter).  
-   - Configure jobs to fail on violations.  
-   - Evidence: CI run where lint passes (or fails and you fix it).  
-
-4. **Coverage Gate**  
-   - Enforce ≥80% coverage using `pytest --cov --cov-fail-under=80`.  
-   - Evidence: CI run with coverage summary showing threshold enforced.  
-
-5. **Coverage Artifact Upload**  
-   - Configure CI to upload the full HTML/text coverage report as an artifact.  
-   - Evidence: Screenshot of artifact available in the Actions tab.  
-
-6. **Status Badges in README**  
-   - Add build/lint/coverage badges to the repo `README.md`.  
-   - Evidence: Updated README rendered on GitHub with badges.  
-
-7. **Split Jobs**  
-   - Separate workflow into distinct jobs: `lint`, `test`, `coverage`.  
-   - Evidence: CI run showing multiple jobs instead of one monolithic job.  
-
-8. **Notifications**  
-   - Add a step to post CI status (pass/fail) as a comment on the PR.  
-   - Evidence: Screenshot of CI comment automatically posted on your PR.  
-
----
-
-_Note:_ If your team already has a working version of one enhancement, you may still complete that task in your own branch, but your PR must be **independent** and include your own explanation and evidence.
-
-### 2. **One testing PR (required)**
-   - Write **at least one new meaningful unit test** (your own authorship) that runs in CI.  
-   - Show **coverage before vs. after** and briefly explain what behavior/edge case your test covers.  
-   Your testing lab already shows how to run `pytest --cov` and read coverage output.
-
-### 3. **One debugging PR (required)**
-   - Introduce a small, controlled failure (failing test, style error, or coverage drop) on a branch.  
-   - Use the **Actions logs** to diagnose, then push a fix and re‑run to green (successful run).  
-   - In the PR description, paste the failing log snippet and the root‑cause + fix summary.  
-   This mirrors the CI failure‑investigation flow in the CI lab steps.
-
-> You may open these PRs **against the team repository** (preferred for collaboration/reviews) **or** work in your **fork** and include links. Either way, grading is **per‑student** via your report.
-
-### Required Sequence (per student)
-
-1. **Sync repo** and confirm the baseline CI workflow runs (Actions tab, green check).  
-2. **Write & run your own test** locally and in CI:  
-   ```bash
-   pytest --cov=src --cov-report=term-missing
-   ```
-
-### **What to Include in Your Report:**
-1. **Link to your fork repository** (GitHub URL).  
-2. **Links to your three PRs** in your fork (Pipeline, Testing, Debugging).  
-3. **Coverage evidence**:
-   - Before vs. after coverage tables for your Testing PR.  
-4. **CI log evidence**:
-   - A failing CI log snippet and your fix summary for the Debugging PR.  
-5. **Code excerpts**:
-   - Your new test function (Testing PR).  
-   - YAML snippet showing your workflow change (Pipeline PR).  
-6. **A paragraph explaining what you learned about CI and automated quality checks**.  
-
----
-
-## Submission Instructions
-
-- Your report must include Phase 1 (Test Coverage), Phase 2 (TDD) and Phase 3 (Continuous Integration).
-- Do not submit separate reports for each Phase/task. Submit one PDF covering all required details.
+### **Submission Instructions**
+- Your report must include both Task 1 (Test Coverage) and Task 2 (TDD).
+- Do not submit separate reports for each task. Submit one PDF covering all required details.
 - Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.
-  - Do not require graders to browse your fork unless for verification.  
-  - Paste or screenshot essential evidence (coverage tables, log snippets, YAML/test code) into the PDF.  
-- Double-check that your **fork repository link** is correct and public.  
-
-
-
-
-
+- Upload your final report as a **PDF** on Canvas.
 
 
 
