@@ -78,10 +78,12 @@ career goals.
 2. Estimarmine [Project Details](Spring-26/Estimarmine_Precondition_Report.pdf)
 3. GLAMBRANDI [Project Details](Spring-26/GLAMBRANDI.pdf)
 4. UnVRap [Project Details](Spring-26/UnVRap.pdf)
+  * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
 5. Farmer Community [Project Details](Spring-26/Farmer-Community.pdf)
+  * This project includes a dedicated technical lead (Paula) who will review pull requests, provide technical feedback, and integrate completed work. Students will also interact with domain stakeholders (Project Manager and Founder) for product context and requirements. Teams should expect regular meetings and standups, with technical guidance provided by the technical lead.
 6. Personalized LMS Feature Integration [Project Details](Spring-26/Personalized_LMS_Feature_Integration.pdf)
 7. Foot Canada Training [Project Details](Spring-26/Foot_Canada_Training.pdf)
-  * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies._
+  * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
 8. Budtenders Association Inc [Project Details](Spring-26/Budtenders_Association_Inc.pdf)
 9. AI-Powered_Exam_Question_Recommender [Project Details](Spring-26/AI-Powered_Exam_Question_Recommender.pdf)
 
