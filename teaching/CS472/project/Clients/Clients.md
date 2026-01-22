@@ -77,6 +77,7 @@ career goals.
 1. ARED Group Inc [Project Details](Spring-26/ARED_Group_Inc.pdf)
 2. Estimarmine [Project Details](Spring-26/Estimarmine_Precondition_Report.pdf)
 3. GLAMBRANDI [Project Details](Spring-26/GLAMBRANDI.pdf)
+  * This project includes a technical lead who will review pull requests, provide technical feedback, and integrate completed work. Students will also work with domain stakeholders for requirements and context.
 4. UnVRap [Project Details](Spring-26/UnVRap.pdf)
   * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
 5. Farmer Community [Project Details](Spring-26/Farmer-Community.pdf)
