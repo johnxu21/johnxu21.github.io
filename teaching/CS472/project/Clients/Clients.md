@@ -87,4 +87,5 @@ career goals.
   * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
 8. Budtenders Association Inc [Project Details](Spring-26/Budtenders_Association_Inc.pdf)
 9. AI-Powered_Exam_Question_Recommender [Project Details](Spring-26/AI-Powered_Exam_Question_Recommender.pdf)
+ * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
 
