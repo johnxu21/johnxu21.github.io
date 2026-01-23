@@ -83,6 +83,7 @@ career goals.
 5. Farmer Community [Project Details](Spring-26/Farmer-Community.pdf)
   * This project includes a dedicated technical lead (Paula) who will review pull requests, provide technical feedback, and integrate completed work. Students will also interact with domain stakeholders (Project Manager and Founder) for product context and requirements. Teams should expect regular meetings and standups, with technical guidance provided by the technical lead.
 6. Personalized LMS Feature Integration [Project Details](Spring-26/Personalized_LMS_Feature_Integration.pdf)
+  * This project offers strong technical mentorship. Students will have access to an experienced technical lead who can review pull requests, provide in-depth technical feedback, and manage repository integration, alongside domain and product guidance. Teams will have meaningful ownership of implementation while benefiting from structured technical ov
 7. Foot Canada Training [Project Details](Spring-26/Foot_Canada_Training.pdf)
   * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
 8. Budtenders Association Inc [Project Details](Spring-26/Budtenders_Association_Inc.pdf)
