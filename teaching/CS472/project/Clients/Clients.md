@@ -86,6 +86,7 @@ career goals.
 7. Foot Canada Training [Project Details](Spring-26/Foot_Canada_Training.pdf)
   * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
 8. Budtenders Association Inc [Project Details](Spring-26/Budtenders_Association_Inc.pdf)
+  * This project uses a hybrid mentorship model. Students will work with a technical mentor who can review pull requests, provide technical feedback, and help integrate completed work, alongside a domain lead who provides product context and business guidance.
 9. AI-Powered_Exam_Question_Recommender [Project Details](Spring-26/AI-Powered_Exam_Question_Recommender.pdf)
  * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
 
