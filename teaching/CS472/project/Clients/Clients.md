@@ -76,6 +76,7 @@ career goals.
 
 1. ARED Group Inc [Project Details](Spring-26/ARED_Group_Inc.pdf)
 2. Estimarmine [Project Details](Spring-26/Estimarmine_Precondition_Report.pdf)
+  * There will be a technical mentor.
 3. GLAMBRANDI [Project Details](Spring-26/GLAMBRANDI.pdf)
   * This project includes a technical lead who will review pull requests, provide technical feedback, and integrate completed work. Students will also work with domain stakeholders for requirements and context.
 4. UnVRap [Project Details](Spring-26/UnVRap.pdf)
