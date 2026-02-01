@@ -53,7 +53,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 
 
-### **This individual assignment is due....**
+### **This individual assignment is due Feb 16th, 2026**
 
 
 In this lab, you will practice the fundamentals of software quality assurance by writing unit tests and analyzing code coverage using Python. You will also transition to an automated workflow by implementing Continuous Integration (CI) to validate your code automatically. You will continue working with Git and GitHub facilities and submit your final report for this Lab in the **Team's repository** you created and used in the 
