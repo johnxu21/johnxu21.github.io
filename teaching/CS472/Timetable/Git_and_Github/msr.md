@@ -34,11 +34,11 @@ height:30px;" value="Git & GitHub" />
 </form>
 <form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="Testing" />
+height:30px;" value="Testing & CI" />
 </form>
-<form action="/teaching/CS472/Timetable/CI/">
+<form action="">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="CI" />
+height:30px;" value="Generative AI" />
 </form>
 <!--form action="/teaching/CS472/Timetable/GPT/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;

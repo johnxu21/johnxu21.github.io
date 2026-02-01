@@ -33,11 +33,11 @@ height:30px;" value="Git & GitHub" />
 </form>
 <form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="Testing" />
+height:30px;" value="Testing & CI" />
 </form>
-<form action="/teaching/CS472/Timetable/CI/">
+<form action="">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="CI" />
+height:30px;" value="Generative AI" />
 </form>
 <!--form action="/teaching/CS472/Timetable/GPT/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
@@ -55,11 +55,11 @@ The theory consists of four lessons where we explain the techniques to be used.:
 2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 02/22/2026]
 3. Software Testing [PPTX](Testing-2024-spring.pptx) [last updated 09/08/2025]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 09/15/2025]
-6. Object-oriented design 
+5. Object-oriented design 
   * Slides [PDF](OOD-V2.pptx) [last updated 10/02/2024]
   * Analysing a System [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_6)"
   * Design and Implementation [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_7)
-7. Survey Results [PDF](Survey_Presentation.pdf) [last updated 02/27/2024]
+6. Survey Results [PDF](Survey_Presentation.pdf) [last updated 02/27/2024]
 
 
 Labs
