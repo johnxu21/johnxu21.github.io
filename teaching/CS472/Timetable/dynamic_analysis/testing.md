@@ -367,7 +367,7 @@ class TestCounterEndpoints:
 - The test fails because the endpoint does not exist yet.
 
 #### **Step 3: Implement the Minimum Code**
-- Modify `src/counter.py` to create the missing Flask app. Add the code below:
+- Modify `src/counter.py` to create the missing endpoint. Add the code below:
 
 ```python
 COUNTERS = {}
