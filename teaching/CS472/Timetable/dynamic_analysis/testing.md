@@ -53,7 +53,7 @@ height:30px;" value="ChatGPT" />
 <br/>
 
 
-### **This individual assignment is due....**
+### **This individual assignment is due Feb 16th, 2026**
 
 
 In this lab, you will practice the fundamentals of software quality assurance by writing unit tests and analyzing code coverage using Python. You will also transition to an automated workflow by implementing Continuous Integration (CI) to validate your code automatically. You will continue working with Git and GitHub facilities and submit your final report for this Lab in the **Team's repository** you created and used in the 
@@ -178,7 +178,15 @@ In this task, you will improve test coverage by writing new test cases. All work
 - Ensure you understand which lines of code are missing test cases before proceeding.
 
 #### **2. Assigning Test Cases**  
-Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented:  
+Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented.
+
+Each student must implement **at least one test case** for individual assessment.
+
+Teams with **fewer than 11 students** may either:
+- Complete all tests (some students implement more than one), **or**
+- Implement a subset of tests, as long as **each student completes one**.
+
+Teams should coordinate assignments to avoid duplication.
 
 | **Test Number** | **Description**                          | **Target Method**            |
 |---------------|----------------------------------|------------------------------|
@@ -194,7 +202,7 @@ Your team will divide the uncovered code areas among students. Below are suggest
 | **Student 10** | Test email uniqueness enforcement     | `validate_unique_email()`    |
 | **Student 11** | Test deleting an account        | `delete()`                   |
 
-Your team should discuss who will implement each test.
+Your team should discuss who will implement each test. 
 
 #### **3. Writing Your Test Case**
 - Open `tests/test_account.py` and add your assigned test case.
@@ -204,7 +212,7 @@ Your team should discuss who will implement each test.
 # ===========================
 # Test: Account Role Assignment
 # Author: John Businge
-# Date: 2025-01-30
+# Date: 2026-01-30
 # Description: Ensure roles can be assigned and checked.
 # ===========================
 
