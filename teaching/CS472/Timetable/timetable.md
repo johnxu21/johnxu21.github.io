@@ -141,13 +141,13 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 02/24</td>
 <td style="border: 1px solid black;">[T] Generative AI</td>
 <td style="border: 1px solid black;">Th 02/26 </td>
-<td style="border: 1px solid black;">[T] Generative AI</td>
+<td style="border: 1px solid black;">[T] Free Project Work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">07</td>
 <td style="border: 1px solid black;">Tu 03/03</td>
-<td style="border: 1px solid black;">[L] Free Project Work  </td>
+<td style="border: 1px solid black;">[T] Generative AI </td>
 <td style="border: 1px solid black;">Th 03/05 </td>
 <td style="border: 1px solid black;">[T] Free Project Work</td>
 </tr>

@@ -34,12 +34,9 @@
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/fixtures/account_data.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../00lectures/472-General/Testing/Group-5/test_coverage_lab/tests/test_account.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Testing_Final.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/~$Testing_Final.pptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/Testing-2024-spring.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Testing-2024-spring.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/Testing_Final.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/Testing_Final.pptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" beforeDir="false" afterPath="$PROJECT_DIR$/teaching/CS472/Timetable/timetable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teaching/CS472/Timetable/~$Git-and-GitHub.pptx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +199,7 @@
       <workItem from="1763148433442" duration="1039000" />
       <workItem from="1763590764571" duration="77000" />
       <workItem from="1763590905491" duration="24415000" />
-      <workItem from="1769091853189" duration="13504000" />
+      <workItem from="1769091853189" duration="15638000" />
     </task>
     <servers />
   </component>
