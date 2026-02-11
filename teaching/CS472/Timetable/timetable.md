@@ -125,7 +125,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 02/10</td>
 <td style="border: 1px solid black;">[T] Continuous Integration</td>
 <td style="border: 1px solid black;">Th 02/12 </td>
-<td style="border: 1px solid black;">Free Project work</td>
+<td style="border: 1px solid black;">[L] Free Project work</td>
 </tr>
 
 <tr>
@@ -133,7 +133,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 02/17</td>
 <td style="border: 1px solid black;">[T] Intro to OO Design & Architecture</td>
 <td style="border: 1px solid black;">Th 02/19 </td>
-<td style="border: 1px solid black;">Free Project work</td>
+<td style="border: 1px solid black;">[L] Free Project work</td>
 </tr>
 
 <tr>
@@ -141,7 +141,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 02/24</td>
 <td style="border: 1px solid black;">[T] Generative AI</td>
 <td style="border: 1px solid black;">Th 02/26 </td>
-<td style="border: 1px solid black;">[T] Free Project Work</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 </tr>
 
 <tr>
@@ -149,7 +149,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Tu 03/03</td>
 <td style="border: 1px solid black;">[T] Generative AI </td>
 <td style="border: 1px solid black;">Th 03/05 </td>
-<td style="border: 1px solid black;">[T] Free Project Work</td>
+<td style="border: 1px solid black;">[L] Free Project Work</td>
 </tr>
 
 <tr>
