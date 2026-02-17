@@ -56,7 +56,7 @@ The theory consists of four lessons where we explain the techniques to be used.:
 3. Software Testing [PPTX](Testing_Final.pptx) [last updated 02/10/2026]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 02/10/2026]
 5. Object-oriented design 
-  * Slides [PDF](OOD-V2.pptx) [last updated 10/02/2025]
+  * Slides [PDF](OOD-V2.pptx) [last updated 02/17/2026]
   * Analysing a System [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_6)"
   * Design and Implementation [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_7)
 6. Survey Results [PDF](Survey_Presentation.pdf) [last updated 02/27/2024]
