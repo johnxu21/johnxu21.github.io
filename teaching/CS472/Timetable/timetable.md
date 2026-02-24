@@ -59,7 +59,7 @@ The theory consists of four lessons where we explain the techniques to be used.:
   * Slides [PDF](OOD-V2.pptx) [last updated 02/17/2026]
   * Analysing a System [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_6)"
   * Design and Implementation [PDF on Springer Link](https://link.springer.com/chapter/10.1007/978-3-319-24280-4_7)
-6. Survey Results [PDF](Survey_Presentation.pdf) [last updated 02/27/2024]
+6. LLMs in PR Workflows [PDF](LLM-V1.pptx) [last updated 02/24/2026]
 
 
 Labs
