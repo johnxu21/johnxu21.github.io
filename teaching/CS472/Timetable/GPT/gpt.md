@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS472 - Using GenAI tools in Software Engineering Tasks - Lab
+title: CS472 - Assignment: Understanding GenAI in PR Workflows
 permalink: /teaching/CS472/Timetable/GPT/
 ---
 <div class="main-component">
@@ -33,53 +33,85 @@ height:30px;" value="Git & GitHub" />
 </form>
 <form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="Testing" />
+height:30px;" value="Testing & CI" />
 </form>
-<form action="/teaching/CS472/Timetable/CI/">
-    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="CI" />
-</form>
-<form action="/teaching/CS472/Timetable/GPT/">
+<form action="">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
-height:30px;" value="ChatGPT" />
+height:30px;" value="Generative AI" />
 </form>
 </div>
 
 <br/>
 <br/>
 
-# **This individual assignment is due Feb 28th, 2025**
+# **This individual assignment is due March 3rd, 2026**
 
-## **Important Note**  
+## **Objective**  
 
-While this lab may appear lengthy, most of the content is **informative** and includes **illustrations** to help you understand the tasks. It is designed to be easy to read and follow.  
+This assignment prepares you to understand how Generative AI is used in real pull request workflows — including when suggestions are accepted, adapted, or rejected.
+
+You are not required to use GenAI in your project.
+But you are expected to understand how it is used professionally.
 
 ### **Lab Structure & Grading**  
-This lab consists of **two main tasks**:  
-- **Task 1: Quiz (10 points)** – A short quiz to assess your understanding on how developers use GenAI to address some software development tasks.  
-- **Task 2: Hands-On Activity (20 points)** – A practical exercise where you will apply what you learned.  
+* This lab consists of a single graded component:
+
+* Quiz (30 points) – A quiz designed to assess your understanding of how Generative AI is used in real pull request workflows, including when AI suggestions are adopted, adapted, rejected, or used for reasoning support.Hands-On Activity (20 points)** – A practical exercise where you will apply what you learned.  
 
 ---
 
-## **Introduction to ChatGPT in Software Engineering**
-In this lab, you'll learn how to use **ChatGPT**, a language model developed by OpenAI, to tackle software engineering tasks. ChatGPT can generate human-like text based on input and has become a valuable tool for developers. You’ll explore how developers integrate ChatGPT into their workflow and how to use it responsibly to improve productivity.  
+## **Introduction: Generative AI in Pull Request Workflows**
 
-This lab builds on research presented at the [2024 International Conference on Automated Software Engineering (ASE)](ASE_Paper_2024.pdf), where we studied ChatGPT’s role in open-source projects. The insights from this research will help you understand ChatGPT’s impact on software engineering tasks and decision-making.  
+This lab examines how Generative AI (e.g., ChatGPT) is used in real-world software engineering workflows — particularly within **GitHub pull requests (PRs)**.
+
+Rather than focusing on how to prompt AI, this lab focuses on:
+
+- When AI-generated suggestions are **adopted**
+- When they are **modified or rejected**
+- When AI provides **conceptual guidance without code**
+- When AI surfaces **deeper architectural concerns**
+
+The material builds on empirical research analyzing AI-assisted pull requests in open-source repositories (EMSE 2025; PatchTrack study). The findings show that AI participation in software development is not binary (used vs. not used), but instead results in distinct integration outcomes shaped by engineering judgment.
+
+You will analyze these outcomes and understand how professional developers evaluate AI suggestions in collaborative workflows.
 
 ---
 
-## **ChatGPT’s Role in Software Engineering**
-ChatGPT is widely used across the software development lifecycle, including:  
+## **GenAI Integration Outcomes in Pull Requests**
 
-- **Requirements engineering** – Requirements classification, resolving ambiguity  
-- **Software design** – GUI retrieval, rapid prototyping  
-- **Development** – Code generation, search, documentation  
-- **Quality assurance** – Test generation, bug detection  
-- **Maintenance** – Code review, duplicate bug detection  
-- **Management** – Effort estimation  
+Our research identifies four primary outcomes when AI is used in pull requests:
 
-For an in-depth discussion, see **Section 6** of Hou et al. [LLMs for SE: A SLR](https://arxiv.org/pdf/2308.10620.pdf).  
+- **PA (Patch Applied)** – AI-generated code is integrated, often partially.
+- **PN (Patch Not Applied)** – AI suggestions are modified or rejected after review.
+- **NE (No Existing Patch)** – AI provides conceptual or methodological guidance without direct code integration.
+- **CL (Closed)** – The pull request is closed due to architectural, scope, or quality concerns, even if AI suggestions were technically valid.
 
+Key empirical observations:
+
+- The median structural integration of AI-generated patches is **25%**.
+- AI suggestions are frequently **adapted rather than merged as-is**.
+- Both **PR authors and reviewers** initiate AI use.
+- Integration decisions are governed by **architectural alignment, maintainability, and project scope**, not just technical correctness.
+
+This lab will help you understand how AI functions within professional engineering norms — where reasoning, review, and design constraints determine whether AI suggestions are adopted.
+
+---
+
+## **AI in the Software Development Lifecycle (Contextual Overview)**
+
+Generative AI tools are increasingly used across software engineering activities, including:
+
+- **Requirements clarification and ambiguity resolution**
+- **Design exploration and prototyping**
+- **Code generation and refactoring**
+- **Test generation and debugging support**
+- **Documentation improvement**
+- **Performance optimization and review discussions**
+
+However, empirical evidence shows that AI use is mediated by human review and engineering discipline. AI-generated output is evaluated, adapted, and sometimes rejected based on project standards and long-term design considerations.
+
+For broader context on LLMs in Software Engineering, see:  
+Hou et al., *Large Language Models for Software Engineering: A Systematic Literature Review*.
 ---
 
 ## **Task 1: Exploring ChatGPT’s Role in Software Engineering**
@@ -378,90 +410,5 @@ Sharing your ChatGPT conversations with other developers can be highly beneficia
 
      <p style="text-align:center"><img src="/teaching/CS472/Timetable/GPT/share-review-2.png" alt="Adding ChatGPT Link during PR Review" style="max-width:600px;max-height:600px;" class="center"></p>
 
-## Task 2: Hands-on with ChatGPT (20 points)
-
-In **Task 2.1, 2.2, and 2.3**, you will work on your **team repository**, where previous lab tasks were submitted. You'll use ChatGPT to improve code quality, documentation, and comprehension.  
-
-- The author **must** use ChatGPT during the development process.  
-- Your goal is to enhance your code by applying ChatGPT's suggestions while ensuring correctness and maintainability.  
-
----
-
-### **Organizational Guidelines**:
-
-1. **Repository Structure**:  
-   - To maintain consistency, **store your files inside the `gen_ai` directory**, with subfolders for each task. For example:
-     ```bash
-     gen_ai/task2.1/yourname_refactor_code.py
-     gen_ai/task2.2/yourname_docstring_update.py
-     ```
-   - **Check if the directories already exist** before creating them. If another team member has already added them and merged their pull request, **pull the latest changes instead of recreating them** (see instructions below).
-
-2. **Pull Requests (PRs)**:  
-   - Open a **PR for each task** with clear descriptions, referencing ChatGPT suggestions.
-   - **Example PR Title**:  
-     > "Refactored function X using ChatGPT's recommendation."
-   - **PR Description Example**:  
-     > "Refactored the loop structure to improve efficiency. Suggested by ChatGPT [conversation link]."
-     
----
-
-### **Verification and Collaboration**:
-
-1. **Ensuring Your Local Repository is Up-to-Date**:  
-   Before making any modifications, **ensure you have the latest version** of the repository by running:
-
-   ```bash
-   git checkout main
-   git fetch upstream  # Fetch the latest changes from the team repository (`upstream/main`) without merging yet.
-   git merge upstream/main  # Merge the latest changes from the team repository into your local main branch.
-   git push origin main  # Push the updated main branch to your fork.
-   ```
-
-## Task 2.1: Code Refactoring Using ChatGPT
-
-**Objective**: Refactor a code snippet using ChatGPT to improve code quality and readability.
-
-### **Instructions**:
-
-1. **Select a Code Snippet:** Choose a code snippet from your current project, an open-source repository, or a past assignment from your previous programming classes. Open an issue on the team repository identifying specific problems (e.g., duplication, inefficiency, poor readability).
-2. **Consult ChatGPT**: Ask ChatGPT for advice on how to refactor the code. Provide context on the code's purpose and areas needing improvement. Copy the link to the ChatGPT conversation.
-3. **Open a Pull Request (PR)**: Submit a PR with the selected code snippet. Reference the issue created earlier (e.g., "Closes #123") and provide a summary of the refactoring goal in the PR description.
-4. **Implement Refactorings**: Apply ChatGPT's suggestions to improve the code’s quality and readability. Ensure that the functionality of the code remains intact after refactoring.
-5. **Merge PR**: Once your colleague has reviewed the PR and confirmed the improvements, you can merge the PR into the team repository.
-
-## Task 2.2: Improving Documentation with ChatGPT
-
-**Objective**: Use ChatGPT to enhance documentation for a selected code snippet.
-
-### **Instructions**:
-
-1. **Select a Code Snippet**: Choose a code snippet from your current project, an open-source repository, or a past assignment from your previous programming classes that lacks proper documentation. Open an issue on the team repository to take ownership of the task.
-2. **Consult ChatGPT**: Ask ChatGPT to help generate clear and user-friendly documentation for the code. Provide relevant context about the code's functionality and any areas where the documentation is lacking.
-3. **Open a Pull Request (PR)**: Submit a PR with the improved documentation to your team repository. Reference the issue using keywords like "Closes #123" or "Fixes #123."
-4. **Update Documentation**: Based on ChatGPT’s suggestions, improve the code documentation to ensure it is clear, complete, and easy to understand.
-5. **Merge PR**: After the review is completed and improvements are confirmed, merge the PR into the main branch of your team repository.
-
-## Task 2.3: Understanding Complex Code with ChatGPT
-
-**Objective**: Use ChatGPT to help comprehend and improve a complex code segment.
-
-### **Instructions**:
-
-1. **Select a Complex Code Segment**: Choose a complex code segment from your current projects, an open-source repository, or a past programming assignment. Open an issue on your team repository detailing the complexity and the challenges you're facing in understanding the code.
-2. **Consult ChatGPT**: Provide ChatGPT with the code and highlight specific areas where you need clarity or improvements. Ask for suggestions on how to simplify, optimize, or improve the code.
-3. **Open a Pull Request (PR)**: Submit a PR to your team repository with the selected code segment. Reference the issue you created and explain the goal of simplifying or optimizing the code in the PR description.
-4. **Implement Changes**: Apply ChatGPT’s recommendations to simplify or optimize the code, ensuring that functionality is maintained.
-5. **Merge PR**: Once the review is complete and all changes are confirmed, merge the PR into the team repository.
-
-# **Task 3: Summary Report**
-Write a brief report that includes:
-
-**Task Summary**: 
-   - For each task (Exploring ChatGPT's Role in Software Engineering, Code Refactoring, Documentation Assistance, Understanding Complex Code), provide a short description (1-2 sentences) of what you did.
-   - Include the link to the individual pull request (PR) for each task.
-
-### **Submission**:
-- Submit your report on Web Campus.
-
+    
 
