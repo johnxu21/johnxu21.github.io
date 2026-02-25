@@ -369,72 +369,92 @@ The reviewer linked two ChatGPT conversations directly inside the PR discussion:
 
 ---
 
+### **How ChatGPT Was Used (Reviewer-Driven)**
+
 **Link 1 — Performance / Correctness Check**  
-https://chatgpt.com/share/1820dca2-0ac8-45da-82f7-dc81ae12325f  
+[Link 1](https://chatgpt.com/share/1820dca2-0ac8-45da-82f7-dc81ae12325f)
 
 **Goal:**  
 - Confirm that `[r.id for r in ...]` is rebuilt repeatedly inside `all(...)`.  
-- Suggest a more efficient approach (e.g., precomputing a `set` or `frozenset` of IDs).  
+- Suggest computing the collection of IDs once (e.g., using a `set`) to improve efficiency and clarity.
 
 ---
 
 **Link 2 — Architectural Root Cause**  
-https://chatgpt.com/share/06cc669e-9b94-46b7-bb66-e5de348251da  
+[Link 2](https://chatgpt.com/share/06cc669e-9b94-46b7-bb66-e5de348251da)
 
 **Goal:**  
 - Explain why pickling/unpickling breaks flyweight identity.  
-- Propose preserving canonical `Resource` instances by routing unpickling through `ResourceManager.get_resource(...)` (e.g., via `__reduce__` or `__setstate__`).  
+- Clarify how `__contains__`, `__hash__`, and `__eq__` affect membership checks in `frozenset`.  
+- Propose preserving canonical `Resource` instances by routing unpickling through `ResourceManager.get_resource(...)` (e.g., via `__reduce__` or `__setstate__`).
 
 ### **Why the PR Was Closed (Key CL Insight)**
 
-Even though the local change “worked,” the reviewer argued that the real issue was **architectural consistency**, not just correctness.
+The reviewer identified a deeper architectural issue involving flyweight consistency and unpickling behavior.
 
-- The system intends `Resource` to behave as a **flyweight** (canonical instances managed by `ResourceManager`).
-- After unpickling, new `Resource` instances are created, breaking identity consistency across the codebase.
-- Properly fixing this requires a broader refactor (custom unpickling + possible relocation or reuse of `ResourceManager`), which exceeded the scope of the submitted PR.
+Addressing this properly would require structural changes (e.g., customizing unpickling and adjusting `ResourceManager` usage), extending beyond the scope of the submitted PR.
 
 **Outcome:**  
-The PR was closed without merge because it addressed the symptom locally, but did not implement the deeper architectural solution.
+The PR author chose to close the pull request rather than expand it into a broader architectural refactor.
 
-# **Getting Started With ChatGPT**
+# **Understanding ChatGPT Conversation Sharing**
 
-To start using ChatGPT, go to [https://chat.openai.com/](https://chat.openai.com/) and create a free account. For this class, the free version of ChatGPT 3.5 is sufficient.
+In several case studies examined in this lab, developers shared their ChatGPT conversations directly inside GitHub pull requests.
 
-To make the most of ChatGPT, it’s important to provide well-structured prompts. The concept of **Prompt Engineering** is explored in this research paper: [A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT](https://arxiv.org/abs/2302.11382).
+This practice supports:
 
-## Sharing Your ChatGPT Conversations on GitHub
+- Transparency in AI-assisted development
+- Clear reasoning during code review
+- Traceability of AI-generated suggestions
+- Collaborative discussion of AI output
 
-Sharing your ChatGPT conversations with other developers can be highly beneficial for several reasons, such as:
-- Collaborative problem-solving
-- Learning and knowledge sharing
-- Code review and improvement
-- Gaining diverse perspectives
-- Sharing best practices and tips
-- Avoiding common pitfalls
-- Building a supportive community
-- Ethical considerations
-- Innovation and exploration
+You are **not required** to use Generative AI in your project.  
+However, you are expected to understand how AI conversations are documented and discussed in professional workflows.
 
-### How to Share Your ChatGPT Conversations
+---
 
-1. **Generating a Shareable Link**:
-   Once you're ready to share your ChatGPT conversation, follow the steps below to generate a shareable link. 
-   **Note:** Your personal profile will be anonymized when the conversation link is generated.
+## **How to Generate a Shareable ChatGPT Link**
 
-   <p style="text-align:center"><img src="/teaching/CS472/Timetable/LLM/share1.png" alt="Generating a ChatGPT Share Link" style="max-width:700px;max-height:700px;" align="center"></p>
+If you choose to use ChatGPT:
 
-   <p style="text-align:center"><img src="/teaching/CS472/Timetable/LLM/share2.png" alt="Sharing ChatGPT Conversations" style="max-width:500px;max-height:500px;" align="center"></p>
+1. Open your conversation.
+2. Click **Share**.
+3. Generate a public link.
+4. Copy the link.
 
-2. **Sharing on GitHub**:
-   After copying the link, you can include it in various places on GitHub, such as a pull request (PR), issue, or commit message. For instance, if ChatGPT helped you solve a bug, you could include the link in the PR description or during a PR review. See examples below:
+> Shared links anonymize your personal profile information.
 
-   - **Adding the conversation link in a PR description**:
+<p align="center">
+  <img src="/teaching/CS472/Timetable/LLM/share1.png" alt="Generating a ChatGPT Share Link" style="max-width:700px;">
+</p>
 
-     <p style="text-align:center"><img src="/teaching/CS472/Timetable/LLM/share-review-1.png" alt="Adding ChatGPT Link to PR Description" style="max-width:800px;max-height:800px;" class="center"></p>
+<p align="center">
+  <img src="/teaching/CS472/Timetable/LLM/share2.png" alt="Sharing ChatGPT Conversations" style="max-width:500px;">
+</p>
 
-   - **Adding the conversation link during PR review**:
+---
 
-     <p style="text-align:center"><img src="/teaching/CS472/Timetable/LLM/share-review-2.png" alt="Adding ChatGPT Link during PR Review" style="max-width:600px;max-height:600px;" class="center"></p>
+## **How Developers Use Shared Links in GitHub**
 
-    
+Developers may include AI conversation links in:
+
+- Pull request descriptions  
+- Code review comments  
+- Issue discussions  
+
+This allows others to:
+
+- Understand the reasoning behind changes  
+- Evaluate AI suggestions critically  
+- Discuss architectural implications  
+
+Examples from real pull requests are shown below:
+
+<p align="center">
+  <img src="/teaching/CS472/Timetable/LLM/share-review-1.png" alt="Adding ChatGPT Link to PR Description" style="max-width:800px;">
+</p>
+
+<p align="center">
+  <img src="/teaching/CS472/Timetable/LLM/share-review-2.png" alt="Adding ChatGPT Link during PR Review" style="max-width:600px;">
+</p>
 
