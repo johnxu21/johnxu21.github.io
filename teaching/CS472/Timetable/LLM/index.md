@@ -56,8 +56,8 @@ This lab consists of a single graded component:
 
 - **Quiz (30 points)** – A quiz designed to assess your understanding of how Generative AI is used in real pull request workflows, including when AI suggestions are adopted, adapted, rejected, or used for reasoning support.
 
-The quiz questions are drawn entirely from the case studies provided below.
-
+The quiz questions are based on the lecture slides.  
+The case studies below provide additional detail and context to support your understanding.
 ---
 
 ## **Introduction: Generative AI in Pull Request Workflows**
@@ -86,13 +86,6 @@ We identify four primary outcomes when AI is used in pull requests:
 - **NE (No Existing Patch)** – AI provides conceptual or methodological guidance without direct code integration.
 - **CL (Closed)** – The pull request is closed due to architectural, scope, or quality concerns, even if AI suggestions were technically valid.
 
-### Key Empirical Observations
-
-- The median structural integration of AI-generated patches is **25%**.
-- AI-generated code is frequently **adapted rather than merged verbatim**.
-- Both **PR authors and reviewers** initiate AI use.
-- Technical correctness alone does not guarantee adoption.
-
 ---
 
 ## **Case Studies**
@@ -102,15 +95,22 @@ The following case studies illustrate how AI is used across these outcomes.
 As you read, consider:
 
 - Who initiated AI use (author or reviewer)?
-- Was the suggestion integrated verbatim, adapted, or rejected?
-- What influenced the final merge decision?
-- Did architectural or long-term design considerations affect the outcome?
-
+- Was the AI output integrated verbatim, adapted, rejected, or used only for reasoning?
+- What engineering constraints influenced the final decision (architecture, maintainability, scope)?
+- Did AI improve the quality of reasoning, even when its code was not merged?
 ---
 
 ## **Patch Applied (PA)**
 
-Empirical analysis shows that even when patches are merged, integration is often partial.
+In Patch Applied (PA) cases, AI-generated code is merged into the repository.  
+However, structural preservation is often limited.
+
+### **Empirical Observations (PA Cases)**
+
+- The median structural integration of AI-generated patches is **25%**.
+- AI-generated code is frequently **adapted rather than merged verbatim**.
+- Even when merged, AI suggestions are typically refined to align with project standards and context.
+- Integration reflects engineering judgment, not automatic acceptance.
 
 The boxplot below shows the percentage of AI-generated lines preserved in merged pull requests.
 
@@ -122,7 +122,6 @@ The boxplot below shows the percentage of AI-generated lines preserved in merged
 2. **Moderate (25–75%)** – Partial adaptation to project context.
 3. **High (75–100%)** – Mostly integrated with minimal changes.
 
-The median integration rate of **25%** indicates that AI commonly serves as a starting point rather than a final solution.
 ### **Example 1: Code Duplication and Refactoring**
 
 - [PR link](https://github.com/nbd-wtf/nostr-tools/pull/241)
