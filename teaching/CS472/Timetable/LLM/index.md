@@ -50,7 +50,9 @@ height:30px;" value="Generative AI" />
 
 This assignment examines how Generative AI is used in real pull request workflows — including when suggestions are accepted, adapted, or rejected.
 
-You are not required to use GenAI in your project. However, you are expected to understand how it is used and evaluated in professional software development.### **Lab Structure & Grading**
+You are not required to use GenAI in your project. However, you are expected to understand how it is used and evaluated in professional software development.
+
+### **Lab Structure & Grading**
 
 This lab consists of a single graded component:
 
@@ -335,6 +337,64 @@ In this updated code:
 This interaction falls under the **Debugging & Optimization Strategies** theme, where ChatGPT provided advice to improve performance. Rather than directly offering a code solution, ChatGPT suggested a strategy—appending elements to the front of the list and reversing it later—to optimize performance. This aligns with the Software Engineering task of **performance optimization**, where the developer refined the algorithm based on ChatGPT's advice, ultimately enhancing the efficiency of the code.
 
 ChatGPT played a key role in guiding the developer toward a more efficient solution for handling list operations, demonstrating how strategic advice can lead to performance improvements in software engineering.
+
+
+## **Closed (CL): Architectural Misalignment and Scope Constraints**
+
+This example shows how AI-assisted reasoning surfaced a deeper architectural issue, but the pull request was closed without merging.
+
+- **Repository/PR**: `gemini-hlsw/scheduler` — **PR #428**
+  - PR (conversation): https://github.com/gemini-hlsw/scheduler/pull/428
+  - PR (files changed): https://github.com/gemini-hlsw/scheduler/pull/428/files
+  - PR (changes view): https://github.com/gemini-hlsw/scheduler/pull/428/changes
+- **Reviewer who initiated AI use**: `@sraaphorst`
+- **PR author**: `@stroncod`
+
+---
+
+### **What the PR changed (local fix)**
+
+One of the core changes replaced object-based membership checks with ID-based checks:
+
+```python
+has_resources = all([resource in nc[night_idx].resources for resource in obs.required_resources()])
+has_resources = all([resource.id in [r.id for r in nc[night_idx].resources] for resource in obs.required_resources()])
+```
+
+**Motivation**: membership checks were failing after pickling/unpickling `Resource` objects, so the PR worked around the issue by comparing IDs instead of objects.
+
+### **How ChatGPT Was Used (Reviewer-Driven)**
+
+The reviewer linked two ChatGPT conversations directly inside the PR discussion:
+
+---
+
+**Link 1 — Performance / Correctness Check**  
+https://chatgpt.com/share/1820dca2-0ac8-45da-82f7-dc81ae12325f  
+
+**Goal:**  
+- Confirm that `[r.id for r in ...]` is rebuilt repeatedly inside `all(...)`.  
+- Suggest a more efficient approach (e.g., precomputing a `set` or `frozenset` of IDs).  
+
+---
+
+**Link 2 — Architectural Root Cause**  
+https://chatgpt.com/share/06cc669e-9b94-46b7-bb66-e5de348251da  
+
+**Goal:**  
+- Explain why pickling/unpickling breaks flyweight identity.  
+- Propose preserving canonical `Resource` instances by routing unpickling through `ResourceManager.get_resource(...)` (e.g., via `__reduce__` or `__setstate__`).  
+
+### **Why the PR Was Closed (Key CL Insight)**
+
+Even though the local change “worked,” the reviewer argued that the real issue was **architectural consistency**, not just correctness.
+
+- The system intends `Resource` to behave as a **flyweight** (canonical instances managed by `ResourceManager`).
+- After unpickling, new `Resource` instances are created, breaking identity consistency across the codebase.
+- Properly fixing this requires a broader refactor (custom unpickling + possible relocation or reuse of `ResourceManager`), which exceeded the scope of the submitted PR.
+
+**Outcome:**  
+The PR was closed without merge because it addressed the symptom locally, but did not implement the deeper architectural solution.
 
 # **Getting Started With ChatGPT**
 
