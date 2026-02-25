@@ -48,114 +48,81 @@ height:30px;" value="Generative AI" />
 
 ## **Objective**  
 
-This assignment prepares you to understand how Generative AI is used in real pull request workflows — including when suggestions are accepted, adapted, or rejected.
+This assignment examines how Generative AI is used in real pull request workflows — including when suggestions are accepted, adapted, or rejected.
 
-You are not required to use GenAI in your project.
-But you are expected to understand how it is used professionally.
+You are not required to use GenAI in your project. However, you are expected to understand how it is used and evaluated in professional software development.### **Lab Structure & Grading**
 
-### **Lab Structure & Grading**  
-* This lab consists of a single graded component:
+This lab consists of a single graded component:
 
-* Quiz (30 points) – A quiz designed to assess your understanding of how Generative AI is used in real pull request workflows, including when AI suggestions are adopted, adapted, rejected, or used for reasoning support.Hands-On Activity (20 points)** – A practical exercise where you will apply what you learned.  
+- **Quiz (30 points)** – A quiz designed to assess your understanding of how Generative AI is used in real pull request workflows, including when AI suggestions are adopted, adapted, rejected, or used for reasoning support.
+
+The quiz questions are drawn entirely from the case studies provided below.
 
 ---
 
 ## **Introduction: Generative AI in Pull Request Workflows**
 
-This lab examines how Generative AI (e.g., ChatGPT) is used in real-world software engineering workflows — particularly within **GitHub pull requests (PRs)**.
+This lab examines how Generative AI (e.g., ChatGPT) participates in real-world software engineering workflows — particularly within **GitHub pull requests (PRs)**.
 
-Rather than focusing on how to prompt AI, this lab focuses on:
+Rather than focusing on prompt techniques, this lab focuses on how AI suggestions are evaluated in practice:
 
-- When AI-generated suggestions are **adopted**
-- When they are **modified or rejected**
-- When AI provides **conceptual guidance without code**
-- When AI surfaces **deeper architectural concerns**
+- When they are **adopted**
+- When they are **modified**
+- When they are **rejected**
+- When they influence reasoning without direct code integration
 
-The material builds on empirical research analyzing AI-assisted pull requests in open-source repositories (EMSE 2025; PatchTrack study). The findings show that AI participation in software development is not binary (used vs. not used), but instead results in distinct integration outcomes shaped by engineering judgment.
+The material builds on empirical research analyzing AI-assisted pull requests in open-source repositories ([EMSE 2025; PatchTrack study](2025_EMSE_PatchTrack.pdf)).
 
-You will analyze these outcomes and understand how professional developers evaluate AI suggestions in collaborative workflows.
+Our findings show that AI participation is not binary. Instead, integration outcomes are shaped by engineering judgment, architectural alignment, maintainability constraints, and project scope.
 
 ---
 
-## **GenAI Integration Outcomes in Pull Requests**
+## **GenAI Integration Outcomes**
 
-Our research identifies four primary outcomes when AI is used in pull requests:
+We identify four primary outcomes when AI is used in pull requests:
 
-- **PA (Patch Applied)** – AI-generated code is integrated, often partially.
+- **PA (Patch Applied)** – AI-generated code is integrated (often partially).
 - **PN (Patch Not Applied)** – AI suggestions are modified or rejected after review.
 - **NE (No Existing Patch)** – AI provides conceptual or methodological guidance without direct code integration.
 - **CL (Closed)** – The pull request is closed due to architectural, scope, or quality concerns, even if AI suggestions were technically valid.
 
-Key empirical observations:
+### Key Empirical Observations
 
 - The median structural integration of AI-generated patches is **25%**.
-- AI suggestions are frequently **adapted rather than merged as-is**.
+- AI-generated code is frequently **adapted rather than merged verbatim**.
 - Both **PR authors and reviewers** initiate AI use.
-- Integration decisions are governed by **architectural alignment, maintainability, and project scope**, not just technical correctness.
-
-This lab will help you understand how AI functions within professional engineering norms — where reasoning, review, and design constraints determine whether AI suggestions are adopted.
+- Technical correctness alone does not guarantee adoption.
 
 ---
 
-## **AI in the Software Development Lifecycle (Contextual Overview)**
+## **Case Studies**
 
-Generative AI tools are increasingly used across software engineering activities, including:
+The following case studies illustrate how AI is used across these outcomes. 
 
-- **Requirements clarification and ambiguity resolution**
-- **Design exploration and prototyping**
-- **Code generation and refactoring**
-- **Test generation and debugging support**
-- **Documentation improvement**
-- **Performance optimization and review discussions**
+As you read, consider:
 
-However, empirical evidence shows that AI use is mediated by human review and engineering discipline. AI-generated output is evaluated, adapted, and sometimes rejected based on project standards and long-term design considerations.
-
-For broader context on LLMs in Software Engineering, see:  
-Hou et al., *Large Language Models for Software Engineering: A Systematic Literature Review*.
----
-
-## **Task 1: Exploring ChatGPT’s Role in Software Engineering**
-Before moving to hands-on tasks, you’ll first review **real-world examples** of how developers use ChatGPT in software development.  
-
-### **How Developers Use ChatGPT**
-The following case studies illustrate three key scenarios where ChatGPT was used in GitHub pull requests:  
-
-- **Patch Applied (PA)** – Code was directly integrated.  
-- **Patch Not Applied (PN)** – Suggestions were modified or rejected.  
-- **None Existing Patch (NE)** – ChatGPT provided guidance without direct code suggestions.  
-
-Key themes include:
-- **PN Themes**: Project adaptation, methodological guidance, specific functionality, technical limitations, and clarifications.  
-- **NE Themes**: Conceptual guidance, documentation improvement, education, debugging, and optimization strategies.  
-
-Each case includes **GitHub pull requests and developer interactions** to show ChatGPT’s impact.  
-
-### **Your Task (10 points)**
-1. **Read the Case Studies** carefully to understand how ChatGPT influenced decisions.  
-2. **Take the WebCampus Quiz** (10 multiple-choice questions) to check your understanding before proceeding to hands-on exercises.  
+- Who initiated AI use (author or reviewer)?
+- Was the suggestion integrated verbatim, adapted, or rejected?
+- What influenced the final merge decision?
+- Did architectural or long-term design considerations affect the outcome?
 
 ---
 
-# **Case Studies**  
+## **Patch Applied (PA)**
 
+Empirical analysis shows that even when patches are merged, integration is often partial.
 
-## Patch Applied (PA)
-In our lab research, we observe that developers integrate ChatGPT-generated patches at different levels based on project constraints such as maintainability, readability, and coding standards. Our findings indicate that a **median integration rate of 25%** suggests that most AI-generated patches are **only partially adopted**, rather than fully applied.
-
-### **Boxplot of ChatGPT Patch Integration**
-The figure below illustrates the distribution of ChatGPT-generated code integrated into pull requests.
-A **boxplot analysis** of merged pull requests shows three categories of integration:
+The boxplot below shows the percentage of AI-generated lines preserved in merged pull requests.
 
 ![ChatGPT Patch Integration in Pull Requests Boxplot](boxplot.jpg)
 
-1. **Low (0–25%)** – Only minor elements were used, with significant modifications.
-2. **Moderate (25–75%)** – Some parts were integrated, but developers refined the patch to fit project needs.
-3. **High (75–100%)** – The AI-generated patch was largely accepted with minimal changes.
+**Integration Levels:**
 
-This data highlights that **ChatGPT serves as a starting point**, but developers still refine AI-suggested code before merging it into real-world projects.
+1. **Low (0–25%)** – Minor structural preservation.
+2. **Moderate (25–75%)** – Partial adaptation to project context.
+3. **High (75–100%)** – Mostly integrated with minimal changes.
 
-Now that we understand the varying levels of ChatGPT patch integration, let’s look at real-world **examples where AI-generated patches were applied** in GitHub pull requests.
-
+The median integration rate of **25%** indicates that AI commonly serves as a starting point rather than a final solution.
 ### **Example 1: Code Duplication and Refactoring**
 
 - [PR link](https://github.com/nbd-wtf/nostr-tools/pull/241)
