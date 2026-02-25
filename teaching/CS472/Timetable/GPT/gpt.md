@@ -35,7 +35,7 @@ height:30px;" value="Git & GitHub" />
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Testing & CI" />
 </form>
-<form action="">
+<form action="/teaching/CS472/Timetable/GPT/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="Generative AI" />
 </form>
