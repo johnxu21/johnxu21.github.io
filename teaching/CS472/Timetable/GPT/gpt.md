@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - Assignment: Understanding GenAI in PR Workflows
-permalink: /teaching/CS472/Timetable/GPT/
+permalink: /teaching/CS472/Timetable/LLM/
 ---
 <div class="main-component">
 <form action="/teaching/CS472/">
@@ -35,7 +35,7 @@ height:30px;" value="Git & GitHub" />
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Testing & CI" />
 </form>
-<form action="/teaching/CS472/Timetable/GPT/">
+<form action="/teaching/CS472/Timetable/LLM/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="Generative AI" />
 </form>
