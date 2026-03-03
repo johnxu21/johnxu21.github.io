@@ -58,8 +58,8 @@ This lab consists of a single graded component:
 
 - **Quiz (30 points)** – A quiz designed to assess your understanding of how Generative AI is used in real pull request workflows, including when AI suggestions are adopted, adapted, rejected, or used for reasoning support.
 
-The quiz questions are based on the lecture slides.  
-The case studies below provide additional detail and context to support your understanding.
+The quiz questions are based on the lecture slides. The case studies below provide additional detail and context to support your understanding.
+
 ---
 
 ## **Introduction: Generative AI in Pull Request Workflows**
@@ -344,9 +344,8 @@ ChatGPT played a key role in guiding the developer toward a more efficient solut
 This example shows how AI-assisted reasoning surfaced a deeper architectural issue, but the pull request was closed without merging.
 
 - **Repository/PR**: `gemini-hlsw/scheduler` — **PR #428**
-  - PR (conversation): https://github.com/gemini-hlsw/scheduler/pull/428
-  - PR (files changed): https://github.com/gemini-hlsw/scheduler/pull/428/files
-  - PR (changes view): https://github.com/gemini-hlsw/scheduler/pull/428/changes
+  - [PR (conversation)](https://github.com/gemini-hlsw/scheduler/pull/428)
+  - [PR (files changed)](https://github.com/gemini-hlsw/scheduler/pull/428/files)
 - **Reviewer who initiated AI use**: `@sraaphorst`
 - **PR author**: `@stroncod`
 
