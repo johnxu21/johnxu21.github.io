@@ -59,112 +59,59 @@ Trial Presentations (Ungraded) (Last edited 11/25/2025)
 =======
 
 
-We will have <b>strictly <=16 minutes</b> for the presentation and <b>utmost 9 minutes</b> of feedback session.
+### Trial Presentations (Spring 2026) - (Last edited 04/28/2026)
 
-Members from other teams (at least 5) are expected to attend and give feedback towards improving a team's 
-presentation. In the final presentation, I expect <b> all team members </b> to present a 
-section of the team project. Try this out during the trial to practice. All teams have 
-exciting projects; please listen, learn and give feedback. Those presenting earlier, please give back the 
-favor and provide feedback to the ones presenting later you.
+We will have <b>strictly ≤16 minutes</b> for the presentation and <b>up to ~9 minutes</b> for feedback.
+
+Only the teams <b>scheduled for that day are required to attend</b>, and they are expected to <b>remain for the entire session</b>, including after their presentation, to provide and receive feedback.
+
+All teams have exciting projects; please listen, learn and give feedback. Those presenting earlier, please give back the favor and provide feedback to the ones presenting later.
 
 Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-bSjpR60oA6FKyxBqAdArVKCH9HkUy1foDuK7CfA/edit?tab=t.0)]
 
 <table>
-
   <tr>
-
     <th style="border: 1px solid black;">Group</th>
-
     <th style="border: 1px solid black;">Date</th>
-
     <th style="border: 1px solid black;">Time</th>
-
   </tr>
 
-  <tr>
+  <tr><td style="border: 1px solid black;">Group 4</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">3:40 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 3</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">4:05 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 1</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">4:30 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 8</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">4:55 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 5</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">5:20 PM</td></tr>
 
-    <td style="border: 1px solid black;">GDCP -- Gp-1</td>
-
-    <td style="border: 1px solid black;">11/26</td>
-
-    <td style="border: 1px solid black;">12:50 pm - 1:15 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">Rebel Remind -- Gp-2</td>
-
-    <td style="border: 1px solid black;">11/26</td>
-
-    <td style="border: 1px solid black;">1:20 pm - 1:45 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">Farcaster -- Gp-3</td>
-
-    <td style="border: 1px solid black;">11/26</td>
-
-    <td style="border: 1px solid black;">1:50 pm - 2:15 pm</td>
-
-  </tr>
-
+  <tr><td style="border: 1px solid black;">Group 7</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">3:40 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 6</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:05 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 9</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:30 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 2</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:55 PM</td></tr>
 </table>
 
 <br/>
 <br/>
 
-Final Presentations (Last edited 11/25/2025)
-=======
+### Final Presentations (Spring 2026)
 
-We will have <b>strictly <=16 minutes</b> for the presentation and <b>at most 4 minutes</b> of questions/feedback.
+We will have <b>strictly ≤16 minutes</b> for the presentation and <b>at most 4 minutes</b> of questions/feedback.
 
-
-Only the presenting team will be allowed in the room for the final presentation. Other teams presenting later 
-are supposed to wait for their time slots.
+Only the presenting team will be allowed in the room for the final presentation. Other teams presenting later are supposed to wait for their time slots.
 
 <table>
-
   <tr>
-
     <th style="border: 1px solid black;">Group</th>
-
     <th style="border: 1px solid black;">Date</th>
-
     <th style="border: 1px solid black;">Time</th>
-
   </tr>
 
-  <tr>
+  <tr><td style="border: 1px solid black;">Group 3</td><td style="border: 1px solid black;">5/5/2026</td><td style="border: 1px solid black;">3:40 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 4</td><td style="border: 1px solid black;">5/5/2026</td><td style="border: 1px solid black;">4:00 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 7</td><td style="border: 1px solid black;">5/5/2026</td><td style="border: 1px solid black;">4:20 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 8</td><td style="border: 1px solid black;">5/5/2026</td><td style="border: 1px solid black;">4:40 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 5</td><td style="border: 1px solid black;">5/5/2026</td><td style="border: 1px solid black;">5:00 PM</td></tr>
 
-    <td style="border: 1px solid black;">GDCP -- Gp-1</td>
-
-    <td style="border: 1px solid black;">12/03</td>
-
-    <td style="border: 1px solid black;">1:00 pm - 1:20 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">Rebel Remind -- Gp-2</td>
-
-    <td style="border: 1px solid black;">12/03</td>
-
-    <td style="border: 1px solid black;">1:25 pm - 1:45 pm</td>
-
-  </tr>
-
-  <tr>
-
-    <td style="border: 1px solid black;">Farcaster -- Gp-3</td>
-
-    <td style="border: 1px solid black;">12/03</td>
-
-    <td style="border: 1px solid black;">1:50 pm - 2:10 pm</td>
-
-  </tr>
-
+  <tr><td style="border: 1px solid black;">Group 1</td><td style="border: 1px solid black;">5/7/2026</td><td style="border: 1px solid black;">3:40 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 6</td><td style="border: 1px solid black;">5/7/2026</td><td style="border: 1px solid black;">4:00 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 9</td><td style="border: 1px solid black;">5/7/2026</td><td style="border: 1px solid black;">4:20 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 2</td><td style="border: 1px solid black;">5/7/2026</td><td style="border: 1px solid black;">4:40 PM</td></tr>
 </table>
