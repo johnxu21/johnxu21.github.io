@@ -81,6 +81,7 @@ Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-b
   <tr><td style="border: 1px solid black;">Group 1</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">4:30 PM</td></tr>
   <tr><td style="border: 1px solid black;">Group 8</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">4:55 PM</td></tr>
   <tr><td style="border: 1px solid black;">Group 5</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">5:20 PM</td></tr>
+<tr/>
 
   <tr><td style="border: 1px solid black;">Group 7</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">3:40 PM</td></tr>
   <tr><td style="border: 1px solid black;">Group 6</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:05 PM</td></tr>
@@ -109,6 +110,7 @@ Only the presenting team will be allowed in the room for the final presentation.
   <tr><td style="border: 1px solid black;">Group 7</td><td style="border: 1px solid black;">5/5/2026</td><td style="border: 1px solid black;">4:20 PM</td></tr>
   <tr><td style="border: 1px solid black;">Group 8</td><td style="border: 1px solid black;">5/5/2026</td><td style="border: 1px solid black;">4:40 PM</td></tr>
   <tr><td style="border: 1px solid black;">Group 5</td><td style="border: 1px solid black;">5/5/2026</td><td style="border: 1px solid black;">5:00 PM</td></tr>
+<tr/>
 
   <tr><td style="border: 1px solid black;">Group 1</td><td style="border: 1px solid black;">5/7/2026</td><td style="border: 1px solid black;">3:40 PM</td></tr>
   <tr><td style="border: 1px solid black;">Group 6</td><td style="border: 1px solid black;">5/7/2026</td><td style="border: 1px solid black;">4:00 PM</td></tr>
