@@ -95,7 +95,8 @@ Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-b
 <br/>
 
 ### Final Presentations (Spring 2026)
-
+**Location**: CHB A108
+<br/>
 We will have <b>strictly ≤16 minutes</b> for the presentation and <b>at most 4 minutes</b> of questions/feedback.
 
 Only the presenting team will be allowed in the room for the final presentation. Other teams presenting later are supposed to wait for their time slots.
