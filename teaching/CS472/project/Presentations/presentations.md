@@ -59,8 +59,9 @@ Trial Presentations (Ungraded) (Last edited 11/25/2025)
 =======
 
 
-### Trial Presentations (Spring 2026) - (Last edited 04/28/2026)
-
+### Trial Presentations (Spring 2026) - (Last edited 04/28/2026) 
+**Location**: HOS 384 
+<br/>
 We will have <b>strictly ≤16 minutes</b> for the presentation and <b>up to ~9 minutes</b> for feedback.
 
 Only the teams <b>scheduled for that day are required to attend</b>, and they are expected to <b>remain for the entire session</b>, including after their presentation, to provide and receive feedback.
@@ -80,13 +81,14 @@ Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-b
   <tr><td style="border: 1px solid black;">Group 3</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">4:05 PM</td></tr>
   <tr><td style="border: 1px solid black;">Group 1</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">4:30 PM</td></tr>
   <tr><td style="border: 1px solid black;">Group 8</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">4:55 PM</td></tr>
-  <tr><td style="border: 1px solid black;">Group 5</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">5:20 PM</td></tr>
+  
 <tr><td/></tr>
 
-  <tr><td style="border: 1px solid black;">Group 7</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">3:40 PM</td></tr>
-  <tr><td style="border: 1px solid black;">Group 6</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:05 PM</td></tr>
-  <tr><td style="border: 1px solid black;">Group 9</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:30 PM</td></tr>
-  <tr><td style="border: 1px solid black;">Group 2</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:55 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 7</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">3:55 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 6</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:20 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 9</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">4:45 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 2</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">5:05 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 5</td><td style="border: 1px solid black;">4/28/2026</td><td style="border: 1px solid black;">5:25 PM</td></tr>
 </table>
 
 <br/>
