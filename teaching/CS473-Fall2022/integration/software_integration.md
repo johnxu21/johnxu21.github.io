@@ -41,7 +41,7 @@ Many modern software systems are created by forking an existing codebase. While 
 opportunities (patch present in the source but absent in the target) or effort duplication (similar patch 
 re‑implemented manually). Our extended tool, **[GACPD](https://github.com/unlv-evol/GACPD)**, builds on the 
 **[PaReco](https://github.com/unlv-evol/PaReco)** tool with broader language support, 
-faster token normalization, and developer-facing outputs to surface **candidate patches** worth reusing. 
+faster token normalization, and developer-facing outputs to surface **candidate patches** worth reusing. Note: **[MOVis](https://github.com/unlv-evol/MOVis)**, is a front-end UI for **GACPD** to help visualize the results.
 When selecting what to integrate, apply **Most Valuable First** (OORP, p.29) to prioritize the highest‑impact 
 patches, and **Keep It Simple** (OORP, p.37) to avoid unnecessary complexity in your plan.
 
@@ -68,17 +68,17 @@ Repositories
 
 Setup / Preparation
 ===============
-In this lab you will play with two very related tools: [GACPD](https://github.com/unlv-evol/GACPD) and [RePatch](https://github.com/Software-Reengineering/RePatch)
+In this lab you will play with two very related tools: [MOVis](https://github.com/unlv-evol/MOVis) and [RePatch](https://github.com/Software-Reengineering/RePatch)
 
-## Task 1 – Identifying a Missed Opportunity with GACPD
+## Task 1 – Identifying a Missed Opportunity with MOVis
 
-In this task, you will use **GACPD** to detect and validate a **Missed Opportunity (MO)** patch between two related repositories:  
+In this task, you will use **MOVis** to detect and validate a **Missed Opportunity (MO)** patch between two related repositories:  
 - **Source (Mainline):** `apache/kafka`  
 - **Target (Divergent fork):** `linkedin/kafka`  
 
 We have already identified a candidate patch from **Apache Kafka Pull Request #13386** that appears in the mainline repository but not in the divergent fork.  
 Your goal is to:  
-1. **Run GACPD** to detect the patch.  
+1. **Run MOVis** to detect the patch.  
 2. **Read and understand the patch’s intent.**  
 3. **Verify the results** by inspecting both repositories.  
 
@@ -88,29 +88,25 @@ Following the *Most Valuable First* pattern (p.29), we begin with a high-impact 
 
 ### Step-by-Step Instructions
 
-#### **1. Install GACPD**
-Follow the installation instructions in the [GACPD README](https://github.com/unlv-evol/GACPD).  
+#### **1. Install MOVis**
+Follow the installation instructions in the [MOVis README](https://github.com/unlv-evol/MOVis).  
 Make sure you can run Jupyter notebooks in your environment.
 
 ---
 
 #### **2. Run the analysis**
-1. Open the [`OnePR.ipynb`](https://github.com/unlv-evol/GACPD/blob/main/OnePR.ipynb) file in the root of the GACPD repository.  
-2. Execute the notebook cells as instructed.  
-3. Ensure the notebook is configured to analyze **PR #13386** from `apache/kafka`.
-
-`example.individual_pr_check(13386)`
+1. Select "One PR" option on the tool box.  
+2. Fill out all the data needed, except for the PR to be executed until step 3.  
+3. Analyze **PR #13386** from `apache/kafka`.
 
 This step applies the *Detecting Duplicated Code pattern (p.223)* — GACPD uses similarity analysis to find duplicated or nearly duplicated changes across repositories.
 
 ---
 
-#### **3. View the GACPD output**
-When the analysis finishes, navigate to the output folder:  
-```Results/Repos_files/1/<PR-number>/MO/<path-to-source-file>/results.txt```
-This file contains the file paths in both repositories that you can use for manual inspection.
+#### **3. View the MOVis output**
+When the analysis finishes, open "View Previous Results" and select your project root name.
 
-This file contains the file paths in both repositories that you can use for manual inspection.
+This UI contains the file paths in both repositories that you can use for manual inspection.
 Here, we apply the *Compare Code Mechanically pattern (p.227)* — use automated, tool-driven comparison before diving into manual review.
 
 ---
