@@ -41,7 +41,7 @@ Many modern software systems are created by forking an existing codebase. While 
 opportunities (patch present in the source but absent in the target) or effort duplication (similar patch 
 re‑implemented manually). Our extended tool, **[GACPD](https://github.com/unlv-evol/GACPD)**, builds on the 
 **[PaReco](https://github.com/unlv-evol/PaReco)** tool with broader language support, 
-faster token normalization, and developer-facing outputs to surface **candidate patches** worth reusing. 
+faster token normalization, and developer-facing outputs to surface **candidate patches** worth reusing. Note: **[MOVis](https://github.com/unlv-evol/MOVis)**, is a front-end UI for **GACPD** to help visualize the results.
 When selecting what to integrate, apply **Most Valuable First** (OORP, p.29) to prioritize the highest‑impact 
 patches, and **Keep It Simple** (OORP, p.37) to avoid unnecessary complexity in your plan.
 
@@ -70,7 +70,7 @@ Setup / Preparation
 ===============
 In this lab you will play with two very related tools: [MOVis](https://github.com/unlv-evol/MOVis) and [RePatch](https://github.com/Software-Reengineering/RePatch)
 
-## Task 1 – Identifying a Missed Opportunity with GACPD
+## Task 1 – Identifying a Missed Opportunity with MOVis
 
 In this task, you will use **MOVis** to detect and validate a **Missed Opportunity (MO)** patch between two related repositories:  
 - **Source (Mainline):** `apache/kafka`  
