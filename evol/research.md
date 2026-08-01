@@ -6,7 +6,7 @@ permalink: /evol/
 
 <p align="center">
   <a href="https://unlv-evol.github.io/">
-    <img src="/assets/images/evol-hero.png"
+    <img src="Evol-lab.png"
          alt="EVOL Lab"
          style="max-width:100%;border-radius:10px;">
   </a>
