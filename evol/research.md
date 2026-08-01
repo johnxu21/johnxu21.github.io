@@ -4,14 +4,26 @@ title: EVOL Lab
 permalink: /evol/
 ---
 
-# EVOL Lab
+<p align="center">
+  <a href="https://unlv-evol.github.io/">
+    <img src="/assets/images/evol-hero.png"
+         alt="EVOL Lab"
+         style="max-width:100%;border-radius:10px;">
+  </a>
+</p>
 
-The **Software Evolution (EVOL) Lab** at the University of Nevada, Las Vegas conducts research in **dependable software evolution**, **empirical software engineering**, and **AI-assisted software engineering**.
+<p style="font-size:1.35rem;font-weight:600;text-align:center;">
+Building the Future of Dependable Software Evolution
+</p>
 
-Our research focuses on understanding how software evolves and developing intelligent methods for discovering, adapting, verifying, and integrating reusable software changes across large software ecosystems.
+<p style="font-size:1.1rem;line-height:1.8;text-align:center;">
+The <strong>Software Evolution (EVOL) Lab</strong> develops intelligent methods
+for software evolution, empirical software engineering, and AI-assisted software
+engineering.
+</p>
 
-<div style="margin-top:2rem">
-<a class="btn btn-primary" href="https://unlv-evol.github.io/">
-Visit the EVOL Lab →
-</a>
-</div>
+<p style="text-align:center;margin-top:2rem;">
+  <a href="https://unlv-evol.github.io/" style="display:inline-block;padding:12px 28px;background:#0b2e73;color:#fff;text-decoration:none;border-radius:6px;font-weight:600;">
+    Enter the EVOL Lab Website →
+  </a>
+</p>
