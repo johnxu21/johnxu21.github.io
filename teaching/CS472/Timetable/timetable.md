@@ -216,21 +216,21 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mo 12/07</td>
 <td style="border: 1px solid black;"><b>Final Exam</b></td>
 <td style="border: 1px solid black;">We 12/09</td>
-<td style="border: 1px solid black;"><b></b></td>
+<td style="border: 1px solid black;"></td>
 </tr>
 
-[//]: # (<tr>)
+<!--tr>
 
-[//]: # (<td style="border: 1px solid black;">17</td>)
+<td style="border: 1px solid black;">17</td>
 
-[//]: # (<td style="border: 1px solid black;">Mo 12/14</td>)
+<td style="border: 1px solid black;">Mo 12/14</td>
 
-[//]: # (<td style="border: 1px solid black;"><b>Final Exam</b></td>)
+<td style="border: 1px solid black;"><b>Final Exam</b></td>
 
-[//]: # (<td style="border: 1px solid black;">We 12/16 </td>)
+<td style="border: 1px solid black;">We 12/16 </td>
 
-[//]: # (<td style="border: 1px solid black;"></td>)
+<td style="border: 1px solid black;"></td>
 
-[//]: # (</tr>)
+</tr-->
 
 </table>
