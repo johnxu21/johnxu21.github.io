@@ -35,10 +35,13 @@ height:30px;" value="Git & GitHub" />
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
 height:30px;" value="Testing & CI" />
 </form>
+<!--
+  Hidden during the control-class semester.
 <form action="/teaching/CS472/Timetable/LLM/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
 height:30px;" value="Generative AI" />
 </form>
+-->
 </div>
 
 <br/>
