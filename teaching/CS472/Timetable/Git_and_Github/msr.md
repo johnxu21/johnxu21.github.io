@@ -93,6 +93,33 @@ One team member will serve as the repository owner and should:
   - Instructor: [**`johnxu21`**](https://github.com/johnxu21)
   - TA: [**`danielogen`**](https://github.com/danielogen)
 
+#### Protect the `main` Branch
+
+The repository owner should create a branch protection rule for `main` before team members begin contributing.
+
+On GitHub, open the team repository and navigate to:
+
+**Settings → Branches → Add branch protection rule**
+
+Use `main` as the branch name pattern and enable the following settings:
+
+- **Require a pull request before merging**
+- **Require one approval before merging**
+- **Dismiss stale pull request approvals when new commits are pushed**
+- **Require conversation resolution before merging**
+- **Do not allow bypassing the above settings**, if this option is available
+
+Do not require status checks yet. Automated status checks will be introduced in the testing and continuous integration labs.
+
+These rules prevent team members from pushing changes directly to `main`. A contribution must be submitted through a pull request and approved by another team member.
+
+After the reviewer approves the PR and all conversations and conflicts are resolved, the reviewer should ask the author to merge the PR. Because all team members are collaborators, the approved PR author may merge their own contribution.
+
+For additional guidance, see the [GitHub documentation on managing branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
+
+> **Note:** If branch protection is unavailable for the repository or GitHub plan being used, the team must follow the same requirements manually: no direct pushes to `main`, one teammate approval before merging, and all review comments resolved.
+
+#### Create the Initial Contributor File
 The repository owner should clone the team repository:
 
 ```bash
@@ -292,8 +319,7 @@ git add contributors.txt
 git commit -m "Resolve contributor list conflict"
 git push origin contributors-<github-username>
 ```
-
-A repository maintainer should merge the PR only after the review is complete, requested changes are addressed, and any conflicts are resolved.
+After confirming that the requested changes have been addressed and any conflicts have been resolved, the reviewer should approve the PR and ask the author to merge it into `main`. Authors must not merge their PRs before receiving approval from a teammate.
 
 #### Part 1 Grading
 
@@ -304,86 +330,243 @@ A repository maintainer should merge the PR only after the review is complete, r
 - Teammate's PR reviewed and feedback addressed: **1 point**
 
 
-### **Part 2. Add a new file to the repository (20 pts)**
-**This part of the assignment mainly contains the individual part of the assignment. 
-You are supposed to modify ```CollectFiles.py``` file so that you can extract information from the repository.
-As soon as the team project is created, you will work on the team part of the assignment.**
+### **Part 2. Mine and Analyze Repository Activity (20 pts)**
 
-* create a folder on your local fork repository called ```repo_mining```
-* create and checkout a new branch on your local fork repository using the following command ```git checkout -b mine_repository```
-* clone my repo [johnxu21/msrLab](https://github.com/johnxu21/msrLab) in a separate local repository
-* browse the ```src``` folder and copy the file ```CollectFiles.py``` into the ```repo_mining``` folder on your forks' local repository
-* Rename the file ```CollectFiles.py``` to ```<your-names>_CollectFiles.py```. 
-* generate a [GitHub token](https://github.com/settings/tokens/new?scopes=repo) that you will use to mine content using the GitHub API
-* Replace the fake ```tokens``` in the code of ```<your-names>_CollectFiles.py``` with the token you have just generated.
-* Thereafter, run the file ```<your-names>_CollectFiles.py``` and look at the output. 
-The code collects all the files in a repo and also the number of counts the file is touched 
-throughout its lifetime.
+#### Purpose
 
-**Caution:** When pushing your changes to GitHub, **replace your token with fake digits or delete it completely**. 
-If you push your code without removing the token, it will be reverted, and you will have to regenerate it again.
+In this individual exercise, you will analyze how developers have changed an open-source repository over time. You will adapt a starter script, collect file and contributor activity, and visualize the results.
 
-A repository contains both source files and other files like configuration files. Developers 
-spend most of the time changing source files for many reasons, for example, fixing bugs, 
-extending them with new features, or refactoring. The script CollectFiles.py collects all 
-files in a repository. So your first task is to adapt the script to gather only the source files. 
-You can find a repo's programming languages on the bottom right of the repo's page on GitHub 
-(some repos could be written in more than one programming language).
-* First, write a script with the name ```<'your_firstname'_authorsFileTouches.py>``` that collects 
-the authors and the dates when they touched each file in the list of files generated by the 
-adapted file CollectFiles.py (only source files - **feel free to define what your source files and give your reasoning in the report**).
-* Second, write a script that generates a scatter plot (using matplotlib) of weeks vs file 
-variables where the points are shaded according to author variable. Each author should have 
-a distinct color. Looking at the scatter plot one should be able to tell a file that is 
-touched many times and by whom. This can help, for example, when identifying refactoring 
-opportunities, which developer should be allocated the task since they have touched a file 
-many times or have recently worked on the file. You can name the script for drawing the 
-histogram ```<'your_firstname'_scatterplot.py>```. 
-You get a hint on how draw the scatter plot on this link on [Stackoverflow](https://stackoverflow.com/questions/8202605/matplotlib-scatterplot-color-as-a-function-of-a-third-variable).
+Apply the Git and GitHub workflow practiced in Part 1. Create or claim an issue, work on a uniquely named branch, make focused commits, and push your work to your fork. You will add the Part 3 executive summary to the same branch before opening the final pull request.
+
+A teammate will review the completed pull request containing your Part 2 and Part 3 work.
+
+#### Set Up the Repository-Mining Task
+
+Create a `repo_mining` directory in your local team-repository clone.
+
+In a separate location outside the team repository, clone [johnxu21/msrLab](https://github.com/johnxu21/msrLab). Copy `CollectFiles.py` from its `src` directory into `repo_mining`.
+
+Do not clone `msrLab` inside the team repository, and do not commit the complete `msrLab` repository.
+
+Rename the copied file:
+
+`<github-username>_collect_files.py`
+
+For example:
+
+`janedoe_collect_files.py`
+
+#### Create or Claim an Issue
+
+Create or claim an issue covering the repository analysis and executive summary.
+
+Example:
+
+```text
+Title: Analyze Rootbeer repository activity for Jane Doe
+
+Description:
+Analyze file and contributor activity in the scottyab/rootbeer repository and prepare an executive summary.
+
+Acceptance Criteria:
+- The source-file collection script is included.
+- The author and file-touch data are collected.
+- A scatter plot of repository activity is included.
+- A one-page executive summary is included.
+- No credentials or unrelated files are committed.
+```
+
+Replace the example name with your own name.
+
+#### Protect Your GitHub Credentials
+
+The starter script uses the GitHub API. Generate a personal access token with only the permissions required to read public repository data.
+
+Do not store the token directly in your Python file. Your program should obtain it from an environment variable or request it securely at runtime.
+
+Never include a token in:
+
+- Source code
+- Commit history
+- Pull-request descriptions
+- Screenshots
+- Reports
+
+Before committing, inspect your changes and confirm that no credentials are present. If a token is accidentally committed, revoke it immediately and generate a new one.
+
+See the [GitHub documentation on managing personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+
+#### Task 1: Identify Source Files
+
+Adapt `<github-username>_collect_files.py` to collect only source files from the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) repository.
+
+A repository may contain source code, tests, documentation, configuration files, generated files, images, and other artifacts. Determine which files qualify as source files for this analysis.
+
+Your solution should:
+
+- Identify the programming languages used in the repository.
+- Include appropriate source-file extensions.
+- Exclude non-source and generated files where appropriate.
+- Produce a list of the source files selected for analysis.
+
+Document and justify your definition of a source file in the Part 3 executive summary.
+
+#### Task 2: Collect Author and File-Touch Data
+
+Create a second script named:
+
+`<github-username>_authors_file_touches.py`
+
+For each source file identified in Task 1, collect:
+
+- File path
+- Authors who changed the file
+- Dates of the changes
+- Number of times the file was changed
+
+#### Task 3: Visualize Repository Activity
+
+Create a third script named:
+
+`<github-username>_scatterplot.py`
+
+Use `matplotlib` to create a scatter plot with:
+
+- **X-axis:** weeks since the beginning of the repository
+- **Y-axis:** source files
+- **Color:** author responsible for the change
+
+Each point should represent an author changing a source file during a particular week. The visualization should help identify frequently changed files, contributor expertise, recent activity, and possible maintenance or refactoring concerns.
+
+Save the visualization as:
+
+`<github-username>_file_activity.png`
+
+A related scatter-plot example is available on [Stack Overflow](https://stackoverflow.com/questions/8202605/matplotlib-scatterplot-color-as-a-function-of-a-third-variable).
+
+#### Example
+
+The example below was generated from an earlier snapshot of the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) repository. Your results may differ because the repository has changed.
+
+Week `0` represents activity near the beginning of the repository. Later values represent activity later in its lifetime. Each color represents a contributor, and repeated points indicate that a file was changed multiple times.
+
+<img src="/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" alt="Example scatter plot of Rootbeer repository activity" style="width:600px;height:480px;" align="center">
+
+#### Part 2 Deliverables
+
+Your `repo_mining` directory should contain:
+
+- Adapted source-file collection script
+- Author and file-touch collection script
+- Scatter-plot script
+- Generated visualization
+
+Push the completed work to your repository-mining branch. Keep the branch open because you will add the Part 3 executive summary before opening the final pull request.
+
+#### Part 2 Grading
+
+- Source-file collection and justified selection criteria: **5 points**
+- Author and file-touch data collection: **5 points**
+- Scatter-plot implementation and visualization: **5 points**
+- Correct output and interpretation: **3 points**
+- Repository organization, focused commits, and secure credential handling: **2 points**
 
 
-**Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer)) <br/>
-The repository scottyab/rootbeer has a total of 17+ unique source files. It has a total 
-of 33+ authors who have touched the 17+ unique files (the data points in the graph) who have been 
-updating the files and committing their changes. The scatter plot  below  shows the authors 
-activities over time for the repository scottyab/rootbeer. 
-This graph below was generated some time ago, so your graph is expected to be more detailed, reflecting the additional updates made to the repository since then.
-
-<img src="/teaching/CS472/Timetable/Git_and_Github/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
-
-**0 weeks-means the file was touched in the early days of the project lifetime and 250 weeks means the file was touched in the 250th week of the project lifetime.**
 
 ### **Part 3. Executive Summary (5 pts)**
-**This section also contains the individual part of the assignment**
 
-Pretend you are a project manager writing a status report on the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) project 
-to your boss as if it was a company-owned project.  The report should take the 
-form of an Executive Summary. Your boss is very busy and overworked, and he won't 
-bother reading more than a page, so write clearly and succinctly. Charts and 
-graphs also grab his attention compared to walls of text, and he's getting older 
-and can't read 9 point font, so don't try to pack too much in.  Focus on the 
-main highlights and high level communication. This is an important project for 
-the company, so the report will likely go up the ladder (maybe even to the Board)
-, so make sure it's formatted nicely and without grammar errors or typos.  
-You can include things from the reporting you did in Part 2 (or do more 
-yourself) and it should focus on things like how much work is being done, who 
-is doing it? who is doing the most work overall and in recent weeks? which 
-developer could have left the project? 
-what types of things they are doing? etc.  There is no preset 
-answer here, just try to use the git commits to find information about the 
-project and focus on any area you think your boss would be interested in.
-In your report, write some few sentences on the git commands you found particularly useful in doing this lab.
+#### Purpose
 
-**Name the report ```<your-names>_executive_summary.pdf>```**
+Assume that you are a project manager preparing a status report on the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) repository for a senior manager.
 
-Submitting the report
-=======
-* Put a **link to your fork repository in the report**.
-* create a branch on your local fork repository called ```mining_report``` using the following command ```git branch mining_report```.
-* run the command ```git checkout mining_report```
-* copy your report--```<your-names>_executive_summary.pdf>``` and paste it in the folder ```repo_mining```
-* push the changes onto your remote fork repository
-* open a pull request and write an appropriate title and body.
-* one of the repository maintainers should integrate your contribution into the main branch.
-* You should also submit your report on **Canvas**
+Your audience has limited time, so the executive summary must communicate the most important findings clearly and concisely. The report may be shared with other organizational leaders; therefore, it should be professional, evidence-based, and understandable to a reader who has not examined the repository.
+
+#### Report Requirements
+
+Limit the executive summary to **one page** and use readable text, appropriate headings, and at least one relevant visualization.
+
+Use the repository data collected in Part 2 to discuss the most important findings. Depending on your results, you may address questions such as:
+
+- How much development activity has occurred, and how has it changed over time?
+- Which contributors performed the most work overall?
+- Which contributors have been most active recently?
+- Which files changed most frequently?
+- Which contributors appear to have the most experience with particular files?
+- Are important files dependent on only one or two contributors?
+- Are there contributors who may no longer be active?
+- What maintenance or refactoring concerns are suggested by the data?
+
+There is no single correct interpretation. Select the findings that would be most useful to a project manager and support them with evidence from the repository.
+
+The report must include:
+
+- A brief description of the analysis
+- Two or three significant findings supported by repository data
+- The scatter plot produced in Part 2
+- An explanation of what the visualization shows
+- At least one limitation of the analysis
+- A few sentences identifying Git commands that were particularly useful during the lab
+- A link to your GitHub fork
+
+Name the report:
+
+`<github-username>_executive_summary.pdf`
+
+Save the report in your `repo_mining` directory on the same branch used for Part 2.
+
+#### Submit Parts 2 and 3
+
+After adding the executive summary, confirm that your branch contains:
+
+- Adapted source-file collection script
+- Author and file-touch collection script
+- Scatter-plot script
+- Generated visualization
+- Executive summary PDF
+
+Make a focused commit for the executive summary and push the updated branch to your fork.
+
+Open one pull request from your repository-mining branch to the upstream team repository. The PR should:
+
+- Use a clear title and description.
+- Link and close the repository-mining issue.
+- List the included scripts, visualization, and report.
+- Explain how the scripts can be run.
+- Summarize the main findings.
+- Confirm that no credentials or unrelated files are included.
+- Request a review from the assigned teammate.
+
+#### Peer Review
+
+Each student must review one teammate's Part 2 and Part 3 pull request.
+
+The reviewer should check that:
+
+- The PR is linked to the correct issue.
+- All required files are included.
+- The scripts run or the author provides sufficient evidence that they run.
+- The definition of a source file is reasonable and documented.
+- The collected data and visualization appear consistent.
+- The scatter plot has clear axes, labels, and author distinctions.
+- The executive summary's conclusions are supported by the data.
+- No credentials or unrelated changes are included.
+
+The reviewer should provide at least one evidence-based comment. If no changes are required, the reviewer should explain what was verified rather than writing only “Looks good.”
+
+The author must respond to the review and address any requested changes. Once the reviewer is satisfied, the reviewer should approve the PR and ask the author to merge it into `main`. Authors must not merge their PRs before receiving approval.
+
+#### Canvas Submission
+
+Submit the following on Canvas:
+
+- Executive summary PDF
+- Link to the GitHub issue
+- Link to the final pull request
+
+#### Part 3 Grading
+
+- Significant findings supported by repository evidence: **2 points**
+- Visualization and interpretation: **1 point**
+- Clear, concise, and professional presentation: **1 point**
+- Complete PR, peer review, and Canvas submission: **1 point**
 
