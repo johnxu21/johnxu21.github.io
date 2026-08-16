@@ -46,19 +46,31 @@ height:30px;" value="Generative AI" />
 <br/>
 
 
-### **This individual assignment is due Feb 2nd, 2026**
+### **Due Date: February 2, 2026**
 
-For this lab, you will be learning how to explore an open 
-source repository from GitHub. You will also learn how to extract useful 
-information from the repository and practice your project management skills by 
-writing a short executive summary on your findings. 
-(This assignment assumes you have installed git on your computer.  
-If you haven't done this yet look at the Pro Git book or online for help.)
+## Lab Overview
 
-Important Note
-======
+In this lab, you will practice Git and GitHub through a fork-based workflow that models inner-source and open-source development. You will also mine and visualize repository activity and summarize your findings in a professional report.
 
-This is an individual assignment; however, you will practice submitting your work to the team repository once groups are formed. While waiting to be assigned to a group, you can begin working on **Part 2** and **Part 3** of the assignment. These sections do not require the team repository and focus on adapting scripts, analyzing repository data, and preparing an executive summary. Once your groups are formed, you can proceed with Part 1 and practice collaborative repository management.
+## Learning Objectives
+
+By completing this lab, you should be able to:
+- Distinguish among an upstream repository, a GitHub fork, and a local clone.
+- Create a branch, make meaningful commits, and push your changes.
+- Open a pull request and participate in peer review.
+- Synchronize a fork with upstream and resolve merge conflicts.
+- Extract, visualize, and interpret repository activity.
+- Communicate findings in a concise executive summary.
+
+## Prerequisites
+
+You must have Git installed, an active GitHub account, and basic familiarity with the command line. If necessary, consult the [Pro Git book](https://git-scm.com/book/en/v2).
+
+## Individual and Team Components
+
+This is primarily an individual assignment. You may begin **Parts 2 and 3** before teams are formed.
+
+After teams are formed, complete **Part 1** using the team repository as the authoritative upstream repository. Except for the repository owner, each member will contribute through an individual fork. You will then submit your work from Parts 2 and 3 to the team repository using the same contribution workflow.
 
 ### **Part 1. Set Up Your Team Repository and Add Files (5 pts)**  
 
