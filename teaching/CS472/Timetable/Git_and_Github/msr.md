@@ -72,44 +72,236 @@ This is primarily an individual assignment. You may begin **Parts 2 and 3** befo
 
 After teams are formed, complete **Part 1** using the team repository as the authoritative upstream repository. Except for the repository owner, each member will contribute through an individual fork. You will then submit your work from Parts 2 and 3 to the team repository using the same contribution workflow.
 
-### **Part 1. Set Up Your Team Repository and Add Files (5 pts)**  
+### **Part 1. Practice the Fork-Based Contribution Workflow (5 pts)**
 
-1. **Create a Team Repository:**  
-   - One team member should create a **new GitHub repository** using your group name (e.g., `Group-1`, `Group-2`, etc.) as the repository name. Add all team members as **collaborators** to the repository.  
-   - The team member who creates the repository should not push directly to the main branch. Instead, they should:  
-     - Create a new branch for their changes.  
-     - Make their updates on the branch.  
-     - Open a pull request to merge the branch into the main branch.  
+#### Purpose of This Exercise
 
-2. **Fork the Repository:**  
-   - All other team members should **fork** the repository into their own GitHub accounts and then clone their fork onto their local machines.  
+The change in this exercise—adding your name to `contributors.txt`—is intentionally small. The purpose is to practice the complete contribution workflow before applying it to larger programming tasks:
 
-3. **Add the `contributors.txt` File:**  
-   - The repository should include a file named `contributors.txt` to track the contributor list for your team.  
+**Issue → Fork → Clone → Branch → Commit → Push → Pull Request → Review → Revision → Merge**
 
-4. **Invite Me and the TA as Collaborators:**  
-   - Add the following GitHub IDs as collaborators on your repository:  
-     - My GitHub ID: [**`johnxu21`**](https://github.com/johnxu21)  
-     - TA GitHub ID: [**`danielogen`**](https://github.com/danielogen)  
+In a real project, an issue may describe a feature, bug, test, or documentation task, and the review would examine technical correctness. In this exercise, the issue and review focus on formatting, accuracy, the scope of the change, and correct use of the GitHub workflow.
 
-5. **Update and Commit Your Contribution:**  
-   - Create a new branch called `contributors` and switch to it:  
-     ```bash
-     git branch contributors
-     git checkout contributors
-     ```  
-   - Edit the `contributors.txt` file and add your **name** and **email address**.  
-   - Commit your changes and push them:  
-     ```bash
-     git add contributors.txt
-     git commit -m "Added my name and email to contributors.txt"
-     git push
-     ```  
+#### 1. Create and Configure the Team Repository
 
-6. **Submit a Pull Request:**  
-   - The repository creator should create a pull request from their branch to the main branch.  
-   - Team members who forked the repository should create a pull request to merge changes from their fork into the team repository. 
-   - If there are any conflicts, resolve them collaboratively before merging the pull request.  
+One team member will serve as the repository owner and should:
+
+- Create a GitHub repository named after the team, such as `Group-1`.
+- Initialize the repository with a `README.md`.
+- Add all team members as collaborators.
+- Add the instructor and TA as collaborators:
+  - Instructor: [**`johnxu21`**](https://github.com/johnxu21)
+  - TA: [**`danielogen`**](https://github.com/danielogen)
+
+The repository owner should clone the team repository:
+
+```bash
+git clone <URL-of-team-repository>
+cd <repository-name>
+```
+
+Create and switch to a setup branch:
+
+```bash
+git switch -c setup-contributors
+```
+
+Create `contributors.txt` with the following content:
+
+```text
+Team Contributors
+
+Name | GitHub Username
+-----|----------------
+```
+
+Commit and push the file:
+
+```bash
+git add contributors.txt
+git commit -m "Create contributor list"
+git push -u origin setup-contributors
+```
+
+Open a pull request to merge `setup-contributors` into `main`. A teammate should review and approve the PR before it is merged.
+
+Except for repository initialization, team members must not push directly to `main`.
+
+#### 2. Fork and Clone the Team Repository
+
+After `contributors.txt` has been merged, all team members except the repository owner should fork the team repository.
+
+Clone your own fork—not the upstream team repository:
+
+```bash
+git clone <URL-of-your-fork>
+cd <repository-name>
+```
+
+Add the team repository as the `upstream` remote:
+
+```bash
+git remote add upstream <URL-of-team-repository>
+git remote -v
+```
+
+Your remotes should have the following purposes:
+
+- `origin`: your GitHub fork
+- `upstream`: the team repository
+
+The repository owner does not need to create a fork. For the repository owner, `origin` refers to the team repository.
+
+#### 3. Create or Claim an Issue
+
+Each student should create or be assigned an issue for adding their information to `contributors.txt`.
+
+Example issue:
+
+```text
+Title: Add Jane Doe to the contributor list
+
+Description:
+Add Jane Doe and the GitHub username janedoe to contributors.txt.
+
+Acceptance Criteria:
+- The contributor's name and GitHub username are included.
+- The new entry follows the existing table format.
+- Entries remain ordered alphabetically by last name.
+- No email address or other personal information is included.
+- No unrelated files are changed.
+```
+
+This issue is for practicing issue-based development. In the team project, issues will describe more substantial features, bugs, tests, documentation, and other development tasks.
+
+#### 4. Synchronize and Create a Branch
+
+Students working through forks should synchronize their local repositories before starting:
+
+```bash
+git switch main
+git fetch upstream
+git merge upstream/main
+git push origin main
+```
+
+The repository owner should synchronize using:
+
+```bash
+git switch main
+git pull origin main
+```
+
+Create a uniquely named branch:
+
+```bash
+git switch -c contributors-<github-username>
+```
+
+For example:
+
+```bash
+git switch -c contributors-janedoe
+```
+
+#### 5. Make and Push the Contribution
+
+Add your name and GitHub username to `contributors.txt`. Maintain the table format and alphabetical ordering.
+
+Commit and push the change:
+
+```bash
+git add contributors.txt
+git commit -m "Add Jane Doe to contributor list"
+git push -u origin contributors-janedoe
+```
+
+Replace the example name and username with your own information.
+
+#### 6. Open a Pull Request
+
+Open a pull request from your branch to the upstream repository's `main` branch.
+
+Use the following structure:
+
+```text
+Title: Add Jane Doe to contributor list
+
+Summary:
+Adds Jane Doe and the GitHub username janedoe to contributors.txt.
+
+Related Issue:
+Closes #<issue-number>
+
+Verification:
+- Confirmed that the entry follows the required table format.
+- Confirmed that the list remains alphabetically ordered.
+- Confirmed that no unrelated files were changed.
+```
+
+The repository owner should open a PR from a branch in the team repository. Other members should open PRs from branches in their forks.
+
+#### 7. Review a Teammate's Pull Request
+
+Each student must review one teammate's PR. For this exercise, check that:
+
+- The PR is linked to the correct issue.
+- The name and GitHub username are accurate.
+- The entry follows the required table format.
+- The entries remain alphabetically ordered.
+- No email address or sensitive information is included.
+- No unrelated files were changed.
+- No unresolved conflict markers are present.
+
+Appropriate review comments include:
+
+```text
+Please move your entry below Smith so that the list remains alphabetically ordered.
+```
+
+```text
+Please remove the email address. The contributor list should contain only names and GitHub usernames.
+```
+
+```text
+The PR also changes README.md, but that change is unrelated to this issue. Please revert it.
+```
+
+If the contribution satisfies all requirements, the reviewer may approve it and explain what was verified:
+
+```text
+Approved. I verified the issue link, contributor information, table format, alphabetical ordering, and scope of the change.
+```
+
+#### 8. Address Feedback and Resolve Conflicts
+
+If the reviewer requests changes, update the same branch, commit the revision, and push again. The existing PR will update automatically.
+
+Because several team members are editing the same file, your branch may conflict with changes already merged into `main`. If this occurs, synchronize your branch:
+
+```bash
+git fetch upstream
+git switch contributors-<github-username>
+git merge upstream/main
+```
+
+Resolve the conflict in `contributors.txt`, preserve all valid entries, and remove the conflict markers. Then run:
+
+```bash
+git add contributors.txt
+git commit -m "Resolve contributor list conflict"
+git push origin contributors-<github-username>
+```
+
+A repository maintainer should merge the PR only after the review is complete, requested changes are addressed, and any conflicts are resolved.
+
+#### Part 1 Grading
+
+- Repository, fork, clone, and remotes configured correctly: **1 point**
+- Issue created with appropriate acceptance criteria: **1 point**
+- Branch, commit, and push completed correctly: **1 point**
+- Pull request linked to the issue: **1 point**
+- Teammate's PR reviewed and feedback addressed: **1 point**
 
 
 ### **Part 2. Add a new file to the repository (20 pts)**
