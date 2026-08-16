@@ -2,6 +2,7 @@
 layout: page
 title: CS472 - Assignment: Understanding GenAI in PR Workflows
 permalink: /teaching/CS472/Timetable/LLM/
+published: false
 ---
 <div class="main-component">
 <form action="/teaching/CS472/">
