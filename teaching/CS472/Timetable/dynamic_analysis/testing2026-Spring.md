@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CS472 - Dynamic Analysis
-permalink: #
+title: CS472 - Software Testing & Continuous Integration
+permalink: /teaching/CS472/Timetable/dynamic_analysis/
 ---
 
 <div class="main-component">
@@ -33,440 +33,568 @@ height:30px;" value="Git & GitHub" />
 </form>
 <form action="/teaching/CS472/Timetable/dynamic_analysis/">
     <input type="submit" style="background-color:firebrick;float:left;color:white;width:130px;
-height:30px;" value="Testing" />
+height:30px;" value="Testing & CI" />
 </form>
-<form action="/teaching/CS472/Timetable/CI/">
-    <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="CI" />
-</form>
+<!--
+  Hidden during the control-class semester.
 <form action="/teaching/CS472/Timetable/LLM/">
     <input type="submit" style="background-color:#008CBA;float:left;color:white;width:130px;
-height:30px;" value="CHAT GPT" />
+height:30px;" value="Generative AI" />
 </form>
+-->
 </div>
 
 <br/>
 <br/>
 
 
-### **This individual assignment is due Feb 5th, 2024**
+### **This individual assignment is due Feb 16th, 2026**
 
-In this Lab your will practice writing unit tests and analysing test coverage using two programming languages: Java and Python.
-In the Lab you will also continue working with Git and GitHub facilities. You will make all your contributions
-for this Lab in the **Team's repository** you created and used in the 
+
+In this lab, you will practice the fundamentals of software quality assurance by writing unit tests and analyzing code coverage using Python. You will also transition to an automated workflow by implementing Continuous Integration (CI) to validate your code automatically. You will continue working with Git and GitHub facilities and submit your final report for this Lab in the **Team's repository** you created and used in the 
 [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab.
 
+Overview
+========
+This assignment is designed to simulate a professional software engineering workflow. You will progress through three distinct phases:
+1. Phase 1 (Test Coverage): Analyzing existing code and filling testing gaps.
+2. Phase 2 (Test Drive Development): Building a new API using the Red-Green-Refactor cycle.
+3. Phase 3 (Continuous Integration): Automating your tests and enforcing quality gates with GitHub Actions.
 
-Dynamic Analysis
+
+Software testing
 =========
+Software testing is the process of evaluating and verifying that a software product or application does what it’s supposed to do. 
+The benefits of good testing include preventing bugs and improving performance [IBM](https://www.ibm.com/think/topics/software-testing?).
 
-Dynamic analysis is “the analysis of the properties of a running software system” 
-[[Ball1999](https://ansymore.uantwerpen.be/system/files/Ball1999.pdf)]. 
-It is complementary to static analysis techniques. Some properties that cannot be 
-studied through static analysis can be examined with dynamic analysis and vice versa. 
-The applications of dynamic analysis techniques are very broad: program comprehension, 
-system verification, resource profiling, test analysis, etc. In this session, we focus on 
-one very important aspect of dynamic analysis: **Testing**.
+### **Tests: Your Life Insurance!**  
 
-"Tests: Your Life Insurance!" 
-Tests are essential for software engineering activities. They can help you: 
-1. to reveal unwanted side effects of changing the code 
-2. to understand the inner workings of a system.
+Tests are a crucial part of software engineering. They help to:  
+1. Detect unwanted side effects when modifying code.  
+2. Gain a deeper understanding of a system’s inner workings.  
 
-The presence of automated tests does however not offer any guarantee about its quality. 
-Do the tests cover the whole system or are some parts left untested? 
-Which parts are covered to which extent? Hence, measuring test coverage is a useful, even 
-necessary, way to assess the quality and usefulness of a test suite in the context of software engineering.
+However, the presence of automated tests alone does not guarantee software quality. Important questions to consider include:  
+- Do the tests cover the entire system, or are some parts left untested?  
+- To what extent are different parts of the system covered?  
+
+Measuring **test coverage** is a valuable and necessary practice in assessing the effectiveness of a test suite, ensuring that critical components of the software are thoroughly tested.
+
 
 Materials & Tools Used for this Session
 ===============
 
 [//]: # (* Session slides [here]&#40;../Testing.pdf&#41;.)
-* [IntelliJ IDE](https://www.jetbrains.com/idea/) (you can use [Eclipse](https://www.eclipse.org/) at your discretion, but it may require some adaptations for the project we are using during the lab sessions)
-* [JPacman](https://github.com/johnxu21/jpacman) repository.
-* [JaCoCo](https://www.jacoco.org/jacoco/index.html) is an eclipse plugin for coverage analysis. It is also available as a maven repository. Newer versions of IntelliJ already have this plugin pre-installed as a part of the test coverage plugin.
-* [nosetests](https://nose.readthedocs.io/en/latest/) extends python unittest to make testing easier.
+* Install Python `>= 3.8`. This exercise was tested with the following Python versions: `3.8.1, 3.9.5, 3.9.6, 3.9.7` and `3.10.10` but any version of python `3.8+` should work without any major configuration issues.
+* Download and install IDE of your choice. Popular options are [Microsoft Visual Studio Code](https://code.visualstudio.com/) and [IntelliJ IDE](https://www.jetbrains.com/idea/)
+* [pytest](https://docs.pytest.org/en/stable/) Most popular python testing framework - makes it easy to write small, readable tests, and can scale to support complex functional testing for applications and libraries.
 * [flask](https://flask.palletsprojects.com/en/2.3.x/) a web framework, it's a Python module that lets you develop web applications easily.
+* (Optional) Read about [RESTFUL API](https://restfulapi.net/)
+* [Test Coverage](https://github.com/UNLV-CS472-672/test_coverage) repository.
+* [Test Driven Development](https://github.com/UNLV-CS472-672/tdd) repository.
+* [Continuous Integration](https://github.com/UNLV-CS472-672/CI) repository.
 
 
-Setup / Preparation
-=============
+## **Phase 1: Test Coverage**
+In this task, you will practice writing tests and improving your tests coverage in Python. You will generate a test coverage report and interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
 
-[//]: # (First, make sure to fork the JPacman from the [Prof's repository]&#40;https://github.com/johnxu21/jpacman&#41; into your GitHub account. It is necessary to fork the project because the free version of CodeScene can only see projects from your own account.)
+### **Task 1: Set Up Your Team Repository for Test Coverage Lab (5 pts)**
 
-To start getting acquainted with the JPacman source code. Download/Clone the JPacman project from the 
-[Prof's repository](https://github.com/johnxu21/jpacman) and open it on IntelliJ; build it. JPacman uses Gradle as a built/dependency manager. 
-Make sure you can build and run it before doing any source code modification.
-Now look at the source code and try to understand its internal structure. In the "docs/uml" folder there are two simplified UML diagrams.
+This lab is a continuation of the previous Git and GitHub lab. You will continue working in your existing **team repository**, organizing files using folders rather than creating a new repository.
 
-Task 1 -- JPacman Test Coverage
-===========
- 
-We will begin by using the [IntelliJ IDE](https://www.jetbrains.com/idea/) test coverage plugin. 
-The testing and coverage plugins should be enabled by default. If you are not sure, check under ```IntelliJ IDEA > Preferences > Plugins > installed``` if your 
-plugins called ```Code Coverage for Java```, ```JUnit```, and ```TestNG``` are enabled.
- 
-First, make sure that you can test your JPacman, by using the following command line in the 
-[IntelliJ IDE](https://www.jetbrains.com/idea/) terminal:
-```
-./gradlew test
-```
-**Note:** Remember to set the project to point to the JDK version on which it was built. Look at ```External Libraries``` under the 
-Project's folder in IntelliJ IDE to see the JDK version.
+#### **1. Organize Your Repository**  
+- Each team member should create a dedicated folder named `test_coverage_lab` in their **local clone** of the team repository to store all files related to the **Test Coverage Lab**.  
+- **Use the exact spelling**: `test_coverage_lab` to maintain consistency and avoid duplicate folders when pushing to the repository.
 
-Now, right-click on the ```test``` folder (inside the ```src``` folder) and select the option "Run 'Tests' 
-in ```jpacman.test``` with Coverage". If that option is not available, select "Build Module 
-```jpacman.test```" and after the build right-click again and the option  "Run 'Tests' in 
-```jpacman.test``` with Coverage" should be available.
+#### **2. Copy and Set Up the Starter Files**  
+- Each team member should **clone the provided Test Coverage repository** and copy the starter files into the `test_coverage_lab/` folder in their **local clone** of the team repository.  
+- While copying, ensure that the `.git/` **directory is NOT included** to avoid creating a nested repository.
+- No need to push changes to the main repository yet—this step is just for setting up your local environment. 
 
-Alternatively, you can also right-click on the Gradle task ```test```, inside the module ```Task->verification```
-shown in the ```Gradle plugin``` (default position is a collapsed tab on the right part of your IntelliJ). 
-Select ```Run 'jpacman [test]' with Coverage```. This Gradle task should produce the same coverage. 
-Therefore, use whichever you prefer. 
- 
-If everything executed without errors, you should see a new window showing the code coverage. 
-Please try to remember this coverage (or take a screenshot to not depend on your memory).
- 
-**Question:**
-* Is the coverage good enough?
-
-Task 2 -- Increasing Coverage on JPacman 
-===================
-  
-For the second task, we will increase the coverage on JPacman. Doing that is very simple, 
-we just need to write more tests. In this task, we are going to write one new test case. 
-As you have seen from **Task 1** that the coverage for several packages is zero percent.
- 
-Let's create a simple ```unit test``` on a method. We will test the ```isAlive()``` method in class ```Player``` 
-(package ```level```). You should look at the ```DirectionTest``` class (folder ```test```, package ```board```) as a template 
-for your test case. **The hardest part is instantiating a ```Player``` object as it requires other objects.** 
-The ```PlayerFactory``` class is responsible for creating instances of ```Player```. And, ```PlayerFactory``` 
-constructor requires a ```PacManSprites``` (package ```sprites```) object. Therefore, you need to instantiate a 
-```PacManSprites``` object, to pass it on to the constructor of ```PlayerFactory```, and only then you can 
-call the factory method to create a ```Player```.
- 
-Create the package ```level``` in the ```test``` folder. Then, create the class ```PlayerTest``` inside this 
-package ```level```. Now you can write the test case for testing the method ```isAlive()``` from ```Player```. 
- 
-[Here is an example](/teaching/CS473-Fall2022/dynamic/PlayerTest.java_.txt) of such a test class, but I 
-strongly advise you to try for yourself (it is a simple test and the hardest part is just to instantiate 
-the objects).
- 
-After adding the new test, build ```jpacman.test``` again and run it with coverage. If your test does not 
-have any errors, you should see the IntelliJ window showing the code coverage. Leave this window with the 
-coverage information on as you may need it to answer the questions from the next task 
-(or take a screenshot of it).
-
-Task 2.1 - 15 points (5 points each)
-====
-Identify **three or more methods** in any java classes and write ```unit tests``` of those methods. 
-**Remember to take screenshots of the test coverage before and after creating the unit tests.** 
-**Since there are many methods in the project, I should not find almost all the group members of a given group attempting the same methods.** 
-Discuss between the group mates what methods you will be writing unit tests for. 
-A simple Google sheet having two columns would help get the group organised.
-
-<table>
-  <tr>
-    <th style="border: 1px solid black;">Names</th>
-    <th style="border: 1px solid black;">Fully Qualified Method Name</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black;">John Businge </td>
-    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/game/GameFactory.createSinglePlayerGame</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black;">John Businge </td>
-    <td style="border: 1px solid black;">src/main/java/nl/tudelft/jpacman/board/BoardFactory.createBoard</td>
-  </tr>
-
-</table> 
- 
-<br/>
-
-Task 3 -- JaCoCo Report on JPacman (10 points)
-=====
-
-The gradle build file provided in ```JPacman```, already has ```JaCoCo``` configured. Look at the folder 
-```build/reports/jacoco/test/html```, right-click on the file ```index.html``` and select 
-"Open in Browser". This is the coverage report from the ```JaCoCo``` tool. As you can see, ```JaCoCo``` shows not only 
-line coverage but also branch coverage. Click on the ```level``` package, then on the ```Player``` class, 
-and after that on any method. You will see the source code with color information on which branches are 
-covered (or partially covered).
- 
-**Questions:** 
-* Are the coverage results from ```JaCoCo``` similar to the ones you got from ```IntelliJ``` in the last task? Why so or why not?
-* Did you find helpful the source code visualization from ```JaCoCo``` on uncovered branches?
-* Which visualization did you prefer and why? ```IntelliJ```'s coverage window or ```JaCoCo```'s report?
-
-**Write a report for Tasks 2.1 and Task 3. Name the report ```<your-names>_unitTesting.pdf>```**
-Remember to include the **code snippets of your unit tests** for Tasks 2.1 in your report.
-Make sure that your report is descriptive enough for me to follow without looking at your project code.
-
-Task 4 -- Working with Python Test Coverage
-=====
-In this task, you will practice improving your test coverage in Python. You will generate a test coverage report and 
-interpret the report to determine which lines of code do not have test cases, and writing test cases to cover those lines.
-
-1. Clone the git project [Python Testing lab](https://github.com/johnxu21/test_coverage). Open the IDE, navigate to the directory ```test_coverage``` and run the command ```pip install -r requirements.txt```
-2. You will do all your editing work in the file ```tests/test_account.py```.
-3. Before writing any code, you should always check that the test cases are passing. 
-   Otherwise, when they fail, you won’t know if you broke the code, or if the code was broken before you started.
-  * run the ```nosetests``` and produce a ```coverage``` report to identify the lines that are missing code coverage:
-
-```nosetests
+#### **3. Build and Verify the Setup**  
+- Navigate into the `test_coverage_lab` folder.  
+- Install the required dependencies from `requirements.txt`:  
+  ```bash
+  cd test_coverage_lab
+  ```
+  ```bash
+  pip install -r requirements.txt # For stable versions
+  ```
+  or 
+  ```bash
+  pip install -r requirements-dev.txt # For latest updates
+  ```
+- Run `pytest` to check if the provided test cases are passing:
+- Ensure that everything compiles successfully before proceeding.
+- If any issues arise, debug and resolve them as needed.
+- If your tests run successfully, you should see an output similar to this:
+  ```pytest
+  tests/test_account.py::test_account_role_assignment PASSED                                                                                                                         [100%]
+  ---------- coverage: platform darwin, python 3.9.7-final-0 -----------
   Name                 Stmts   Miss  Cover   Missing
---------------------------------------------------
-models/__init__.py       6      0   100%
-models/account.py       40     13    68%   26, 30, 34-35, 45-48, 52-54, 74-75
---------------------------------------------------
-TOTAL                   46     13    72%
-----------------------------------------------------------------------
-Ran 2 tests in 0.349s
+  --------------------------------------------------
+  models/__init__.py       7      0   100%
+  models/account.py       45     18    60%   30, 34, 47-49, 53-55, 59-63, 67, 71, 76, 81-82
+  --------------------------------------------------
+  TOTAL                   52     18    65%
+  ----------------------------------------------------------------------
+  1 passed in 1.06s
+   ```
+- Commit the successful build to your forked repository:
+```bash
+git add .
+git commit -m "Successful setup and initial test run"
+git push origin main
 ```
 
-4. Starting with 72% test coverage. The goal is to reach 100%! Looking at the first missed line, 
-line 26 in ```account.py``` to see if we can write a test case for it. To increase the test coverage, 
-we first investigate line 26 in ```models/account.py```. This file is in the ```model``` 
-package from the root of the repo. Look at the following code on lines ```25``` and ```26```.
+
+#### **4. Include in Your Lab Report**  
+
+As the first task in your **final lab report**, include the following:
+
+- Screenshot of Your Terminal  
+Provide a screenshot that shows:  
+  - The `test_coverage_lab` folder inside your repository.  
+  - A successful build of the setup files (i.e., running `pytest` without errors).  
+- Commit Link from Your Forked Repository  
+Submit a commit link that includes:  
+- The `test_coverage_lab` folder added to your repository.  
+- Your commit history reflecting the setup process.  
+
+This section serves as proof that you successfully set up the environment before proceeding to Task 1.2.  
+
+
+### **Task 1.2: Working with Python Test Coverage**
+
+
+In this task, you will improve test coverage by writing new test cases. All work will be done in the `test_coverage_lab/` folder, and you will submit your changes through a **pull request (PR) from your branch** to the team repository.
+
+#### **1. Understanding the Current Test Coverage**  
+- Refer to your previous `pytest` test coverage report from **Task 1**.
+- Ensure you understand which lines of code are missing test cases before proceeding.
+
+#### **2. Assigning Test Cases**  
+Your team will divide the uncovered code areas among students. Below are suggested tests that need to be implemented.
+
+Each student must implement **at least one test case** for individual assessment.
+
+Teams with **fewer than 11 students** may either:
+- Complete all tests (some students implement more than one), **or**
+- Implement a subset of tests, as long as **each student completes one**.
+
+Teams should coordinate assignments to avoid duplication.
+
+| **Test Number** | **Description**                          | **Target Method**            |
+|---------------|----------------------------------|------------------------------|
+| **Student 1**  | Test account serialization         | `to_dict()`                  |
+| **Student 2**  | Test invalid email input          | `validate_email()`           |
+| **Student 3**  | Test missing required fields      | `Account() initialization`   |
+| **Student 4**  | Test positive deposit            | `deposit()`                  |
+| **Student 5**  | Test deposit with zero/negative values | `deposit()`              |
+| **Student 6**  | Test valid withdrawal            | `withdraw()`                 |
+| **Student 7**  | Test withdrawal with insufficient funds | `withdraw()`            |
+| **Student 8**  | Test password hashing            | `set_password()` / `check_password()` |
+| **Student 9**  | Test account deactivation/reactivation             | `deactivate() / reactivate()`  |
+| **Student 10** | Test email uniqueness enforcement     | `validate_unique_email()`    |
+| **Student 11** | Test deleting an account        | `delete()`                   |
+
+Your team should discuss who will implement each test. 
+
+#### **3. Writing Your Test Case**
+- Open `tests/test_account.py` and add your assigned test case.
+- Include your details at the top of your test case:
 
 ```python
-def __repr__(self):
-    return '<Account %r>' % self.name
+# ===========================
+# Test: Account Role Assignment
+# Author: John Businge
+# Date: 2026-01-30
+# Description: Ensure roles can be assigned and checked.
+# ===========================
+
+def test_account_role_assignment():
+    """Test assigning roles to an account"""
+    account = Account(name="John Businge", email="johnbusinge@example.com", role="user")
+    db.session.add(account)
+    db.session.commit()
+
+    # Retrieve from database
+    retrieved_account = Account.query.filter_by(email="johnbusinge@example.com").first()
+    assert retrieved_account.role == "user"
+
+    # Change role and verify
+    retrieved_account.change_role("admin")
+    db.session.commit()
+
+    updated_account = Account.query.filter_by(email="johnbusinge@example.com").first()
+    assert updated_account.role == "admin"
 ```
-Notice that this method is one of the magic methods that is called to represent the class when 
-printing it out. We will add a new test case in ```test_account.py``` that calls the ```__repr__()``` 
-method on an Account.
+
+#### **4. Committing and Pushing Your Test Case**  
+
+- Create a new branch for your test case:**  
+```bash
+git checkout -b add-test-<your-test-name>
+```
+- Commit your changes
+- Push to your forked repository
+```bash
+git push -u origin <your-branch-name>
+```
+
+#### **5. Submitting a Pull Request**
+- Open a Pull Request (PR) from your branch to the team repository.
+- In the PR description, include:
+  - brief summary of what your test case does.
+  - The line(s) of code covered in `models/account.py`.
+
+#### **6. What to Include in Your Report** 
+As a second task in the report, include:  
+- **A link to your Pull Request.**  
+- **A copy of your test case.**  
+- **A brief explanation of what your test does and why it is important.**  
+
+
+
+## **Phase 2: Test-Driven Development (TDD) - 15 pts**
+
+### **🔍 Overview**
+This phase follows a **Test-Driven Development (TDD)** approach where you will:
+1. **Write a test case first** for a missing feature.
+2. **Run the test** and observe it **fail** (**Red Phase**).
+3. **Implement the feature** to make the test **pass** (**Green Phase**).
+4. **Refactor the code** to improve structure (**Refactor Phase**).
+
+Each student will be responsible for **one test case** and the corresponding implementation in the **Counter API**.
+
+Refer to the **[README.md](https://github.com/UNLV-CS472-672/tdd)** file in the TDD repository for **setup instructions** and **common errors & solutions**.
+
+---
+
+### **1. Setting Up Your Work Environment (5 pts)**
+
+#### **1. Organize Your Repository**
+- Each team member should **create a new folder** in their local clone of the **team repository**, similar to the previous lab.
+- The folder name should be **`tdd_lab`** (use exact spelling for consistency).
+- This folder will store all files related to this **TDD Lab**.
+
+#### **2. Copy the Starter Files**
+- Copy **all files** from the **root of the provided [tdd repository](https://github.com/UNLV-CS472-672/tdd)** and place them inside your newly created **`tdd_lab/`** folder.
+- While copying, ensure that the `.git/` **directory is NOT included** to avoid creating a nested repository.
+
+
+#### **3. Install Dependencies & Verify Setup**
+- Navigate into the **`tdd_lab/`** folder and install the required dependencies:
+```bash
+  cd tdd_lab
+  pip install -r requirements.txt
+```
+
+- Run pytest (even though the tests will be empty initially):
+```bash
+  pytest --cov=src
+```
+- Expected output (since no tests exist yet):
+```bash
+  collected 0 items 
+```
+- If any errors arise, refer to the [README.md](https://github.com/UNLV-CS472-672/tdd) file in the repository for troubleshooting.
+
+#### **4. Commit & Push the Initial Setup**
+- After successfully setting up your environment, commit your changes to your forked repository:
+```bash
+  git add .
+  git commit -m "Successful TDD setup and initial test run"
+  git push origin main
+```
+
+### **Task 2.2. Introduction to TDD (Worked Example)**
+- You should read the instructions in the [README.md](https://github.com/UNLV-CS472-672/tdd) to ensure flask is running before they start testing.
+- Before you begin writing your own test case, let’s go through a guided example.
+- The provided `test_counter.py` file will initially be empty.
+
+#### **Step 1: Create the `src/counter.py` File**
+```bash
+  touch src/counter.py
+```
+- Add the following code to `src/counter.py`:
 
 ```python
-def test_repr(self):
-    """Test the representation of an account"""
-    account = Account()
-    account.name = "Foo"
-    self.assertEqual(str(account), "<Account 'Foo'>")
-```
-
-5. Run ```nosetests``` again to ensure line ```26``` is now covered through testing and to determine 
-the next line of code for which you should write a new test case:
-
-```angular2html
-Name                 Stmts   Miss  Cover   Missing
---------------------------------------------------
-models/__init__.py       6      0   100%
-models/account.py       40     12    70%   30, 34-35, 45-48, 52-54, 74-75
---------------------------------------------------
-TOTAL                   46     12    74%
-----------------------------------------------------------------------
-Ran 3 tests in 0.387s
-```
-Note that the overall test coverage has increased from 72% to 74% and the new report does not 
-list line ``26`` in the Missing column. 
-
-6. Next, let us look at the next line of code listed in the lines of code missing tests cases, line 
-is ```30```. Examine this line in ```models/account.py``` to find out what that code is doing.
-
-We will look at code of the entire function on lines ```28``` through ```30``` to see what it is 
-doing.
-```python
-def to_dict(self) -> dict:
-    """Serializes the class as a dictionary"""
-    return {c.name: getattr(self, c.name) for c in self.__table__.columns}
-```
-Notice that this code is the ```to_dict()``` method. Now, let us add a new test case in ```test_account.py``` 
-that executes the ```to_dict()``` method on an Account, and thereafter run ```nosetests``` again.
-
-```python
-def test_to_dict(self):
-    """ Test account to dict """
-    data = ACCOUNT_DATA[self.rand] # get a random account
-    account = Account(**data)
-    result = account.to_dict()
-    self.assertEqual(account.name, result["name"])
-    self.assertEqual(account.email, result["email"])
-    self.assertEqual(account.phone_number, result["phone_number"])
-    self.assertEqual(account.disabled, result["disabled"])
-    self.assertEqual(account.date_joined, result["date_joined"])
-```
-
-```angular2html
-Name                 Stmts   Miss  Cover   Missing
---------------------------------------------------
-models/__init__.py       6      0   100%
-models/account.py       40     11    72%   34-35, 45-48, 52-54, 74-75
---------------------------------------------------
-TOTAL                   46     11    76%
-----------------------------------------------------------------------
-Ran 4 tests in 0.368s
-```
-Note that the overall test coverage increased from 74% to 76%. 
-
-#### Your task - Getting coverage to 100% (20)
-In this task to try to get the test coverage to close to 100% as possible. You will 
-examine ```models/account.py``` on lines ```34-35```, ```45-48```, ```52-54```, ```74-75``` 
-to find out what that code is doing.
-
-**Add to your report of the previous tasks and include the code snippets for your test cases.**
-
-Task 5 - TDD
-=======
-Test driven development (TDD) is an approach to software development in which you first write the 
-test cases for the code you wish you had and then write the code to make the test cases pass.
-In this Task, you will write test cases based on the requirements given to you, and then you 
-will write the code to make the test cases pass.
-
-1. Clone and use the repo ([Python Testing lab](https://github.com/johnxu21/tdd)). Navigate to the ```tdd``` folder. If you did not already install the requirements, run the command ```pip install -r requirements.txt```
-2. Open the IDE, navigate to the directory ```tdd```.
-      * ```status.py``` -  has some HTTP error codes that we will use when we're checking our error codes
-      *  ```setup.cfg``` - In case you have many files in the project, and you are only interested in focusing on a specific directory or file you are testing, so that ```nosetests``` only returns testing results for that file, e.g., ```cover-package=counter```
-      * You will add test cases in ```test_counter.py```. Currently, the file contains only a doc string listing the requirements and no code.
-3. You will be working with **HTTP methods** and **REST guidelines** you can take a read [here](https://restfulapi.net/http-methods/)
-#### Creating a counter
-You will start by implementing a test case to test creating a counter. Following REST API guidelines, create uses 
-a PUT request and returns code ```200_OK``` if successful. Create a counter and then update it.
-1. Write the following code in the file ```test_counter.py```. Run ```nosetests```. You should see an error ```ModuleNotFoundError```
-
-```python
-from unittest import TestCase
-
-# we need to import the unit under test - counter
-from src.counter import app 
-
-# we need to import the file that contains the status codes
-from src import status 
-
-class CounterTest(TestCase):
-    """Counter tests"""
-```
-2. Create a new file in the ```src``` directory called ```counter.py``` and run ```nosetests``` again. You should see an ```ImportError```, cannot find ```app```
-3. Write the code below and run ```nosetests``` again. The tests should run with no error.
-  
-```python
-from flask import Flask
+"""
+Counter API Implementation
+"""
+from flask import Flask, jsonify
+from . import status
 
 app = Flask(__name__)
 ```
 
-4. Let us write our first test case and run ```nosetests``` again. 
-```python
-    def test_create_a_counter(self):
-        """It should create a counter"""
-        client = app.test_client()
-        result = client.post('/counters/foo')
-        self.assertEqual(result.status_code, status.HTTP_201_CREATED)
-```
-This time we get <span style="color:red">**RED**</span> - ```AssertionError: 404 !=201```. 
-I didn't find an endpoint called ```/counters```, so I can't possibly post to it." That's the next piece of 
-code we need to go write.
+- Now the `counter.py` file exists, but it does nothing yet.
 
-5. Let's go to ```counters.py``` and create that endpoint. 
+#### **Step 2: Write a Failing Test**
+- Before implementing a new feature, write a test that fails.
+- Add the following test case in `tests/test_counter.py`:
+
+```python
+import pytest
+from src import app
+from src import status
+
+@pytest.fixture()
+def client():
+    """Fixture for Flask test client"""
+    return app.test_client()
+
+@pytest.mark.usefixtures("client")
+class TestCounterEndpoints:
+    """Test cases for Counter API"""
+
+    def test_create_counter(self, client):
+        """It should create a counter"""
+        result = client.post('/counters/foo')
+        assert result.status_code == status.HTTP_201_CREATED
+```
+
+- Run `pytest --cov=src`
+- Expected failure:
+
+   <span style="color:red">**RED**</span> - `AssertionError: 404 != 201`
+
+- The test fails because the endpoint does not exist yet.
+
+#### **Step 3: Implement the Minimum Code**
+- Modify `src/counter.py` to create the missing endpoint. Add the code below:
 
 ```python
 COUNTERS = {}
 
-# We will use the app decorator and create a route called slash counters.
-# specify the variable in route <name>
-# let Flask know that the only methods that is allowed to called
-# on this function is "POST".
 @app.route('/counters/<name>', methods=['POST'])
 def create_counter(name):
     """Create a counter"""
-    app.logger.info(f"Request to create counter: {name}")
-    global COUNTERS
+    if name in COUNTERS:
+        return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
     COUNTERS[name] = 0
-    return {name: COUNTERS[name]}, status.HTTP_201_CREATED
+    return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 ```
+- Run `pytest --cov=src`
 
-Now we've implemented this first endpoint that should make the test pass. 
-When we run ```nosetests``` again, we will have <span style="color:green">**GREEN**</span>.
+<span style="color:green">**GREEN**</span> - All tests passed ✅
 
-## Duplicate names must return a conflict error code.
-The second requirement is if the name being created already exists, return a 409 conflict.
-* Since a lot of the code is a repeat we will <span style="color:blue">**REFACTOR**</span> 
-the repetitive code into ```setUp``` function. Since ```self.client = app.test_client()``` that is
-inside ```test_create_a_counter``` test case will be used by more than one test case, let us <span style="color:blue">**REFACTOR**</span>
-it into the ```setUp``` function.
-
-```python
-def setUp(self):
-  self.client = app.test_client()
-```
-
-* Let us now write the ``test_duplicate_a_counter`` as below. We create a counter called ``bar`` two times.
-The second time we expect to get a ```HTTP_409_CONFLICT```. 
-
-```python
-def test_duplicate_a_counter(self):
-  """It should return an error for duplicates"""
-  result = self.client.post('/counters/bar')
-  self.assertEqual(result.status_code, status.HTTP_201_CREATED)
-  result = self.client.post('/counters/bar')
-  self.assertEqual(result.status_code, status.HTTP_409_CONFLICT)
-```
-When we run our test cases we obtain
-<span style="color:red">**RED**</span> phase - ```AssertionError: 201 != 409```.
-It happily created that counter a second time, which is very dangerous because it set it to zero. 
-If we update the counter 1, 2, 3, 4, 5, and then we create the same counter again, 
-it's going to reset it to zero.
-
-* Let us go <span style="color:blue">**REFACTOR**</span> ```counter.py``` and fix the problem. Before we create any counter, we have to check if it already exists.
-Copy and paste the code snippet below and place it right after the code line ```global COUNTERS```.
-
-```python
-if name in COUNTERS:
-  return {"Message":f"Counter {name} already exists"}, status.HTTP_409_CONFLICT
-```
-When we run ```nosetests``` again we should get the <span style="color:green">**GREEN**</span> phase.
-
-## Your task (15 points)
-You will implement the updating the counter by name following the TDD workflow (write test cases and 
-write the code to make the test cases pass).
-The test cases you will add to are in ```test_counter.py```, and the code you will add is in ```counter.py```. These are the only two files you will work with.
-Following REST API guidelines, an update uses a ```PUT``` request and returns code ```200_OK``` if successful. 
-Create a counter and then update it. 
-You will implement the following requirements:
-
-In ```test_counter.py```, create a test called ```test_update_a_counter(self)```. It should implement the following steps:
-1. Make a call to Create a counter.
-2. Ensure that it returned a successful return code.
-3. Check the counter value as a baseline.
-4. Make a call to Update the counter that you just created.
-5. Ensure that it returned a successful return code.
-6. Check that the counter value is one more than the baseline you measured in step 3.
-
-When you run ```nosetests```, you should be in the <span style="color:red">**RED**</span> phase.
-
-Next, in ```counter.py```, create a function called ```update_counter(name)```. 
-It should implement the following steps:
-
-1. Create a route for method ```PUT``` on endpoint ```/counters/<name>```.
-2. Create a function to implement that route.
-3. Increment the counter by 1.
-3. Return the new counter and a ```200_OK``` return code.
-
-Next, you will write another test case to read a counter. Following REST API guidelines, a read uses a 
-```GET``` request and returns a ```200_OK``` code if successful. Create a counter and then read it. 
-Here you should figure out the requirements for the test case as well as code you will put in the unit under test.
-
-Add to your report of the previous tasks and detail the steps (red/green/refactor phases) you followed 
-to implement the requirements. Include in your report the code snippets you wrote at every step as well as 
-the exceptions you encountered while running ```nosetests```. 
-**Make your report self-contained so that it is easy to follow without running your code**
  
-Submitting the Assignment
-=======
-* Put a **link to your fork repository in the report**.
-* create a folder on your local fork repository called ```jpacman```.
-* create a branch on your local fork repository called ```jpacman_tests``` using the following command ```git branch jpacman_tests```.
-* run the command ```git checkout jpacman_tests```
-* copy your report--```<your-names>_unitTesting.pdf>``` and paste it in the folder ```jpacman```
-* push the changes onto your remote fork repository.
-* open a pull request on the ```main branch``` of the Team repository and write an appropriate title and body.
-* one of the repository maintainers should integrate your contribution into the main branch.
-* **for Tasks 4 & 5, only the report is required.**
-* You should also submit your report on **Canvas**
+#### **Step 4: Refactor for Reusability**
+- Refactor the counter creation check into a helper function:
+```python
+def counter_exists(name):
+    """Check if counter exists"""
+    return name in COUNTERS
+```
+- Now update the API to use this function:
 
-This lab aims to evaluate your proficiency in both GitHub usage and software testing. Tasks 2 and 3 will assess both skills, while Tasks 4 and 5 will focus solely on evaluating your software testing abilities.
+```python
+@app.route('/counters/<name>', methods=['POST'])
+def create_counter(name):
+    """Create a counter"""
+    if counter_exists(name):
+        return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
+    COUNTERS[name] = 0
+    return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
+```
 
-Importantly, for Tasks 4 and 5, there's no requirement to commit your code to the team repository. The evaluation will be based on your software testing proficiency in the report submitted rather than GitHub usage. However, when submitting your report on Canvas, ensure it includes documentation for all tasks.
+- This makes the code cleaner and reusable.
 
+### **Your tasks**
 
+#### **Task Overview**
+Each **student** will be responsible for implementing **one test case** and the corresponding function.
 
+| **Student #** | **Test Case Description** | **Target API Method** |
+|--------------|--------------------------|-----------------------|
+| **Student 1** | Create a new counter | `POST /counters/<name>` |
+| **Student 2** | Prevent duplicate counters | `POST /counters/<name>` |
+| **Student 3** | Retrieve an existing counter | `GET /counters/<name>` |
+| **Student 4** | Return 404 for non-existent counter | `GET /counters/<name>` |
+| **Student 5** | Increment a counter | `PUT /counters/<name>` |
+| **Student 6** | Prevent updating non-existent counter | `PUT /counters/<name>` |
+| **Student 7** | Delete a counter | `DELETE /counters/<name>` |
+| **Student 8** | Prevent deleting non-existent counter | `DELETE /counters/<name>` |
+| **Student 9** | Reset all counters | `POST /counters/reset` |
+| **Student 10** | List all counters | `GET /counters` |
+| **Student 11** | Handle invalid HTTP methods | Unsupported HTTP Methods |
+
+Each student **must:**
+1. **Write a test case** inside `tests/test_counter.py`
+2. **Implement the feature** inside `src/counter.py`
+3. **Run `pytest --cov=src` to verify the test case passes**
+4. **Submit a Pull Request (PR) to the team repository**
+5. All PRs should be opened on the **main branch** of the team repository.
+6. Write a report for the activities.
+
+####  **Step 1: Create a Branch**
+```bash
+git checkout -b add-test-<your-feature>
+git push -u origin <your-branch-name>
+```
+
+### **What to Include in Your Report:**
+1. **Test Coverage Lab Results**
+   - A screenshot or commit link showing your repository setup.
+   - A summary of the **test coverage** before and after your test contributions.
+   - A description of the test cases you wrote, including the function(s) they cover.
+   - A **link to your Pull Request (PR)** for the Test Coverage Lab.
+
+2. **Test-Driven Development Lab Results**
+   - A link to your **Pull Request (PR)** for the TDD Lab.
+   - A **copy of the test case** you wrote.
+   - A **brief explanation** of what your test case does and how it contributes to the Counter API.
+   - A **summary of your <span style="color:red;">RED</span>-<span style="color:green;">GREEN</span>-<span style="color:blue;">REFACTOR</span> process**, including:
+     - The failing test (**<span style="color:red;">RED</span> Phase**).
+     - The implemented feature that made the test pass (**<span style="color:green;">GREEN</span> Phase**).
+     - Any code improvements or refactoring you made (**<span style="color:blue;">REFACTOR</span> Phase**).
+
+## **Phase 3: Continuous Integration**
+This **Continuous Integration (CI) Lab** builds upon the work done in the **Testing Phase**. In this phase, you will extend the testing process by **enhancing existing test cases** with additional assertions and integrating **GitHub Actions** to automate test execution.  
+
+You will configure a CI pipeline, add tests to improve coverage, enforce code quality gates, and learn to debug failing runs. Unlike earlier labs, this is an **individual assignment**, each student must complete their own contributions, documented and submitted separately.
+
+CI ensures that all code changes are **continuously tested, linted, and validated** before being merged into the repository. You will practice modern DevOps workflows using **Pull Requests (PRs)**, **Issues**, and **peer reviews**.
+
+## Learning Outcomes
+
+By completing this lab, you will be able to:
+
+- **Set up and extend a GitHub Actions workflow** for CI.  
+- **Automate test execution** across multiple Python versions.  
+- **Use caching** to optimize CI runtime.  
+- **Enforce code coverage thresholds** (fail if coverage < 80%).  
+- **Integrate code formatting and linting** (Black + Flake8).  
+- **Write and run your own unit test** in CI, and measure coverage before/after.  
+- **Debug CI failures** by interpreting workflow logs.  
+- **Submit focused PRs** linked to Issues and reviewed by peers.   
+  
+---
+
+## Repository Setup
+You will complete this lab in **your own fork** of the course repository.
+1. Create a new folder named ``ci_lab`` inside your fork.  
+2. Download starter files from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI).  
+3. Place them into `ci_lab` folder and commit them to your fork.  
+4. Ensure `.gitignore` excludes unnecessary files like `.pyc`, `__pycache__/`, and environment-specific configs. 
+5. Push your changes to your fork’s `main` branch.
+
+After this setup, all of your work (Pipeline PR, Testing PR, Debugging PR) will be done in branches and PRs within your fork.
+
+## General Rules for PRs
+You will complete this lab in **your own fork** of the repository (recommended for individual grading).
+- Each PR must have:
+  - A **descriptive title** (e.g., “Add coverage gate to CI workflow”).  
+  - A **clear PR description** including:
+    - A short YAML excerpt showing the workflow change.  
+    - An explanation of what the change does.  
+    - A link or screenshot of the CI run showing success/failure.  
+- Keep PRs **small and focused**:  
+  - One enhancement per Pipeline PR.  
+  - One new test in the Testing PR.  
+  - One failure+fix in the Debugging PR.  
+
+---
+
+## Individual Tasks (3 PRs per student)
+
+Each student must complete **three Pull Requests (PRs)**, linked to Issues, and include **before/after coverage evidence** in their PR description.  
+
+### 1. Pipeline PR (choose ONE unique enhancement)
+
+Each student must complete **one distinct pipeline enhancement** from the list below.  
+No two students in the same team may select the same enhancement.  
+Your PR must include:  
+- The **YAML excerpt** showing your change.  
+- At least **one new test you authored** (all PRs must include a test).  
+- A short explanation of the enhancement and its effect.  
+
+**Requirements for your Pipeline PR:**
+- Focus on implementing **your assigned CI enhancement** (see list below).  
+- Demonstrate that the **existing test suite runs successfully** under your new workflow (link to the CI run or screenshot).  
+- Include a short **YAML excerpt** in your PR description showing the relevant workflow change.  
+- Briefly explain how your enhancement improves the CI pipeline.  
+
+#### Available Enhancements (8 total)
+
+1. **Matrix Setup**  
+   - Extend workflow to run tests on Python 3.9, 3.10, and 3.11.  
+   - Evidence: CI run screenshot showing jobs for all three versions.  
+
+2. **Dependency Caching**  
+   - Use `actions/cache` to cache Python dependencies.  
+   - Evidence: CI logs showing a cache hit on reruns.  
+
+3. **Lint/Format Enforcement**  
+   - Add **Flake8** (lint) and **Black** (formatter).  
+   - Configure jobs to fail on violations.  
+   - Evidence: CI run where lint passes (or fails and you fix it).  
+
+4. **Coverage Gate**  
+   - Enforce ≥80% coverage using `pytest --cov --cov-fail-under=80`.  
+   - Evidence: CI run with coverage summary showing threshold enforced.  
+
+5. **Coverage Artifact Upload**  
+   - Configure CI to upload the full HTML/text coverage report as an artifact.  
+   - Evidence: Screenshot of artifact available in the Actions tab.  
+
+6. **Status Badges in README**  
+   - Add build/lint/coverage badges to the repo `README.md`.  
+   - Evidence: Updated README rendered on GitHub with badges.  
+
+7. **Split Jobs**  
+   - Separate workflow into distinct jobs: `lint`, `test`, `coverage`.  
+   - Evidence: CI run showing multiple jobs instead of one monolithic job.  
+
+8. **Notifications**  
+   - Add a step to post CI status (pass/fail) as a comment on the PR.  
+   - Evidence: Screenshot of CI comment automatically posted on your PR.  
+
+---
+
+_Note:_ If your team already has a working version of one enhancement, you may still complete that task in your own branch, but your PR must be **independent** and include your own explanation and evidence.
+
+### 2. **One testing PR (required)**
+   - Write **at least one new meaningful unit test** (your own authorship) that runs in CI.  
+   - Show **coverage before vs. after** and briefly explain what behavior/edge case your test covers.  
+   Your testing lab already shows how to run `pytest --cov` and read coverage output.
+
+### 3. **One debugging PR (required)**
+   - Introduce a small, controlled failure (failing test, style error, or coverage drop) on a branch.  
+   - Use the **Actions logs** to diagnose, then push a fix and re‑run to green (successful run).  
+   - In the PR description, paste the failing log snippet and the root‑cause + fix summary.  
+   This mirrors the CI failure‑investigation flow in the CI lab steps.
+
+> You may open these PRs **against the team repository** (preferred for collaboration/reviews) **or** work in your **fork** and include links. Either way, grading is **per‑student** via your report.
+
+### Required Sequence (per student)
+
+1. **Sync repo** and confirm the baseline CI workflow runs (Actions tab, green check).  
+2. **Write & run your own test** locally and in CI:  
+   ```bash
+   pytest --cov=src --cov-report=term-missing
+   ```
+
+### **What to Include in Your Report:**
+1. **Link to your fork repository** (GitHub URL).  
+2. **Links to your three PRs** in your fork (Pipeline, Testing, Debugging).  
+3. **Coverage evidence**:
+   - Before vs. after coverage tables for your Testing PR.  
+4. **CI log evidence**:
+   - A failing CI log snippet and your fix summary for the Debugging PR.  
+5. **Code excerpts**:
+   - Your new test function (Testing PR).  
+   - YAML snippet showing your workflow change (Pipeline PR).  
+6. **A paragraph explaining what you learned about CI and automated quality checks**.  
+
+---
+
+## Submission Instructions
+
+- Your report must include Phase 1 (Test Coverage), Phase 2 (TDD) and Phase 3 (Continuous Integration).
+- Do not submit separate reports for each Phase/task. Submit one PDF covering all required details.
+- Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.
+  - Do not require graders to browse your fork unless for verification.  
+  - Paste or screenshot essential evidence (coverage tables, log snippets, YAML/test code) into the PDF.  
+- Double-check that your **fork repository link** is correct and public.  
