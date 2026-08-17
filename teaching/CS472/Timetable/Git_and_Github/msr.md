@@ -50,7 +50,7 @@ height:30px;" value="Generative AI" />
 <br/>
 
 
-### **Due Date: February 2, 2026**
+### **Due Date: Sept 2, 2026**
 
 ## Lab Overview
 
