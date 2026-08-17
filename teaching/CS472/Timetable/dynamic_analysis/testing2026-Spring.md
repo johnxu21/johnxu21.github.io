@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS472 - Software Testing & Continuous Integration
-permalink: /teaching/CS472/Timetable/dynamic_analysis/
+permalink: /teaching/CS472/Timetable/dynamic_analysis/testing2026-spring/
 ---
 
 <div class="main-component">
