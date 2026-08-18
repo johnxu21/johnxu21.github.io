@@ -59,6 +59,14 @@ This assignment is designed to simulate a professional software engineering work
 2. Phase 2 (Test-Driven Development): Building a new API using the Red-Green-Refactor cycle.
 3. Phase 3 (Continuous Integration): Automating your tests and enforcing quality gates with GitHub Actions.
 
+Contribution model for this full lab:
+- One setup PR per team for each lab folder (`test_coverage_lab`, `tdd_lab`, `ci_lab`).
+- Three substantive PRs per student across the lab:
+    1. One test-coverage PR (Phase 1).
+    2. One TDD PR (Phase 2).
+    3. One combined CI PR (Phase 3).
+- One TDD review and one CI review per student.
+
 
 Software testing
 =========
@@ -159,13 +167,13 @@ Use the coverage report to identify the code that will require additional tests 
 #### **4. Create a Setup Contribution**
 Create a uniquely named branch and commit your initial setup using the collaborative workflow from the Git and GitHub Lab.
 
-Open a pull request to the **team repository** and link it to an issue. The setup PR should demonstrate that your environment is working before you begin the testing task.
+For this setup task, submit **one setup PR per team** to the **team repository** and link it to an issue. The setup PR should demonstrate that the environment is working before any student begins the test-coverage contribution.
 
 #### **5. Include in Your Lab Report**
 As the first task in your final lab report, include:
 
 - A screenshot showing the `test_coverage_lab` folder and a successful `pytest` run.
-- A link to your setup PR.
+- A link to the team setup PR.
 - A link to the issue associated with the setup.
 - Evidence that the initial tests and coverage report were generated successfully.
 
@@ -196,26 +204,23 @@ Your team should coordinate assignments to avoid duplication.
 
 Each student must implement **at least one test case** for individual assessment.
 
-Teams with fewer than 11 students may either:
+For teams of 7-8 students, assign one primary item per student from the pool below. Students may claim additional items if capacity remains.
 
-- Complete all tests, with some students implementing more than one; or
-- Implement a subset of the tests, as long as each student completes at least one.
+#### **2. Test-Coverage Task Pool**
 
-#### **2. Suggested Test Assignments**
-
-| **Student** | **Description** | **Target Method** |
-|-------------|-----------------|-------------------|
-| **Student 1** | Test account serialization | `to_dict()` |
-| **Student 2** | Test invalid email input | `validate_email()` |
-| **Student 3** | Test missing required fields | `Account()` initialization |
-| **Student 4** | Test positive deposit | `deposit()` |
-| **Student 5** | Test deposit with zero/negative values | `deposit()` |
-| **Student 6** | Test valid withdrawal | `withdraw()` |
-| **Student 7** | Test withdrawal with insufficient funds | `withdraw()` |
-| **Student 8** | Test password hashing | `set_password()` / `check_password()` |
-| **Student 9** | Test account deactivation/reactivation | `deactivate()` / `reactivate()` |
-| **Student 10** | Test email uniqueness enforcement | `validate_unique_email()` |
-| **Student 11** | Test deleting an account | `delete()` |
+| **Pool Item** | **Description** | **Target Method** |
+|---------------|-----------------|-------------------|
+| **1** | Test account serialization | `to_dict()` |
+| **2** | Test invalid email input | `validate_email()` |
+| **3** | Test missing required fields | `Account()` initialization |
+| **4** | Test positive deposit | `deposit()` |
+| **5** | Test deposit with zero/negative values | `deposit()` |
+| **6** | Test valid withdrawal | `withdraw()` |
+| **7** | Test withdrawal with insufficient funds | `withdraw()` |
+| **8** | Test password hashing | `set_password()` / `check_password()` |
+| **9** | Test account deactivation/reactivation | `deactivate()` / `reactivate()` |
+| **10** | Test email uniqueness enforcement | `validate_unique_email()` |
+| **11** | Test deleting an account | `delete()` |
 
 #### **3. Create a Branch and Implement Your Test**
 After claiming an issue and defining its acceptance criteria:
@@ -279,18 +284,17 @@ The PR must:
 - Include relevant test and coverage results.
 
 #### **5. Technical Peer Review**
-Each student must review at least one teammate's PR.
+Peer feedback is encouraged for Phase 1 PRs, but a required review is not mandatory in this phase.
 
 The review should be **evidence-based and technical**, rather than simply confirming that the code looks correct.
 
 Review the following:
 
-- **Tests:** Does the test exercise the intended behavior?
+- **Behavior:** Does the test exercise the intended behavior?
 - **Assertions:** Are the assertions specific and meaningful?
 - **Coverage:** Does the test cover the intended uncovered code?
 - **Regression:** Do the existing tests continue to pass?
-- **Acceptance criteria:** Does the PR satisfy all criteria specified in the issue?
-- **Code quality:** Is the test clear, focused, and free of unnecessary duplication?
+- **Acceptance criteria:** Does the PR satisfy the issue and remain focused?
 
 Provide specific feedback using test results, coverage report, code, or acceptance criteria as evidence.
 
@@ -311,14 +315,11 @@ For your individual contribution, include:
 
 - Link to the issue and its acceptance criteria.
 - Link to your pull request.
-- Copy of your test case.
-- Brief explanation of what the test verifies.
-- Coverage evidence showing the code addressed by your test.
-- Local test results.
-- A summary of the technical feedback you received and how you addressed it.
-- Link to the teammate's PR that you reviewed.
-- Evidence of your technical review and feedback.
-- Evidence of approval and merge.
+- Link to your coverage report or results.
+- Brief explanation of the test and the behavior it verifies.
+- If you completed a review, link to your technical review comments.
+- Short summary of the feedback you received and how you addressed it.
+- Link to the approved PR or merge commit.
 
 
 
@@ -376,7 +377,7 @@ Create an issue describing the setup task and include clear acceptance criteria.
 After completing the setup:
 
 - Commit the setup changes to your branch.
-- Open a pull request to the **team repository**.
+- Submit **one setup PR per team** to the **team repository**.
 - Link the PR to the issue.
 - Address any requested changes before approval.
 
@@ -416,17 +417,17 @@ from src import status
 
 @pytest.fixture()
 def client():
-   """Fixture for Flask test client"""
-   return app.test_client()
+    """Fixture for Flask test client"""
+    return app.test_client()
 
 @pytest.mark.usefixtures("client")
 class TestCounterEndpoints:
-   """Test cases for Counter API"""
+    """Test cases for Counter API"""
 
-   def test_create_counter(self, client):
-      """It should create a counter"""
-      result = client.post('/counters/foo')
-      assert result.status_code == status.HTTP_201_CREATED
+    def test_create_counter(self, client):
+        """It should create a counter"""
+        result = client.post('/counters/foo')
+        assert result.status_code == status.HTTP_201_CREATED
 ```
 
 Run:
@@ -447,11 +448,11 @@ COUNTERS = {}
 
 @app.route('/counters/<name>', methods=['POST'])
 def create_counter(name):
-   """Create a counter"""
-   if name in COUNTERS:
-      return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
-   COUNTERS[name] = 0
-   return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
+    """Create a counter"""
+    if name in COUNTERS:
+        return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
+    COUNTERS[name] = 0
+    return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 ```
 
 Run:
@@ -469,8 +470,8 @@ Refactor the counter-existence check into a helper function:
 
 ```python
 def counter_exists(name):
-   """Check if counter exists"""
-   return name in COUNTERS
+    """Check if counter exists"""
+    return name in COUNTERS
 ```
 
 Update the endpoint to use it:
@@ -478,11 +479,11 @@ Update the endpoint to use it:
 ```python
 @app.route('/counters/<name>', methods=['POST'])
 def create_counter(name):
-   """Create a counter"""
-   if counter_exists(name):
-      return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
-   COUNTERS[name] = 0
-   return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
+    """Create a counter"""
+    if counter_exists(name):
+        return jsonify({"error": f"Counter {name} already exists"}), status.HTTP_409_CONFLICT
+    COUNTERS[name] = 0
+    return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 ```
 
 Run the tests again to verify that the refactoring did not change the behavior.
@@ -494,19 +495,23 @@ This is the **<span style="color:blue">REFACTOR</span> phase**.
 ### ***3. Your TDD Contribution***
 Each student will be responsible for one test case and its corresponding implementation.
 
-| **Student** | **Test Case** | **Target API Method** |
-|-------------|---------------|-----------------------|
-| **Student 1** | Create a new counter | `POST /counters/<name>` |
-| **Student 2** | Prevent duplicate counters | `POST /counters/<name>` |
-| **Student 3** | Retrieve an existing counter | `GET /counters/<name>` |
-| **Student 4** | Return 404 for non-existent counter | `GET /counters/<name>` |
-| **Student 5** | Increment a counter | `PUT /counters/<name>` |
-| **Student 6** | Prevent updating non-existent counter | `PUT /counters/<name>` |
-| **Student 7** | Delete a counter | `DELETE /counters/<name>` |
-| **Student 8** | Prevent deleting non-existent counter | `DELETE /counters/<name>` |
-| **Student 9** | Reset all counters | `POST /counters/reset` |
-| **Student 10** | List all counters | `GET /counters` |
-| **Student 11** | Handle invalid HTTP methods | Unsupported HTTP Methods |
+For teams of 7-8 students, assign one primary feature per student from the pool below.
+
+#### **TDD Feature Pool**
+
+| **Pool Item** | **Feature** | **Target API Method** |
+|---------------|-------------|-----------------------|
+| **1** | Prevent duplicate counters | `POST /counters/<name>` |
+| **2** | Retrieve an existing counter | `GET /counters/<name>` |
+| **3** | Return 404 for non-existent counter | `GET /counters/<name>` |
+| **4** | Increment a counter | `PUT /counters/<name>` |
+| **5** | Prevent updating non-existent counter | `PUT /counters/<name>` |
+| **6** | Delete a counter | `DELETE /counters/<name>` |
+| **7** | Prevent deleting non-existent counter | `DELETE /counters/<name>` |
+| **8** | Reset all counters | `POST /counters/reset` |
+| **9** | List all counters | `GET /counters` |
+| **10** | Handle invalid HTTP methods | Unsupported HTTP Methods |
+
 
 Each student must:
 
@@ -525,19 +530,15 @@ Each student must:
 13. Merge only after the required approval.
 
 ### ***4. Technical Peer Review***
-Each student must review at least one teammate's TDD PR.
+Each student must complete **one** technical review on a teammate's TDD PR.
 
 The review should evaluate:
 
-- **Test correctness:** Does the test verify the behavior described in the issue?
-- **Assertions:** Are the assertions specific and meaningful?
-- **<span style="color:red">RED</span> phase:** Did the test fail before the feature was implemented?
-- **<span style="color:green">GREEN</span> phase:** Does the implementation satisfy the test and acceptance criteria?
-- **<span style="color:blue">REFACTOR</span> phase:** Does the refactored code improve structure without changing behavior?
-- **Regression:** Do existing tests continue to pass?
-- **Coverage:** Does the contribution provide appropriate test coverage?
-- **Scope:** Is the PR focused on the assigned issue?
-- **Acceptance criteria:** Are all criteria satisfied?
+- **Test:** Does the test verify the behavior described in the issue?
+- **RED/GREEN:** Did the test fail first and then pass after the implementation?
+- **Refactor:** Does the refactor improve structure without changing behavior?
+- **Regression/Coverage:** Do existing tests pass, and does coverage change as expected?
+- **Scope/Criteria:** Is the PR focused and does it satisfy the issue's acceptance criteria?
 
 Reviews must provide **evidence-based feedback** using test results, coverage report, code, or acceptance criteria.
 
@@ -568,16 +569,13 @@ For your TDD contribution, include:
 
 - Link to the issue and its acceptance criteria.
 - Link to your TDD PR.
-- Copy of the test case.
+- Link to the test case you wrote.
 - Brief explanation of the feature being tested.
-- Evidence of the **<span style="color:red">RED</span> phase**, showing the test failed before implementation.
-- Evidence of the **<span style="color:green">GREEN</span> phase**, showing the test passed after implementation.
-- Description of any **<span style="color:blue">REFACTOR</span>** changes.
-- Final test and coverage results.
-- Summary of reviewer feedback and how you addressed it.
+- Link to RED/GREEN/REFACTOR evidence or test results.
+- Short summary of reviewer feedback and how you addressed it.
 - Link to the teammate's PR you reviewed.
-- Evidence of your technical review and feedback.
-- Evidence of approval and merge.
+- Link to your technical review comments.
+- Link to the approved PR or merge commit.
 
 ## **Phase 3: Continuous Integration**
 This **Continuous Integration (CI) Lab** builds upon the testing and TDD work completed in the previous phases. You will extend the testing process by enhancing existing tests and integrating **GitHub Actions** to automate testing and code-quality checks.
@@ -610,35 +608,13 @@ Before beginning your individual contributions:
 4. Place the starter files in the `ci_lab` folder.
 5. Ensure `.gitignore` excludes unnecessary files such as `.pyc`, `__pycache__/`, and environment-specific files.
 6. Verify that the starter project and existing CI workflow run successfully.
-7. Submit the setup as a focused contribution following the collaborative workflow from the Git and GitHub Lab.
+7. Submit the setup as **one team setup PR** following the collaborative workflow from the Git and GitHub Lab.
 
 ---
 
-## General PR Requirements
-You will complete **three contributions** during this lab:
-
-1. **Pipeline PR**
-2. **Testing PR**
-3. **Debugging PR**
-
-Each PR must:
-
-- Have a descriptive title.
-- Link to its Issue.
-- Include clear acceptance criteria.
-- Contain focused changes related to the Issue.
-- Include relevant test and CI evidence.
-- Address reviewer feedback before merging.
-- Pass all required CI checks.
-- Be approved before merging.
-
----
-
-## Individual Tasks - Three PRs per Student
-Each student must complete **three separate contributions**, each associated with an Issue and submitted as a PR to the team repository.
-
-### **1. Pipeline PR - One Unique CI Enhancement**
-Each student must implement **one distinct pipeline enhancement** from the list below. No two students in the same team should select the same enhancement.
+## Individual Tasks 
+### **Combined CI PR - Enhancement + Failure + Fix**
+Each student must implement **one distinct CI enhancement** from the list below. No two students in the same team should select the same enhancement.
 
 Before starting:
 
@@ -648,16 +624,22 @@ Before starting:
 4. Synchronize your fork with upstream.
 5. Create a uniquely named branch.
 6. Implement the enhancement.
-7. Test the workflow locally where applicable.
-8. Open a PR to the team repository.
+7. Introduce one controlled failure.
+8. Use CI logs to diagnose the failure.
+9. Implement the fix.
+10. Re-run CI until it is green.
+11. Open one combined CI PR to the team repository.
 
-Your Pipeline PR must include:
+Your combined CI PR must include the following:
 
-- The YAML change implementing the enhancement.
-- At least one meaningful test authored by you.
-- Evidence that the existing test suite runs successfully.
-- A short explanation of how the enhancement improves CI.
-- CI evidence demonstrating that the enhancement works.
+- A descriptive title.
+- A link to the issue and its acceptance criteria.
+- Focused changes related to the Issue.
+- The workflow/YAML change implementing the enhancement.
+- A controlled failure, CI log excerpt, and root-cause analysis.
+- The fix and evidence of a successful CI rerun.
+- Relevant test and CI evidence.
+- Proof that reviewer feedback was addressed and the PR was approved before merge.
 
 ### **Available Enhancements**
 
@@ -694,100 +676,19 @@ Your Pipeline PR must include:
 
 > **Note:** If another student has already completed an enhancement, select a different enhancement. Each student must make an independent contribution and provide their own implementation and evidence.
 
----
-
-
-### **2. Testing PR - Add a Meaningful Test**
-For your second contribution:
-
-1. Create or claim an Issue describing the behavior or edge case to be tested.
-2. Define clear acceptance criteria.
-3. Synchronize your fork with upstream.
-4. Create a uniquely named branch.
-5. Add at least one meaningful unit test.
-6. Run the test locally and through CI.
-7. Measure coverage before and after the change.
-8. Open a focused PR to the team repository.
-9. Participate in technical peer review.
-
-The test should verify meaningful behavior rather than simply increase the coverage percentage.
-
-Run:
-
-```bash
-pytest --cov=src --cov-report=term-missing
-```
-
-Your PR should include:
-
-- The new test.
-- The behavior or edge case being tested.
-- Coverage before and after.
-- Test results.
-- CI results.
-- Explanation of how the test satisfies the Issue's acceptance criteria.
-
----
-
-### **3. Debugging PR - Diagnose and Fix a CI Failure**
-For your third contribution:
-
-1. Create or claim an Issue describing the CI failure scenario.
-2. Define acceptance criteria for diagnosing and resolving the failure.
-3. Synchronize your fork with upstream.
-4. Create a uniquely named branch.
-5. Introduce a small, controlled failure such as a failing test, a style violation, or a coverage failure.
-6. Push the change and allow CI to fail.
-7. Use the GitHub Actions logs to identify the cause.
-8. Implement the fix.
-9. Re-run CI and verify that it passes.
-10. Open a PR to the team repository.
-11. Participate in technical peer review.
-
-The PR description must include:
-
-- The failing CI log or relevant excerpt.
-- The identified root cause.
-- The change made to fix the problem.
-- Evidence of the successful CI run.
-- An explanation of how the acceptance criteria were satisfied.
-
----
 
 ## Technical Peer Review
-Each student must review at least one teammate's CI PR.
+Each student must complete **one** technical review on a teammate's CI PR.
 
 The review should be **technical and evidence-based**.
 
-Reviewers should evaluate:
+Reviewers should evaluate the combined CI PR as a whole:
 
-### **Pipeline PR**
-
-- Is the workflow configuration correct?
-- Does the new CI feature actually execute?
-- Does it enforce the intended quality check?
-- Do the CI jobs produce the expected results?
-- Does the change satisfy the Issue's acceptance criteria?
-- Does it introduce unnecessary complexity?
-
-### **Testing PR**
-
-- Does the test verify meaningful behavior?
-- Are the assertions appropriate?
-- Does the test cover the intended edge case?
-- Does coverage change as expected?
-- Do existing tests continue to pass?
-- Does the test pass in CI?
-- Are the acceptance criteria satisfied?
-
-### **Debugging PR**
-
-- Was the failure reproduced successfully?
-- Does the CI log support the identified root cause?
-- Does the proposed fix address the actual cause?
+- Is the selected enhancement implemented correctly?
+- Was a controlled failure clearly demonstrated?
+- Does the CI log support the root-cause analysis?
 - Does the fix restore a successful CI run?
-- Were unrelated changes avoided?
-- Are the acceptance criteria satisfied?
+- Are acceptance criteria satisfied without unrelated changes?
 
 ---
 
@@ -813,36 +714,17 @@ Your final report should include:
 - Link to your fork.
 - Evidence that your fork was synchronized with the upstream repository.
 
-### **2. Pipeline PR**
+### **2. Combined CI PR**
 
 - Issue link and acceptance criteria.
 - PR link.
-- YAML excerpt showing your CI enhancement.
-- Explanation of the enhancement.
-- CI evidence demonstrating that it works.
-- Technical review evidence.
+- Link to the workflow excerpt or screenshot.
+- Link to the failing CI log and root-cause summary.
+- Link to the fix commit or PR diff.
+- Link to the successful CI run.
+- Link to your technical review comments.
 
-### **3. Testing PR**
-
-- Issue link and acceptance criteria.
-- PR link.
-- Your new test function.
-- Description of the behavior or edge case tested.
-- Coverage before and after.
-- Test and CI results.
-- Technical review evidence.
-
-### **4. Debugging PR**
-
-- Issue link and acceptance criteria.
-- PR link.
-- Failing CI log excerpt.
-- Root-cause analysis.
-- Description of the fix.
-- Successful CI result after the fix.
-- Technical review evidence.
-
-### **5. Reflection**
+### **3. Reflection**
 Write a short reflection explaining what you learned about:
 
 - Continuous Integration.
@@ -858,9 +740,9 @@ Write a short reflection explaining what you learned about:
 
 - Your report must include Phase 1 (Test Coverage), Phase 2 (TDD) and Phase 3 (Continuous Integration).
 - Do not submit separate reports for each Phase/task. Submit one PDF covering all required details.
-- Ensure your report is **clear and self-contained**, so it can be understood **without running your code**.
-  - Do not require graders to browse your fork unless for verification.  
-  - Paste or screenshot essential evidence (coverage tables, log snippets, YAML/test code) into the PDF.  
+- Ensure your report is **clear and self-contained**, while using links as the primary evidence trail.
+    - Include direct links to PRs, issues, CI runs, and review comments for each required deliverable.  
+    - Include brief in-PDF evidence excerpts (for example: key coverage table rows, failing/passing CI snippets, and the specific YAML/test fragments you changed) so graders do not need to browse your fork to understand your work.  
 - Double-check that your **fork repository link** is correct and public.  
 
 
