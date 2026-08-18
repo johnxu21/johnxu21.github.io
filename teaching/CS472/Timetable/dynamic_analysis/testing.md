@@ -56,7 +56,7 @@ Overview
 ========
 This assignment is designed to simulate a professional software engineering workflow. You will progress through three distinct phases:
 1. Phase 1 (Test Coverage): Analyzing existing code and filling testing gaps.
-2. Phase 2 (Test Drive Development): Building a new API using the Red-Green-Refactor cycle.
+2. Phase 2 (Test-Driven Development): Building a new API using the Red-Green-Refactor cycle.
 3. Phase 3 (Continuous Integration): Automating your tests and enforcing quality gates with GitHub Actions.
 
 
@@ -88,7 +88,7 @@ Materials & Tools Used for this Session
 * [flask](https://flask.palletsprojects.com/en/2.3.x/) a web framework, it's a Python module that lets you develop web applications easily.
 * (Optional) Read about [RESTFUL API](https://restfulapi.net/)
 * [Test Coverage](https://github.com/UNLV-CS472-672/test_coverage) repository.
-* [Test Driven Development](https://github.com/UNLV-CS472-672/tdd) repository.
+* [Test-Driven Development](https://github.com/UNLV-CS472-672/tdd) repository.
 * [Continuous Integration](https://github.com/UNLV-CS472-672/CI) repository.
 
 
@@ -171,7 +171,7 @@ As the first task in your final lab report, include:
 
 ---
 
-### **Task 1.2: Working with Python Test Coverage**
+### **Task 2: Working with Python Test Coverage**
 In this task, you will improve test coverage by writing new test cases. Your work must follow the collaborative workflow introduced in the Git and GitHub Lab.
 
 #### **1. Identify and Claim a Testing Task**
@@ -189,7 +189,6 @@ For example:
 - The test verifies the behavior when funds are insufficient.
 - The assertions verify the expected result.
 - The test passes locally.
-- The test passes in CI.
 - The relevant uncovered code is exercised.
 - The PR links to this issue.
 
@@ -290,11 +289,10 @@ Review the following:
 - **Assertions:** Are the assertions specific and meaningful?
 - **Coverage:** Does the test cover the intended uncovered code?
 - **Regression:** Do the existing tests continue to pass?
-- **CI:** Does the CI workflow pass?
 - **Acceptance criteria:** Does the PR satisfy all criteria specified in the issue?
 - **Code quality:** Is the test clear, focused, and free of unnecessary duplication?
 
-Provide specific feedback using the test results, coverage report, CI results, code, or acceptance criteria as evidence.
+Provide specific feedback using test results, coverage report, code, or acceptance criteria as evidence.
 
 #### **6. Address Feedback and Merge**
 The PR author must:
@@ -302,12 +300,11 @@ The PR author must:
 - Address requested changes.
 - Resolve any merge conflicts.
 - Respond to review comments.
-- Ensure that all required CI checks pass.
 - Resolve conversations before merging.
 
 The PR may be merged only after receiving the required approval. Once satisfied with the changes, the reviewer should approve the PR and ask the PR author to merge it.
 
-Do not merge directly into `main`.
+Do not push directly to `main`; changes must be merged through an approved PR.
 
 #### **7. Include in Your Lab Report**
 For your individual contribution, include:
@@ -317,7 +314,7 @@ For your individual contribution, include:
 - Copy of your test case.
 - Brief explanation of what the test verifies.
 - Coverage evidence showing the code addressed by your test.
-- Test/CI results.
+- Local test results.
 - A summary of the technical feedback you received and how you addressed it.
 - Link to the teammate's PR that you reviewed.
 - Evidence of your technical review and feedback.
@@ -343,7 +340,7 @@ Refer to the [**README.md**](https://github.com/UNLV-CS472-672/tdd) in the TDD r
 ### ***1. Setting Up Your Work Environment (5 pts)***
 This lab continues the collaborative workflow from the Git and GitHub Lab. The **team repository is the authoritative upstream repository**, and you will work through your **individual fork**.
 
-#### **1. Synchronize and Set Up Your Fork**
+#### **1.1 Synchronize and Set Up Your Fork**
 Before beginning:
 
 - Synchronize your fork with the team's upstream repository.
@@ -351,7 +348,7 @@ Before beginning:
 - Copy the contents of the provided [**TDD repository**](https://github.com/UNLV-CS472-672/tdd) into `tdd_lab/`.
 - Do not copy the `.git/` directory from the provided repository.
 
-#### **2. Install Dependencies and Verify Setup**
+#### **1.2 Install Dependencies and Verify Setup**
 Navigate to the lab folder and install the required dependencies:
 
 ```bash
@@ -373,7 +370,7 @@ collected 0 items
 
 If errors occur, refer to the [**README.md**](https://github.com/UNLV-CS472-672/tdd) for troubleshooting.
 
-#### **3. Submit the Setup Contribution**
+#### **1.3 Submit the Setup Contribution**
 Create an issue describing the setup task and include clear acceptance criteria.
 
 After completing the setup:
@@ -381,10 +378,9 @@ After completing the setup:
 - Commit the setup changes to your branch.
 - Open a pull request to the **team repository**.
 - Link the PR to the issue.
-- Ensure the required checks pass.
 - Address any requested changes before approval.
 
-### ***2.2 Introduction to TDD (Worked Example)***
+### ***2. Introduction to TDD (Worked Example)***
 Before implementing your assigned feature, complete the following guided example to understand the <span style="color:red">**RED**</span>-<span style="color:green">**GREEN**</span>-<span style="color:blue">**REFACTOR**</span> cycle.
 
 You should also ensure that Flask is running as described in the [**README.md**](https://github.com/UNLV-CS472-672/tdd).
@@ -495,7 +491,7 @@ This is the **<span style="color:blue">REFACTOR</span> phase**.
 
 ---
 
-### ***2.3 Your TDD Contribution***
+### ***3. Your TDD Contribution***
 Each student will be responsible for one test case and its corresponding implementation.
 
 | **Student** | **Test Case** | **Target API Method** |
@@ -528,7 +524,7 @@ Each student must:
 12. Address requested changes and resolve conflicts before approval.
 13. Merge only after the required approval.
 
-### ***2.4 Technical Peer Review***
+### ***4. Technical Peer Review***
 Each student must review at least one teammate's TDD PR.
 
 The review should evaluate:
@@ -540,19 +536,17 @@ The review should evaluate:
 - **<span style="color:blue">REFACTOR</span> phase:** Does the refactored code improve structure without changing behavior?
 - **Regression:** Do existing tests continue to pass?
 - **Coverage:** Does the contribution provide appropriate test coverage?
-- **CI:** Do all required CI checks pass?
 - **Scope:** Is the PR focused on the assigned issue?
 - **Acceptance criteria:** Are all criteria satisfied?
 
-Reviews must provide **evidence-based feedback** using the test results, coverage report, CI results, code, or acceptance criteria.
+Reviews must provide **evidence-based feedback** using test results, coverage report, code, or acceptance criteria.
 
-### ***2.5 Address Feedback and Merge***
+### ***5. Address Feedback and Merge***
 The PR author must:
 
 - Address reviewer feedback.
 - Update the test or implementation where necessary.
 - Resolve merge conflicts.
-- Ensure all required CI checks pass.
 - Resolve review conversations.
 
 The PR may be merged only after receiving the required approval. Once satisfied, the reviewer should approve the PR and ask the PR author to merge.
@@ -580,7 +574,6 @@ For your TDD contribution, include:
 - Evidence of the **<span style="color:green">GREEN</span> phase**, showing the test passed after implementation.
 - Description of any **<span style="color:blue">REFACTOR</span>** changes.
 - Final test and coverage results.
-- CI results.
 - Summary of reviewer feedback and how you addressed it.
 - Link to the teammate's PR you reviewed.
 - Evidence of your technical review and feedback.
