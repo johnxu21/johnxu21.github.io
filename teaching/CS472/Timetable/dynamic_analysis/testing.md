@@ -100,10 +100,10 @@ Materials & Tools Used for this Session
 * [Continuous Integration](https://github.com/UNLV-CS472-672/CI) repository.
 
 
-## **Phase 1: Test Coverage**
+## **Phase 1: Test Coverage - 10 pts**
 In this task, you will practice writing tests and improving test coverage in Python. You will generate and interpret a coverage report to identify untested code and write tests to cover it.
 
-### **Task 1: Set Up Your Team Repository for the Test Coverage Lab (5 pts)**
+### **Task 1: Set Up Your Team Repository for the Test Coverage Lab**
 This lab continues the collaborative workflow introduced in the previous [Git and GitHub](/teaching/CS472/Timetable/Git_and_GitHub/) Lab. The **team repository is the authoritative upstream repository**, and you will work through your **individual fork**.
 
 #### **1. Synchronize Your Fork**
@@ -162,7 +162,7 @@ TOTAL                   52     18    65%
 1 passed in 1.06s
 ```
 
-Use the coverage report to identify the code that will require additional tests in Task 1.2.
+Use the coverage report to identify the code that will require additional tests in Task 2.
 
 #### **4. Create a Setup Contribution**
 Create a uniquely named branch and commit your initial setup using the collaborative workflow from the Git and GitHub Lab.
@@ -244,30 +244,30 @@ For example:
 # ===========================
 
 def test_account_role_assignment():
-      """Test assigning roles to an account"""
-      account = Account(
-            name="John Businge",
-            email="johnbusinge@example.com",
-            role="user"
-      )
+    """Test assigning roles to an account"""
+    account = Account(
+        name="John Businge",
+        email="johnbusinge@example.com",
+        role="user"
+    )
 
-      db.session.add(account)
-      db.session.commit()
+    db.session.add(account)
+    db.session.commit()
 
-      retrieved_account = Account.query.filter_by(
-            email="johnbusinge@example.com"
-      ).first()
+    retrieved_account = Account.query.filter_by(
+        email="johnbusinge@example.com"
+    ).first()
 
-      assert retrieved_account.role == "user"
+    assert retrieved_account.role == "user"
 
-      retrieved_account.change_role("admin")
-      db.session.commit()
+    retrieved_account.change_role("admin")
+    db.session.commit()
 
-      updated_account = Account.query.filter_by(
-            email="johnbusinge@example.com"
-      ).first()
+    updated_account = Account.query.filter_by(
+        email="johnbusinge@example.com"
+    ).first()
 
-      assert updated_account.role == "admin"
+    assert updated_account.role == "admin"
 ```
 
 Commit your changes using focused commits and push the branch to your fork.
@@ -284,7 +284,7 @@ The PR must:
 - Include relevant test and coverage results.
 
 #### **5. Technical Peer Review**
-Peer feedback is encouraged for Phase 1 PRs, but a required review is not mandatory in this phase.
+Peer feedback is encouraged for Phase 1 PRs, though a review is not required in this phase.
 
 The review should be **evidence-based and technical**, rather than simply confirming that the code looks correct.
 
@@ -306,7 +306,7 @@ The PR author must:
 - Respond to review comments.
 - Resolve conversations before merging.
 
-The PR may be merged only after receiving the required approval. Once satisfied with the changes, the reviewer should approve the PR and ask the PR author to merge it.
+If a peer review was provided, address the feedback before merging. Once satisfied with the changes, the reviewer should approve the PR and ask the PR author to merge it. If no review was provided, you may merge once your changes satisfy the issue's acceptance criteria.
 
 Do not push directly to `main`; changes must be merged through an approved PR.
 
@@ -323,7 +323,7 @@ For your individual contribution, include:
 
 
 
-## **Phase 2: Test-Driven Development (TDD) - 15 pts**
+## **Phase 2: Test-Driven Development (TDD) - 20 pts**
 
 ### ***🔍 Overview***
 This phase introduces **Test-Driven Development (TDD)** through the following cycle:
@@ -556,14 +556,6 @@ The PR may be merged only after receiving the required approval. Once satisfied,
 
 ### ***What to Include in Your Report***
 
-#### **Test Coverage Lab**
-
-- Link to your Test Coverage PR.
-- Summary of test coverage before and after your contribution.
-- Description of the test case you implemented.
-- Explanation of the code covered by the test.
-- Evidence of your technical peer review.
-
 #### **Test-Driven Development Lab**
 For your TDD contribution, include:
 
@@ -577,7 +569,7 @@ For your TDD contribution, include:
 - Link to your technical review comments.
 - Link to the approved PR or merge commit.
 
-## **Phase 3: Continuous Integration**
+## **Phase 3: Continuous Integration - 20 pts**
 This **Continuous Integration (CI) Lab** builds upon the testing and TDD work completed in the previous phases. You will extend the testing process by enhancing existing tests and integrating **GitHub Actions** to automate testing and code-quality checks.
 
 You will configure a CI pipeline, improve test coverage, enforce quality gates, and learn to diagnose and fix failing CI runs. All contributions will follow the collaborative Git and GitHub workflow introduced in the Git and GitHub Lab.
@@ -662,6 +654,7 @@ Your combined CI PR must include the following:
 #### **5. Coverage Artifact Upload**
 - Configure CI to upload the coverage report as an artifact.
 - Evidence: Screenshot or link showing the artifact.
+
 #### **6. Status Badges in README**
 - Add build, lint, and/or coverage badges to `README.md`.
 - Evidence: Updated README rendered on GitHub.
