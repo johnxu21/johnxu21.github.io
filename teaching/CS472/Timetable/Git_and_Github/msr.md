@@ -395,7 +395,7 @@ Create or claim an issue covering the repository analysis and executive summary.
 Example:
 
 ```text
-Title: Analyze Rootbeer repository activity for Jane Doe
+Title: Analyze Rootbeer repository activity for John Businge
 
 Description:
 Analyze file and contributor activity in the scottyab/rootbeer repository and prepare an executive summary.
@@ -408,7 +408,7 @@ Acceptance Criteria:
 - No credentials or unrelated files are committed.
 ```
 
-Replace the example name with your own name.
+Replace the "John Businge" with your own name.
 
 #### Protect Your GitHub Credentials
 
@@ -432,16 +432,17 @@ See the [GitHub documentation on managing personal access tokens](https://docs.g
 
 Adapt `<github-username>_collect_files.py` to collect only source files from the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) repository.
 
-A repository may contain source code, tests, documentation, configuration files, generated files, images, and other artifacts. Determine which files qualify as source files for this analysis.
+A repository may contain source code, tests, documentation, configuration files, generated files, compiled files, images, and other artifacts. Determine which files qualify as source files for this analysis.
 
 Your solution should:
 
 - Identify the programming languages used in the repository.
 - Include appropriate source-file extensions.
-- Exclude non-source and generated files where appropriate.
+- Exclude non-source, generated, and compiled files where appropriate.
+- Determine the repository's default branch rather than assuming it is named `main`.
 - Produce a list of the source files selected for analysis.
 
-Document and justify your definition of a source file in the pull-request description. Briefly mention any important limitation created by this definition in the Part 3 executive summary.
+Document and justify your definition of a source file in the pull-request description, including one limitation of your selection criteria.
 
 #### Task 2: Collect Author and File-Touch Data
 
