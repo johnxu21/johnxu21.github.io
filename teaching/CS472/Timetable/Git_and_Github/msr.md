@@ -90,7 +90,7 @@ In a real project, an issue may describe a feature, bug, test, or documentation 
 
 One team member will serve as the repository owner and should:
 
-- Create a GitHub repository named after the team, such as `Group-1`.
+- Create the repository as a public repository so that team members can fork it, such as `Group-1`.
 - Initialize the repository with a `README.md`.
 - Add all team members as collaborators.
 - Add the instructor and TA as collaborators:
@@ -368,7 +368,7 @@ After confirming that the requested changes have been addressed and any conflict
 
 In this individual exercise, you will analyze how developers have changed an open-source repository over time. You will adapt a starter script, collect file and contributor activity, and visualize the results.
 
-Apply the Git and GitHub workflow practiced in Part 1. Create or claim an issue, work on a uniquely named branch, make focused commits, and push your work to your fork. You will add the Part 3 executive summary to the same branch before opening the final pull request.
+Apply the Git and GitHub workflow practiced in Part 1. Create or claim an issue, work on a uniquely named branch, make focused commits, and push your work to your GitHub repository. For most students, this will be their fork; for the repository owner, it will be the team repository.
 
 A teammate will review the completed pull request containing your Part 2 and Part 3 work.
 
@@ -441,7 +441,7 @@ Your solution should:
 - Exclude non-source and generated files where appropriate.
 - Produce a list of the source files selected for analysis.
 
-Document and justify your definition of a source file in the Part 3 executive summary.
+Document and justify your definition of a source file in the pull-request description. Briefly mention any important limitation created by this definition in the Part 3 executive summary.
 
 #### Task 2: Collect Author and File-Touch Data
 
@@ -537,8 +537,6 @@ The report must include:
 - The scatter plot produced in Part 2
 - An explanation of what the visualization shows
 - At least one limitation of the analysis
-- A brief reflection identifying the Git commands that were particularly useful during the lab
-- Link to your GitHub fork
 
 Name the report:
 
@@ -556,7 +554,7 @@ After adding the executive summary, confirm that your branch contains:
 - Generated visualization
 - Executive summary PDF
 
-Make a focused commit for the executive summary and push the updated branch to your fork.
+Make a focused commit for the executive summary and push the updated branch. Students using forks should push to their fork; the repository owner should push the branch to the team repository.
 
 Open one pull request from your repository-mining branch to the upstream team repository. The PR should:
 
@@ -592,11 +590,13 @@ The author must respond to the review and address any requested changes. Once th
 Submit the following on Canvas:
 
 - Executive summary PDF
-- Link to your Part 1 issue and pull request
-- Link to your Parts 2 and 3 issue and final pull request
+- Link to your Part 1 pull request
+- Link to your final Parts 2 and 3 pull request
 - Links to the two pull requests you reviewed: one from Part 1 and one from Parts 2 and 3
+- Link to your GitHub fork, or to the team repository if you are the repository owner
+- A brief reflection entered directly in Canvas identifying the Git commands that were particularly useful during the lab
 
-Each pull request must link to its corresponding issue and show the commits, changed files, review comments, approval, and merge status.
+Each submitted pull request must link to its corresponding issue and show the commits, changed files, review comments, approval, and merge status.
 
 #### Part 3 Grading
 
