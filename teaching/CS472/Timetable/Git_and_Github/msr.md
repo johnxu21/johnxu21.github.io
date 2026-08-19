@@ -59,12 +59,12 @@ In this lab, you will practice Git and GitHub through a fork-based workflow that
 ## Learning Objectives
 
 By completing this lab, you should be able to:
-- Distinguish among an upstream repository, a GitHub fork, and a local clone.
-- Create a branch, make meaningful commits, and push your changes.
-- Open a pull request and participate in peer review.
-- Synchronize a fork with the upstream repository and resolve merge conflicts when they occur.
-- Extract, visualize, and interpret repository activity.
-- Communicate findings in a concise executive summary.
+
+- Apply an issue-to-merge workflow using forks, branches, commits, pull requests, and reviews.
+- Synchronize repositories and resolve merge conflicts when they occur.
+- Review a teammate's contribution and respond to feedback.
+- Securely mine and classify repository activity.
+- Visualize, interpret, and communicate repository findings.
 
 ## Prerequisites
 
@@ -75,6 +75,26 @@ You must have Git installed, an active GitHub account, and basic familiarity wit
 This is primarily an individual assignment. Before teams are formed, you may clone the starter repository in a separate location, study and adapt the scripts, analyze the Rootbeer repository, generate the visualization, and begin drafting the executive summary.
 
 After your team repository is available, create or claim the required issue, create your repository-mining branch, and add the completed Part 2 and Part 3 files to the `repo_mining` directory in your local team-repository clone.
+
+## Collaboration Deadlines and Non-Blocking Policy
+
+Collaborative work creates dependencies between team members. Complete your contribution early enough for another student to review it and for you to address any requested changes.
+
+Unless otherwise stated:
+
+- Your pull request must be complete and ready for review at least **24 hours before the assignment deadline**.
+- A review-ready pull request must contain the required work, link to its issue, and not be marked as a draft.
+- Assigned reviewers should complete their reviews promptly and no later than the assignment deadline.
+- Round-robin assignments identify the initial reviewer but are not exclusive. Another teammate may review and approve the pull request if the assigned reviewer is unavailable.
+- If the teammate you were assigned to review has not opened a review-ready pull request, review another available teammate's pull request and submit that link on Canvas.
+- If your assigned reviewer does not respond, request a review from another teammate. You do not need to wait for the original reviewer.
+- Notify the instructor or TA before the deadline if no teammate is available to review your work.
+
+GitHub timestamps will be used to distinguish work completed on time from delays caused by another team member. A student who opens a complete, review-ready pull request on time and makes a reasonable effort to obtain a review will not be penalized because another student submitted late or failed to complete an assigned review.
+
+Students who submit late remain responsible for obtaining the required review. Other team members are not required to delay their own submissions or completed work to accommodate a late contribution.
+
+This policy also applies to the **Testing and Continuous Integration Lab** and to subsequent work on the **team project**. Communicate dependencies early, review teammates' work promptly, and do not allow unfinished or unreviewed work to block the team.
 
 ### **Part 1. Practice the Fork-Based Contribution Workflow (5 pts)**
 

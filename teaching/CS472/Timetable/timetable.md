@@ -100,15 +100,15 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mo 08/24</td>
 <td style="border: 1px solid black;">[T] Class overview</td>
 <td style="border: 1px solid black;">We 08/26</td>
-<td style="border: 1px solid black;">[T] Intro to Git & GitHub </td>
+<td style="border: 1px solid black;">[T] Intro to Git & GitHub</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">02</td>
 <td style="border: 1px solid black;">Mo 08/31</td>
-<td style="border: 1px solid black;">[T] Intro to Git & GitHub</td>
+<td style="border: 1px solid black;">[L] Intro to Git & GitHub</td>
 <td style="border: 1px solid black;">We 09/02 </td>
-<td style="border: 1px solid black;">[L] Intro to Git & GitHub </td>
+<td style="border: 1px solid black;">[T] Software Testing & CI</td>
 </tr>
 
 <tr>
@@ -116,7 +116,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mo 09/07 </td>
 <td style="border: 1px solid black;">Labor Day recess </td>
 <td style="border: 1px solid black;">We 09/09 </td>
-<td style="border: 1px solid black;">[T] Software Testing </td>
+<td style="border: 1px solid black;">[L] Software Testing & CI</td>
 </tr>
 
 <tr>
@@ -124,13 +124,13 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mo 09/14</td>
 <td style="border: 1px solid black;">[L] Free Project Work</td>
 <td style="border: 1px solid black;">We 09/16 </td>
-<td style="border: 1px solid black;">[T] Continuous Integration</td>
+<td style="border: 1px solid black;">[T] Designing Collaborative Development</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Mo 09/21</td>
-<td style="border: 1px solid black;">[T] Designing Collaborative Development</td>
+<td style="border: 1px solid black;">[L] Free Project work</td>
 <td style="border: 1px solid black;">We 09/23 </td>
 <td style="border: 1px solid black;">[L] Free Project work</td>
 </tr>
