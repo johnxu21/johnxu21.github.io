@@ -62,7 +62,7 @@ By completing this lab, you should be able to:
 - Distinguish among an upstream repository, a GitHub fork, and a local clone.
 - Create a branch, make meaningful commits, and push your changes.
 - Open a pull request and participate in peer review.
-- Synchronize a fork with upstream and resolve merge conflicts.
+- Synchronize a fork with the upstream repository and resolve merge conflicts when they occur.
 - Extract, visualize, and interpret repository activity.
 - Communicate findings in a concise executive summary.
 
@@ -72,9 +72,9 @@ You must have Git installed, an active GitHub account, and basic familiarity wit
 
 ## Individual and Team Components
 
-This is primarily an individual assignment. You may begin **Parts 2 and 3** before teams are formed.
+This is primarily an individual assignment. Before teams are formed, you may clone the starter repository in a separate location, study and adapt the scripts, analyze the Rootbeer repository, generate the visualization, and begin drafting the executive summary.
 
-After teams are formed, complete **Part 1** using the team repository as the authoritative upstream repository. Except for the repository owner, each member will contribute through an individual fork. You will then submit your work from Parts 2 and 3 to the team repository using the same contribution workflow.
+After your team repository is available, create or claim the required issue, create your repository-mining branch, and add the completed Part 2 and Part 3 files to the `repo_mining` directory in your local team-repository clone.
 
 ### **Part 1. Practice the Fork-Based Contribution Workflow (5 pts)**
 
@@ -274,6 +274,21 @@ The repository owner should open a PR from a branch in the team repository. Othe
 
 #### 7. Review a Teammate's Pull Request
 
+#### Round-Robin Review Assignment
+
+The team should assign reviews in a round-robin sequence (This also applies to Parts 2 and 3). For example:
+
+- Student 1 reviews Student 2.
+- Student 2 reviews Student 3.
+- Student 3 reviews Student 4.
+- Continue until the final student reviews Student 1.
+
+The same assignment should be used for the Part 1 PR and the combined Part 2 and Part 3 PR unless the team agrees on another balanced rotation.
+
+The student assigned to review the repository owner should also review the initial `setup-contributors` PR.
+
+Reviewers should complete reviews promptly. Do not delay a teammate's submission by leaving an assigned review unfinished.
+
 Each student must review one teammate's PR. For this exercise, check that:
 
 - The PR is linked to the correct issue.
@@ -304,11 +319,13 @@ If the contribution satisfies all requirements, the reviewer may approve it and 
 Approved. I verified the issue link, contributor information, table format, alphabetical ordering, and scope of the change.
 ```
 
-#### 8. Address Feedback and Resolve Conflicts
+#### 8. Address Feedback and Resolve Conflicts When Necessary
 
 If the reviewer requests changes, update the same branch, commit the revision, and push again. The existing PR will update automatically.
 
-Because several team members are editing the same file, your branch may conflict with changes already merged into `main`. If this occurs, synchronize your branch:
+Because several team members are editing the same file, your branch may conflict with changes already merged into `main`.
+
+**Students working through forks** should update their contribution branch from the upstream team repository:
 
 ```bash
 git fetch upstream
@@ -316,14 +333,25 @@ git switch contributors-<github-username>
 git merge upstream/main
 ```
 
-Resolve the conflict in `contributors.txt`, preserve all valid entries, and remove the conflict markers. Then run:
+**The repository owner** should update the contribution branch from `origin`, because the owner's `origin` is the team repository:
+
+```bash
+git fetch origin
+git switch contributors-<github-username>
+git merge origin/main
+```
+
+Resolve the conflict in `contributors.txt`, preserve all valid entries, and remove the conflict markers. Then commit and push the resolution:
 
 ```bash
 git add contributors.txt
 git commit -m "Resolve contributor list conflict"
 git push origin contributors-<github-username>
 ```
-After confirming that the requested changes have been addressed and any conflicts have been resolved, the reviewer should approve the PR and ask the author to merge it into `main`. Authors must not merge their PRs before receiving approval from a teammate.
+
+The existing pull request will update automatically. Do not open another pull request.
+
+After confirming that the requested changes have been addressed and any conflicts have been resolved, the reviewer should approve the pull request and ask the author to merge it into `main`. Authors must not merge their pull requests before receiving approval from a teammate.
 
 #### Part 1 Grading
 
@@ -331,7 +359,7 @@ After confirming that the requested changes have been addressed and any conflict
 - Issue created with appropriate acceptance criteria: **1 point**
 - Branch, commit, and push completed correctly: **1 point**
 - Pull request linked to the issue: **1 point**
-- Teammate's PR reviewed and feedback addressed: **1 point**
+- Teammate's PR reviewed with evidence-based feedback, and any feedback received on the student's own PR was addressed: **1 point**
 
 
 ### **Part 2. Mine and Analyze Repository Activity (20 pts)**
@@ -509,8 +537,8 @@ The report must include:
 - The scatter plot produced in Part 2
 - An explanation of what the visualization shows
 - At least one limitation of the analysis
-- A few sentences identifying Git commands that were particularly useful during the lab
-- A link to your GitHub fork
+- A brief reflection identifying the Git commands that were particularly useful during the lab
+- Link to your GitHub fork
 
 Name the report:
 
@@ -564,8 +592,11 @@ The author must respond to the review and address any requested changes. Once th
 Submit the following on Canvas:
 
 - Executive summary PDF
-- Link to the GitHub issue
-- Link to the final pull request
+- Link to your Part 1 issue and pull request
+- Link to your Parts 2 and 3 issue and final pull request
+- Links to the two pull requests you reviewed: one from Part 1 and one from Parts 2 and 3
+
+Each pull request must link to its corresponding issue and show the commits, changed files, review comments, approval, and merge status.
 
 #### Part 3 Grading
 
