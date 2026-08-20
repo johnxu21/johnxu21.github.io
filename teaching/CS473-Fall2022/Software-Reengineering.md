@@ -43,7 +43,7 @@ height:40px;" value="Reengineering Project" />
 Where ? When ?
 * Theory & Exercises all during the same time slot
 * Time: MoWe 5:30PM-6:45PM
-* Location: FDH 217
+* Location: FDH 203
 
 **Communication**
 
@@ -109,42 +109,42 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 
 <tr>
 <td style="border: 1px solid black;">01</td>
-<td style="border: 1px solid black;">Mo 08/25</td>
+<td style="border: 1px solid black;">Mo 08/24</td>
 <td style="border: 1px solid black;">[T] Class overview</td>
-<td style="border: 1px solid black;">We 08/27</td>
+<td style="border: 1px solid black;">We 08/26</td>
 <td style="border: 1px solid black;">[T] Introduction </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">02</td>
-<td style="border: 1px solid black;">Mo 09/01</td>
-<td style="border: 1px solid black;">Public Holiday </td>
-<td style="border: 1px solid black;">We 09/03 </td>
+<td style="border: 1px solid black;">Mo 08/31</td>
+<td style="border: 1px solid black;">[L] Metrics and Visualization</td>
+<td style="border: 1px solid black;">We 09/02 </td>
 <td style="border: 1px solid black;">[L] Metrics and Visualization </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">03</td>
-<td style="border: 1px solid black;">Mo 09/08 </td>
-<td style="border: 1px solid black;">[L] Refactoring assistants 1</td>
-<td style="border: 1px solid black;">We 09/10 </td>
+<td style="border: 1px solid black;">Mo 09/07 </td>
+<td style="border: 1px solid black;">Public Holiday</td>
+<td style="border: 1px solid black;">We 09/09 </td>
 <td style="border: 1px solid black;">[L] Refactoring assistants 2</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">05</td>
-<td style="border: 1px solid black;">Mo 09/15 </td>
-<td style="border: 1px solid black;">[L] Dynamic Analysis: Testing 1 </td>
-<td style="border: 1px solid black;">We 09/17 </td>
-<td style="border: 1px solid black;">[L] Dynamic Analysis: Testing 2 </td>
+<td style="border: 1px solid black;">Mo 09/14 </td>
+<td style="border: 1px solid black;">[L] Dynamic Analysis: Testing </td>
+<td style="border: 1px solid black;">We 09/16 </td>
+<td style="border: 1px solid black;">[L] Dynamic Analysis: Testing </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">04</td>
-<td style="border: 1px solid black;">Mo 09/22</td>
-<td style="border: 1px solid black;">[L] Software Integration  1 </td>
-<td style="border: 1px solid black;">We 09/24 </td>
-<td style="border: 1px solid black;">[L] Software Integration 2 </td>
+<td style="border: 1px solid black;">Mo 09/21</td>
+<td style="border: 1px solid black;">[L] Software Integration </td>
+<td style="border: 1px solid black;">We 09/23 </td>
+<td style="border: 1px solid black;">[L] Software Integration </td>
 </tr>
 
 
@@ -152,90 +152,90 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 
 <tr>
 <td style="border: 1px solid black;">06</td>
-<td style="border: 1px solid black;">Mo 09/29</td>
-<td style="border: 1px solid black;">[L] Mining Software Repositories  1 </td>
-<td style="border: 1px solid black;">We 10/01</td>
-<td style="border: 1px solid black;">[L] Mining Software Repositories 2</td>
+<td style="border: 1px solid black;">Mo 09/28</td>
+<td style="border: 1px solid black;">[L] Mining Software Repositories </td>
+<td style="border: 1px solid black;">We 09/30</td>
+<td style="border: 1px solid black;">[L] Mining Software Repositories</td>
 </tr>
 
 
 <tr>
 <td style="border: 1px solid black;">07</td>
-<td style="border: 1px solid black;">Mo 10/06</td>
+<td style="border: 1px solid black;">Mo 10/05</td>
 <td style="border: 1px solid black;">[L] Project discussion</td>
-<td style="border: 1px solid black;">We 10/08</td>
+<td style="border: 1px solid black;">We 10/07</td>
 <td style="border: 1px solid black;">Free project Work <br/> <b>[Milestone 1] Groups Assembled + <br/> Precondition report</b> </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">08</td>
-<td style="border: 1px solid black;">Mo 10/13</td>
+<td style="border: 1px solid black;">Mo 10/12</td>
 <td style="border: 1px solid black;">Free project Work  </td>
-<td style="border: 1px solid black;">We 10/15</td>
+<td style="border: 1px solid black;">We 10/14</td>
 <td style="border: 1px solid black;">Free project Work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">09</td>
-<td style="border: 1px solid black;">Mo 10/20 </td>
+<td style="border: 1px solid black;">Mo 10/19 </td>
 <td style="border: 1px solid black;">Free project Work </td>
-<td style="border: 1px solid black;">We 10/22</td>
+<td style="border: 1px solid black;">We 10/21</td>
 <td style="border: 1px solid black;">Free project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">10</td>
-<td style="border: 1px solid black;">Mo 10/27</td> 
+<td style="border: 1px solid black;">Mo 10/26</td> 
 <td style="border: 1px solid black;">Free project Work </td>
-<td style="border: 1px solid black;">We 10/29</td>
+<td style="border: 1px solid black;">We 10/28</td>
 <td style="border: 1px solid black;">Free project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">11</td>
-<td style="border: 1px solid black;">Mo 11/03</td>
+<td style="border: 1px solid black;">Mo 11/02</td>
 <td style="border: 1px solid black;">Free project Work </td>
-<td style="border: 1px solid black;">We 11/05</td>
+<td style="border: 1px solid black;">We 11/04</td>
 <td style="border: 1px solid black;">Free project Work <br> <b> [Milestone 2] Intermediate Report</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">12</td>
-<td style="border: 1px solid black;">Mo 11/10</td>
+<td style="border: 1px solid black;">Mo 11/09</td>
 <td style="border: 1px solid black;">Free project Work</td>
-<td style="border: 1px solid black;">We 11/12</td>
+<td style="border: 1px solid black;">We 11/11</td>
 <td style="border: 1px solid black;">Free project Work </td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">13</td>
-<td style="border: 1px solid black;">Mo 11/17</td>
+<td style="border: 1px solid black;">Mo 11/16</td>
 <td style="border: 1px solid black;">Concluding Remarks <br> <b>[Milestone 2] Feedback session</b></td>
-<td style="border: 1px solid black;">We 11/19</td>
+<td style="border: 1px solid black;">We 11/18</td>
 <td style="border: 1px solid black;">Free project Work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">14</td>
-<td style="border: 1px solid black;">Mo 11/24</td>
+<td style="border: 1px solid black;">Mo 11/23</td>
 <td style="border: 1px solid black;">Free project Work</td>
-<td style="border: 1px solid black;">We 11/26</td>
+<td style="border: 1px solid black;">We 11/25</td>
 <td style="border: 1px solid black;">Free project Work</td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">15</td>
-<td style="border: 1px solid black;">Mo 12/01</td>
+<td style="border: 1px solid black;">Mo 11/30</td>
 <td style="border: 1px solid black;">Free project Work</td>
-<td style="border: 1px solid black;">We 12/03</td>
+<td style="border: 1px solid black;">We 12/02</td>
 <td style="border: 1px solid black;">Free project Work >> <b>Final Report</b></td>
 </tr>
 
 <tr>
 <td style="border: 1px solid black;">16</td>
-<td style="border: 1px solid black;">Mo 12/08</td>
+<td style="border: 1px solid black;">Mo 12/07</td>
 <td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">We 12/10</td>
+<td style="border: 1px solid black;">We 12/09</td>
 <td style="border: 1px solid black;"><b> Exam</b></td>
 </tr>
 
