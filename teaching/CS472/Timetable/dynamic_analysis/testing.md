@@ -48,7 +48,7 @@ height:30px;" value="Generative AI" />
 <br/>
 
 
-### **This individual assignment is due Sept 20, 2026**
+### **This individual assignment is due Sept 18, 2026**
 
 Overview
 ========
