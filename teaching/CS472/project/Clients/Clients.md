@@ -52,43 +52,45 @@ height:30px;" value="SD Competition" />
 <br/>
 <br/>
 
+<h2>Client-Sponsored Projects</h2>
+
 <p>
-Choosing a <strong>client-sponsored project</strong> gives your team the opportunity to work with real stakeholders 
-who provide requirements, feedback, and direction throughout the semester. Most of our clients are 
-<strong>experienced software developers</strong> who have completed senior design or similar capstone projects 
-themselves, so they understand the challenges students face and how to support teams effectively. 
-This allows you to focus your energy on <em>design and development</em> while receiving practical, informed guidance 
-during implementation.
+Client-sponsored projects allow students to work with real stakeholders who
+provide requirements, feedback, and project context throughout the semester.
 </p>
 
 <p>
-In contrast, teams that create their own custom projects must define requirements from scratch—often leading to 
-unrealistic or less engaging “virtual client” scenarios. Working with an external client offers 
-<strong>clearer goals, real-world constraints, and professional collaboration</strong> that closely mirror 
-industry practice, while still providing a supportive environment tailored to student teams.
+One client-sponsored project is currently available. Students may also identify
+another potential client, but they must first introduce the client to the
+instructor. The instructor will communicate the course requirements and confirm
+that the proposed project is appropriate before the team commits to it.
 </p>
 
+<h3>GlamBrandi Travel & Shopping (GBTS)</h3>
 
 <p>
-Review the opportunities below and consider selecting a client project that aligns with your team’s interests and 
-career goals.
+GBTS is a client-sponsored full-stack project supported by technical mentors
+in frontend, backend, and AI development. The client has proposed a structured
+13-week plan with parallel implementation areas, regular communication, and
+technical review of student contributions.
 </p>
 
-1. ARED Group Inc [Project Details](Spring-26/ARED_Group_Inc.pdf)
-2. Estimarmine [Project Details](Spring-26/Estimarmine_Precondition_Report.pdf)
-  * There will be a technical mentor.
-3. GLAMBRANDI [Project Details](Spring-26/GLAMBRANDI.pdf)
-  * This project includes a technical lead who will review pull requests, provide technical feedback, and integrate completed work. Students will also work with domain stakeholders for requirements and context.
-4. UnVRap [Project Details](Spring-26/UnVRap.pdf)
-  * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
-5. Farmer Community [Project Details](Spring-26/Farmer-Community.pdf)
-  * This project includes a dedicated technical lead (Paula) who will review pull requests, provide technical feedback, and integrate completed work. Students will also interact with domain stakeholders (Project Manager and Founder) for product context and requirements. Teams should expect regular meetings and standups, with technical guidance provided by the technical lead.
-6. Personalized LMS Feature Integration [Project Details](Spring-26/Personalized_LMS_Feature_Integration.pdf)
-  * This project offers strong technical mentorship. Students will have access to an experienced technical lead who can review pull requests, provide in-depth technical feedback, and manage repository integration, alongside domain and product guidance. Teams will have meaningful ownership of implementation while benefiting from structured technical ov
-7. Foot Canada Training [Project Details](Spring-26/Foot_Canada_Training.pdf)
-  * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
-8. Budtenders Association Inc [Project Details](Spring-26/Budtenders_Association_Inc.pdf)
-  * This project uses a hybrid mentorship model. Students will work with a technical mentor who can review pull requests, provide technical feedback, and help integrate completed work, alongside a domain lead who provides product context and business guidance.
-9. AI-Powered_Exam_Question_Recommender [Project Details](Spring-26/AI-Powered_Exam_Question_Recommender.pdf)
- * This project is sponsored by a domain expert (non-technical stakeholder). Teams selecting this project should be comfortable taking primary responsibility for technical design decisions, clarifying requirements, and translating domain needs into a concrete software implementation, with guidance focused on problem context and workflows rather than specific technologies.
+<p>
+Students interested in this opportunity should carefully review the client’s
+precondition report, including the proposed scope, technologies, collaboration
+expectations, and NDA requirement.
+</p>
 
+<p>
+<a href="Fall-26/GBTS_Client_Precondition_Report.pdf">
+<strong>Review the GBTS Client Precondition Report</strong>
+</a>
+</p>
+
+<h3>Custom Projects</h3>
+
+<p>
+Teams may also propose their own projects. A custom-project team must define a
+meaningful problem, identify its intended users, establish a feasible MVP, and
+prepare a precondition report for instructor approval.
+</p>

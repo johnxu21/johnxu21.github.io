@@ -106,13 +106,8 @@ Because `main` is protected and several students will open PRs that touch shared
 - This is especially important in Phase 2 and Phase 3, where students share the same TDD and CI files.
 
 ### Address Feedback and Merge
-For every PR (setup or substantive), the author must:
 
-- Address requested changes and respond to reviewer comments.
-- Resolve merge conflicts.
-- Resolve review conversations before merging.
-
-A PR may be merged only after receiving the required approval. Once satisfied, the reviewer should approve the PR and ask the author to merge it. Do not push directly to `main`; changes must be merged through an approved PR.
+Before merging, authors must address requested changes, resolve review conversations and merge conflicts, and obtain the required approval. Do not push directly to `main`.
 
 Software testing
 =========

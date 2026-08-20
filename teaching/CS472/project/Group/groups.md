@@ -54,14 +54,13 @@ height:30px;" value="SD Competition" />
 
 ## Group Formation Guidelines
 
-This semester has **84 enrolled students**, and we will form **8 project teams of 10–11 students each**.
+This semester has approximately **22–24 students**, who will form **3 project teams of about 7–8 students each**.
 
-Teams will be formed **based on project selection**. Students may either:
-- propose a **custom project**, or
-- select from the list of **client-sponsored projects**.
+Teams will be formed based on project selection. Students may either:
 
-During the first week of the semester, students will review all available projects and **rank their project preferences via a survey**. Teams will then be formed around shared project interests. When a project attracts more students than available slots, final team composition will be determined based on skill balance, project needs, and overall team alignment.
+- select the available **client-sponsored project**, or
+- propose a **custom project** and prepare its precondition report.
 
-Group formation will be finalized **by the end of the first week** so project work can begin immediately.
+During the first week, students will review the available project information and rank their preferences through a survey. Teams will be formed around shared interests while also considering project needs, skill balance, and appropriate team sizes.
 
-
+Team formation will be finalized **by the end of the first week** so project work can begin promptly.
