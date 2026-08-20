@@ -73,24 +73,21 @@ Contribution model for this full lab:
     3. One combined CI PR (Phase 3).
 - One review per student for each phase (test-coverage, TDD, and CI), assigned via a fixed round-robin order (see Branch Protection and Peer Review for the pairing rules, including setup PRs).
 - After each setup PR is merged, synchronize your fork before beginning individual work for that phase (see Merge Coordination for the general re-sync rule).
-
+- Setup points assess each student’s ability to synchronize the repository, install dependencies, and run the project successfully. Only the designated setup author submits the setup PR, but every student must provide evidence that the merged setup works in their environment.
+- **Recommended progress**: Complete each phase early enough to allow time for review, revision, and merging. Do not wait until the final deadline to begin all three phases. Teams should establish internal deadlines for each setup PR and each round of individual PRs.
 
 ## Branch Protection and Peer Review
-The team repository's `main` branch is protected. **Every PR must receive at least one teammate's approval before it can be merged.**
 
-### Review Assignment (Round-Robin)
-At the start of the lab, each team establishes a fixed review order covering all three phases and all setup PRs. For example, in a team of four (Students A, B, C, D):
+Follow the branch-protection and peer-review process established in the [Git and GitHub Lab](/teaching/CS472/Timetable/Git_and_GitHub/).
 
-- Student A reviews Student B's PRs.
-- Student B reviews Student C's PRs.
-- Student C reviews Student D's PRs.
-- Student D reviews Student A's PRs.
+Every setup and substantive PR must:
 
-The same round-robin pairing applies to setup PRs: whoever is assigned to review a student's substantive PRs also reviews that student's setup PR if they are the designated setup author.
+- Receive at least one teammate’s approval before merging.
+- Be reviewed according to the team’s established round-robin assignment.
+- Receive concise, evidence-based feedback using relevant tests, coverage results, CI logs, code, or acceptance criteria.
+- Have requested changes and review conversations addressed before merging.
 
-### Review Expectations
-- Complete assigned reviews promptly. A delayed review can block a teammate's PR and prevent the team from starting the next phase.
-- Reviews should be **concise and evidence-based**. You are not required to comment on every review criterion listed in each phase (focus on the most relevant points, backed by test results, coverage reports, or CI logs).
+Complete reviews promptly so that teammates are not blocked.
 
 ### Reviewing a Setup PR
 When reviewing a setup PR, verify that:
@@ -132,8 +129,7 @@ However, the presence of automated tests alone does not guarantee software quali
 - Do the tests cover the entire system, or are some parts left untested?  
 - To what extent are different parts of the system covered?  
 
-Measuring **test coverage** is a valuable and necessary practice in assessing the effectiveness of a test suite, ensuring that critical components of the software are thoroughly tested.
-
+**Test coverage** helps identify code that has not been exercised, but coverage alone does not establish test quality. Tests must also contain meaningful assertions and verify important behavior.
 
 Materials & Tools Used for this Session
 ===============
@@ -186,7 +182,7 @@ pip install -r requirements-dev.txt
 Run the existing tests:
 
 ```bash
-pytest
+pytest --cov=models --cov-report=term-missing
 ```
 
 Ensure that:
@@ -365,7 +361,7 @@ For your individual contribution, include:
 
 - Environment set up correctly (fork synchronized, `test_coverage_lab` folder created, dependencies installed, existing tests passing): **2 points**
 - Issue created with clear acceptance criteria for the assigned test case: **1 point**
-- Test case correctly implemented with meaningful assertions and measurable coverage improvement: **3 points**
+- Test case correctly implemented with meaningful assertions and evidence that the assigned behavior is exercised: **3 points**
 - Pull request linked to the issue, describing the test and including test/coverage evidence: **2 points**
 - Technical peer review completed and any feedback received was addressed: **1 point**
 - Lab report complete, with all required links and evidence: **1 point**
@@ -575,7 +571,7 @@ Each student must:
 4. Write the test **before** implementing the feature.
 5. Demonstrate the **<span style="color:red">RED</span>** phase by showing the test initially fails.
 6. Implement the minimum code required for the **<span style="color:green">GREEN</span>** phase.
-7. Refactor the implementation where appropriate.
+7. Refactor the implementation where useful, or briefly justify why no refactoring was necessary.
 8. Run the complete test suite and coverage.
 9. Open a focused PR from their fork to the **team repository**.
 10. Link the PR to the issue.
@@ -623,7 +619,7 @@ For your TDD contribution, include:
 - Issue created with clear acceptance criteria for the assigned feature: **1 point**
 - RED phase evidence (failing test written before implementation): **3 points**
 - GREEN phase implementation (minimum code required to pass the test): **3 points**
-- REFACTOR phase (implementation improved without changing behavior, tests still passing): **3 points**
+- REFACTOR phase (appropriate improvement made without changing behavior, or a clear justification provided when no refactoring was needed):: **3 points**
 - Pull request focused, linked to the issue, and includes RED/GREEN/REFACTOR evidence: **2 points**
 - Technical peer review completed and any feedback received was addressed: **2 points**
 - Lab report complete, with all required links and evidence: **2 points**
@@ -715,9 +711,10 @@ Your combined CI PR must include the following:
 - Configure CI to upload the coverage report as an artifact.
 - Evidence: Screenshot or link showing the artifact.
 
-##### **6. Status Badges in README**
-- Add build, lint, and/or coverage badges to `README.md`.
-- Evidence: Updated README rendered on GitHub.
+##### **6. CI Visibility and Documentation**
+- Add appropriate CI status badges to `README.md`.
+- Briefly document the automated checks and explain how contributors can investigate a failed check.
+- Evidence: Rendered README, workflow run, and documented controlled failure and fix.
 
 ##### **7. Split Jobs**
 - Separate the workflow into distinct `lint`, `test`, and `coverage` jobs.

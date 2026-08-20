@@ -235,7 +235,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">16</td>
 <td style="border: 1px solid black;">Mo 12/07</td>
 <td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">We 12/09</td>
+<td style="border: 1px solid black;">We 12/07</td>
 <td style="border: 1px solid black;"><b> Exam</b></td>
 </tr>
 
