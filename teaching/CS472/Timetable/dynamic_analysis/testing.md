@@ -619,16 +619,15 @@ For your TDD contribution, include:
 
 ### ***Grading***
 
-- Setup and work environment complete (fork synchronized, `tdd_lab` folder created, dependencies installed, setup contribution where assigned): **5 points**
+- Setup and work environment complete (fork synchronized, `tdd_lab` folder created, dependencies installed, setup contribution where assigned): **4 points**
 - Issue created with clear acceptance criteria for the assigned feature: **1 point**
 - RED phase evidence (failing test written before implementation): **3 points**
 - GREEN phase implementation (minimum code required to pass the test): **3 points**
-- REFACTOR phase (implementation improved without changing behavior, tests still passing): **2 points**
+- REFACTOR phase (implementation improved without changing behavior, tests still passing): **3 points**
 - Pull request focused, linked to the issue, and includes RED/GREEN/REFACTOR evidence: **2 points**
 - Technical peer review completed and any feedback received was addressed: **2 points**
 - Lab report complete, with all required links and evidence: **2 points**
 
-**Total: 20 points**
 
 ## **Phase 3: Continuous Integration - 20 pts**
 This **Continuous Integration (CI) Lab** builds upon the testing and TDD work completed in the previous phases. You will extend the testing process by enhancing existing tests and integrating **GitHub Actions** to automate testing and code-quality checks.
