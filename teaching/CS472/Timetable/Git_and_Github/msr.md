@@ -59,12 +59,12 @@ In this lab, you will practice Git and GitHub through a fork-based workflow that
 ## Learning Objectives
 
 By completing this lab, you should be able to:
-- Distinguish among an upstream repository, a GitHub fork, and a local clone.
-- Create a branch, make meaningful commits, and push your changes.
-- Open a pull request and participate in peer review.
-- Synchronize a fork with upstream and resolve merge conflicts.
-- Extract, visualize, and interpret repository activity.
-- Communicate findings in a concise executive summary.
+
+- Apply an issue-to-merge workflow using forks, branches, commits, pull requests, and reviews.
+- Synchronize repositories and resolve merge conflicts when they occur.
+- Review a teammate's contribution and respond to feedback.
+- Securely mine and classify repository activity.
+- Visualize, interpret, and communicate repository findings.
 
 ## Prerequisites
 
@@ -72,9 +72,29 @@ You must have Git installed, an active GitHub account, and basic familiarity wit
 
 ## Individual and Team Components
 
-This is primarily an individual assignment. You may begin **Parts 2 and 3** before teams are formed.
+This is primarily an individual assignment. Before teams are formed, you may clone the starter repository in a separate location, study and adapt the scripts, analyze the Rootbeer repository, generate the visualization, and begin drafting the executive summary.
 
-After teams are formed, complete **Part 1** using the team repository as the authoritative upstream repository. Except for the repository owner, each member will contribute through an individual fork. You will then submit your work from Parts 2 and 3 to the team repository using the same contribution workflow.
+After your team repository is available, create or claim the required issue, create your repository-mining branch, and add the completed Part 2 and Part 3 files to the `repo_mining` directory in your local team-repository clone.
+
+## Collaboration Deadlines and Non-Blocking Policy
+
+Collaborative work creates dependencies between team members. Complete your contribution early enough for another student to review it and for you to address any requested changes.
+
+Unless otherwise stated:
+
+- Your pull request must be complete and ready for review at least **24 hours before the assignment deadline**.
+- A review-ready pull request must contain the required work, link to its issue, and not be marked as a draft.
+- Assigned reviewers should complete their reviews promptly and no later than the assignment deadline.
+- Round-robin assignments identify the initial reviewer but are not exclusive. Another teammate may review and approve the pull request if the assigned reviewer is unavailable.
+- If the teammate you were assigned to review has not opened a review-ready pull request, review another available teammate's pull request and submit that link on Canvas.
+- If your assigned reviewer does not respond, request a review from another teammate. You do not need to wait for the original reviewer.
+- Notify the instructor or TA before the deadline if no teammate is available to review your work.
+
+GitHub timestamps will be used to distinguish work completed on time from delays caused by another team member. A student who opens a complete, review-ready pull request on time and makes a reasonable effort to obtain a review will not be penalized because another student submitted late or failed to complete an assigned review.
+
+Students who submit late remain responsible for obtaining the required review. Other team members are not required to delay their own submissions or completed work to accommodate a late contribution.
+
+This policy also applies to the **Testing and Continuous Integration Lab** and to subsequent work on the **team project**. Communicate dependencies early, review teammates' work promptly, and do not allow unfinished or unreviewed work to block the team.
 
 ### **Part 1. Practice the Fork-Based Contribution Workflow (5 pts)**
 
@@ -90,7 +110,7 @@ In a real project, an issue may describe a feature, bug, test, or documentation 
 
 One team member will serve as the repository owner and should:
 
-- Create a GitHub repository named after the team, such as `Group-1`.
+- Create the repository as a public repository so that team members can fork it, such as `Group-1`.
 - Initialize the repository with a `README.md`.
 - Add all team members as collaborators.
 - Add the instructor and TA as collaborators:
@@ -274,6 +294,21 @@ The repository owner should open a PR from a branch in the team repository. Othe
 
 #### 7. Review a Teammate's Pull Request
 
+#### Round-Robin Review Assignment
+
+The team should assign reviews in a round-robin sequence (This also applies to Parts 2 and 3). For example:
+
+- Student 1 reviews Student 2.
+- Student 2 reviews Student 3.
+- Student 3 reviews Student 4.
+- Continue until the final student reviews Student 1.
+
+The same assignment should be used for the Part 1 PR and the combined Part 2 and Part 3 PR unless the team agrees on another balanced rotation.
+
+The student assigned to review the repository owner should also review the initial `setup-contributors` PR.
+
+Reviewers should complete reviews promptly. Do not delay a teammate's submission by leaving an assigned review unfinished.
+
 Each student must review one teammate's PR. For this exercise, check that:
 
 - The PR is linked to the correct issue.
@@ -304,11 +339,13 @@ If the contribution satisfies all requirements, the reviewer may approve it and 
 Approved. I verified the issue link, contributor information, table format, alphabetical ordering, and scope of the change.
 ```
 
-#### 8. Address Feedback and Resolve Conflicts
+#### 8. Address Feedback and Resolve Conflicts When Necessary
 
 If the reviewer requests changes, update the same branch, commit the revision, and push again. The existing PR will update automatically.
 
-Because several team members are editing the same file, your branch may conflict with changes already merged into `main`. If this occurs, synchronize your branch:
+Because several team members are editing the same file, your branch may conflict with changes already merged into `main`.
+
+**Students working through forks** should update their contribution branch from the upstream team repository:
 
 ```bash
 git fetch upstream
@@ -316,14 +353,25 @@ git switch contributors-<github-username>
 git merge upstream/main
 ```
 
-Resolve the conflict in `contributors.txt`, preserve all valid entries, and remove the conflict markers. Then run:
+**The repository owner** should update the contribution branch from `origin`, because the owner's `origin` is the team repository:
+
+```bash
+git fetch origin
+git switch contributors-<github-username>
+git merge origin/main
+```
+
+Resolve the conflict in `contributors.txt`, preserve all valid entries, and remove the conflict markers. Then commit and push the resolution:
 
 ```bash
 git add contributors.txt
 git commit -m "Resolve contributor list conflict"
 git push origin contributors-<github-username>
 ```
-After confirming that the requested changes have been addressed and any conflicts have been resolved, the reviewer should approve the PR and ask the author to merge it into `main`. Authors must not merge their PRs before receiving approval from a teammate.
+
+The existing pull request will update automatically. Do not open another pull request.
+
+After confirming that the requested changes have been addressed and any conflicts have been resolved, the reviewer should approve the pull request and ask the author to merge it into `main`. Authors must not merge their pull requests before receiving approval from a teammate.
 
 #### Part 1 Grading
 
@@ -331,7 +379,7 @@ After confirming that the requested changes have been addressed and any conflict
 - Issue created with appropriate acceptance criteria: **1 point**
 - Branch, commit, and push completed correctly: **1 point**
 - Pull request linked to the issue: **1 point**
-- Teammate's PR reviewed and feedback addressed: **1 point**
+- Teammate's PR reviewed with evidence-based feedback, and any feedback received on the student's own PR was addressed: **1 point**
 
 
 ### **Part 2. Mine and Analyze Repository Activity (20 pts)**
@@ -340,7 +388,7 @@ After confirming that the requested changes have been addressed and any conflict
 
 In this individual exercise, you will analyze how developers have changed an open-source repository over time. You will adapt a starter script, collect file and contributor activity, and visualize the results.
 
-Apply the Git and GitHub workflow practiced in Part 1. Create or claim an issue, work on a uniquely named branch, make focused commits, and push your work to your fork. You will add the Part 3 executive summary to the same branch before opening the final pull request.
+Apply the Git and GitHub workflow practiced in Part 1. Create or claim an issue, work on a uniquely named branch, make focused commits, and push your work to your GitHub repository. For most students, this will be their fork; for the repository owner, it will be the team repository.
 
 A teammate will review the completed pull request containing your Part 2 and Part 3 work.
 
@@ -367,7 +415,7 @@ Create or claim an issue covering the repository analysis and executive summary.
 Example:
 
 ```text
-Title: Analyze Rootbeer repository activity for Jane Doe
+Title: Analyze Rootbeer repository activity for John Businge
 
 Description:
 Analyze file and contributor activity in the scottyab/rootbeer repository and prepare an executive summary.
@@ -380,7 +428,7 @@ Acceptance Criteria:
 - No credentials or unrelated files are committed.
 ```
 
-Replace the example name with your own name.
+Replace the "John Businge" with your own name.
 
 #### Protect Your GitHub Credentials
 
@@ -404,16 +452,17 @@ See the [GitHub documentation on managing personal access tokens](https://docs.g
 
 Adapt `<github-username>_collect_files.py` to collect only source files from the [scottyab/rootbeer](https://github.com/scottyab/rootbeer) repository.
 
-A repository may contain source code, tests, documentation, configuration files, generated files, images, and other artifacts. Determine which files qualify as source files for this analysis.
+A repository may contain source code, tests, documentation, configuration files, generated files, compiled files, images, and other artifacts. Determine which files qualify as source files for this analysis.
 
 Your solution should:
 
 - Identify the programming languages used in the repository.
 - Include appropriate source-file extensions.
-- Exclude non-source and generated files where appropriate.
+- Exclude non-source, generated, and compiled files where appropriate.
+- Determine the repository's default branch rather than assuming it is named `main`.
 - Produce a list of the source files selected for analysis.
 
-Document and justify your definition of a source file in the Part 3 executive summary.
+Document and justify your definition of a source file in the pull-request description, including one limitation of your selection criteria.
 
 #### Task 2: Collect Author and File-Touch Data
 
@@ -509,8 +558,6 @@ The report must include:
 - The scatter plot produced in Part 2
 - An explanation of what the visualization shows
 - At least one limitation of the analysis
-- A few sentences identifying Git commands that were particularly useful during the lab
-- A link to your GitHub fork
 
 Name the report:
 
@@ -528,7 +575,7 @@ After adding the executive summary, confirm that your branch contains:
 - Generated visualization
 - Executive summary PDF
 
-Make a focused commit for the executive summary and push the updated branch to your fork.
+Make a focused commit for the executive summary and push the updated branch. Students using forks should push to their fork; the repository owner should push the branch to the team repository.
 
 Open one pull request from your repository-mining branch to the upstream team repository. The PR should:
 
@@ -564,8 +611,13 @@ The author must respond to the review and address any requested changes. Once th
 Submit the following on Canvas:
 
 - Executive summary PDF
-- Link to the GitHub issue
-- Link to the final pull request
+- Link to your Part 1 pull request
+- Link to your final Parts 2 and 3 pull request
+- Links to the two pull requests you reviewed: one from Part 1 and one from Parts 2 and 3
+- Link to your GitHub fork, or to the team repository if you are the repository owner
+- A brief reflection entered directly in Canvas identifying the Git commands that were particularly useful during the lab
+
+Each submitted pull request must link to its corresponding issue and show the commits, changed files, review comments, approval, and merge status.
 
 #### Part 3 Grading
 
