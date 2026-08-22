@@ -6,21 +6,21 @@
   href: "/evol/"
   subcategories:
     - subtitle: "Projects"
-      subhref: "/evol/projects/"
+      subhref: "/evol/_projects/"
     - subtitle: "Publications"
-      subhref: "/evol/publications/"
+      subhref: "/evol/_publications/"
     - subtitle: "The Team"
-      subhref: "/evol/students/"
+      subhref: "/evol/_students/"
     - subtitle: "Talks"
-      subhref: "/evol/talks/"
+      subhref: "/evol/_talks/"
     - subtitle: "Join EVOL"
-      subhref: "/evol/join/"
+      subhref: "/evol/_join/"
       
 - title: "Teaching"
   href: "/teaching/"
   
 #- title: "Students"
-#  href: "/students/"
+#  href: "/_students/"
   
 - title: "Service"
   href: "/service/"
