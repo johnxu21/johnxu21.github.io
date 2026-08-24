@@ -96,7 +96,7 @@ Milestones
 * **Intermediate Report - Tool Usage**: One third into the project, each group should hand in a status report containing screenshots of the tools applied on the project, and interpretations about these results.
 * **Final Report**: During the exam period you hand in a final report, listing the solutions for the problems you came across and what you learned from them. You will defend this report orally.
 
-Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on Aug, 22th, 2025.] 
+Below is the detailed time-schedule, which is subject to change. Changes will be notified over e-mail. [Last modified on Aug, 24th, 2026.] 
 
 <table style="border-collapse:collapse;">
 <tr >
@@ -128,7 +128,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">Mo 09/07 </td>
 <td style="border: 1px solid black;">Public Holiday</td>
 <td style="border: 1px solid black;">We 09/09 </td>
-<td style="border: 1px solid black;">[L] Refactoring assistants 2</td>
+<td style="border: 1px solid black;">[L] Refactoring assistants</td>
 </tr>
 
 <tr>
