@@ -51,7 +51,7 @@ height:30px;" value="Generative AI" />
 Theory
 ========
 The theory consists of four lessons where we explain the techniques to be used.: 
-1. Class overview [PDF](ClassOverview.pdf) [last updated 01/20/2026]
+1. Class overview [PDF](ClassOverview-V2.pdf) [last updated 08/24/2026]
 2. Introduction to Git and GitHub [PPTX](Git-and-GitHub.pptx) [last updated 02/22/2026]
 3. Software Testing [PPTX](Testing_Final.pptx) [last updated 02/10/2026]
 4. Continuous Integration [PPTX](CI-CD.pptx) [last updated 02/10/2026]
