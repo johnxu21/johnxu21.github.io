@@ -67,8 +67,3 @@ height:30px;" value="SD Competition" />
 - SeniorDesign4x3template_completelyblank (2) [pptx](Spring26/SeniorDesign4x3template_completelyblank%20(2).pptx)
 - Spring 2026 Senior Design Abstract Form [docx](Spring%202025%20Senior%20Design%20Abstract%20Form.docx)
 
-[//]: # (<br>)
-
-[//]: # (<p style="text-align:center"><img src="/teaching/CS472/project/Competition/Competetion-Spring-2024_Page_1.jpg" alt="CompetitionFlyer" style="max-width:1000px;max-height:1000px;border:'1px solid black;" align="center"></p>)
-
-[//]: # (<p style="text-align:center"><img src="/teaching/CS472/project/Competition/Competetion-Spring-2024_Page_2.jpg" alt="CompetitionFlyer" style="max-width:1000px;max-height:1000px;border:'1px solid black;" align="center"></p>)
