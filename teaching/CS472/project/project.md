@@ -108,232 +108,144 @@ Each team member will be assessed based on their active participation in the col
 
 
 
-# 2. Instructions to the UML Diagrams and Design Process
+# 2. Design Diagrams and Development Process
 
-Before authoring a pull request for any new feature or use case, **at least one design diagram** should be created to model how the feature interacts with the rest of the system.
+Design diagrams should help the team understand important system decisions before implementation and keep the documented design aligned with the code.
 
-You may use **use case diagrams**, **class diagrams**, and **sequence diagrams**, or any other UML diagrams you find suitable to represent your feature. The purpose of these diagrams is to **reinforce your understanding of the system** and how different components interact with each other.
+Not every feature or pull request requires a new diagram. Create or update a diagram when the work introduces a meaningful change to the system’s structure, behavior, architecture, or interaction with external components. Testing, documentation, CI configuration, minor bug fixes, and small refactoring contributions may not require diagrams.
 
-## Guidelines:
-- **Minimum Requirement**: Each feature or use case must be represented by at least one design diagram (use case, sequence, or class diagram). Select the type of diagram that best illustrates how your feature interacts with other system components.
-  - For **non-object-oriented projects** (such as JavaScript/TypeScript), where class diagrams may not always be applicable, you may focus on sequence diagrams or use case diagrams to represent interactions.
-- **Focus on Interaction**: The goal of the design diagram is to ensure that you fully understand how the feature or use case interacts with other components before implementation. This also ensures that team members can easily follow your thought process when reviewing pull requests.
+## Design Expectations
 
-## Diagram Guidelines:
-- **Use Case Diagrams**: These represent the interactions between the users (actors) and the system. Keep them simple and focused on the specific feature you are developing.
-- **Class Diagrams**: A simple class diagram should include the **class name** and its **interactions with other classes**. There is no need to detail every attribute and method—just focus on the relationships (associations, dependencies, etc.) between classes.
-  - You only need to show the classes directly involved with the feature or use case. If **Class X** calls **Class Y**, but **Class Y** is not directly related to your feature, you don’t need to show **Class Y**.
-- **Sequence Diagrams**: These should capture the **flow of interactions** between different objects or components within the system. Focus on how messages or function calls are passed in sequence during the execution of your feature.
+- Maintain a current **architectural overview** showing the system’s major components and their relationships.
+- Use focused diagrams for features that involve important structural or behavioral decisions.
+- Update existing diagrams when implementation changes the documented design.
+- Keep diagrams lightweight and limited to the components needed to explain the decision.
+- Use diagrams during team discussions and pull-request reviews when they help reviewers understand the proposed change.
 
-## Tips:
-- **Start Simple**: Diagrams are meant to help you understand the system. Begin with simple diagrams that show key interactions, and add more detail if needed.
-- **Collaboration**: Work with your team to ensure everyone shares the same understanding of how different components interact. Use diagrams to facilitate these discussions.
-- **Diagram Selection**: Choose the type of diagram that best represents your feature. For example, if a class diagram doesn’t make sense, a sequence diagram or use case diagram might better illustrate the interaction.
-- **No Strict UML Notation**: I’m not evaluating strict adherence to UML syntax, so focus on **modeling and understanding** class interactions and system components rather than perfect UML representation.
+The intended traceability is:
 
-## Repository Structure & Pull Requests:
-- **Repository Structure**: Maintain a clear folder structure in the repository for design diagrams, with folders organized by features or use cases. This will make diagrams easy to locate and understand.
-- **Pull Requests**: When submitting a pull request (PR), include a link to the corresponding design diagram in the PR description. This will help reviewers understand the feature or use case in context.
+**Requirement → Design → Issue/PR → Code → Tests/CI**
 
-By following these structured guidelines, you ensure that design thinking is prioritized while keeping the process streamlined and manageable.
- 
+## Selecting an Appropriate Diagram
 
-# 3. General Coding Instructions
+Choose the diagram type that best communicates the design:
 
-The following coding and repository instructions apply:
+- **Use Case Diagram:** Shows how users or external actors interact with the system. Use it to clarify system scope and major user goals.
+- **Class or Component Diagram:** Shows structural relationships among classes, modules, services, or components. Include only the elements relevant to the feature or decision being explained.
+- **Sequence Diagram:** Shows the order of interactions among objects, services, or components during an important workflow.
+- **Activity Diagram:** Shows a workflow, decision process, or sequence of activities.
+- **Other Models:** Another suitable modeling approach may be used when it communicates the design more effectively.
 
-- **Fork the group repository** and clone your fork to your local machine.
-- **Create a branch** on your fork for every "qualified contribution" you plan to make on the group/main repository.
-  - For example, if you're assigned to develop **UC-2.1**, create a branch named **UC-2.1** on your fork.
-  - If you're fixing a bug on the main repository, use a descriptive name for the branch (e.g., **bugfix-login-error**).
-  - If you're adding missing tests, name the branch accordingly (e.g., **add-missing-tests**).
-- **Submit all contributions** to the main repository through pull requests (PRs), which should be reviewed by at least two other group members.
-- The group should establish **clear contribution guidelines** for all members to follow. Reviewers should only approve pull requests if these guidelines have been followed.
+A feature does not require both a structural and behavioral diagram unless both are necessary to explain the design.
 
+## Guidelines
 
-# 4. Examining Issues
-An issue is a way to discuss, plan and track work on a GitHub repository.
+- **Start simple:** Show the important components and relationships first. Add detail only when it improves understanding.
+- **Model the current system:** Diagrams should reflect implemented or approved design decisions rather than unsupported future ideas.
+- **Focus on relevant elements:** Do not redraw the entire system when only a small part has changed.
+- **Support different technologies:** Class diagrams may not be appropriate for every project. Component, sequence, activity, data-flow, or other diagrams may be more useful for functional, JavaScript/TypeScript, service-based, or data-intensive systems.
+- **Prioritize communication:** Strict UML notation is not the primary grading concern. Diagrams must be accurate, understandable, and useful to the team.
+- **Collaborate:** Important design decisions should be discussed with the team rather than developed independently by one contributor.
 
-Issues can be bugs, complaints from users, requests for new features or added functionality.
+## Repository and Pull-Request Integration
 
-When reading through an issue, these are some of the questions that can guide you.
-* Are there multiple problems reported in the issue?
-* Can you confirm the issue by reading the code or documentation?
-* Do you need to run the code to confirm the issue?
-* Can you reproduce the problem?
+- Store design diagrams in a clearly identified location in the team repository or shared design document.
+- Use descriptive file names and keep diagrams under version control whenever practical.
+- When a pull request implements or changes a documented design decision, include a link to the relevant diagram in the PR description.
+- If the implementation differs from the original design, update the diagram and briefly explain the reason for the change.
+- Diagrams are not required for every PR. Include them only when they provide useful context for understanding or reviewing the contribution.
 
-Issues are used to describe the problem. 
-The issue should contain a link to the code under discussion, and some questions to think about when looking at the issue, 
-the code, and the pull request.
+## Design Portfolio Evidence
 
- Best practices when reporting an issue
-====
+In Design Portfolio II, teams will select **two representative implemented features** and show how each connects to its requirement, design, issue or pull request, code, and test or CI evidence. Detailed instructions are provided in the Design Portfolio II requirements.
 
-You team repo should use [GitHub issues templates](https://code-review.org/docs/exercises/examine-issues/) to prompt people to provide relevant information
+The goal is to make design a practical part of development and review—not to produce diagrams merely to satisfy a documentation requirement.# 3. Project Development Workflow
 
-What is important information you would like to someone to give in an issue?
+All project contributions must follow the team’s GitHub workflow:
 
-* version of the code being used?
-* a small example the shows the bug?
-* screenshots of the problem?
-* error messages?
-* desired solution?
-* operating system where the problem occurred (Windows, Mac, Linux)?
-* does the issue describe the problem accurately?
+1. Select or create an issue with a clear description and acceptance criteria.
+2. Fork the team repository and keep your fork synchronized with the team repository.
+3. Create a focused branch with a descriptive name.
+4. Implement and test the change.
+5. Open a pull request linked to the issue.
+6. Request a review from the assigned teammate.
+7. Address the reviewer’s feedback.
+8. Merge only after receiving at least one approval and passing the required CI checks.
 
+Keep pull requests focused. Unrelated changes should be submitted separately.
 
-# 5. Working with Pull requests
-A pull request is a proposed change. A review is feedback on the change.
+During Design Portfolio II and Design Portfolio III, start contributing early. Aim to submit approximately **one meaningful pull request per week** rather than waiting until the portfolio deadline.
 
-When you are reviewing, you’ll need to assess the scope and size of the pull request. This will give you some 
-idea of how much work will be involved in the review, and what feedback you need to give.
+# 4. Issues and Pull Requests
 
-Read the pull request description. Ideally this will give you the scope:
-* What’s changed.
-* Why the changes were made.
-* What the person is looking for from the review. They may have code ready to release, they may have an urgent bug fix, they may have a draft that they want you to look at before they do any more work.
+## Issues
 
-Small code changes can have big impacts, so lines of code changed does not necessarily correlate with how difficult, important, or necessary a change is. But you can use GitHub to see:
-* How many lines of code have been added or removed.
-* How many files have been changed.
-* How many commits were made.
+Use issues to define and track project work. An issue should include:
 
-The pull request is a solution to the issue.
-Review the pull request, does the pull request fix the issue?
+- A clear description of the problem, feature, or task.
+- Relevant context, screenshots, error messages, or code links.
+- Acceptance criteria describing when the work will be considered complete.
+- Any important constraints or dependencies.
 
-* Add comments about what is good, what is bad.
-* Add suggestions for code changes.
-* Would you accept the pull request as is? If not, why not.
+Use the team’s issue templates when available.
 
-### Adding comments 
-To add a comment, click on the `+` or `-` by the line number. A blue box `+` will show up when you hover over 
-a `+` or `-`. You can only comment on the green (new lines of code) or red (code removed) sections.
+## Pull Requests
 
-### Adding suggestions 
-Suggestions are the same as comments, but you suggest an edit to the code that can be committed from the pull request. 
-Click the suggestion icon in the comment box:
+A pull request should:
 
+- Explain what changed and why.
+- Link to the corresponding issue.
+- Describe how the change was tested.
+- Include relevant screenshots, output, or CI evidence when appropriate.
+- Identify any known limitations or remaining work.
 
-# 6. Code Review
+Draft pull requests may be opened early when feedback would help guide the implementation.
 
-What is the goal of code review?
-====
+# 5. Peer Review
 
-* Reviewing can be challenging, requiring thoughtful consideration of how to effectively communicate constructive and actionable criticism.
-* Become more comfortable having your code reviewed. People will explain a scientific idea with a sketch on a whiteboard, or a napkin no problem. But when it comes to code, there is a real tendency to keep it hidden. You might have heard people say, “oh I need to polish this before I show it to you.” There is some psychological effect behind this, and it would be great to change this and get people showing even pseudo code to each other. Sharing early and often becomes second nature.
-* Use code review as a collaboration tool. Use code review as part of your onboarding new team members and collaborators. Share knowledge and know-how between team members. There is a real benefit to being on both sides of the review. We’re trying to humanize this process, and build rapport between people.
-* Read more code than you write! Take a peek into your favorite open source tools. Encourage people to have a look inside the software they are using. How does this work? Why did they do this?
+Every pull request must receive at least one teammate’s approval before it is merged.
 
-When reviewing:
-====
+When reviewing a pull request, consider:
 
-Does the pull request address the issue?
-* Are there any deal breakers that would stop you accepting the changes?
-* Can you suggest any improvements?
-* What is a good way to phrase your suggested improvements?
-* Is the solution overly complicated? For an example of an overly complicated solution, see the [famous fizz buzz in Tensorflow](https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/).
-* Are the comments up to date, necessary, helpful?
-* Would you except the pull request as it is now? Are your suggested changes must-do? nice-to-have? nitpicks? How would you communicate this?
-* Do you spend a lot of time reviewing the code style? Is it worth having a style guide for contributors? Can you make use of an existing style guide? Or a linter?
+- Does the change address the linked issue and its acceptance criteria?
+- Is the implementation correct, understandable, and appropriately scoped?
+- Are relevant tests included, and do the CI checks pass?
+- Does the change follow the project’s design and coding conventions?
+- Are documentation or diagrams affected by the change?
+- Are there unnecessary or unrelated modifications?
 
-When working on your own contributions:
-* When putting in a pull request, how can you make it easy for a reviewer to understand what you have done?
-* What makes a good pull request, what makes a bad pull request?
-* Can you commit code in a way that lets someone review your code more easily? Should you separate functional changes from style changes? Would you use a tool such as [commitizen](https://commitizen.github.io/cz-cli/) to prompt yourself at commit time? Why? Why not?
+Reviews must be constructive and evidence-based. Clearly distinguish between:
 
-How do you tell if code is better?
-====
+- **Required changes:** Must be addressed before approval.
+- **Suggestions:** Recommended improvements that do not block approval.
+- **Questions:** Points requiring clarification or discussion.
 
-* Correctness
-* Readability
-* Design
-* Style
-* Functionality
-* Complexity
-* Consistency
+Review assigned pull requests promptly. Delayed reviews can block teammates and slow the entire project.
 
-Depending on your experience you may focus on one, many, or all of these.
+# 6. Team Collaboration
 
-The main question to ask yourself when reviewing code is:
+Teams must:
 
-Does the pull request improve the existing code?
+- Hold at least one project meeting each week.
+- Record decisions, assigned tasks, and task completion in the meeting-minutes document.
+- Use issues and pull requests to make work visible to the team.
+- Communicate blockers as soon as they arise.
+- Share technical knowledge and avoid concentrating essential system knowledge in one person.
+- Coordinate work to reduce conflicts and support integration.
 
-* Are there unnecessary changes? If the pull request contains other changes that are not related to the issue, how does your team deal with this. It is ok to close the pull request?
-* Is now a good time to add new functionality?
-* Does the code do what it says it does?
-* What testing has been carried out?
-* What dependencies does the code have? Are they required? Are they secure? Are they manageable?
-* How does the code handle errors?
-* Does the new code change how users interact with the software? Does this require a change to the documentation?
-* Did the author write comments? Do the comments match the code? Are all the comments necessary and helpful?
-* Does the author follow the style of the rest of the code? Do you have a style guide?
-* Can I accept the pull request as-is, or are there changes that must be made?
+The team is collectively responsible for delivering an integrated and tested MVP.
 
-# Giving Feedback 
-When giving feedback on code, try to give comments that:
+# 7. Use of Generative AI Tools
 
-* are actionable.
-* differentiate between a suggestion, a definite change, or a point that needs a discussion or clarification.
-* are collaborative not accusatory.
+Students remain responsible for understanding, testing, reviewing, and validating all work submitted to the project.
 
-# How do organizations decide if code is better? 
-Take a look at organizations you admire or appreciate. What practices do they employ for code review? Below are some examples of code review guides from well known organizations.
+If generative AI tools are used:
 
-[Google eng-practices](https://google.github.io/eng-practices/review/reviewer/looking-for.html)
+- Follow the course policy.
+- Disclose their use in the required project documentation.
+- Verify generated code before submitting it.
+- Do not submit code that you cannot explain or maintain.
+- Ensure that AI-assisted contributions satisfy the same review, testing, and quality requirements as other contributions.
 
-[Microsoft Code with Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/code-reviews/)
-
-[Python Discord, Code Reviews: A Primer](https://www.pythondiscord.com/pages/guides/pydis-guides/code-reviews-primer/)
-
-
-# 7. Guidance for MVP Development: Fostering Collaboration to Mitigate Challenges
-
-As you embark on the development of your minimum viable product (MVP), fostering collaboration among your team members will be crucial to overcoming challenges and maximizing the effectiveness of ChatGPT usage. Here are some key points to consider:
-
-## Leveraging Collaboration Platforms:
-
-1. **Issue Discussions**: Utilize issue discussions on your project repository to openly communicate about the integration of ChatGPT into your software development process. Encourage team members to share their insights, questions, and solutions related to ChatGPT usage.
-2. **Pull Requests**: When submitting pull requests that involve ChatGPT-generated code or contributions, actively seek feedback from your teammates. Peer review not only ensures the quality of the code but also promotes knowledge sharing and collaborative problem-solving.
-3. **Team Meetings**: Schedule regular team meetings to discuss ChatGPT usage strategies, share experiences, and address any challenges or uncertainties collectively. These meetings provide a platform for collaborative decision-making and learning from each other's perspectives.
-
-## Sharing Insights and Learnings:
-
-1. **Documentation**: Document your ChatGPT interactions and findings in the project repository. Share your experiences, best practices, and any lessons learned with your team members to facilitate knowledge exchange and learning.
-2. **Feedback Loop**: Establish a feedback loop within your team to continuously evaluate the effectiveness of ChatGPT usage and identify areas for improvement. Encourage open communication and constructive feedback to iteratively enhance your approach.
-3. **Resource Sharing**: Share useful resources, tutorials, or examples related to ChatGPT and software engineering tasks with your team members. Collaboratively explore additional tools or techniques that complement ChatGPT and enhance your development process.
-
-## Instructions for AI-Generated Code in Team Projects
-
-As part of your team projects, you have the option to leverage AI-generated code to facilitate software development tasks. However, it is essential to maintain transparency and documentation regarding the use of such code within your project repositories.
-
-1. **Annotation Requirement:** When integrating AI-generated code into your project, each team member must annotate the code snippets with relevant information describing the generative model used and the level of human intervention performed on the code. This annotation should be included directly within the code comments.
-2. **Annotation Format:** Follow the annotation format outlined below:
-   - Use the comment markers `// ai-gen start` and `// ai-gen end` to encapsulate the AI-generated code section.
-   - Within the AI-generated code section, specify the following information:
-     - Type of generator used (e.g., ChatGPT-3.5, ChatGPT-4).
-     - Level of human intervention:
-       - Level 0: No intervention (code used directly with zero changes).
-       - Level 1: Minor intervention (code used with ≤ 10% of lines changed).
-       - Level 2: Major intervention (code used with > 10% of lines changed).
-3. **Example Annotation:** Refer to the example below for annotating AI-generated code:
-   ```cpp
-   // ai-gen start (ChatGPT-3.5, 0)
-   // Insert AI-generated code here
-   // ai-gen end
-   ```
-   
-```python
-   # ai-gen start (ChatGPT-3.5, 0)
-   def fibonacci(n):
-       if n <= 1:
-           return n
-       else:
-           return fibonacci(n-1) + fibonacci(n-2)
-   # ai-gen end
-```
-
-**Data Collection:** The annotations serve as a means of tracking and documenting the integration of AI-generated code into your project. Ensure consistency in annotation format and placement to facilitate automated data collection at key project milestones.
-
-By adhering to these guidelines, you promote transparency and accountability in the utilization of AI-generated code while ensuring proper documentation for project evaluation and assessment.
-
+Generative AI output is not evidence that a feature works. The implementation must still be reviewed, tested, and verified through the team’s normal development process.
 
