@@ -38,7 +38,7 @@ height:40px;" value="Reengineering Project" />
 
 
 * Level: Masters 
-* Period: Fall Semester 2025
+* Period: Fall Semester 2026
 
 Where ? When ?
 * Theory & Exercises all during the same time slot
