@@ -48,211 +48,214 @@ height:30px;" value="Generative AI" />
 <br/>
 
 
-### **This individual assignment is due Sept 18, 2026**
+### **Due Date: Sept 18, 2026**
 
-Overview
-========
-In this lab, you will practice the fundamentals of software quality assurance by writing unit tests and analyzing code coverage using Python. You will also transition to an automated workflow by implementing Continuous Integration (CI).
+## **Overview**
 
-This assignment is designed to simulate a professional software engineering workflow. You will progress through three distinct phases:
-1. Phase 1 (Test Coverage): Analyzing existing code and filling testing gaps.
-2. Phase 2 (Test-Driven Development): Building a new API using the Red-Green-Refactor cycle.
-3. Phase 3 (Continuous Integration): Automating your tests and enforcing quality gates with GitHub Actions.
+In this lab, you will practice the fundamentals of software quality assurance by writing unit tests and analyzing code coverage in Python, and then automate that work with Continuous Integration (CI).
 
-Contribution model for this full lab:
-- Follow the collaborative Git and GitHub workflow introduced in the [Git and GitHub Lab](/teaching/CS472/Timetable/Git_and_GitHub/): the team repository is the authoritative upstream repository, and you work through your individual fork, synchronizing with upstream before each contribution, using issues and acceptance criteria to define your work, and submitting focused pull requests for peer review. Address requested changes before approval and merging, and submit your final report in the team repository.
-- Three setup PRs per team, one for each lab folder:
-    1. Test Coverage setup PR (`test_coverage_lab`).
-    2. TDD setup PR (`tdd_lab`), including the TDD worked example.
-    3. CI setup PR (`ci_lab`).
-- Each setup PR is assigned to one designated team member. Where possible, assign the three setup PRs to three different members.
-- Preparing a setup PR is an additional team responsibility; it does not replace the assigned student's own substantive PR below.
-- Three substantive PRs per student across the lab:
-    1. One test-coverage PR (Phase 1).
-    2. One TDD PR (Phase 2).
-    3. One combined CI PR (Phase 3).
-- One review per student for each phase (test-coverage, TDD, and CI), assigned via a fixed round-robin order (see Branch Protection and Peer Review for the pairing rules, including setup PRs).
-- After each setup PR is merged, synchronize your fork before beginning individual work for that phase (see Merge Coordination for the general re-sync rule).
-- Setup points assess each student’s ability to synchronize the repository, install dependencies, and run the project successfully. Only the designated setup author submits the setup PR, but every student must provide evidence that the merged setup works in their environment.
-- **Recommended progress**: Complete each phase early enough to allow time for review, revision, and merging. Do not wait until the final deadline to begin all three phases. Teams should establish internal deadlines for each setup PR and each round of individual PRs.
+The lab simulates a professional software engineering workflow and is organized into three phases, worth **50 points** in total:
 
-## Branch Protection and Peer Review
+| Phase | Focus | Points |
+|-------|-------|--------|
+| Phase 1 | **Test Coverage** — analyze existing code and fill testing gaps | 10 |
+| Phase 2 | **Test-Driven Development** — build a new API using Red-Green-Refactor | 20 |
+| Phase 3 | **Continuous Integration** — automate tests and enforce quality gates with GitHub Actions | 20 |
 
-Follow the branch-protection and peer-review process established in the [Git and GitHub Lab](/teaching/CS472/Timetable/Git_and_GitHub/).
+**You are graded individually, but you work inside your team's repository.** Each student writes their own tests, opens their own pull requests, reviews a teammate's work, and submits their own report. Your team supplies the shared upstream repository and the peer reviewers.
 
-Every setup and substantive PR must:
+## **Contribution Model**
 
-- Receive at least one teammate’s approval before merging.
-- Be reviewed according to the team’s established round-robin assignment.
-- Receive concise, evidence-based feedback using relevant tests, coverage results, CI logs, code, or acceptance criteria.
-- Have requested changes and review conversations addressed before merging.
+This lab continues the collaborative workflow introduced in the [Git and GitHub Lab](/teaching/CS472/Timetable/Git_and_GitHub/). The team repository is the authoritative upstream repository, and you work through your individual fork: synchronize with upstream before each contribution, define your work with an issue and acceptance criteria, and submit focused pull requests (PRs) for peer review.
 
-Complete reviews promptly so that teammates are not blocked.
+### **Setup PRs (three per team)**
 
-### Reviewing a Setup PR
-When reviewing a setup PR, verify that:
+Each phase begins with one setup PR that adds the phase's starter files to the team repository:
+
+| Setup PR | Folder | Also includes |
+|----------|--------|---------------|
+| Test Coverage setup | `test_coverage_lab` | — |
+| TDD setup | `tdd_lab` | The TDD worked example (Phase 2, Step 2) |
+| CI setup | `ci_lab` | — |
+
+- Each setup PR is assigned to **one** designated team member. Where possible, assign the three setup PRs to three different members.
+- Preparing a setup PR is an additional team responsibility. It does **not** replace that student's own substantive PR.
+- A phase's setup PR must be merged before any team member begins their individual contribution for that phase.
+- Although only the designated author opens the setup PR, **every student must set up and verify the phase locally** and include that evidence in their report. The setup points assess your own ability to synchronize the repository, install dependencies, and run the project.
+- After a setup PR is merged, synchronize your fork before starting your individual work for that phase.
+
+### **Substantive PRs (three per student)**
+
+Each student opens one PR per phase: a test-coverage PR (Phase 1), a TDD PR (Phase 2), and a combined CI PR (Phase 3).
+
+### **Reviews (three per student)**
+
+Each student reviews one teammate's PR in each phase, following a fixed round-robin order that the team agrees on before any PR is opened. Use the same order for setup PRs and substantive PRs.
+
+### **Recommended Progress**
+
+Complete each phase early enough to allow time for review, revision, and merging. Do not wait until the final deadline to begin all three phases. Set internal team deadlines for each setup PR and each round of individual PRs.
+
+## **Workflow Rules for Every Contribution**
+
+These rules apply to all three phases and to both setup and substantive PRs. They are stated once here and are not repeated for each phase.
+
+- **Never push directly to `main`.** Follow the branch protection established in the [Git and GitHub Lab](/teaching/CS472/Timetable/Git_and_GitHub/).
+- Every PR must **link to an issue** that states clear acceptance criteria.
+- Every PR must be **approved by at least one teammate**, assigned by the team's round-robin order, before merging.
+- Reviews must be **concise, technical, and evidence-based** — cite specific tests, coverage output, CI logs, code, or acceptance criteria rather than confirming that the code "looks correct."
+- Before merging, the author must address requested changes, resolve all review conversations, resolve merge conflicts, and obtain the required approval.
+- Complete your reviews promptly so that teammates are not blocked.
+
+### **Merge Coordination**
+
+Because `main` is protected and several students open PRs that touch shared files, agree on a merge order before individual work begins.
+
+After any PR is merged, every student with an open PR must synchronize their fork with upstream and resolve the resulting conflicts before their own PR can be approved and merged. This matters most in Phases 2 and 3, where students share the same TDD and CI files.
+
+### **Reviewing a Setup PR**
+
+When you review a setup PR, verify that:
 
 - The correct folder and starter files are included.
-- A nested `.git` directory was not committed.
+- A nested `.git/` directory was **not** committed.
 - Dependencies can be installed.
 - The baseline tests or workflow run successfully.
-- Credentials, generated files, and unnecessary environment-specific files were not committed.
+- For the CI setup PR specifically: `ci.yml` is at `.github/workflows/` in the repository root, not inside `ci_lab/`, and the Actions tab shows a completed run.
+- Credentials, generated files, and environment-specific files were not committed.
 - The issue's acceptance criteria are satisfied.
 
-### Merge Coordination
-Because `main` is protected and several students will open PRs that touch shared files, each team must establish a merge order before beginning individual contributions.
+## **Software Testing**
 
-- After a PR is merged, every student with an open PR must synchronize their fork with the upstream repository and resolve any resulting conflicts before their PR can be approved and merged.
-- This is especially important in Phase 2 and Phase 3, where students share the same TDD and CI files.
+Software testing is the process of evaluating and verifying that a software product does what it is supposed to do. Good testing prevents bugs and improves performance ([IBM](https://www.ibm.com/think/topics/software-testing)).
 
-### Address Feedback and Merge
+### **Tests: Your Life Insurance!**
 
-Before merging, authors must address requested changes, resolve review conversations and merge conflicts, and obtain the required approval. Do not push directly to `main`.
+Tests are a crucial part of software engineering. They help you:
 
-Software testing
-=========
-Software testing is the process of evaluating and verifying that a software product or application does what it’s supposed to do. 
-The benefits of good testing include preventing bugs and improving performance [IBM](https://www.ibm.com/think/topics/software-testing?).
+1. Detect unwanted side effects when modifying code.
+2. Gain a deeper understanding of a system's inner workings.
 
-### **Tests: Your Life Insurance!**  
+However, the presence of automated tests alone does not guarantee software quality. Ask yourself:
 
-Tests are a crucial part of software engineering. They help to:  
-1. Detect unwanted side effects when modifying code.  
-2. Gain a deeper understanding of a system’s inner workings.  
+- Do the tests cover the entire system, or are some parts left untested?
+- To what extent is each part of the system covered?
 
-However, the presence of automated tests alone does not guarantee software quality. Important questions to consider include:  
-- Do the tests cover the entire system, or are some parts left untested?  
-- To what extent are different parts of the system covered?  
+**Test coverage** identifies code that has not been exercised, but coverage alone does not establish test quality. Tests must also contain meaningful assertions and verify important behavior.
 
-**Test coverage** helps identify code that has not been exercised, but coverage alone does not establish test quality. Tests must also contain meaningful assertions and verify important behavior.
-
-Materials & Tools Used for this Session
-===============
+## **Materials and Tools**
 
 [//]: # (* Session slides [here]&#40;../Testing.pdf&#41;.)
-* Install Python 3.8 or later. This exercise was tested with Python versions `3.8.1, 3.9.5, 3.9.6, 3.9.7`, and `3.10.10`, but newer compatible Python 3.8+ versions should also work without major configuration issues.
-* Download and install an IDE of your choice. Popular options are [Microsoft Visual Studio Code](https://code.visualstudio.com/) and [IntelliJ IDE](https://www.jetbrains.com/idea/)
-* [pytest](https://docs.pytest.org/en/stable/) is the most popular Python testing framework. It makes it easy to write small, readable tests and can scale to support complex functional testing for applications and libraries.
-* [flask](https://flask.palletsprojects.com/en/2.3.x/) is a web framework. It is a Python module that lets you develop web applications easily.
-* (Optional) Read about [RESTful API](https://restfulapi.net/)
-* [Test Coverage](https://github.com/UNLV-CS472-672/test_coverage) repository.
-* [Test-Driven Development](https://github.com/UNLV-CS472-672/tdd) repository.
-* [Continuous Integration](https://github.com/UNLV-CS472-672/CI) repository.
+
+- **Python 3.9 or later.** This exercise was tested with Python `3.9.6` and `3.13.5`. Newer Python 3.9+ versions should also work without major configuration changes. Python 3.8 reached end of life in October 2024 and is no longer supported by the pinned dependencies.
+- **An IDE of your choice.** Popular options are [Visual Studio Code](https://code.visualstudio.com/) and [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+- **[pytest](https://docs.pytest.org/en/stable/)** — the most popular Python testing framework. It makes it easy to write small, readable tests and scales to complex functional testing.
+- **[Flask](https://flask.palletsprojects.com/en/2.3.x/)** — a Python web framework used to build the Counter API in Phase 2.
+- *(Optional)* Background reading on [RESTful APIs](https://restfulapi.net/).
+
+Starter repositories, one per phase:
+
+- Phase 1: [Test Coverage](https://github.com/UNLV-CS472-672/test_coverage)
+- Phase 2: [Test-Driven Development](https://github.com/UNLV-CS472-672/tdd)
+- Phase 3: [Continuous Integration](https://github.com/UNLV-CS472-672/CI)
 
 
 ## **Phase 1: Test Coverage - 10 pts**
-In this task, you will practice writing tests and improving test coverage in Python. You will generate and interpret a coverage report to identify untested code and write tests to cover it.
 
-### **Task 1: Set Up Your Team Repository for the Test Coverage Lab**
-This lab continues the collaborative workflow introduced in the [Git and GitHub Lab](/teaching/CS472/Timetable/Git_and_GitHub/) (see Overview).
+In this phase you will practice writing tests and improving test coverage in Python. You will generate and interpret a coverage report to identify untested code, then write tests to cover it.
 
-#### **1. Synchronize Your Fork**
-Before beginning your work:
+### **Step 1: Set Up the Test Coverage Lab**
 
-- Ensure your fork is synchronized with the team's upstream repository.
-- Work from your fork and do not make direct changes to the team's `main` branch.
-- Follow the collaborative workflow from the Git and GitHub Lab.
+**Every student completes 1.1 through 1.3 locally.** Only the designated setup author completes 1.4 and opens the setup PR, but everyone reports their own setup evidence in 1.5.
 
-#### **2. Create the Test Coverage Lab Folder**
+#### **1.1 Synchronize Your Fork**
 
-- Create a folder named `test_coverage_lab` in your working branch to store all files related to this lab.
-- **Use the exact spelling:** `test_coverage_lab`.
-- Obtain the provided Test Coverage starter files and place them in this folder.
-- Ensure the `.git/` directory from the provided repository is **not** copied into `test_coverage_lab/` to avoid creating a nested repository.
+Synchronize your fork with the team's upstream repository and work from your fork. Do not make direct changes to the team's `main` branch.
 
-#### **3. Verify the Setup**
-Navigate into the lab folder and install the required dependencies:
+#### **1.2 Create the Test Coverage Lab Folder**
+
+- Create a folder named `test_coverage_lab` in your working branch to hold all files for this phase. **Use this exact spelling.**
+- Copy the [Test Coverage starter files](https://github.com/UNLV-CS472-672/test_coverage) into that folder.
+- Do **not** copy the starter repository's `.git/` directory into `test_coverage_lab/`; doing so creates a nested repository.
+- Running the suite generates `test.db`, `.coverage`, and `__pycache__/`. These are build artifacts and must not be committed. The starter `.gitignore` already excludes them — copy it across with the other files rather than writing your own.
+
+#### **1.3 Verify the Setup**
+
+Install the required dependencies:
 
 ```bash
 cd test_coverage_lab
 pip install -r requirements.txt
 ```
 
-or, for the latest development dependencies:
+Or, for the latest development dependencies:
 
 ```bash
 pip install -r requirements-dev.txt
 ```
 
-Run the existing tests:
+Run the existing tests with coverage:
 
 ```bash
 pytest --cov=models --cov-report=term-missing
 ```
 
-Ensure that:
-
-- The project builds and runs successfully.
-- The provided tests pass.
-- The initial coverage report is generated successfully.
-
-You should see output similar to:
+Confirm that the project runs, that the two provided example tests pass, and that a coverage report is generated. Your output should resemble:
 
 ```pytest
-tests/test_account.py::test_account_role_assignment PASSED [100%]
+tests/test_account.py::test_account_role_assignment PASSED               [ 50%]
+tests/test_account.py::test_invalid_role_assignment PASSED               [100%]
 
----------- coverage: platform darwin, python 3.9.7-final-0 -----------
-Name                 Stmts   Miss  Cover   Missing
---------------------------------------------------
-models/__init__.py       7      0   100%
-models/account.py       45     18    60%   30, 34, 47-49, 53-55, 59-63, 67, 71, 76, 81-82
---------------------------------------------------
-TOTAL                   52     18    65%
---------------------------------------------------
-1 passed in 1.06s
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.13.5-final-0 _______________
+
+Name                    Stmts   Miss  Cover   Missing
+-----------------------------------------------------
+models/__init__.py          7      0   100%
+models/account.py          58     26    55%   30, 34, 47-49, 53-56, 60-62, 66-68, 72-76, 80, 84, 94, 98, 102-103
+tests/__init__.py           0      0   100%
+tests/test_account.py      35      4    89%   27-30
+-----------------------------------------------------
+TOTAL                     100     30    70%
+============================== 2 passed in 0.42s ===============================
 ```
 
-Use the coverage report to identify the code that will require additional tests in Task 2.
+Your exact numbers will vary with your Python version. The `tests/` rows appear because `pytest.ini` already adds `--cov=models --cov=tests` to every run.
 
-#### **4. Create a Setup Contribution**
-One designated team member completes this setup task, creating a uniquely named branch and committing the initial setup using the collaborative workflow from the Git and GitHub Lab.
+Keep this report. The `Missing` column for `models/account.py` lists the uncovered lines you will target in Step 2.
 
-The designated student submits the **Test Coverage setup PR** to the **team repository** and links it to an issue. This setup PR must demonstrate that the environment is working before any student begins their individual test-coverage contribution (see Contribution model).
+#### **1.4 Open the Setup PR** *(designated setup author only)*
 
-#### **5. Include in Your Lab Report**
-As the first task in your final lab report, include:
-
-- A screenshot showing the `test_coverage_lab` folder and a successful `pytest` run.
-- A link to the team's Test Coverage setup PR.
-- A link to the issue associated with the setup.
-- Evidence that the initial tests and coverage report were generated successfully.
+Create a uniquely named branch, commit the initial setup, and open the **Test Coverage setup PR** against the team repository, linked to a setup issue. This PR must be merged before any student begins their individual test-coverage contribution.
 
 ---
 
-### **Task 2: Working with Python Test Coverage**
-In this task, you will improve test coverage by writing new test cases. Your work must follow the collaborative workflow introduced in the Git and GitHub Lab.
+### **Step 2: Improve Test Coverage**
 
-#### **1. Identify and Claim a Testing Task**
-Review the initial coverage report and identify an uncovered area of `models/account.py`.
+#### **2.1 Identify and Claim a Testing Task**
 
-Create or claim an issue describing the test you will implement. The issue must include **clear acceptance criteria**.
+Review the coverage report from Step 1 and identify an uncovered area of `models/account.py`. Create or claim an issue describing the test you will implement, including **clear acceptance criteria**. For example:
 
-For example:
+> **Issue:** Add a test for insufficient-funds withdrawal
+>
+> **Acceptance criteria:**
+>
+> - The test exercises `withdraw()`.
+> - The test verifies the behavior when funds are insufficient.
+> - The assertions verify the expected result.
+> - The test passes locally.
+> - The relevant uncovered code is exercised.
+> - The PR links to this issue.
 
-**Issue:** Add a test for insufficient-funds withdrawal
+Coordinate assignments within your team to avoid duplication. Each student must implement **at least one test case**; in teams of 7–8 students, take one primary item each from the pool below. Claim additional items if you have capacity.
 
-**Acceptance criteria:**
-
-- The test exercises `withdraw()`.
-- The test verifies the behavior when funds are insufficient.
-- The assertions verify the expected result.
-- The test passes locally.
-- The relevant uncovered code is exercised.
-- The PR links to this issue.
-
-Your team should coordinate assignments to avoid duplication.
-
-Each student must implement **at least one test case** for individual assessment.
-
-For teams of 7-8 students, assign one primary item per student from the pool below. Students may claim additional items if capacity remains.
-
-#### **2. Test-Coverage Task Pool**
+#### **2.2 Test-Coverage Task Pool**
 
 | **Pool Item** | **Description** | **Target Method** |
 |---------------|-----------------|-------------------|
 | **1** | Test account serialization | `to_dict()` |
 | **2** | Test invalid email input | `validate_email()` |
-| **3** | Test missing required fields | `Account()` initialization |
+| **3** | Test missing required fields | `validate_required_fields()` |
 | **4** | Test positive deposit | `deposit()` |
 | **5** | Test deposit with zero/negative values | `deposit()` |
 | **6** | Test valid withdrawal | `withdraw()` |
@@ -262,94 +265,74 @@ For teams of 7-8 students, assign one primary item per student from the pool bel
 | **10** | Test email uniqueness enforcement | `validate_unique_email()` |
 | **11** | Test deleting an account | `delete()` |
 
-#### **3. Create a Branch and Implement Your Test**
+#### **2.3 Create a Branch and Implement Your Test**
+
 After claiming an issue and defining its acceptance criteria:
 
 - Create a uniquely named branch for your contribution.
-- Open `tests/test_account.py` and add your assigned test case.
-- Include your details at the top of your test case.
-- Keep your changes focused on the issue.
-- Use clear and meaningful assertions.
-- Run the relevant tests and the full test suite.
-- Generate the coverage report and verify the effect of your test.
+- Open `tests/test_account.py` and add your test case.
+- Include your details in a header comment above the test.
+- Keep your changes focused on the issue and use clear, meaningful assertions.
+- Run your test and then the full test suite.
+- Regenerate the coverage report and confirm the effect of your test.
 
-For example:
+`tests/test_account.py` already contains two worked example tests. Follow their header-comment convention:
 
 ```python
 # ===========================
 # Test: Account Role Assignment
 # Author: John Businge
-# Date: 2026-01-30
+# Date: 2025-01-30
 # Description: Ensure roles can be assigned and checked.
 # ===========================
 
 def test_account_role_assignment():
     """Test assigning roles to an account"""
-    account = Account(
-        name="John Businge",
-        email="johnbusinge@example.com",
-        role="user"
-    )
+    account = Account(name="John Doe", email="johndoe@example.com", role="user")
 
-    db.session.add(account)
-    db.session.commit()
+    # Assign initial role
+    assert account.role == "user"
 
-    retrieved_account = Account.query.filter_by(
-        email="johnbusinge@example.com"
-    ).first()
-
-    assert retrieved_account.role == "user"
-
-    retrieved_account.change_role("admin")
-    db.session.commit()
-
-    updated_account = Account.query.filter_by(
-        email="johnbusinge@example.com"
-    ).first()
-
-    assert updated_account.role == "admin"
+    # Change role and verify
+    account.change_role("admin")
+    assert account.role == "admin"
 ```
 
-Commit your changes using focused commits and push the branch to your fork.
+The examples cover `change_role()`, which is why it is not in the task pool. Some pool items — `validate_unique_email()` and `delete()`, for instance — do need the database, so use the `db` session and the `setup_account` fixture already defined at the top of the file.
 
-#### **4. Open a Pull Request**
-Open a pull request from your fork to the **team repository**.
+> **Note on pool item 3:** SQLAlchemy does not validate on construction, so `Account()` with no arguments succeeds and raises nothing. The required-field check lives in `validate_required_fields()`, which you call on the constructed object and which raises `DataValidationError`.
 
-The PR must:
+Commit in focused commits and push the branch to your fork.
+
+#### **2.4 Open a Pull Request**
+
+Open a PR from your fork to the **team repository**. It must:
 
 - Link to the issue.
 - Briefly describe the test and the behavior it verifies.
-- Identify the relevant uncovered code.
+- Identify the uncovered code it targets.
 - Explain how the test satisfies the issue's acceptance criteria.
-- Include relevant test and coverage results.
+- Include the relevant test and coverage results.
 
-#### **5. Technical Peer Review**
-Every Phase 1 PR requires one technical review from your assigned reviewer, following the team's round-robin review order.
+#### **2.5 Technical Peer Review**
 
-The review should be **evidence-based and technical**, rather than simply confirming that the code looks correct.
-
-Review the following:
+Review your assigned teammate's Phase 1 PR and evaluate:
 
 - **Behavior:** Does the test exercise the intended behavior?
 - **Assertions:** Are the assertions specific and meaningful?
 - **Coverage:** Does the test cover the intended uncovered code?
-- **Regression:** Do the existing tests continue to pass?
+- **Regression:** Do the existing tests still pass?
 - **Acceptance criteria:** Does the PR satisfy the issue and remain focused?
 
-Provide specific feedback using test results, coverage report, code, or acceptance criteria as evidence.
+### **Phase 1 Report Requirements**
 
-#### **6. Address Feedback and Merge**
-Follow the standard Address Feedback and Merge process (see Branch Protection and Peer Review).
-
-#### **7. Include in Your Lab Report**
-For your individual contribution, include:
-
-- Link to the issue and its acceptance criteria.
-- Link to your pull request.
+- Setup evidence: a screenshot showing the `test_coverage_lab` folder and a successful `pytest` run **on your own machine**, plus links to the team's Test Coverage setup PR and its issue.
+- Link to your issue and its acceptance criteria.
+- Link to your PR.
 - Link to your coverage report or results.
-- Brief explanation of the test and the behavior it verifies.
-- Link to your technical review comments.
-- Short summary of the feedback you received and how you addressed it.
+- A brief explanation of the test and the behavior it verifies.
+- Link to the teammate's PR you reviewed and to your review comments.
+- A short summary of the feedback you received and how you addressed it.
 - Link to the approved PR or merge commit.
 
 ### **Phase 1 Grading**
@@ -364,81 +347,67 @@ For your individual contribution, include:
 
 ## **Phase 2: Test-Driven Development (TDD) - 20 pts**
 
-### ***🔍 Overview***
+### **The TDD Cycle**
+
 This phase introduces **Test-Driven Development (TDD)** through the following cycle:
 
 1. **<span style="color:red">RED:</span>** Write a test for a missing feature and verify that it fails.
 2. **<span style="color:green">GREEN:</span>** Implement the minimum code required to make the test pass.
 3. **<span style="color:blue">REFACTOR:</span>** Improve the implementation while keeping the tests passing.
 
-Each student will implement one feature for the **Counter API**, following the collaborative Git and GitHub workflow introduced in the previous lab.
-
-Refer to the [**README.md**](https://github.com/UNLV-CS472-672/tdd) in the TDD repository for setup instructions and common errors.
+Each student implements one feature of the **Counter API**. See the [**README.md**](https://github.com/UNLV-CS472-672/tdd) in the TDD repository for setup instructions and common errors.
 
 ---
 
-### ***1. Setting Up Your Work Environment***
-This lab continues the collaborative workflow from the Git and GitHub Lab (see Overview).
+### **Step 1: Set Up the TDD Lab**
+
+**Every student completes 1.1 and 1.2 locally.** Only the designated setup author completes 1.3.
 
 #### **1.1 Synchronize and Set Up Your Fork**
-Before beginning:
 
 - Synchronize your fork with the team's upstream repository.
-- Create the `tdd_lab` folder in your working branch.
-- Copy the contents of the provided [**TDD repository**](https://github.com/UNLV-CS472-672/tdd) into `tdd_lab/`.
-- Do not copy the `.git/` directory from the provided repository.
+- Create a folder named `tdd_lab` in your working branch.
+- Copy the contents of the [**TDD starter repository**](https://github.com/UNLV-CS472-672/tdd) into `tdd_lab/`.
+- Do **not** copy the starter repository's `.git/` directory.
 
 #### **1.2 Install Dependencies and Verify Setup**
-Navigate to the lab folder and install the required dependencies:
 
 ```bash
 cd tdd_lab
 pip install -r requirements.txt
 ```
 
-Run:
+Then run:
 
 ```bash
 pytest --cov=src
 ```
 
-Because no tests exist initially, you should see output similar to:
+Because `tests/test_counter.py` contains only a docstring and no tests yet, you should see a coverage table followed by:
 
 ```bash
-collected 0 items
+============================ no tests ran in 0.02s =============================
 ```
 
-If errors occur, refer to the [**README.md**](https://github.com/UNLV-CS472-672/tdd) for troubleshooting.
+pytest exits with **code 5** (`no tests collected`), and coverage prints `CoverageWarning: No data was collected`. Both are expected while the test file is still empty — neither is a setup failure.
 
-#### **1.3 Submit the Setup Contribution**
-One designated team member completes this setup task. Create an issue describing the setup task and include clear acceptance criteria.
+If you see errors instead, consult the [**README.md**](https://github.com/UNLV-CS472-672/tdd) for troubleshooting.
 
-As part of this setup PR, the designated student also completes the TDD worked example in Section 2 below, demonstrating the full <span style="color:red">RED</span>-<span style="color:green">GREEN</span>-<span style="color:blue">REFACTOR</span> cycle.
+#### **1.3 Open the Setup PR** *(designated setup author only)*
 
-After completing the setup and the worked example:
+Create an issue describing the setup task with clear acceptance criteria. As part of this setup PR, also complete the worked example in Step 2, demonstrating a full <span style="color:red">RED</span>-<span style="color:green">GREEN</span>-<span style="color:blue">REFACTOR</span> cycle.
 
-- Commit the changes to your branch.
-- Submit the **TDD setup PR** to the **team repository**.
-- Link the PR to the issue.
-- Address any requested changes before approval.
+Then commit your changes, open the **TDD setup PR** against the team repository, and link it to the issue. This PR must be merged before any team member begins their individual TDD contribution.
 
-The TDD setup PR must be merged before any team member begins their individual TDD contribution (see Contribution model).
+### **Step 2: Worked Example — RED, GREEN, REFACTOR**
 
-### ***2. Introduction to TDD (Worked Example)***
-The team's designated setup student completes and merges this guided example once, as part of the TDD setup PR, before any team member begins their individual feature (Section 3).
+The designated setup author completes and merges this guided example once, as part of the TDD setup PR. **Every other student should read it carefully** before implementing their own feature in Step 3.
 
-All other students should read through this example carefully to understand the <span style="color:red">**RED**</span>-<span style="color:green">**GREEN**</span>-<span style="color:blue">**REFACTOR**</span> cycle before implementing their own assigned feature.
+Make sure Flask is running as described in the [**README.md**](https://github.com/UNLV-CS472-672/tdd).
 
-You should also ensure that Flask is running as described in the [**README.md**](https://github.com/UNLV-CS472-672/tdd).
+#### **2.1 Prepare `src/counter.py`**
 
-#### **Step 1: Create `src/counter.py`**
-Create the file:
-
-```bash
-touch src/counter.py
-```
-
-Add:
+The starter repository already contains `src/counter.py` with a bare Flask app. Open it and replace its contents with:
 
 ```python
 """
@@ -450,9 +419,10 @@ from . import status
 app = Flask(__name__)
 ```
 
-The file exists, but the API does not yet provide any counter functionality.
+The app now imports `status`, but the API still provides no counter functionality.
 
-#### **Step 2: <span style="color:red">RED</span> — Write a Failing Test**
+#### **2.2 <span style="color:red">RED</span> — Write a Failing Test**
+
 Before implementing the feature, write a test for the expected behavior in `tests/test_counter.py`:
 
 ```python
@@ -481,12 +451,11 @@ Run:
 pytest --cov=src
 ```
 
-The test should fail because the endpoint does not exist.
+The test fails because the endpoint does not exist. This is the **<span style="color:red">RED</span> phase**.
 
-This is the **<span style="color:red">RED</span> phase**.
+#### **2.3 <span style="color:green">GREEN</span> — Implement the Minimum Code**
 
-#### **Step 3: <span style="color:green">GREEN</span> — Implement the Minimum Code**
-Modify `src/counter.py` to implement the missing endpoint:
+Modify `src/counter.py` to add the missing endpoint:
 
 ```python
 COUNTERS = {}
@@ -506,12 +475,11 @@ Run:
 pytest --cov=src
 ```
 
-The test should now pass.
+The test now passes. This is the **<span style="color:green">GREEN</span> phase**.
 
-This is the **<span style="color:green">GREEN</span> phase**.
+#### **2.4 <span style="color:blue">REFACTOR</span> — Improve the Implementation**
 
-#### **Step 4: <span style="color:blue">REFACTOR</span> — Improve the Implementation**
-Refactor the counter-existence check into a helper function:
+Extract the counter-existence check into a helper function:
 
 ```python
 def counter_exists(name):
@@ -531,22 +499,19 @@ def create_counter(name):
     return jsonify({name: COUNTERS[name]}), status.HTTP_201_CREATED
 ```
 
-Run the tests again to verify that the refactoring did not change the behavior.
-
-This is the **<span style="color:blue">REFACTOR</span> phase**.
+Run the tests again to verify that the refactoring did not change the behavior. This is the **<span style="color:blue">REFACTOR</span> phase**.
 
 ---
 
-### ***3. Your TDD Contribution***
-Each student will be responsible for one test case and its corresponding implementation.
+### **Step 3: Your TDD Contribution**
 
-For teams of 7-8 students, assign one primary feature per student from the pool below.
+Each student is responsible for one test case and its corresponding implementation. In teams of 7–8 students, take one primary feature each from the pool below.
 
 #### **TDD Feature Pool**
 
 | **Pool Item** | **Feature** | **Target API Method** |
 |---------------|-------------|-----------------------|
-| **1** | Prevent duplicate counters | `POST /counters/<name>` |
+| **1** | Reject invalid (non-alphanumeric) counter names | `POST /counters/<name>` |
 | **2** | Retrieve an existing counter | `GET /counters/<name>` |
 | **3** | Return 404 for non-existent counter | `GET /counters/<name>` |
 | **4** | Increment a counter | `PUT /counters/<name>` |
@@ -555,224 +520,232 @@ For teams of 7-8 students, assign one primary feature per student from the pool 
 | **7** | Prevent deleting non-existent counter | `DELETE /counters/<name>` |
 | **8** | Reset all counters | `POST /counters/reset` |
 | **9** | List all counters | `GET /counters` |
-| **10** | Handle invalid HTTP methods | Unsupported HTTP Methods |
+| **10** | Handle invalid HTTP methods | Unsupported HTTP methods |
 
+> **Note:** Creating a counter and rejecting duplicates are already implemented by the worked example in Step 2, so they are not in the pool. Every pool item requires code that does not yet exist, so each student can demonstrate a genuine <span style="color:red">RED</span> phase.
+>
+> **Status codes:** `src/status.py` defines only `HTTP_200_OK`, `HTTP_201_CREATED`, `HTTP_204_NO_CONTENT`, `HTTP_404_NOT_FOUND`, `HTTP_405_METHOD_NOT_ALLOWED`, and `HTTP_409_CONFLICT`. Pool item 1 needs a `400 Bad Request` response, so that student must either add `HTTP_400_BAD_REQUEST = 400` to `src/status.py` as part of their GREEN phase, or use Python's standard `from http import HTTPStatus`. Because `src/status.py` is shared, coordinate that change with your team (see Merge Coordination).
 
 Each student must:
 
 1. Create or claim an issue for their assigned feature.
-2. Define clear acceptance criteria for the feature.
+2. Define clear acceptance criteria.
 3. Create a uniquely named branch.
 4. Write the test **before** implementing the feature.
-5. Demonstrate the **<span style="color:red">RED</span>** phase by showing the test initially fails.
-6. Implement the minimum code required for the **<span style="color:green">GREEN</span>** phase.
-7. Refactor the implementation where useful, or briefly justify why no refactoring was necessary.
-8. Run the complete test suite and coverage.
-9. Open a focused PR from their fork to the **team repository**.
-10. Link the PR to the issue.
-11. Participate in technical peer review.
-12. Address requested changes and resolve conflicts before approval.
-13. Merge only after the required approval.
+5. Demonstrate the **<span style="color:red">RED</span>** phase by showing that the test initially fails.
+6. Implement the minimum code required to reach the **<span style="color:green">GREEN</span>** phase.
+7. Refactor where useful, or briefly justify why no refactoring was necessary.
+8. Run the complete test suite with coverage.
+9. Open one focused PR from their fork to the **team repository**, linked to the issue.
+10. Participate in technical peer review, address requested changes, resolve conflicts, and merge only after approval.
 
-### ***4. Technical Peer Review***
-Each student reviews their assigned teammate's TDD PR, following the team's round-robin review order.
+### **Step 4: Technical Peer Review**
 
-The review should evaluate:
+Review your assigned teammate's TDD PR and evaluate:
 
 - **Test:** Does the test verify the behavior described in the issue?
-- **RED/GREEN:** Did the test fail first and then pass after the implementation?
+- **RED/GREEN:** Did the test fail first and pass only after the implementation?
 - **Refactor:** Does the refactor improve structure without changing behavior?
 - **Regression/Coverage:** Do existing tests pass, and does coverage change as expected?
-- **Scope/Criteria:** Is the PR focused and does it satisfy the issue's acceptance criteria?
+- **Scope/Criteria:** Is the PR focused, and does it satisfy the issue's acceptance criteria?
 
-Reviews must provide **evidence-based feedback** using test results, coverage report, code, or acceptance criteria.
+### **Phase 2 Report Requirements**
 
-### ***5. Address Feedback and Merge***
-Follow the standard Address Feedback and Merge process (see Branch Protection and Peer Review).
-
----
-
-### ***What to Include in Your Report***
-
-#### **Test-Driven Development Lab**
-For your TDD contribution, include:
-
-- Link to the issue and its acceptance criteria.
-- Link to your TDD PR.
-- Link to the test case you wrote.
-- Brief explanation of the feature being tested.
-- Link to RED/GREEN/REFACTOR evidence or test results.
-- Short summary of reviewer feedback and how you addressed it.
-- Link to the teammate's PR you reviewed.
-- Link to your technical review comments.
-- Brief statement of the evidence you examined during your review (e.g., test results, RED/GREEN evidence, coverage report).
+- Setup evidence: a screenshot of the `tdd_lab` folder and `pytest` running on your own machine, plus a link to the team's TDD setup PR and its issue.
+- Link to your issue and its acceptance criteria.
+- Link to your TDD PR and to the test case you wrote.
+- A brief explanation of the feature being tested.
+- Link to your <span style="color:red">RED</span>/<span style="color:green">GREEN</span>/<span style="color:blue">REFACTOR</span> evidence or test results.
+- A short summary of reviewer feedback and how you addressed it.
+- Link to the teammate's PR you reviewed and to your review comments.
+- A brief statement of the evidence you examined while reviewing (for example: test results, RED/GREEN evidence, coverage report).
 - Link to the approved PR or merge commit.
 
-### ***Grading***
+### **Phase 2 Grading**
 
 - Setup and work environment complete (fork synchronized, `tdd_lab` folder created, dependencies installed, setup contribution where assigned): **4 points**
 - Issue created with clear acceptance criteria for the assigned feature: **1 point**
 - RED phase evidence (failing test written before implementation): **3 points**
 - GREEN phase implementation (minimum code required to pass the test): **3 points**
-- REFACTOR phase (appropriate improvement made without changing behavior, or a clear justification provided when no refactoring was needed):: **3 points**
+- REFACTOR phase (appropriate improvement made without changing behavior, or a clear justification when no refactoring was needed): **3 points**
 - Pull request focused, linked to the issue, and includes RED/GREEN/REFACTOR evidence: **2 points**
 - Technical peer review completed and any feedback received was addressed: **2 points**
 - Lab report complete, with all required links and evidence: **2 points**
 
 
 ## **Phase 3: Continuous Integration - 20 pts**
-This **Continuous Integration (CI) Lab** builds upon the testing and TDD work completed in the previous phases. You will extend the testing process by enhancing existing tests and integrating **GitHub Actions** to automate testing and code-quality checks.
 
-You will configure a CI pipeline, improve test coverage, enforce quality gates, and learn to diagnose and fix failing CI runs. All contributions will follow the collaborative Git and GitHub workflow introduced in the Git and GitHub Lab.
+This phase builds on the testing and TDD work from the previous phases. You will configure a CI pipeline with **GitHub Actions**, enforce quality gates, and learn to diagnose and fix failing CI runs.
 
-This lab follows the same collaborative workflow as the previous phases (see Overview): synchronize with upstream before each contribution, define work through Issues and acceptance criteria, and submit focused PRs for technical peer review.
+### **Learning Outcomes**
 
-### ***Learning Outcomes***
-By completing this lab, you will be able to:
+By completing this phase, you will be able to:
 
 - **Set up and extend a GitHub Actions workflow** for CI.
 - **Automate test execution** across multiple Python versions.
 - **Use caching** to optimize CI runtime.
-- **Enforce code coverage thresholds** (fail if coverage < 80%).
-- **Integrate code formatting and linting** (Black + Flake8).
+- **Enforce code coverage thresholds** (fail if coverage is below 80%).
+- **Integrate code formatting and linting** (Black and Flake8).
 - **Write and run unit tests in CI** and measure coverage before and after changes.
 - **Diagnose and fix CI failures** using workflow logs.
-- **Create focused PRs** linked to Issues and acceptance criteria.
+- **Create focused PRs** linked to issues and acceptance criteria.
 - **Perform technical peer reviews** using tests, coverage, CI results, and acceptance criteria as evidence.
 
 ---
 
-### ***1. Repository Setup***
-Before beginning your individual contributions:
+### **Step 1: Set Up the CI Lab**
 
-1. Synchronize your fork with the team's upstream repository.
-2. Create a folder named `ci_lab` in your working branch.
-3. Download the starter files from the [CI Lab repository](https://github.com/UNLV-CS472-672/CI).
-4. Place the starter files in the `ci_lab` folder.
-5. Ensure `.gitignore` excludes unnecessary files such as `.pyc`, `__pycache__/`, and environment-specific files.
-6. Verify that the starter project and existing CI workflow run successfully.
-7. One designated team member submits the setup as the **CI setup PR**, following the collaborative workflow from the Git and GitHub Lab (see Contribution model).
+**Every student completes 1.1 through 1.3 locally.** Only the designated setup author completes 1.4.
+
+#### **1.1 Synchronize and Set Up Your Fork**
+
+- Synchronize your fork with the team's upstream repository.
+- Create a folder named `ci_lab` in your working branch. **Use the underscore spelling `ci_lab`** — the starter workflow sets `working-directory: ci_lab`, so any other spelling will break the build.
+- Copy the starter files from the [**CI starter repository**](https://github.com/UNLV-CS472-672/CI) into `ci_lab/`, with the one exception in 1.2 below.
+- Do **not** copy the starter repository's `.git/` directory.
+- Running the suite generates `.coverage` and `.pytest_cache/`. These are build artifacts and must not be committed. The starter `.gitignore` already excludes them — copy it across with the other files rather than writing your own.
+
+#### **1.2 Place the Workflow File Correctly**
+
+> **This is the step most teams get wrong.** GitHub Actions only runs workflows found in `.github/workflows/` **at the root of the repository**. A workflow file inside `ci_lab/` is never executed.
+
+The starter repository keeps `ci.yml` at its top level. Move it to the root of your team repository instead of leaving it in the lab folder:
+
+```text
+<team-repo-root>/
+├── .github/
+│   └── workflows/
+│       └── ci.yml        <-- the workflow lives here
+└── ci_lab/               <-- the application code lives here
+    ├── requirements.txt
+    ├── pytest.ini
+    ├── src/
+    └── tests/
+```
+
+The workflow already declares `working-directory: ci_lab`, so it will find the code once the file is in the right place.
+
+#### **1.3 Verify the Setup**
+
+Install the dependencies and run the suite locally:
+
+```bash
+cd ci_lab
+pip install -r requirements.txt
+pytest --cov=src --cov-report=term-missing
+```
+
+All 22 starter tests should pass at roughly 95% coverage. Then push the branch and confirm on the **Actions** tab that the `CI Workflow` run is triggered and succeeds.
+
+#### **1.4 Open the Setup PR** *(designated setup author only)*
+
+Open the **CI setup PR** against the team repository, linked to a setup issue. This PR must be merged before any student begins their individual CI contribution.
 
 ---
 
-### ***2. Individual Tasks***
-#### **Combined CI PR - Enhancement + Failure + Fix**
-Each student must implement **one distinct CI enhancement** from the list below. No two students in the same team should select the same enhancement.
+### **Step 2: Your Combined CI Contribution**
 
-Before starting:
+Each student implements **one distinct CI enhancement**, introduces a controlled failure, diagnoses it from the CI logs, and fixes it — all in a single PR. No two students on a team may select the same enhancement.
 
-1. Select an available enhancement.
-2. Create or claim an Issue.
-3. Define clear acceptance criteria.
-4. Synchronize your fork with upstream.
-5. Create a uniquely named branch.
-6. Implement the enhancement.
-7. Introduce one controlled failure.
-8. Use CI logs to diagnose the failure.
-9. Implement the fix.
-10. Re-run CI until it is green.
-11. Open one combined CI PR to the team repository.
+1. Select an available enhancement from the list below.
+2. Create or claim an issue and define clear acceptance criteria.
+3. Synchronize your fork with upstream and create a uniquely named branch.
+4. Implement the enhancement.
+5. Introduce one controlled failure.
+6. Use the CI logs to diagnose the failure and determine its root cause.
+7. Implement the fix and re-run CI until it is green.
+8. Open one combined CI PR against the team repository.
 
-Your combined CI PR must include the following:
+Your combined CI PR must include:
 
 - A descriptive title.
 - A link to the issue and its acceptance criteria.
-- Focused changes related to the Issue.
+- Focused changes related to that issue only.
 - The workflow/YAML change implementing the enhancement.
-- A controlled failure, CI log excerpt, and root-cause analysis.
+- The controlled failure, a CI log excerpt, and your root-cause analysis.
 - The fix and evidence of a successful CI rerun.
-- Relevant test and CI evidence.
-- Proof that reviewer feedback was addressed and the PR was approved before merge.
 
-#### **Available Enhancements**
+#### **Available CI Enhancements**
 
-##### **1. Matrix Setup**
+##### **Enhancement 1: Matrix Setup**
+
 - Extend the workflow to run tests on Python 3.9, 3.10, and 3.11.
-- Evidence: CI run showing jobs for all three versions.
+- Evidence: a CI run showing jobs for all three versions.
 
-##### **2. Dependency Caching**
+##### **Enhancement 2: Dependency Caching**
+
 - Use `actions/cache` to cache Python dependencies.
 - Evidence: CI logs showing a cache hit on a subsequent run.
 
-##### **3. Lint and Format Enforcement**
+##### **Enhancement 3: Lint and Format Enforcement**
+
 - Add **Flake8** and **Black** checks.
-- Evidence: CI run showing the checks passing, or a failed check followed by a successful fix.
+- Note that the starter workflow's existing Flake8 step only selects a few error classes (`E9,F63,F7,F82`), which the starter code passes. A full-strength `flake8 src tests` run reports 57 style violations in the starter code, and `black --check` would reformat three files. Decide whether your enhancement cleans up those pre-existing violations or configures the checks (for example, `--max-line-length`) to a standard your team agrees on, and say which you chose in your PR.
+- Evidence: a CI run showing the checks passing, or a failed check followed by a successful fix.
 
-##### **4. Coverage Gate**
-- Enforce a minimum coverage threshold of 80%.
-- Evidence: CI run showing the coverage threshold being enforced.
+##### **Enhancement 4: Coverage Gate**
 
-##### **5. Coverage Artifact Upload**
+- Enforce a minimum coverage threshold of 80% (for example, with `pytest --cov=src --cov-fail-under=80`).
+- The starter suite sits at about 95%, so the gate passes initially. Demonstrate that it actually works by making it fail — that can serve as your controlled failure.
+- Evidence: a CI run showing the threshold being enforced.
+
+##### **Enhancement 5: Coverage Artifact Upload**
+
 - Configure CI to upload the coverage report as an artifact.
-- Evidence: Screenshot or link showing the artifact.
+- Evidence: a screenshot or link showing the artifact.
 
-##### **6. CI Visibility and Documentation**
+##### **Enhancement 6: CI Visibility and Documentation**
+
 - Add appropriate CI status badges to `README.md`.
 - Briefly document the automated checks and explain how contributors can investigate a failed check.
-- Evidence: Rendered README, workflow run, and documented controlled failure and fix.
+- Evidence: the rendered README, a workflow run, and the documented controlled failure and fix.
 
-##### **7. Split Jobs**
+##### **Enhancement 7: Split Jobs**
+
 - Separate the workflow into distinct `lint`, `test`, and `coverage` jobs.
-- Evidence: CI run showing the separate jobs.
+- Evidence: a CI run showing the separate jobs.
 
-##### **8. Notifications**
+##### **Enhancement 8: Notifications**
+
 - Add a step that reports CI status on the PR.
-- Evidence: CI status/comment displayed on the PR.
+- Evidence: the CI status or comment displayed on the PR.
 
-> **Note:** If another student has already completed an enhancement, select a different enhancement. Each student must make an independent contribution and provide their own implementation and evidence.
+### **Step 3: Technical Peer Review**
 
-
-### ***3. Technical Peer Review***
-Each student reviews their assigned teammate's CI PR, following the team's round-robin review order (see Branch Protection and Peer Review).
-
-The review should be **technical and evidence-based**.
-
-Reviewers should evaluate the combined CI PR as a whole:
+Review your assigned teammate's CI PR and evaluate:
 
 - Is the selected enhancement implemented correctly?
 - Was a controlled failure clearly demonstrated?
-- Does the CI log support the root-cause analysis?
+- Do the CI logs support the root-cause analysis?
 - Does the fix restore a successful CI run?
-- Are acceptance criteria satisfied without unrelated changes?
+- Are the acceptance criteria satisfied without unrelated changes?
 
----
+In addition to the standard merge requirements, **all required CI checks must pass** before the PR is merged.
 
-### ***4. Address Feedback and Merge***
-Follow the standard Address Feedback and Merge process (see Branch Protection and Peer Review). Additionally, ensure all required CI checks pass before requesting merge.
+### **Phase 3 Report Requirements**
 
----
-
-### ***5. Required Evidence and Report***
-Your final report should include:
-
-#### **1. Repository**
+**Repository**
 
 - Link to your fork.
 - Evidence that your fork was synchronized with the upstream repository.
+- Evidence that the `ci_lab` starter workflow ran successfully for you.
 
-#### **2. Combined CI PR**
+**Combined CI PR**
 
-- Issue link and acceptance criteria.
-- PR link.
-- Link to the workflow excerpt or screenshot.
-- Link to the failing CI log and root-cause summary.
+- Link to your issue and its acceptance criteria.
+- Link to your PR.
+- Link to the workflow excerpt or a screenshot of it.
+- Link to the failing CI log and your root-cause summary.
 - Link to the fix commit or PR diff.
 - Link to the successful CI run.
-- Link to the teammate's PR you reviewed.
-- Link to your technical review comments.
-- Brief statement of the evidence you examined during your review (e.g., CI logs, test results, workflow diff).
+- Link to the teammate's PR you reviewed and to your review comments.
+- A brief statement of the evidence you examined while reviewing (for example: CI logs, test results, workflow diff).
 
-#### **3. Reflection**
-Write a short reflection explaining what you learned about:
+**Reflection**
 
-- Continuous Integration.
-- Automated testing.
-- Coverage and quality gates.
-- CI failure diagnosis.
-- Technical peer review.
-- Collaborative software development.
+Write a short reflection on what you learned about continuous integration, automated testing, coverage and quality gates, CI failure diagnosis, technical peer review, and collaborative software development.
 
-### ***Grading***
+### **Phase 3 Grading**
 
 - Repository setup verified (fork synchronized, `ci_lab` folder created, starter workflow runs successfully): **2 points**
 - Issue created with clear acceptance criteria for the selected CI enhancement: **1 point**
@@ -785,20 +758,20 @@ Write a short reflection explaining what you learned about:
 
 ---
 
-## Submission Instructions
+## **Report and Submission**
 
-- Your report must include Phase 1 (Test Coverage), Phase 2 (TDD) and Phase 3 (Continuous Integration).
-- Do not submit separate reports for each Phase/task. Submit one PDF covering all required details.
-- Ensure your report is **clear and self-contained**, while using links as the primary evidence trail.
-    - Include direct links to PRs, issues, CI runs, and review comments for each required deliverable.  
-    - Include brief in-PDF evidence excerpts (for example: key coverage table rows, failing/passing CI snippets, and the specific YAML/test fragments you changed) so graders do not need to browse your fork to understand your work.  
-- Double-check that your **fork repository link** is correct and public.  
+Submit **one PDF** covering all three phases. Do not submit a separate report for each phase.
 
+Your report must contain the evidence listed under **Phase 1 Report Requirements**, **Phase 2 Report Requirements**, and **Phase 3 Report Requirements**.
 
+Submit the PDF in **both** places:
 
+- **Commit it to your team repository**, and
+- **Upload it to Canvas.**
 
+Make your report **clear and self-contained**, using links as the primary evidence trail:
 
+- Include direct links to PRs, issues, CI runs, and review comments for every required deliverable.
+- Also paste brief evidence excerpts into the PDF — key coverage table rows, failing and passing CI snippets, and the specific YAML or test fragments you changed — so that graders can understand your work without browsing your fork.
 
-
-
-
+Finally, double-check that your **fork repository link** is correct and public.
