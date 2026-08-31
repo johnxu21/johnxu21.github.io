@@ -74,17 +74,29 @@ Download/Clone the same project and open it on the IDE of your choice (for examp
 Also if have not already, download the book for this course "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)" (Note: OORP, p.xx refers to a page in the pdf version of this book)
 <br/>
 
-Task 1: Introduction (React)
-============
-This first task has two goals: 
-* to help familiarize yourself with the CodeScene interface; and 
-* to observe that not every visualization is useful for refactoring.
+Task 1: Introduction — React
+=============
+This task has two goals:
 
-Visit the [CodeScene](https://codescene.com/) website and click at the Showcases. These are examples (from a full version of CodeScene and not only the free version we are using) of projects analyzed by CodeScene. Select the React project and look at the visuals presented.
+* to become familiar with the types of information provided by CodeScene; and
+* to understand that a visualization or metric alone is not sufficient evidence that code should be refactored.
 
-Visit the [JsCity](https://github.com/ASERG-UFMG/JSCity/wiki/JSCITY) website and look at the examples. You may want to select a simple example first to get acquainted. But after that, also select the "React" project to visualize (and be patient because it may take a while). 
+Read CodeScene's case study, [Under the Hood: Prioritizing Technical Debt in React](https://codescene.com/blog/technical-debt-examples-prioritizing-tech-debt-in-react). Examine how the hotspot map, development activity, Code Health score, and historical trends are used to identify possible refactoring targets.
 
-What did you think of these visualization tools? Can you extract important information about the visualized project from them? Which visualization would be more useful to plan refactoring activities?
+Also visit the [JSCity](https://github.com/ASERG-UFMG/JSCity/wiki/JSCITY) examples and examine the visualization of the React project. JSCity represents a JavaScript system as a three-dimensional city, using visual properties to represent elements of the source code.
+
+Answer the following questions:
+
+1. What information can you learn about React from the CodeScene analysis?
+2. Why is high development activity important when prioritizing technical debt?
+3. Why is being a hotspot alone insufficient evidence that a file requires refactoring?
+4. What additional evidence makes `ReactFiberBeginWork.js` a strong refactoring candidate?
+5. How does CodeScene's function-level X-Ray analysis make the proposed refactoring more actionable?
+6. What information can you obtain from the JSCity visualization?
+7. Which tool provides more useful evidence for planning refactoring activities? Support your answer by comparing the information provided by the two tools.
+
+The goal is not simply to decide which visualization looks better. Consider whether each tool provides evidence that can help a developer identify, prioritize, and investigate a possible refactoring target.
+
 <br/>
 
 Task 2: Hands-on -- pacman-python
