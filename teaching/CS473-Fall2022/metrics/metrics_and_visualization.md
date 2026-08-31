@@ -82,56 +82,6 @@ Materials & Tools Used for this Session
 <br/>
 
 Setup / Preparation
-=============
-
-1. **Fork the project you want to analyze into your own GitHub account.** CodeScene builds its projects from the
-   repositories it can see through your GitHub login, so the repository has to live in your account.
-2. **Log into CodeScene.** Go to [CodeScene](https://codescene.com/) and use the "Log in" menu (top-right corner);
-   you can choose the option "Log in with GitHub". Once logged in, create a new project: CodeScene shows all the
-   GitHub projects in your account. Select your fork of pacman-python, start the analysis, and continue with the
-   next step while it runs (it might take a while, depending on the project).
-3. **Clone the same project and open it in the IDE of your choice** (for example, PyCharm). Build and run the
-   project; refer to the project README if necessary (the commands for pacman-python are given below).
-4. **Download the book**, if you have not already: "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)".
-
-To get pacman-python running locally:
-
-```bash
-git clone https://github.com/<your-github-account>/pacman-python.git
-cd pacman-python
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-> **Tip:** take screenshots while you work. You will need evidence of tool usage for the
-> [Intermediate Report](/teaching/Software-Reengineering/project/) later in the semester.
-
-<br/>
-
-Task 1: Warm-Up -- Visualizing React
-============
-This first task has two goals:
-
-* to help familiarize yourself with the CodeScene interface; and
-* to observe that not every visualization is useful for refactoring.
-
-Open the CodeScene [demo projects](https://codescene.io/demo-projects). These are examples (from a full version of
-CodeScene and not only the free version we are using) of projects analyzed by CodeScene. Select the **React**
-project and look at the visuals presented.
-
-Then visit the [JSCity](https://github.com/ASERG-UFMG/JSCity/wiki/JSCITY) wiki and look at the example cities.
-You may want to select a simple example first, such as [clumsybird](https://aserg-ufmg.github.io/JSCity/?id=10),
-to get acquainted with the navigation (use the mouse scroll to zoom in/out). After that, also open the
-[React](https://aserg-ufmg.github.io/JSCity/?id=47) city -- and be patient, because it may take a while to load.
-Remember how JSCity maps code to a city: folders are districts, files are sub-districts, functions are buildings,
-the number of lines of code gives a building its height, and the number of variables its base size.
-
-**Questions:**
-
-- What did you think of these visualization tools?
-- Which information about the visualized project can you extract from each of them?
-- Which of the two visualizations would be more useful to plan refactoring activities? Why?
 
 <br/>
 
