@@ -86,26 +86,26 @@ Each phase begins with one setup PR that adds the phase's starter files to the t
 
 ### **Substantive PRs (three per student)**
 
-Each student opens one PR per phase: a test-coverage PR (Phase 1), a TDD PR (Phase 2), and a combined CI PR (Phase 3).
+Each student opens one substantive PR per phase: a test-coverage PR (Phase 1), a TDD PR (Phase 2), and a combined CI PR (Phase 3).
 
 ### **Reviews (three per student)**
 
-Each student reviews one teammate's PR in each phase, following a fixed round-robin order that the team agrees on before any PR is opened. Use the same order for setup PRs and substantive PRs.
+Each student reviews one teammate's substantive PR in each phase. Teams must establish a fixed round-robin review order before beginning and use the same order for both setup and substantive PRs.
 
 ### **Recommended Progress**
 
-Complete each phase early enough to allow time for review, revision, and merging. Do not wait until the final deadline to begin all three phases. Set internal team deadlines for each setup PR and each round of individual PRs.
+Complete each phase early enough to allow time for review, revision, and merging. Set internal team deadlines for setup PRs and each round of substantive PRs rather than waiting until the final deadline.
 
 ## **Workflow Rules for Every Contribution**
 
-These rules apply to all three phases and to both setup and substantive PRs. They are stated once here and are not repeated for each phase.
+These rules apply to all three phases and to both setup and substantive PRs.
 
 - **Never push directly to `main`.** Follow the branch protection established in the [Git and GitHub Lab](/teaching/CS472/Timetable/Git_and_GitHub/).
-- Every PR must **link to an issue** that states clear acceptance criteria.
-- Every PR must be **approved by at least one teammate**, assigned by the team's round-robin order, before merging.
-- Reviews must be **concise, technical, and evidence-based** — cite specific tests, coverage output, CI logs, code, or acceptance criteria rather than confirming that the code "looks correct."
-- Before merging, the author must address requested changes, resolve all review conversations, resolve merge conflicts, and obtain the required approval.
-- Complete your reviews promptly so that teammates are not blocked.
+- Every PR must **link to an issue** with clear acceptance criteria.
+- Every PR must be **reviewed and approved by at least one teammate** according to the team's established round-robin order before merging.
+- Reviews must be **concise, technical, and evidence-based**. Cite specific tests, coverage output, CI logs, code, or acceptance criteria rather than simply stating that the code "looks correct."
+- Before merging, the author must address requested changes, resolve review conversations and merge conflicts, and obtain the required approval.
+- Complete reviews promptly so that teammates are not blocked.
 
 ### **Merge Coordination**
 
@@ -114,19 +114,18 @@ Because `main` is protected and several students open PRs that touch shared file
 After any PR is merged, every student with an open PR must synchronize their fork with upstream and resolve the resulting conflicts before their own PR can be approved and merged. This matters most in Phases 2 and 3, where students share the same TDD and CI files.
 
 ### **Reviewing a Setup PR**
-
 When you review a setup PR, verify that:
-
 - The correct folder and starter files are included.
 - A nested `.git/` directory was **not** committed.
 - Dependencies can be installed.
 - The baseline tests or workflow run successfully.
 - For the CI setup PR specifically: `ci.yml` is at `.github/workflows/` in the repository root, not inside `ci_lab/`, and the Actions tab shows a completed run.
 - Credentials, generated files, and environment-specific files were not committed.
-- The issue's acceptance criteria are satisfied.
+- The linked issue clearly describes the intended work and includes **specific, verifiable acceptance criteria**.
+- The PR satisfies those acceptance criteria.
+- If the issue is missing, vague, or has inadequate acceptance criteria, **request changes** and ask the author to improve the issue before approving the PR.
 
 ## **Software Testing**
-
 Software testing is the process of evaluating and verifying that a software product does what it is supposed to do. Good testing prevents bugs and improves performance ([IBM](https://www.ibm.com/think/topics/software-testing)).
 
 ### **Tests: Your Life Insurance!**
