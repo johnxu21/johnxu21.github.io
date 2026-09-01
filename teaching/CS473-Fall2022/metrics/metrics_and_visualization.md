@@ -109,7 +109,7 @@ pip install -r requirements.txt
 
 <br/>
 
-Task 1: Introduction — React
+Task 1: Introduction -- React
 =============
 This task has two goals:
 
@@ -118,9 +118,9 @@ This task has two goals:
 
 Read CodeScene's case study, [Under the Hood: Prioritizing Technical Debt in React](https://codescene.com/blog/technical-debt-examples-prioritizing-tech-debt-in-react). Examine how the hotspot map, development activity, Code Health score, and historical trends are used to identify possible refactoring targets.
 
-Also visit the [JSCity](https://github.com/ASERG-UFMG/JSCity/wiki/JSCITY) examples and examine the visualization of the React project. JSCity represents a JavaScript system as a three-dimensional city, using visual properties to represent elements of the source code.
+Also visit the [JSCity](https://github.com/ASERG-UFMG/JSCity/wiki/JSCITY) examples and examine the visualization of the [React](https://aserg-ufmg.github.io/JSCity/?id=47) project (be patient, the larger cities take a while to load; use the mouse scroll to zoom in/out). JSCity represents a JavaScript system as a three-dimensional city: folders are districts, files are sub-districts, functions are buildings, the number of lines of code gives a building its height, and the number of variables its base size.
 
-Answer the following questions:
+**Questions:**
 
 1. What information can you learn about React from the CodeScene analysis?
 2. Why is high development activity important when prioritizing technical debt?
@@ -131,6 +131,12 @@ Answer the following questions:
 7. Which tool provides more useful evidence for planning refactoring activities? Support your answer by comparing the information provided by the two tools.
 
 The goal is not simply to decide which visualization looks better. Consider whether each tool provides evidence that can help a developer identify, prioritize, and investigate a possible refactoring target.
+
+**Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
+
+- **Most Valuable First** *(p.29)* -- Work on the parts that carry the most value or risk first. The case study is
+  exactly this pattern applied with data: a hotspot only earns a place at the top of the list once the evidence
+  shows it is both worked on heavily and getting worse.
 
 <br/>
 
