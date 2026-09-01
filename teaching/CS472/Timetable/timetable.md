@@ -115,7 +115,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <td style="border: 1px solid black;">Mo 09/07 </td>
 <td style="border: 1px solid black;">Labor Day recess </td>
 <td style="border: 1px solid black;">We 09/09 </td>
-<td style="border: 1px solid black;">[L] Software Testing & CI</td>
+<td style="border: 1px solid black;">[T] Classroom visit for several persons</td>
 </tr>
 
 <tr>
