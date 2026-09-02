@@ -45,8 +45,6 @@ Much of this work is carried out through the [Software Evolution (EVOL) Lab](htt
 
 I received an **[NSF Faculty Early Career Development Program (CAREER) Award](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2542438)** for the project *CAREER: Advancing Dependable Reusable Change Integration Across Software Variants*. The research develops methods for discovering, adapting, validating, and reliably integrating reusable fixes, enhancements, and capabilities across related software systems that evolve independently.
 
-[View NSF CAREER Award #2542438 →](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2542438)
-
 ### NSF IUSE:EDU Award
 I am also part of the [NSF IUSE:EDU](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2519136)-funded project *Exploring Integration of Generative Artificial Intelligence in Computer Science Education: A Senior Design Pilot*. The project investigates the responsible integration of generative AI into undergraduate computer science education.
 
