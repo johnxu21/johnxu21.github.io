@@ -10,7 +10,6 @@ Assistant Professor, Computer Science
 Office: 4245 Science and Engineering Building (SEB)<br>
 Telephone (Office): (702)-895-4216<br>
 <br>
-<em>Curriculum Vitae: </em><a href="/files/John_Businge_CV.pdf" target="_self">PDF</a><br>
 <em>Email: </em><a href="mailto:john.businge@unlv.edu">john.businge@unlv.edu</a><br>
 
 ## About Me
