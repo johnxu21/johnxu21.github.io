@@ -254,10 +254,10 @@ All students should have read the following book; acquiring the terminology insi
 For the lab sessions there is the following material (please only get the materials after it is updated to the current year):
 
 1. [Metrics and Visualization](/teaching/Software-Reengineering/metrics/) (Updated 2026-08-31)
-2. [Refactoring assistants](/teaching/Software-Reengineering/refactoring/) (Updated 2026-08-31)
-3. [Dynamic Analysis: Testing](/teaching/Software-Reengineering/dynamic/) (Updated 2026-08-31)
-4. [Software Integration](/teaching/Software-Reengineering/integration/) (Updated 2026-08-31)
-5. [Mining Software Repositories](/teaching/Software-Reengineering/msr/) (Updated 2026-08-31)
+2. [Refactoring assistants](/teaching/Software-Reengineering/refactoring/) (Updated 2026-09-04)
+3. [Dynamic Analysis: Testing](/teaching/Software-Reengineering/dynamic/) (Updated 2026-09-04)
+4. [Software Integration](/teaching/Software-Reengineering/integration/) (Updated 2026-09-04)
+5. [Mining Software Repositories](/teaching/Software-Reengineering/msr/) (Updated 2026-09-04)
 
 Project
 ======
