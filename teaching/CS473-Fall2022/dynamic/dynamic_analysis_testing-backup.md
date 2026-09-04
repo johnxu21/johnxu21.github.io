@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Dynamic Analysis- Testing
+published: false   # stale backup; kept for reference, not built
 permalink: /teaching/Software-Reengineering/dynamic/
 ---
 
