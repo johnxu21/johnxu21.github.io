@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dynamic Analysis- Testing
+title: "Dynamic Analysis: Testing"
 permalink: /teaching/Software-Reengineering/dynamic/
 ---
 
@@ -36,132 +36,202 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
-Dynamic analysis is “the analysis of the properties of a running software system” 
-[Ball 1999]. 
-It is complementary to static analysis techniques. Some properties that cannot be 
-studied through static analysis can be examined with dynamic analysis and vice versa. 
-The applications of dynamic analysis techniques are very broad: program comprehension, 
-system verification, resource profiling, test analysis, etc. In this session, we focus on 
-one very important aspect of dynamic analysis: Testing.
+Dynamic analysis is "the analysis of the properties of a running software system" [Ball, 1999]. It is
+complementary to static analysis: some properties that cannot be studied statically can be examined dynamically,
+and vice versa. The applications of dynamic analysis are broad -- program comprehension, system verification,
+resource profiling, test analysis, and more. In this session, we focus on one very important aspect of dynamic
+analysis: **testing**.
 
-As the chapter so eloquently states, "Tests: Your Life Insurance!" (OORP, p.149). 
-Tests are essential for Reengineering activities. They can help you: (1) to reveal unwanted 
-side effects of refactoring ("Write Tests to Enable Evolution", OORP, p.153); and (2) to 
-understand the inner workings of a system ("Write tests to Understand", OORP, p.179). 
+As the chapter so eloquently states, "**Tests: Your Life Insurance!**" (OORP, p.149). Tests are essential for
+reengineering activities. They help you (1) reveal unwanted side effects of refactoring
+("**Write Tests to Enable Evolution**", OORP, p.153) and (2) understand the inner workings of a system
+("**Write Tests to Understand**", OORP, p.179).
 
-The presence of automated tests does however not offer any guarantee about its quality. 
-Do the tests cover the whole system or are some parts left untested? 
-Which parts are covered to which extent? Hence, measuring test coverage is a useful, even 
-necessary, way to assess the quality and usefulness of a test suite in the context of reengineering.
+The presence of automated tests does not, however, offer any guarantee about their quality. Do the tests cover
+the whole system, or are some parts left untested? Which parts are covered, and to what extent? Measuring test
+coverage is therefore a useful -- even necessary -- way to assess the quality and usefulness of a test suite in
+the context of reengineering.
+
+**In this session you will:**
+
+* measure statement and branch coverage of an existing test suite with Coverage.py;
+* write a new test and observe its effect on coverage;
+* compare the coverage views offered by Coverage.py and SonarQube;
+* argue what level of coverage is good enough before you start reengineering.
 
 Materials & Tools Used for this Session
 ===============
-Slides
- - [pptx](Testing.pptx)
-Projects 
-- pacman-python (https://github.com/kilincceker/pacman-python-ua-sre)
-- django CMS (https://github.com/django-cms/django-cms)
-IDE 
-- PyCharm CE (https://www.jetbrains.com/pycharm) – You can use community edition or other IDEs.
-Tools
-- [Coverage.py](https://coverage.readthedocs.io/en/7.10.6/) is a code coverage tool supported by PyCharm (you can use coverage tool at your discretion, but it may require some adaptations for the project we are using during the lab sessions). 
-Book 
-- Object-Oriented Reengineering Patterns (OORP - http://scg.unibe.ch/download/oorp)
+
+**Slides**
+
+* [Dynamic Analysis: Testing (PDF)](../../../files/Testing.pdf)
+
+**Projects**
+
+* [pacman-python](https://github.com/Software-Reengineering/pacman-python) -- the same small Python game used in
+  the [Metrics and Visualization](/teaching/Software-Reengineering/metrics/) session.
+* [django CMS](https://github.com/django-cms/django-cms)
+
+**IDE**
+
+* [PyCharm](https://www.jetbrains.com/pycharm/) -- the Community Edition is sufficient; any other IDE works as well.
+
+**Tools**
+
+* [Coverage.py](https://coverage.readthedocs.io/en/7.10.6/) -- a code coverage tool supported by PyCharm. You may
+  use another coverage tool at your discretion, but it may require some adaptation for the projects we use in the
+  lab sessions.
+
+**Book**
+
+* [Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/) (OORP)
+  (_Note: OORP, p.xx refers to a page in the pdf version of this book_)
 
 Auxiliary Tools
 ==========
-Auxiliary tools are not required for the lab session itself, but they may be useful to get additional information (or alternatives) on a project. Use them at your own discretion. 
-- [SonarQube](https://www.sonarsource.com/products/sonarqube/) is a tool/platform that performs static analysis on source codes. It shows test coverage data from the output of dynamic analysis tools.
-- [Pynguin](https://github.com/se2p/pynguin) is a test generation tool for Python. It automatically generates unit tests.
+Auxiliary tools are not required for the lab session itself, but they may give you additional information (or
+alternatives) about a project. Use them at your own discretion.
+
+* [SonarQube](https://www.sonarsource.com/products/sonarqube/) -- a platform that performs static analysis on
+  source code. It can also display test coverage data produced by dynamic analysis tools.
+* [Pynguin](https://github.com/se2p/pynguin) -- a test generation tool for Python; it automatically generates unit
+  tests.
+
+<br/>
 
 Setup / Preparation
 ==============
-Install [Coverage.py](https://coverage.readthedocs.io/en/7.10.6/) using the code: ```pip install coverage```
 
-Be sure to follow the setup and the tasks from the lab [Refactoring Assistants](/teaching/Software-Reengineering/refactoring/). 
-Especially, the task on executing ```SonarQube```. As usual, you will also need PyCharm and projects. 
-Moreover, if you have not already, download the book for this course "Object-Oriented Reengineering Patterns
+1. **Install Coverage.py:**
 
-Task 1 – Coverage.py Test Coverage
+   ```bash
+   pip install coverage
+   ```
+
+2. **Complete the setup and the tasks from the
+   [Refactoring Assistants](/teaching/Software-Reengineering/refactoring/) lab** -- in particular Task 2, where you
+   install and run SonarQube. You will need it again in Task 3 below.
+3. As usual, you also need PyCharm and a local clone of the projects.
+4. **Download the book**, if you have not already:
+   "[Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/)".
+
+> **Tip:** take screenshots of every coverage report you generate. You will need them to answer the questions
+> below and as evidence of tool usage for the
+> [Intermediate Report](/teaching/Software-Reengineering/project/).
+
+<br/>
+
+Task 1: Test Coverage with Coverage.py
 ===========
-We will begin by using the [Coverage.py](https://coverage.readthedocs.io/en/7.10.6/) test coverage tool. The testing and coverage tools should be enabled by default. Remember to install this tool using the code provided in the **setup / preparation** section above
+We begin by measuring the coverage of the existing pacman-python test suite with
+[Coverage.py](https://coverage.readthedocs.io/en/7.10.6/). Remember to install the tool as described in the
+**Setup / Preparation** section above.
 
-First, make sure that you can test your Pacman-python, by using the following command line in the PyCharm terminal:
+First, make sure you can run the tests from the PyCharm terminal. To run the unit tests with coverage:
 
-To run the tests (+ coverage) for unit test:
-```yaml
+```bash
 python -m coverage run refactored/pacman_unittests.py
 python -m coverage html
 python -m coverage erase
 ```
-And for integration test:
-```yaml
+
+And for the integration tests:
+
+```bash
 python -m coverage run refactored/program_integration_tests.py
 python -m coverage html
 python -m coverage erase
 ```
-This should provide you with a html coverage report with statement coverage under htmlcov directory.
 
-Rename the generated folder for the unit and integration test you run for statement coverage. However, there are other coverage metrics available for you to analyses the adequacy of your test.
+This produces an HTML coverage report with **statement coverage** under the `htmlcov` directory. Rename the
+generated folder for each run (unit and integration) so that the reports are not overwritten.
 
-Alternatively, you can use branch coverage and include this in your html report using Coverage.py that supports statement coverage by default. To expand your report with branch coverage, check the documentation below.
+Coverage.py measures statement coverage by default, but other coverage criteria are available for assessing the
+adequacy of your tests. To add **branch coverage** to the report, pass the `--branch` flag. For the unit tests:
 
-To run the tests (+ coverage) for unit test: 
-```yaml
+```bash
 python -m coverage run --branch refactored/pacman_unittests.py
 python -m coverage html
 python -m coverage erase
 ```
 
-And for integration test:
-```yaml
+And for the integration tests:
+
+```bash
 python -m coverage run --branch refactored/program_integration_tests.py
 python -m coverage html
 python -m coverage erase
 ```
-If everything is executed without errors, you should see a new file showing the code coverage in html file under htmlcov directory. Rename the generated folder for the unit and integration test you run for branch coverage. Please try to remember this coverage (or take a screenshot to not depend on your memory).
+
+If everything runs without errors, you will again find an HTML report under `htmlcov`. Rename the generated folder
+for each of the two branch-coverage runs as well, and keep these four reports (or screenshots of them) -- you will
+need them for the questions below.
+
+**Questions:**
+
+* Is the coverage good enough?
+* If you make changes to the pacman-python sources, can you rely on the current tests to catch faults?
+* Are the statement coverage results similar to the branch coverage results? Why, or why not?
+* Can you apply the same procedure to the django CMS project? What are your observations?
 
 **Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
 
-- **Tests: Your Life Insurance** *(p.149)* – Tests act as a safety net during reengineering. Running coverage analysis shows where the safety net is strong or weak before making changes.
-- **Grow Your Test Base Incrementally** *(p.159)* – Gradually expand your tests in small, safe steps. Here, running both statement and branch coverage provides a baseline for incremental improvement.
-- **Test the Interface, Not the Implementation** *(p.171)* – Focus on verifying observable behavior rather than internal details. When analyzing coverage, look for missing behavioral scenarios, not untested private helpers.
+- **Tests: Your Life Insurance** *(p.149)* -- Tests act as a safety net during reengineering. Coverage analysis
+  shows where the safety net is strong and where it has holes, before you make any changes.
+- **Grow Your Test Base Incrementally** *(p.159)* -- Expand your tests in small, safe steps. Running both
+  statement and branch coverage gives you the baseline for that incremental improvement.
+- **Test the Interface, Not the Implementation** *(p.171)* -- Verify observable behavior rather than internal
+  details. When reading coverage, look for missing behavioral scenarios, not untested private helpers.
 
+<br/>
 
-Questions
-- Is the coverage good enough?
-- If you make any changes in Pacman-python sources, can you rely on the current tests to catch faults?
-- Are the coverage results from statement coverage similar to the ones you got from branch coverage in the last task? Why so or why not?
-- Can you apply these to django CMS project? What are your observations?
-
-Task 2 -- Increasing Coverage on Pacman-python
+Task 2: Increasing Coverage on pacman-python
 ===================
-For the second task, we will increase the statement and branch coverage on **Pacman-python**. Doing that is very simple, we just need to write more tests. In this task, we are going to write one new test case.
+For the second task, we will increase the statement and branch coverage of **pacman-python**. Doing so is simple:
+we just need to write more tests. In this task, you will write one new test case.
 
-Let's create a simple unit test on a method. We will test the `move_ghosts` function in `pacman.py` file in the **refactored** folder. You should look at the `pacman_unittests.py` file as a template for your test case, also in the **refactored** folder.
+Let's create a unit test for a single method: the `move_ghosts` function in `pacman.py`, in the **refactored**
+folder. Use `pacman_unittests.py` (also in the **refactored** folder) as a template for your test case.
 
-This activity follows the **Write Tests to Understand** pattern (*OORP*, Chapter 6, pp. 179).  
-> *Intent:* When you need to understand how a part of the system works — especially if it’s not well-documented — write a small, focused test that captures your understanding. The test acts as both **documentation** and a **safety net** for future changes.  
-> *In this task:* Your test for `move_ghosts` will help you learn exactly how the method behaves and record that knowledge so you can verify it in the future.
+After adding the new test, run `pacman_unittests.py` again with coverage. If your test has no errors, you will see
+the updated coverage report. Keep this report (or a screenshot) -- you will need it to answer the questions below.
 
+**Questions:**
 
-After adding the new test, run `pacman_unittests.py` again and run it with coverage. If your test has no errors, you should see the coverage report showing the code coverage. Leave this report with the coverage information on as you may need it to answer some questions (or take a screenshot of it).
+* How did the new test affect the coverage?
+* Do you think 100% coverage is feasible?
+* What would you propose as a good level of code coverage?
 
-Questions:
-- How did the new test affect the coverage?
-- Do you think 100% coverage is feasible?
-- What would you propose as a good level of code coverage?
+**Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
 
-SonarQube Coverage Information on Pacman-python
+- **Write Tests to Understand** *(p.179)* -- When you need to understand how a part of the system works,
+  especially when it is poorly documented, write a small, focused test that captures your understanding. The test
+  acts as both documentation and a safety net for future changes. Your test for `move_ghosts` will teach you
+  exactly how the method behaves and record that knowledge so that you can verify it later.
+- **Grow Your Test Base Incrementally** *(p.159)* -- One well-chosen test at a time is how a usable test suite
+  gets built on a system that has none.
+
+<br/>
+
+Task 3: SonarQube Coverage Information on pacman-python
 ===========
-SonarQube is a static analysis tool. But it can show the results from test coverage in its interface. 
-First, let's run SonarQube as is defined in lab TASK 3 [Refactoring Assistants](/teaching/Software-Reengineering/refactoring/). Make sure your SonarQube service is running.  Please see the documentation below for a coverage report from SonarQube.
-[https://docs.sonarsource.com/sonarqube/9.8/analyzing-source-code/test-coverage/python-test-coverage/](https://docs.sonarsource.com/sonarqube/9.8/analyzing-source-code/test-coverage/python-test-coverage/)
+SonarQube is a static analysis tool, but it can also display the results of test coverage in its interface.
+First, start SonarQube as described in Task 2 of the
+[Refactoring Assistants](/teaching/Software-Reengineering/refactoring/) lab, and make sure the SonarQube service
+is running. Then follow the SonarQube documentation on
+[Python test coverage](https://docs.sonarsource.com/sonarqube/9.8/analyzing-source-code/test-coverage/python-test-coverage/)
+to feed your Coverage.py report into SonarQube.
 
-Questions:
-- What do you think of the overview coverage visualization provided by SonarQube?
-- Which did you find better to visualize the source code with statement coverage, branch coverage or SonarQube?
+**Questions:**
 
-Post-Lab Quiz: Metrics & Visualization
+* What do you think of the coverage overview visualization provided by SonarQube?
+* Which did you find better for visualizing the source code: statement coverage, branch coverage, or SonarQube?
+
+**Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
+
+- **Tests: Your Life Insurance** *(p.149)* -- A coverage dashboard is only useful if it changes what you test
+  next; use it to decide where the safety net still needs work.
+
+Post-Lab Quiz: Dynamic Analysis -- Testing
 ==========
-Posted on WebCampus
+The quiz for this session is posted on WebCampus.
