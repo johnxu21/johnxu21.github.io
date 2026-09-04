@@ -36,125 +36,170 @@ height:40px;" value="Reengineering Project" />
 <br/>
 <br/>
 
+Mining software repositories is related to both data mining and reverse engineering. Source control repositories,
+bug repositories, archived communications, deployment logs, and code repositories are all examples of software
+repositories that are commonly available for most software projects. The Mining Software Repositories (MSR) field
+analyzes and cross-links the rich data in these repositories to uncover interesting and actionable information
+about software systems [[Hassan, 2008](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4659248)].
 
-Mining software repositories is related to both data mining and reverse engineering. 
-Source control repositories, bug repositories, archived communications, deployment logs, 
-and code repositories are examples of software repositories that are commonly available 
-for most software projects. The Mining Software Repositories (MSR) field analyzes and 
-cross-links the rich data available in these repositories to uncover interesting and 
-actionable information about software systems.  
+For example, data in source control repositories -- traditionally used only to archive code -- can be linked with
+data in bug repositories to help practitioners propagate complex changes and to warn them about risky code based
+on prior changes and bugs.
 
-Here we apply **Learn from the Past (OORP, p.141)** — mining repositories allows us to 
-leverage the system’s history to guide current reengineering decisions. By studying past 
-bugs, fixes, and change patterns, we gain evidence for where risks lie and how best to 
-adapt the system.   
+In this lab you will mine software repositories, then extract and analyze some of the interesting software
+artifacts archived in them.
 
-For example, data in source control repositories, traditionally used to archive code, could be 
-linked with data in bug repositories to help practitioners propagate complex changes and to 
-warn them about risky code based on prior changes and bugs. This follows the principle of 
-**Tie Code and Questions (OORP, p.121)** — connect what the system does with what stakeholders 
-need to know.  
+**In this session you will:**
 
-When mining, also use **Study the Exceptional Entities (OORP, p.107)** — focus on outliers such as 
-files with unusually high bug density or commits with large ripple effects, since these often 
-reveal deeper design or process problems.  
+* create a GitHub personal access token and query the GitHub REST API;
+* collect the files of a repository and how often each one was touched;
+* link files to their authors and visualize developer activity over time;
+* extract pull request data and export it for analysis.
 
-[Ahmed E. Hassan. 2008](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4659248).  
-
-In this lab you will mine software repositories, extract and analyze some interesting 
-software artifacts archived in the repositories.
-
-Material and Tools
+Materials & Tools Used for this Session
 ==========
-* Session slides [here](../../../files/MSR_slides.pdf).
-* The following GitHub repos you can use to run the lab experiments
-  * [scottyab/rootbeer](https://github.com/scottyab/rootbeer)
-  * [Skyscanner/backpack](https://github.com/Skyscanner/backpack) (Try it from home since it has very many commits)
-  * [mendhak/gpslogger](https://github.com/mendhak/gpslogger) (Try it from home since it has very many commits)
-  * [thundernest/k-9](https://github.com/thundernest/k-9) (Try it from home since it has very many commits)
-* Resources of how to obtain data on GitHub
-  * [GitHub API](https://docs.github.com/en/rest)
-  * [How to create GitHub token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token) or you could use this [Generate Token](https://github.com/settings/tokens/new?scopes=repo) if you do not want to read  details.
 
-Steps/Preparations
+**Slides**
+
+* [Mining Software Repositories (PDF)](../../../files/MSR_slides.pdf)
+
+**Repositories you can use for the lab experiments**
+
+* [scottyab/rootbeer](https://github.com/scottyab/rootbeer)
+* [Skyscanner/backpack](https://github.com/Skyscanner/backpack) (try this one from home -- it has very many commits)
+* [mendhak/gpslogger](https://github.com/mendhak/gpslogger) (try this one from home -- it has very many commits)
+* [thundernest/k-9](https://github.com/thundernest/k-9) (try this one from home -- it has very many commits)
+
+**Resources for obtaining data from GitHub**
+
+* [GitHub REST API](https://docs.github.com/en/rest)
+* [How to create a GitHub token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token),
+  or use this [Generate Token](https://github.com/settings/tokens/new?scopes=repo) shortcut if you do not want to
+  read the details.
+
+**Book**
+
+* [Object-Oriented Reengineering Patterns](http://scg.unibe.ch/download/oorp/) (OORP)
+  (_Note: OORP, p.xx refers to a page in the pdf version of this book_)
+
+<br/>
+
+Setup / Preparation
 ==========
-The following tasks will guide you to carry out the labs of mining software repositories. 
-In the class slides, we have looked at three ways how we can get data from GitHub: 
-cloning the repos using Git, using the 
-[GitHub REST API](https://docs.github.com/en/rest), and using the 
-[GitHub GraphQL API](https://docs.github.com/en/graphql).  
-
-In this lab we shall go through getting GitHub data using the
+The tasks below will guide you through the labs on mining software repositories. In the class slides, we looked at
+three ways of getting data from GitHub: cloning the repositories with Git, using the
+[GitHub REST API](https://docs.github.com/en/rest), and using the
+[GitHub GraphQL API](https://docs.github.com/en/graphql). In this lab we will use the
 [GitHub REST API](https://docs.github.com/en/rest).
 
-Task 1
+1. **Create a GitHub personal access token** by following the tutorial linked above. Each token corresponds to one
+   GitHub account.
+2. **Fork the lab repository** [johnxu21/msrLab](https://github.com/johnxu21/msrLab), then clone your fork to have
+   a local copy of the source code.
+
+> **Tip:** never commit your token. Keep it out of the files you push back to your fork.
+
+<br/>
+
+Task 1: Collecting the Files of a Repository
 =======
-* Create a GitHub token(s) by following the tutorial on the link. Each token corresponds to a GitHub account.
-* Fork my repo [johnxu21/msrLab](https://github.com/johnxu21/msrLab). Thereafter, clone the fork onto your 
-laptop to have a local copy of the source code. 
-* Browse the ```src``` folder and rename the file ```CollectFiles.py``` to ```<your-names>_CollectFiles.py```.
-* Replace the fake ```tokens``` in the code with your own token.
-* Thereafter, run the file ```<your-names>_CollectFiles.py``` and look at the output. 
-The code collects all the files in a repo and also the number of counts the file is touched 
-throughout its lifetime.
 
-Task 2
+* Browse the `src` folder and rename the file `CollectFiles.py` to `<your-name>_CollectFiles.py`.
+* Replace the placeholder `token` in the code with your own token.
+* Run `<your-name>_CollectFiles.py` and look at the output. The script collects all the files in a repository,
+  together with the number of times each file was touched over its lifetime.
+
+**Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
+
+- **Learn from the Past** *(p.141)* -- The change history of a system tells you which parts of it really move.
+  Collecting the per-file touch counts is the raw material for that argument.
+
+<br/>
+
+Task 2: Linking Files to Authors
 ======
-A repository contains both source files and other files like configuration files. Developers 
-spend most of the time changing source files for many reasons, for example, fixing bugs, 
-extending them with new features, or refactoring. The script CollectFiles.py collects all 
-files in a repository. So your first task is to adapt the script to gather only the source files. 
-You can find a repo's programming languages on the bottom right of the repo's page on GitHub 
-(some repos could be written in more than one programming language).
-* First, write a script with the name ```<'your_firstname'_authorsFileTouches.py>``` that collects 
-the authors and the dates when they touched for each file in the list of files generated by the 
-adapted file CollectFiles.py (only source files).
-  - This follows **Learn from the Past (OORP, p.141)** — mining commit histories and author activity 
-  helps us base reengineering on evidence rather than speculation. 
-* Second, write a script that generates a scatter plot (using matplotlib) of weeks vs file 
-variables where the points are shaded according to author variable. Each author should have 
-a distinct color. Looking at the scatter plot one should be able to tell a file that is 
-touched many times and by whom. 
-  - This supports **Study the Exceptional Entities (OORP, p.107)** — heavily modified or unusually 
-  shared files stand out as potential hotspots for refactoring.  
-  - It also reflects **Tie Code and Questions (OORP, p.121)** — the visualization answers concrete 
-  questions about developer activity and file volatility that matter during reengineering.  
+A repository contains both source files and other files, such as configuration files. Developers spend most of
+their time changing source files, for many reasons: fixing bugs, extending them with new features, or refactoring.
+The `CollectFiles.py` script collects *all* the files in a repository, so your first job is to adapt it to gather
+only the source files. You can find a repository's programming languages at the bottom right of its GitHub page
+(some repositories are written in more than one language).
 
-This can help, for example, when identifying refactoring 
-opportunities, which developer should be allocated the task since they have touched a file 
-many times or have recently worked on the file. You can name the script for drawing the 
-histogram ```<'your_firstname'_scatterplot.py>```. 
-You get a hint on how draw the scatter plot on this link on [Stackoverflow](https://stackoverflow.com/questions/8202605/matplotlib-scatterplot-color-as-a-function-of-a-third-variable).
+* First, write a script named `<your-name>_authorsFileTouches.py` that, for each file in the (source-only) list
+  produced by your adapted `CollectFiles.py`, collects the authors who touched the file and the dates on which
+  they touched it.
+* Second, write a script that generates a scatter plot (using `matplotlib`) of weeks against files, where each
+  point is colored according to its author. Each author should have a distinct color, so that the plot shows both
+  which files are touched many times and by whom. Name this script `<your-name>_scatterplot.py`.
 
-**Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer)) <br/>
-The repository scottyab/rootbeer has a total of 17 unique source files ('.java'). It has a total 
-of 33 authors who have touched the 17 unique files (the data points in the graph) who have been 
-updating the files and committing their changes. The scatter plot  below  shows the authors 
-activities over time for the repository scottyab/rootbeer. 
+This is useful, for example, when identifying refactoring opportunities and deciding which developer should be
+allocated a task, because they have touched a file many times or have worked on it recently. You can get a hint on
+how to draw the scatter plot from this
+[Stack Overflow answer](https://stackoverflow.com/questions/8202605/matplotlib-scatterplot-color-as-a-function-of-a-third-variable).
 
-<img src="/images/rootbeer.jpeg" alt="rootbeer" style="width:600px;height:480px;" align="center">
+**Example** ([scottyab/rootbeer](https://github.com/scottyab/rootbeer))
 
-Task 3
+The repository `scottyab/rootbeer` has 17 unique source files (`.java`), touched by a total of 33 authors -- these
+are the data points in the graph. The scatter plot below shows the authors' activity over time for this
+repository.
+
+<img src="/images/rootbeer.jpeg" alt="Scatter plot of author activity over time for scottyab/rootbeer" style="width:600px;height:480px;" align="center">
+
+**Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
+
+- **Learn from the Past** *(p.141)* -- Mining commit histories and author activity lets you base reengineering
+  decisions on evidence rather than speculation.
+- **Study the Exceptional Entities** *(p.107)* -- Heavily modified or unusually widely shared files stand out as
+  potential hotspots for refactoring.
+- **Tie Code and Questions** *(p.121)* -- The visualization answers concrete questions about developer activity
+  and file volatility that matter during reengineering.
+
+<br/>
+
+Task 3: Extracting Pull Request Data
 ======
-Write a script to extract data from the following merged pull requests [11791, 11686, 11591, 12159, 12073, 11981, 11867, 11991, 12207, 11926, 11847]
-in the repository [apache/kafka](https://github.com/apache/kafka). 
-Read about how to extract ```pull request``` from the following site [GitHub Pull Request API](https://docs.github.com/en/rest/pulls/pulls#about-the-pulls-api)
-For example, given a ```pull request number = 1347``` for the repo ```octocat/Hello-World```,  the follwoing API would return a ```json``` file the ```pull request``` details:
-```https://api.github.com/repos/octocat/Hello-World/pulls/1347```
+Write a script to extract data from the following merged pull requests in the
+[apache/kafka](https://github.com/apache/kafka) repository:
 
-The file [Pull request details](https://docs.google.com/spreadsheets/d/13f89Ib7jTp1nKz_3KcaFjq_w8iUZSVWSXsIrBlDylJc/edit#gid=0) 
-is an example output for the pull request number ```11577``` and ```11686``` for the repo [apache/kafka](https://github.com/apache/kafka).
-Store the output in ```.csv``` file.
+```
+11791, 11686, 11591, 12159, 12073, 11981, 11867, 11991, 12207, 11926, 11847
+```
 
-### Note on the Upcoming Quiz
+Read about how to extract pull requests from the
+[GitHub Pull Request API](https://docs.github.com/en/rest/pulls/pulls#about-the-pulls-api) documentation. For
+example, given pull request number `1347` for the repository `octocat/Hello-World`, the following endpoint returns
+a JSON document with the pull request details:
 
-- For this lab, the quiz will include a **mix of MCQs and Short Answer Questions (SAQs)**.  
-- At least **4 of the 10 questions will be SAQs**. These will require you to:  
-  - Run or adapt the scripts you developed in the lab.  
-  - Copy and paste small outputs (e.g., top files, author activity, PR data).  
-  - Write short explanations using your results, sometimes connecting them to reengineering patterns.  
+```
+https://api.github.com/repos/octocat/Hello-World/pulls/1347
+```
 
-**How to prepare:**  
-- Make sure your lab scripts run correctly and produce the expected outputs.  
-- Save or bookmark key results (CSV, scatter plot, API responses) so you can access them quickly during the quiz.  
-- Review the patterns used in the lab (**Learn from the Past, Tie Code and Questions, Study the Exceptional Entities**) since you may need to apply them.  
+This [Pull request details](https://docs.google.com/spreadsheets/d/13f89Ib7jTp1nKz_3KcaFjq_w8iUZSVWSXsIrBlDylJc/edit#gid=0)
+spreadsheet is an example of the expected output, for pull requests `11577` and `11686` of
+[apache/kafka](https://github.com/apache/kafka). Store your own output in a `.csv` file.
+
+**Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
+
+- **Learn from the Past** *(p.141)* -- Merged pull requests record how a change was discussed, reviewed, and
+  reworked. That record is evidence about how the system absorbs change.
+- **Tie Code and Questions** *(p.121)* -- Decide what you want to know before you decide which fields to export.
+
+<br/>
+
+Post-Lab Quiz: Mining Software Repositories
+==========
+The quiz for this session is posted on WebCampus.
+
+**Format:** the quiz will include a **mix of MCQs and short answer questions (SAQs)**. At least **4 of the 10
+questions will be SAQs**. These will require you to:
+
+* run or adapt the scripts you developed in the lab;
+* copy and paste small outputs (e.g., top files, author activity, PR data);
+* write short explanations based on your results, sometimes connecting them to reengineering patterns.
+
+**How to prepare:**
+
+* make sure your lab scripts run correctly and produce the expected outputs;
+* save or bookmark your key results (CSV, scatter plot, API responses) so that you can access them quickly during
+  the quiz;
+* review the patterns used in the lab (**Learn from the Past**, **Tie Code and Questions**,
+  **Study the Exceptional Entities**), since you may need to apply them.
