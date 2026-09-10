@@ -161,6 +161,8 @@ In Design Portfolio II, teams will select **two representative implemented featu
 
 The goal is to make design a practical part of development and review—not to produce diagrams merely to satisfy a documentation requirement.# 3. Project Development Workflow
 
+### GitHub Workflow for Project Contributions
+
 All project contributions must follow the team’s GitHub workflow:
 
 1. Select or create an issue with a clear description and acceptance criteria.
@@ -168,9 +170,11 @@ All project contributions must follow the team’s GitHub workflow:
 3. Create a focused branch with a descriptive name.
 4. Implement and test the change.
 5. Open a pull request linked to the issue.
-6. Request a review from the assigned teammate.
-7. Address the reviewer’s feedback.
-8. Merge only after receiving at least one approval and passing the required CI checks.
+6. Request reviews from at least two assigned teammates.
+7. Address the reviewers’ feedback.
+8. Merge only after receiving at least two teammate approvals and passing all required CI checks.
+
+> **Important:** The two teammate approvals and the CI checks are separate requirements. A successful CI check does not count as a peer-review approval.
 
 Keep pull requests focused. Unrelated changes should be submitted separately.
 
