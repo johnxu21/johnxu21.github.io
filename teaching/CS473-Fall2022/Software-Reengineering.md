@@ -132,7 +132,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 </tr>
 
 <tr>
-<td style="border: 1px solid black;">05</td>
+<td style="border: 1px solid black;">04</td>
 <td style="border: 1px solid black;">Mo 09/14 </td>
 <td style="border: 1px solid black;">[L] Dynamic Analysis: Testing </td>
 <td style="border: 1px solid black;">We 09/16 </td>
@@ -140,7 +140,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 </tr>
 
 <tr>
-<td style="border: 1px solid black;">04</td>
+<td style="border: 1px solid black;">05</td>
 <td style="border: 1px solid black;">Mo 09/21</td>
 <td style="border: 1px solid black;">[L] Software Integration </td>
 <td style="border: 1px solid black;">We 09/23 </td>
@@ -235,7 +235,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <td style="border: 1px solid black;">16</td>
 <td style="border: 1px solid black;">Mo 12/07</td>
 <td style="border: 1px solid black;"></td>
-<td style="border: 1px solid black;">We 12/07</td>
+<td style="border: 1px solid black;">We 12/09</td>
 <td style="border: 1px solid black;"><b> Exam</b></td>
 </tr>
 
@@ -272,11 +272,11 @@ Project: Assignment
 
 **Milestones**
 All Deliverables will be **submitted on Canvas**
-* Wed 10/08/2025 - 11h59 pm - Project Definition & Group Assembly & Precondition Report: Confirm your project and group members on Canvas. Include a precondition report, details of this report to follow on the [project page]().
-* Wednesday 11/05/2025 - 11h59 pm - Intermediate Report - Tool Usage: Send the Intermediate Report (in PDF format).
-* Monday 11/17/2025 Feedback for Intermediate Report
-* Wednesday 12/03/2025 11h59pm Final Report
-* Wednesday 12/10/2025 Oral exam / Presentation (**Tobe confirmed**)
+* **[Milestone 1]** Wednesday 10/07/2026 - 11h59 pm - Project Definition, Group Assembly & Pre-conditions Report: confirm your project and group members on Canvas, and submit the Pre-conditions Report. Details of this report are on the [project page](/teaching/Software-Reengineering/project/).
+* **[Milestone 2]** Wednesday 11/04/2026 - 11h59 pm - Intermediate Report (Tool Usage): submit the Intermediate Report in PDF format.
+* Monday 11/16/2026 - Feedback session for the Intermediate Report.
+* **[Milestone 3]** Wednesday 12/02/2026 - 11h59 pm - Final Report.
+* Wednesday 12/09/2026 - Oral exam / presentation (**to be confirmed**).
 
 Group Work
 ========
