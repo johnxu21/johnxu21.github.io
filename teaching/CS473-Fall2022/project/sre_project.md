@@ -640,7 +640,7 @@ In your reflection section, summarize briefly which patterns proved most useful 
 
 <br/>
 
-# 8. Bonus (optional): LLM-Assisted Integration and Test Generation
+# 8. LLM-Assisted Integration and Test Generation
 
 Category 4 is where the automation runs out. `git cherry-pick` fails, RePatch cannot invert the refactorings, and
 [Section 2](#category-4-cherry-pick-fails-repatch-cannot-resolve-the-conflicts) asks you to explain why developer
