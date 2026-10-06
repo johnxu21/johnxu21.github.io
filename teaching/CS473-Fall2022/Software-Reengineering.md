@@ -226,7 +226,7 @@ Below is the detailed time-schedule, which is subject to change. Changes will be
 <tr>
 <td style="border: 1px solid black;">15</td>
 <td style="border: 1px solid black;">Mo 11/30</td>
-<td style="border: 1px solid black;">Free project Work</td>
+<td style="border: 1px solid black;"><b>Direct Assessment</b></td>
 <td style="border: 1px solid black;">We 12/02</td>
 <td style="border: 1px solid black;">Free project Work >> <b>Final Report</b></td>
 </tr>

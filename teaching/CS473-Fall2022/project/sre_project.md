@@ -52,25 +52,27 @@ that LinkedIn Kafka release.
 
 ### The project at a glance
 
-1. **Form a group** (up to three members), fork `linkedin/kafka`, and build it -- Section 3
-   and Section 4.
-2. **Split your group's 21 PRs** from the
+1. **Form your team**, fork `linkedin/kafka`, and establish your development environment -- Sections 3 and 4.
+2. **Assign 7 PRs to each student** from the
    [PR Categories Spreadsheet](https://docs.google.com/spreadsheets/d/1c2Y9p3mnBy5i_TP-7TNk2LkesAIsvoPma1MzAkU6WkA/edit?usp=sharing)
-   among the members -- Section 2.
-3. **Integrate each PR** into `3.0-li` with `git cherry-pick` (Categories 1-2) or RePatch (Categories 3-4), and
-   test it -- Section 2 and Section 5.
-4. **Write three reports** and submit each one on Canvas by its deadline:
+   using the category distribution in Section 2.
+3. **Reengineer your assigned PRs** by investigating their repository history and design, attempting integration,
+   adapting where necessary, and testing and validating the results -- Sections 2 and 5.
+4. **Complete the required LLM-assisted experiments** on selected assigned PRs -- Section 6.
+5. **Document your work through three progressive reports** and complete the oral exam/presentation.
 
-| Deliverable | Due (11h59 pm) |
-|---|---|
-| **[Milestone 1]** Project definition, group assembly & Pre-conditions Report | Wed 10/07/2026 |
-| **[Milestone 2]** Intermediate Report (tool usage) | Wed 11/04/2026 |
-| Feedback session on the Intermediate Report | Mon 11/16/2026 |
-| **[Milestone 3]** Final Report | Wed 12/02/2026 |
-| Oral exam / presentation | Wed 12/09/2026 (to be confirmed) |
 
-These dates mirror the timetable on the [course main page](/teaching/Software-Reengineering/); if the two ever
-disagree, the course page wins.
+| Deliverable | Due | Grading |
+|---|---|---|
+| [Pre-conditions Report](CS789_Preconditions_Report_Template.pdf) | Sun. Oct. 11 | **15 pts** · [Rubric](CS789_Preconditions_Grading_Rubric.pdf) |
+| [Intermediate Report](CS789_Intermediate_Report_Template.pdf) | Wed. Nov. 4 | **50 pts** · [Rubric](CS789_Intermediate_Grading_Rubric.pdf) |
+| Feedback Session | Mon. Nov. 16 | -- |
+| [Final Report](CS789_Final_Report_Template.pdf) | Wed. Dec. 2 | **100 pts** · [Rubric](CS789_Final_Grading_Rubric.pdf) |
+| Oral Exam / Presentation | Wed. Dec. 9 | -- |
+
+The three reports are **progressive**. The Intermediate Report builds on the Pre-conditions Report, and the Final
+Report builds on the Intermediate Report. Feedback received at each stage must be addressed in the next
+submission.
 
 <br/>
 
@@ -181,31 +183,64 @@ You have already run RePatch in **Task 2 of the
 You will work on pull requests from the four categories described below. The specific PRs are listed in the
 [PR Categories Spreadsheet](https://docs.google.com/spreadsheets/d/1c2Y9p3mnBy5i_TP-7TNk2LkesAIsvoPma1MzAkU6WkA/edit?usp=sharing).
 
-Each **group** is assigned **21 PRs**, which works out to seven per student in a group of three:
+Each **student** is responsible for **7 PRs**, distributed across the four categories below. A three-person team
+will therefore work on 21 PRs, while a four-person team will work on 28 PRs.
 
-| Category | PRs per group | Per student | Integration route |
-|---|---|---|---|
-| 1 -- cherry-pick succeeds, tests exist | 3 | 1 | `git cherry-pick` |
-| 2 -- cherry-pick succeeds, tests missing | 6 | 2 | `git cherry-pick` + new tests |
-| 3 -- cherry-pick fails, RePatch succeeds | 3 | 1 | RePatch |
-| 4 -- cherry-pick fails, RePatch fails | 9 | 3 | RePatch + manual analysis |
-| **Total** | **21** | **7** | |
+| Category | PRs per student | Integration route |
+|---|---:|---|
+| 1 -- cherry-pick succeeds, tests exist | 1 | `git cherry-pick` |
+| 2 -- cherry-pick succeeds, tests missing | 2 | `git cherry-pick` + new tests |
+| 3 -- cherry-pick fails, RePatch succeeds | 1 | RePatch |
+| 4 -- cherry-pick fails, RePatch fails | 3 | RePatch + manual analysis |
+| **Total** | **7** | |
 
-**How you divide these PRs among yourselves is up to your group.** Decide early, and write the split down -- the
-report has to show it. Keep the category mix balanced across members: nobody should end up owning only Category 4
-work, since those PRs cannot be integrated and are the least satisfying to carry alone.
+**Assign the PRs within your team so that each student receives the category distribution shown above.**
+Decide the allocation early and record it in your report. Although each student is individually responsible for analyzing, integrating, testing, and documenting their
+assigned PRs, this remains a **team project**. You are expected to discuss findings, share challenges and
+solutions, and help one another when difficulties arise during integration, testing, and analysis.
 
 > **Check the `Replacement` column.** For some Category 1 and 2 PRs the originally selected pull request turned
 > out to conflict, so a **replacement PR** is listed beside it. Where a replacement is given, work on the
 > **replacement**, not the original.
 
-This is a group project, so you are expected to **collaborate** rather than work in parallel silos:
+You are expected to **collaborate** rather than work in parallel silos:
 
 * Discuss your findings, challenges, and approaches together.
-* Share insights on conflicts, testing, and coverage -- the same refactoring often blocks several PRs.
+* Share insights on conflicts, testing, coverage, design differences, and refactorings -- the same underlying
+  issue may affect several PRs.
+* Help one another troubleshoot difficult integration, testing, or analysis problems when needed.
 * Submit one **joint team report** consolidating everyone's contributions.
-* Include a short **contribution table** naming which PRs each member handled, so individual work stays
-  identifiable.
+* Keep each student's assigned PRs clearly identifiable throughout the report.
+
+### Common workflow for every PR
+
+Regardless of category, treat each assigned pull request as a **software reengineering case**, not simply as a
+patch to be applied. For each PR, follow the general workflow below:
+
+**Understand the change → Recover the source design → Recover the target integration-point design → Identify
+the design and evolution gap → Attempt integration → Adapt where necessary → Test and validate → Document
+the outcome**
+
+As part of understanding each change, use the techniques introduced in the
+[Mining Software Repositories](/teaching/Software-Reengineering/msr/) lab to establish the **provenance of
+each PR**. At minimum, record:
+
+* the PR number and URL;
+* the merge commit used for the integration; and
+* the files changed by the PR.
+
+Where relevant, examine the repository history to help explain the change or the divergence between the
+source and target variants.
+
+You may obtain this information using **Git, the GitHub interface, the GitHub REST API, GraphQL, or scripts**.
+The particular mechanism is your choice. What matters is that you can explain how you obtained the
+information and provide enough evidence for your analysis to be reproduced.
+
+The amount of work required at each stage depends on the PR category. For example, a Category 1 PR may
+integrate with little or no adaptation, while a Category 4 PR may stop at the analysis of the design,
+refactoring, or semantic differences that prevent successful integration. **Do not invent adaptation work
+when none is necessary.** Instead, document what you found and explain why the integration was straightforward
+or difficult.
 
 ### Category 1: Cherry-pick succeeds and tests already exist
 
@@ -214,8 +249,6 @@ This is a group project, so you are expected to **collaborate** rather than work
 
 **Tasks:**
 
-* Identify the **merge commit** of the pull request, using the techniques from the
-  [Mining Software Repositories](/teaching/Software-Reengineering/msr/) lab.
 * Run `git cherry-pick` on that merge commit.
 * Validate the integration by running the existing test suite.
 
@@ -226,8 +259,7 @@ This is a group project, so you are expected to **collaborate** rather than work
 
 **Tasks:**
 
-* Identify the **merge commit** of the pull request.
-* Run `git cherry-pick` on that merge commit.
+* Run `git cherry-pick` on the identified merge commit.
 * Write the missing unit or integration tests for the uncovered changes.
 * Measure coverage **before and after** adding the tests, to show the improvement. See
   [Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka) for the commands and for the PowerMock caveat.
@@ -261,101 +293,86 @@ This is a group project, so you are expected to **collaborate** rather than work
 * Reflect on the nature of these conflicts and suggest directions for extending or improving **RePatch** to handle
   them.
 
+> **Do not perform extensive redesign solely to force a Category 4 PR to integrate.** A well-supported
+> explanation of why integration is infeasible is a successful outcome for this category.
+
 <br/>
 
-# 3. Pre-conditions Report
+# 3. Project Setup and Pre-conditions
 
-Each group submits a **Pre-conditions Report (PDF)**. Only **one member per group** uploads it on Canvas on behalf
-of the team. Groups have a **maximum of three members**; groups of one or two are also allowed.
+The first project milestone is the **Pre-conditions Report**. Each group submits one report (PDF), with one
+member uploading it to Canvas on behalf of the team.
 
-This and the later reports are graded against the checklists on the
-[course main page](/teaching/Software-Reengineering/):
-[Pre-conditions](../../../files/CS789_SRE/Pre-conditions_Report_Evaluation_Template.pdf) &middot;
-[Intermediate](../../../files/CS789_SRE/Intermetdiate_Evaluation_Report_Template.pdf) &middot;
-[Final](../../../files/CS789_SRE/Final_Evaluation_Report_CS-789_Template.pdf). Read the relevant checklist
-*before* you write the report. All deadlines are in the table under
-[The project at a glance](#the-project-at-a-glance).
+The Pre-conditions Report establishes the foundation for the rest of the project. It
+covers:
 
-The Pre-conditions Report must contain the four parts below.
+* team and repository setup;
+* development environment and baseline validation;
+* PR allocation and preliminary analysis;
+* initial repository and design understanding;
+* project planning, risks, milestones, and coordination.
 
-### 3.1 Group and repository setup
+Each student is individually responsible for validating their own development environment
+and baseline and for completing the preliminary analysis of all **seven assigned PRs**.
+The team submits one report, but individual work must remain clearly identifiable.
 
-* Project name.
-* Full names of all group members.
-* A link to your **fork of [linkedin/kafka](https://github.com/linkedin/kafka)**.
-* Confirmation that all group members are added as collaborators on the fork.
-* Add the instructor as a collaborator as well -- GitHub ID [`johnxu21`](https://github.com/johnxu21).
+Use the **Pre-conditions Report Template** provided on the course main page as the
+required structure for this submission. Sections marked **[TEAM]** are completed
+collaboratively, while sections marked **[INDIVIDUAL]** must be completed by the student
+named in that section.
 
-### 3.2 Build confirmation
+The team must also establish its weekly coordination process at this stage. This includes
+a regular weekly meeting, a shared record of meeting minutes accessible to the instructor
+and TAs, and continued coordination through the team's assigned Discord channel.
 
-* A short statement confirming that your group **built the project successfully**.
-* Each group member includes a **screenshot from their own IDE** showing the project source and a
-  *"Build successful"* (or equivalent) message.
-* Compile all screenshots into the same PDF report.
+The Pre-conditions Report is due **Sunday, October 11, 2026 at 11:59 pm**.
 
-### 3.3 Initial system understanding
-
-Provide a **simple class diagram** for one of the pull requests you will work on (or for the buggy target). This
-reinforces your **Initial Understanding** (OORP, p.83) of the system. Include only:
-
-* the class(es) affected by the patch, and
-* the classes those classes call directly.
-
-Do **not** include transitive dependencies: if class A calls class B and class B calls class C, you do not need
-class C. A simple class diagram carries only class names and their interactions. Strict UML notation is **not**
-required -- clarity of the interactions is what matters. See the examples in the
-[JPacman repository's `doc/uml` folder](https://github.com/johnxu21/jpacman/blob/master/doc/uml/FactoryWiring.png).
-
-### 3.4 Planning of scope and goals (optional)
-
-This section is optional, but it appears on the evaluation form, and the items it asks for come back as *graded*
-criteria in the Intermediate and Final reports -- so writing them down now costs little and pays off later:
-
-* **Meeting schedule** -- how often, and online or in person?
-* **Communication schedule** -- which tools, and how quickly are messages expected to be answered (Discord,
-  Slack, email, GitHub issues)?
-* **Collaboration practices** -- how will you share progress on your PRs (status updates, peer reviews, joint
-  testing sessions)?
-* **Ad-hoc or systematic?** -- state which approach your group is taking. You will be asked to reflect on this
-  choice in both later reports.
-* **Timeline and milestones** -- when will you finish Categories 1-4, draft the reports, and run reviews?
-* **Success criteria** -- your "definition of done" for a PR. When is a Category 2 PR finished? When is a
-  Category 4 PR adequately explained?
-* **Contingency plan** -- how will you handle missed deadlines, unresolved conflicts, or an unavailable teammate?
+The Intermediate and Final Reports build directly on this report. Feedback received on
+the Pre-conditions Report must therefore be addressed in the Intermediate Report rather
+than treated as a separate submission.
 
 <br/>
 
 # 4. General Coding Instructions
 
-When working on this assignment, follow these repository and coding practices.
+Follow these repository and coding practices throughout the project.
 
-**Fork and clone**
+**Fork, clone, and build**
 
-* Fork [linkedin/kafka](https://github.com/linkedin/kafka) and clone it for your team to work on.
-* Refer to the project's own documentation for build instructions, but adapt as needed -- open-source
-  documentation is often out of date.
-* Build with **JDK 11**, not JDK 17 -- see [Appendix A.2](#a2-build-the-clone-with-jdk-11). In IntelliJ, set
-  both the Project SDK and the Gradle JVM to 11.
+* Fork [linkedin/kafka](https://github.com/linkedin/kafka) for your team and clone the team fork.
+* Work from the target branch **`3.0-li`**.
+* Refer to the repository documentation for build and test instructions, but adapt them where necessary because open-source documentation may become outdated.
+* Use **JDK 11** for the `linkedin/kafka` project. See [Appendix A.2](#a2-build-the-clone-with-jdk-11). In IntelliJ, set both the Project SDK and Gradle JVM to 11.
 
 ```bash
 git clone https://github.com/<your-group>/kafka.git
 cd kafka
 git checkout 3.0-li
 export JAVA_HOME=/usr/lib/jvm/java-11        # adjust to your system
-./gradlew jar                                 # compiles everything; takes a while the first time
+./gradlew jar
 ```
+
+The first build may take some time while Gradle downloads dependencies.
+
+**One branch per assigned PR**
+
+Each assigned PR must be investigated on its **own branch**. Do not combine unrelated PR integrations on the same working branch. Use a clear naming convention such as:
+
+```bash
+pr-<PR>
+```
+
+This keeps the integration history traceable and allows each PR to be inspected independently.
 
 **Cherry-picking a mainline PR (Categories 1 and 2)**
 
-Your fork contains only LinkedIn's history, so the Apache commit you want to cherry-pick is not in it yet. Add
-`apache/kafka` as a second remote once, then work on **one branch per PR** so that each integration can be
-reviewed and graded on its own:
+Your fork contains LinkedIn Kafka's history, but the Apache commit associated with the assigned PR may not yet exist in the clone. Add `apache/kafka` as a second remote once, then fetch the upstream history:
 
 ```bash
-git remote add upstream https://github.com/apache/kafka.git     # once per clone
+git remote add upstream https://github.com/apache/kafka.git
 git fetch upstream trunk
 
-# find the commit that merged the PR -- the "merge_commit_sha" field
+# Find the commit associated with the PR
 curl -s https://api.github.com/repos/apache/kafka/pulls/<PR> | grep merge_commit_sha
 
 git checkout -b pr-<PR> 3.0-li
@@ -363,39 +380,45 @@ git cherry-pick <merge_commit_sha>
 git push origin pr-<PR>
 ```
 
-`apache/kafka` squash-merges its pull requests, so `merge_commit_sha` is an ordinary single-parent commit and
-`git cherry-pick` needs no `-m` option. If the cherry-pick unexpectedly conflicts on a Category 1 or 2 PR, run
-`git cherry-pick --abort`, check the `Replacement` column of the spreadsheet, and tell the instructor if the
-problem remains.
+Apache Kafka squash-merges its pull requests, so the `merge_commit_sha` used for these assignments is an ordinary single-parent commit and `git cherry-pick` does not require the `-m` option.
+
+If a Category 1 or Category 2 PR unexpectedly conflicts, abort the cherry-pick:
+
+```bash
+git cherry-pick --abort
+```
+
+Then verify the PR assignment and the `Replacement` column in the project spreadsheet. If the problem remains, contact the instructor or TAs rather than silently substituting another PR.
 
 **Collaboration**
 
-* Add all members as collaborators on the fork.
-* Make sure everyone can build, test, and push changes.
+* Add all team members as collaborators on the team fork.
+* Each student must be able to independently build and test the target variant in the environment they use for the project.
+* Each student should push and maintain the branches corresponding to their own assigned PRs.
+* Team members may help one another troubleshoot problems, but the analysis, integration, testing, and documentation of each assigned PR remain the responsibility of the student to whom it is assigned.
 
 **Commit and push practices**
 
-* Commit and push **regularly**, with clear, descriptive messages.
-* Each commit should represent a **single coherent activity** -- resolving a conflict, adding tests, applying a
-  patch.
+* Commit and push **regularly** with clear, descriptive messages.
+* Each commit should represent one coherent activity, such as applying a patch, resolving a conflict, adapting code, or adding tests.
 * Avoid large commits that combine unrelated changes.
-* Where possible, separate code changes from test changes; it improves traceability.
+* Where practical, keep implementation changes and test changes separate so that the evolution of the PR is easy to follow.
+* Do not wait until the report deadline to push completed work.
 
-**Commit message guidelines**
+Example commit messages:
 
-Write concise messages that explain the purpose of the change, for example:
-
-```
-fixing merge conflicts on patch X, class Y
-adding unit tests for class Y
-refactoring class Y to apply patch + added new test
+```text
+Resolve conflict in WorkerSourceTask for PR 12345
+Adapt RestServer change to LinkedIn Kafka design
+Add regression tests for PR 12345
+Update tests after patch integration
 ```
 
 **Commit history and evaluation**
 
-* Your GitHub commit history is reviewed as part of the evaluation: a consistent, clear, incremental history is
-  expected.
-* Commit and push the **final version** of your project before the deadline.
+Your repository history is part of the project evidence. It should make it possible to follow the work performed on each PR and identify the student responsible for that work.
+
+Commit and push the **final version** of all project work before the submission deadline.
 
 <br/>
 
@@ -411,12 +434,17 @@ For each assigned pull request, perform the following activities and document th
 
 * Extract and describe the **local design** of the classes and methods affected by the pull request in the
   **source variant**, using IntelliJ or a similar tool.
-* Identify the **corresponding classes or components** in the **target variant**, where the integration will
-  happen.
-* Compare both contexts to highlight structural or architectural differences: renamed classes, relocated methods,
-  split responsibilities.
-* A side-by-side diagram or annotated class sketch is enough; the goal is to show the **design gap** between the
-  two variants.
+* Identify and describe the **corresponding classes or components** in the **target variant**, where the
+  integration will happen.
+* Compare the source and target contexts to identify relevant structural or architectural differences, such as
+  renamed classes, relocated methods, changed interfaces, or split responsibilities.
+* Use simple diagrams or annotated class sketches to show the relevant design at both the **source change**
+  and the **target integration point**. The diagrams do not need to model the entire system; include only the
+  classes, methods, and relationships needed to understand the change and its integration.
+* A diagram showing only the files or classes modified by the source PR is not sufficient when the corresponding
+  target-side design differs. The goal is to make the **design gap** between the two variants clear.
+* If the relevant source and target designs are effectively the same, state this explicitly rather than
+  introducing artificial differences.
 * **For Category 4 PRs:** analyze the existing design of the target variant and identify the architectural
   misalignments or refactoring-induced differences that prevent integration. Since the patch cannot be
   integrated, no redesign is expected -- only a discussion of the design barriers.
@@ -427,23 +455,42 @@ For each assigned pull request, perform the following activities and document th
 <img src="/images/473/Redesign.jpeg" alt="Redesign" style="width:100%;max-width:450px;" />
 </div>
 
-* Analyze how the integrated patch modifies or extends the existing design.
-* Compose a **revised design view** showing how the functionality now fits into the system and interacts with
-  related components.
+For successfully integrated PRs (Categories 1--3), your analysis should make the progression of the design
+clear:
+
+**Source design → Target design before integration → Target design after integration/adaptation**
+
+* Analyze how the integrated patch modifies or extends the existing target design.
+* Compose a **revised design view** showing how the integrated functionality now fits into the target system
+  and interacts with related components.
+* Explain any design adaptations that were necessary because the source and target variants had evolved
+  differently.
+* If no design adaptation was necessary, state this explicitly and explain why the source change fit the
+  existing target design without modification.
 * If you wrote new tests, explain how the design of the test suite evolved to accommodate the change.
-* Confirm that the redesign supports the fix or feature without degrading code quality.
-* **For Category 4 PRs:** no revised design is expected, since those PRs fail to integrate. Describe instead the
-  **design barriers** that caused the failure -- incompatible refactorings, a missing interface, a semantic
-  mismatch.
+* Evaluate whether the resulting design supports the intended fix or feature while remaining consistent with
+  the target system's design and code quality. Support your assessment with appropriate evidence.
+
+For Category 4 PRs, use the following progression instead:
+
+**Source design → Target design → Design barriers preventing integration**
+
+Since these PRs cannot be successfully integrated, no revised design is required. Instead, identify and
+explain the design, refactoring, or semantic differences that prevent the source change from being integrated
+into the target variant.
 
 ### III. Integration and testing
 
 * Attempt the integration with `git cherry-pick`.
 * If cherry-pick fails, run **RePatch** and document the results.
-* Validate the integration by running the target variant's test suite.
-* If tests are missing, write appropriate unit or integration tests.
-* Report **coverage before and after** integration, and reflect on the adequacy of the test suite.
-  [Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka) explains how to measure it on this build.
+* For every successfully integrated PR, run the appropriate target-variant tests and report the results.
+* Determine whether the existing tests adequately exercise the integrated change.
+* If tests are missing or inadequate, write or adapt appropriate unit or integration tests.
+* Where tests are added or modified, measure coverage **before and after the test changes** using the same scope
+  and explain what changed. See [Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka) for the coverage
+  procedure and known limitations.
+* Interpret coverage together with the test results and the behavior being exercised. **Coverage alone is not
+  evidence that the integration is correct.**
 
 ### IV. Project management
 
@@ -454,6 +501,9 @@ For each assigned pull request, perform the following activities and document th
 * Estimate the effort required for (i) integrating the patch and (ii) creating or adapting tests.
 * Identify PRs that were **exceptional entities** -- a large number of changed files, unusually complex conflicts.
 * Comment on risks to maintainability and on long-term design debt introduced by the integration.
+* Maintain the required **weekly team meeting record** throughout the project. Use the meetings and Discord
+  channel to track individual progress, surface blockers early, share findings, and coordinate the work that
+  remains.
 
 ### V. Refactoring and manual resolution
 
@@ -471,253 +521,150 @@ For each assigned pull request, perform the following activities and document th
 
 * Identify the **reengineering patterns** from the OORP book that informed your design, integration, testing, and
   refactoring decisions.
-* Reflect on how your team coordinated across the four categories (meetings, reviews, shared testing).
+* Reflect on how your team coordinated across the four categories through weekly meetings, Discord communication,
+  shared problem solving, and early identification of blockers.
 * Summarize what you learned about **design, variant-aware integration, and testing**.
 
-Your report should also demonstrate the techniques introduced in the lab sessions:
+Your project should demonstrate techniques introduced across the lab sessions. At the **team level**, your work
+must include meaningful evidence from each of the five lab areas:
 
-* **Analyzing** -- Metrics & Visualization; Mining Software Repositories.
-* **Restructuring** -- Testing, Refactoring, and Integration.
-
-The Intermediate Report is graded on using **at least one tool or script from each lab session**:
-
-| Lab session | Tools you can use |
+| Lab area | Example tools or techniques |
 |---|---|
-| Metrics & Visualization | CodeScene |
+| Metrics and Visualization | CodeScene |
 | Refactoring Assistants | CodeScene, SonarQube, RefactoringMiner |
-| Dynamic Analysis: Testing | IntelliJ Coverage, JaCoCo |
+| Test Coverage | IntelliJ Coverage, JaCoCo, or similar |
 | Software Integration | GACPD, RePatch |
-| Mining Software Repositories | GitHub REST API, GraphQL |
+| Mining Software Repositories | Git, GitHub REST API, GraphQL, or scripts |
 
-Within each row you may pick whichever tool suits you, and you may add tools not covered in the labs -- but you
-must **justify your choices**: explain why you applied a given technique, why others were not relevant, and what
-the benefits and drawbacks turned out to be.
+Select tools or techniques that provide **useful evidence for your reengineering task**, and explain why each was
+appropriate and what you learned from it. You are not required to apply every tool to every PR or to have every
+team member use every tool.
 
 **Testing requirements**
 
-* Determine how well the existing tests give you feedback during refactoring and integration.
-* **Quantify adequacy** -- show coverage before and after (see
-  [Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka)); where a metric is invalidated by the build,
-  say so and argue adequacy another way.
-* Argue whether the tests are sufficient for your scenario.
-* If they are inadequate, extend them efficiently: balance thoroughness against time invested.
+* Determine how well the existing tests provide feedback during refactoring and integration.
+* For PRs where tests are added or modified, **quantify their contribution** by comparing coverage before and
+  after the test changes using the same measurement scope.
+* Where coverage is unreliable or invalidated by the build or testing framework, explain the limitation and
+  assess test adequacy using other evidence.
+* Argue whether the tests are sufficient for the integrated change; do not rely on the coverage percentage alone.
+* If the tests are inadequate, extend them efficiently, balancing thoroughness against the time invested.
 
 <br/>
 
-# 6. General Evaluation
+# 6. LLM-Assisted Integration and Test Generation
 
-Your Final Report is graded against the
-[Final Report checklist](../../../files/CS789_SRE/Final_Evaluation_Report_CS-789_Template.pdf). The headings below
-follow that checklist, so you can use it as a self-assessment before you submit.
+Category 4 is where the existing automation runs out. `git cherry-pick` fails, RePatch cannot resolve the
+conflicts, and [Section 2](#category-4-cherry-pick-fails-repatch-cannot-resolve-the-conflicts) asks you to
+explain why developer intervention is required. This section asks a narrower question:
 
-**Delivery**
+> **How far can a small language model, running on your own machine, help close that gap?**
 
-* The report is submitted on Canvas by the deadline. Late submissions are recorded.
+The LLM-assisted work is an **individual component of the project**. Every student completes both parts as part of the overall reengineering process:
 
-**Coverage of the PR categories**
+* **Part A -- LLM-assisted patch integration:** Apply a local language model to **one of your own Category 4 PRs**.
+* **Part B -- LLM-assisted test generation:** Apply a local language model to **one of your own successfully
+  integrated PRs** from Category 1, 2, or 3. If your Part A integration succeeds, you may instead use that PR.
 
-* All **four** categories are documented -- including Category 4, where the outcome is an explanation of why
-  integration failed rather than integrated code.
+The objective is **not** to demonstrate that the LLM succeeds. The objective is to evaluate systematically and
+reproducibly how far a locally running code model can assist with these two reengineering activities.
 
-**Design recovery and adaptation**
+A careful negative result -- "I tried this, here is exactly what I provided to the model, and here is where and
+why it failed" -- is a valid result. An uncritical claim that "the LLM fixed it" without verification is not.
 
-* Class diagrams are provided for the affected PRs.
-* The current design is described clearly.
-* The revised design, and the integration's impact on the architecture, is explained.
+## Ground rules
 
-**Integration and refactoring activities**
+The following expectations apply to both parts. They are intended to make the experiments systematic, reproducible, and grounded in the same reengineering principles used throughout the project.
 
-* The integration process is described -- cherry-pick, RePatch, manual fixes.
-* The refactorings you applied are justified and documented.
-* You provide evidence that your restructurings are **behavior-preserving**: successful compilation, passing
-  tests, and coverage maintained or improved.
+* **Individual work.** Each student completes Part A and Part B using their own assigned PRs. You may discuss
+  problems with your team, but the experiments, analysis, and reporting must be attributable to the student
+  responsible for the selected PRs.
+* **Local models only.** The point is to see what runs on ordinary hardware without sending source code to a
+  third party. Do not use hosted APIs for these experiments.
+* **Everything must be verified.** Generated code counts only if it **compiles** and you have **run the relevant
+  tests**. Nothing is accepted on the model's say-so.
+* **Everything must be reproducible.** Record the exact model and tag, the full prompts, sampling settings, and
+  raw outputs, including attempts that failed. Commit these artifacts to your fork under `llm-assisted/`.
+* **Report honestly.** Hallucinated APIs, invented method names, incorrect assumptions, and confidently wrong
+  patches are findings. Document them.
+* **Connect the work to reengineering.** Identify the OORP patterns that materially influenced your decisions
+  and explain how they were applied. Do not simply list pattern names.
+* **Disclose model assistance.** Clearly identify which parts of your work were produced or modified with model
+  assistance.
+* **Do not push generated code upstream.** Work only in your team fork. Do not submit a pull request containing
+  generated code to `apache/kafka` or `linkedin/kafka`.
 
-**Testing and coverage**
+## 6.1 Set up a local model
 
-* You confirm whether the existing tests actually cover the integrated PRs.
-* New tests are written where they were missing.
-* Coverage **before and after** is reported, with outputs or screenshots.
-* The adequacy of the test suite is discussed, not just its percentage.
+[Ollama](https://ollama.com) is the recommended runner. Install it on your **host machine**, not inside the
+RePatch container. The RePatch container already uses substantial memory, and running both inside the same
+container may cause resource problems.
 
-**Use of tools and techniques**
-
-* Tools from the labs are applied -- metrics, visualization, mining, coverage, integration, refactoring.
-* Outputs or screenshots are included for the relevant tools.
-* You reflect on how effective each tool actually was for this project.
-* Any extra tools beyond the labs are described.
-
-**Reengineering patterns**
-
-* Patterns are applied **in context** -- design, integration, testing, refactoring -- not listed in isolation.
-* Your choice of patterns is justified.
-* You reflect on which patterns proved most useful.
-
-**Effort and risk assessment**
-
-* Effort estimates are documented, for both integration and testing.
-* Exceptional PRs are identified -- large, or conflict-heavy.
-* Risks to maintainability and correctness are discussed.
-
-**Teamwork and coordination**
-
-* Team coordination is described: meetings, communication tools, peer reviews.
-* You identify whether your approach was **ad-hoc or systematic**, and reflect on it.
-* Your **success criteria** ("definition of done") are addressed.
-* Your timeline and milestones are shown as followed, or adapted with an explanation.
-
-**Report quality**
-
-* Structure is logical and follows the project categories and activities.
-* Layout is clear, readable, and professional.
-* Spelling and grammar are acceptable.
-* Evidence -- screenshots, diagrams, logs -- is included where relevant.
-* Reasoning is explained: decisions, not just results.
-
-**Overall**
-
-* The report presents a sound, systematic reengineering process.
-* It demonstrates lessons learned about variant-aware reengineering.
-* It is good enough to serve as a reference for future projects.
-
-<br/>
-
-# 7. Report
-
-This project is a **software reengineering process** applied to variant-aware patch integration. Your report
-should show how you applied reengineering concepts -- analysis, design recovery, restructuring, and validation --
-across the four PR categories.
-
-Address the following.
-
-**Context**
-
-* Briefly describe your project's context: reengineering through patch integration across diverged variants
-  (`apache/kafka` to `linkedin/kafka`).
-* Frame it as a reengineering challenge, not merely a code merge.
-
-**Problem at hand**
-
-* Clarify the reengineering problems you met during PR integration -- divergence, refactoring conflicts, missing
-  tests.
-* Discuss their intrinsic difficulties.
-
-**Reengineering patterns**
-
-You must show how OORP patterns guided your work. Do **not** list patterns in isolation; introduce each one in the
-context where you applied it:
-
-* **Design recovery / adaptation** -- which patterns helped you understand or adapt the architecture?
-* **Integration** -- which patterns helped you resolve conflicts or prioritize patches?
-* **Testing** -- which patterns informed how you verified correctness or extended the suite?
-* **Refactoring** -- which patterns guided structural changes while preserving behavior?
-
-In your reflection section, summarize briefly which patterns proved most useful across the categories, and why.
-
-**Teamwork and coordination**
-
-* Describe how your team coordinated work across the four categories.
-* Explain how responsibilities were assigned, how reviews were conducted, and how challenges were addressed.
-* Reflect on how effective your coordination strategy was.
-
-**Reflection on techniques**
-
-* Discuss which analysis techniques from the labs you applied -- metrics, mining, visualization, integration
-  tools, testing.
-* Justify your choices and evaluate their benefits and drawbacks.
-* Consider alternative techniques or tools where relevant.
-
-**Conclusion**
-
-* Summarize what you learned about **software reengineering in the context of PR integration**.
-* Highlight insights about design, testing, refactoring, and teamwork that generalize beyond this case.
-
-> **Scope of each report.** The **Pre-conditions Report** only establishes setup, though early planning on
-> patterns and risks will strengthen your final outcome. The **Intermediate Report** covers work in progress, so
-> partial results are expected -- but it is graded on its own checklist, which asks for a tool from *every* lab
-> session, screenshots of their output, UML diagrams of the structural changes you are planning, and evidence
-> comparing the system **before, during and after** reengineering. The **Final Report** gives a full, polished
-> account of the whole process. Read each checklist before you start writing.
-
-<br/>
-
-# 8. LLM-Assisted Integration and Test Generation
-
-Category 4 is where the automation runs out. `git cherry-pick` fails, RePatch cannot invert the refactorings, and
-[Section 2](#category-4-cherry-pick-fails-repatch-cannot-resolve-the-conflicts) asks you to explain why developer
-intervention is required. This bonus asks a narrower question:
-
-> **How far can a small language model, running on your own machine, close that gap?**
-
-This is a genuine open question, not an exercise with a known answer. A careful negative result -- "we tried, here
-is exactly where and how it failed" -- earns full bonus credit. An uncritical "the LLM fixed it" with no
-verification earns none.
-
-The bonus has two parts. **Part A** applies the model to integration, **Part B** to testing. You may attempt one
-or both. The weight of the bonus is announced on Canvas.
-
-### Ground rules
-
-These apply to everything below, and they are what separates a result from an anecdote.
-
-* **Local models only.** The point is to see what runs on ordinary hardware, without sending a company's source
-  code to a third party. No hosted APIs.
-* **Everything must be verified.** Generated code counts only if it **compiles** and you have **run the tests**.
-  Nothing is accepted on the model's say-so.
-* **Everything must be reproducible.** Record the exact model and tag, the full prompts, the sampling settings,
-  and the raw output -- including the attempts that failed. Commit them to your fork under `llm-bonus/`.
-* **Report honestly.** Hallucinated APIs, invented method names, and confidently wrong patches are findings.
-  Write them down; they are the most interesting part of the result.
-* **Disclose it.** Say in the report which parts of your submission were produced with model assistance.
-* **Do not push generated code upstream.** Your fork only -- never a pull request to `apache/kafka` or
-  `linkedin/kafka`.
-
-### 8.1 Set up a local model
-
-[Ollama](https://ollama.com) is the simplest runner. Install it on your **host machine**, not inside the RePatch
-container -- that container already claims about 10 GB of RAM, and the two will fight over memory.
+For example:
 
 ```bash
 ollama pull qwen2.5-coder:7b
 ollama run qwen2.5-coder:7b            # interactive check that it works
-ollama show qwen2.5-coder:7b           # record this output: tag, digest, parameters
+ollama show qwen2.5-coder:7b           # record tag, digest, and parameters
 ```
 
-Pick the largest model your machine can hold:
+Choose a model appropriate for the hardware available to you:
 
 | Model | Download | Practical on |
-|---|---|---|
+|---|---:|---|
 | `qwen2.5-coder:3b` | 1.9 GB | 8 GB RAM, no GPU |
-| **`qwen2.5-coder:7b`** | 4.7 GB | 16 GB RAM -- the default choice |
+| **`qwen2.5-coder:7b`** | 4.7 GB | 16 GB RAM -- recommended default |
 | `qwen2.5-coder:14b` | 9.0 GB | 32 GB RAM, or a 12 GB+ GPU |
 
-Other code-oriented families work too (`deepseek-coder-v2`, `codellama`, `llama3.1`). If you compare two models,
-say so -- that is a result in itself.
+Other code-oriented model families may also be used, such as `deepseek-coder-v2`, `codellama`, or `llama3.1`.
+If your hardware cannot reasonably run the recommended model, select a smaller model and document the reason.
 
-Set **`temperature 0`** for every run in this bonus. You are trying to produce something another group could
-reproduce, not something creative.
+Use **`temperature 0`** for the experiments. The goal is reproducibility rather than creativity.
 
-### 8.2 Part A -- LLM-assisted patch integration
+Record the model, tag, digest, sampling settings, and hardware used. These details must appear in your Final
+Report.
 
-Pick **one** of your group's Category 4 PRs. One, done carefully, is worth far more than nine done loosely.
+## 6.2 Part A -- LLM-Assisted Patch Integration [INDIVIDUAL]
 
-**1. Establish the baseline.** Before involving the model, record what already failed: the `git cherry-pick`
-error, RePatch's outcome, and which refactorings RePatch detected but could not invert (`repatch log`, and the
-`refactoring` and `refactoring_conflict` tables). You cannot claim the model helped without knowing precisely
-what it is being compared against.
+Select **one of your own Category 4 PRs**. This should be a PR for which both ordinary cherry-picking and RePatch
+have already failed. The purpose is to determine whether the model can help where the existing integration
+approaches could not.
 
-**2. Budget your context.** A 7B model has roughly a 32K-token window, and Kafka's files are large --
-`WorkerSourceTask.java` alone would consume much of it. You cannot paste whole files. Assemble the smallest
-prompt that could possibly work:
+### Step 1 -- Establish the baseline
 
-* the **mainline hunk** from the source PR (this is your ground truth for *intent*);
-* the **corresponding method** in the target variant, as it actually exists;
-* the signatures of the types involved -- not their bodies;
-* one sentence on how the two variants diverged here.
+Before involving the model, document what has already failed:
 
-Deciding what to include *is* the exercise. It is **Refactor to Understand** (OORP, p.127) done by hand: you
-cannot select the relevant context until you understand the change.
+* the `git cherry-pick` result and conflict;
+* the RePatch result;
+* the relevant refactorings identified by RePatch; and
+* your analysis of why automated integration failed.
 
-**3. A starting prompt.** Adapt it; do not treat it as fixed.
+Use the appropriate RePatch evidence, including `repatch log` and the `refactoring` and
+`refactoring_conflict` tables where applicable.
+
+You cannot determine whether the model helped unless you first establish what it is being compared against.
+
+### Step 2 -- Select the context
+
+Do not simply give the model entire Kafka files. Assemble the smallest context that you believe is sufficient
+for understanding and adapting the change.
+
+At minimum, consider providing:
+
+* the **mainline hunk** from the source PR, which provides the intent of the change;
+* the **corresponding method or local code context** in the target variant;
+* relevant type or method signatures where necessary; and
+* a concise explanation of the important source-target design or implementation difference.
+
+Selecting the appropriate context is itself part of the reengineering task. You should be able to explain
+**why you gave the model that context and what you deliberately left out**.
+
+This is closely related to **Refactor to Understand** (OORP, p.127): selecting relevant context requires first
+understanding the change and its surroundings.
+
+### Step 3 -- Construct the prompt
+
+The following is a starting point. Adapt it to your PR rather than treating it as a fixed prompt.
 
 ```text
 You are adapting a patch between two diverged forks of Apache Kafka.
@@ -726,109 +673,356 @@ SOURCE (apache/kafka) -- the change to be ported:
 <the diff hunk>
 
 TARGET (linkedin/kafka 3.0-li) -- the code as it exists today:
-<the corresponding method, verbatim>
+<the corresponding method or local context, verbatim>
 
-The target diverged from the source at commit f29c43bdbb85 (2021-07-06).
-In this area the variants differ as follows: <your one-sentence description>.
+The source and target variants have diverged in this area as follows:
+<your concise description of the relevant difference>
 
-Produce the edited target method so that it carries the same behavioral change
-as the source hunk. Preserve the target's existing names, types and style.
-Output only the Java code. If the change cannot be applied safely, say so and
-explain which fact you would need to know.
+Produce the edited target code so that it carries the same behavioral change
+as the source patch. Preserve the target's existing names, types, design, and style.
+
+If the change cannot be applied safely from the information provided, say so
+and explain what additional information you would need.
 ```
 
-That last instruction matters: a model that is allowed to decline will sometimes tell you what is missing, which
-is more useful than a fabricated patch.
+A model that identifies missing information may be more useful than one that produces a plausible-looking but
+incorrect patch.
 
-**4. Iterate against the compiler.** Apply the output, compile the module, and feed the errors back into the next
-prompt. Record how many rounds you needed and whether it converged or oscillated.
+Keep the **complete prompt and raw response** for every attempt.
+
+### Step 4 -- Iterate against the compiler
+
+Apply the generated change and compile the relevant module. For example:
 
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-11
-./gradlew :connect:runtime:compileJava      # substitute your module
+./gradlew :connect:runtime:compileJava      # substitute the module relevant to your PR
 ```
 
-**5. Verify.** In this order:
+If compilation fails, analyze the errors and decide what additional information, correction, or feedback should
+be given to the model. Record each iteration.
 
-* Does it **compile**?
-* Do the module's **existing tests** still pass?
-* Does the patch actually carry the **mainline change's intent** -- not merely something that compiles? Compare
-  against the source PR yourself.
-* Did the model handle the specific refactoring that defeated RePatch, or did it sidestep it by rewriting
-  something else?
+Do not repeatedly ask the model to "fix it" without analyzing the failure yourself.
 
-**6. Report.** Include the baseline, the prompts, the number of iterations, the final diff, the verification
-results, and your judgement: did this produce an integration a maintainer could accept, a plausible-looking patch
-that does the wrong thing, or nothing usable?
+Report:
 
-### 8.3 Part B -- Regression check, then test generation
+* the number of iterations;
+* what changed between prompts;
+* the compiler feedback provided to the model; and
+* whether the process converged, oscillated, or failed.
 
-Take **one PR you actually integrated** (Category 1, 2 or 3, or a Part A success). Do the two steps in this order;
-the order is the point.
+### Step 5 -- Verify the result
 
-**Step 1 -- check for regressions first.**
+Evaluate the final result in this order:
 
-Integration can break tests that used to pass. Find out before you write anything new:
+1. Does it **compile**?
+2. Do the relevant **existing tests** still pass?
+3. Does the generated adaptation actually preserve the **intent of the source PR**, rather than merely producing
+   code that compiles?
+4. Did the model address the particular source-target divergence or refactoring that prevented RePatch from
+   succeeding?
+5. Did the model introduce unrelated changes, invented APIs, unnecessary restructuring, or other questionable
+   behavior?
+
+Compare the result against the source PR yourself. The language model is not the evaluator of its own output.
+
+### Step 6 -- Connect the experiment to reengineering patterns
+
+Identify the **OORP patterns that materially influenced your Part A work** and explain how they affected your
+decisions.
+
+Do not simply list pattern names. Connect each pattern to a concrete action or decision in the experiment. For
+example:
+
+* Did **Refactor to Understand** help you determine the minimum source and target context needed by the model?
+* Did **Keep It Simple** influence how you scoped the integration problem or controlled the model's changes?
+* Did another OORP pattern better describe how you investigated, understood, or adapted the patch?
+
+Use only patterns that genuinely apply to your work. The purpose is to show how reengineering knowledge guided
+the experiment, not to maximize the number of patterns mentioned.
+
+### Step 7 -- Report the outcome
+
+In the Final Report, include:
+
+* the selected PR and baseline failure;
+* the context you selected and why;
+* all prompts and iterations;
+* the final generated or adapted diff, if one was produced;
+* compilation and test results;
+* the number of iterations;
+* the relevant reengineering patterns and how they influenced your decisions; and
+* your judgement of the result.
+
+Classify the outcome honestly. For example:
+
+* acceptable integration;
+* partially useful assistance requiring substantial developer adaptation;
+* plausible-looking but behaviorally incorrect patch;
+* non-compiling or otherwise unusable result; or
+* model correctly identified that insufficient information was available.
+
+A failed integration is a valid result if the experiment and analysis are systematic.
+
+## 6.3 Part B -- Regression Check and LLM-Assisted Test Generation [INDIVIDUAL]
+
+Select **one of your own successfully integrated PRs** from Category 1, 2, or 3. If your Part A Category 4
+integration succeeds, you may instead use that PR.
+
+Part B has two technical steps followed by analysis of the relevant reengineering patterns.
+
+### Step 1 -- Check for regressions
+
+Before generating new tests, determine whether the integration broke tests that previously passed.
+
+Run the relevant module's tests. For example:
 
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-11
-./gradlew :connect:runtime:test          # the module you touched
+./gradlew :connect:runtime:test             # substitute the module relevant to your PR
 ```
 
-Compare against the same module's results **before** integration. Any test that passed before and fails now is a
-regression caused by your integration -- diagnose it and say whether it indicates a genuine behavioral conflict
-or merely a test that encoded the target's old structure. This is **Tests: Your Life Insurance** (OORP, p.149)
-being cashed in: the suite's whole purpose is to tell you this.
+Compare the results with the same test scope **before integration**.
 
-Do not proceed to Step 2 until the suite is green, or until you can explain every failure.
+Any test that passed before integration and fails afterward is a potential regression. Diagnose the failure and
+determine whether it indicates:
 
-**Step 2 -- generate tests to raise coverage.**
+* a genuine behavioral conflict introduced by the integration;
+* a test that encoded assumptions about the target's previous behavior or structure; or
+* another identifiable cause.
 
-Measure coverage first, following [Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka), so you know which
-lines and branches of the integrated change are unexercised. Then ask the model for tests targeting exactly those.
+Do not proceed to test generation until the relevant test suite is green or until you can explain every
+remaining failure.
 
-Give it the method under test, an **existing test from the same class as a style example**, and the specific
-branch you want covered. The style example matters here more than anywhere else: `3.0-li` is **JUnit 4 with
-EasyMock and PowerMock**, while most Java test code a model has seen is JUnit 5 with Mockito. Without an example
-it will confidently generate tests in the wrong framework that do not compile.
+This is **Tests: Your Life Insurance** (OORP, p.149) in practice: existing tests provide feedback about whether
+the reengineering activity preserved expected behavior.
 
-**Then validate what it produced.** Generated tests are guilty until proven innocent:
+### Step 2 -- Generate and validate tests
 
-* Does the test **compile** and pass?
-* **Can it fail?** Revert the integrated change, re-run the test, and confirm it now fails. A test that passes in
-  both states asserts nothing. This is the same check you applied in Task 3 of the
-  [Software Integration](/teaching/Software-Reengineering/integration/) lab, and generated tests fail it often --
-  a common failure mode is a test that asserts only that no exception was thrown.
-* Does it test **behavior**, or does it restate the implementation line by line?
-* Re-measure coverage. Did it move? Remember the PowerMock caveat in
-  [Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka): if the class is PowerMock-mocked, coverage may
-  read 0% however good the test is. Report that rather than discarding the test.
+Measure the relevant coverage first, following
+[Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka), so that you can identify behavior introduced by
+the integrated change that is not adequately exercised.
 
-Keep the tests that survive. Delete the rest, and say how many you discarded and why -- the **ratio of generated
-tests to usable tests** is one of the most informative numbers you can report.
+Then ask the local model to generate tests targeting that behavior.
 
-### 8.4 What to hand in
+Provide sufficient context, including:
 
-Add a clearly marked bonus section to your Final Report containing:
+* the method or behavior under test;
+* an **existing test from the same test class or module** as a style and framework example; and
+* the specific behavior, line, branch, or condition that you want exercised.
 
-* the model, tag and digest (`ollama show`), your sampling settings, and your hardware;
-* every prompt, and the raw outputs, committed under `llm-bonus/` in your fork;
-* **Part A:** the baseline failure, the final diff, iteration count, and verification results;
-* **Part B:** the regression results before and after integration, the generated tests you kept and discarded
-  with the reason, and coverage before and after;
-* an honest assessment: where the model helped, where it wasted your time, and where it was confidently wrong.
+The existing test example is important. Parts of `3.0-li` use testing frameworks and conventions that may differ
+from those a language model assumes by default. Generated tests that use the wrong framework or APIs are not
+useful simply because they look plausible.
 
-**Related Patterns from _Object-Oriented Reengineering Patterns_ (OORP)**
+Keep the complete prompts and raw model responses.
 
-- **Tests: Your Life Insurance** *(p.149)* -- The regression check in Step 1 is exactly what the suite exists for.
-  A generated patch you have not tested is not an integration.
-- **Write Tests to Understand** *(p.179)* -- If you cannot tell whether a generated test is meaningful, you do not
-  yet understand the code well enough to accept the generated patch either.
-- **Grow Your Test Base Incrementally** *(p.159)* -- Add the surviving tests a few at a time, checking each one,
-  rather than committing everything the model emitted.
-- **Refactor to Understand** *(p.127)* -- Selecting the minimal context for the prompt forces the same
-  understanding that a manual integration would have required.
-- **Keep It Simple** *(p.37)* -- One PR, examined properly, beats nine generated patches nobody verified.
+Generated tests must be treated as hypotheses, not accepted automatically. For each generated test that you
+consider keeping:
+
+1. Does it **compile**?
+2. Does it **pass** with the integrated change?
+3. **Can it fail?** Revert the integrated change and rerun the test. A useful regression test should distinguish
+   the changed behavior from the previous behavior where applicable.
+4. Does it test **behavior**, rather than merely restating the implementation?
+5. Does it provide useful additional evidence or coverage?
+
+Re-measure coverage using the same measurement scope used before test generation.
+
+Remember the PowerMock limitation described in
+[Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka). If coverage is unreliable for the affected class,
+report the limitation and use other evidence to assess the generated test rather than inventing or
+misinterpreting coverage numbers.
+
+Keep only tests that survive your validation. Remove tests that are incorrect, redundant, meaningless, or
+otherwise unsuitable.
+
+Report both:
+
+* the number of tests generated; and
+* the number of generated tests you judged usable.
+
+The **ratio of generated tests to usable tests** is itself an important result.
+
+### Step 3 -- Connect the experiment to reengineering patterns
+
+Identify the **OORP patterns that materially influenced your Part B work** and connect them to specific decisions
+or evidence from the experiment.
+
+For example:
+
+* **Tests: Your Life Insurance** may explain how the existing test suite was used to detect regressions after
+  integration.
+* **Write Tests to Understand** may apply when designing or evaluating tests for behavior that was initially
+  difficult to understand.
+* **Grow Your Test Base Incrementally** may apply when generated tests were evaluated individually and only
+  useful tests were retained.
+* Another OORP pattern may be more appropriate for your particular PR.
+
+Do not merely name the patterns. Explain **where and why each pattern was useful**, and identify cases where
+applying a reengineering principle exposed a limitation in an apparently successful LLM-generated result.
+
+## 6.4 Evidence Required from Each Student
+
+Each student must provide a clearly identifiable **LLM-Assisted Integration and Test Generation** subsection in
+the Final Report covering **both Part A and Part B**.
+
+For each student, report:
+
+* the local model, tag, digest (`ollama show`), sampling settings, and hardware;
+* the PR selected for **Part A** and the PR selected for **Part B**;
+* **Part A:** baseline failure, selected context, prompts, iterations, final diff where applicable, compilation
+  and test results, and final assessment;
+* **Part B:** regression results, prompts, generated tests, tests kept and discarded with reasons, and coverage
+  or other test-adequacy evidence before and after;
+* the number of generated tests and the number judged usable;
+* the **reengineering patterns** that materially influenced Part A and Part B, with concrete examples showing
+  how they affected your decisions; and
+* an honest assessment of where the model helped, where it wasted effort, and where it produced incorrect or
+  misleading output.
+
+Commit the complete experiment artifacts to your team fork under:
+
+```text
+llm-assisted/
+```
+
+Organize the directory so that the work of each student and each part can be identified clearly. For example:
+
+```text
+llm-assisted/
+    <student-name>/
+        part-a/
+            prompts/
+            outputs/
+            evidence/
+        part-b/
+            prompts/
+            outputs/
+            evidence/
+```
+
+The Final Report should summarize and interpret the experiment. The repository should preserve the detailed
+prompts, raw outputs, and supporting artifacts needed to reproduce it.
+
+## 6.5 Team-Level LLM Synthesis
+
+After completing the individual experiments, the team should compare the results across students.
+
+Do not simply repeat each student's findings. Use the individual experiments as evidence to identify patterns
+and differences. Consider questions such as:
+
+* Did the local model perform better on some kinds of Category 4 conflicts than others?
+* What kinds of source-target divergence were particularly difficult for the model?
+* Did compiler feedback help the model converge?
+* When the model failed, what were the common failure modes?
+* How often were generated tests actually usable after validation?
+* What kinds of generated tests were commonly rejected, and why?
+* Did the LLM provide useful assistance in cases where RePatch could not?
+* Which **reengineering patterns** were most useful across the experiments, and why?
+* Where did applying a reengineering pattern expose a weakness in an apparently successful LLM result?
+* Which parts of the process still depended on developer understanding and judgement despite LLM assistance?
+
+The goal is to determine where LLM assistance fits within a broader **developer-in-the-loop reengineering
+process**, not simply whether a model can generate code.
+
+## 6.6 Reengineering Patterns Relevant to the LLM-Assisted Work
+
+The following OORP patterns are particularly relevant to this work, but they are **not an exhaustive checklist**.
+Use the patterns that actually apply to your experiment and explain their connection to your decisions and
+evidence.
+
+* **Tests: Your Life Insurance** *(p.149)* -- Existing tests provide the regression safety net needed before
+  accepting either an integrated patch or generated code.
+* **Write Tests to Understand** *(p.179)* -- Evaluating whether a generated test is meaningful requires
+  understanding the behavior being tested.
+* **Grow Your Test Base Incrementally** *(p.159)* -- Add surviving generated tests incrementally and validate
+  each one rather than accepting everything the model produces.
+* **Refactor to Understand** *(p.127)* -- Selecting the minimal relevant context for Part A requires understanding
+  the change and the target design before asking the model to adapt it.
+* **Keep It Simple** *(p.37)* -- One carefully investigated PR provides stronger evidence than many generated
+  patches or tests that have not been verified.
+
+<br/>
+
+
+# 7. Reports
+
+The project is documented through three **progressive reports**. Each report builds on the previous one as your
+understanding and reengineering work develop.
+
+| Report | Main purpose | Grading |
+|---|---|---|
+| **[Pre-conditions Report](CS789_Preconditions_Report_Template.pdf)** | Establish the baseline, PR allocation, preliminary understanding, risks, and project plan | **15 points**: [Grading Rubric](CS789_Preconditions_Grading_Rubric.pdf) |
+| **[Intermediate Report](CS789_Intermediate_Report_Template.pdf)** | Demonstrate substantive reengineering progress on at least **4 of 7 PRs per student**, including at least one Category 4 PR | **50 points**: [Grading Rubric](CS789_Intermediate_Grading_Rubric.pdf) |
+| **[Final Report](CS789_Final_Report_Template.pdf)** | Complete all **7 PRs per student**, complete both LLM-assisted activities, and synthesize the project's findings | **100 points**: [Grading Rubric](CS789_Final_Grading_Rubric.pdf) |
+
+These are **not three independent reports**:
+
+**Pre-conditions → Intermediate → Final**
+
+Each submission should revise and extend the previous one. Feedback received on one report must be addressed in
+the next report. Do not simply copy earlier material unchanged when your understanding, results, or conclusions
+have evolved.
+
+Sections marked **[TEAM]** in the report templates are completed collaboratively. Sections marked
+**[INDIVIDUAL]** must clearly identify and document the work of the student responsible for the assigned PRs.
+
+The grading rubrics distinguish between **team-level and individual-level assessment**. Team points are shared
+by the team, while individual points are assessed separately for each student based on their own assigned work
+and evidence.
+
+The **Final Report** is the consolidated account of the complete project. It brings together:
+
+* the analysis of all assigned PRs;
+* design recovery and adaptation;
+* integration, refactoring, testing, and validation;
+* application of reengineering patterns;
+* techniques and tools used throughout the project;
+* LLM-assisted integration and test-generation activities;
+* cross-PR and LLM findings;
+* team-level synthesis and lessons learned; and
+* individual contributions and project coordination.
+
+Read the corresponding **report template and grading rubric** before preparing each submission. The project
+instructions define the activities you must complete; the template defines how to report that work, and the
+rubric explains how the submitted work will be evaluated.
+
+<br/>
+
+# 8. General Evaluation
+
+Each project submission will be evaluated using the requirements and evaluation criteria provided for that
+milestone. Refer to the corresponding **Pre-conditions, Intermediate, or Final Report template and evaluation
+rubric** before preparing your submission.
+
+Across the project, we will particularly consider the following:
+
+* **Technical correctness:** Whether the integration, adaptation, testing, and analysis are technically sound.
+* **Systematic reengineering:** Whether you apply an explicit and well-reasoned reengineering process rather
+  than relying on ad-hoc trial and error.
+* **Quality of evidence:** Whether claims are supported by appropriate repository history, design analysis,
+  tool results, tests, coverage, or other relevant evidence.
+* **Depth of analysis:** Whether you explain why integration succeeds or fails and relate the outcome to the
+  differences between the source and target variants.
+* **Appropriate use of techniques and tools:** Whether techniques from the labs are selected and interpreted
+  meaningfully rather than applied mechanically.
+* **Application of reengineering patterns:** Whether relevant patterns are used appropriately and connected
+  to concrete project decisions.
+* **LLM-assisted reengineering:** Whether each student systematically completes both required LLM experiments,
+  verifies generated results, preserves reproducible evidence, critically evaluates successes and failures, and
+  connects the experiments to appropriate reengineering patterns.
+* **Individual responsibility and traceability:** Whether each student's assigned PRs and contributions are
+  clearly identifiable and supported by appropriate evidence.
+* **Team coordination:** Whether the team demonstrates steady progress through regular meetings, maintained
+  meeting records, effective communication, and early identification of blockers.
+* **Team synthesis:** Whether the report brings the individual PR analyses together into a coherent account
+  of the reengineering challenges encountered by the team.
+* **Clarity and reproducibility:** Whether another developer could understand what you did, the evidence you
+  used, and how you reached your conclusions.
+
+Refer to the template and evaluation rubric for each submission for the detailed grading criteria.
+
 
 <br/>
 
@@ -840,10 +1034,10 @@ If you have any questions about the project or the report, please get in touch w
 
 # Appendix A. Measuring Coverage on linkedin/kafka
 
-Categories 2 and 3 ask you to report coverage **before and after** adding tests, and the
-[Final Report checklist](../../../files/CS789_SRE/Final_Evaluation_Report_CS-789_Template.pdf) grades it. The
-coverage lab used Coverage.py on a small Python project; `linkedin/kafka` is a large Java and Scala build, so the
-mechanics are different. This appendix gives you the working commands and the one trap you are likely to hit.
+Categories 2 and 3, as well as the LLM-assisted test-generation activity, may require you to compare test
+adequacy or coverage before and after test changes. The coverage lab used Coverage.py on a small Python project;
+`linkedin/kafka` is a large Java and Scala build, so the mechanics are different. This appendix gives you the
+working commands and the main limitation you are likely to encounter.
 
 ### A.1 Coverage is switched off by default
 
@@ -931,9 +1125,13 @@ the **adequacy** of the test suite, not merely to quote a number.
 
 ### A.6 A workable before/after routine
 
-1. Check out the target at the state **before** your integration.
-2. Run the scoped coverage command for the module your PR touches; save the report.
-3. Apply the patch (cherry-pick or RePatch) and add your tests.
-4. Re-run the same command, on the same module and the same scope.
-5. Compare like with like, and say in the report exactly which command you ran. A coverage number without its
-   scope is not interpretable -- one module's figure and the whole build's figure are not comparable.
+When measuring the contribution of tests:
+
+1. Integrate the patch and establish a working baseline with the existing tests.
+2. Run the scoped coverage command for the affected module and save the report.
+3. Add or adapt the tests.
+4. Re-run the **same coverage command**, using the same module and scope.
+5. Compare like with like and report exactly which command and scope you used.
+
+This comparison measures what the **test changes** contributed. Do not compare coverage from different modules,
+different test scopes, or different code states and attribute the difference solely to the tests.
