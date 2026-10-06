@@ -62,13 +62,13 @@ that LinkedIn Kafka release.
 5. **Document your work through three progressive reports** and complete the oral exam/presentation.
 
 
-| Deliverable | Due | Grading |
-|---|---|---|
-| [Pre-conditions Report](CS789_Preconditions_Report_Template.pdf) | Sun. Oct. 11 | **15 pts** · [Rubric](CS789_Preconditions_Grading_Rubric.pdf) |
-| [Intermediate Report](CS789_Intermediate_Report_Template.pdf) | Wed. Nov. 4 | **50 pts** · [Rubric](CS789_Intermediate_Grading_Rubric.pdf) |
+| Deliverable | Due          | Grading |
+|---|--------------|---|
+| [Pre-conditions Report](CS789_Preconditions_Report_Template.pdf) | Tue. Oct. 13 | **15 pts** · [Rubric](CS789_Preconditions_Grading_Rubric.pdf) |
+| [Intermediate Report](CS789_Intermediate_Report_Template.pdf) | Wed. Nov. 4  | **50 pts** · [Rubric](CS789_Intermediate_Grading_Rubric.pdf) |
 | Feedback Session | Mon. Nov. 16 | -- |
-| [Final Report](CS789_Final_Report_Template.pdf) | Wed. Dec. 2 | **100 pts** · [Rubric](CS789_Final_Grading_Rubric.pdf) |
-| Oral Exam / Presentation | Wed. Dec. 9 | -- |
+| [Final Report](CS789_Final_Report_Template.pdf) | Wed. Dec. 2  | **100 pts** · [Rubric](CS789_Final_Grading_Rubric.pdf) |
+| Oral Exam / Presentation | Wed. Dec. 9  | -- |
 
 The three reports are **progressive**. The Intermediate Report builds on the Pre-conditions Report, and the Final
 Report builds on the Intermediate Report. Feedback received at each stage must be addressed in the next
