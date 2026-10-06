@@ -351,10 +351,25 @@ You should demonstrate that you:
    - Adapted effectively to unexpected conflicts, build issues, or refactoring mismatches.  
    - Reflected on lessons learned about controlling variant-based reengineering.
    
-The following check-list will be used to assess your reengineering project
-* Checklist reengineering Pre-conditions Report [ PDF ](../../files/CS789_SRE/Pre-conditions_Report_Evaluation_Template.pdf)
-* Checklist reengineering Intermediate Report [ PDF ](../../files/CS789_SRE/Intermetdiate_Evaluation_Report_Template.pdf)
-* Checklist reengineering Final Report [PDF](../../files/CS789_SRE/Final_Evaluation_Report_CS-789_Template.pdf)
+### Software Reengineering Project Deliverables and Grading Rubrics
+
+### Software Reengineering Project Deliverables and Grading Rubrics
+
+Use the report template for each project milestone to prepare your submission. The corresponding grading rubric
+shows how the report will be evaluated.
+
+| Deliverable | Points | Report Template | Grading Rubric |
+|---|---:|---|---|
+| **Pre-conditions Report** | 15 | [PDF](project/CS789_Preconditions_Report_Template.pdf) | [PDF](project/CS789_Preconditions_Grading_Rubric.pdf) |
+| **Intermediate Report** | 50 | [PDF](project/CS789_Intermediate_Report_Template.pdf) | [PDF](project/CS789_Intermediate_Grading_Rubric.pdf) |
+| **Final Report** | 100 | [PDF](project/CS789_Final_Report_Template.pdf) | [PDF](project/CS789_Final_Grading_Rubric.pdf) |
+
+The **project instructions** define the activities you must complete, the **report templates** define how to
+report your work at each milestone, and the **grading rubrics** explain how the submitted work will be evaluated.
+
+The rubrics distinguish between **team-level and individual-level assessment**. Team points are shared by the
+team, while individual points are assessed separately for each student based on their own assigned work and
+evidence.
 
 --------
 **Table I: Grade Distribution:**
