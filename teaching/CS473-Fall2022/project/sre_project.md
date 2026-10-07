@@ -300,36 +300,17 @@ or difficult.
 
 # 3. Project Setup and Pre-conditions
 
-The first project milestone is the **Pre-conditions Report**. Each group submits one report (PDF), with one
-member uploading it to Canvas on behalf of the team.
+Before beginning the main reengineering activities, each student must independently
+validate their development environment and baseline and complete a preliminary analysis
+of all **seven assigned PRs**.
 
-The Pre-conditions Report establishes the foundation for the rest of the project. It
-covers:
+Each team must also establish its project coordination process, including a regular
+weekly meeting, shared meeting minutes accessible to the instructor and TAs, and
+continued coordination through the team's assigned Discord channel.
 
-* team and repository setup;
-* development environment and baseline validation;
-* PR allocation and preliminary analysis;
-* initial repository and design understanding;
-* project planning, risks, milestones, and coordination.
-
-Each student is individually responsible for validating their own development environment
-and baseline and for completing the preliminary analysis of all **seven assigned PRs**.
-The team submits one report, but individual work must remain clearly identifiable.
-
-Use the **Pre-conditions Report Template** provided on the course main page as the
-required structure for this submission. Sections marked **[TEAM]** are completed
-collaboratively, while sections marked **[INDIVIDUAL]** must be completed by the student
-named in that section.
-
-The team must also establish its weekly coordination process at this stage. This includes
-a regular weekly meeting, a shared record of meeting minutes accessible to the instructor
-and TAs, and continued coordination through the team's assigned Discord channel.
-
-The Pre-conditions Report is due **Sunday, October 11, 2026 at 11:59 pm**.
-
-The Intermediate and Final Reports build directly on this report. Feedback received on
-the Pre-conditions Report must therefore be addressed in the Intermediate Report rather
-than treated as a separate submission.
+Use the **Pre-conditions Report Template** on the course main page for the specific
+evidence and information to report at this milestone. Individual work must remain
+clearly identifiable even though the team submits one report.
 
 <br/>
 
@@ -359,7 +340,7 @@ The first build may take some time while Gradle downloads dependencies.
 Each assigned PR must be investigated on its **own branch**. Do not combine unrelated PR integrations on the same working branch. Use a clear naming convention such as:
 
 ```bash
-pr-<PR>
+pr-<PR-No>
 ```
 
 This keeps the integration history traceable and allows each PR to be inspected independently.
