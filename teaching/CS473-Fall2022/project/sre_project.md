@@ -318,196 +318,159 @@ clearly identifiable even though the team submits one report.
 
 Follow these repository and coding practices throughout the project.
 
-**Fork, clone, and build**
+**Repository setup**
 
 * Fork [linkedin/kafka](https://github.com/linkedin/kafka) for your team and clone the team fork.
 * Work from the target branch **`3.0-li`**.
-* Refer to the repository documentation for build and test instructions, but adapt them where necessary because open-source documentation may become outdated.
-* Use **JDK 11** for the `linkedin/kafka` project. See [Appendix A.2](#a2-build-the-clone-with-jdk-11). In IntelliJ, set both the Project SDK and Gradle JVM to 11.
-
-```bash
-git clone https://github.com/<your-group>/kafka.git
-cd kafka
-git checkout 3.0-li
-export JAVA_HOME=/usr/lib/jvm/java-11        # adjust to your system
-./gradlew jar
-```
-
-The first build may take some time while Gradle downloads dependencies.
+* Use **JDK 11**. See [Appendix A.2](#a2-build-the-clone-with-jdk-11) for build and environment guidance.
+* Each student must independently verify that they can build and test the target variant in the environment used for the project.
 
 **One branch per assigned PR**
 
-Each assigned PR must be investigated on its **own branch**. Do not combine unrelated PR integrations on the same working branch. Use a clear naming convention such as:
+Each assigned PR must be investigated on its **own branch**, for example:
 
-```bash
+```text
 pr-<PR-No>
 ```
 
-This keeps the integration history traceable and allows each PR to be inspected independently.
+Do not combine unrelated PR integrations on the same branch.
 
-**Cherry-picking a mainline PR (Categories 1 and 2)**
+**Cherry-picking Apache Kafka PRs**
 
-Your fork contains LinkedIn Kafka's history, but the Apache commit associated with the assigned PR may not yet exist in the clone. Add `apache/kafka` as a second remote once, then fetch the upstream history:
+Add `apache/kafka` as an upstream remote and fetch its history before working with the assigned Apache PRs.
 
-```bash
-git remote add upstream https://github.com/apache/kafka.git
-git fetch upstream trunk
+For each assigned PR:
 
-# Find the commit associated with the PR
-curl -s https://api.github.com/repos/apache/kafka/pulls/<PR> | grep merge_commit_sha
+1. Create a branch from `3.0-li`.
+2. Identify the commit associated with the Apache PR.
+3. Cherry-pick that commit.
+4. Record whether the integration succeeds or conflicts.
 
-git checkout -b pr-<PR> 3.0-li
-git cherry-pick <merge_commit_sha>
-git push origin pr-<PR>
-```
+If a Category 1 or Category 2 PR unexpectedly conflicts, abort the cherry-pick and verify the assignment and the `Replacement` column in the project spreadsheet. Contact the instructor or TAs if the problem remains.
 
-Apache Kafka squash-merges its pull requests, so the `merge_commit_sha` used for these assignments is an ordinary single-parent commit and `git cherry-pick` does not require the `-m` option.
-
-If a Category 1 or Category 2 PR unexpectedly conflicts, abort the cherry-pick:
-
-```bash
-git cherry-pick --abort
-```
-
-Then verify the PR assignment and the `Replacement` column in the project spreadsheet. If the problem remains, contact the instructor or TAs rather than silently substituting another PR.
-
-**Collaboration**
+**Collaboration and ownership**
 
 * Add all team members as collaborators on the team fork.
-* Each student must be able to independently build and test the target variant in the environment they use for the project.
-* Each student should push and maintain the branches corresponding to their own assigned PRs.
-* Team members may help one another troubleshoot problems, but the analysis, integration, testing, and documentation of each assigned PR remain the responsibility of the student to whom it is assigned.
+* Each student should maintain the branches for their own assigned PRs.
+* Team members may help one another troubleshoot, but the analysis, integration, testing, and documentation of each PR remain the responsibility of the assigned student.
 
 **Commit and push practices**
 
-* Commit and push **regularly** with clear, descriptive messages.
-* Each commit should represent one coherent activity, such as applying a patch, resolving a conflict, adapting code, or adding tests.
-* Avoid large commits that combine unrelated changes.
-* Where practical, keep implementation changes and test changes separate so that the evolution of the PR is easy to follow.
+* Commit and push regularly using clear, descriptive messages.
+* Keep unrelated activities separate where practical, especially integration changes and test changes.
 * Do not wait until the report deadline to push completed work.
 
-Example commit messages:
-
-```text
-Resolve conflict in WorkerSourceTask for PR 12345
-Adapt RestServer change to LinkedIn Kafka design
-Add regression tests for PR 12345
-Update tests after patch integration
-```
-
-**Commit history and evaluation**
-
-Your repository history is part of the project evidence. It should make it possible to follow the work performed on each PR and identify the student responsible for that work.
-
-Commit and push the **final version** of all project work before the submission deadline.
+The repository history should make it possible to trace the work performed for each PR and identify the student responsible.
 
 <br/>
 
 # 5. Development Activities
 
-For each assigned pull request, perform the following activities and document them in your project report.
+The activities below define the reengineering work you will perform across your assigned PRs. The **report
+templates** specify what evidence must be presented at each milestone and how that evidence should be organized.
 
-### I. Design recovery
+The depth of analysis will vary by PR. A straightforward Category 1 integration may require less discussion
+than a Category 4 PR involving substantial source-target divergence.
+
+### I. Design recovery and evolution analysis
 
 <div style="text-align: center;">
 <img src="/images/473/design_recovery.jpeg" alt="Design recovery" style="width:100%;max-width:500px;" />
 </div>
 
-* Extract and describe the **local design** of the classes and methods affected by the pull request in the
-  **source variant**, using IntelliJ or a similar tool.
-* Identify and describe the **corresponding classes or components** in the **target variant**, where the
-  integration will happen.
-* Compare the source and target contexts to identify relevant structural or architectural differences, such as
-  renamed classes, relocated methods, changed interfaces, or split responsibilities.
-* Use simple diagrams or annotated class sketches to show the relevant design at both the **source change**
-  and the **target integration point**. The diagrams do not need to model the entire system; include only the
+* Recover and describe the **local design** surrounding the change in the **source variant**.
+* Identify the corresponding classes, methods, or components in the **target variant**, where the change must
+  be integrated.
+* Compare the source and target contexts and identify the **design/evolution gap** that matters for integration,
+  such as renamed or relocated elements, changed interfaces or parameters, refactorings, or redistributed
+  responsibilities.
+* Use focused diagrams or annotated structural views where they help explain the design. Include only the
   classes, methods, and relationships needed to understand the change and its integration.
-* A diagram showing only the files or classes modified by the source PR is not sufficient when the corresponding
-  target-side design differs. The goal is to make the **design gap** between the two variants clear.
-* If the relevant source and target designs are effectively the same, state this explicitly rather than
-  introducing artificial differences.
-* **For Category 4 PRs:** analyze the existing design of the target variant and identify the architectural
-  misalignments or refactoring-induced differences that prevent integration. Since the patch cannot be
-  integrated, no redesign is expected -- only a discussion of the design barriers.
+* If there is no meaningful design/evolution gap, state this explicitly rather than introducing artificial
+  differences.
 
-### II. Design adaptation / redesign
+The goal is not to model the entire Kafka architecture. Recover enough of the relevant design to explain
+why the patch can or cannot be integrated into the target variant.
 
-<div style="text-align: center;">
-<img src="/images/473/Redesign.jpeg" alt="Redesign" style="width:100%;max-width:450px;" />
-</div>
+### II. Integration and design adaptation
 
-For successfully integrated PRs (Categories 1--3), your analysis should make the progression of the design
-clear:
+Attempt each assigned integration using `git cherry-pick`. Where applicable, use **RePatch** when cherry-pick
+fails and examine how refactorings or other source-target differences affect the integration.
+
+For successfully integrated PRs, consider the following design progression:
 
 **Source design → Target design before integration → Target design after integration/adaptation**
 
-* Analyze how the integrated patch modifies or extends the existing target design.
-* Compose a **revised design view** showing how the integrated functionality now fits into the target system
-  and interacts with related components.
-* Explain any design adaptations that were necessary because the source and target variants had evolved
-  differently.
-* If no design adaptation was necessary, state this explicitly and explain why the source change fit the
-  existing target design without modification.
-* If you wrote new tests, explain how the design of the test suite evolved to accommodate the change.
-* Evaluate whether the resulting design supports the intended fix or feature while remaining consistent with
-  the target system's design and code quality. Support your assessment with appropriate evidence.
+Explain how the change fits into the target design and any adaptation required because the variants evolved
+differently. If no adaptation is necessary, explain why the source change fits the existing target design.
 
-For Category 4 PRs, use the following progression instead:
+For Category 4 PRs where integration remains infeasible, consider:
 
 **Source design → Target design → Design barriers preventing integration**
 
-Since these PRs cannot be successfully integrated, no revised design is required. Instead, identify and
-explain the design, refactoring, or semantic differences that prevent the source change from being integrated
-into the target variant.
+Identify the design, refactoring, or semantic differences that prevent safe integration. The objective is to
+diagnose the failure, not to perform extensive redesign simply to force the patch to integrate.
 
-### III. Integration and testing
-
-* Attempt the integration with `git cherry-pick`.
-* If cherry-pick fails, run **RePatch** and document the results.
-* For every successfully integrated PR, run the appropriate target-variant tests and report the results.
-* Determine whether the existing tests adequately exercise the integrated change.
-* If tests are missing or inadequate, write or adapt appropriate unit or integration tests.
-* Where tests are added or modified, measure coverage **before and after the test changes** using the same scope
-  and explain what changed. See [Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka) for the coverage
-  procedure and known limitations.
-* Interpret coverage together with the test results and the behavior being exercised. **Coverage alone is not
-  evidence that the integration is correct.**
-
-### IV. Project management
-
-<div style="text-align: center;">
-<img src="/images/473/project-management.jpeg" alt="Project management" style="width:100%;max-width:550px;" />
-</div>
-
-* Estimate the effort required for (i) integrating the patch and (ii) creating or adapting tests.
-* Identify PRs that were **exceptional entities** -- a large number of changed files, unusually complex conflicts.
-* Comment on risks to maintainability and on long-term design debt introduced by the integration.
-* Maintain the required **weekly team meeting record** throughout the project. Use the meetings and Discord
-  channel to track individual progress, surface blockers early, share findings, and coordinate the work that
-  remains.
-
-### V. Refactoring and manual resolution
+### III. Refactoring and manual adaptation
 
 <div style="text-align: center;">
 <img src="/images/473/refactor1.jpeg" alt="Refactoring and manual resolution" style="width:100%;max-width:400px;" />
 </div>
 
-* If RePatch cannot resolve the conflicts, attempt **manual resolution** -- adjusting parameters, handling renamed
-  methods.
-* Document any **refactorings** you performed to make the integration feasible.
-* If manual resolution is not possible without knowing developer intent, explain why.
-* Make sure the tests remain effective and coverage is preserved after your changes.
+Where an integration requires additional work:
 
-### VI. Reflection on patterns, techniques, and teamwork
+* Identify the refactorings or structural differences relevant to the conflict.
+* If RePatch cannot resolve the conflict, investigate **small, targeted manual adaptations**, such as accounting
+  for renamed methods, changed parameters, or relocated functionality.
+* Document any adaptation or refactoring you perform and explain why it was necessary.
+* If integration cannot be completed safely without developer intent or additional domain knowledge, explain
+  what information is missing and why it matters.
 
-* Identify the **reengineering patterns** from the OORP book that informed your design, integration, testing, and
-  refactoring decisions.
-* Reflect on how your team coordinated across the four categories through weekly meetings, Discord communication,
-  shared problem solving, and early identification of blockers.
-* Summarize what you learned about **design, variant-aware integration, and testing**.
+A well-supported diagnosis of why a Category 4 integration is infeasible is a valid project outcome.
 
-Your project should demonstrate techniques introduced across the lab sessions. At the **team level**, your work
-must include meaningful evidence from each of the five lab areas:
+### IV. Testing and validation
+
+For every successfully integrated PR:
+
+* Run the appropriate target-variant tests and report the results.
+* Determine whether the existing tests adequately exercise the integrated change.
+* If tests are missing or inadequate, create or adapt appropriate unit or integration tests.
+* Where tests are added or modified, compare coverage **before and after the test changes using the same
+  measurement scope**. See [Appendix A](#appendix-a-measuring-coverage-on-linkedinkafka).
+* If coverage is unreliable because of the build or testing framework, explain the limitation and assess test
+  adequacy using other evidence.
+* Re-run the relevant tests after any manual adaptation or refactoring.
+
+Interpret coverage together with the behavior exercised by the tests. **Coverage alone is not evidence that
+the integration is correct.**
+
+### V. Reengineering reasoning
+
+As you work through the assigned PRs:
+
+* Estimate the effort required for integration and for creating or adapting tests.
+* Identify PRs that are **exceptional**, for example because of unusually large changes, complex conflicts,
+  substantial design divergence, or difficult testing requirements.
+* Consider risks to correctness, maintainability, and design quality.
+* Identify **OORP patterns and maxims** that materially inform your design recovery, integration, adaptation,
+  testing, or other reengineering decisions. Explain how they influenced your reasoning rather than simply
+  listing their names.
+
+### VI. Team coordination and use of lab techniques
+
+<div style="text-align: center;">
+<img src="/images/473/project-management.jpeg" alt="Project management" style="width:100%;max-width:550px;" />
+</div>
+
+Continue the coordination process established during the Pre-conditions milestone:
+
+* Meet at least once each week and maintain the shared meeting minutes.
+* Use the team's Discord channel for ongoing coordination.
+* Discuss progress, technical findings, recurring problems, and blockers.
+* Help one another troubleshoot difficult problems while retaining **individual ownership** of assigned PRs.
+* Raise blockers early rather than waiting until a report deadline.
+
+The project should also demonstrate meaningful use of techniques introduced across the five lab areas:
 
 | Lab area | Example tools or techniques |
 |---|---|
@@ -517,19 +480,11 @@ must include meaningful evidence from each of the five lab areas:
 | Software Integration | GACPD, RePatch |
 | Mining Software Repositories | Git, GitHub REST API, GraphQL, or scripts |
 
-Select tools or techniques that provide **useful evidence for your reengineering task**, and explain why each was
-appropriate and what you learned from it. You are not required to apply every tool to every PR or to have every
-team member use every tool.
+At the **team level**, demonstrate meaningful evidence from each lab area. Select tools or techniques because
+they provide useful evidence for the reengineering task, not simply to show that a tool was run.
 
-**Testing requirements**
-
-* Determine how well the existing tests provide feedback during refactoring and integration.
-* For PRs where tests are added or modified, **quantify their contribution** by comparing coverage before and
-  after the test changes using the same measurement scope.
-* Where coverage is unreliable or invalidated by the build or testing framework, explain the limitation and
-  assess test adequacy using other evidence.
-* Argue whether the tests are sufficient for the integrated change; do not rely on the coverage percentage alone.
-* If the tests are inadequate, extend them efficiently, balancing thoroughness against the time invested.
+You are not required to apply every tool to every PR or to have every student use every tool. Explain why the
+selected techniques were appropriate and what you learned from them.
 
 <br/>
 
