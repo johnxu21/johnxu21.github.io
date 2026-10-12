@@ -152,7 +152,7 @@ e-mail or on the [Discord workspace](https://discord.gg/CQUCUFTcDY).
 <tr>
 <td style="border: 1px solid black;">08</td>
 <td style="border: 1px solid black;">Mo 10/12</td>
-<td style="border: 1px solid black;">[T] Generative AI</td>
+<td style="border: 1px solid black;">[L] Free Project Work </td>
 <td style="border: 1px solid black;">We 10/14 </td>
 <td style="border: 1px solid black;">[L] Free Project Work </td>
 </tr>
