@@ -61,7 +61,7 @@ Materials & Tools Used for this Session
 
 **Slides**
 
-* [Mining Software Repositories (PDF)](../../../files/MSR_slides.pdf)
+* [Mining Software Repositories (PDF)](MSR.pdf)
 
 **Repositories you can use for the lab experiments**
 
