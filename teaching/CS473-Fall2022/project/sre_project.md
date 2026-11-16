@@ -557,8 +557,70 @@ If your hardware cannot reasonably run the recommended model, select a smaller m
 
 Use **`temperature 0`** for the experiments. The goal is reproducibility rather than creativity.
 
-Record the model, tag, digest, sampling settings, and hardware used. These details must appear in your Final
-Report.
+Record the model, tag, digest, sampling settings, **context length (`num_ctx`)**, and hardware used. These
+details must appear in your Final Report.
+
+### Known issue: Ollama's context window is smaller than the model's
+
+`ollama show qwen2.5-coder:7b` reports a context length of **32768** tokens. That is what the *model* supports,
+**not** what Ollama uses. Unless you change it, Ollama runs the model with a much smaller window (**4096**
+tokens). If your prompt is longer than that, Ollama **silently drops the beginning of the prompt** and does not
+show an error. With the prompt template in Step 3, the instructions and the source diff come first, so they are
+the first parts lost. The model then answers without the information it needs, and the output can look fine but
+be wrong.
+
+**How to tell it is happening:**
+
+* `ollama ps` (while the model is loaded) shows the `CONTEXT` actually in use.
+* When you call the REST API, compare `prompt_eval_count` in the response with how long you expect your prompt
+  to be. If it is stuck near 4096, your prompt was cut.
+* The Ollama server log contains a `truncating input prompt` message.
+
+**Fix:** set `num_ctx` yourself. **16384** is a reasonable value for Part A and Part B prompts. Use one of the
+following:
+
+```bash
+# (a) Inside an interactive `ollama run` session
+/set parameter num_ctx 16384
+/set parameter temperature 0
+
+# (b) Server-wide default (restart Ollama after setting it)
+OLLAMA_CONTEXT_LENGTH=16384 ollama serve
+
+# (c) Per request through the REST API
+curl http://localhost:11434/api/generate -d '{
+  "model": "qwen2.5-coder:7b",
+  "prompt": "...",
+  "stream": false,
+  "options": { "num_ctx": 16384, "temperature": 0 }
+}'
+```
+
+**Recommended for reproducibility:** create a named model variant that fixes both settings, and commit the
+`Modelfile` under `llm-assisted/`:
+
+```text
+# Modelfile
+FROM qwen2.5-coder:7b
+PARAMETER num_ctx 16384
+PARAMETER temperature 0
+```
+
+```bash
+ollama create qwen2.5-coder-7b-16k -f Modelfile
+ollama run qwen2.5-coder-7b-16k
+```
+
+A larger window uses more memory. If the model becomes very slow or runs out of memory, use **8192** and keep
+your prompts small. Choosing the context carefully in Step 2 helps with this. Report the `num_ctx` value you
+used.
+
+### Other installation problems
+
+If Ollama installs but behaves unexpectedly (most often on **Windows**, for example `ollama list` is empty right
+after a successful `ollama pull`, or `ollama show` fails with an `untrusted mount point` error), do not spend
+long debugging it yourself. **Contact the TAs** with the output of `ollama --version`, `ollama list`, and the
+error message.
 
 ## 6.2 Part A -- LLM-Assisted Patch Integration [INDIVIDUAL]
 
@@ -805,7 +867,7 @@ the Final Report covering **both Part A and Part B**.
 
 For each student, report:
 
-* the local model, tag, digest (`ollama show`), sampling settings, and hardware;
+* the local model, tag, digest (`ollama show`), sampling settings, context length (`num_ctx`), and hardware;
 * the PR selected for **Part A** and the PR selected for **Part B**;
 * **Part A:** baseline failure, selected context, prompts, iterations, final diff where applicable, compilation
   and test results, and final assessment;
