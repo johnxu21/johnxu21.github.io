@@ -77,9 +77,9 @@ Presentation Guidelines: [[Google Doc](https://docs.google.com/document/d/16m2-b
     <th style="border: 1px solid black;">Time</th>
   </tr>
 
-  <tr><td style="border: 1px solid black;">Group X</td><td style="border: 1px solid black;">11/23/2026</td><td style="border: 1px solid black;">1:00 PM</td></tr>
-  <tr><td style="border: 1px solid black;">Group X</td><td style="border: 1px solid black;">11/23/2026</td><td style="border: 1px solid black;">1:25 PM</td></tr>
-  <tr><td style="border: 1px solid black;">Group X</td><td style="border: 1px solid black;">11/23/2026</td><td style="border: 1px solid black;">1:50 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 1</td><td style="border: 1px solid black;">11/23/2026</td><td style="border: 1px solid black;">1:00 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 2</td><td style="border: 1px solid black;">11/23/2026</td><td style="border: 1px solid black;">1:25 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 3</td><td style="border: 1px solid black;">11/23/2026</td><td style="border: 1px solid black;">1:50 PM</td></tr>
   
 
 
@@ -102,9 +102,9 @@ Only the presenting team will be allowed in the room for the final presentation.
     <th style="border: 1px solid black;">Date</th>
     <th style="border: 1px solid black;">Time</th>
   </tr>
-  <tr><td style="border: 1px solid black;">Group X</td><td style="border: 1px solid black;">11/30/2026</td><td style="border: 1px solid black;">1:00 PM</td></tr>
-  <tr><td style="border: 1px solid black;">Group X</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">1:25 PM</td></tr>
-  <tr><td style="border: 1px solid black;">Group X</td><td style="border: 1px solid black;">11/30/2026</td><td style="border: 1px solid black;">1:50 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 1</td><td style="border: 1px solid black;">11/30/2026</td><td style="border: 1px solid black;">1:00 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 2</td><td style="border: 1px solid black;">4/30/2026</td><td style="border: 1px solid black;">1:25 PM</td></tr>
+  <tr><td style="border: 1px solid black;">Group 3</td><td style="border: 1px solid black;">11/30/2026</td><td style="border: 1px solid black;">1:50 PM</td></tr>
 
   
 
